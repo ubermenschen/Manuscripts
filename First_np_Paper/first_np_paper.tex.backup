@@ -14,7 +14,7 @@
 % \documentclass[3p,times]{elsarticle}
 % \documentclass[3p]{elsarticle}
 
-
+\usepackage[american]{babel}
 \usepackage{amsmath}
 \usepackage[version=3]{mhchem} 
 % \usepackage{fixltx2e}
@@ -209,9 +209,9 @@
 %% use the ead command for the email address,
 %% and the form \ead[url] for the home page:
 %%
-\title{(n,p) Cross-Section Measurements for \ce{^{64}Cu} and \ce{^{47}Sc} via d-D Neutron Generator}
+\title{(n,p) Cross-Section Measurements for \ce{^{64}Cu} and \ce{^{47}Sc} via D-D Neutron Generator\\ OR \\(n,p) Cross-Section Measurements for \ce{^{64}Cu} and \ce{^{47}Sc} at 2.76 MeV using a D-D Neutron Generator for Medical Isotope Studies}
 
-% \title{(n,p) Cross-Section Measurements for \ce{^{64}Cu} and \ce{^{47}Sc} via d-D Neutron Generator\tnoteref{label1}}
+% \title{(n,p) Cross-Section Measurements for \ce{^{64}Cu} and \ce{^{47}Sc} via D-D Neutron Generator\tnoteref{label1}}
 %% \tnotetext[label1]{}
 %% \author{Name\corref{cor1}\fnref{label2}}
 %% \ead{email address}
@@ -241,6 +241,8 @@
 
 \author[ucb]{E.F. Matthews}
 
+\author[geo,eps]{D.XXX. Rutte}
+
 \author[ucb]{M.A. Unzueta}
 
 \author[ucb]{K.A. van Bibber}
@@ -262,9 +264,17 @@
 % \fntext[fn1]{This is the specimen author footnote.}
 % \fntext[fn2]{Another author footnote, but a little more longer.}
 
-\address[ucb]{Department of Nuclear Engineering, The University of California, Berkeley, Etcheverry Hall, 2521 Hearst Ave, Berkeley, CA 94709}
-\address[lbl]{Lawrence Berkeley National Laboratory,  1 Cyclotron Rd, Berkeley, CA 94720}
-\address[llnl]{Lawrence Livermore National Laboratory, 7000 East Ave, Livermore, CA 94550}
+% \address[ucb]{Department of Nuclear Engineering, University of California, Berkeley, Etcheverry Hall, 2521 Hearst Ave, Berkeley, CA 94709}
+% \address[lbl]{Lawrence Berkeley National Laboratory,  1 Cyclotron Rd, Berkeley, CA 94720}
+% \address[llnl]{Lawrence Livermore National Laboratory, 7000 East Ave, Livermore, CA 94550}
+
+\address[ucb]{Department of Nuclear Engineering, University of California, Berkeley, Berkeley CA, 94720 USA}
+\address[lbl]{Lawrence Berkeley National Laboratory,  Berkeley CA, 94720 USA}
+\address[llnl]{Lawrence Livermore National Laboratory, Livermore CA, 94551 USA}
+\address[geo]{Berkeley Geochronology Center, Berkeley CA,  94709  USA}
+\address[eps]{Department of Earth and Planetary Sciences, University of California, Berkeley, Berkeley CA,  94720  USA}
+
+
 
 % \author{Andrew Voyles}
 
@@ -274,17 +284,26 @@
 
 \begin{abstract}
 
-\comment{Feel free to suggest a better title.}
+\comment{Use D-D or DD as convention?}
+
+\comment{Choose a preferred title...}
+
+\comment{Need Daniel's middle initial}
+
+\comment{Should street address be included for each institution, or just city / state / zip?}
 
 
-\comment{Need to think of any other people to be added as authors. Also, is this the proper ordering - first author, then alphabetical?}
-
-\comment{High-level comment: is active or passive voice preferred in this field?}
 
 
-Neutron activation cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production reactions have been measured at the UC Berkeley High Flux Neutron Generator, for quasi-monoenergetic 2.7645 MeV incident neutrons. Measurements were performed using activation ratio methods, measured relative to the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} inelastic scattering reactions. The use of thin foils and high-precision gamma spectroscopy using HPGe detectors allows for precision cross section measurements, to within 6\% uncertainty. These cross section measurements show strong agreement with literature and theoretical values, but with lower uncertainty than existing measurements. This work has also provided characterization of the neutron energy distributions available at the  UC Berkeley High Flux Neutron Generator, which can be used for other low-energy neutron reaction cross section measurements in the future. 
+
+
+Neutron activation cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production reactions have been measured for quasi-monoenergetic 2.7645 MeV incident neutrons produced by the UC Berkeley High Flux Neutron Generator, a D-D plasma-based neutron source. \comment{ Need to decide on number of sig figs to report, and truncate appropriately - i.e.2.76 +0.15 - 0.22 - \#s taken from text section 3]
+} Measurements were performed using activation ratio methods, measured relative to co-irradiated indium foils using the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} inelastic scattering reactions. The use of thin foils and gamma spectroscopy using an HPGe and LEPS detectors allowed for cross section determination to within 6\% uncertainty. These cross section measurements show good agreement with the literature and theoretical values, but with lower uncertainty than existing measurements. This work has resulted in a detailed characterization of the D-D plasma-based neutron source, which can be used for other low-energy neutron reaction cross section measurements in the future. 
+
 
 \comment{Abstract needs fleshing out.}
+
+\comment{For my corresponding author email, should I list my Gmail (more permanent) or my Berkeley / LBL address (more professional)?}
 
 
 \end{abstract}
@@ -310,15 +329,34 @@ Neutron activation cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{
 %% main text 
 \section{Introduction} \label{sec:intro}
 
+%
+% If we want to mention in-situ-production
+%
+%
+% e.g.:In-situ production (I always figured this is what is so great, correct me if I am wrong) of radioactive nuclides is an emerging method for radiation therapy in nuclear medicine (e.g., cite some recent review paper). It is based on doping the malignant target tissue with a stable nuclide which is then activated in-situ by neutron irradiation. Following decay is focused on the target tissue. Advantages compared to conventional radiation therapy are the reduction of damage to surrounding cells, … short range, … . Currently development of this technique is hampered by the lack of fundamental cross section data for various isotopes.
+
+\comment{Add an initial \enquote{punchline} to  clarify the motivation?}
+
+\comment{Per Mauricio, does 2.7 MeV count as high energy? While fast, I would consider this to still be definitely in the low-energy regime, compared to spallation, etc.}
 
 
-A series of experiments are being conducted at UC Berkeley to measure low-energy neutron-induced production cross sections for a range of emerging medical radioisotopes. One potential method for producing many of these isotopes is the use of the (n,p) reaction via d-D neutron generators. However, many of these cross sections currently have significant uncertainties. Direct neutron activation, using a d-D neutron generator, allows for more precise cross section measurements than time-of-flight methods, and potentially offers a proliferation-resistant pathway for radioisotope production. Neutron activation can provide several advantages over charged-particle reactions from a targetry perspective. Notably, the higher penetration of neutrons allows for the use of thick target designs, which can improve production throughput and greatly simplifies target cooling considerations. More importantly, low-energy neutron reactions can be used to prevent competing reaction channels in a charged-particle reaction which would otherwise contaminate the product specific activity.  
+A series of experiments are being conducted at UC Berkeley to measure low-energy neutron-induced production cross sections for a range of emerging medical radioisotopes, as many of these cross sections currently have not been measured, or possess significant uncertainties.   One potential method for producing many of these isotopes is the use of (n,p) reactions via neutron beams from D-D neutron generators. Direct neutron activation, using a D-D neutron generator, allows for more precise cross section measurements than time-of-flight methods, and potentially offers a proliferation-resistant pathway for radioisotope production. Neutron activation can provide several advantages over charged-particle reactions from a targetry perspective. Notably, the higher penetration of neutrons allows for the use of thick target designs, which can improve production throughput and greatly simplifies target cooling considerations. More importantly, low-energy neutron reactions can be used to prevent competing reaction channels in a charged-particle reaction which would otherwise contaminate the product specific activity.
 
-The present work focuses on the (n,p) production cross section measurements of \ce{^{64}Cu} and \ce{^{47}Sc}. \ce{^{64}Cu} ($t_{1/2}$ = 12.7 h) undergoes $\beta^+$ decay (with a 61.5\% branching ratio) to \ce{^{64}Ni} or $\beta^-$ decay (with a 38.5\% branching ratio) to \ce{^{64}Zn}. The emitted 190-keV $\beta^-$ particle makes this an extremely attractive short-ranged therapeutic radionuclide, which also has the possibility for simultaneous PET imaging due to the positron emission branch. This combination of simultaneous imaging (for real-time dose monitoring and verification) and therapeutic properties makes \ce{^{64}Cu} particularly attractive for emerging radiation therapy protocols. In addition, copper radiochemistry is well-developed, and many existing ligands and carriers may be used for selective delivery of the radionuclide to different sites in patients.
+The present work focuses on the (n,p) production cross section measurements of \ce{^{64}Cu} and \ce{^{47}Sc}. Copper-64  ($t_{1/2}$ = 12.7 h) undergoes $\beta^+$ decay (61.5\% branching ratio) to \ce{^{64}Ni} or $\beta^-$ decay (38.5\% branching ratio) to \ce{^{64}Zn}. The emitted 190-keV $\beta^-$ particle makes this an  attractive short-ranged therapeutic radionuclide, which also has the possibility for simultaneous positron emission tomography (PET) imaging due to the positron emission branch. This combination of simultaneous imaging (for real-time dose monitoring and verification) and therapeutic properties makes \ce{^{64}Cu} particularly attractive for emerging radiation therapy protocols. In addition, copper radiochemistry is well developed, and many existing ligands and carriers may be used for selective delivery of the radionuclide to different sites in patients.
 
 \ce{^{47}Sc} ($t_{1/2}$ = 3.35 d) undergoes $\beta^-$ decay to \ce{^{47}Ti}, emitting a high-intensity 159-keV gamma ray in the process. This radionuclide is particularly attractive as an emerging diagnostic isotope, due to the similarity of the emitted gamma ray to that of the more well-established \ce{^{99m}Tc}. However, due to the short half-life  and dwindling supplies of \ce{^{99m}Tc}, \ce{^{47}Sc} stands poised as a potential solution to this shortage, due to its longer half-life and multiple production pathways without the need for highly enriched uranium.
 
-Current methodology in radiochemistry has been proven to successfully recover upwards of 95\% of produced \ce{^{64}Cu} and \ce{^{47}Ti} from solid targetry designs, without the need for additional carrier. By expanding the base of efficient reaction pathways, great advances can be made in making production of medical radionuclides more efficient and affordable for those in need.
+
+
+\comment{Per Daniel, add a short summary of results here?}
+
+Current methodology in radiochemistry has been proven to successfully recover upwards of 95\% of produced \ce{^{64}Cu} and \ce{^{47}Ti} from solid target designs, without the need for additional carrier. By expanding the base of efficient reaction pathways, great advances can be made in making production of medical radionuclides more efficient and affordable for those in need.
+
+\comment{Should this last paragraph be moved to the results and discussion at the end of the paper?}
+
+
+
+
 
 \section{Experiment}\label{sec:experiment}
 
@@ -328,7 +366,7 @@ Current methodology in radiochemistry has been proven to successfully recover up
 
 \comment{Regex to replace all hard figure references with LaTeX cross-references}
 
-Neutron activation was carried out via irradiation in the UC Berkeley High-Flux Neutron Generator (HFNG), a d-D neutron generator, seen in \autoref{fig:hfng_a}. This generator extracts deuterium ions from an RF-heated deuterium plasma through using a electric potential-shaping nozzle, forming a flat-profile beam 5 mm in diameter. This deuterium beam is incident upon a water-cooled, self-loading titanium-coated copper target, where the titanium layer acts as a reaction surface for d-D fusion, producing neutrons with a well-known energy distribution as a function of lab emission angle. Within the center of the target (at 5 mm from the D-D reaction surface), samples may be inserted prior to the HFNG startup, where they are irradiated in a flux of approximately 10$^8$ neutrons/cm$^2$.  A reference model of this target setup may be seen in \autoref{fig:hfng_b}. During irradiation, the machine operates under nominal conditions of a 100-kV deuterium beam extracted at 1-2 mA.
+Neutron activation was carried out via irradiation in the UC Berkeley High-Flux Neutron Generator (HFNG), a D-D neutron generator, seen in \autoref{fig:hfng_a}. This generator extracts deuterium ions from an RF-heated deuterium plasma through using a electric potential-shaping nozzle, forming a flat-profile beam 5 mm in diameter. This deuterium beam is incident upon a water-cooled, self-loading titanium-coated copper target, where the titanium layer acts as a reaction surface for D-D fusion, producing neutrons with a well-known energy distribution as a function of lab emission angle. Within the center of the target (at 5 mm from the D-D reaction surface), samples may be inserted prior to the HFNG startup, where they are irradiated in a flux of approximately 10$^8$ neutrons/cm$^2$.  A reference model of this target setup may be seen in \autoref{fig:hfng_b}. During irradiation, the machine operates under nominal conditions of a 100-kV deuterium beam extracted at 1-2 mA.
 
 \comment{Note: all images here were included at nearly full-size. They obviously need to be reduced in size, but I included them here larger the needed, so they wouldn't be pixelated if enlarged. Shrink away :)}
 
@@ -366,7 +404,7 @@ Neutron activation was carried out via irradiation in the UC Berkeley High-Flux 
 
 \subsection{Sample loading}\label{sec:sample_loading}
 
-Direct activation of a thin foil can be used for high-fidelity measurement of neutron-induced reactions, through subsequent decay spectroscopy. This method can provide cross sections with far lower uncertainty than neutron time-of-flight measurements, but is heavily reliant upon precisely quantifying the neutron fluence incident upon a loaded target. To avoid the introduction of this large uncertainty, 0.5-mm thin Indium foils were co-loaded along with each target foil for irradiation, with all production cross sections thus measured relative to the well-characterized \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} dosimetry standard reactions. In addition, over the energy region spanned by the d-D emission spectrum, the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} reaction cross sections are nearly constant, which greatly simplifies the (Zn/In) and (Ti/In) ratio measurements. The use of this well-established ratio method removes the fluence dependence from all cross-section calculations, removing the largest source of systematic uncertainty in activation.
+Direct activation of a thin foil can be used for high-fidelity measurement of neutron-induced reactions, through subsequent decay spectroscopy. This method can provide cross sections with far lower uncertainty than neutron time-of-flight measurements, but is heavily reliant upon precisely quantifying the neutron fluence incident upon a loaded target. To avoid the introduction of this large uncertainty, 0.5-mm thin Indium foils were co-loaded along with each target foil for irradiation, with all production cross sections thus measured relative to the well-characterized \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} dosimetry standard reactions. In addition, over the energy region spanned by the D-D emission spectrum, the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} reaction cross sections are nearly constant, which greatly simplifies the (Zn/In) and (Ti/In) ratio measurements. The use of this well-established ratio method removes the fluence dependence from all cross-section calculations, removing the largest source of systematic uncertainty in activation.
 
 
 \begin{figure*}
@@ -427,7 +465,7 @@ $^\text{nat}$Ti      & 99.999\%              & \ce{^{47}Ti} (7.44\%)            
 
 \subsection{Determination of effective neutron energy}\label{sec:neutron_energies}
 
-The kinematics of d-D fusion produce neutrons of energy ranging from 2.2 to 2.85 MeV, over the lab frame emission angular range of 0-180\degree, with respect to the incident deuteron beam. This distribution is a function of the incident deuteron kinetic energy, and has been well-documented; the energy-angle distribution for the incident 100 keV deuterons used in the HFNG can be seen plotted in \autoref{fig:scatt_angle}.
+The kinematics of D-D fusion produce neutrons of energy ranging from 2.2 to 2.85 MeV, over the lab frame emission angular range of 0-180\degree, with respect to the incident deuteron beam. This distribution is a function of the incident deuteron kinetic energy, and has been well-documented; the energy-angle distribution for the incident 100 keV deuterons used in the HFNG can be seen plotted in \autoref{fig:scatt_angle}.
 
 \comment{Parenthetical citations, or just a list at the end? The Shimizu paper uses the latter as citation format.}
 
@@ -435,11 +473,11 @@ The kinematics of d-D fusion produce neutrons of energy ranging from 2.2 to 2.85
  \centering
  \includegraphics[scale=0.6]{./figures/scatt_angle.pdf}
  % scatt_angle.pdf: 369x295 pixel, 72dpi, 13.02x10.41 cm, bb=0 0 369 295
- \caption{Energy-angle distribution for neutrons emitted following d-D fusion, for 100 keV incident deuterons.}
+ \caption{Energy-angle distribution for neutrons emitted following D-D fusion, for 100 keV incident deuterons.}
  \label{fig:scatt_angle}
 \end{figure}
 
-Collimated beamlines can be used to select an energy group from this distribution, by permitting only neutrons within a certain angular window to be incident upon a target. Due to the compact nature of the HFNG, this would require the mounting of samples outside of the target chamber, with at least several feet of standoff from the d-D reaction surface. This would greatly reduce the flux (to approximately 10$^4$ neutrons/cm$^2$ over 4$\pi$) subtended by a single target and require longer irradiations for activation, which exacerbates the effect of simultaneous production \& decay in activation measurements. Instead, samples are mounted internally in the HFNG target chamber, separated by 5 mm of copper from the d-D reaction surface. This allows the samples to subtend a fairly narrow (28\degree) angle of the forward-focused neutrons, while maintaining the high (approximately 10$^8$ neutrons/cm$^2$ ) flux for activations. 
+Collimated beamlines can be used to select an energy group from this distribution, by permitting only neutrons within a certain angular window to be incident upon a target. Due to the compact nature of the HFNG, this would require the mounting of samples outside of the target chamber, with at least several feet of standoff from the D-D reaction surface. This would greatly reduce the flux (to approximately 10$^4$ neutrons/cm$^2$ over 4$\pi$) subtended by a single target and require longer irradiations for activation, which exacerbates the effect of simultaneous production \& decay in activation measurements. Instead, samples are mounted internally in the HFNG target chamber, separated by 5 mm of copper from the D-D reaction surface. This allows the samples to subtend a fairly narrow (28\degree) angle of the forward-focused neutrons, while maintaining the high (approximately 10$^8$ neutrons/cm$^2$ ) flux for activations. 
 
 \begin{figure}
  \centering
@@ -451,7 +489,7 @@ Collimated beamlines can be used to select an energy group from this distributio
 \end{figure}
 
 
-To determine the energy distribution of neutrons incident upon the loaded foils, MCNP6 was used to model the generator operation, and produced a neutron energy spectrum incident upon target foils co-loaded into the HFNG, seen in \autoref{fig:mcnp_flux}. This spectrum verifies the forward-focused kinematics of the d-D reaction subtended by the co-loaded sample foils.
+To determine the energy distribution of neutrons incident upon the loaded foils, MCNP6 was used to model the generator operation, and produced a neutron energy spectrum incident upon target foils co-loaded into the HFNG, seen in \autoref{fig:mcnp_flux}. This spectrum verifies the forward-focused kinematics of the D-D reaction subtended by the co-loaded sample foils.
 
 \begin{figure}
  \centering
@@ -463,7 +501,7 @@ To determine the energy distribution of neutrons incident upon the loaded foils,
 
 
 
-While this shows that the sample foils receive a very narrow energy distribution of incident neutrons, an effective neutron energy and energy bounds must be determined to constrain cross section ratio measurements. From the same MCNP6 simulation, flux tallies show a flux-weighted average neutron energy of 2.7645 MeV in the Indium foil, and average neutron energy of 2.7649 MeV in the zinc or titanium foil; these are indistinguishable within statistical uncertainty, and serve as an effective neutron energy in the loaded target foils. Due to the kinematics of d-D neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry, can be calculated as 2.7825 MeV. For this maximum energy, the number of reactions induced in a foil (containing $N_i$ target nuclei) is simply:
+While this shows that the sample foils receive a very narrow energy distribution of incident neutrons, an effective neutron energy and energy bounds must be determined to constrain cross section ratio measurements. From the same MCNP6 simulation, flux tallies show a flux-weighted average neutron energy of 2.7645 MeV in the Indium foil, and average neutron energy of 2.7649 MeV in the zinc or titanium foil; these are indistinguishable within statistical uncertainty, and serve as an effective neutron energy in the loaded target foils. Due to the kinematics of D-D neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry, can be calculated as 2.7825 MeV. For this maximum energy, the number of reactions induced in a foil (containing $N_i$ target nuclei) is simply:
 
 \begin{equation}
 R = N_i \int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE
@@ -488,7 +526,7 @@ F\pp{E'} = \dfrac{\int_0^{E'} \sigma(E) \dfrac{d\phi}{dE} dE}{\int_0^{E_{max}} \
 
 
 
-This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. Using the flux-averaged neutron energy in the Indium foil as a centroid, this fraction of total reactions can be used to to estimate the uncertainty in effective neutron energy, which will become energy error bars in the excitation function for these reactions. Within 1 standard deviation above and below the centroid, 68.2\% of all reactions should be encompassed. Thus, the upper and lower energy uncertainties correspond to the neutron energies $E'$  such that $F\pp{E'}$ = 0.841 and $F\pp{E'}$ = 0.159, respectively. From \autoref{eqn:react_fraction},  these are found to be  F(2.7796 MeV) = 0.841 and F(2.7426 MeV) = 0.159, respectively; thus the effective neutron energy subtended by target foils is reported as $E_n$ = 2.7645 MeV + 0.0151 MeV / - 0.0219 MeV.  This 37-keV full-energy spread verifies that, at such close distances to the d-D reaction surface, loaded target foils receive a highly quasi-monoenergetic neutron flux.
+This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. Using the flux-averaged neutron energy in the Indium foil as a centroid, this fraction of total reactions can be used to to estimate the uncertainty in effective neutron energy, which will become energy error bars in the excitation function for these reactions. Within 1 standard deviation above and below the centroid, 68.2\% of all reactions should be encompassed. Thus, the upper and lower energy uncertainties correspond to the neutron energies $E'$  such that $F\pp{E'}$ = 0.841 and $F\pp{E'}$ = 0.159, respectively. From \autoref{eqn:react_fraction},  these are found to be  F(2.7796 MeV) = 0.841 and F(2.7426 MeV) = 0.159, respectively; thus the effective neutron energy subtended by target foils is reported as $E_n$ = 2.7645 MeV + 0.0151 MeV / - 0.0219 MeV.  This 37-keV full-energy spread verifies that, at such close distances to the D-D reaction surface, loaded target foils receive a highly quasi-monoenergetic neutron flux.
 
 
 
@@ -501,15 +539,15 @@ After irradiation, the co-loaded targets in each experiment were removed from th
 
 \begin{figure*}[H]
     \centering
-    \begin{subfigure}[t]{0.6\textwidth}
+    \begin{subfigure}[t]{0.7\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \includegraphics[height=2.75in]{./figures/IMG_20160531_182618557_HDR.jpg}
+        \includegraphics[height=2.8in]{./figures/IMG_20160531_182618557_HDR.jpg}
         \caption{ Ortec 80\% HPGe detector}
         \label{fig:hpge_a}
     \end{subfigure}%
     ~ 
-    \begin{subfigure}[t]{0.3\textwidth}
+    \begin{subfigure}[t]{0.28\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
         \includegraphics[height=2.8in]{./figures/IMG_20160531_182635712_HDR.jpg}
@@ -820,7 +858,7 @@ The results for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}
           
 \section{Summary}
 
-Using direct activation methods for thin foils as described in this work, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections have been measured for  2.7645 MeV neutrons, to within 6\% uncertainty. These measurements are consistent with experimental data and theoretical models,  and have been measured to lower uncertainty than existing measurements. The use of d-D neutron generators can be an efficient pathway for the measurement of these low-energy (n,p) reaction channels, as well as a relative method used to normalize measurements at higher neutron energies. While it reduces the neutron flux incident upon target foils, the use of collimated beam lines to irradiate foils at various angles allows a single neutron generator to perform these measurements at various other energies throughout the d-D neutron emission energy spectrum. 
+Using direct activation methods for thin foils as described in this work, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections have been measured for  2.7645 MeV neutrons, to within 6\% uncertainty. These measurements are consistent with experimental data and theoretical models,  and have been measured to lower uncertainty than existing measurements. The use of D-D neutron generators can be an efficient pathway for the measurement of these low-energy (n,p) reaction channels, as well as a relative method used to normalize measurements at higher neutron energies. While it reduces the neutron flux incident upon target foils, the use of collimated beam lines to irradiate foils at various angles allows a single neutron generator to perform these measurements at various other energies throughout the D-D neutron emission energy spectrum. 
 
 \comment{Future work? Thermal neutron measurements? Something like the following?}
 
