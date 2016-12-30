@@ -241,7 +241,7 @@
 
 \author[ucb]{E.F. Matthews}
 
-\author[geo,eps]{D.XXX. Rutte}
+\author[geo,eps]{D. Rutte}
 
 \author[ucb]{M.A. Unzueta}
 
@@ -288,7 +288,7 @@
 
 \comment{Choose a preferred title...}
 
-\comment{Need Daniel's middle initial}
+% \comment{Need Daniel's middle initial}
 
 \comment{Should street address be included for each institution, or just city / state / zip?}
 
@@ -468,7 +468,7 @@ $^\text{nat}$Ti      & 99.999\%              & \ce{^{47}Ti} (7.44\%)            
 
 \subsection{Determination of effective neutron energy}\label{sec:neutron_energies}
 
-The kinematics of D-D fusion produce neutrons of energy ranging from 2.2 to 2.85 MeV, over the lab frame emission angular range of 0-180\degree, with respect to the incident deuteron beam. This distribution is a function of the incident deuteron kinetic energy, and has been well-documented; the energy-angle distribution for the incident 100 keV deuterons used in the HFNG can be seen plotted in \autoref{fig:scatt_angle}.
+The kinematics of D-D fusion at 100 keV lab energy produce neutrons of energy ranging from 2.2 to 2.85 MeV, over the lab-frame emission angular range of 0-180\degree, with respect to the incident deuteron beam. This distribution is a function of the incident deuteron kinetic energy, and has been well-documented \cite{Liskien_Paulsen_1973}; \autoref{fig:scatt_angle} displays the energy-angle distribution for the incident 100 keV deuterons used in the HFNG.
 
 \comment{Parenthetical citations, or just a list at the end? The Shimizu paper uses the latter as citation format.}
 
@@ -480,7 +480,9 @@ The kinematics of D-D fusion produce neutrons of energy ranging from 2.2 to 2.85
  \label{fig:scatt_angle}
 \end{figure}
 
-Collimated beamlines can be used to select an energy group from this distribution, by permitting only neutrons within a certain angular window to be incident upon a target. Due to the compact nature of the HFNG, this would require the mounting of samples outside of the target chamber, with at least several feet of standoff from the D-D reaction surface. This would greatly reduce the flux (to approximately 10$^4$ neutrons/cm$^2$ over 4$\pi$) subtended by a single target and require longer irradiations for activation, which exacerbates the effect of simultaneous production \& decay in activation measurements. Instead, samples are mounted internally in the HFNG target chamber, separated by 5 mm of copper from the D-D reaction surface. This allows the samples to subtend a fairly narrow (28\degree) angle of the forward-focused neutrons, while maintaining the high (approximately 10$^8$ neutrons/cm$^2$ ) flux for activations. 
+Collimated beamlines can be used to select an energy group from this distribution, by permitting only neutrons within a certain angular window to be incident upon a target. Due to the compact nature of the HFNG, this would require the mounting of samples outside of the target chamber, with a distance of at least 20 cm from the D-D reaction surface. This would greatly reduce the flux (to approximately 10$^4$ neutrons/s\ cm$^2$ over 4$\pi$) subtended by a single target and require longer irradiations for activation, which exacerbates the effect of simultaneous production and decay in activation measurements. Instead, the samples are mounted internally in the HFNG target chamber, separated by 5 mm of copper from the D-D reaction surface. This allows the samples to subtend a fairly narrow ($\sim$28\degree) angle of the forward-focused neutrons, while maintaining the high (approximately $\sci{1.3}{7}$neutrons/s\ cm$^2$ ) flux for activations. 
+
+\comment{Make global flux / fluence unification}
 
 \begin{figure}
  \centering
@@ -491,20 +493,30 @@ Collimated beamlines can be used to select an energy group from this distributio
  \label{fig:mcnp_vised}
 \end{figure}
 
+\comment{Need to replace this figure - coming from Mauricio?}
 
-To determine the energy distribution of neutrons incident upon the loaded foils, MCNP6 was used to model the generator operation, and produced a neutron energy spectrum incident upon target foils co-loaded into the HFNG, seen in \autoref{fig:mcnp_flux}. This spectrum verifies the forward-focused kinematics of the D-D reaction subtended by the co-loaded sample foils.
+To determine the energy distribution of neutrons incident upon the loaded foils following production and transport, the Monte Carlo N-Particle transport code  MCNP6 \cite{goorley2013initial} was used to model the neutron energy spectrum incident upon target foils co-loaded into the HFNG (see \autoref{fig:mcnp_flux}). This spectrum illustrates the forward-focused kinematics of the D-D reaction subtended by the co-loaded sample foils.
+
+% \begin{figure}
+%  \centering
+%  \includegraphics[scale=0.6]{./figures/mcnp_flux.pdf}
+%  % mcnp_flux.pdf: 373x295 pixel, 72dpi, 13.16x10.41 cm, bb=0 0 373 295
+%  \caption{MCNP6-modeled neutron energy spectrum for the Berkeley HFNG, using co-loaded indium and zinc (for \ce{^{64}Cu} production) foils as an example.}
+%  \label{fig:mcnp_flux}
+% \end{figure}
 
 \begin{figure}
  \centering
- \includegraphics[scale=0.6]{./figures/mcnp_flux.pdf}
+ \includegraphics[scale=0.6]{./figures/mcnp_flux_new.pdf}
  % mcnp_flux.pdf: 373x295 pixel, 72dpi, 13.16x10.41 cm, bb=0 0 373 295
  \caption{MCNP6-modeled neutron energy spectrum for the Berkeley HFNG, using co-loaded indium and zinc (for \ce{^{64}Cu} production) foils as an example.}
  \label{fig:mcnp_flux}
 \end{figure}
 
 
+\comment{Use this version, old version (mcnp-flux.pdf), or some new combination of lines?}
 
-While this shows that the sample foils receive a very narrow energy distribution of incident neutrons, an effective neutron energy and energy bounds must be determined to constrain cross section ratio measurements. From the same MCNP6 simulation, flux tallies show a flux-weighted average neutron energy of 2.7645 MeV in the Indium foil, and average neutron energy of 2.7649 MeV in the zinc or titanium foil; these are indistinguishable within statistical uncertainty, and serve as an effective neutron energy in the loaded target foils. Due to the kinematics of D-D neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry, can be calculated as 2.7825 MeV. For this maximum energy, the number of reactions induced in a foil (containing $N_i$ target nuclei) is simply:
+While this shows that the sample foils receive a very narrow energy distribution of incident neutrons, an effective neutron energy and energy bounds must be determined to constrain cross section ratio measurements. From the same MCNP6 simulation, flux tallies show a flux-weighted average neutron energy of 2.7645 MeV in the Indium foil, and 2.7649 MeV in the zinc or titanium foil; these are indistinguishable within statistical uncertainty, and serve as an effective neutron energy in the loaded target foils. Due to the kinematics of D-D neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry is 2.7825 MeV. For this maximum energy, the number of reactions induced in a foil (containing $N_i$ target nuclei) is simply:
 
 \begin{equation}
 R = N_i \int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE
@@ -519,17 +531,27 @@ From this definition, it is possible to calculate $F\pp{E'}$, the fraction of to
 F\pp{E'} = \dfrac{\int_0^{E'} \sigma(E) \dfrac{d\phi}{dE} dE}{\int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE}
 \end{equation}
 
+% \begin{figure}
+%  \centering
+%  \includegraphics[scale=0.6]{./figures/fracplot.pdf}
+%  % fracplot.pdf: 372x295 pixel, 72dpi, 13.12x10.41 cm, bb=0 0 372 295
+%  \caption{Fraction of total reactions induced in the Indium foil between the energies [0, $E'$]}
+%  \label{fig:frac_plot}
+% \end{figure}
+
 \begin{figure}
  \centering
- \includegraphics[scale=0.6]{./figures/fracplot.pdf}
+ \includegraphics[scale=0.6]{./figures/fracplot_new.pdf}
  % fracplot.pdf: 372x295 pixel, 72dpi, 13.12x10.41 cm, bb=0 0 372 295
  \caption{Fraction of total reactions induced in the Indium foil between the energies [0, $E'$]}
  \label{fig:frac_plot}
 \end{figure}
 
+\comment{Use this version, or old version (fracplot.pdf)?}
 
 
-This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. Using the flux-averaged neutron energy in the Indium foil as a centroid, this fraction of total reactions can be used to to estimate the uncertainty in effective neutron energy, which will become energy error bars in the excitation function for these reactions. Within 1 standard deviation above and below the centroid, 68.2\% of all reactions should be encompassed. Thus, the upper and lower energy uncertainties correspond to the neutron energies $E'$  such that $F\pp{E'}$ = 0.841 and $F\pp{E'}$ = 0.159, respectively. From \autoref{eqn:react_fraction},  these are found to be  F(2.7796 MeV) = 0.841 and F(2.7426 MeV) = 0.159, respectively; thus the effective neutron energy subtended by target foils is reported as $E_n$ = 2.7645 MeV + 0.0151 MeV / - 0.0219 MeV.  This 37-keV full-energy spread verifies that, at such close distances to the D-D reaction surface, loaded target foils receive a highly quasi-monoenergetic neutron flux.
+
+This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. Using the flux-averaged neutron energy in the Indium foil as a centroid, this fraction of total reactions can be used to estimate the uncertainty in effective neutron energy, which will become energy error bars in the excitation function for these reactions. Within 1 standard deviation above and below the centroid, 68.2\% of all reactions should be encompassed. Thus, the upper and lower energy uncertainties correspond to the neutron energies $E'$  such that $F\pp{E'}$ = 0.841 and $F\pp{E'}$ = 0.159, respectively. From \autoref{eqn:react_fraction},  these are found to be  F(2.7796 MeV) = 0.841 and F(2.7426 MeV) = 0.159, respectively; thus the effective neutron energy subtended by target foils is reported as $E_n$ = 2.7645 MeV + 0.0151 MeV / - 0.0219 MeV.  This 37-keV full-energy spread verifies that, at such close distances to the D-D reaction surface, loaded target foils receive a highly quasi-monoenergetic neutron flux.
 
 
 
@@ -560,6 +582,8 @@ After irradiation, the co-loaded targets in each experiment were removed from th
     \caption{High-Purity Germanium Detectors used for gamma spectroscopy of the activated foils.}
      \label{fig:main_ge_detectors}
 \end{figure*}
+
+\comment{Does \autoref{fig:main_ge_detectors} serve any purpose? Should it be cut?}
 
 For all data collection, performed using the Ortec MAESTRO software, the foils were counted in their polyethylene holder, and placed against the front face of the detector in use, with the target foil (zinc or titanium) facing towards the front face of the detector. This position allows for the detectors to subtend the largest possible solid angle of the gamma rays emitted by the foils. Before data was collected, detector dead time was verified to be less than 5\%, to avoid coincidence summing effects. This was never an issue for any experiments, but had it been, the foils would be moved to a position of greater standoff from the detector, to reduce the dead time.  For the  \ce{^{47}Sc} production experiments, the foils were counted simultaneously using a planar LEPS detector, and for the case of \ce{^{64}Cu} production experiments, the Indium foil was first counted separately using an 80\% HPGe detector, to capture the short-lived Indium activities. After approximately 4 hours of spectra collection, the activated zinc foil was added back and counting resumed simultaneously with the indium foil. This is due to the fact that the \ce{^{115}In} can undergo the \ce{^{115}In}(n,$\gamma$)\ce{^{116}In} reaction, with a cross section of 83 mb for 2.76 MeV neutrons. \ce{^{116}In} has a 54 minute half life, decaying via $\beta^-$ with a Q value of 3.278 MeV. This decay populates several states in \ce{^{116}Sn} capable of emitting gamma rays with $E_\gamma > 2 \times 511$  keV, which pair produce in the detector crystal, contaminating the 511-keV channel used to monitor  \ce{^{64}Cu} production. By waiting for 4 hours of counting the indium foil separately, nearly all \ce{^{116}In} will have decayed, making it safe to add the activated zinc foil without worries of significant 511 keV contamination. Example spectra for each production pathway can be seen in \autoref{fig:spectra_a} and \autoref{fig:spectra_b}.
 
@@ -621,6 +645,8 @@ To verify that each peak truly corresponds to assigned transitions, spectra coll
     \caption{Decay curves used to verify photopeak transition assignment.}
      \label{fig:decay_curves}
 \end{figure*}
+
+\comment{Need to update \autoref{fig:decay_curves} - figures are blurry}
 
 
 Background-subtracted counts in each photopeak, as well as the counting duration for each experiment, are tabulated in \autoref{tab:peak_counts}.
