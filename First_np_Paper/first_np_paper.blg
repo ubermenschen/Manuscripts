@@ -6,43 +6,43 @@ Database file #1: ../../library.bib
 Warning--can't use both volume and number fields in koning2005talys
 You've used 3 entries,
             1876 wiz_defined-function locations,
-            499 strings with 4520 characters,
-and the built_in function-call counts, 1070 in all, are:
-= -- 77
+            499 strings with 4514 characters,
+and the built_in function-call counts, 1187 in all, are:
+= -- 93
 > -- 90
 < -- 0
 + -- 31
 - -- 28
-* -- 98
-:= -- 179
+* -- 108
+:= -- 191
 add.period$ -- 3
 call.type$ -- 3
 change.case$ -- 3
 chr.to.int$ -- 0
 cite$ -- 4
-duplicate$ -- 46
-empty$ -- 77
+duplicate$ -- 48
+empty$ -- 88
 format.name$ -- 28
-if$ -- 236
+if$ -- 263
 int.to.chr$ -- 0
 int.to.str$ -- 3
 missing$ -- 3
 newline$ -- 12
 num.names$ -- 3
-pop$ -- 10
+pop$ -- 9
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 31
+skip$ -- 35
 stack$ -- 0
-substring$ -- 40
-swap$ -- 20
+substring$ -- 72
+swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 7
+while$ -- 9
 width$ -- 4
 write$ -- 32
 (There was 1 warning)
