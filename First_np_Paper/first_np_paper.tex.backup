@@ -76,7 +76,7 @@
 \firstpage{1}
 
 %% Give the name of the journal
-\journalname{Nuclear Instruments and Methods in Physics Research A}
+\journalname{Nuclear Instruments and Methods in Physics Research B}
 
 %% Give the author list to appear in the running head
 %% Example \runauth{C.V. Radhakrishnan et al.}
@@ -88,11 +88,11 @@
 %% Otherwise the content of \jnltitlelogo will be set between horizontal lines as a default logo
 
 %% Give the abbreviation of the Journal.
-\jid{nima}
+\jid{nimb}
 % \jid{yspmi}
 
 %% Give a short journal name for the dummy logo (if needed)
-\jnltitlelogo{Nucl Instrum Meth A}
+\jnltitlelogo{Nucl Instrum Meth B}
 
 %% Hereafter the template follows `elsarticle'.
 %% For more details see the existing template files elsarticle-template-harv.tex and elsarticle-template-num.tex.
@@ -209,9 +209,9 @@
 %% use the ead command for the email address,
 %% and the form \ead[url] for the home page:
 %%
-\title{(n,p) Cross-Section Measurements for \ce{^{64}Cu} and \ce{^{47}Sc} via D-D Neutron Generator\\ OR \\(n,p) Cross-Section Measurements for \ce{^{64}Cu} and \ce{^{47}Sc} at 2.76 MeV using a D-D Neutron Generator for Medical Isotope Studies}
+\title{Determination of the \ce{^{64}Zn},\ce{^{47}Ti}(n,p) Cross-Sections using a DD Neutron Generator for Medical Isotope Studies}
 
-% \title{(n,p) Cross-Section Measurements for \ce{^{64}Cu} and \ce{^{47}Sc} via D-D Neutron Generator\tnoteref{label1}}
+% \title{(n,p) Cross-Section Measurements for \ce{^{64}Cu} and \ce{^{47}Sc} via DD Neutron Generator\tnoteref{label1}}
 %% \tnotetext[label1]{}
 %% \author{Name\corref{cor1}\fnref{label2}}
 %% \ead{email address}
@@ -241,7 +241,7 @@
 
 \author[ucb]{E.F. Matthews}
 
-\author[geo,eps]{D.XXX. Rutte}
+\author[geo,eps]{D. Rutte}
 
 \author[ucb]{M.A. Unzueta}
 
@@ -284,21 +284,20 @@
 
 \begin{abstract}
 
-\comment{Use D-D or DD as convention?}
+%\comment{Use DD or DD as convention?}
 
-\comment{Choose a preferred title...}
 
-\comment{Need Daniel's middle initial}
 
-\comment{Should street address be included for each institution, or just city / state / zip?}
+% \comment{Need Daniel's middle initial} - he doesn't have one
 
 
 
 
 
 
-Neutron activation cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production reactions have been measured for quasi-monoenergetic 2.7645 MeV incident neutrons produced by the UC Berkeley High Flux Neutron Generator, a D-D plasma-based neutron source. \comment{ Need to decide on number of sig figs to report, and truncate appropriately - i.e.2.76 +0.15 - 0.22 - \#s taken from text section 3]
-} Measurements were performed using activation ratio methods, measured relative to co-irradiated indium foils using the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} inelastic scattering reactions. The use of thin foils and gamma spectroscopy using an HPGe and LEPS detectors allowed for cross section determination to within 6\% uncertainty. These cross section measurements show good agreement with the literature and theoretical values, but with lower uncertainty than existing measurements. This work has resulted in a detailed characterization of the D-D plasma-based neutron source, which can be used for other low-energy neutron reaction cross section measurements in the future. 
+
+Neutron activation cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production reactions have been measured for quasi-monoenergetic 2.7645 MeV incident neutrons produced by the UC Berkeley High Flux Neutron Generator, a DD plasma-based neutron source. \comment{ Need to decide on number of sig figs to report, and truncate appropriately - i.e.2.76 +0.15 - 0.22 - \#s taken from text section 3]
+} Measurements were performed using activation ratio methods, measured relative to co-irradiated indium foils using the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} inelastic scattering reactions. The use of thin foils and gamma spectroscopy using an HPGe and LEPS detectors allowed for cross section determination to within 6\% uncertainty. These cross section measurements show good agreement with the literature and theoretical values, but with lower uncertainty than existing measurements. This work has resulted in a detailed characterization of the DD plasma-based neutron source, which can be used for other low-energy neutron reaction cross section measurements in the future. 
 
 
 \comment{Abstract needs fleshing out.}
@@ -340,7 +339,7 @@ Neutron activation cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{
 \comment{Per Mauricio, does 2.7 MeV count as high energy? While fast, I would consider this to still be definitely in the low-energy regime, compared to spallation, etc.}
 
 
-A series of experiments are being conducted at UC Berkeley to measure low-energy neutron-induced production cross sections for a range of emerging medical radioisotopes, as many of these cross sections currently have not been measured, or possess significant uncertainties.   One potential method for producing many of these isotopes is the use of (n,p) reactions via neutron beams from D-D neutron generators. Direct neutron activation, using a D-D neutron generator, allows for more precise cross section measurements than time-of-flight methods, and potentially offers a proliferation-resistant pathway for radioisotope production. Neutron activation can provide several advantages over charged-particle reactions from a targetry perspective. Notably, the higher penetration of neutrons allows for the use of thick target designs, which can improve production throughput and greatly simplifies target cooling considerations. More importantly, low-energy neutron reactions can be used to prevent competing reaction channels in a charged-particle reaction which would otherwise contaminate the product specific activity.
+A series of experiments are being conducted at UC Berkeley to measure low-energy neutron-induced production cross sections for a range of emerging medical radioisotopes, as many of these cross sections currently have not been measured, or possess significant uncertainties.   One potential method for producing many of these isotopes is the use of (n,p) reactions via neutron beams from DD neutron generators. Direct neutron activation, using a DD neutron generator, allows for more precise cross section measurements than time-of-flight methods, and potentially offers a proliferation-resistant pathway for radioisotope production. Neutron activation can provide several advantages over charged-particle reactions from a targetry perspective. Notably, the higher penetration of neutrons allows for the use of thick target designs, which can improve production throughput and greatly simplifies target cooling considerations. More importantly, low-energy neutron reactions can be used to prevent competing reaction channels in a charged-particle reaction which would otherwise contaminate the product specific activity.
 
 The present work focuses on the (n,p) production cross section measurements of \ce{^{64}Cu} and \ce{^{47}Sc}. Copper-64  ($t_{1/2}$ = 12.7 h) undergoes $\beta^+$ decay (61.5\% branching ratio) to \ce{^{64}Ni} or $\beta^-$ decay (38.5\% branching ratio) to \ce{^{64}Zn}. The emitted 190-keV $\beta^-$ particle makes this an  attractive short-ranged therapeutic radionuclide, which also has the possibility for simultaneous positron emission tomography (PET) imaging  due to the positron emission branch (for real-time dose monitoring and verification),  making \ce{^{64}Cu} particularly attractive for emerging radiation therapy protocols. In addition, copper radiochemistry is well developed, and many existing ligands and carriers may be used for selective delivery of the radionuclide to different sites in patients.
 
@@ -366,7 +365,7 @@ Current methodology in radiochemistry has been proven to successfully recover up
 
 \comment{Regex to replace all hard figure references with LaTeX cross-references}
 
-Neutron activation was carried out via irradiation in the High-Flux Neutron Generator (HFNG), a D-D neutron generator at the University of California, Berkeley, seen in  \autoref{fig:hfng_a}. This generator extracts deuterium ions from an RF-heated deuterium plasma through a nozzle, whose shape was designed to form a flat-profile beam 5 mm in diameter. This deuterium beam is incident upon a water-cooled, self-loading titanium-coated copper target, where the titanium layer acts as a reaction surface for D-D fusion, producing neutrons with a well-known energy distribution as a function of lab emission angle \cite{Liskien_Paulsen_1973}. Within the center of the target (at 8 mm from the D-D reaction surface), samples may be inserted prior to  HFNG startup. \autoref{fig:hfng_b} displays the target setup. At the time of the presented experiments, the machine operated under nominal conditions of a 100 kV deuterium beam extracted at 1.5 mA, creating a fluence of approximately  $\sci{1.3}{7}$ neutrons/cm$^2$ on the target.
+Neutron activation was carried out via irradiation in the High-Flux Neutron Generator (HFNG), a DD neutron generator at the University of California, Berkeley, seen in  \autoref{fig:hfng_a}. This generator extracts deuterium ions from an RF-heated deuterium plasma through a nozzle, whose shape was designed to form a flat-profile beam 5 mm in diameter. This deuterium beam is incident upon a water-cooled, self-loading titanium-coated copper target, where the titanium layer acts as a reaction surface for DD fusion, producing neutrons with a well-known energy distribution as a function of lab emission angle \cite{Liskien_Paulsen_1973}. Within the center of the target (at 8 mm from the DD reaction surface), samples may be inserted prior to  HFNG startup. \autoref{fig:hfng_b} displays the target setup. At the time of the presented experiments, the machine operated under nominal conditions of a 100 kV deuterium beam extracted at 1.5 mA, creating a fluence of approximately  $\sci{1.3}{7}$ neutrons/cm$^2$ on the target.
 
 
 \comment{Karl: Comment or question primarily to Lee: Is it conventional to put photographs of equipment in PRC? I'm not sure it is; yes certainly for NIM, but not sure about PRC.}
@@ -408,7 +407,7 @@ Neutron activation was carried out via irradiation in the High-Flux Neutron Gene
 
 \subsection{Sample loading}\label{sec:sample_loading}
 
-Direct activation of a thin foil can be used for high-fidelity measurement of neutron-induced reactions, through subsequent decay spectroscopy. This method can provide cross sections with far lower uncertainty than neutron time-of-flight measurements, but is heavily reliant upon precisely quantifying the neutron fluence incident upon a loaded target. To avoid the introduction of this large uncertainty, 0.5-mm thin Indium foils were co-loaded along with each target foil for irradiation, with all production cross sections thus measured relative to the well-characterized \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} dosimetry standard reactions. In addition, over the energy region spanned by the D-D emission spectrum, the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} reaction cross sections are nearly constant, which greatly simplifies the (Zn/In) and (Ti/In) ratio measurements. The use of this well-established ratio method removes the fluence dependence from all cross-section calculations, removing the largest source of systematic uncertainty in activation.
+Direct activation of a thin foil can be used for high-fidelity measurement of neutron-induced reactions, through subsequent decay spectroscopy. This method can provide cross sections with far lower uncertainty than neutron time-of-flight measurements, but is heavily reliant upon precisely quantifying the neutron fluence incident upon a loaded target. To avoid the introduction of this large uncertainty, 0.5-mm thin Indium foils were co-loaded along with each target foil for irradiation, with all production cross sections thus measured relative to the well-characterized \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} dosimetry standard reactions. In addition, over the energy region spanned by the DD emission spectrum, the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} reaction cross sections are nearly constant, which greatly simplifies the (Zn/In) and (Ti/In) ratio measurements. The use of this well-established ratio method removes the fluence dependence from all cross-section calculations, removing the largest source of systematic uncertainty in activation.
 
 
 \begin{figure*}
@@ -468,7 +467,7 @@ $^\text{nat}$Ti      & 99.999\%              & \ce{^{47}Ti} (7.44\%)            
 
 \subsection{Determination of effective neutron energy}\label{sec:neutron_energies}
 
-The kinematics of D-D fusion produce neutrons of energy ranging from 2.2 to 2.85 MeV, over the lab frame emission angular range of 0-180\degree, with respect to the incident deuteron beam. This distribution is a function of the incident deuteron kinetic energy, and has been well-documented; the energy-angle distribution for the incident 100 keV deuterons used in the HFNG can be seen plotted in \autoref{fig:scatt_angle}.
+The kinematics of DD fusion at 100 keV lab energy produce neutrons of energy ranging from 2.2 to 2.85 MeV, over the lab-frame emission angular range of 0-180\degree, with respect to the incident deuteron beam. This distribution is a function of the incident deuteron kinetic energy, and has been well-documented \cite{Liskien_Paulsen_1973}; \autoref{fig:scatt_angle} displays the energy-angle distribution for the incident 100 keV deuterons used in the HFNG.
 
 \comment{Parenthetical citations, or just a list at the end? The Shimizu paper uses the latter as citation format.}
 
@@ -476,11 +475,13 @@ The kinematics of D-D fusion produce neutrons of energy ranging from 2.2 to 2.85
  \centering
  \includegraphics[scale=0.6]{./figures/scatt_angle.pdf}
  % scatt_angle.pdf: 369x295 pixel, 72dpi, 13.02x10.41 cm, bb=0 0 369 295
- \caption{Energy-angle distribution for neutrons emitted following D-D fusion, for 100 keV incident deuterons.}
+ \caption{Energy-angle distribution for neutrons emitted following DD fusion, for 100 keV incident deuterons.}
  \label{fig:scatt_angle}
 \end{figure}
 
-Collimated beamlines can be used to select an energy group from this distribution, by permitting only neutrons within a certain angular window to be incident upon a target. Due to the compact nature of the HFNG, this would require the mounting of samples outside of the target chamber, with at least several feet of standoff from the D-D reaction surface. This would greatly reduce the flux (to approximately 10$^4$ neutrons/cm$^2$ over 4$\pi$) subtended by a single target and require longer irradiations for activation, which exacerbates the effect of simultaneous production \& decay in activation measurements. Instead, samples are mounted internally in the HFNG target chamber, separated by 5 mm of copper from the D-D reaction surface. This allows the samples to subtend a fairly narrow (28\degree) angle of the forward-focused neutrons, while maintaining the high (approximately 10$^8$ neutrons/cm$^2$ ) flux for activations. 
+Collimated beamlines can be used to select an energy group from this distribution, by permitting only neutrons within a certain angular window to be incident upon a target. Due to the compact nature of the HFNG, this would require the mounting of samples outside of the target chamber, with a distance of at least 20 cm from the DD reaction surface. This would greatly reduce the flux (to approximately 10$^4$ neutrons/s\ cm$^2$ over 4$\pi$) subtended by a single target and require longer irradiations for activation, which exacerbates the effect of simultaneous production and decay in activation measurements. Instead, the samples are mounted internally in the HFNG target chamber, separated by 5 mm of copper from the DD reaction surface. This allows the samples to subtend a fairly narrow ($\sim$28\degree) angle of the forward-focused neutrons, while maintaining the high (approximately $\sci{1.3}{7}$neutrons/s\ cm$^2$ ) flux for activations. 
+
+\comment{Make global flux / fluence unification}
 
 \begin{figure}
  \centering
@@ -491,20 +492,30 @@ Collimated beamlines can be used to select an energy group from this distributio
  \label{fig:mcnp_vised}
 \end{figure}
 
+\comment{Need to replace this figure - coming from Mauricio?}
 
-To determine the energy distribution of neutrons incident upon the loaded foils, MCNP6 was used to model the generator operation, and produced a neutron energy spectrum incident upon target foils co-loaded into the HFNG, seen in \autoref{fig:mcnp_flux}. This spectrum verifies the forward-focused kinematics of the D-D reaction subtended by the co-loaded sample foils.
+To determine the energy distribution of neutrons incident upon the loaded foils following production and transport, the Monte Carlo N-Particle transport code  MCNP6 \cite{goorley2013initial} was used to model the neutron energy spectrum incident upon target foils co-loaded into the HFNG (see \autoref{fig:mcnp_flux}). This spectrum illustrates the forward-focused kinematics of the DD reaction subtended by the co-loaded sample foils.
+
+% \begin{figure}
+%  \centering
+%  \includegraphics[scale=0.6]{./figures/mcnp_flux.pdf}
+%  % mcnp_flux.pdf: 373x295 pixel, 72dpi, 13.16x10.41 cm, bb=0 0 373 295
+%  \caption{MCNP6-modeled neutron energy spectrum for the Berkeley HFNG, using co-loaded indium and zinc (for \ce{^{64}Cu} production) foils as an example.}
+%  \label{fig:mcnp_flux}
+% \end{figure}
 
 \begin{figure}
  \centering
- \includegraphics[scale=0.6]{./figures/mcnp_flux.pdf}
+ \includegraphics[scale=0.6]{./figures/mcnp_flux_new.pdf}
  % mcnp_flux.pdf: 373x295 pixel, 72dpi, 13.16x10.41 cm, bb=0 0 373 295
  \caption{MCNP6-modeled neutron energy spectrum for the Berkeley HFNG, using co-loaded indium and zinc (for \ce{^{64}Cu} production) foils as an example.}
  \label{fig:mcnp_flux}
 \end{figure}
 
 
+\comment{Use this version, old version (mcnp-flux.pdf), or some new combination of lines?}
 
-While this shows that the sample foils receive a very narrow energy distribution of incident neutrons, an effective neutron energy and energy bounds must be determined to constrain cross section ratio measurements. From the same MCNP6 simulation, flux tallies show a flux-weighted average neutron energy of 2.7645 MeV in the Indium foil, and average neutron energy of 2.7649 MeV in the zinc or titanium foil; these are indistinguishable within statistical uncertainty, and serve as an effective neutron energy in the loaded target foils. Due to the kinematics of D-D neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry, can be calculated as 2.7825 MeV. For this maximum energy, the number of reactions induced in a foil (containing $N_i$ target nuclei) is simply:
+While this shows that the sample foils receive a very narrow energy distribution of incident neutrons, an effective neutron energy and energy bounds must be determined to constrain cross section ratio measurements. From the same MCNP6 simulation, flux tallies show a flux-weighted average neutron energy of 2.7645 MeV in the Indium foil, and 2.7649 MeV in the zinc or titanium foil; these are indistinguishable within statistical uncertainty, and serve as an effective neutron energy in the loaded target foils. Due to the kinematics of DD neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry is 2.7825 MeV. For this maximum energy, the number of reactions induced in a foil (containing $N_i$ target nuclei) is simply:
 
 \begin{equation}
 R = N_i \int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE
@@ -519,17 +530,27 @@ From this definition, it is possible to calculate $F\pp{E'}$, the fraction of to
 F\pp{E'} = \dfrac{\int_0^{E'} \sigma(E) \dfrac{d\phi}{dE} dE}{\int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE}
 \end{equation}
 
+% \begin{figure}
+%  \centering
+%  \includegraphics[scale=0.6]{./figures/fracplot.pdf}
+%  % fracplot.pdf: 372x295 pixel, 72dpi, 13.12x10.41 cm, bb=0 0 372 295
+%  \caption{Fraction of total reactions induced in the Indium foil between the energies [0, $E'$]}
+%  \label{fig:frac_plot}
+% \end{figure}
+
 \begin{figure}
  \centering
- \includegraphics[scale=0.6]{./figures/fracplot.pdf}
+ \includegraphics[scale=0.6]{./figures/fracplot_new.pdf}
  % fracplot.pdf: 372x295 pixel, 72dpi, 13.12x10.41 cm, bb=0 0 372 295
  \caption{Fraction of total reactions induced in the Indium foil between the energies [0, $E'$]}
  \label{fig:frac_plot}
 \end{figure}
 
+\comment{Use this version, or old version (fracplot.pdf)?}
 
 
-This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. Using the flux-averaged neutron energy in the Indium foil as a centroid, this fraction of total reactions can be used to to estimate the uncertainty in effective neutron energy, which will become energy error bars in the excitation function for these reactions. Within 1 standard deviation above and below the centroid, 68.2\% of all reactions should be encompassed. Thus, the upper and lower energy uncertainties correspond to the neutron energies $E'$  such that $F\pp{E'}$ = 0.841 and $F\pp{E'}$ = 0.159, respectively. From \autoref{eqn:react_fraction},  these are found to be  F(2.7796 MeV) = 0.841 and F(2.7426 MeV) = 0.159, respectively; thus the effective neutron energy subtended by target foils is reported as $E_n$ = 2.7645 MeV + 0.0151 MeV / - 0.0219 MeV.  This 37-keV full-energy spread verifies that, at such close distances to the D-D reaction surface, loaded target foils receive a highly quasi-monoenergetic neutron flux.
+
+This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. Using the flux-averaged neutron energy in the Indium foil as a centroid, this fraction of total reactions can be used to estimate the uncertainty in effective neutron energy, which will become energy error bars in the excitation function for these reactions. Within 1 standard deviation above and below the centroid, 68.2\% of all reactions should be encompassed. Thus, the upper and lower energy uncertainties correspond to the neutron energies $E'$  such that $F\pp{E'}$ = 0.841 and $F\pp{E'}$ = 0.159, respectively. From \autoref{eqn:react_fraction},  these are found to be  F(2.7796 MeV) = 0.841 and F(2.7426 MeV) = 0.159, respectively; thus the effective neutron energy subtended by target foils is reported as $E_n$ = 2.7645 MeV + 0.0151 MeV / - 0.0219 MeV.  This 37-keV full-energy spread verifies that, at such close distances to the DD reaction surface, loaded target foils receive a highly quasi-monoenergetic neutron flux.
 
 
 
@@ -537,7 +558,7 @@ This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. Using the flux-a
 
 \subsection{Measurement of induced activities}\label{sec:spectroscopy}
 
-After irradiation, the co-loaded targets in each experiment were removed from the HFNG and transferred to a counting lab, where their induced activities could be measured via gamma ray spectroscopy. Two detectors were used in this measurement: an Ortec 80\% High-Purity Germanium (HPGe) detector (calibrated from 50 keV - 3800 keV) used for the detection of the higher-energy gamma rays in the \ce{^{64}Zn}(n,p)\ce{^{64}Cu} experiments, and an Ortec planar LEPS detector (calibrated from 15 keV - 450 keV) used for the detection of the lower-energy gamma rays in the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} experiments. These can be seen in \autoref{fig:hpge_a} and \autoref{fig:hpge_b}. Both detectors were calibrated for both energy and efficiency, using \ce{^{133}Ba}, \ce{^{137}Cs}, and \ce{^{152}Eu} sources at various distances from the front face of each detector. These efficiencies, along with gamma ray intensities for each transition, are used to convert the counts in each detected gamma ray photopeak into an activity for the activated isotopes and isomeric states. 
+After irradiation, the co-loaded targets in each experiment were removed from the HFNG and transferred to a counting lab, where their induced activities could be measured via gamma ray spectroscopy. Two detectors were used in this measurement: an Ortec 80\% High-Purity Germanium (HPGe) detector (calibrated from 50 keV - 3800 keV) used for the detection of the higher-energy gamma rays in the \ce{^{64}Zn}(n,p)\ce{^{64}Cu} experiments, and an Ortec planar Low-Energy Photon Spectrometer (LEPS) detector (calibrated from 15 keV - 450 keV) used for the detection of the lower-energy gamma rays in the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} experiments. These can be seen in \autoref{fig:hpge_a} and \autoref{fig:hpge_b}. Both detectors were calibrated for both energy and efficiency, using \ce{^{133}Ba}, \ce{^{137}Cs}, and \ce{^{152}Eu} sources at various distances from the front face of each detector. These efficiencies, along with gamma ray intensities for each transition, are used to convert the integrated counts in each gamma ray photopeak into an activity for the activated isotopes and isomeric states. 
 
 
 \begin{figure*}[H]
@@ -563,7 +584,7 @@ After irradiation, the co-loaded targets in each experiment were removed from th
 
 \comment{Does \autoref{fig:main_ge_detectors} serve any purpose? Should it be cut?}
 
-For all data collection, performed using the Ortec MAESTRO software, the foils were counted in their polyethylene holder, and placed against the front face of the detector in use, with the target foil (zinc or titanium) facing towards the front face of the detector. This position allows for the detectors to subtend the largest possible solid angle of the gamma rays emitted by the foils. Before data was collected, detector dead time was verified to be less than 5\%, to avoid coincidence summing effects. This was never an issue for any experiments, but had it been, the foils would be moved to a position of greater standoff from the detector, to reduce the dead time.  For the  \ce{^{47}Sc} production experiments, the foils were counted simultaneously using a planar LEPS detector, and for the case of \ce{^{64}Cu} production experiments, the Indium foil was first counted separately using an 80\% HPGe detector, to capture the short-lived Indium activities. After approximately 4 hours of spectra collection, the activated zinc foil was added back and counting resumed simultaneously with the indium foil. This is due to the fact that the \ce{^{115}In} can undergo the \ce{^{115}In}(n,$\gamma$)\ce{^{116}In} reaction, with a cross section of 83 mb for 2.76 MeV neutrons. \ce{^{116}In} has a 54 minute half life, decaying via $\beta^-$ with a Q value of 3.278 MeV. This decay populates several states in \ce{^{116}Sn} capable of emitting gamma rays with $E_\gamma > 2 \times 511$  keV, which pair produce in the detector crystal, contaminating the 511-keV channel used to monitor  \ce{^{64}Cu} production. By waiting for 4 hours of counting the indium foil separately, nearly all \ce{^{116}In} will have decayed, making it safe to add the activated zinc foil without worries of significant 511 keV contamination. Example spectra for each production pathway can be seen in \autoref{fig:spectra_a} and \autoref{fig:spectra_b}.
+The foils were counted in their polyethylene holder, and placed close to the front face of the detector in use, with the target foil (zinc or titanium) facing towards the front face of the detector when both target and monitor foils were counted simultaneously. This position allows for the detectors to subtend the largest possible solid angle of the gamma rays emitted by the foils. All data collection was performed using the Ortec MAESTRO software. For each experiment the detector dead time was verified to be less than 5\%, to avoid coincidence summing effects. This was never an issue for any experiments, but had it been, the foils would be moved to a position of greater standoff from the detector, to reduce the dead time.  For the  \ce{^{47}Sc} production experiments, the foils were counted simultaneously using a planar LEPS detector. For the \ce{^{64}Cu} production experiments, the Indium foil was first counted separately using an 80\% HPGe detector, to capture the short-lived Indium activities. This is due to the fact that the \ce{^{115}In} can undergo the \ce{^{115}In}(n,$\gamma$)\ce{^{116}In} reaction, with a cross section of 83 mb for 2.76 MeV neutrons. \ce{^{116}In} has a 54 minute half-life, decaying via $\beta^-$ with a Q value of 3.278 MeV. This decay populates several states in \ce{^{116}Sn} capable of emitting gamma rays with $E_\gamma > 2 \times$ the 511-keV gamma, which is produced via pair production in the detector crystal, contaminating the 511-keV channel used to monitor  \ce{^{64}Cu} production. After approximately 4 hours of spectra collection, the activated zinc foil was added back and counting resumed simultaneously with the indium foil. This allowed for decay of nearly all \ce{^{116}In}, avoiding significant 511 keV contamination. Example spectra for each production pathway can be seen in \autoref{fig:spectra_a} and \autoref{fig:spectra_b}.
 
 
 \begin{figure*}[H]
@@ -571,7 +592,8 @@ For all data collection, performed using the Ortec MAESTRO software, the foils w
     \begin{subfigure}[t]{\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \includegraphics[width=5in]{./figures/ti_foils.png}
+%         \includegraphics[width=5in]{./figures/ti_foils.png}
+        \includegraphics[width=5in]{./figures/47sc_gspectrum_alt.pdf}
         \caption{ Gamma spectrum for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} production pathway foils, counted using a planar LEPS detector}
         \label{fig:spectra_a}
     \end{subfigure}%
@@ -579,7 +601,8 @@ For all data collection, performed using the Ortec MAESTRO software, the foils w
     \begin{subfigure}[t]{\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \includegraphics[width=5in]{./figures/Sample_spectra.png}
+%         \includegraphics[width=5in]{./figures/Sample_spectra.png}
+        \includegraphics[width=5in]{./figures/64Cu_gspectrum_alt.pdf}
         \caption{Gamma spectrum for the \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production pathway foils, counted using an 80\% HPGe detector.}
                 \label{fig:spectra_b}
     \end{subfigure}
@@ -587,21 +610,26 @@ For all data collection, performed using the Ortec MAESTRO software, the foils w
      \label{fig:main_spectra}
 \end{figure*}
 
-To verify that each peak truly corresponds to assigned transitions, spectra collection for each foil was counted in a series of 15 - 30 minute sequential data acquisitions. By plotting the background-subtracted photopeak counts for a particular channel as a function of time, an exponentially decaying curve may be fit to it, to determine the half life of the transition in question. Plots of these curves for each transition in this work are seen in Figures \ref{fig:decay_curve_336} - \ref{fig:decay_curve_511}. The fitted half lives in each of these curves has strong statistical agreement with accepted half lives from the ENDF-VII/B library, indicating that these peaks are the correctly assigned transitions.
+\comment{Example spectra are messy - being updated...}
+
+To verify that each peak corresponds to the assigned transitions, spectra were acquired in a sequence of 15 - 30 minute intervals. By plotting the background-subtracted photopeak counts for a particular channel as a function of time, an exponential decay function may be fit to it, to determine the half-life of the transition in question. Plots of these curves for each transition in this work are seen in Figures \ref{fig:decay_curve_336} - \ref{fig:decay_curve_511}. The fitted functions for each transition agree (at the 1$\sigma$ confidence level) with accepted half-lives from the ENSDF library, confirming the respective peak assignments.
+
+\comment{Reference original ENSDF papers?}
 
 \begin{figure*}
     \centering
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \includegraphics[scale=0.6]{./figures/336keV_curve2.png}
+        \includegraphics[scale=0.6]{./figures/336keV_curve_new.pdf}
         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
         \label{fig:decay_curve_336}
     \end{subfigure}%
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+        \includegraphics[scale=0.6]{./figures/391keV_curve_new.pdf}
         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
         \label{fig:decay_curve_391}
     \end{subfigure}%
@@ -627,7 +655,7 @@ To verify that each peak truly corresponds to assigned transitions, spectra coll
 \comment{Need to update \autoref{fig:decay_curves} - figures are blurry}
 
 
-Background-subtracted counts in each photopeak, as well as the counting duration for each experiment, are tabulated in \autoref{tab:peak_counts}.
+The background-subtracted integrated counts in each photopeak, as well as the counting duration for each experiment, are tabulated in \autoref{tab:peak_counts}.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{graphicx}
@@ -826,7 +854,7 @@ Reaction                                                                        
 
 The results for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections can also be seen plotted in Figures \ref{fig:sc_xs} and \ref{fig:cu_xs}, respectively. It is apparent that the relative cross sections measured in the present work are consistent with both the small quantity of other literature results, and are measured to within 6\% uncertainty, lower than existing measurements. In addition, the results presented in this work show strong agreement with the recommended values from both the ENDF/B-VII.1 nuclear data library and reaction modeling results from TALYS\cite{koning2005talys}. 
 
-\comment{Add in EMPIRE data points?}
+\comment{Waiting on Lee for EMPIRE, ALICE data and language discussing differences and the significance of this.}
 
 
 \comment{Mention Shimizu data specifically? }
@@ -865,7 +893,7 @@ The results for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}
           
 \section{Summary}
 
-Using direct activation methods for thin foils as described in this work, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections have been measured for  2.7645 MeV neutrons, to within 6\% uncertainty. These measurements are consistent with experimental data and theoretical models,  and have been measured to lower uncertainty than existing measurements. The use of D-D neutron generators can be an efficient pathway for the measurement of these low-energy (n,p) reaction channels, as well as a relative method used to normalize measurements at higher neutron energies. While it reduces the neutron flux incident upon target foils, the use of collimated beam lines to irradiate foils at various angles allows a single neutron generator to perform these measurements at various other energies throughout the D-D neutron emission energy spectrum. 
+Using direct activation methods for thin foils as described in this work, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections have been measured for  2.7645 MeV neutrons, to within 6\% uncertainty. These measurements are consistent with experimental data and theoretical models,  and have been measured to lower uncertainty than existing measurements. The use of DD neutron generators can be an efficient pathway for the measurement of these low-energy (n,p) reaction channels, as well as a relative method used to normalize measurements at higher neutron energies. While it reduces the neutron flux incident upon target foils, the use of collimated beam lines to irradiate foils at various angles allows a single neutron generator to perform these measurements at various other energies throughout the DD neutron emission energy spectrum. 
 
 \comment{Future work? Thermal neutron measurements? Something like the following?}
 
