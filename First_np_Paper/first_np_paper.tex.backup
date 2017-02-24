@@ -343,13 +343,13 @@ The purpose of the present work is to explore the potential for using high-flux 
 
 \comment{cite Cory's paper}
 
-The present work features a pair of cross section measurements for the production of two non-standard positron emitters: \ce{^{64}Zn}(n,p)\ce{^{64}Cu} and \ce{^{47}Ti}(n,p)\ce{^{47}Sc}. \ce{^{64}Cu}  ($t_{1/2}$ = 12.7 h) undergoes $\beta^+$ decay (61.5\% branching ratio) to \ce{^{64}Ni} or $\beta^-$ decay (38.5\% branching ratio) to \ce{^{64}Zn}. The emitted 190-keV $\beta^-$ particle makes this an  attractive short-range therapeutic radionuclide, which also has the possibility for simultaneous positron emission tomography (PET) imaging for real-time dose monitoring and verification. This makes \ce{^{64}Cu} particularly attractive for emerging radiation therapy protocols. In addition, copper radiochemistry is well developed, and many existing ligands and carriers may be used for selective delivery of the radionuclide to different sites in patients. The second radionuclide studied, \ce{^{47}Sc} ($t_{1/2}$ = 3.35 d), undergoes $\beta^-$ decay to \ce{^{47}Ti}, emitting a high-intensity 159-keV gamma ray in the process. This radionuclide is  attractive as an emerging diagnostic isotope, due to the similarity of the emitted gamma ray to that of the more well-established \ce{^{99m}Tc}. However, due to the short half-life of and dwindling supplies of \ce{^{99m}Tc}, \ce{^{47}Sc} stands poised as a potential solution to this shortage, due to its longer half-life and multiple production pathways without the need for highly enriched uranium. In addition, when paired with \ce{^{44}Sc}, \ce{^{47}Sc} forms a promising \enquote{theranostic} set for use in simultaneous treatment and diagnostic applications.
+The present work features a pair of cross section measurements for the production of two non-standard positron emitters: \ce{^{64}Zn}(n,p)\ce{^{64}Cu} and \ce{^{47}Ti}(n,p)\ce{^{47}Sc}. \ce{^{64}Cu}  ($t_{1/2}$ = 12.7 h) undergoes $\beta^+$ decay (61.5\% branching ratio) to \ce{^{64}Ni} or $\beta^-$ decay (38.5\% branching ratio) to \ce{^{64}Zn}. The emitted 190-keV $\beta^-$ particle makes this an  attractive short-range therapeutic radionuclide, which also has the possibility for simultaneous positron emission tomography (PET) imaging for real-time dose monitoring and verification. This makes \ce{^{64}Cu} particularly attractive for emerging radiation therapy protocols. In addition, copper radiochemistry is well developed, and many existing ligands and carriers may be used for selective delivery of the radionuclide to different sites in patients. The second radionuclide studied, \ce{^{47}Sc} ($t_{1/2}$ = 3.35 d), undergoes $\beta^-$ decay to \ce{^{47}Ti}, emitting a high-intensity 159-keV gamma ray in the process. This radionuclide is  attractive as an emerging diagnostic isotope, due to the similarity of the emitted gamma ray to that of the more well-established \ce{^{99m}Tc}. However, due to the short half-life of and dwindling supplies of \ce{^{99m}Tc}, \ce{^{47}Sc} stands poised as a potential solution to this shortage, due to its longer half-life and multiple production pathways without the need for highly enriched uranium. In addition, when paired with \ce{^{44}Sc}, \ce{^{47}Sc} forms a promising \enquote{theranostic} set for use in simultaneous therapeutic and diagnostic applications.
 
 \comment{cite theranostic papers, etc}
 
 
 
-Current methodology in radiochemistry has been proven to successfully recover upwards of 95\% of produced \ce{^{64}Cu} and \ce{^{47}Ti} from solid target designs, without the need for additional carrier. By expanding the base of efficient reaction pathways, great advances can be made in making production of medical radionuclides more efficient and affordable for those in need.
+Current methodology in radiochemistry has been proven to successfully recover upwards of 95\% of produced \ce{^{64}Cu} and \ce{^{47}Sc} from solid target designs, without the need for additional carrier. By expanding the base of efficient reaction pathways, great advances can be made in making production of medical radionuclides more efficient and affordable for those in need.
 
 
 
@@ -364,81 +364,101 @@ Current methodology in radiochemistry has been proven to successfully recover up
 
 \comment{Regex to replace all hard figure references with LaTeX cross-references}
 
-Neutron activation was carried out via irradiation in the High-Flux Neutron Generator (HFNG), a DD neutron generator at the University of California, Berkeley, seen in  \autoref{fig:hfng_a}. This generator extracts deuterium ions from an RF-heated deuterium plasma through a nozzle, whose shape was designed to form a flat-profile beam 5 mm in diameter. This deuterium beam is incident upon a water-cooled, self-loading titanium-coated copper target, where the titanium layer acts as a reaction surface for DD fusion, producing neutrons with a well-known energy distribution as a function of lab emission angle \cite{Liskien_Paulsen_1973}. Within the center of the target (at 8 mm from the DD reaction surface), samples may be inserted prior to  HFNG startup. \autoref{fig:hfng_b} displays the target setup. At the time of the presented experiments, the machine operated under nominal conditions of a 100 kV deuterium beam extracted at 1.5 mA, creating a fluence of approximately  $\sci{1.3}{7}$ neutrons/cm$^2$ on the target.
+% Neutron activation was carried out via irradiation in the High-Flux Neutron Generator (HFNG), a DD neutron generator at the University of California, Berkeley, seen in  \autoref{fig:hfng_a}. This generator extracts deuterium ions from an RF-heated deuterium plasma through a nozzle, whose shape was designed to form a flat-profile beam 5 mm in diameter. This deuterium beam is incident upon a water-cooled, self-loading titanium-coated copper target, where the titanium layer acts as a reaction surface for DD fusion, producing neutrons with a well-known energy distribution as a function of  emission angle \cite{Liskien_Paulsen_1973}. Targets are inserted in the center of the target, approximately 8 mm from the DD reaction surface, prior to startup. \autoref{fig:hfng_b} displays a cut-away schematic of the HFNG. A 100 kV deuterium beam was extracted at 1.5 mA, creating a fluence of approximately  $\sci{1.3}{7}$ neutrons/cm$^2$ on the target.
+
+Neutron activation was carried out via irradiation in the High-Flux Neutron Generator (HFNG), a DD neutron generator at the University of California, Berkeley. This generator extracts deuterium ions from an RF-heated deuterium plasma through a nozzle, whose shape was designed to form a flat-profile beam 5 mm in diameter. This deuterium beam is incident upon a water-cooled, self-loading titanium-coated copper target, where the titanium layer acts as a reaction surface for DD fusion, producing neutrons with a well-known energy distribution as a function of  emission angle \cite{Liskien_Paulsen_1973}. Targets are inserted in the center of the target, approximately 8 mm from the DD reaction surface, prior to startup. \autoref{fig:hfng_b} displays a cut-away schematic of the HFNG. A 100 kV deuterium beam was extracted at 1.3 mA, creating a fluence of approximately  $\sci{1.3}{7}$ neutrons/cm$^2$ on the target.
 
 
-\comment{Karl: Comment or question primarily to Lee: Is it conventional to put photographs of equipment in PRC? I'm not sure it is; yes certainly for NIM, but not sure about PRC.}
 
 
-\comment{Note: all images here were included at nearly full-size. They obviously need to be reduced in size, but I included them here larger the needed, so they wouldn't be pixelated if enlarged. Shrink away :)}
 
+% \begin{figure}
+%  \centering
+% %  \includegraphics[width=\columnwidth]{./figures/IMG_20160531_183154957_HDR.jpg}
+%  \includegraphics[scale=0.06]{./figures/IMG_20160531_183154957_HDR.jpg}
+%  % IMG_20160531_183154957_HDR.jpg: 2432x4320 pixel, 72dpi, 85.80x152.40 cm, bb=0 0 2432 4320
+%  \caption{Alternate HFNG picture - \color{red}{use this or  \autoref{fig:hfng_a}?}}
+%  \label{fig:alt_HFNG}
+% \end{figure}
+
+% \begin{figure*}
+%     \centering
+%     \begin{subfigure}[t]{0.4\textwidth}
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \includegraphics[height=3in]{./figures/Capture.PNG}
+%         \caption{The UC-Berkeley High-Flux Neutron Generator,}
+%         \label{fig:hfng_a}
+%     \end{subfigure}%
+%     ~ 
+%     \begin{subfigure}[t]{0.4\textwidth}
+%         \centering
+% %         \includegraphics[width=\textwidth]{./figures/target2.png}
+%         \includegraphics[height=2in]{./figures/target2.png}
+%         \caption{Cutaway of the target chamber.}
+%                 \label{fig:hfng_b}
+%     \end{subfigure}
+%     \caption{Note: the ion source is approximately 20 cm in diameter.}
+%      \label{fig:main_HFNG}
+% \end{figure*}
 
 \begin{figure}
- \centering
-%  \includegraphics[width=\columnwidth]{./figures/IMG_20160531_183154957_HDR.jpg}
- \includegraphics[scale=0.06]{./figures/IMG_20160531_183154957_HDR.jpg}
- % IMG_20160531_183154957_HDR.jpg: 2432x4320 pixel, 72dpi, 85.80x152.40 cm, bb=0 0 2432 4320
- \caption{Alternate HFNG picture - \color{red}{use this or  \autoref{fig:hfng_a}?}}
- \label{fig:alt_HFNG}
-\end{figure}
-
-\begin{figure*}
     \centering
-    \begin{subfigure}[t]{0.4\textwidth}
-        \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \includegraphics[height=3in]{./figures/Capture.PNG}
-        \caption{The UC-Berkeley High-Flux Neutron Generator,}
-        \label{fig:hfng_a}
-    \end{subfigure}%
-    ~ 
-    \begin{subfigure}[t]{0.4\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
         \includegraphics[height=2in]{./figures/target2.png}
-        \caption{Cutaway of the target chamber.}
+        \caption{Cut-away schematic of the HFNG. Note: the ion source is approximately 20 cm in diameter.}
                 \label{fig:hfng_b}
-    \end{subfigure}
-    \caption{Note: the ion source is approximately 20 cm in diameter.}
-     \label{fig:main_HFNG}
-\end{figure*}
+%      \label{fig:main_HFNG}
+\end{figure}
 
 
-\subsection{Sample loading}\label{sec:sample_loading}
-
-Direct activation of a thin foil can be used for high-fidelity measurement of neutron-induced reactions, through subsequent decay spectroscopy. This method can provide cross sections with far lower uncertainty than neutron time-of-flight measurements, but is heavily reliant upon precisely quantifying the neutron fluence incident upon a loaded target. To avoid the introduction of this large uncertainty, 0.5-mm thin Indium foils were co-loaded along with each target foil for irradiation, with all production cross sections thus measured relative to the well-characterized \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} dosimetry standard reactions. In addition, over the energy region spanned by the DD emission spectrum, the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} reaction cross sections are nearly constant, which greatly simplifies the (Zn/In) and (Ti/In) ratio measurements. The use of this well-established ratio method removes the fluence dependence from all cross-section calculations, removing the largest source of systematic uncertainty in activation.
+\subsection{Cross section determination by relative activation}\label{sec:sample_loading}
 
 
-\begin{figure*}
+The approach used in both measurements was to irradiate foils of zinc or titanium, which were co-loaded with indium foils in order to determine their (n,p) cross sections relative to the well-established \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} neutron dosimetry standards.   \autoref{tab:foil_specs} records physical characteristics of each foil for the various irradiations. In each experiment, the co-loaded foils were irradiated for 3 hours at nominal operating conditions of 1.3 mA and 100 kV.  After irradiation, the foils were removed and placed in front of an appropriate High-Purity Germanium gamma-ray detector and the decay gamma-rays were recorded in variable-time bins.   
+
+
+
+\begin{figure}
     \centering
-    \begin{subfigure}[t]{0.3\textwidth}
-        \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \includegraphics[height=2in]{./figures/foils.png}
-        \caption{Schematic (not drawn to scale) of the foil co-loading holder for the Berkeley HFNG,}
-        \label{fig:holder_a}
-    \end{subfigure}%
-    ~ 
-    \begin{subfigure}[t]{0.3\textwidth}
-        \centering
-%         \includegraphics[width=\textwidth]{./figures/target2.png}
         \includegraphics[height=2in]{./figures/holder.pdf}
-        \caption{\color{red}{Use this or \autoref{fig:holder_a} - which is more appropriate?}}
-                \label{fig:holder_b}
-    \end{subfigure}
-     ~ 
-    \begin{subfigure}[t]{0.3\textwidth}
-        \centering
-%         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \includegraphics[height=2in]{./figures/IMG_20151103_113432563.jpg}
-        \caption{ zinc (visible) foil co-loaded on top of reference indium foil, ready for irradiation.}
-                \label{fig:holder_c}
-    \end{subfigure}
-    \caption{}
-     \label{fig:main_holders}
-\end{figure*}
+        \caption{Schematic (not drawn to scale) of the sample holder used for the Berkeley HFNG,}
+        \label{fig:holder_a}
+\end{figure}
 
-For the measurement of the \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section, a natural abundance commercial zinc foil of 1 cm diameter and 1 mm thickness was used as a target; a natural abundance titanium foil of the same dimensions was used as a target for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} reaction. For each run the target foils were co-loaded with a natural abundance Indium foil of 1 cm diameter and 0.5 mm thickness in a recess cut into a 2-mm thin polyethylene holder, as seen in \autoref{fig:main_holders}. Prior to loading, each foil was washed with isopropanol and dried, to remove any trace oils or residue that could become activated during irradiation.  \autoref{tab:foil_specs} records physical characteristics of each foil for the various irradiations. In each experiment, the co-loaded foils were irradiated for 3 hours at nominal operating conditions of 1.3 mA and 100 kV, to saturate the induced Indium isomer activity.
+% \begin{figure*}
+%     \centering
+%     \begin{subfigure}[t]{0.3\textwidth}
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \includegraphics[height=2in]{./figures/foils.png}
+%         \caption{Schematic (not drawn to scale) of the foil co-loading holder for the Berkeley HFNG,}
+%         \label{fig:holder_a}
+%     \end{subfigure}%
+%     ~ 
+%     \begin{subfigure}[t]{0.3\textwidth}
+%         \centering
+% %         \includegraphics[width=\textwidth]{./figures/target2.png}
+%         \includegraphics[height=2in]{./figures/holder.pdf}
+%         \caption{\color{red}{Use this or \autoref{fig:holder_a} - which is more appropriate?}}
+%                 \label{fig:holder_b}
+%     \end{subfigure}
+%      ~ 
+%     \begin{subfigure}[t]{0.3\textwidth}
+%         \centering
+% %         \includegraphics[width=\textwidth]{./figures/target2.png}
+%         \includegraphics[height=2in]{./figures/IMG_20151103_113432563.jpg}
+%         \caption{ zinc (visible) foil co-loaded on top of reference indium foil, ready for irradiation.}
+%                 \label{fig:holder_c}
+%     \end{subfigure}
+%     \caption{}
+%      \label{fig:main_holders}
+% \end{figure*}
+
+1 cm diameter, 1 mm thick natural abundance zinc and titanium targets were employed for the measurement. Each of these was  co-loaded with a natural abundance Indium foil of 1 cm diameter and 0.5 mm thickness in a recess cut into a 2-mm thick polyethylene holder, as seen in \autoref{fig:holder_a}, which was mounted in the HFNG target center. Prior to loading, each foil was washed with isopropanol and dried, to remove any trace oils or residue that could become activated during irradiation. 
+
 
 \comment{Regex to replace table hard link with LaTeX cross-reference.}
 
@@ -466,9 +486,12 @@ $^\text{nat}$Ti      & 99.999\%              & \ce{^{47}Ti} (7.44\%)            
 
 \subsection{Determination of effective neutron energy}\label{sec:neutron_energies}
 
-The kinematics of DD fusion at 100 keV lab energy produce neutrons of energy ranging from 2.2 to 2.85 MeV, over the lab-frame emission angular range of 0-180\degree, with respect to the incident deuteron beam. This distribution is a function of the incident deuteron kinetic energy, and has been well-documented \cite{Liskien_Paulsen_1973}; \autoref{fig:scatt_angle} displays the energy-angle distribution for the incident 100 keV deuterons used in the HFNG.
+The D(D,n)\ce{^3He} reaction at 100 keV lab energy produces neutrons with energies ranging from 2.2 to 2.85 MeV, over an angular range of 0-180\degree\ in the lab frame-of-reference with respect to the incident deuteron beam. This distribution has been well documented \cite{Liskien_Paulsen_1973} and is shown in \autoref{fig:scatt_angle} for 100 keV incident deuteron energy.
 
-\comment{Parenthetical citations, or just a list at the end? The Shimizu paper uses the latter as citation format.}
+\comment{These 2.2 to 2.85 MeV numbers do not quite correspond to the Figure. Addressing this with Joe.}
+
+
+% \comment{Parenthetical citations, or just a list at the end? The Shimizu paper uses the latter as citation format.}
 
 \begin{figure}
  \centering
