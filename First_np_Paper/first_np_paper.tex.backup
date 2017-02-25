@@ -366,7 +366,7 @@ Current methodology in radiochemistry has been proven to successfully recover up
 
 % Neutron activation was carried out via irradiation in the High-Flux Neutron Generator (HFNG), a DD neutron generator at the University of California, Berkeley, seen in  \autoref{fig:hfng_a}. This generator extracts deuterium ions from an RF-heated deuterium plasma through a nozzle, whose shape was designed to form a flat-profile beam 5 mm in diameter. This deuterium beam is incident upon a water-cooled, self-loading titanium-coated copper target, where the titanium layer acts as a reaction surface for DD fusion, producing neutrons with a well-known energy distribution as a function of  emission angle \cite{Liskien_Paulsen_1973}. Targets are inserted in the center of the target, approximately 8 mm from the DD reaction surface, prior to startup. \autoref{fig:hfng_b} displays a cut-away schematic of the HFNG. A 100 kV deuterium beam was extracted at 1.5 mA, creating a fluence of approximately  $\sci{1.3}{7}$ neutrons/cm$^2$ on the target.
 
-Neutron activation was carried out via irradiation in the High-Flux Neutron Generator (HFNG), a DD neutron generator at the University of California, Berkeley. This generator extracts deuterium ions from an RF-heated deuterium plasma through a nozzle, whose shape was designed to form a flat-profile beam 5 mm in diameter. This deuterium beam is incident upon a water-cooled, self-loading titanium-coated copper target, where the titanium layer acts as a reaction surface for DD fusion, producing neutrons with a well-known energy distribution as a function of  emission angle \cite{Liskien_Paulsen_1973}. Targets are inserted in the center of the target, approximately 8 mm from the DD reaction surface, prior to startup. \autoref{fig:hfng_b} displays a cut-away schematic of the HFNG. A 100 kV deuterium beam was extracted at 1.3 mA, creating a fluence of approximately  $\sci{1.3}{7}$ neutrons/cm$^2$ on the target.
+Neutron activation was carried out via irradiation in the High-Flux Neutron Generator (HFNG), a DD neutron generator at the University of California, Berkeley. This generator extracts deuterium ions from an RF-heated deuterium plasma through a nozzle, whose shape was designed to form a flat-profile beam 5 mm in diameter. This deuterium beam is incident upon a water-cooled, self-loading titanium-coated copper target, where the titanium layer acts as a reaction surface for DD fusion, producing neutrons with a well-known energy distribution as a function of  emission angle \cite{Liskien_Paulsen_1973}. Targets are inserted in the center of the target, approximately 8 mm from the DD reaction surface, prior to startup. \autoref{fig:hfng_b} displays a cut-away schematic of the HFNG. A 100 kV deuterium beam was extracted at 1.3 mA, creating a flux of approximately  $\sci{1.3}{7}$ neutrons/cm$^2$s on the target.
 
 
 
@@ -490,6 +490,10 @@ The D(D,n)\ce{^3He} reaction at 100 keV lab energy produces neutrons with energi
 
 \comment{These 2.2 to 2.85 MeV numbers do not quite correspond to the Figure. Addressing this with Joe.}
 
+\comment{Is the one good reference (Liskien) sufficient?}
+
+\comment{Should we say more about the neutron angular and energy distributions? Something from Cory's thesis or the NIM-A papers that are coming along?}
+
 
 % \comment{Parenthetical citations, or just a list at the end? The Shimizu paper uses the latter as citation format.}
 
@@ -501,22 +505,24 @@ The D(D,n)\ce{^3He} reaction at 100 keV lab energy produces neutrons with energi
  \label{fig:scatt_angle}
 \end{figure}
 
-Collimated beamlines can be used to select an energy group from this distribution, by permitting only neutrons within a certain angular window to be incident upon a target. Due to the compact nature of the HFNG, this would require the mounting of samples outside of the target chamber, with a distance of at least 20 cm from the DD reaction surface. This would greatly reduce the flux (to approximately 10$^4$ neutrons/s\ cm$^2$ over 4$\pi$) subtended by a single target and require longer irradiations for activation, which exacerbates the effect of simultaneous production and decay in activation measurements. Instead, the samples are mounted internally in the HFNG target chamber, separated by 5 mm of copper from the DD reaction surface. This allows the samples to subtend a fairly narrow ($\sim$28\degree) angle of the forward-focused neutrons, while maintaining the high (approximately $\sci{1.3}{7}$neutrons/s\ cm$^2$ ) flux for activations. 
+Since the samples are separated by only  8 mm from the DD reaction surface they  subtend a fairly significant  (~28\degree) angular range and experience an impressive  (approximately $\sci{1.3}{7}$neutrons/cm$^2$ s) neutron flux. This stands in contrast to other measurements which feature collimated beams and significantly lower total neutron flux.  
 
-\comment{Make global flux / fluence unification}
+
+
 
 \begin{figure}
  \centering
  %trim option's parameter order: left bottom right top
  \includegraphics[trim = 0mm 0mm 2mm 0mm, clip,width=\columnwidth]{./figures/mcnp_vised2.png}
  % mcnp_vised2.PNG.png: 688x443 pixel, 96dpi, 18.21x11.72 cm, bb=0 0 516 332
- \caption{MCNP6 model of the Berkeley HFNG target chamber, with reference scale. The co-loaded foils can be seen in the target chamber center.}
+ \caption{MCNP6 model of the HFNG target chamber, with reference scale. The co-loaded foils can be seen in the target chamber center.  The ovals indicate the location of water cooling channels.}
  \label{fig:mcnp_vised}
 \end{figure}
 
-\comment{Need to replace this figure - coming from Mauricio?}
+\comment{Need to replace this figure w/ non-capitalized labels - this figure needs significant work, and I would appreciate anyone who can provide a better one}
 
-To determine the energy distribution of neutrons incident upon the loaded foils following production and transport, the Monte Carlo N-Particle transport code  MCNP6 \cite{goorley2013initial} was used to model the neutron energy spectrum incident upon target foils co-loaded into the HFNG (see \autoref{fig:mcnp_flux}). This spectrum illustrates the forward-focused kinematics of the DD reaction subtended by the co-loaded sample foils.
+The Monte Carlo N-Particle transport code  MCNP6 \cite{goorley2013initial} was used to model the neutron energy spectrum incident upon target foils co-loaded into the HFNG (see \autoref{fig:mcnp_flux}). This spectrum illustrates the forward-focused kinematics of the DD reaction subtended by the co-loaded sample foils.
+
 
 % \begin{figure}
 %  \centering
@@ -530,14 +536,16 @@ To determine the energy distribution of neutrons incident upon the loaded foils 
  \centering
  \includegraphics[scale=0.6]{./figures/mcnp_flux_new.pdf}
  % mcnp_flux.pdf: 373x295 pixel, 72dpi, 13.16x10.41 cm, bb=0 0 373 295
- \caption{MCNP6-modeled neutron energy spectrum for the Berkeley HFNG, using co-loaded indium and zinc (for \ce{^{64}Cu} production) foils as an example.}
+ \caption{MCNP6-modeled neutron energy spectrum for the HFNG.  The solid lines show the spectrum at the location of the indium and the target foil respectively. The dotted and dashed lines show the same with the target itself \enquote{voided} to remove scattering contributions.  Less than 1\%  of the neutrons incident on the foils can be attributed to scatter in the neutron production target.}
  \label{fig:mcnp_flux}
 \end{figure}
 
 
-\comment{Use this version, old version (mcnp-flux.pdf), or some new combination of lines?}
 
-While this shows that the sample foils receive a very narrow energy distribution of incident neutrons, an effective neutron energy and energy bounds must be determined to constrain cross section ratio measurements. From the same MCNP6 simulation, flux tallies show a flux-weighted average neutron energy of 2.7645 MeV in the Indium foil, and 2.7649 MeV in the zinc or titanium foil; these are indistinguishable within statistical uncertainty, and serve as an effective neutron energy in the loaded target foils. Due to the kinematics of DD neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry is 2.7825 MeV. For this maximum energy, the number of reactions induced in a foil (containing $N_i$ target nuclei) is simply:
+
+%\comment{Use this version, old version (mcnp-flux.pdf), or some new combination of lines?}
+
+While this shows that the sample foils experience a very narrow energy distribution of incident neutrons, an effective neutron energy window must be determined. The MCNP6 simulation shows an identical flux-weighted average neutron energy of 2.765 MeV for both the Indium and target foils to the 1 keV level. Due to the kinematics of DD neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry is 2.783 MeV. For this maximum energy, the number of reactions induced in a foil (containing $N_i$ target nuclei) is given by:
 
 \begin{equation}
 R = N_i \int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE
@@ -552,6 +560,9 @@ From this definition, it is possible to calculate $F\pp{E'}$, the fraction of to
 F\pp{E'} = \dfrac{\int_0^{E'} \sigma(E) \dfrac{d\phi}{dE} dE}{\int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE}
 \end{equation}
 
+This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}.
+
+
 % \begin{figure}
 %  \centering
 %  \includegraphics[scale=0.6]{./figures/fracplot.pdf}
@@ -564,7 +575,8 @@ F\pp{E'} = \dfrac{\int_0^{E'} \sigma(E) \dfrac{d\phi}{dE} dE}{\int_0^{E_{max}} \
  \centering
  \includegraphics[scale=0.6]{./figures/fracplot_new.pdf}
  % fracplot.pdf: 372x295 pixel, 72dpi, 13.12x10.41 cm, bb=0 0 372 295
- \caption{Fraction of total reactions induced in the Indium foil between the energies [0, $E'$]}
+ \caption{Fraction of total reactions induced in the Indium foil between the energies [0, $E'$]. The red arrows indicate the energy region that corresponds to 67% of the total activation.  
+}
  \label{fig:frac_plot}
 \end{figure}
 
