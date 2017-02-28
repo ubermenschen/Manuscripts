@@ -13,6 +13,14 @@ J.~T. Goorley, M.~R. James, T.~E. Booth, F.~B. Brown, J.~S. Bull, L.~J. Cox,
   Waters, T.~Wilcox, and A.~J. Zukaitis, ``{Initial MCNP6 release Overview -
   MCNP6 version 1.0},'' {\em LA-UR-13-22934}, 2013.
 
+\bibitem{radford2000radware}
+D.~C. Radford, ``{Notes on the use of the program gf3},'' 2000.
+
+\bibitem{Radford1995}
+D.~C. Radford, ``{ESCL8R and LEVIT8R: Software for interactive graphical
+  analysis of HPGe coincidence data sets},'' {\em Nuclear Inst. and Methods in
+  Physics Research, A}, vol.~361, pp.~297--305, jul 1995.
+
 \bibitem{koning2005talys}
 A.~J. Koning, S.~Hilaire, and M.~C. Duijvestijn, ``{TALYS: Comprehensive
   nuclear reaction modeling},'' in {\em AIP Conference Proceedings}, vol.~769,

@@ -4,45 +4,45 @@ The top-level auxiliary file: first_np_paper.aux
 The style file: ieeetr.bst
 Database file #1: ../../library.bib
 Warning--can't use both volume and number fields in koning2005talys
-You've used 3 entries,
+You've used 5 entries,
             1876 wiz_defined-function locations,
-            499 strings with 4514 characters,
-and the built_in function-call counts, 1187 in all, are:
-= -- 93
-> -- 90
+            511 strings with 4773 characters,
+and the built_in function-call counts, 1614 in all, are:
+= -- 139
+> -- 98
 < -- 0
-+ -- 31
-- -- 28
-* -- 108
-:= -- 191
-add.period$ -- 3
-call.type$ -- 3
-change.case$ -- 3
++ -- 35
+- -- 30
+* -- 133
+:= -- 247
+add.period$ -- 5
+call.type$ -- 5
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 48
-empty$ -- 88
-format.name$ -- 28
-if$ -- 263
+cite$ -- 6
+duplicate$ -- 68
+empty$ -- 134
+format.name$ -- 30
+if$ -- 370
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 3
-newline$ -- 12
-num.names$ -- 3
-pop$ -- 9
+int.to.str$ -- 5
+missing$ -- 4
+newline$ -- 18
+num.names$ -- 5
+pop$ -- 17
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 35
+skip$ -- 54
 stack$ -- 0
-substring$ -- 72
-swap$ -- 22
+substring$ -- 104
+swap$ -- 31
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 9
-width$ -- 4
-write$ -- 32
+while$ -- 14
+width$ -- 6
+write$ -- 49
 (There was 1 warning)

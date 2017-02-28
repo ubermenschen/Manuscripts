@@ -560,7 +560,7 @@ From this definition, it is possible to calculate $F\pp{E'}$, the fraction of to
 F\pp{E'} = \dfrac{\int_0^{E'} \sigma(E) \dfrac{d\phi}{dE} dE}{\int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE}
 \end{equation}
 
-This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}.
+% This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}.      - note: moved to next paragraph, for better flow.
 
 
 % \begin{figure}
@@ -575,16 +575,20 @@ This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}.
  \centering
  \includegraphics[scale=0.6]{./figures/fracplot_new.pdf}
  % fracplot.pdf: 372x295 pixel, 72dpi, 13.12x10.41 cm, bb=0 0 372 295
- \caption{Fraction of total reactions induced in the Indium foil between the energies [0, $E'$]. The red arrows indicate the energy region that corresponds to 67% of the total activation.  
-}
+ \caption{Fraction of total reactions induced in the Indium foil between the energies [0, $E'$]. The red arrows indicate the energy region that corresponds to 67\% of the total activation.}
  \label{fig:frac_plot}
 \end{figure}
 
-\comment{Use this version, or old version (fracplot.pdf)?}
+%\comment{Use this version, or old version (fracplot.pdf)?}
+
+\comment{Change \autoref{fig:frac_plot} text from the $\pm 1\sigma$ to 68.2\%}
+
+This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. The fraction of total reactions in the indium foil can be used to characterize the effective neutron energy bin.  Our approach, in analogy to the Gaussian quantity $\sigma$, will be to use a horizontal \enquote{error bar}  to represent the energy range responsible for 68.2\% of the reactions taking place.  Using this approach, we report the effective energy bin as being $E_n$ = 2.7645 MeV + 0.0151 MeV / - 0.0219 MeV.  This 37-keV full-energy spread verifies that, at such close distances to the DD reaction surface, loaded target foils receive a quasi-monoenergetic neutron flux.
+
+% \comment{Truncate sig figs later on, after discussing systematic errors.}
 
 
 
-This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. Using the flux-averaged neutron energy in the Indium foil as a centroid, this fraction of total reactions can be used to estimate the uncertainty in effective neutron energy, which will become energy error bars in the excitation function for these reactions. Within 1 standard deviation above and below the centroid, 68.2\% of all reactions should be encompassed. Thus, the upper and lower energy uncertainties correspond to the neutron energies $E'$  such that $F\pp{E'}$ = 0.841 and $F\pp{E'}$ = 0.159, respectively. From \autoref{eqn:react_fraction},  these are found to be  F(2.7796 MeV) = 0.841 and F(2.7426 MeV) = 0.159, respectively; thus the effective neutron energy subtended by target foils is reported as $E_n$ = 2.7645 MeV + 0.0151 MeV / - 0.0219 MeV.  This 37-keV full-energy spread verifies that, at such close distances to the DD reaction surface, loaded target foils receive a highly quasi-monoenergetic neutron flux.
 
 
 
@@ -592,43 +596,47 @@ This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. Using the flux-a
 
 \subsection{Measurement of induced activities}\label{sec:spectroscopy}
 
-After irradiation, the co-loaded targets in each experiment were removed from the HFNG and transferred to a counting lab, where their induced activities could be measured via gamma ray spectroscopy. Two detectors were used in this measurement: an Ortec 80\% High-Purity Germanium (HPGe) detector (calibrated from 50 keV - 3800 keV) used for the detection of the higher-energy gamma rays in the \ce{^{64}Zn}(n,p)\ce{^{64}Cu} experiments, and an Ortec planar Low-Energy Photon Spectrometer (LEPS) detector (calibrated from 15 keV - 450 keV) used for the detection of the lower-energy gamma rays in the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} experiments. These can be seen in \autoref{fig:hpge_a} and \autoref{fig:hpge_b}. Both detectors were calibrated for both energy and efficiency, using \ce{^{133}Ba}, \ce{^{137}Cs}, and \ce{^{152}Eu} sources at various distances from the front face of each detector. These efficiencies, along with gamma ray intensities for each transition, are used to convert the integrated counts in each gamma ray photopeak into an activity for the activated isotopes and isomeric states. 
+After irradiation, the co-loaded targets were removed from the HFNG and transferred to a counting lab, where their induced activities could be measured via gamma ray spectroscopy. Two detectors were used in this measurement. An Ortec 80\% High-Purity Germanium (HPGe) detector was used for the detection of the positron annihilation radiation from the \ce{^{64}Cu}  decay, the 336 keV gamma-ray from the decay of the \ce{^{115m}In}  isomer and the 391 keV gamma-ray from the \ce{^{113m}In}  isomer. An Ortec planar Low-Energy Photon Spectrometer (LEPS)  was used for the detection of the lower-energy 159 keV gamma-ray from \ce{^{47}Sc} as well as the two indium isomers mentioned above. Both detectors were calibrated for energy and efficiency, using \ce{^{133}Ba}, \ce{^{137}Cs}, and \ce{^{152}Eu} sources at various distances from the front face of each detector. These efficiencies, along with gamma ray intensities for each transition, are used to convert the integrated counts in each gamma ray photopeak into an activity for the activated isotopes and isomeric states. 
+
+\comment{You should add a table listing the gamma-ray properties for the indium isomers and the 64Cu and 47Sc decay lines. This should include the proper NDS citation.}
 
 
-\begin{figure*}[H]
-    \centering
-    \begin{subfigure}[t]{0.7\textwidth}
-        \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \includegraphics[height=2.8in]{./figures/IMG_20160531_182618557_HDR.jpg}
-        \caption{ Ortec 80\% HPGe detector}
-        \label{fig:hpge_a}
-    \end{subfigure}%
-    ~ 
-    \begin{subfigure}[t]{0.28\textwidth}
-        \centering
-%         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \includegraphics[height=2.8in]{./figures/IMG_20160531_182635712_HDR.jpg}
-        \caption{Ortec planar LEPS detector}
-                \label{fig:hpge_b}
-    \end{subfigure}
-    \caption{High-Purity Germanium Detectors used for gamma spectroscopy of the activated foils.}
-     \label{fig:main_ge_detectors}
-\end{figure*}
+% \begin{figure*}[H]
+%     \centering
+%     \begin{subfigure}[t]{0.7\textwidth}
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \includegraphics[height=2.8in]{./figures/IMG_20160531_182618557_HDR.jpg}
+%         \caption{ Ortec 80\% HPGe detector}
+%         \label{fig:hpge_a}
+%     \end{subfigure}%
+%     ~ 
+%     \begin{subfigure}[t]{0.28\textwidth}
+%         \centering
+% %         \includegraphics[width=\textwidth]{./figures/target2.png}
+%         \includegraphics[height=2.8in]{./figures/IMG_20160531_182635712_HDR.jpg}
+%         \caption{Ortec planar LEPS detector}
+%                 \label{fig:hpge_b}
+%     \end{subfigure}
+%     \caption{High-Purity Germanium Detectors used for gamma spectroscopy of the activated foils.}
+%      \label{fig:main_ge_detectors}
+% \end{figure*}
+% 
+% \comment{Does \autoref{fig:main_ge_detectors} serve any purpose? Should it be cut?}
 
-\comment{Does \autoref{fig:main_ge_detectors} serve any purpose? Should it be cut?}
+The foils were counted in their polyethylene holder, 10 cm from the front face of the 80\% HPGe and 1 cm from the front face of the LEPS, with the target foil (zinc or titanium) facing towards the front face of the detector when both target and monitor foils were counted simultaneously. All data collection was performed using the Ortec MAESTRO software. For each experiment the detector dead time was verified to be less than 5\%.  No summing corrections need to be made since all of the gammas are either non-coincident or formed in a back-to-back annihilation event. This was never an issue for any experiments, but had it been, the foils would be moved to a position of greater standoff from the detector.  
 
-The foils were counted in their polyethylene holder, and placed close to the front face of the detector in use, with the target foil (zinc or titanium) facing towards the front face of the detector when both target and monitor foils were counted simultaneously. This position allows for the detectors to subtend the largest possible solid angle of the gamma rays emitted by the foils. All data collection was performed using the Ortec MAESTRO software. For each experiment the detector dead time was verified to be less than 5\%, to avoid coincidence summing effects. This was never an issue for any experiments, but had it been, the foils would be moved to a position of greater standoff from the detector, to reduce the dead time.  For the  \ce{^{47}Sc} production experiments, the foils were counted simultaneously using a planar LEPS detector. For the \ce{^{64}Cu} production experiments, the Indium foil was first counted separately using an 80\% HPGe detector, to capture the short-lived Indium activities. This is due to the fact that the \ce{^{115}In} can undergo the \ce{^{115}In}(n,$\gamma$)\ce{^{116}In} reaction, with a cross section of 83 mb for 2.76 MeV neutrons. \ce{^{116}In} has a 54 minute half-life, decaying via $\beta^-$ with a Q value of 3.278 MeV. This decay populates several states in \ce{^{116}Sn} capable of emitting gamma rays with $E_\gamma > 2 \times$ the 511-keV gamma, which is produced via pair production in the detector crystal, contaminating the 511-keV channel used to monitor  \ce{^{64}Cu} production. After approximately 4 hours of spectra collection, the activated zinc foil was added back and counting resumed simultaneously with the indium foil. This allowed for decay of nearly all \ce{^{116}In}, avoiding significant 511 keV contamination. Example spectra for each production pathway can be seen in \autoref{fig:spectra_a} and \autoref{fig:spectra_b}.
+For the  \ce{^{47}Sc} production experiments, the foils were counted simultaneously using a planar LEPS detector. For the \ce{^{64}Cu} production experiments, the Indium foil was first counted separately using an 80\% HPGe detector, to capture the short-lived Indium activities. This is due to the fact that the \ce{^{115}In}(n,$\gamma$) reaction results in the production of \ce{^{116}In} which has a 54 minute half-life and results in the production of 1097 keV (58.5\% branching), 1293 keV (84.8\% branching) and 2112 keV (15.09\% branching) gamma-rays that in turn produce a significant number of 511 keV gammas from pair-production followed by annihilation. The foils were counted together again after approximately 4 hours of separate collection, to allow for nearly all of the \ce{^{116}In} to decay. Example spectra for each production pathway can be seen in \autoref{fig:spectra_a} and \autoref{fig:spectra_b}.
 
 
-\begin{figure*}[H]
+\begin{figure*}[ht]
     \centering
     \begin{subfigure}[t]{\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[width=5in]{./figures/ti_foils.png}
         \includegraphics[width=5in]{./figures/47sc_gspectrum_alt.pdf}
-        \caption{ Gamma spectrum for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} production pathway foils, counted using a planar LEPS detector}
+        \caption{ Gamma spectrum for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} production pathway foils, counted using a LEPS detector}
         \label{fig:spectra_a}
     \end{subfigure}%
     \\
@@ -644,11 +652,10 @@ The foils were counted in their polyethylene holder, and placed close to the fro
      \label{fig:main_spectra}
 \end{figure*}
 
-\comment{Example spectra are messy - being updated...}
 
-To verify that each peak corresponds to the assigned transitions, spectra were acquired in a sequence of 15 - 30 minute intervals. By plotting the background-subtracted photopeak counts for a particular channel as a function of time, an exponential decay function may be fit to it, to determine the half-life of the transition in question. Plots of these curves for each transition in this work are seen in Figures \ref{fig:decay_curve_336} - \ref{fig:decay_curve_511}. The fitted functions for each transition agree (at the 1$\sigma$ confidence level) with accepted half-lives from the ENSDF library, confirming the respective peak assignments.
+To verify that each peak corresponds to the assigned decay product, spectra were acquired in a sequence of 15 - 30 minute intervals. The resulting time series displayed in Figures \ref{fig:decay_curve_336} - \ref{fig:decay_curve_511} allow the fitting of exponential decay functions for each nuclide and comparison of the measured half-life with literature values. The fitted functions for each transition agree (at the 1$\sigma$ confidence level) with accepted half-lives \textcolor{red}{[XXXref reference original papers for the T1/2s]}, confirming the respective peak assignments.
 
-\comment{Reference original ENSDF papers?}
+\comment{Reference original ENSDF papers}
 
 \begin{figure*}
     \centering
@@ -686,14 +693,11 @@ To verify that each peak corresponds to the assigned transitions, spectra were a
      \label{fig:decay_curves}
 \end{figure*}
 
-\comment{Need to update \autoref{fig:decay_curves} - figures are blurry}
-
-
-The background-subtracted integrated counts in each photopeak, as well as the counting duration for each experiment, are tabulated in \autoref{tab:peak_counts}.
+The spectra for the different samples were summed and the peak area over background was determined using gf3, part of the RadWare analysis package from Oak Ridge   \cite{radford2000radware, Radford1995}. The background-subtracted integrated counts in each photopeak, as well as the counting duration for each experiment, are tabulated in \autoref{tab:peak_counts}.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{graphicx}
-\begin{table*}
+\begin{table*}[H]
 \centering
 \caption{Counting times and photopeak counts for each of the (Zn/In) and (Ti/In)  experiments. \color{red}{Need Mauricio data!}}
 \label{tab:peak_counts}
@@ -738,28 +742,52 @@ Photopeak Counts, 159 keV (\ce{^{47}Sc})   &   \hrulefill            &    \hrule
 % }
 % \end{table*}
 
+
+
+\subsection{Experimental verification of incident neutron energy}\label{sec:lee_sec}
+
+As shown in \autoref{sec:sample_loading} above, the effective neutron energy depends on the angle range subtended by the sample with respect to the incident deuteron beam.  In order to determine this angle it is necessary to measure the lateral location of the beam with respect to the sample location.  This centroid of the beam was measured using a 3 x 3 array of 0.5 cm diameter indium foils.  The relative activity of these foils was then determined via post-irradiation counting of the \ce{^{115m}In} isomer ($t_{1/2}$ = 4.486 h).  \autoref{fig:in_heat_plot} below shows the measured activities for these 9 indium foils.  Based on these values we are able to verify that the beam was indeed centered on the middle of the zinc and titanium samples.   
+
+% 
+% \begin{figure}
+%  \centering
+%  \includegraphics[scale=0.6]{./figures/XXX.pdf}
+%  % fracplot.pdf: 372x295 pixel, 72dpi, 13.12x10.41 cm, bb=0 0 372 295
+%  \caption{\textcolor{red}{INSERT CAPTION HERE}}
+%  \label{fig:in_heat_plot}
+% \end{figure}
+% 
+
+\comment{cire relevant NDS article for t1/2}
+
+
+\comment{CHECK WITH ERIC for 3x3 In info and plot}
+
+
+
+
 \subsection{Calculation of measured cross sections}\label{sec:calcs_sec}
 
 
-Gamma spectroscopy analysis on the several days of collected spectra was used to measure the background-subtracted counts under each of the photopeaks of interest for the induced activities, as described in \autoref{sec:spectroscopy}. For a thin target consisting of \(N_T\) target nuclei, subjected to a constant monoenergetic neutron flux $\phi\pp{\bar{E}}$, the rate of production of the product nucleus will be:
+For a thin target consisting of \(N_T\) target nuclei (with a reaction cross section $\sigma\pp{\bar{E}}$), subjected to a constant neutron flux $\phi\pp{\bar{E}}$, the rate of production ($R$) of the product nucleus will be:
 
 \begin{equation}
 R = N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} 
 \end{equation}
 
-for a reaction with cross-section  $\sigma\pp{\bar{E}}$ at effective energy $\bar{E}$. If this irradiation lasts for  some time $t_1$, and gamma ray spectroscopy of the activated samples begins at a later time $t_2$ and ends at an even later time $t_3$, then the number of product decays (with decay constant $\lambda$) which take place between $t_2$ and $t_3$ will be:
+If this irradiation lasts for  some time $t_1$, and gamma ray spectrum acquisition begins at a later time $t_2$ and ends at  $t_3$, then the number of product decays ($D$; with decay constant $\lambda$) during the acquisition will be:
 
 
 
 \begin{equation}
 \begin{aligned}
-D &= \dfrac{R}{\lambda}\pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_2} - e^{-\lambda t_3}}
+D &= \dfrac{R}{\lambda}\pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_3} - e^{-\lambda t_2}}
 \\
-&= \dfrac{N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} }{\lambda}\pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_2} - e^{-\lambda t_3}} 
+&= \dfrac{N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} }{\lambda}\pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_3} - e^{-\lambda t_2}} 
 \end{aligned}
 \end{equation}
 
-If this decay emits a gamma ray with branching ratio $I_\gamma$ photons emitted per decay, and is detected with an absolute efficiency (photons detected / photons emitted) of $\epsilon_\gamma$, then the number of observed decays between $t_2$ and $t_3$ will be:
+If this decay emits a gamma ray with branching ratio $I_\gamma$ (photons emitted per decay), and is detected with an absolute efficiency  of $\epsilon_\gamma$ (photons detected / photons emitted), then the number of observed decays between $t_2$ and $t_3$ will be:
 
 % \begin{equation}
 % \begin{aligned}
@@ -770,20 +798,22 @@ If this decay emits a gamma ray with branching ratio $I_\gamma$ photons emitted 
 
 \begin{align}
 N_{obs} &= D \epsilon_\gamma I_\gamma \\
-&=  \epsilon_\gamma I_\gamma  \dfrac{N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} }{\lambda}\pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_2} - e^{-\lambda t_3}} \nonumber
+&=  \epsilon_\gamma I_\gamma  \dfrac{N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} }{\lambda}\pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_3} - e^{-\lambda t_2}} \nonumber
 \end{align}
 
-Rearranging in terms of the observed cross-section:
+Solving this equation for the  cross-section results in:
 
-\begin{equation}
-\sigma\pp{\bar{E}} = \dfrac{N_{obs}\lambda}{N_T \epsilon_\gamma I_\gamma  \phi\pp{\bar{E}}  \pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_2} - e^{-\lambda t_3}}}
+\begin{equation}\label{eqn:single_xs_eqn}
+\sigma\pp{\bar{E}} = \dfrac{N_{obs}\lambda}{N_T \epsilon_\gamma I_\gamma  \phi\pp{\bar{E}}  \pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_3} - e^{-\lambda t_2}}}
 \end{equation}
 
-This model, in which subscripts $P$ indicate a quantity for either the \ce{^{64}Cu} or \ce{^{47}Sc} product, subscripts $In$ indicate a quantity for either the \ce{^{113m}In} or \ce{^{115m}In} isomer, can be taken in ratio, to calculate the measured \ce{^{64}Zn}(n,p)\ce{^{64}Cu} and \ce{^{47}Ti}(n,p)\ce{^{47}Sc} production cross sections, relative to the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} inelastic scattering cross sections. Adding in a correction for the small self-attenuation of the gamma rays emitted by the activated foils, the final ratio model can be seen in \autoref{eqn:calc_eqn}:
+\autoref{eqn:single_xs_eqn} can be used to determine the unknown (n,p) cross sections relative to the well-known \ce{^{115}In}(n,n')\ce{^{115m}In} and \ce{^{113}In}(n,n')\ce{^{113m}In} inelastic scattering cross sections since the Zn and Ti samples were co-irradiated with indium foils. This approach has a number of advantages since the result is independent of neutron flux and only depends on the relative detector efficiencies at each gamma-ray energy.  \autoref{eqn:calc_eqn} shows the ratio of the cross sections determined using this approach, in which subscript $P$ indicates a quantity for either \ce{^{64}Cu} or \ce{^{47}Sc}, and subscript $In$ indicates a quantity for either the \ce{^{113m}In} or \ce{^{115m}In} isomer. A minor term was added to correct for the small self-attenuation of the gamma rays emitted by the activated foils:
+
+
 
 \begin{align}\label{eqn:calc_eqn}
-\sigma_P &= \sigma_{In} \dfrac{A_P}{A_{In}} \dfrac{N_{T,In}}{N_{T,P}} \dfrac{\lambda_P}{\lambda_{In}} \dfrac{e^{\lambda_{In}t_1}-1}{e^{\lambda_{P}t_1}-1}  \\
-&\times \dfrac{e^{-\lambda_{In}t_2}-e^{-\lambda_{In}t_3}}{e^{-\lambda_{P}t_2} - e^{-\lambda_{P}t_3}} \dfrac{\epsilon_{In}}{\epsilon_P}  \dfrac{I_{\gamma,In}}{I_{\gamma,P}} \dfrac{e^{-\mu_{In}x_{In}/2}\times e^{-\mu_{In}x_{P}}}{e^{-\mu_{P}x_{P}/2}} \nonumber
+\dfrac{\sigma_P}{\sigma_{In}} &=  \dfrac{A_P}{A_{In}} \dfrac{N_{T,In}}{N_{T,P}} \dfrac{\lambda_P}{\lambda_{In}} \dfrac{e^{\lambda_{In}t_1}-1}{e^{\lambda_{P}t_1}-1}  \\
+&\times \dfrac{e^{-\lambda_{In}t_3}-e^{-\lambda_{In}t_2}}{e^{-\lambda_{P}t_3} - e^{-\lambda_{P}t_2}} \dfrac{\epsilon_{In}}{\epsilon_P}  \dfrac{I_{\gamma,In}}{I_{\gamma,P}} \dfrac{e^{-\mu_{In}x_{In}/2}\times e^{-\mu_{In}x_{P}}}{e^{-\mu_{P}x_{P}/2}} \nonumber
 \end{align}
 
 where:
@@ -813,6 +843,9 @@ where:
 
 \item and $x$ is the thickness of foil traversed by a particular decay gamma ray [cm] 
 \end{itemize}
+
+In addition to the \ce{^{115}In}(n,n')\ce{^{115m}In} reference cross section, the \ce{^{115}In}(n,$\gamma$)\ce{^{116}In}  ($t_{1/2}$ = 55 min) activity can be used to determine the 64Zn(n,p) and 47Ti(n,p) cross section.  The capture activity is potentially subject to contamination from lower energy, especially thermal, “room return” neutrons since the (n,gamma) cross section at 25 meV is approximately YYY MeV greater than at 2.7 MeV.    
+
 
 
 With the exception of decay constants, which are assumed to be exact, each of the parameters in this model carries statistical uncertainty in measurement. In lieu of a differential error propagation, the total statistical error $\delta_\sigma$ is taken as the quadrature sum of all of the other errors  $\delta_i$:
