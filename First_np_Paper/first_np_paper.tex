@@ -923,49 +923,55 @@ Using the ratio method described here, the cross sections for the \ce{^{47}Ti}(n
 Reaction                                                                            & $\sigma$($E_n$ = 2.7645 MeV) (mb)                                                                       \\ \midrule
 \begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{113}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}45.953 $\pm$ 3.351, \\ 46.493 $\pm$ 2.805, \\ 46.9 $\pm$ 3.189\end{tabular}  \\
 \begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}49.716 $\pm$ 3.335, \\ 49.011 $\pm$ 2.698, \\ XXXX $\pm$ XXXXXX\end{tabular} \\
-\begin{tabular}[c]{@{}c@{}}\ce{^{47}Ti}(n,p)\ce{^{47}Sc} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}25.901 $\pm$ 1.7089, \\ XXXXX $\pm$ XXXXX\end{tabular}                   \\ \bottomrule
+\begin{tabular}[c]{@{}c@{}}\ce{^{47}Ti}(n,p)\ce{^{47}Sc} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}25.901 $\pm$ 1.7089, \\ XXXXX $\pm$ XXXXX *\end{tabular}                   \\ \bottomrule
 \end{tabular}
 \end{table}
 
 \comment{Truncate sig figs in En in \autoref{tab:xs_results} }
 
-The results for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections can also be seen plotted in Figures \ref{fig:sc_xs} and \ref{fig:cu_xs}, respectively. It is apparent that the relative cross sections measured in the present work are consistent with both the small quantity of other literature results, and are measured to within 6\% uncertainty, lower than existing measurements. In addition, the results presented in this work show strong agreement with the recommended values from both the ENDF/B-VII.1 nuclear data library and reaction modeling results from TALYS\cite{koning2005talys}. 
+Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} present the determined cross sections for the production of  \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu}  relative to literature data retrieved from EXFOR \textcolor{red}{[XXXXref original experimental papers]}. The weighted average of our measurements give \textcolor{red}{XXXXXX} for \ce{^{64}Zn}(n,p)\ce{^{64}Cu} and \textcolor{red}{YYYYYY} for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}. The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section measured in this work is consistent with  other literature results, but with a smaller uncertainty (\textcolor{red}{6\%}). However, in the case of the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section, our results are consistent with the results from the \textcolor{red}{XXX groups} and both the ENDF/B-VII.1\textcolor{red}{[XXXref citation]} and TALYS\textcolor{red}{[XXXref citation]} values, but significantly below the results from \textcolor{red}{YYY}.  
 
-\comment{Waiting on Lee for EMPIRE, ALICE data and language discussing differences and the significance of this.}
+\comment{fill in missing data, verify \% uncertainty, fill in missing group names, verify ENDF/B-VII.1 as latest}
 
+% \cite{koning2005talys}. 
 
-\comment{Mention Shimizu data specifically? }
+\comment{Also make sure to cite the original experimental work either here, or later when you review the values we determined.}
 
-\comment{Add a zoomed-in view like in \autoref{fig:cu_xs}?}
+\comment{Add Shimizu data into plots , as well as 115In capture points}
+
+\comment{Change to zoomed-in view like in \autoref{fig:cu_xs} as appropriate}
 
 \begin{figure}
  \centering
  \includegraphics[scale=0.6]{./figures/47Sc_fixed.pdf}
  % 47Sc_fixed.pdf: 375x294 pixel, 72dpi, 13.23x10.37 cm, bb=0 0 375 294
- \caption{Measured \ce{^{47}Ti}(n,p)\ce{^{47}Sc} relative production cross section.}
+ \caption{Measured \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section relative to indium activation.}
  \label{fig:sc_xs}
 \end{figure}
 
-\begin{figure}
- \centering
- \includegraphics[scale=0.6]{./figures/64cu_fixed.pdf}
- % 47Sc_fixed.pdf: 375x294 pixel, 72dpi, 13.23x10.37 cm, bb=0 0 375 294
- \caption{Measured \ce{^{64}Zn}(n,p)\ce{^{64}Cu} relative production cross section}
- \label{fig:cu_xs}
-\end{figure}
+% \begin{figure}
+%  \centering
+%  \includegraphics[scale=0.6]{./figures/64cu_fixed.pdf}
+%  % 47Sc_fixed.pdf: 375x294 pixel, 72dpi, 13.23x10.37 cm, bb=0 0 375 294
+%  \caption{Measured \ce{^{64}Zn}(n,p)\ce{^{64}Cu} relative production cross section}
+%  \label{fig:cu_xs}
+% \end{figure}
 
 
 \begin{figure}
  \centering
  \includegraphics[scale=0.6]{./figures/64cu_fixed_zoom.pdf}
  % 47Sc_fixed.pdf: 375x294 pixel, 72dpi, 13.23x10.37 cm, bb=0 0 375 294
- \caption{A zoomed-in view of \autoref{fig:cu_xs}.}
+ \caption{Measured \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section relative to indium activation.}
  \label{fig:cu_xs_zoom}
 \end{figure}
 
 
+As mentioned above, the cross section can be obtained relative to both the inelastic scattering cross sections on \ce{^{113}In} and \ce{^{115}In}, and the capture of fast, unmoderated neutrons on \ce{^{115}In}.  The results from both are consistent, indicating that the contributions from thermal \enquote{room return} neutrons are negligible for samples mounted in the center of the HFNG.  This builds confidence in our results, and highlights the potential of using the HFNG for fast neutron capture reactions via activation.  This will be discussed in greater detail in the conclusion section below.  
 
 
+
+\comment{verify this claim!}
 
           
 \section{Summary}

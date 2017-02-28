@@ -3,46 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: first_np_paper.aux
 The style file: ieeetr.bst
 Database file #1: ../../library.bib
-Warning--can't use both volume and number fields in koning2005talys
-You've used 5 entries,
+You've used 4 entries,
             1876 wiz_defined-function locations,
-            511 strings with 4773 characters,
-and the built_in function-call counts, 1614 in all, are:
-= -- 139
-> -- 98
+            503 strings with 4576 characters,
+and the built_in function-call counts, 1203 in all, are:
+= -- 96
+> -- 87
 < -- 0
-+ -- 35
-- -- 30
-* -- 133
-:= -- 247
-add.period$ -- 5
-call.type$ -- 5
-change.case$ -- 5
++ -- 31
+- -- 27
+* -- 102
+:= -- 198
+add.period$ -- 4
+call.type$ -- 4
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 68
-empty$ -- 134
-format.name$ -- 30
-if$ -- 370
+cite$ -- 4
+duplicate$ -- 46
+empty$ -- 94
+format.name$ -- 27
+if$ -- 268
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 4
-newline$ -- 18
-num.names$ -- 5
-pop$ -- 17
+int.to.str$ -- 4
+missing$ -- 3
+newline$ -- 15
+num.names$ -- 4
+pop$ -- 13
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 54
+skip$ -- 35
 stack$ -- 0
-substring$ -- 104
-swap$ -- 31
+substring$ -- 64
+swap$ -- 19
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 14
-width$ -- 6
-write$ -- 49
-(There was 1 warning)
+warning$ -- 0
+while$ -- 10
+width$ -- 5
+write$ -- 38
