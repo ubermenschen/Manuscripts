@@ -844,11 +844,15 @@ where:
 \item and $x$ is the thickness of foil traversed by a particular decay gamma ray [cm] 
 \end{itemize}
 
-In addition to the \ce{^{115}In}(n,n')\ce{^{115m}In} reference cross section, the \ce{^{115}In}(n,$\gamma$)\ce{^{116}In}  ($t_{1/2}$ = 55 min) activity can be used to determine the 64Zn(n,p) and 47Ti(n,p) cross section.  The capture activity is potentially subject to contamination from lower energy, especially thermal, “room return” neutrons since the (n,gamma) cross section at 25 meV is approximately YYY MeV greater than at 2.7 MeV.    
+In addition to the \ce{^{115}In}(n,n')\ce{^{115m}In} reference cross section, the \ce{^{115}In}(n,$\gamma$)\ce{^{116m}In}  ($t_{1/2}$ = 54.29 min) activity can be used to determine the  \ce{^{64}Zn}(n,p) and \ce{^{47}Ti}(n,p) cross section.  The capture activity is potentially subject to contamination from lower energy, especially thermal, \enquote{room return} neutrons since the (n,$\gamma$) cross section at 25 meV is approximately YYY MeV greater than at 2.7 MeV.    
 
+\comment{cite relevant NDS article}
 
+\comment{add appropriate numbers to (n,g) cross sections}
 
-With the exception of decay constants, which are assumed to be exact, each of the parameters in this model carries statistical uncertainty in measurement. In lieu of a differential error propagation, the total statistical error $\delta_\sigma$ is taken as the quadrature sum of all of the other errors  $\delta_i$:
+\comment{cite IRDFF somewhere?}
+
+With the exception of decay constants, which have negligible uncertainty compared to other sources of uncertainties in this work, each of the parameters in this model carries a statistical uncertainty. Based on the assumption that these uncertainties are independent, the total relative statistical uncertainty $\delta_\sigma$ is calculated by taking the quadrature sum of the relative uncertainties of each parameter  $\delta_i$:
 
 \begin{equation}
 \delta_\sigma = \norm{ \ensuremath{\vec{\delta}} }_2 = \sqrt{\sum_{i=1}^N  \delta_i^2  }

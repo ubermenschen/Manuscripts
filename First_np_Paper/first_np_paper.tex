@@ -697,7 +697,7 @@ The spectra for the different samples were summed and the peak area over backgro
 
 % Please add the following required packages to your document preamble:
 % \usepackage{graphicx}
-\begin{table*}[H]
+\begin{table*}
 \centering
 \caption{Counting times and photopeak counts for each of the (Zn/In) and (Ti/In)  experiments. \color{red}{Need Mauricio data!}}
 \label{tab:peak_counts}
@@ -864,9 +864,13 @@ This total statistical uncertainty will be plotted as the cross-section error ba
 
 \subsection{Systematic errors}
 
-XXXXXXXXXXXXXXXX
+The largest source of systematic uncertainty in the cross section determined via the \enquote{ratio approach} is the \textcolor{red}{YYY\%} uncertainty in the \ce{^{115}In}(n,n')\ce{^{115m}In}  cross section and the \textcolor{red}{YYY\%} uncertainty in the \ce{^{113}In}(n,n')\ce{^{113m}In}  cross section.  An additional uncertainty arises from the fact that the Zn/Ti samples are not located at exactly the same location as the indium monitor foils, and are therefore not subject to precisely the same neutron flux.  However, the MCNP6 simulations shown in \autoref{fig:mcnp_flux} indicate that the difference in the flux that the two foils are subjected to is less than \textcolor{red}{YY\%}.  Other monitor foils could be used instead of indium, with \ce{^{57}Ni}(n,p)\ce{^{57}Co} being one possible candidate, but the 4.486 hour and 99.476 minute half-lives of the \ce{^{115m}In} and \ce{^{113m}In} isomers \textcolor{red}{[XXXref NDS]}, respectively, makes indium a better candidate for measuring the production of radionuclides with lifetimes much less than 77+ days. The largest source of uncertainty in energy window arises from uncertainties in the actual dimension of the deuteron beam on the production target.  We believe, based on \enquote{burn marks} on the production target that the beam was approximately circular, with a flat intensity profile and a 5 mm diameter.  However, every 1 mm change in the beam radius would cause a \textcolor{red}{XXX} MeV shift in the centroid and a \textcolor{red}{YYY} MeV change in the effective energy bin.  
 
-\comment{Not sure what else we need to consider for systematics...}
+
+\comment{filling in missing data}
+
+
+\comment{Use your energy-angle figure from Lisken above to estimate these numbers. You can point to the figure in the text if you'd like.}
 
 
 
@@ -883,13 +887,13 @@ XXXXXXXXXXXXXXXX
 \section{Results}
 
 
-Using the ratio methods described here, the cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} reactions have been calculated for incident neutron energy of 2.7645 MeV,  + 0.0151 MeV / - 0.0219 MeV. These values are recorded in \autoref{tab:xs_results}.
+Using the ratio method described here, the cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} reactions have been calculated for incident neutron energy of 2.7645 MeV,  + 0.0151 MeV / - 0.0219 MeV. These values are recorded in \autoref{tab:xs_results}.
 
 \comment{Need Mauricio's Cu point w/ more sigfigs. Need Mauricio's Sc point too}
 
-\comment{How many sig figs to round uncertainties to in table?}
+\comment{Truncate sig figs here - Note that the systematic uncertainty you calculated in the previous paragraph will provide a natural limit on the number of significant figures you quote for the energy window.}
 
-\comment{Report all 3 values in table? Report a weighted average between them?}
+\comment{Report a weighted average between the solo values, insert in text}
 
 % 
 % % Please add the following required packages to your document preamble:
@@ -912,7 +916,7 @@ Using the ratio methods described here, the cross sections for the \ce{^{47}Ti}(
 % \usepackage{booktabs}
 \begin{table}
 \centering
-\caption{Results of cross section measurement. }
+\caption{Results of cross section measurement. Note that the last data point for the \ce{^{47}Sc} measurement (marked with *) was performed at a slightly different beam spot location, leading to a difference in effective neutron energy.}
 \label{tab:xs_results}
 \begin{tabular}{@{}cc@{}}
 \toprule
@@ -922,6 +926,8 @@ Reaction                                                                        
 \begin{tabular}[c]{@{}c@{}}\ce{^{47}Ti}(n,p)\ce{^{47}Sc} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}25.901 $\pm$ 1.7089, \\ XXXXX $\pm$ XXXXX\end{tabular}                   \\ \bottomrule
 \end{tabular}
 \end{table}
+
+\comment{Truncate sig figs in En in \autoref{tab:xs_results} }
 
 The results for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections can also be seen plotted in Figures \ref{fig:sc_xs} and \ref{fig:cu_xs}, respectively. It is apparent that the relative cross sections measured in the present work are consistent with both the small quantity of other literature results, and are measured to within 6\% uncertainty, lower than existing measurements. In addition, the results presented in this work show strong agreement with the recommended values from both the ENDF/B-VII.1 nuclear data library and reaction modeling results from TALYS\cite{koning2005talys}. 
 
