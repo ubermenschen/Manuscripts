@@ -3,44 +3,48 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: first_np_paper.aux
 The style file: ieeetr.bst
 Database file #1: ../../library.bib
-You've used 4 entries,
+Warning--empty journal in Updegraff2013
+Warning--empty institution in NSACIsotopesSubcommittee2015
+Warning--empty institution in Qaim2011
+You've used 17 entries,
             1876 wiz_defined-function locations,
-            503 strings with 4576 characters,
-and the built_in function-call counts, 1203 in all, are:
-= -- 96
-> -- 87
-< -- 0
-+ -- 31
-- -- 27
-* -- 102
-:= -- 198
-add.period$ -- 4
-call.type$ -- 4
-change.case$ -- 4
+            593 strings with 7548 characters,
+and the built_in function-call counts, 5235 in all, are:
+= -- 501
+> -- 270
+< -- 1
++ -- 97
+- -- 80
+* -- 423
+:= -- 779
+add.period$ -- 17
+call.type$ -- 17
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 46
-empty$ -- 94
-format.name$ -- 27
-if$ -- 268
+cite$ -- 20
+duplicate$ -- 234
+empty$ -- 428
+format.name$ -- 80
+if$ -- 1224
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 3
-newline$ -- 15
-num.names$ -- 4
-pop$ -- 13
+int.to.str$ -- 17
+missing$ -- 14
+newline$ -- 54
+num.names$ -- 17
+pop$ -- 36
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 35
+skip$ -- 179
 stack$ -- 0
-substring$ -- 64
-swap$ -- 19
-text.length$ -- 0
+substring$ -- 376
+swap$ -- 108
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 10
-width$ -- 5
-write$ -- 38
+warning$ -- 3
+while$ -- 53
+width$ -- 19
+write$ -- 168
+(There were 3 warnings)

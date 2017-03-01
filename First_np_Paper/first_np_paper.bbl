@@ -1,4 +1,69 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Updegraff2013}
+D.~Updegraff, S.~a. Hoedl, and D.~Ph, ``{Nuclear Medicine without Nuclear
+  Reactors or Uranium Enrichment},'' 2013.
+
+\bibitem{Lewis2003}
+M.~R. Lewis, M.~Wang, D.~B. Axworthy, L.~J. Theodore, R.~W. Mallet, A.~R.
+  Fritzberg, M.~J. Welch, and C.~J. Anderson, ``{In Vivo Evaluation of
+  Pretargeted 64Cu for Tumor Imaging and Therapy},'' {\em Journal of Nuclear
+  Medicine}, vol.~44, pp.~1284--1292, aug 2003.
+
+\bibitem{NSACIsotopesSubcommittee2015}
+{NSAC Isotopes Subcommittee}, ``{Meeting Isotope Needs and Capturing
+  Opportunities for the Future: The 2015 Long Range Plan for the DOE-NP Isotope
+  Program},'' tech. rep., jul 2015.
+
+\bibitem{Bandari2014}
+R.~P. Bandari, Z.~Jiang, T.~S. Reynolds, N.~E. Bernskoetter, A.~F. Szczodroski,
+  K.~J. Bassuner, D.~L. Kirkpatrick, T.~L. Rold, G.~L. Sieckman, T.~J. Hoffman,
+  J.~P. Connors, and C.~J. Smith, ``{Synthesis and biological evaluation of
+  copper-64 radiolabeled [DUPA-6-Ahx-(NODAGA)-5-Ava-BBN(7-14)NH2], a novel
+  bivalent targeting vector having affinity for two distinct biomarkers
+  (GRPr/PSMA) of prostate cancer},'' {\em Nuclear Medicine and Biology},
+  vol.~41, no.~4, pp.~355--363, 2014.
+
+\bibitem{mp500671j}
+E.~Gourni, L.~{Del Pozzo}, E.~Kheirallah, C.~Smerling, B.~Waser, J.-C. Reubi,
+  B.~M. Paterson, P.~S. Donnelly, P.~T. Meyer, and H.~R. Maecke, ``{Copper-64
+  Labeled Macrobicyclic Sarcophagine Coupled to a GRP Receptor Antagonist Shows
+  Great Promise for PET Imaging of Prostate Cancer},'' {\em Molecular
+  Pharmaceutics}, vol.~12, no.~8, pp.~2781--2790, 2015.
+
+\bibitem{Qaim2011}
+S.~M. Qaim, R.~Capote, and F.~Tarkanyi, ``{Nuclear Data for the Production of
+  Therapeutic Radionuclides},'' Tech. Rep. 473, 2011.
+
+\bibitem{Qaim201731}
+S.~M. Qaim, ``{Nuclear data for production and medical application of
+  radionuclides: Present status and future needs},'' {\em Nuclear Medicine and
+  Biology}, vol.~44, pp.~31--49, 2016.
+
+\bibitem{bhatki1969preparation}
+K.~S. Bhatki, A.~T. Rane, and M.~B. Kabadi, ``{Preparation of carrier-free
+  copper-64, 67 nuclides by liquid-liquid extraction},'' {\em Journal of
+  Radioanalytical Chemistry}, vol.~2, no.~1-2, pp.~73--77, 1969.
+
+\bibitem{mirzadeh1992spontaneous}
+S.~Mirzadeh and F.~F. Knapp, ``{Spontaneous electrochemical separation of
+  carrier-free copper-64 and copper-67 from zinc targets},'' {\em Radiochimica
+  Acta}, vol.~57, no.~4, pp.~193--200, 1992.
+
+\bibitem{Aly1971}
+H.~F. Aly and M.~A. El-Haggan, ``{Production of carrier-free scandium
+  radioisotopes from a neutron-irradiated potassium titanium oxalate target},''
+  {\em Microchimica Acta}, vol.~59, no.~1, pp.~4--8, 1971.
+
+\bibitem{Bokhari2010}
+T.~H. Bokhari, A.~Mushtaq, and I.~U. Khan, ``{Separation of no-carrier-added
+  radioactive scandium from neutron irradiated titanium},'' {\em Journal of
+  Radioanalytical and Nuclear Chemistry}, vol.~283, no.~2, pp.~389--393, 2010.
+
+\bibitem{BF02047448}
+L.~Pietrelli, L.~Mausner, and K.~Kolsky, ``{Separation of carrier-free 47Sc
+  from titanium targets},'' {\em Journal of Radioanalytical and Nuclear
+  Chemistry}, vol.~157, no.~2, pp.~335--345, 1992.
 
 \bibitem{Liskien_Paulsen_1973}
 H.~Liskien and A.~Paulsen, ``{Neutron production cross sections and energies
@@ -20,5 +85,10 @@ D.~C. Radford, ``{Notes on the use of the program gf3},'' 2000.
 D.~C. Radford, ``{ESCL8R and LEVIT8R: Software for interactive graphical
   analysis of HPGe coincidence data sets},'' {\em Nuclear Inst. and Methods in
   Physics Research, A}, vol.~361, pp.~297--305, jul 1995.
+
+\bibitem{Koning2012}
+A.~J. Koning and D.~Rochman, ``{Modern Nuclear Data Evaluation with the TALYS
+  Code System},'' {\em Nuclear Data Sheets}, vol.~113, pp.~2927--2934, dec
+  2012.
 
 \end{thebibliography}

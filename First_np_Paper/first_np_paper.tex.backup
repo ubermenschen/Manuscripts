@@ -38,6 +38,7 @@
 \usepackage{booktabs}
 \usepackage{gensymb}
 
+% \usepackage{mathtools, cuted}
 
 
 % \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
@@ -237,9 +238,15 @@
 
 \author[llnl]{J.D. Bauer}
 
+\author[geo,eps]{T.\textcolor{red}{???} Becker}
+
+
 \author[ucb,lbl]{L.A. Bernstein}
 
+
 \author[ucb]{E.F. Matthews}
+
+\author[geo,eps]{P.R. Renne}
 
 \author[geo,eps]{D. Rutte}
 
@@ -341,7 +348,7 @@ In contrast, while the neutron spectrum from a DD reaction, which ranges from ap
 
 The purpose of the present work is to explore the potential for using high-flux neutron generators to make high-specific activity samples of radionuclides at the mCi level for local use in the application community.  The research group at UC-Berkeley has been developing a High Flux Neutron Generator (HFNG) that features an internal target where samples can be placed several mm from the neutron producing surface in order to maximize the utilization of each neutron for the production of a desired radionuclide \textcolor{red}{[XXXref Cory paper]}.  The HFNG uses the D(D,n)\ce{^3He} reaction to produce neutrons with energies near 2.45 MeV together with a self-loading target design to maintain continuous operation without target replacement.  In addition to the generator itself, efforts are underway to design neutron reflection capabilities to allow scattered neutrons multiple opportunities to interact with an  internally mounted target. While these design efforts are underway, the HFNG can be used to better characterize production cross sections at the appropriate neutron energy.
 
-\comment{cite Cory's paper}
+\comment{how can we cite Mauricio's/Cory's upcoming paper? We need a good reference for the HFNG.}
 
 The present work features a pair of cross section measurements for the production of two non-standard positron emitters: \ce{^{64}Zn}(n,p)\ce{^{64}Cu} and \ce{^{47}Ti}(n,p)\ce{^{47}Sc}. \ce{^{64}Cu}  ($t_{1/2}$ = 12.7 h) undergoes $\beta^+$ decay (61.5\% branching ratio) to \ce{^{64}Ni} or $\beta^-$ decay (38.5\% branching ratio) to \ce{^{64}Zn}. The emitted 190-keV $\beta^-$ particle makes this an  attractive short-range therapeutic radionuclide, which also has the possibility for simultaneous positron emission tomography (PET) imaging for real-time dose monitoring and verification. This makes \ce{^{64}Cu} particularly attractive for emerging radiation therapy protocols. In addition, copper radiochemistry is well developed, and many existing ligands and carriers may be used for selective delivery of the radionuclide to different sites in patients. The second radionuclide studied, \ce{^{47}Sc} ($t_{1/2}$ = 3.35 d), undergoes $\beta^-$ decay to \ce{^{47}Ti}, emitting a high-intensity 159-keV gamma ray in the process. This radionuclide is  attractive as an emerging diagnostic isotope, due to the similarity of the emitted gamma ray to that of the more well-established \ce{^{99m}Tc}. However, due to the short half-life of and dwindling supplies of \ce{^{99m}Tc}, \ce{^{47}Sc} stands poised as a potential solution to this shortage, due to its longer half-life and multiple production pathways without the need for highly enriched uranium. In addition, when paired with \ce{^{44}Sc}, \ce{^{47}Sc} forms a promising \enquote{theranostic} set for use in simultaneous therapeutic and diagnostic applications.
 
@@ -349,8 +356,7 @@ The present work features a pair of cross section measurements for the productio
 
 
 
-Current methodology in radiochemistry has been proven to successfully recover upwards of 95\% of produced \ce{^{64}Cu} and \ce{^{47}Sc} from solid target designs, without the need for additional carrier. By expanding the base of efficient reaction pathways, great advances can be made in making production of medical radionuclides more efficient and affordable for those in need.
-
+Current methodology in radiochemistry has been proven to successfully recover upwards of 95\% of produced \ce{^{64}Cu}\cite{bhatki1969preparation,mirzadeh1992spontaneous} and \ce{^{47}Sc}\cite{Aly1971,Bokhari2010,BF02047448} from solid target designs, without the need for additional carrier. By expanding the base of efficient reaction pathways, great advances can be made in making production of medical radionuclides more efficient and affordable for those in need.
 
 
 
@@ -402,6 +408,7 @@ Neutron activation was carried out via irradiation in the High-Flux Neutron Gene
 %      \label{fig:main_HFNG}
 % \end{figure*}
 
+
 \begin{figure}
     \centering
         \centering
@@ -412,6 +419,7 @@ Neutron activation was carried out via irradiation in the High-Flux Neutron Gene
 %      \label{fig:main_HFNG}
 \end{figure}
 
+\comment{Can someone please provide me a better version of \autoref{fig:hfng_b}, with appropriate labeling? Please use PDF or other vector image format.}
 
 \subsection{Cross section determination by relative activation}\label{sec:sample_loading}
 
@@ -423,7 +431,7 @@ The approach used in both measurements was to irradiate foils of zinc or titaniu
 \begin{figure}
     \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \includegraphics[height=2in]{./figures/holder.pdf}
+        \includegraphics[height=2.5in]{./figures/holder.pdf}
         \caption{Schematic (not drawn to scale) of the sample holder used for the Berkeley HFNG,}
         \label{fig:holder_a}
 \end{figure}
@@ -796,6 +804,8 @@ If this decay emits a gamma ray with branching ratio $I_\gamma$ (photons emitted
 % \end{aligned}
 % \end{equation}
 
+ 
+
 \begin{align}
 N_{obs} &= D \epsilon_\gamma I_\gamma \\
 &=  \epsilon_\gamma I_\gamma  \dfrac{N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} }{\lambda}\pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_3} - e^{-\lambda t_2}} \nonumber
@@ -812,7 +822,7 @@ Solving this equation for the  cross-section results in:
 
 
 \begin{align}\label{eqn:calc_eqn}
-\dfrac{\sigma_P}{\sigma_{In}} &=  \dfrac{A_P}{A_{In}} \dfrac{N_{T,In}}{N_{T,P}} \dfrac{\lambda_P}{\lambda_{In}} \dfrac{e^{\lambda_{In}t_1}-1}{e^{\lambda_{P}t_1}-1}  \\
+\dfrac{\sigma_P}{\sigma_{In}} &=  \dfrac{A_P}{A_{In}} \dfrac{N_{T,In}}{N_{T,P}} \dfrac{\lambda_P}{\lambda_{In}} \dfrac{e^{\lambda_{In}t_1}-1}{e^{\lambda_{P}t_1}-1} \times \\
 &\times \dfrac{e^{-\lambda_{In}t_3}-e^{-\lambda_{In}t_2}}{e^{-\lambda_{P}t_3} - e^{-\lambda_{P}t_2}} \dfrac{\epsilon_{In}}{\epsilon_P}  \dfrac{I_{\gamma,In}}{I_{\gamma,P}} \dfrac{e^{-\mu_{In}x_{In}/2}\times e^{-\mu_{In}x_{P}}}{e^{-\mu_{P}x_{P}/2}} \nonumber
 \end{align}
 
@@ -929,7 +939,7 @@ Reaction                                                                        
 
 \comment{Truncate sig figs in En in \autoref{tab:xs_results} }
 
-Figures \ref{fig:sc_xs} and \ref{fig:cu_xs} present the determined cross sections for the production of  \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu}  relative to literature data retrieved from EXFOR \textcolor{red}{[XXXXref original experimental papers]}. The weighted average of our measurements give \textcolor{red}{XXXXXX} for \ce{^{64}Zn}(n,p)\ce{^{64}Cu} and \textcolor{red}{YYYYYY} for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}. The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section measured in this work is consistent with  other literature results, but with a smaller uncertainty (\textcolor{red}{6\%}). However, in the case of the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section, our results are consistent with the results from the \textcolor{red}{XXX groups} and both the ENDF/B-VII.1\textcolor{red}{[XXXref citation]} and TALYS\textcolor{red}{[XXXref citation]} values, but significantly below the results from \textcolor{red}{YYY}.  
+Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} present the determined cross sections for the production of  \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu}  relative to literature data retrieved from EXFOR \textcolor{red}{[XXXXref original experimental papers]}. The weighted average of our measurements give \textcolor{red}{XXXXXX} for \ce{^{64}Zn}(n,p)\ce{^{64}Cu} and \textcolor{red}{YYYYYY} for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}. The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section measured in this work is consistent with  other literature results, but with a smaller uncertainty (\textcolor{red}{6\%}). However, in the case of the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section, our results are consistent with the results from the \textcolor{red}{XXX groups} and both the ENDF/B-VII.1\textcolor{red}{[XXXref citation]} and TALYS\cite{Koning2012}  values, but significantly below the results from \textcolor{red}{YYY}.  
 
 \comment{fill in missing data, verify \% uncertainty, fill in missing group names, verify ENDF/B-VII.1 as latest}
 
@@ -937,7 +947,7 @@ Figures \ref{fig:sc_xs} and \ref{fig:cu_xs} present the determined cross section
 
 \comment{Also make sure to cite the original experimental work either here, or later when you review the values we determined.}
 
-\comment{Add Shimizu data into plots }
+\comment{Add Shimizu data into plots , as well as 115In capture points}
 
 \comment{Change to zoomed-in view like in \autoref{fig:cu_xs} as appropriate}
 
@@ -945,37 +955,81 @@ Figures \ref{fig:sc_xs} and \ref{fig:cu_xs} present the determined cross section
  \centering
  \includegraphics[scale=0.6]{./figures/47Sc_fixed.pdf}
  % 47Sc_fixed.pdf: 375x294 pixel, 72dpi, 13.23x10.37 cm, bb=0 0 375 294
- \caption{Measured \ce{^{47}Ti}(n,p)\ce{^{47}Sc} relative production cross section.}
+ \caption{Measured \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section relative to indium activation.}
  \label{fig:sc_xs}
 \end{figure}
 
-\begin{figure}
- \centering
- \includegraphics[scale=0.6]{./figures/64cu_fixed.pdf}
- % 47Sc_fixed.pdf: 375x294 pixel, 72dpi, 13.23x10.37 cm, bb=0 0 375 294
- \caption{Measured \ce{^{64}Zn}(n,p)\ce{^{64}Cu} relative production cross section}
- \label{fig:cu_xs}
-\end{figure}
+% \begin{figure}
+%  \centering
+%  \includegraphics[scale=0.6]{./figures/64cu_fixed.pdf}
+%  % 47Sc_fixed.pdf: 375x294 pixel, 72dpi, 13.23x10.37 cm, bb=0 0 375 294
+%  \caption{Measured \ce{^{64}Zn}(n,p)\ce{^{64}Cu} relative production cross section}
+%  \label{fig:cu_xs}
+% \end{figure}
 
 
 \begin{figure}
  \centering
  \includegraphics[scale=0.6]{./figures/64cu_fixed_zoom.pdf}
  % 47Sc_fixed.pdf: 375x294 pixel, 72dpi, 13.23x10.37 cm, bb=0 0 375 294
- \caption{A zoomed-in view of \autoref{fig:cu_xs}.}
+ \caption{Measured \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section relative to indium activation.}
  \label{fig:cu_xs_zoom}
 \end{figure}
 
 
+As mentioned above, the cross section can be obtained relative to both the inelastic scattering cross sections on \ce{^{113}In} and \ce{^{115}In}, and the capture of fast, unmoderated neutrons on \ce{^{115}In}.  The results from both are consistent, indicating that the contributions from thermal \enquote{room return} neutrons are negligible for samples mounted in the center of the HFNG.  This builds confidence in our results, and highlights the potential of using the HFNG for fast neutron capture reactions via activation.  This will be discussed in greater detail in the conclusion section below.  
 
 
+
+\comment{verify this claim!}
 
           
-\section{Summary}
+\section{Conclusion}
 
-Using direct activation methods for thin foils as described in this work, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections have been measured for  2.7645 MeV neutrons, to within 6\% uncertainty. These measurements are consistent with experimental data and theoretical models,  and have been measured to lower uncertainty than existing measurements. The use of DD neutron generators can be an efficient pathway for the measurement of these low-energy (n,p) reaction channels, as well as a relative method used to normalize measurements at higher neutron energies. While it reduces the neutron flux incident upon target foils, the use of collimated beam lines to irradiate foils at various angles allows a single neutron generator to perform these measurements at various other energies throughout the DD neutron emission energy spectrum. 
+Using activation methods on thin foils, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections were measured for  \textcolor{red}{2.7645 MeV +0.151/-0.219} neutrons produced using the High Flux Neutron Generator (HFNG) at UC Berkeley. The cross sections were measured with a  6\% uncertainty relative to the well-known \ce{^{115}In}(n,n')\ce{^{115m}In} and \ce{^{113}In}(n,n')\ce{^{113m}In} fast neutron cross sections. The measured values of \textcolor{red}{XXXX and YYYY}, respectively, are consistent with earlier experimental data and theoretical models, but have smaller uncertainties than previous measurements. In addition, the results for the production of \ce{^{116}In} via the \ce{^{115}In}(n,$\gamma$) reaction was shown to be consistent with activation from the capture of fast (e.g., $\approx$2.7 MeV) neutrons, rather than from \enquote{room return} thermal neutrons. The use of DD neutron generators can be an efficient method for the measurement of low-energy (n,p) reaction channels, as well as a relative method used to normalize measurements at higher neutron energies. 
 
-\comment{Future work? Thermal neutron measurements? Something like the following?}
+\comment{Truncate sig figs above, fill in values}
+
+
+The proximity of the target to the neutron production surface also opens the possibility of performing a measurement of the cross section over a limited energy range via mounting the samples slightly off-axis with respect to the beam.  This could be accomplished using the 9-foil sample holder described in \autoref{sec:lee_sec} above.  Mounting samples at each of these positions would subject the samples to neutrons with energies ranging from \textcolor{red}{XXX at the central location to YYY} at the four corners, with the other locations having intermediate energy values.  These sorts of multi-sample measurements could be used to determine the \enquote{rising edge} of the cross sections, aiding in the development of optical models for the reactants.
+
+\comment{fill in values above}
+
+
+These measurements also highlight the possibility of using fast neutrons from DD and/or DT generators to produce meaningful quantities of radioisotopes for a wide range of applications via charge exchange reactions, such as (n,p) and (n,$\alpha$).  Many applications, including diagnostic and therapeutic medical use, require mCi activity levels.  The production of a radionuclide sample with an activity $A$ driven to secular equilibrium using a neutron source with a total flux $\phi$ and a reaction cross section $\sigma$ acting on sample of $N_{target}$ atoms is given by the expression:
+
+\begin{equation}
+A = \lambda N_{product} = \eta \phi \sigma N_{target}
+\end{equation}
+
+where we have introduced the dimensionless \emph{neutron utilization factor} $\eta$, which represents the likelihood of a neutron inducing the desired reaction on one of the target sample atoms:
+
+
+% \begin{figure*}[H]
+% \hline
+% \begin{equation}
+% \eta = \int_0^E dE_n \dfrac{\sigma_{(n,p)}}{\sigma_{(n,x)} + \sigma_{(n,p)}} \int N_{target} \pp{r,\theta,\phi} 4\pi r^2 dr d\pp{\cos{\theta}} d\theta
+% \end{equation}
+% \end{figure*}
+
+
+% \begin{strip}
+
+\begin{align}
+\eta &= \int_0^E \text{d}E_n \dfrac{\sigma_{(n,p)}}{\sigma_{(n,x)} + \sigma_{(n,p)}} \int N_{target} \pp{r,\theta,\varphi} \text{d}\mathbf{V}, \nonumber\\
+\text{d}\mathbf{V} &= r^2 \text{d}r \sin{\theta}\, \text{d}\theta\, \text{d}\varphi 
+\end{align}
+% \end{strip}
+
+
+An optimal design for the neutron generator would also allow for the possibility of reflecting fast neutrons back onto the target to maximize their utilization for radionuclide production.  This sort of \enquote{flux trap} has been used for the production of radionuclides in reactors, but has not to date been optimized for use with fast neutrons  at DD and/or DT neutron sources.  The HFNG, with its self-loading target and \enquote{flux trap} geometry, has many features that make it well-suited for such isotope production purpose.  Switching to DT operation would dramatically increase the flux as well as the production cross section, since (n,p) tends to be significantly larger at 14 MeV.  However, the higher neutron energy would also open the (n,pn) channels.  In the case of \ce{^{47}Sc}, this would lead to the presence of \ce{^{46}Sc} ($t_{1/2}$ = 83.79 d) in the sample, which might pose some concerns for medical applications.  However, this is not an issue for \ce{^{64}Cu} since the (n,pn) channel leads to the production of stable \ce{^{63}Cu}.  
+
+\comment{cite relevant NDS article}
+
+In closing, we have measured the \ce{^{64}Cu}(n,p) and \ce{^{47}Ti}(n,p) cross sections at \textcolor{red}{2.7 MeV} incident neutron energies.  In addition to improving the value of these measurements nuclear reaction evaluation, our results highlight the potential use of compact neutron generators for the production of radionuclides locally for medical applications.  In the future we plan to perform additional cross section measurements at the HFNG, and to explore methods to extract the radionuclides from the sample using both chemical and physical separation techniques.  
+
+\comment{fill in values above}
+
 
  Future work will involve the continued measurement of the (n,p) production cross sections for various other emerging therapeutic and diagnostic radioisotopes, to expand the toolset of options available for modern medical imaging and cancer therapy. This will focus on radionuclides which permit more customized and precise dose deposition, as well as patient-specific treatments
  
@@ -985,9 +1039,11 @@ Using direct activation methods for thin foils as described in this work, the \c
  
  \section{Acknowledgements}
  
- This work has been carried out at the University of California, Berkeley, and performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under contract \# DE-AC52-07NA27344 and Lawrence Berkeley National Laboratory under contract \# DE-AC02-05CH11231. Funding has been provided from the US Nuclear Regulatory Commission and the US Nuclear Data Program.
+ This work has been carried out at the University of California, Berkeley, and performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under contract \# DE-AC52-07NA27344 and Lawrence Berkeley National Laboratory under contract \# DE-AC02-05CH11231. Funding has been provided from the US Nuclear Regulatory Commission, the US Nuclear Data Program, and  DFG Research Fellowship RU 2065/1-1. 
  
- \comment{Who else should we acknowledge?}
+ We also wish to acknowledge Glenn Jones for \textcolor{red}{XXXXXXXXXXX}.
+ 
+ \comment{Please provide appropriate language for Glenn Jones. Who else should we acknowledge?}
 
 
 % \pagebreak
@@ -1219,19 +1275,19 @@ Using direct activation methods for thin foils as described in this work, the \c
 
 
 
-H. F. Aly et al., Microchim. Acta, vol. 59, no. 1, 1971.
+% H. F. Aly et al., Microchim. Acta, vol. 59, no. 1, 1971.
 
-K. S. Bhatki et al., J. Radioanal. Chem., vol. 2, no. 1-2, 1969.
+% K. S. Bhatki et al., J. Radioanal. Chem., vol. 2, no. 1-2, 1969.
 
-T. H. Bokhari et al., J. Radioanal. Nucl. Chem., vol. 283, no. 2, 2010.
+% T. H. Bokhari et al., J. Radioanal. Nucl. Chem., vol. 283, no. 2, 2010.
 
-J. F. Briesmeister et al., Los Alamos National Laboratory, 1986.
+% J. F. Briesmeister et al., Los Alamos National Laboratory, 1986.
 
 M. B. Chadwick,et al., Nucl. Data Sheets, vol. 107, no. 12, 2006.
 
-A. J. Koning et al., AIP Conference Proceedings, 2005, vol. 769, no. 2.
+% A. J. Koning et al., AIP Conference Proceedings, 2005, vol. 769, no. 2.
 
-H. Liskien et al., Nucl. Data Tables, vol 11, 1973.
+% H. Liskien et al., Nucl. Data Tables, vol 11, 1973.
 
 M. R. Lewis et al., J. Nucl. Med., vol. 44, no. 8, Aug. 2003.
 
