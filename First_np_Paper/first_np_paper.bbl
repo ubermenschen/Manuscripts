@@ -4,6 +4,10 @@
 D.~Updegraff, S.~a. Hoedl, and D.~Ph, ``{Nuclear Medicine without Nuclear
   Reactors or Uranium Enrichment},'' 2013.
 
+\bibitem{Singh2007}
+B.~Singh, ``{Nuclear Data Sheets for A = 64},'' {\em Nuclear Data Sheets},
+  vol.~108, pp.~197--364, feb 2007.
+
 \bibitem{Lewis2003}
 M.~R. Lewis, M.~Wang, D.~B. Axworthy, L.~J. Theodore, R.~W. Mallet, A.~R.
   Fritzberg, M.~J. Welch, and C.~J. Anderson, ``{In Vivo Evaluation of
@@ -31,6 +35,10 @@ E.~Gourni, L.~{Del Pozzo}, E.~Kheirallah, C.~Smerling, B.~Waser, J.-C. Reubi,
   Great Promise for PET Imaging of Prostate Cancer},'' {\em Molecular
   Pharmaceutics}, vol.~12, no.~8, pp.~2781--2790, 2015.
 
+\bibitem{Burrows2007}
+T.~W. Burrows, ``{Nuclear Data Sheets for A = 47},'' {\em Nuclear Data Sheets},
+  vol.~108, pp.~923--1056, may 2007.
+
 \bibitem{Qaim2011}
 S.~M. Qaim, R.~Capote, and F.~Tarkanyi, ``{Nuclear Data for the Production of
   Therapeutic Radionuclides},'' Tech. Rep. 473, 2011.
@@ -39,6 +47,29 @@ S.~M. Qaim, R.~Capote, and F.~Tarkanyi, ``{Nuclear Data for the Production of
 S.~M. Qaim, ``{Nuclear data for production and medical application of
   radionuclides: Present status and future needs},'' {\em Nuclear Medicine and
   Biology}, vol.~44, pp.~31--49, 2016.
+
+\bibitem{Kolsky1998}
+K.~L. Kolsky, V.~Joshi, L.~F. Mausner, and S.~C. Srivastava, ``{Radiochemical
+  purification of no-carrier-added scandium-47 for radioimmunotherapy},'' {\em
+  Applied Radiation and Isotopes}, vol.~49, pp.~1541--1549, dec 1998.
+
+\bibitem{mausner1995evaluation}
+L.~F. Mausner, V.~Joshi, and K.~L. Kolsky, ``{Evaluation of chelating agents
+  for radioimmunotherapy with scandium-47},'' {\em Journal of Nuclear
+  Medicine}, vol.~36, no.~CONF-950603--, 1995.
+
+\bibitem{Muller2014}
+C.~M{\"{u}}ller, M.~Bunka, S.~Haller, U.~K{\"{o}}ster, V.~Groehn, P.~Bernhardt,
+  N.~van~der Meulen, A.~T{\"{u}}rler, and R.~Schibli, ``{Promising Prospects
+  for 44Sc-/47Sc-Based Theragnostics: Application of 47Sc for Radionuclide
+  Tumor Therapy in Mice},'' {\em Journal of Nuclear Medicine}, vol.~55,
+  pp.~1658--1664, oct 2014.
+
+\bibitem{Deilami-nezhad2016}
+L.~Deilami-nezhad, L.~Moghaddam-Banaem, M.~Sadeghi, and M.~Asgari,
+  ``{Production and purification of Scandium-47: A potential radioisotope for
+  cancer theranostics},'' {\em Applied Radiation and Isotopes}, vol.~118,
+  pp.~124--130, dec 2016.
 
 \bibitem{bhatki1969preparation}
 K.~S. Bhatki, A.~T. Rane, and M.~B. Kabadi, ``{Preparation of carrier-free
@@ -69,6 +100,11 @@ L.~Pietrelli, L.~Mausner, and K.~Kolsky, ``{Separation of carrier-free 47Sc
 H.~Liskien and A.~Paulsen, ``{Neutron production cross sections and energies
   for the reactions T(p,n)3He, D(d,n)3He, and T(d,n)4He},'' {\em Atomic Data
   and Nuclear Data Tables}, vol.~11, no.~7, pp.~569--619, 1973.
+
+\bibitem{Capote2012}
+R.~Capote, K.~I. Zolotarev, V.~G. Pronyaev, and A.~Trkov, ``{Updating and
+  Extending the IRDF-2002 Dosimetry Library},'' {\em Journal of ASTM
+  International}, vol.~9, pp.~1--9, apr 2012.
 
 \bibitem{goorley2013initial}
 J.~T. Goorley, M.~R. James, T.~E. Booth, F.~B. Brown, J.~S. Bull, L.~J. Cox,
