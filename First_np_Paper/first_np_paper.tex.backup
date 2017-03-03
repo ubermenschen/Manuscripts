@@ -183,6 +183,9 @@
 
 \newcommand{\comment}[1]{\todo[color=blue!20!white,inline]{ASV: #1}} 
 
+% Tweak sim for better inline text tilde
+\newcommand{\mytilde}{\raisebox{0.5ex}{\texttildelow}}
+% \newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle‌​\sim$}}
 
 
 
@@ -191,8 +194,6 @@
 \newcommand*\mean[1]{\overline{#1\raisebox{3mm}{}}}
 
 \makeatother
-
-
 
 
 \begin{document}
@@ -482,21 +483,24 @@ The approach used in both measurements was to irradiate foils of zinc or titaniu
 \begin{tabular}{@{}ccccccc@{}}
 \toprule
 Foils Used & Metal Purity          & Abundance (a/o)                                                           & \begin{tabular}[c]{@{}c@{}}Foil Density \\ (mg/cm$^2$)\end{tabular} & Thickness (mm)                                                                                                         & Diameter (cm)                                                                                                           & Mass (g, $\pm$ 5 mg)                                                                                    \\ \midrule
-$^\text{nat}$In      & \textgreater 99.999\% & \begin{tabular}[c]{@{}c@{}}\ce{^{113}In} (4.29\%),\\ \ce{^{115}In} (95.71\%)\end{tabular} & 365.5                                                            & \begin{tabular}[c]{@{}c@{}}0.49 $\pm$ 0.02*, \\ 0.50 $\pm$ 0.03*, \\ 0.49 $\pm$ 0.03*, \\ 0.53 $\pm$ 0.06$^\dagger$, \\ XXX $\pm$ XXX$^\dagger$\end{tabular} & \begin{tabular}[c]{@{}c@{}}9.75 $\pm$ 0.09*, \\ 9.98 $\pm$ 0.15*, \\ 9.96 $\pm$ 0.10*, \\ 10.01 $\pm$ 0.11$^\dagger$, \\ XXX $\pm$ XXX$^\dagger$\end{tabular} & \begin{tabular}[c]{@{}c@{}}0.248*, \\ 0.248*, \\ 0.241*, \\ 0.247$^\dagger$,\\  XXXXXX$^\dagger$\ \end{tabular} \\ \hline
+$^\text{nat}$In      & \textgreater 99.999\% & \begin{tabular}[c]{@{}c@{}}\ce{^{113}In} (4.29\%),\\ \ce{^{115}In} (95.71\%)\end{tabular} & 365.5                                                            & \begin{tabular}[c]{@{}c@{}}0.49 $\pm$ 0.02*, \\ 0.50 $\pm$ 0.03*, \\ 0.49 $\pm$ 0.03*, \\ 0.53 $\pm$ 0.06$^\dagger$, \\ 0.50 $\pm$ 0.02$^\dagger$\end{tabular} & \begin{tabular}[c]{@{}c@{}}9.75 $\pm$ 0.09*, \\ 9.98 $\pm$ 0.15*, \\ 9.96 $\pm$ 0.10*, \\ 10.01 $\pm$ 0.11$^\dagger$, \\ 10.00 $\pm$ 0.09$^\dagger$\end{tabular} & \begin{tabular}[c]{@{}c@{}}0.248*, \\ 0.248*, \\ 0.241*, \\ 0.247$^\dagger$,\\  0.248$^\dagger$\ \end{tabular} \\ \hline
 $^\text{nat}$Zn      & \textgreater 99.99\%  & \ce{^{64}Zn} (49.17\%)                                                            & 714.1                                                            & \begin{tabular}[c]{@{}c@{}}1.03 $\pm$ 0.01, \\ 1.03 $\pm$ 0.01, \\ 1.02 $\pm$ 0.01\end{tabular}                                    & \begin{tabular}[c]{@{}c@{}}9.93 $\pm$ 0.14, \\ 9.76 $\pm$ 0.17, \\ 9.89 $\pm$ 0.15\end{tabular}                                     & \begin{tabular}[c]{@{}c@{}}0.538, \\ 0.451, \\ 0.452\ \end{tabular}                           \\ \hline
-$^\text{nat}$Ti      & 99.999\%              & \ce{^{47}Ti} (7.44\%)                                                             & 450.6                                                            & \begin{tabular}[c]{@{}c@{}}1.16 $\pm$ 0.02, \\ XXXXXX\end{tabular}                                                         & \begin{tabular}[c]{@{}c@{}}9.93 $\pm$ 0.04, \\ 9.96 $\pm$ 0.03\end{tabular}                                                          & \begin{tabular}[c]{@{}c@{}}0.337, \\ 0.337\ \end{tabular}                                   \\ \bottomrule
+$^\text{nat}$Ti      & 99.999\%              & \ce{^{47}Ti} (7.44\%)                                                             & 450.6                                                            & \begin{tabular}[c]{@{}c@{}}1.16 $\pm$ 0.02, \\ 1.15 $\pm$ 0.02\end{tabular}                                                         & \begin{tabular}[c]{@{}c@{}}9.93 $\pm$ 0.04, \\ 9.94 $\pm$ 0.03\end{tabular}                                                          & \begin{tabular}[c]{@{}c@{}}0.337, \\ 0.337\ \end{tabular}                                   \\ \bottomrule
 \end{tabular}%
 }
 \end{table*}
 
-\comment{Need foil data from Mauricio's 2nd Ti run}
+% \comment{Need foil data from Mauricio's 2nd Ti run}
 
 
 \subsection{Determination of effective neutron energy}\label{sec:neutron_energies}
 
-The D(D,n)\ce{^3He} reaction at 100 keV lab energy produces neutrons with energies ranging from 2.2 to 2.85 MeV, over an angular range of 0-180\degree\ in the lab frame-of-reference with respect to the incident deuteron beam. This distribution has been well documented \cite{Liskien_Paulsen_1973} and is shown in \autoref{fig:scatt_angle} for 100 keV incident deuteron energy.
+The D(D,n)\ce{^3He} reaction at 100 keV lab energy produces neutrons with energies ranging from 
+% 2.2 to 2.85 MeV   (thin-target Liskien values)
+% 2.18 to 2.78 MeV  (Liskien thick-target coefficient corrections to above)
+2.18 to 2.78 MeV, over an angular range of 0-180\degree\ in the lab frame-of-reference with respect to the incident deuteron beam. This distribution has been well documented \cite{Liskien_Paulsen_1973} and is shown in \autoref{fig:scatt_angle} for 100 keV incident deuteron energy.
 
-\comment{These 2.2 to 2.85 MeV numbers do not quite correspond to the Figure. Addressing this with Joe.}
+% \comment{These 2.2 to 2.85 MeV numbers do not quite correspond to the Figure. Addressing this with Joe.}
 
 \comment{Is the one good reference (Liskien) sufficient?}
 
@@ -513,7 +517,9 @@ The D(D,n)\ce{^3He} reaction at 100 keV lab energy produces neutrons with energi
  \label{fig:scatt_angle}
 \end{figure}
 
-Since the samples are separated by only  8 mm from the DD reaction surface they  subtend a fairly significant  (~28\degree) angular range and experience an impressive  (approximately $\sci{1.3}{7}$neutrons/cm$^2$ s) neutron flux. This stands in contrast to other measurements which feature collimated beams and significantly lower total neutron flux.  
+Since the samples are separated by only  8 mm from the DD reaction surface they  subtend a fairly significant  (\mytilde 17\degree)
+% the above figure assumes a 5mm diameter beam seperated by 8 mm from a 10 cm diameter target, looking at the angle between the two edges
+angular range and experience an impressive  (approximately $\sci{1.3}{7}$neutrons/cm$^2$ s) neutron flux. This stands in contrast to other measurements which feature collimated beams and significantly lower total neutron flux.  
 
 
 
@@ -527,9 +533,11 @@ Since the samples are separated by only  8 mm from the DD reaction surface they 
  \label{fig:mcnp_vised}
 \end{figure}
 
-\comment{Need to replace this figure w/ non-capitalized labels - this figure needs significant work, and I would appreciate anyone who can provide a better one}
+\comment{Need to replace this figure w/ non-capitalized labels - this figure needs significant improvement, and I would appreciate anyone who can provide a better one}
 
 The Monte Carlo N-Particle transport code  MCNP6 \cite{goorley2013initial} was used to model the neutron energy spectrum incident upon target foils co-loaded into the HFNG (see \autoref{fig:mcnp_flux}). This spectrum illustrates the forward-focused kinematics of the DD reaction subtended by the co-loaded sample foils.
+
+\comment{\autoref{fig:mcnp_flux} to be updated with new data from Joe}
 
 
 % \begin{figure}
@@ -553,14 +561,14 @@ The Monte Carlo N-Particle transport code  MCNP6 \cite{goorley2013initial} was u
 
 %\comment{Use this version, old version (mcnp-flux.pdf), or some new combination of lines?}
 
-While this shows that the sample foils experience a very narrow energy distribution of incident neutrons, an effective neutron energy window must be determined. The MCNP6 simulation shows an identical flux-weighted average neutron energy of 2.765 MeV for both the Indium and target foils to the 1 keV level. Due to the kinematics of DD neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry is 2.783 MeV. For this maximum energy, the number of reactions induced in a foil (containing $N_i$ target nuclei) is given by:
+While this shows that the sample foils experience a very narrow energy distribution of incident neutrons, an effective neutron energy window must be determined. The MCNP6 simulation shows an identical flux-weighted average neutron energy of 2.765 MeV for both the Indium and target foils to the 1 keV level. Due to the kinematics of DD neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry is 2.783 MeV \cite{Liskien_Paulsen_1973}. For this maximum energy, the number of reactions induced in a foil (containing $N_i$ target nuclei) is given by:
 
 \begin{equation}
 R = N_i \int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE
 \end{equation}
 
 
-\comment{Regex to replace equations with LaTeX formats, add cross-references.} % [E,e]quation[^*}]    }
+% \comment{Regex to replace equations with LaTeX formats, add cross-references.} % [E,e]quation[^*}]    }
 
 From this definition, it is possible to calculate $F\pp{E'}$, the fraction of total reactions induced up to some energy $E' < E_{max}$:
 

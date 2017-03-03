@@ -183,6 +183,9 @@
 
 \newcommand{\comment}[1]{\todo[color=blue!20!white,inline]{ASV: #1}} 
 
+% Tweak sim for better inline text tilde
+\newcommand{\mytilde}{\raisebox{0.5ex}{\texttildelow}}
+% \newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle‌​\sim$}}
 
 
 
@@ -191,8 +194,6 @@
 \newcommand*\mean[1]{\overline{#1\raisebox{3mm}{}}}
 
 \makeatother
-
-
 
 
 \begin{document}
@@ -494,9 +495,12 @@ $^\text{nat}$Ti      & 99.999\%              & \ce{^{47}Ti} (7.44\%)            
 
 \subsection{Determination of effective neutron energy}\label{sec:neutron_energies}
 
-The D(D,n)\ce{^3He} reaction at 100 keV lab energy produces neutrons with energies ranging from 2.2 to 2.85 MeV, over an angular range of 0-180\degree\ in the lab frame-of-reference with respect to the incident deuteron beam. This distribution has been well documented \cite{Liskien_Paulsen_1973} and is shown in \autoref{fig:scatt_angle} for 100 keV incident deuteron energy.
+The D(D,n)\ce{^3He} reaction at 100 keV lab energy produces neutrons with energies ranging from 
+% 2.2 to 2.85 MeV   (thin-target Liskien values)
+% 2.18 to 2.78 MeV  (Liskien thick-target coefficient corrections to above)
+2.18 to 2.78 MeV, over an angular range of 0-180\degree\ in the lab frame-of-reference with respect to the incident deuteron beam. This distribution has been well documented \cite{Liskien_Paulsen_1973} and is shown in \autoref{fig:scatt_angle} for 100 keV incident deuteron energy.
 
-\comment{These 2.2 to 2.85 MeV numbers do not quite correspond to the Figure. Addressing this with Joe.}
+% \comment{These 2.2 to 2.85 MeV numbers do not quite correspond to the Figure. Addressing this with Joe.}
 
 \comment{Is the one good reference (Liskien) sufficient?}
 
@@ -513,7 +517,9 @@ The D(D,n)\ce{^3He} reaction at 100 keV lab energy produces neutrons with energi
  \label{fig:scatt_angle}
 \end{figure}
 
-Since the samples are separated by only  8 mm from the DD reaction surface they  subtend a fairly significant  (~28\degree) angular range and experience an impressive  (approximately $\sci{1.3}{7}$neutrons/cm$^2$ s) neutron flux. This stands in contrast to other measurements which feature collimated beams and significantly lower total neutron flux.  
+Since the samples are separated by only  8 mm from the DD reaction surface they  subtend a fairly significant  (\mytilde 17\degree)
+% the above figure assumes a 5mm diameter beam seperated by 8 mm from a 10 cm diameter target, looking at the angle between the two edges
+angular range and experience an impressive  (approximately $\sci{1.3}{7}$neutrons/cm$^2$ s) neutron flux. This stands in contrast to other measurements which feature collimated beams and significantly lower total neutron flux.  
 
 
 
@@ -527,9 +533,11 @@ Since the samples are separated by only  8 mm from the DD reaction surface they 
  \label{fig:mcnp_vised}
 \end{figure}
 
-\comment{Need to replace this figure w/ non-capitalized labels - this figure needs significant work, and I would appreciate anyone who can provide a better one}
+\comment{Need to replace this figure w/ non-capitalized labels - this figure needs significant improvement, and I would appreciate anyone who can provide a better one}
 
 The Monte Carlo N-Particle transport code  MCNP6 \cite{goorley2013initial} was used to model the neutron energy spectrum incident upon target foils co-loaded into the HFNG (see \autoref{fig:mcnp_flux}). This spectrum illustrates the forward-focused kinematics of the DD reaction subtended by the co-loaded sample foils.
+
+\comment{\autoref{fig:mcnp_flux} to be updated with new data from Joe}
 
 
 % \begin{figure}
@@ -553,14 +561,14 @@ The Monte Carlo N-Particle transport code  MCNP6 \cite{goorley2013initial} was u
 
 %\comment{Use this version, old version (mcnp-flux.pdf), or some new combination of lines?}
 
-While this shows that the sample foils experience a very narrow energy distribution of incident neutrons, an effective neutron energy window must be determined. The MCNP6 simulation shows an identical flux-weighted average neutron energy of 2.765 MeV for both the Indium and target foils to the 1 keV level. Due to the kinematics of DD neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry is 2.783 MeV. For this maximum energy, the number of reactions induced in a foil (containing $N_i$ target nuclei) is given by:
+While this shows that the sample foils experience a very narrow energy distribution of incident neutrons, an effective neutron energy window must be determined. The MCNP6 simulation shows an identical flux-weighted average neutron energy of 2.765 MeV for both the Indium and target foils to the 1 keV level. Due to the kinematics of DD neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry is 2.783 MeV \cite{Liskien_Paulsen_1973}. For this maximum energy, the number of reactions induced in a foil (containing $N_i$ target nuclei) is given by:
 
 \begin{equation}
 R = N_i \int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE
 \end{equation}
 
 
-\comment{Regex to replace equations with LaTeX formats, add cross-references.} % [E,e]quation[^*}]    }
+% \comment{Regex to replace equations with LaTeX formats, add cross-references.} % [E,e]quation[^*}]    }
 
 From this definition, it is possible to calculate $F\pp{E'}$, the fraction of total reactions induced up to some energy $E' < E_{max}$:
 
@@ -589,7 +597,7 @@ F\pp{E'} = \dfrac{\int_0^{E'} \sigma(E) \dfrac{d\phi}{dE} dE}{\int_0^{E_{max}} \
 
 %\comment{Use this version, or old version (fracplot.pdf)?}
 
-\comment{Change \autoref{fig:frac_plot} text from the $\pm 1\sigma$ to 68.2\%}
+% \comment{Change \autoref{fig:frac_plot} text from the $\pm 1\sigma$ to 68.2\%, after using new A}
 
 This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. The fraction of total reactions in the indium foil can be used to characterize the effective neutron energy bin.  Our approach, in analogy to the Gaussian quantity $\sigma$, will be to use a horizontal \enquote{error bar}  to represent the energy range responsible for 68.2\% of the reactions taking place.  Using this approach, we report the effective energy bin as being $E_n$ = 2.7645 MeV + 0.0151 MeV / - 0.0219 MeV.  This 37-keV full-energy spread verifies that, at such close distances to the DD reaction surface, loaded target foils receive a quasi-monoenergetic neutron flux.
 
