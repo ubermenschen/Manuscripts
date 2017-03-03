@@ -597,7 +597,7 @@ F\pp{E'} = \dfrac{\int_0^{E'} \sigma(E) \dfrac{d\phi}{dE} dE}{\int_0^{E_{max}} \
 
 %\comment{Use this version, or old version (fracplot.pdf)?}
 
-\comment{Change \autoref{fig:frac_plot} text from the $\pm 1\sigma$ to 68.2\%}
+% \comment{Change \autoref{fig:frac_plot} text from the $\pm 1\sigma$ to 68.2\%, after using new A}
 
 This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. The fraction of total reactions in the indium foil can be used to characterize the effective neutron energy bin.  Our approach, in analogy to the Gaussian quantity $\sigma$, will be to use a horizontal \enquote{error bar}  to represent the energy range responsible for 68.2\% of the reactions taking place.  Using this approach, we report the effective energy bin as being $E_n$ = 2.7645 MeV + 0.0151 MeV / - 0.0219 MeV.  This 37-keV full-energy spread verifies that, at such close distances to the DD reaction surface, loaded target foils receive a quasi-monoenergetic neutron flux.
 
@@ -613,6 +613,23 @@ This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. The fraction of 
 \subsection{Measurement of induced activities}\label{sec:spectroscopy}
 
 After irradiation, the co-loaded targets were removed from the HFNG and transferred to a counting lab, where their induced activities could be measured via gamma ray spectroscopy. Two detectors were used in this measurement. An Ortec 80\% High-Purity Germanium (HPGe) detector was used for the detection of the positron annihilation radiation from the \ce{^{64}Cu}  decay, the 336 keV gamma-ray from the decay of the \ce{^{115m}In}  isomer and the 391 keV gamma-ray from the \ce{^{113m}In}  isomer. An Ortec planar Low-Energy Photon Spectrometer (LEPS)  was used for the detection of the lower-energy 159 keV gamma-ray from \ce{^{47}Sc} as well as the two indium isomers mentioned above. Both detectors were calibrated for energy and efficiency, using \ce{^{133}Ba}, \ce{^{137}Cs}, and \ce{^{152}Eu} sources at various distances from the front face of each detector. These efficiencies, along with gamma ray intensities for each transition, are used to convert the integrated counts in each gamma ray photopeak into an activity for the activated isotopes and isomeric states. 
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+Nuclide & \begin{tabular}[c]{@{}c@{}}Gamma-Ray \\ Energy (keV)\end{tabular} & Intensity (\%) & t1/2        \\ \midrule
+\ce{^{64}Cu}    & 511.0                                                             & 35.2 \% \emph{4}      & 12.701 h 2  \\
+\ce{^{47}Sc}    & 159.381                                                           & 68.3 \% 4      & 3.3492 d 6  \\
+\ce{^{113m}In}  & 391.698                                                           & 64.94 \% 17    & 99.476 m 23 \\
+\ce{^{115m}In}  & 336.241                                                           & 45.8 \% 4      & 4.486 h 4   \\
+\ce{^{116m}In}  & 416.90                                                            & 27.2 \% 4      & 54.29 m 17  \\ \bottomrule
+\end{tabular}
+\end{table}
 
 \comment{You should add a table listing the gamma-ray properties for the indium isomers and the 64Cu and 47Sc decay lines. This should include the proper NDS citation.}
 
@@ -642,7 +659,7 @@ After irradiation, the co-loaded targets were removed from the HFNG and transfer
 
 The foils were counted in their polyethylene holder, 10 cm from the front face of the 80\% HPGe and 1 cm from the front face of the LEPS, with the target foil (zinc or titanium) facing towards the front face of the detector when both target and monitor foils were counted simultaneously. All data collection was performed using the Ortec MAESTRO software. For each experiment the detector dead time was verified to be less than 5\%.  No summing corrections need to be made since all of the gammas are either non-coincident or formed in a back-to-back annihilation event. This was never an issue for any experiments, but had it been, the foils would be moved to a position of greater standoff from the detector.  
 
-For the  \ce{^{47}Sc} production experiments, the foils were counted simultaneously using a planar LEPS detector. For the \ce{^{64}Cu} production experiments, the Indium foil was first counted separately using an 80\% HPGe detector, to capture the short-lived Indium activities. This is due to the fact that the \ce{^{115}In}(n,$\gamma$) reaction results in the production of \ce{^{116}In} which has a 54 minute half-life and results in the production of 1097 keV (58.5\% branching), 1293 keV (84.8\% branching) and 2112 keV (15.09\% branching) gamma-rays that in turn produce a significant number of 511 keV gammas from pair-production followed by annihilation. The foils were counted together again after approximately 4 hours of separate collection, to allow for nearly all of the \ce{^{116}In} to decay. Example spectra for each production pathway can be seen in \autoref{fig:spectra_a} and \autoref{fig:spectra_b}.
+For the  \ce{^{47}Sc} production experiments, the foils were counted simultaneously using a planar LEPS detector. For the \ce{^{64}Cu} production experiments, the Indium foil was first counted separately using an 80\% HPGe detector, to capture the short-lived Indium activities. This is due to the fact that the \ce{^{115}In}(n,$\gamma$) reaction results in the production of \ce{^{116m}In} which has a 54 minute half-life and results in the production of 1097 keV (58.5\% branching), 1293 keV (84.8\% branching) and 2112 keV (15.09\% branching) gamma-rays that in turn produce a significant number of 511 keV gammas from pair-production followed by annihilation. The foils were counted together again after approximately 4 hours of separate collection, to allow for nearly all of the \ce{^{116}In} to decay. Example spectra for each production pathway can be seen in \autoref{fig:spectra_a} and \autoref{fig:spectra_b}.
 
 
 \begin{figure*}[ht]

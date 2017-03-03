@@ -6,45 +6,45 @@ Database file #1: ../../library.bib
 Warning--empty journal in Updegraff2013
 Warning--empty institution in NSACIsotopesSubcommittee2015
 Warning--empty institution in Qaim2011
-You've used 24 entries,
+You've used 27 entries,
             1876 wiz_defined-function locations,
-            639 strings with 8889 characters,
-and the built_in function-call counts, 7493 in all, are:
-= -- 736
-> -- 360
+            654 strings with 9101 characters,
+and the built_in function-call counts, 8487 in all, are:
+= -- 854
+> -- 372
 < -- 1
-+ -- 130
-- -- 106
-* -- 604
-:= -- 1095
-add.period$ -- 24
-call.type$ -- 24
-change.case$ -- 25
++ -- 136
+- -- 109
+* -- 671
+:= -- 1218
+add.period$ -- 27
+call.type$ -- 27
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 339
-empty$ -- 614
-format.name$ -- 106
-if$ -- 1763
+cite$ -- 30
+duplicate$ -- 391
+empty$ -- 704
+format.name$ -- 109
+if$ -- 2011
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 21
-newline$ -- 75
-num.names$ -- 24
-pop$ -- 44
+int.to.str$ -- 27
+missing$ -- 24
+newline$ -- 84
+num.names$ -- 27
+pop$ -- 47
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 270
+skip$ -- 321
 stack$ -- 0
-substring$ -- 571
-swap$ -- 163
+substring$ -- 683
+swap$ -- 194
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 78
-width$ -- 26
-write$ -- 238
+while$ -- 90
+width$ -- 29
+write$ -- 268
 (There were 3 warnings)

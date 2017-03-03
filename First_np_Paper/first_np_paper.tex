@@ -612,9 +612,26 @@ This quantity $F\pp{E'}$ is plotted in \autoref{fig:frac_plot}. The fraction of 
 
 \subsection{Measurement of induced activities}\label{sec:spectroscopy}
 
-After irradiation, the co-loaded targets were removed from the HFNG and transferred to a counting lab, where their induced activities could be measured via gamma ray spectroscopy. Two detectors were used in this measurement. An Ortec 80\% High-Purity Germanium (HPGe) detector was used for the detection of the positron annihilation radiation from the \ce{^{64}Cu}  decay, the 336 keV gamma-ray from the decay of the \ce{^{115m}In}  isomer and the 391 keV gamma-ray from the \ce{^{113m}In}  isomer. An Ortec planar Low-Energy Photon Spectrometer (LEPS)  was used for the detection of the lower-energy 159 keV gamma-ray from \ce{^{47}Sc} as well as the two indium isomers mentioned above. Both detectors were calibrated for energy and efficiency, using \ce{^{133}Ba}, \ce{^{137}Cs}, and \ce{^{152}Eu} sources at various distances from the front face of each detector. These efficiencies, along with gamma ray intensities for each transition, are used to convert the integrated counts in each gamma ray photopeak into an activity for the activated isotopes and isomeric states. 
+After irradiation, the co-loaded targets were removed from the HFNG and transferred to a counting lab, where their induced activities could be measured via gamma ray spectroscopy. Two detectors were used in this measurement. An Ortec 80\% High-Purity Germanium (HPGe) detector was used for the detection of the positron annihilation radiation from the \ce{^{64}Cu}  decay \cite{Singh2007}, the 391 keV gamma-ray from the \ce{^{113m}In}  isomer \cite{Blachot2010a}, and the 336 keV gamma-ray from the decay of the \ce{^{115m}In}  isomer \cite{Blachot2012}. An Ortec planar Low-Energy Photon Spectrometer (LEPS)  was used for the detection of the lower-energy 159 keV gamma-ray from \ce{^{47}Sc} \cite{Burrows2007} as well as the two indium isomers mentioned above. Both detectors were calibrated for energy and efficiency, using \ce{^{133}Ba}, \ce{^{137}Cs}, and \ce{^{152}Eu} sources at various distances from the front face of each detector. These efficiencies, along with gamma ray intensities for each transition, are used to convert the integrated counts in each gamma ray photopeak into an activity for the activated isotopes and isomeric states. 
 
-\comment{You should add a table listing the gamma-ray properties for the indium isomers and the 64Cu and 47Sc decay lines. This should include the proper NDS citation.}
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[]
+\centering
+\caption{Gamma-ray properties for the decay lines measured in the present work.}
+\label{tab:decay_props}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+Nuclide & \begin{tabular}[c]{@{}c@{}}Gamma-Ray \\ Energy (keV)\end{tabular} & Intensity (\%) & $t_{1/2}$        \\ \midrule
+\ce{^{64}Cu} \cite{Singh2007}    & 511.0                                                             & 35.2 \% \emph{4}      & 12.701 h \emph{2}  \\
+\ce{^{47}Sc} \cite{Burrows2007}    & 159.381                                                           & 68.3 \% \emph{4}      & 3.3492 d \emph{6}  \\
+\ce{^{113m}In} \cite{Blachot2010a}  & 391.698                                                           & 64.94 \% \emph{17}    & 99.476 m \emph{23} \\
+\ce{^{115m}In} \cite{Blachot2012} & 336.241                                                           & 45.8 \% \emph{4}      & 4.486 h \emph{4}   \\
+\ce{^{116m}In} \cite{Blachot2010}  & 416.90                                                            & 27.2 \% \emph{4}      & 54.29 m \emph{17}  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+% \comment{You should add a table listing the gamma-ray properties for the indium isomers and the 64Cu and 47Sc decay lines. This should include the proper NDS citation.}
 
 
 % \begin{figure*}[H]
@@ -642,7 +659,7 @@ After irradiation, the co-loaded targets were removed from the HFNG and transfer
 
 The foils were counted in their polyethylene holder, 10 cm from the front face of the 80\% HPGe and 1 cm from the front face of the LEPS, with the target foil (zinc or titanium) facing towards the front face of the detector when both target and monitor foils were counted simultaneously. All data collection was performed using the Ortec MAESTRO software. For each experiment the detector dead time was verified to be less than 5\%.  No summing corrections need to be made since all of the gammas are either non-coincident or formed in a back-to-back annihilation event. This was never an issue for any experiments, but had it been, the foils would be moved to a position of greater standoff from the detector.  
 
-For the  \ce{^{47}Sc} production experiments, the foils were counted simultaneously using a planar LEPS detector. For the \ce{^{64}Cu} production experiments, the Indium foil was first counted separately using an 80\% HPGe detector, to capture the short-lived Indium activities. This is due to the fact that the \ce{^{115}In}(n,$\gamma$) reaction results in the production of \ce{^{116}In} which has a 54 minute half-life and results in the production of 1097 keV (58.5\% branching), 1293 keV (84.8\% branching) and 2112 keV (15.09\% branching) gamma-rays that in turn produce a significant number of 511 keV gammas from pair-production followed by annihilation. The foils were counted together again after approximately 4 hours of separate collection, to allow for nearly all of the \ce{^{116}In} to decay. Example spectra for each production pathway can be seen in \autoref{fig:spectra_a} and \autoref{fig:spectra_b}.
+For the  \ce{^{47}Sc} production experiments, the foils were counted simultaneously using a planar LEPS detector. For the \ce{^{64}Cu} production experiments, the Indium foil was first counted separately using an 80\% HPGe detector, to capture the short-lived Indium activities. This is due to the fact that the \ce{^{115}In}(n,$\gamma$) reaction results in the production of \ce{^{116m}In} which has a 54 minute half-life and results in the production of 1097 keV (58.5\% branching), 1293 keV (84.8\% branching) and 2112 keV (15.09\% branching) gamma-rays that in turn produce a significant number of 511 keV gammas from pair-production followed by annihilation \cite{Blachot2010}. The foils were counted together again after approximately 4 hours of separate collection, to allow for nearly all of the \ce{^{116}In} to decay. Example spectra for each production pathway can be seen in \autoref{fig:spectra_a} and \autoref{fig:spectra_b}.
 
 
 \begin{figure*}[ht]
@@ -669,9 +686,9 @@ For the  \ce{^{47}Sc} production experiments, the foils were counted simultaneou
 \end{figure*}
 
 
-To verify that each peak corresponds to the assigned decay product, spectra were acquired in a sequence of 15 - 30 minute intervals. The resulting time series displayed in Figures \ref{fig:decay_curve_336} - \ref{fig:decay_curve_511} allow the fitting of exponential decay functions for each nuclide and comparison of the measured half-life with literature values. The fitted functions for each transition agree (at the 1$\sigma$ confidence level) with accepted half-lives \textcolor{red}{[XXXref reference original papers for the T1/2s]}, confirming the respective peak assignments.
+To verify that each peak corresponds to the assigned decay product, spectra were acquired in a sequence of 15 - 30 minute intervals. The resulting time series displayed in Figures \ref{fig:decay_curve_336} - \ref{fig:decay_curve_511} allow the fitting of exponential decay functions for each nuclide and comparison of the measured half-life with literature values. The fitted functions for each transition agree (at the 1$\sigma$ confidence level) with accepted half-lives \cite{Burrows2007,Singh2007,Blachot2010a,Blachot2012,Blachot2010}, confirming the respective peak assignments.
 
-\comment{Reference original ENSDF papers}
+% \comment{Reference original ENSDF papers}
 
 \begin{figure*}
     \centering
@@ -694,14 +711,14 @@ To verify that each peak corresponds to the assigned decay product, spectra were
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \includegraphics[scale=0.6]{./figures/417keV_curve2.png}
+        \includegraphics[scale=0.6]{./figures/417keV_curve_new.pdf}
         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                 \label{fig:decay_curve_417}
     \end{subfigure}
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \includegraphics[scale=0.6]{./figures/511keV_curve2.png}
+        \includegraphics[scale=0.6]{./figures/511keV_curve_new.pdf}
         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \label{fig:decay_curve_511}
     \end{subfigure}%
@@ -762,7 +779,7 @@ Photopeak Counts, 159 keV (\ce{^{47}Sc})   &   \hrulefill            &    \hrule
 
 \subsection{Experimental verification of incident neutron energy}\label{sec:lee_sec}
 
-As shown in \autoref{sec:sample_loading} above, the effective neutron energy depends on the angle range subtended by the sample with respect to the incident deuteron beam.  In order to determine this angle it is necessary to measure the lateral location of the beam with respect to the sample location.  This centroid of the beam was measured using a 3 x 3 array of 0.5 cm diameter indium foils.  The relative activity of these foils was then determined via post-irradiation counting of the \ce{^{115m}In} isomer ($t_{1/2}$ = 4.486 h).  \autoref{fig:in_heat_plot} below shows the measured activities for these 9 indium foils.  Based on these values we are able to verify that the beam was indeed centered on the middle of the zinc and titanium samples.   
+As shown in \autoref{sec:sample_loading} above, the effective neutron energy depends on the angle range subtended by the sample with respect to the incident deuteron beam.  In order to determine this angle it is necessary to measure the lateral location of the beam with respect to the sample location.  This centroid of the beam was measured using a 3 x 3 array of 0.5 cm diameter indium foils.  The relative activity of these foils was then determined via post-irradiation counting of the \ce{^{115m}In} isomer ($t_{1/2}$ = 4.486 h) \cite{Blachot2012}.  \autoref{fig:in_heat_plot} below shows the measured activities for these 9 indium foils.  Based on these values we are able to verify that the beam was indeed centered on the middle of the zinc and titanium samples.   
 
 % 
 % \begin{figure}
@@ -774,10 +791,9 @@ As shown in \autoref{sec:sample_loading} above, the effective neutron energy dep
 % \end{figure}
 % 
 
-\comment{cire relevant NDS article for t1/2}
 
 
-\comment{CHECK WITH ERIC for 3x3 In info and plot}
+\comment{CHECK WITH ERIC for 3x3 In info and plot  \autoref{fig:in_heat_plot}}
 
 
 

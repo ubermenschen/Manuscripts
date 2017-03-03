@@ -114,6 +114,18 @@ J.~T. Goorley, M.~R. James, T.~E. Booth, F.~B. Brown, J.~S. Bull, L.~J. Cox,
   Waters, T.~Wilcox, and A.~J. Zukaitis, ``{Initial MCNP6 release Overview -
   MCNP6 version 1.0},'' {\em LA-UR-13-22934}, 2013.
 
+\bibitem{Blachot2010a}
+J.~Blachot, ``{Nuclear Data Sheets for A = 113},'' {\em Nuclear Data Sheets},
+  vol.~111, pp.~1471--1618, jun 2010.
+
+\bibitem{Blachot2012}
+J.~Blachot, ``{Nuclear Data Sheets for A = 115},'' {\em Nuclear Data Sheets},
+  vol.~113, pp.~2391--2535, oct 2012.
+
+\bibitem{Blachot2010}
+J.~Blachot, ``{Nuclear Data Sheets for A = 116},'' {\em Nuclear Data Sheets},
+  vol.~111, pp.~717--895, mar 2010.
+
 \bibitem{radford2000radware}
 D.~C. Radford, ``{Notes on the use of the program gf3},'' 2000.
 
