@@ -425,7 +425,7 @@ Neutron activation was carried out via irradiation in the High-Flux Neutron Gene
 \subsection{Cross section determination by relative activation}\label{sec:sample_loading}
 
 
-The approach used in both measurements was to irradiate foils of zinc or titanium, which were co-loaded with indium foils in order to determine their (n,p) cross sections relative to the well-established \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} neutron dosimetry standards \cite{Capote2012}.   \autoref{tab:foil_specs} records physical characteristics of each foil for the various irradiations. In each experiment, the co-loaded foils were irradiated for 3 hours at nominal operating conditions of 1.3 mA and 100 kV.  After irradiation, the foils were removed and placed in front of an appropriate High-Purity Germanium (HPGe) gamma-ray detector and the decay gamma-rays were recorded in variable-time bins.   
+The approach used in both measurements was to irradiate foils of zinc or titanium, which were co-loaded with indium foils in order to determine their (n,p) cross sections relative to the well-established \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} neutron dosimetry standards \cite{Capote2012,zsolnay2012technical}.   \autoref{tab:foil_specs} records physical characteristics of each foil for the various irradiations. In each experiment, the co-loaded foils were irradiated for 3 hours at nominal operating conditions of 1.3 mA and 100 kV.  After irradiation, the foils were removed and placed in front of an appropriate High-Purity Germanium (HPGe) gamma-ray detector and the decay gamma-rays were recorded in variable-time bins.   
 
 
 
@@ -732,21 +732,21 @@ The spectra for the different samples were summed and the peak area over backgro
 % \usepackage{graphicx}
 \begin{table*}
 \centering
-\caption{Counting times and photopeak counts for each of the (Zn/In) and (Ti/In)  experiments. \color{red}{Need Mauricio data!}}
+\caption{Counting times and photopeak counts for each of the (Zn/In) and (Ti/In)  experiments. }
 \label{tab:peak_counts}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{c|ccccc}
 Reference Foil                     & \ce{^{nat}In}         & \ce{^{nat}In}       & \ce{^{nat}In} & \ce{^{nat}In}     & \ce{^{nat}In}  \\ \hline
-Reference Foil Mass (g)            & 0.248         & 0.248       & 0.241 & 0.247     & XXXXXX \\ \hline
+Reference Foil Mass (g)            & 0.248         & 0.248       & 0.241 & 0.247     & 0.248 \\ \hline
 Target Foil                        & \ce{^{nat}Zn}         & \ce{^{nat}Zn}       & \ce{^{nat}Zn} & \ce{^{nat}Ti}     & \ce{^{nat}Ti}  \\ \hline
-Target Foil Mass (g)               & 0.538         & 0.451       & 0.452 & 0.337     & XXXX   \\ \hline
-Irradiation Time, $t_1$ (s)           & 10800         & 10800       & 12629 & 11837     & XXXX   \\ \hline
-Start of Count, $t_2$ (s)             & 12585         & 26985       & 14919 & 101245    & XXXX   \\ \hline
-End of Count, $t_3$ (s)               & 103773        & 80993       & 68919 & 187669    & XXXX   \\ \hline
-Photopeak Counts, 336 keV (\ce{^{115m}In}) & 113665 $\pm$ 1490 & 74321 $\pm$ 275 & XXXXX & 2122 $\pm$ 55 & XXXX   \\ \hline
-Photopeak Counts, 391 keV (\ce{^{113m}In}) & 3382 $\pm$ 171    & 860 $\pm$ 40    & XXXXX &    \hrulefill       &  \hrulefill      \\ \hline
-Photopeak Counts, 511 keV (\ce{^{64}Cu})   & 16055 $\pm$ 643   & 12852 $\pm$ 118 & XXXXX &    \hrulefill       &   \hrulefill     \\ \hline
-Photopeak Counts, 159 keV (\ce{^{47}Sc})   &   \hrulefill            &    \hrulefill         &   \hrulefill    & 3877 $\pm$ 83 & XXXX  
+Target Foil Mass (g)               & 0.538         & 0.451       & 0.452 & 0.337     & 0.337   \\ \hline
+Irradiation Time, $t_1$ (s)           & 10800         & 10800       & 12629 & 11837     & 14254   \\ \hline
+Start of Count, $t_2$ (s)             & 12585         & 26985       & 14919 & 101245    & 16644   \\ \hline
+End of Count, $t_3$ (s)               & 103773        & 80993       & 68919 & 187669    & 110275   \\ \hline
+Photopeak Counts, 336 keV (\ce{^{115m}In}) & 113665 $\pm$ 1490 & 74321 $\pm$ 275 & 39895 $\pm$ 201 & 2122 $\pm$ 55 & 55102 $\pm$ 268   \\ \hline
+Photopeak Counts, 391 keV (\ce{^{113m}In}) & 3382 $\pm$ 171    & 860 $\pm$ 40    & 2545 $\pm$ 54 &    \hrulefill       &  \hrulefill      \\ \hline
+Photopeak Counts, 511 keV (\ce{^{64}Cu})   & 16055 $\pm$ 643   & 12852 $\pm$ 118 & 24464 $\pm$ 159 &    \hrulefill       &   \hrulefill     \\ \hline
+Photopeak Counts, 159 keV (\ce{^{47}Sc})   &   \hrulefill            &    \hrulefill         &   \hrulefill    & 3877 $\pm$ 83 & 5544 $\pm$ 257  
 \end{tabular}%
 }
 \end{table*}
@@ -781,19 +781,19 @@ Photopeak Counts, 159 keV (\ce{^{47}Sc})   &   \hrulefill            &    \hrule
 
 As shown in \autoref{sec:sample_loading} above, the effective neutron energy depends on the angle range subtended by the sample with respect to the incident deuteron beam.  In order to determine this angle it is necessary to measure the lateral location of the beam with respect to the sample location.  This centroid of the beam was measured using a 3 x 3 array of 0.5 cm diameter indium foils.  The relative activity of these foils was then determined via post-irradiation counting of the \ce{^{115m}In} isomer ($t_{1/2}$ = 4.486 h) \cite{Blachot2012}.  \autoref{fig:in_heat_plot} below shows the measured activities for these 9 indium foils.  Based on these values we are able to verify that the beam was indeed centered on the middle of the zinc and titanium samples.   
 
-% 
-% \begin{figure}
-%  \centering
-%  \includegraphics[scale=0.6]{./figures/XXX.pdf}
-%  % fracplot.pdf: 372x295 pixel, 72dpi, 13.12x10.41 cm, bb=0 0 372 295
-%  \caption{\textcolor{red}{INSERT CAPTION HERE}}
-%  \label{fig:in_heat_plot}
-% \end{figure}
-% 
+
+\begin{figure}
+ \centering
+ \includegraphics[scale=0.6]{./figures/ex1.png}
+ % fracplot.pdf: 372x295 pixel, 72dpi, 13.12x10.41 cm, bb=0 0 372 295
+ \caption{Relative fluxes as seen by a 3 x 3 array of indium foils. The central foil corresponds to the location in which target and monitor foils were mounted during the cross section measurements, verifying that the beam is centered on the middle of mounted foils.}
+ \label{fig:in_heat_plot}
+\end{figure}
 
 
 
-\comment{CHECK WITH ERIC for 3x3 In info and plot  \autoref{fig:in_heat_plot}}
+
+% \comment{CHECK WITH ERIC for 3x3 In info and plot  \autoref{fig:in_heat_plot}}
 
 
 
@@ -835,7 +835,7 @@ N_{obs} &= D \epsilon_\gamma I_\gamma \\
 &=  \epsilon_\gamma I_\gamma  \dfrac{N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} }{\lambda}\pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_3} - e^{-\lambda t_2}} \nonumber
 \end{align}
 
-Solving this equation for the  cross-section results in:
+Solving this equation for the  cross section results in:
 
 \begin{equation}\label{eqn:single_xs_eqn}
 \sigma\pp{\bar{E}} = \dfrac{N_{obs}\lambda}{N_T \epsilon_\gamma I_\gamma  \phi\pp{\bar{E}}  \pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_3} - e^{-\lambda t_2}}}
@@ -878,13 +878,11 @@ where:
 \item and $x$ is the thickness of foil traversed by a particular decay gamma ray [cm] 
 \end{itemize}
 
-In addition to the \ce{^{115}In}(n,n')\ce{^{115m}In} reference cross section, the \ce{^{115}In}(n,$\gamma$)\ce{^{116m}In}  ($t_{1/2}$ = 54.29 min) activity can be used to determine the  \ce{^{64}Zn}(n,p) and \ce{^{47}Ti}(n,p) cross section.  The capture activity is potentially subject to contamination from lower energy, especially thermal, \enquote{room return} neutrons since the (n,$\gamma$) cross section at 25 meV is approximately YYY MeV greater than at 2.7 MeV.    
+In addition to the \ce{^{115}In}(n,n')\ce{^{115m}In} reference cross section, the \ce{^{115}In}(n,$\gamma$)\ce{^{116m}In}  ($t_{1/2}$ = 54.29 min \cite{Blachot2010}) activity can be used to determine the  \ce{^{64}Zn}(n,p) and \ce{^{47}Ti}(n,p) cross section.  The capture activity is potentially subject to contamination from lower energy, especially thermal, \enquote{room return} neutrons since the (n,$\gamma$) cross section at 25 meV is approximately 2,000 times greater than at 2.7 MeV  \cite{Capote2012,zsolnay2012technical}.    
 
-\comment{cite relevant NDS article}
+% \comment{cite relevant NDS article}
 
-\comment{add appropriate numbers to (n,g) cross sections}
 
-\comment{cite IRDFF somewhere?}
 
 With the exception of decay constants, which have negligible uncertainty compared to other sources of uncertainties in this work, each of the parameters in this model carries a statistical uncertainty. Based on the assumption that these uncertainties are independent, the total relative statistical uncertainty $\delta_\sigma$ is calculated by taking the quadrature sum of the relative uncertainties of each parameter  $\delta_i$:
 
@@ -892,7 +890,7 @@ With the exception of decay constants, which have negligible uncertainty compare
 \delta_\sigma = \norm{ \ensuremath{\vec{\delta}} }_2 = \sqrt{\sum_{i=1}^N  \delta_i^2  }
 \end{equation}
 
-This total statistical uncertainty will be plotted as the cross-section error bar in the excitation function for these production reactions.
+This total statistical uncertainty will be plotted as the cross section error bar in the excitation function for these production reactions.
 
 
 
@@ -955,9 +953,9 @@ Using the ratio method described here, the cross sections for the \ce{^{47}Ti}(n
 \begin{tabular}{@{}cc@{}}
 \toprule
 Reaction                                                                            & $\sigma$($E_n$ = 2.7645 MeV) (mb)                                                                       \\ \midrule
-\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{113}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}45.953 $\pm$ 3.351, \\ 46.493 $\pm$ 2.805, \\ 46.9 $\pm$ 3.189\end{tabular}  \\
-\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}49.716 $\pm$ 3.335, \\ 49.011 $\pm$ 2.698, \\ XXXX $\pm$ XXXXXX\end{tabular} \\
-\begin{tabular}[c]{@{}c@{}}\ce{^{47}Ti}(n,p)\ce{^{47}Sc} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}25.901 $\pm$ 1.7089, \\ XXXXX $\pm$ XXXXX *\end{tabular}                   \\ \bottomrule
+\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{113}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}45.958 $\pm$ 2.553, \\ 46.498 $\pm$ 1.745, \\ 46.841 $\pm$ 3.170\end{tabular}  \\ \rule{0pt}{8ex}    
+\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}49.926 $\pm$ 3.190, \\ 49.219 $\pm$ 2.709, \\ 49.011 $\pm$ 2.540\end{tabular} \\ \rule{0pt}{6ex}    
+\begin{tabular}[c]{@{}c@{}}\ce{^{47}Ti}(n,p)\ce{^{47}Sc} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}25.904 $\pm$ 1.193, \\ 26.751 $\pm$ 1.394 *\end{tabular}                   \\ \bottomrule
 \end{tabular}
 \end{table}
 
