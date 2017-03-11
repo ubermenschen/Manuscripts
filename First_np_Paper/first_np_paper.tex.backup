@@ -784,7 +784,7 @@ As shown in \autoref{sec:sample_loading} above, the effective neutron energy dep
 
 \begin{figure}
  \centering
- \includegraphics[scale=0.6]{./figures/ex1.png}
+ \includegraphics[scale=0.54]{./figures/ex1.png}
  % fracplot.pdf: 372x295 pixel, 72dpi, 13.12x10.41 cm, bb=0 0 372 295
  \caption{Relative fluxes as seen by a 3 x 3 array of indium foils. The central foil corresponds to the location in which target and monitor foils were mounted during the cross section measurements, verifying that the beam is centered on the middle of mounted foils.}
  \label{fig:in_heat_plot}
@@ -902,7 +902,9 @@ The largest source of systematic uncertainty in the cross section determined via
 \comment{filling in missing data}
 
 
-\comment{Use your energy-angle figure from Lisken above to estimate these numbers. You can point to the figure in the text if you'd like.}
+\comment{Can someone use the energy-angle figure from Lisken above (or another tool) to estimate these numbers?
+% You can point to the figure in the text if you'd like.
+}
 
 
 
@@ -960,19 +962,19 @@ Reaction                                                                        
 
 \comment{Truncate sig figs in En in \autoref{tab:xs_results} }
 
-Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} present the determined cross sections for the production of  \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu}  relative to literature data retrieved from EXFOR \cite{Otuka2014272,PhysRev.114.565,doi:10.1143/JPSJ.17.1215,paulsen1967cross,doi:10.1139/p72-336,Smith1975,King1979,Hussain1983,Ikeda1991,Shimizu2004543,PhysRev.126.271,Armitage1967,Ikeda1990,Senga2000,Shimizu2004975}. The weighted average of our measurements give   46.415 $\pm$ 1.720 mb (relative to \ce{^{113}In}) and  49.315 $\pm$ 2.567 mb (relative to \ce{^{115}In})    for \ce{^{64}Zn}(n,p)\ce{^{64}Cu},   and 26.262 $\pm$  0.822 mb for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}. The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section measured in this work is consistent with  other literature results, but with a smaller uncertainty (\textless 5\%). However, in the case of the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section, our results are consistent with the results from the \textcolor{red}{XXX groups} and both the ENDF/B-VII.1\textcolor{red}{[XXXref citation]} and TALYS\cite{Koning2012}  values, but significantly below the results from \textcolor{red}{YYY}.  
+Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} present the determined cross sections for the production of  \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu}  relative to literature data retrieved from EXFOR \cite{Otuka2014272,PhysRev.114.565,doi:10.1143/JPSJ.17.1215,paulsen1967cross,doi:10.1139/p72-336,Smith1975,King1979,Hussain1983,Ikeda1991,Shimizu2004543,PhysRev.126.271,Armitage1967,Ikeda1990,Senga2000,Shimizu2004975}. The weighted average of our measurements give   46.415 $\pm$ 1.720 mb (relative to \ce{^{113}In}) and  49.315 $\pm$ 2.567 mb (relative to \ce{^{115}In})    for \ce{^{64}Zn}(n,p)\ce{^{64}Cu},   and 26.262 $\pm$  0.822 mb for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}. The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section measured in this work is consistent with  other literature results, but with a smaller uncertainty (\textless 5\%). However, in the case of the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section, our results are consistent with the results from the Smith, Armitage, and Ikeda groups \cite{Smith1975,Armitage1967,Ikeda1990} and both the ENDF/B-VII.1 \cite{Chadwick2011} and TALYS \cite{Koning2012}  values, but significantly below the results from Hussain, Gonzalez, and Shimizu \cite{Hussain1983,PhysRev.126.271,Shimizu2004975}.  
 
 \comment{I referenced the original publication for each data set in \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} as ''Author (Year)''. Is this acceptable, or should I add the parenthetical ([28], [29],[etc]) onto each entry in the figure legends as well?}
 
-\comment{fill in missing data, verify \% uncertainty, fill in missing group names, verify ENDF/B-VII.1 as latest}
+% \comment{fill in missing data, verify \% uncertainty, fill in missing group names, verify ENDF/B-VII.1 as latest}
 
 % \cite{koning2005talys}. 
 
-\comment{Also make sure to cite the original experimental work either here, or later when you review the values we determined.}
+% \comment{Also make sure to cite the original experimental work either here, or later when you review the values we determined.}
 
-\comment{Add Shimizu data into plots , as well as 115In capture points}
+% \comment{Add our 115In capture points? S}
 
-\comment{Change to zoomed-in view like in \autoref{fig:cu_xs} as appropriate}
+\comment{Is the ''zoom'' appropriate for Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom}?}
 
 \begin{figure}
  \centering
@@ -1004,12 +1006,12 @@ As mentioned above, the cross section can be obtained relative to both the inela
 
 
 
-\comment{The capture cross sections are actually consistent with effective 2.45 MeV neutrons (which are still fast). For capture of 2.76 MeV neutrons, we predict (n,p) cross sections approx. 15 mb less than using the In(n,n') monitors. How can we incorporate best this? Please suggest language changes / additions.}
+\comment{The capture cross sections are actually consistent with effective 2.45 MeV neutrons (which are still fast). For capture of 2.76 MeV neutrons, we predict (n,p) cross sections approx. 15 mb less than using the In(n,n') monitors. How can we incorporate best this? Please suggest language changes / additions. Since they  are only consistent at 2.45 MeV, I removed the points from Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom}, but will happily add them back if someone thinks they serve a purpose.}
 
           
 \section{Conclusion}
 
-Using activation methods on thin foils, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections were measured for  \textcolor{red}{2.7645 MeV +0.151/-0.219} neutrons produced using the High Flux Neutron Generator (HFNG) at UC Berkeley. The cross sections were measured with a  5\% uncertainty relative to the well-known \ce{^{115}In}(n,n')\ce{^{115m}In} and \ce{^{113}In}(n,n')\ce{^{113m}In} fast neutron cross sections \cite{Capote2012,zsolnay2012technical}. The measured values of \textcolor{red}{XXXX and YYYY}, respectively, are consistent with earlier experimental data and theoretical models, but have smaller uncertainties than previous measurements. In addition, the results for the production of \ce{^{116}In} via the \ce{^{115}In}(n,$\gamma$) reaction was shown to be consistent with activation from the capture of fast (e.g., $\approx$2.45 MeV) neutrons, rather than from \enquote{room return} thermal neutrons. The use of DD neutron generators can be an efficient method for the measurement of low-energy (n,p) reaction channels, as well as a relative method used to normalize measurements at higher neutron energies. 
+Using activation methods on thin foils, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections were measured for  \textcolor{red}{2.7645 MeV +0.151/-0.219} neutrons produced using the High Flux Neutron Generator (HFNG) at UC Berkeley. The cross sections were measured with a  5\% uncertainty relative to the well-known \ce{^{115}In}(n,n')\ce{^{115m}In} and \ce{^{113}In}(n,n')\ce{^{113m}In} fast neutron cross sections \cite{Capote2012,zsolnay2012technical}. The measured values of \textcolor{red}{XXXX and YYYY}, respectively, are consistent with earlier experimental data and theoretical models, but have smaller uncertainties than previous measurements. In addition, the results for the production of \ce{^{116}In} via the \ce{^{115}In}(n,$\gamma$) reaction was shown to be consistent with activation from the capture of fast \textcolor{red}{(e.g., $\approx$2.45 MeV)} neutrons, rather than from \enquote{room return} thermal neutrons. The use of DD neutron generators can be an efficient method for the measurement of low-energy (n,p) reaction channels, as well as a relative method used to normalize measurements at higher neutron energies. 
 
 \comment{Truncate sig figs above, fill in values, use correct fast neutron energy above}
 
@@ -1063,7 +1065,7 @@ In closing, we have measured the \ce{^{64}Cu}(n,p) and \ce{^{47}Ti}(n,p) cross s
  
  This work has been carried out at the University of California, Berkeley, and performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under contract \# DE-AC52-07NA27344 and Lawrence Berkeley National Laboratory under contract \# DE-AC02-05CH11231. Funding has been provided from the US Nuclear Regulatory Commission, the US Nuclear Data Program, and  DFG Research Fellowship RU 2065/1-1. 
  
- We also wish to acknowledge Glenn Jones for \textcolor{red}{XXXXXXXXXXX}.
+ We also wish to acknowledge Glenn Jones for \textcolor{red}{XXXXX XXXXXX}.
  
  \comment{Please provide appropriate language for Glenn Jones. Who else should we acknowledge?}
 
@@ -1305,7 +1307,6 @@ In closing, we have measured the \ce{^{64}Cu}(n,p) and \ce{^{47}Ti}(n,p) cross s
 
 % J. F. Briesmeister et al., Los Alamos National Laboratory, 1986.
 
-M. B. Chadwick,et al., Nucl. Data Sheets, vol. 107, no. 12, 2006.   (ENDF)
 
 % A. J. Koning et al., AIP Conference Proceedings, 2005, vol. 769, no. 2.
 
@@ -1321,7 +1322,7 @@ M. B. Chadwick,et al., Nucl. Data Sheets, vol. 107, no. 12, 2006.   (ENDF)
 
 % S. M. Qaim et al., IAEA Technical Reports Series No. 473, 2011.
 
-T. Shimizu, et al, Ann. Nucl. Energy, vol. 31, no. 9, pp. 975-990, 2004.
+% T. Shimizu, et al, Ann. Nucl. Energy, vol. 31, no. 9, pp. 975-990, 2004.
 
 % T. Shimizu, et al, Nucl. Instruments Methods Phys. Res. Sect. A Accel. Spectrometers, Detect. Assoc. Equip., vol. 527, no. 3, pp. 543-553, 2004.
 
@@ -1330,7 +1331,6 @@ T. Shimizu, et al, Ann. Nucl. Energy, vol. 31, no. 9, pp. 975-990, 2004.
 
 \comment{Cite Cory's thesis, or upcoming NIM paper?}
 
-\comment{Convert these to BibTeX format!}
 
 %% Authors are advised to use a BibTeX database file for their reference list.
 %% The provided style file elsarticle-num.bst formats references in the required Procedia style
