@@ -425,7 +425,7 @@ Neutron activation was carried out via irradiation in the High-Flux Neutron Gene
 \subsection{Cross section determination by relative activation}\label{sec:sample_loading}
 
 
-The approach used in both measurements was to irradiate foils of zinc or titanium, which were co-loaded with indium foils in order to determine their (n,p) cross sections relative to the well-established \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} neutron dosimetry standards \cite{Capote2012}.   \autoref{tab:foil_specs} records physical characteristics of each foil for the various irradiations. In each experiment, the co-loaded foils were irradiated for 3 hours at nominal operating conditions of 1.3 mA and 100 kV.  After irradiation, the foils were removed and placed in front of an appropriate High-Purity Germanium (HPGe) gamma-ray detector and the decay gamma-rays were recorded in variable-time bins.   
+The approach used in both measurements was to irradiate foils of zinc or titanium, which were co-loaded with indium foils in order to determine their (n,p) cross sections relative to the well-established \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} neutron dosimetry standards \cite{Capote2012,zsolnay2012technical}.   \autoref{tab:foil_specs} records physical characteristics of each foil for the various irradiations. In each experiment, the co-loaded foils were irradiated for 3 hours at nominal operating conditions of 1.3 mA and 100 kV.  After irradiation, the foils were removed and placed in front of an appropriate High-Purity Germanium (HPGe) gamma-ray detector and the decay gamma-rays were recorded in variable-time bins.   
 
 
 
@@ -878,13 +878,11 @@ where:
 \item and $x$ is the thickness of foil traversed by a particular decay gamma ray [cm] 
 \end{itemize}
 
-In addition to the \ce{^{115}In}(n,n')\ce{^{115m}In} reference cross section, the \ce{^{115}In}(n,$\gamma$)\ce{^{116m}In}  ($t_{1/2}$ = 54.29 min) activity can be used to determine the  \ce{^{64}Zn}(n,p) and \ce{^{47}Ti}(n,p) cross section.  The capture activity is potentially subject to contamination from lower energy, especially thermal, \enquote{room return} neutrons since the (n,$\gamma$) cross section at 25 meV is approximately YYY MeV greater than at 2.7 MeV.    
+In addition to the \ce{^{115}In}(n,n')\ce{^{115m}In} reference cross section, the \ce{^{115}In}(n,$\gamma$)\ce{^{116m}In}  ($t_{1/2}$ = 54.29 min \cite{Blachot2010}) activity can be used to determine the  \ce{^{64}Zn}(n,p) and \ce{^{47}Ti}(n,p) cross section.  The capture activity is potentially subject to contamination from lower energy, especially thermal, \enquote{room return} neutrons since the (n,$\gamma$) cross section at 25 meV is approximately 2,000 times greater than at 2.7 MeV  \cite{Capote2012,zsolnay2012technical}.    
 
-\comment{cite relevant NDS article}
+% \comment{cite relevant NDS article}
 
-\comment{add appropriate numbers to (n,g) cross sections}
 
-\comment{cite IRDFF somewhere?}
 
 With the exception of decay constants, which have negligible uncertainty compared to other sources of uncertainties in this work, each of the parameters in this model carries a statistical uncertainty. Based on the assumption that these uncertainties are independent, the total relative statistical uncertainty $\delta_\sigma$ is calculated by taking the quadrature sum of the relative uncertainties of each parameter  $\delta_i$:
 
@@ -898,7 +896,7 @@ This total statistical uncertainty will be plotted as the cross section error ba
 
 \subsection{Systematic errors}
 
-The largest source of systematic uncertainty in the cross section determined via the \enquote{ratio approach} is the \textcolor{red}{YYY\%} uncertainty in the \ce{^{115}In}(n,n')\ce{^{115m}In}  cross section and the \textcolor{red}{YYY\%} uncertainty in the \ce{^{113}In}(n,n')\ce{^{113m}In}  cross section.  An additional uncertainty arises from the fact that the Zn/Ti samples are not located at exactly the same location as the indium monitor foils, and are therefore not subject to precisely the same neutron flux.  However, the MCNP6 simulations shown in \autoref{fig:mcnp_flux} indicate that the difference in the flux that the two foils are subjected to is less than \textcolor{red}{YY\%}.  Other monitor foils could be used instead of indium, with \ce{^{57}Ni}(n,p)\ce{^{57}Co} being one possible candidate, but the 4.486 hour and 99.476 minute half-lives of the \ce{^{115m}In} and \ce{^{113m}In} isomers \textcolor{red}{[XXXref NDS]}, respectively, makes indium a better candidate for measuring the production of radionuclides with lifetimes much less than 77+ days. The largest source of uncertainty in energy window arises from uncertainties in the actual dimension of the deuteron beam on the production target.  We believe, based on \enquote{burn marks} on the production target that the beam was approximately circular, with a flat intensity profile and a 5 mm diameter.  However, every 1 mm change in the beam radius would cause a \textcolor{red}{XXX} MeV shift in the centroid and a \textcolor{red}{YYY} MeV change in the effective energy bin.  
+The largest source of systematic uncertainty in the cross section determined via the \enquote{ratio approach} is the 2.586\% uncertainty in the \ce{^{115}In}(n,n')\ce{^{115m}In}  cross section and the 1.447\% uncertainty in the \ce{^{113}In}(n,n')\ce{^{113m}In}  cross section  \cite{Capote2012,zsolnay2012technical}.  An additional uncertainty arises from the fact that the Zn/Ti samples are not located at exactly the same location as the indium monitor foils, and are therefore not subject to precisely the same neutron flux.  However, the MCNP6 simulations shown in \autoref{fig:mcnp_flux} indicate that the difference in the flux that the two foils are subjected to is less than 2\%.  Other monitor foils could be used instead of indium, with \ce{^{57}Ni}(n,p)\ce{^{57}Co} being one possible candidate, but the 4.486 hour and 99.476 minute half-lives of the \ce{^{115m}In} and \ce{^{113m}In} isomers \cite{Blachot2012,Blachot2010a}, respectively, makes indium a better candidate for measuring the production of radionuclides with lifetimes much less than 77+ days. The largest source of uncertainty in energy window arises from uncertainties in the actual dimension of the deuteron beam on the production target.  We believe, based on \enquote{burn marks} on the production target that the beam was approximately circular, with a flat intensity profile and a 5 mm diameter.  However, every 1 mm change in the beam radius would cause a \textcolor{red}{XXX} MeV shift in the centroid and a \textcolor{red}{YYY} MeV change in the effective energy bin.  
 
 
 \comment{filling in missing data}
@@ -923,11 +921,10 @@ The largest source of systematic uncertainty in the cross section determined via
 
 Using the ratio method described here, the cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} reactions have been calculated for incident neutron energy of 2.7645 MeV,  + 0.0151 MeV / - 0.0219 MeV. These values are recorded in \autoref{tab:xs_results}.
 
-\comment{Need Mauricio's Cu point w/ more sigfigs. Need Mauricio's Sc point too}
 
 \comment{Truncate sig figs here - Note that the systematic uncertainty you calculated in the previous paragraph will provide a natural limit on the number of significant figures you quote for the energy window.}
 
-\comment{Report a weighted average between the solo values, insert in text}
+% \comment{Report a weighted average between the solo values, insert in text}
 
 % 
 % % Please add the following required packages to your document preamble:
@@ -955,15 +952,17 @@ Using the ratio method described here, the cross sections for the \ce{^{47}Ti}(n
 \begin{tabular}{@{}cc@{}}
 \toprule
 Reaction                                                                            & $\sigma$($E_n$ = 2.7645 MeV) (mb)                                                                       \\ \midrule
-\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{113}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}45.958 $\pm$ 2.553, \\ 46.498 $\pm$ 1.745, \\ 46.841 $\pm$ 3.170\end{tabular}  \\ \rule{0pt}{8ex}    
-\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}49.926 $\pm$ 3.190, \\ 49.219 $\pm$ 2.709, \\ 49.011 $\pm$ 2.540\end{tabular} \\ \rule{0pt}{6ex}    
+\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{113}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}45.958 $\pm$ 2.553, \\ 46.498 $\pm$ 1.745, \\ 46.841 $\pm$ 3.170\end{tabular}  \\ \\[0.1ex]    
+\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}49.926 $\pm$ 3.190, \\ 49.219 $\pm$ 2.709, \\ 49.011 $\pm$ 2.540\end{tabular} \\  \\[0.1ex]   
 \begin{tabular}[c]{@{}c@{}}\ce{^{47}Ti}(n,p)\ce{^{47}Sc} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}25.904 $\pm$ 1.193, \\ 26.751 $\pm$ 1.394 *\end{tabular}                   \\ \bottomrule
 \end{tabular}
 \end{table}
 
 \comment{Truncate sig figs in En in \autoref{tab:xs_results} }
 
-Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} present the determined cross sections for the production of  \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu}  relative to literature data retrieved from EXFOR \textcolor{red}{[XXXXref original experimental papers]}. The weighted average of our measurements give \textcolor{red}{XXXXXX} for \ce{^{64}Zn}(n,p)\ce{^{64}Cu} and \textcolor{red}{YYYYYY} for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}. The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section measured in this work is consistent with  other literature results, but with a smaller uncertainty (\textcolor{red}{6\%}). However, in the case of the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section, our results are consistent with the results from the \textcolor{red}{XXX groups} and both the ENDF/B-VII.1\textcolor{red}{[XXXref citation]} and TALYS\cite{Koning2012}  values, but significantly below the results from \textcolor{red}{YYY}.  
+Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} present the determined cross sections for the production of  \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu}  relative to literature data retrieved from EXFOR \cite{Otuka2014272,PhysRev.114.565,doi:10.1143/JPSJ.17.1215,paulsen1967cross,doi:10.1139/p72-336,Smith1975,King1979,Hussain1983,Ikeda1991,Shimizu2004543,PhysRev.126.271,Armitage1967,Ikeda1990,Senga2000,Shimizu2004975}. The weighted average of our measurements give   46.415 $\pm$ 1.720 mb (relative to \ce{^{113}In}) and  49.315 $\pm$ 2.567 mb (relative to \ce{^{115}In})    for \ce{^{64}Zn}(n,p)\ce{^{64}Cu},   and 26.262 $\pm$  0.822 mb for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}. The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section measured in this work is consistent with  other literature results, but with a smaller uncertainty (\textless 5\%). However, in the case of the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section, our results are consistent with the results from the \textcolor{red}{XXX groups} and both the ENDF/B-VII.1\textcolor{red}{[XXXref citation]} and TALYS\cite{Koning2012}  values, but significantly below the results from \textcolor{red}{YYY}.  
+
+\comment{I referenced the original publication for each data set in \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} as ''Author (Year)''. Is this acceptable, or should I add the parenthetical ([28], [29],[etc]) onto each entry in the figure legends as well?}
 
 \comment{fill in missing data, verify \% uncertainty, fill in missing group names, verify ENDF/B-VII.1 as latest}
 
@@ -977,7 +976,7 @@ Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} present the determined cross se
 
 \begin{figure}
  \centering
- \includegraphics[scale=0.6]{./figures/47Sc_fixed.pdf}
+ \includegraphics[scale=0.65]{./figures/47sc_fixed_1point.pdf}
  % 47Sc_fixed.pdf: 375x294 pixel, 72dpi, 13.23x10.37 cm, bb=0 0 375 294
  \caption{Measured \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section relative to indium activation.}
  \label{fig:sc_xs}
@@ -994,7 +993,7 @@ Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} present the determined cross se
 
 \begin{figure}
  \centering
- \includegraphics[scale=0.6]{./figures/64cu_fixed_zoom.pdf}
+ \includegraphics[scale=0.65]{./figures/64cu_fixed_1point.pdf}
  % 47Sc_fixed.pdf: 375x294 pixel, 72dpi, 13.23x10.37 cm, bb=0 0 375 294
  \caption{Measured \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section relative to indium activation.}
  \label{fig:cu_xs_zoom}
@@ -1005,14 +1004,14 @@ As mentioned above, the cross section can be obtained relative to both the inela
 
 
 
-\comment{verify this claim!}
+\comment{The capture cross sections are actually consistent with effective 2.45 MeV neutrons (which are still fast). For capture of 2.76 MeV neutrons, we predict (n,p) cross sections approx. 15 mb less than using the In(n,n') monitors. How can we incorporate best this? Please suggest language changes / additions.}
 
           
 \section{Conclusion}
 
-Using activation methods on thin foils, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections were measured for  \textcolor{red}{2.7645 MeV +0.151/-0.219} neutrons produced using the High Flux Neutron Generator (HFNG) at UC Berkeley. The cross sections were measured with a  6\% uncertainty relative to the well-known \ce{^{115}In}(n,n')\ce{^{115m}In} and \ce{^{113}In}(n,n')\ce{^{113m}In} fast neutron cross sections. The measured values of \textcolor{red}{XXXX and YYYY}, respectively, are consistent with earlier experimental data and theoretical models, but have smaller uncertainties than previous measurements. In addition, the results for the production of \ce{^{116}In} via the \ce{^{115}In}(n,$\gamma$) reaction was shown to be consistent with activation from the capture of fast (e.g., $\approx$2.7 MeV) neutrons, rather than from \enquote{room return} thermal neutrons. The use of DD neutron generators can be an efficient method for the measurement of low-energy (n,p) reaction channels, as well as a relative method used to normalize measurements at higher neutron energies. 
+Using activation methods on thin foils, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections were measured for  \textcolor{red}{2.7645 MeV +0.151/-0.219} neutrons produced using the High Flux Neutron Generator (HFNG) at UC Berkeley. The cross sections were measured with a  5\% uncertainty relative to the well-known \ce{^{115}In}(n,n')\ce{^{115m}In} and \ce{^{113}In}(n,n')\ce{^{113m}In} fast neutron cross sections \cite{Capote2012,zsolnay2012technical}. The measured values of \textcolor{red}{XXXX and YYYY}, respectively, are consistent with earlier experimental data and theoretical models, but have smaller uncertainties than previous measurements. In addition, the results for the production of \ce{^{116}In} via the \ce{^{115}In}(n,$\gamma$) reaction was shown to be consistent with activation from the capture of fast (e.g., $\approx$2.45 MeV) neutrons, rather than from \enquote{room return} thermal neutrons. The use of DD neutron generators can be an efficient method for the measurement of low-energy (n,p) reaction channels, as well as a relative method used to normalize measurements at higher neutron energies. 
 
-\comment{Truncate sig figs above, fill in values}
+\comment{Truncate sig figs above, fill in values, use correct fast neutron energy above}
 
 
 The proximity of the target to the neutron production surface also opens the possibility of performing a measurement of the cross section over a limited energy range via mounting the samples slightly off-axis with respect to the beam.  This could be accomplished using the 9-foil sample holder described in \autoref{sec:lee_sec} above.  Mounting samples at each of these positions would subject the samples to neutrons with energies ranging from \textcolor{red}{XXX at the central location to YYY} at the four corners, with the other locations having intermediate energy values.  These sorts of multi-sample measurements could be used to determine the \enquote{rising edge} of the cross sections, aiding in the development of optical models for the reactants.
@@ -1046,9 +1045,8 @@ where we have introduced the dimensionless \emph{neutron utilization factor} $\e
 % \end{strip}
 
 
-An optimal design for the neutron generator would also allow for the possibility of reflecting fast neutrons back onto the target to maximize their utilization for radionuclide production.  This sort of \enquote{flux trap} has been used for the production of radionuclides in reactors, but has not to date been optimized for use with fast neutrons  at DD and/or DT neutron sources.  The HFNG, with its self-loading target and \enquote{flux trap} geometry, has many features that make it well-suited for such isotope production purpose.  Switching to DT operation would dramatically increase the flux as well as the production cross section, since (n,p) tends to be significantly larger at 14 MeV.  However, the higher neutron energy would also open the (n,pn) channels.  In the case of \ce{^{47}Sc}, this would lead to the presence of \ce{^{46}Sc} ($t_{1/2}$ = 83.79 d) in the sample, which might pose some concerns for medical applications.  However, this is not an issue for \ce{^{64}Cu} since the (n,pn) channel leads to the production of stable \ce{^{63}Cu}.  
+An optimal design for the neutron generator would also allow for the possibility of reflecting fast neutrons back onto the target to maximize their utilization for radionuclide production.  This sort of \enquote{flux trap} has been used for the production of radionuclides in reactors, but has not to date been optimized for use with fast neutrons  at DD and/or DT neutron sources.  The HFNG, with its self-loading target and \enquote{flux trap} geometry, has many features that make it well-suited for such isotope production purpose.  Switching to DT operation would dramatically increase the flux as well as the production cross section, since (n,p) tends to be significantly larger at 14 MeV.  However, the higher neutron energy would also open the (n,pn) channels.  In the case of \ce{^{47}Sc}, this would lead to the presence of \ce{^{46}Sc} ($t_{1/2}$ = 83.79 d \cite{Wu2000}) in the sample, which might pose some concerns for medical applications.  However, this is not an issue for \ce{^{64}Cu} since the (n,pn) channel leads to the production of stable \ce{^{63}Cu}.  
 
-\comment{cite relevant NDS article}
 
 In closing, we have measured the \ce{^{64}Cu}(n,p) and \ce{^{47}Ti}(n,p) cross sections at \textcolor{red}{2.7 MeV} incident neutron energies.  In addition to improving the value of these measurements nuclear reaction evaluation, our results highlight the potential use of compact neutron generators for the production of radionuclides locally for medical applications.  In the future we plan to perform additional cross section measurements at the HFNG, and to explore methods to extract the radionuclides from the sample using both chemical and physical separation techniques.  
 
@@ -1057,7 +1055,7 @@ In closing, we have measured the \ce{^{64}Cu}(n,p) and \ce{^{47}Ti}(n,p) cross s
 
  Future work will involve the continued measurement of the (n,p) production cross sections for various other emerging therapeutic and diagnostic radioisotopes, to expand the toolset of options available for modern medical imaging and cancer therapy. This will focus on radionuclides which permit more customized and precise dose deposition, as well as patient-specific treatments
  
- \comment{Should we specifically mention other isotopes we plan to measure?}
+%  \comment{Should we specifically mention other isotopes we plan to measure?}
 
 
  
@@ -1317,7 +1315,7 @@ M. B. Chadwick,et al., Nucl. Data Sheets, vol. 107, no. 12, 2006.   (ENDF)
 
 % C. Müller et al., J. Nucl. Med., vol. 55, no. 10, Oct. 2014.
 
-N. Otuka et al., Nucl. Data Sheets, vol. 120, 2014.   (EXFOR)
+% N. Otuka et al., Nucl. Data Sheets, vol. 120, 2014.   (EXFOR)
 
 % L. Pietrelli et al., J. Radioanal. Nucl. Chem., vol. 157, no. 2, 1992.
 
@@ -1325,7 +1323,7 @@ N. Otuka et al., Nucl. Data Sheets, vol. 120, 2014.   (EXFOR)
 
 T. Shimizu, et al, Ann. Nucl. Energy, vol. 31, no. 9, pp. 975-990, 2004.
 
-T. Shimizu, et al, Nucl. Instruments Methods Phys. Res. Sect. A Accel. Spectrometers, Detect. Assoc. Equip., vol. 527, no. 3, pp. 543-553, 2004.
+% T. Shimizu, et al, Nucl. Instruments Methods Phys. Res. Sect. A Accel. Spectrometers, Detect. Assoc. Equip., vol. 527, no. 3, pp. 543-553, 2004.
 
 % D. Updegraff et al., ''Nuclear Medicine without Nuclear Reactors or Uranium Enrichment,'' 2013.
 

@@ -139,9 +139,121 @@ D.~C. Radford, ``{ESCL8R and LEVIT8R: Software for interactive graphical
   analysis of HPGe coincidence data sets},'' {\em Nuclear Inst. and Methods in
   Physics Research, A}, vol.~361, pp.~297--305, jul 1995.
 
+\bibitem{Otuka2014272}
+N.~Otuka, E.~Dupont, V.~Semkova, B.~Pritychenko, A.~I. Blokhin, M.~Aikawa,
+  S.~Babykina, M.~Bossant, G.~Chen, S.~Dunaeva, R.~A. Forrest, T.~Fukahori,
+  N.~Furutachi, S.~Ganesan, Z.~Ge, O.~O. Gritzay, M.~Herman, S.~Hlava{\v{c}},
+  K.~Katō, B.~Lalremruata, Y.~O. Lee, A.~Makinaga, K.~Matsumoto,
+  M.~Mikhaylyukova, G.~Pikulina, V.~G. Pronyaev, A.~Saxena, O.~Schwerer, S.~P.
+  Simakov, N.~Soppera, R.~Suzuki, S.~Tak{\'{a}}cs, X.~Tao, S.~Taova,
+  F.~T{\'{a}}rk{\'{a}}nyi, V.~V. Varlamov, J.~Wang, S.~C. Yang, V.~Zerkin, and
+  Y.~Zhuang, ``{Towards a More Complete and Accurate Experimental Nuclear
+  Reaction Data Library (EXFOR): International Collaboration Between Nuclear
+  Reaction Data Centres (NRDC)},'' {\em Nuclear Data Sheets}, vol.~120,
+  pp.~272--276, 2014.
+
+\bibitem{PhysRev.114.565}
+J.~Rapaport and J.~J. van Loef, ``{Excitation Function of the Reaction Zn-64(n,
+  p)Cu-64 with Neutrons of Energies between 2 and 3.6 Mev},'' {\em Phys. Rev.},
+  vol.~114, pp.~565--569, apr 1959.
+
+\bibitem{doi:10.1143/JPSJ.17.1215}
+K.~Nakai, H.~Gotoh, and H.~Amano, ``{Excitation Functions of Ni58(n, p)Co58 and
+  Zn64(n, p)Cu64 Reactions in the Energy Region from 1.8 to 4.8 Mev},'' {\em
+  Journal of the Physical Society of Japan}, vol.~17, no.~8, pp.~1215--1223,
+  1962.
+
+\bibitem{paulsen1967cross}
+A.~Paulsen and H.~Liskien, ``{Cross-sections for some (n, p) reactions near
+  threshold},'' in {\em Nuclear data for reactors. Proceedings of a conference
+  on nuclear data-microscopic cross-sections and other data basic for
+  reactors.}, (Paris), pp.~217--224, 1967.
+
+\bibitem{doi:10.1139/p72-336}
+D.~C. Santry and J.~P. Butler, ``{Excitation Curves for the Reactions of Fast
+  Neutrons with Zinc},'' {\em Canadian Journal of Physics}, vol.~50, no.~20,
+  pp.~2536--2548, 1972.
+
+\bibitem{Smith1975}
+D.~L. Smith and J.~W. Meadows, ``{Cross-Section Measurement of (n, p) Reactions
+  for 27Al, 46,47,48Ti, 58Ni, 59Co, and 64Zn from Near Threshold to 10 MeV},''
+  {\em Nuclear Science and Engineering}, vol.~58, no.~3, pp.~314--320, 1975.
+
+\bibitem{King1979}
+C.~King, C.~Ai, and J.~Chou, ``{Cross-section measurement for the reaction
+  Zn-64(n,p) Cu-64},'' {\em Nuclear Science, Taiwan}, vol.~16, no.~6, p.~71,
+  1979.
+
+\bibitem{Hussain1983}
+H.~Hussain and S.~Hunt, ``{Absolute neutron cross section measurements in the
+  energy range between 2 and 5 MeV},'' {\em The International Journal of
+  Applied Radiation and Isotopes}, vol.~34, pp.~731--738, apr 1983.
+
+\bibitem{Ikeda1991}
+Y.~Ikeda, C.~Konno, M.~Mizumoto, K.~Hasegawa, S.~Chiba, Y.~Yamanouchi, and
+  M.~Sugimoto, ``{Activation cross section measurement at neutron energies of
+  9.5, 11.0, 12.0 and 13.2 MeV using H-1(B-11,n)C-12 neutron source at
+  JAERI},'' in {\em Proceedings of an International Conference, held at the
+  Forschungszentrum J{\"{u}}lich, Fed. Rep. of Germany, 13–17 May 1991}
+  (S.~M. Qaim, ed.), (Juelich, Germany), pp.~294--296, Springer-Verlag Berlin
+  Heidelberg, 1990.
+
+\bibitem{Shimizu2004543}
+T.~Shimizu, H.~Sakane, S.~Furuichi, M.~Shibata, K.~Kawade, and H.~Takeuchi,
+  ``{An improved pneumatic sample transport system for measurement of
+  activation cross-sections with d-D neutrons in the energy range between 2.1
+  and 3.1 MeV},'' {\em Nuclear Instruments and Methods in Physics Research
+  Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  vol.~527, no.~3, pp.~543--553, 2004.
+
+\bibitem{PhysRev.126.271}
+L.~Gonz{\'{a}}lez, A.~Trier, and J.~J. van Loef, ``{Excitation Function of the
+  Reaction Ti-47(n, p)Sc-47 at Neutron Energies between 2.0 and 3.6 Mev},''
+  {\em Phys. Rev.}, vol.~126, pp.~271--273, apr 1962.
+
+\bibitem{Armitage1967}
+F.~Armitage, ``{47Ti(n,p) Cross-section from 2.19 To 3.64 MeV},'' {\em
+  Priv.Comm: J. Symonds (1967)}, 1967.
+
+\bibitem{Ikeda1990}
+Y.~Ikeda, C.~Konno, K.~Kosako, and K.~Oishi, ``{Activation Cross Section
+  Measurement at a Neutron Energy Range from 2.1 to 3.0 Mev by D-D Neutron
+  Source at FNS},'' {\em Japanese Report to NEANDC}, vol.~155, p.~11, 1990.
+
+\bibitem{Senga2000}
+T.~Senga, H.~Sakane, M.~Shibata, H.~Yamamoto, K.~Kawade, Y.~Kasugai, Y.~Ikeda,
+  H.~Takeuchi, and T.~Furuta, ``{Measurement of neutron activation cross
+  sections in the energy range between 2. and 7. MeV by using a Ti-deuteron
+  Target and a deuteron gas target},'' in {\em Proceedings of the JAERI
+  Conference 2000}, (Japan), p.~5, 2000.
+
+\bibitem{Shimizu2004975}
+T.~Shimizu, H.~Sakane, M.~Shibata, K.~Kawade, and T.~Nishitani, ``{Measurements
+  of activation cross sections of (n, p) and (n, $\alpha$) reactions with d-D
+  neutrons in the energy range of 2.1–3.1 MeV},'' {\em Annals of Nuclear
+  Energy}, vol.~31, no.~9, pp.~975--990, 2004.
+
+\bibitem{Chadwick2011}
+M.~B. Chadwick, M.~Herman, P.~Obloˇzinsk´y, M.~E. Dunn, Y.~Danon, A.~C.
+  Kahler, D.~L. Smith, B.~Pritychenko, G.~Arbanas, R.~Arcilla, R.~Brewer, D.~A.
+  Brown, R.~Capote, A.~D. Carlson, Y.~S. Cho, H.~Derrien, K.~Guber, G.~M. Hale,
+  S.~Hoblit, S.~Holloway, T.~D. Johnson, T.~Kawano, B.~C. Kiedrowski, H.~Kim,
+  S.~Kunieda, N.~M. Larson, L.~Leal, J.~P. Lestone, R.~C. Little, E.~A.
+  McCutchan, R.~E. MacFarlane, M.~MacInnes, C.~M. Mattoon, R.~D. McKnight,
+  S.~F. Mughabghab, G.~P.~A. Nobre, G.~Palmiotti, A.~Palumbo, M.~T. Pigni,
+  V.~G. Pronyaev, R.~O. Sayer, A.~A. Sonzogni, N.~C. Summers, P.~Talou, I.~J.
+  Thompson, A.~Trkov, R.~L. Vogt, S.~C. van~der Marck, A.~Wallner, M.~C. White,
+  D.~Wiarda, and P.~G. Young, ``{ENDF/B-VII.1 nuclear data for science and
+  technology: Cross sections, covariances, fission product yields and decay
+  data},'' {\em Nuclear Data Sheets}, vol.~112, pp.~2887--2996, dec 2011.
+
 \bibitem{Koning2012}
 A.~J. Koning and D.~Rochman, ``{Modern Nuclear Data Evaluation with the TALYS
   Code System},'' {\em Nuclear Data Sheets}, vol.~113, pp.~2927--2934, dec
   2012.
+
+\bibitem{Wu2000}
+S.-C. Wu, ``{Nuclear Data Sheets for A = 46},'' {\em Nuclear Data Sheets},
+  vol.~91, pp.~1--116, sep 2000.
 
 \end{thebibliography}
