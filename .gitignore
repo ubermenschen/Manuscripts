@@ -6,3 +6,7 @@
 *.synctex.gz
 *.tdo
 *.spl
+*.bbl
+*.blg
+*.idx
+
