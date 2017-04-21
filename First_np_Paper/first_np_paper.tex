@@ -35,7 +35,7 @@
 \usepackage [autostyle, english = american]{csquotes}
 \usepackage{longtable}
 \usepackage{subcaption}
-\usepackage{booktabs}
+\usepackage{booktabs,siunitx}
 \usepackage{gensymb}
 
 % \usepackage{mathtools, cuted}
@@ -47,6 +47,7 @@
 \usepackage[colorinlistoftodos]{todonotes}
 
 \usepackage[section]{placeins}
+\usepackage{multirow}
 
 
 \lstset{basicstyle=\small\ttfamily,columns=fullflexible}
@@ -187,6 +188,16 @@
 \newcommand{\mytilde}{\raisebox{0.5ex}{\texttildelow}}
 % \newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle‌​\sim$}}
 
+\sisetup{separate-uncertainty=true,table-space-text-post = *}
+
+\newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}}
+
+\newcommand{\subfigimg}[3][,]{%
+  \setbox1=\hbox{\includegraphics[#1]{#3}}% Store image in box
+  \leavevmode\rlap{\usebox1}% Print image
+  \rlap{\hspace*{50pt}\raisebox{\dimexpr\ht1-2\baselineskip}{#2}}% Print label
+  \phantom{\usebox1}% Insert appropriate spcing
+}
 
 
 \makeatletter
@@ -304,13 +315,14 @@
 
 
 
-Cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} reactions have been measured for quasi-monoenergetic DD neutrons produced by the UC-Berkeley High Flux Neutron Generator.
+Cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} reactions have been measured for quasi-monoenergetic DD neutrons produced by the UC Berkeley High Flux Neutron Generator.
 The study was motivated by interest in the production of \ce{^{47}Sc} and \ce{^{64}Cu} as emerging medical isotopes.
 The cross sections were measured in ratio to the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} inelastic scattering reactions on co-irradiated indium samples.
 Post-irradiation counting using an HPGe and LEPS detectors allowed for cross section determination to within 5\% uncertainty.
 The cross sections were determined with lower uncertainty than existing measurements and are found to be  in good agreement with both empirical and theoretical values.
 This work highlights the utility of using DD plasma-based neutron sources for a host of nuclear data measurements and potentially for the production of radionuclides for medical applications.
 
+\comment{Karl:  \enquote{Comment to engender some discussion.  I have a small concern here, reminiscent of what happened to our electron backstreaming paper in PRAB.  To be publishable, even in NIMB, there has to be a crisp research question resolved, or some innovation.  I think an angle that is missing here is that this is a new design of neutron generator, whose design maximizes the flux density (n/sec/cm2), although the total flux, while respectable, is not spectacular in itself.  This is Lee's recent mantra, and I now understand its significance.  Problematically, as Andrew has pointed out, we don't have the actual instrument paper published yet, so the thrust of the paper can't be too focused on the flux density issue, but a workable angle would be \enquote{given we have this new capability, this is an example of its power}.  Let me suggest Lee provide a sentence for the abstract, and a few sentences of text in the appropriate spot.}}
 
 \comment{The abstract is now nicely short and sweet, but should it be expanded at all?}
 
@@ -356,12 +368,12 @@ Two other potential neutron sources for (n,x) reactions exist in addition to the
  
 
 In contrast,  the neutron spectrum from a DD reaction, which ranges from approximately 2-3 MeV, is ideally suited to (n,p) radionuclide production.
-However, the lower achievable flux from these generators limits their production rate.
+However, the lower achievable flux from these generators limits their production capabilities.
  An additional complication is the relative paucity of high-quality, consistent cross section data for neutrons in the 2-3 MeV DD energy range.
  
 
-The purpose of the present work is to explore the potential to use high-flux neutron generators to produce high-specific activity samples of radionuclides at the mCi level for local use in the application community.
- The research group at UC-Berkeley has been developing a High Flux Neutron Generator (HFNG) that features an internal target where samples can be placed just several millimeters from the neutron producing surface in order to maximize the utilization of the neutron yield for the production of a desired radionuclide \cite{Waltz2017,Waltz2016a}.
+The purpose of the present work is to explore the potential to use high-flux neutron generators to produce high-specific activity samples of radionuclides at the mCi level for local use in the application community. \comment{Karl:  \enquote{A comment, hopefully not too gratuitous at this point, could be inserted here to the effect that if the promise of plasma-based DD generators is ultimately borne out, not only is it anticipated that most hospitals could have their own source affordably, but that it would open up a whole new realm of very short lifetime medical isotopes.  Lee to be the arbiter of whether this is prudent or not.}}
+ The research group at UC Berkeley has  developed a High Flux Neutron Generator (HFNG) that features an internal target where samples can be placed just several millimeters from the neutron producing surface in order to maximize the utilization of the neutron yield for the production of a desired radionuclide \cite{Waltz2017,Waltz2016a}.
  The HFNG uses the D(D,n)\ce{^3He} reaction to produce neutrons with energies near 2.45 MeV together with a self-loading target design to maintain continuous operation without target replacement.
  In addition to the generator itself, efforts are underway to design neutron reflection capabilities to allow scattered neutrons multiple opportunities to interact with an  internally mounted target.
 While these design efforts are underway, the HFNG can be used to better characterize production cross sections at the appropriate neutron energy.
@@ -401,7 +413,7 @@ By expanding the base of efficient reaction pathways, great advances can be made
 Neutron activation was carried out via irradiation in the High-Flux Neutron Generator (HFNG), a DD neutron generator at the University of California, Berkeley.
 This generator extracts deuterium ions from an RF-heated deuterium plasma through a nozzle, whose shape was designed to form a flat-profile beam, 5 mm in diameter.
 This deuterium beam is incident upon a water-cooled, self-loading titanium-coated copper target \cite{Waltz2017,Waltz2016a}, where the titanium layer acts as a reaction surface for DD fusion, producing neutrons with a well-known energy distribution as a function of  emission angle \cite{Liskien_Paulsen_1973}.
-Targets are inserted in the center of the target, approximately 8 mm from the DD reaction surface, prior to startup.
+Irradiation targets are inserted in the center of the titanium layer deuteron target, approximately 8 mm from the DD reaction surface, prior to startup.
 \autoref{fig:hfng_b} displays a cut-away schematic of the HFNG.
 A 100 kV deuterium beam was extracted at 1.3 mA, creating a flux of approximately  $\sci{1.3}{7}$ neutrons/cm$^2$s on the target.
 
@@ -424,7 +436,7 @@ A 100 kV deuterium beam was extracted at 1.3 mA, creating a flux of approximatel
 %         \centering
 % %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[height=3in]{./figures/Capture.PNG}
-%         \caption{The UC-Berkeley High-Flux Neutron Generator,}
+%         \caption{The UC Berkeley High-Flux Neutron Generator,}
 %         \label{fig:hfng_a}
 %     \end{subfigure}%
 %     ~ 
@@ -446,7 +458,7 @@ A 100 kV deuterium beam was extracted at 1.3 mA, creating a flux of approximatel
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
 %         \includegraphics[height=2in]{./figures/target2.png}
         \includegraphics[height=2in]{./figures/cutaway.png}
-        \caption{Cut-away schematic of the HFNG. Note: the ion source is approximately 20 cm in diameter.}
+        \caption{Cut-away schematic of the HFNG. The ion source is approximately 20 cm in diameter.}
                 \label{fig:hfng_b}
 %      \label{fig:main_HFNG}
 \end{figure}
@@ -501,7 +513,7 @@ In each experiment, the co-loaded foils were irradiated for 3 hours at nominal o
 %      \label{fig:main_holders}
 % \end{figure*}
 
-One cm diameter, 1 mm thick natural abundance zinc and titanium targets were employed for the measurement.
+One cm diameter, 1-mm thick natural abundance zinc and titanium targets were employed for the measurement.
 Each of these was  co-loaded with a natural abundance Indium foil of 1 cm diameter and 0.5 mm thickness in a recess cut into a 2-mm thick polyethylene holder, as seen in \autoref{fig:holder_a}, which was mounted in the HFNG target center.
 Prior to loading, each foil was washed with isopropanol and dried, to remove any trace oils or residue that could become activated during irradiation.
 
@@ -512,21 +524,104 @@ Prior to loading, each foil was washed with isopropanol and dried, to remove any
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
 % \usepackage{graphicx}
+
+
 \begin{table*}
 \centering
-\caption{Foil characteristics for each of the three (Zn/In)* experiments and the two (Ti/In)$^\dagger$  experiments.
-}
+\caption{Foil characteristics for each of the three (Zn/In)* experiments and the two (Ti/In)$^\dagger$  experiments.}
 \label{tab:foil_specs}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}ccccccc@{}}
+\begin{tabular}{@{}ccccS[table-format=+1.2,
+                  table-figures-uncertainty=1]S[table-format=+2.2,
+                  table-figures-uncertainty=1]S[table-format=+1.3,
+                  table-figures-uncertainty=1]@{}}
 \toprule
-Foils Used & Metal Purity          & Abundance (a/o)                                                           & \begin{tabular}[c]{@{}c@{}}Foil Density \\ (mg/cm$^2$)\end{tabular} & Thickness (mm)                                                                                                         & Diameter (cm)                                                                                                           & Mass (g, $\pm$ 5 mg)                                                                                    \\ \midrule
-$^\text{nat}$In      & \textgreater 99.999\% & \begin{tabular}[c]{@{}c@{}}\ce{^{113}In} (4.29\%),\\ \ce{^{115}In} (95.71\%)\end{tabular} & 365.5                                                            & \begin{tabular}[c]{@{}c@{}}0.49 $\pm$ 0.02*, \\ 0.50 $\pm$ 0.03*, \\ 0.49 $\pm$ 0.03*, \\ 0.53 $\pm$ 0.06$^\dagger$, \\ 0.50 $\pm$ 0.02$^\dagger$\end{tabular} & \begin{tabular}[c]{@{}c@{}}9.75 $\pm$ 0.09*, \\ 9.98 $\pm$ 0.15*, \\ 9.96 $\pm$ 0.10*, \\ 10.01 $\pm$ 0.11$^\dagger$, \\ 10.00 $\pm$ 0.09$^\dagger$\end{tabular} & \begin{tabular}[c]{@{}c@{}}0.248*, \\ 0.248*, \\ 0.241*, \\ 0.247$^\dagger$,\\  0.248$^\dagger$\ \end{tabular} \\ \hline
-$^\text{nat}$Zn      & \textgreater 99.99\%  & \ce{^{64}Zn} (49.17\%)                                                            & 714.1                                                            & \begin{tabular}[c]{@{}c@{}}1.03 $\pm$ 0.01, \\ 1.03 $\pm$ 0.01, \\ 1.02 $\pm$ 0.01\end{tabular}                                    & \begin{tabular}[c]{@{}c@{}}9.93 $\pm$ 0.14, \\ 9.76 $\pm$ 0.17, \\ 9.89 $\pm$ 0.15\end{tabular}                                     & \begin{tabular}[c]{@{}c@{}}0.538, \\ 0.451, \\ 0.452\ \end{tabular}                           \\ \hline
-$^\text{nat}$Ti      & 99.999\%              & \ce{^{47}Ti} (7.44\%)                                                             & 450.6                                                            & \begin{tabular}[c]{@{}c@{}}1.16 $\pm$ 0.02, \\ 1.15 $\pm$ 0.02\end{tabular}                                                         & \begin{tabular}[c]{@{}c@{}}9.93 $\pm$ 0.04, \\ 9.94 $\pm$ 0.03\end{tabular}                                                          & \begin{tabular}[c]{@{}c@{}}0.337, \\ 0.337\ \end{tabular}                                   \\ \bottomrule
+{Foils Used} & {Metal Purity}          & {Abundance (a/o)}                                                           & \minitab[c]{Foil Density \\ (mg/cm$^2$)} & {Thickness (mm)}                                                                                                         & {Diameter (mm)}                                                                                                           & {Mass (g)}                                                                                    \\ \midrule
+
+
+
+
+\multirow{5}*{\minitab[c]{$^\text{nat}$In}}      & \multirow{5}*{\minitab[c]{\textgreater 99.999\%}} & \multirow{5}*{\minitab[c]{\ce{^{113}In} (4.29\%),\\ \ce{^{115}In} (95.71\%)}} & \multirow{5}*{\minitab[c]{317.6}}                                                              & 0.49 \pm 0.02*  & 9.75 \pm 0.09* & 0.248 \pm 0.005* \\
+
+ &  & & & 0.50 \pm 0.03* & 9.98 \pm 0.15*  & 0.248 \pm 0.005* \\
+ 
+  &  & & & 0.49 \pm 0.03* & 9.96 \pm 0.10* &  0.241 \pm 0.005* \\
+  
+   &  & & & 0.53 \pm 0.06$^\dagger$ & 10.01 \pm 0.11$^\dagger$ & 0.247 \pm 0.005$^\dagger$\\
+   
+    &  & & & 0.50 \pm 0.02$^\dagger$ & 10.00 \pm 0.09$^\dagger$  & 0.248 \pm 0.005$^\dagger$ \\ \hline
+
+
+
+\multirow{3}*{\minitab[c]{$^\text{nat}$Zn}}      & \multirow{3}*{\minitab[c]{\textgreater 99.99\%}} & \multirow{3}*{\minitab[c]{\ce{^{64}Zn} (49.17\%) }} & \multirow{3}*{\minitab[c]{698.9}}                                                              &   1.03 \pm 0.01 &  9.93 \pm 0.14  & 0.538 \pm 0.005 \\
+
+ &  & & & 1.03 \pm 0.01 & 9.76 \pm 0.17 & 0.521 \pm 0.005 \\
+ 
+  &  & & &  1.02 \pm 0.01 & 9.89 \pm 0.15 & 0.542 \pm 0.005  \\   \hline
+
+
+\multirow{2}*{\minitab[c]{$^\text{nat}$Ti}}      & \multirow{2}*{\minitab[c]{99.999\%   }} & \multirow{2}*{\minitab[c]{\ce{^{47}Ti} (7.44\%)   }} & \multirow{2}*{\minitab[c]{434.7}}                                                              &   1.16 \pm 0.02 &  9.93 \pm 0.04  & 0.337 \pm 0.005 \\
+
+ 
+  &  & & &  1.15 \pm 0.02 & 9.94 \pm 0.03 & 0.337 \pm 0.005  \\   \bottomrule
 \end{tabular}%
 }
 \end{table*}
+
+
+
+
+% \begin{table*}
+% \centering
+% \caption{Foil characteristics for each of the three (Zn/In)* experiments and the two (Ti/In)$^\dagger$  experiments.
+% }
+% \label{tab:foil_specs}
+% \resizebox{\textwidth}{!}{%
+% \begin{tabular}{ccccccc}
+% \toprule
+% Foils Used & Metal Purity          & Abundance (a/o)                                                           & \minitab[c]{Foil Density \\ (mg/cm$^2$)} & Thickness (mm)                                                                                                         & Diameter (mm)                                                                                                           & Mass (g)                                                                                    \\ \midrule
+% 
+% 
+% 
+% 
+% $^\text{nat}$In      & \textgreater 99.999\% & \begin{tabular}[c]{@{}c@{}}\ce{^{113}In} (4.29\%),\\ \ce{^{115}In} (95.71\%)\end{tabular} & 365.5                                                            & \begin{tabular}{S[table-format=+1.2,
+%    table-figures-uncertainty=1]}0.49 \pm 0.02* \\ 0.50 \pm 0.03* \\ 0.49 \pm 0.03* \\ 0.53 \pm 0.06$^\dagger$ \\ 0.50 \pm 0.02$^\dagger$\end{tabular} & \begin{tabular}{S[table-format=+1.2,
+%    table-figures-uncertainty=1]}9.75 \pm 0.09* \\ 9.98 \pm 0.15* \\ 9.96 \pm 0.10* \\ 10.01 \pm 0.11$^\dagger$ \\ 10.00 \pm 0.09$^\dagger$\end{tabular} & \begin{tabular}{S[table-format=+1.3,
+%    table-figures-uncertainty=1]}0.248 \pm 0.005* \\ 0.248 \pm 0.005* \\ 0.241 \pm 0.005* \\ 0.247 \pm 0.005$^\dagger$\\  0.248 \pm 0.005$^\dagger$\ \end{tabular} \\ \hline
+%    
+%    
+%    
+% $^\text{nat}$Zn      & \textgreater 99.99\%  & \ce{^{64}Zn} (49.17\%)                                                            & 714.1                                                            & \begin{tabular}{S[table-format=+1.2,
+%    table-figures-uncertainty=1]}1.03 \pm 0.01 \\ 1.03 \pm 0.01 \\ 1.02 \pm 0.01\end{tabular}                                    & \begin{tabular}{S[table-format=+1.2,
+%    table-figures-uncertainty=1]}9.93 \pm 0.14 \\ 9.76 \pm 0.17 \\ 9.89 \pm 0.15\end{tabular}                                     & \begin{tabular}{S[table-format=+1.3,
+%    table-figures-uncertainty=1]}0.538 \pm 0.005 \\ 0.451 \pm 0.005 \\ 0.452 \pm 0.005\ \end{tabular}                           \\ \hline
+% 
+% 
+% 
+% $^\text{nat}$Ti      & 99.999\%              & \ce{^{47}Ti} (7.44\%)                                                             & 450.6                                                            & \begin{tabular}{S[table-format=+1.2,
+%    table-figures-uncertainty=1]}1.16 \pm 0.02 \\ 1.15 \pm 0.02\end{tabular}                                                         &\begin{tabular}{S[table-format=+1.2,
+%    table-figures-uncertainty=1]}9.93 \pm 0.04 \\ 9.94 \pm 0.03\end{tabular}                                                          & \begin{tabular}{S[table-format=+1.3,
+%    table-figures-uncertainty=1]}0.337 \pm 0.005 \\ 0.337 \pm 0.005\ \end{tabular}                                   \\ \bottomrule
+% \end{tabular}%
+% }
+% \end{table*}
+
+
+% \begin{table*}
+% \centering
+% \caption{Foil characteristics for each of the three (Zn/In)* experiments and the two (Ti/In)$^\dagger$  experiments.
+% }
+% \label{tab:foil_specs}
+% \resizebox{\textwidth}{!}{%
+% \begin{tabular}{@{}ccccccc@{}}
+% \toprule
+% Foils Used & Metal Purity          & Abundance (a/o)                                                           & \begin{tabular}[c]{@{}c@{}}Foil Density \\ (mg/cm$^2$)\end{tabular} & Thickness (mm)                                                                                                         & Diameter (mm)                                                                                                           & Mass (g, $\pm$ 5 mg)                                                                                    \\ \midrule
+% $^\text{nat}$In      & \textgreater 99.999\% & \begin{tabular}[c]{@{}c@{}}\ce{^{113}In} (4.29\%),\\ \ce{^{115}In} (95.71\%)\end{tabular} & 365.5                                                            & \begin{tabular}[c]{@{}c@{}}0.49 $\pm$ 0.02*, \\ 0.50 $\pm$ 0.03*, \\ 0.49 $\pm$ 0.03*, \\ 0.53 $\pm$ 0.06$^\dagger$, \\ 0.50 $\pm$ 0.02$^\dagger$\end{tabular} & \begin{tabular}[c]{@{}c@{}}9.75 $\pm$ 0.09*, \\ 9.98 $\pm$ 0.15*, \\ 9.96 $\pm$ 0.10*, \\ 10.01 $\pm$ 0.11$^\dagger$, \\ 10.00 $\pm$ 0.09$^\dagger$\end{tabular} & \begin{tabular}[c]{@{}c@{}}0.248*, \\ 0.248*, \\ 0.241*, \\ 0.247$^\dagger$,\\  0.248$^\dagger$\ \end{tabular} \\ \hline
+% $^\text{nat}$Zn      & \textgreater 99.99\%  & \ce{^{64}Zn} (49.17\%)                                                            & 714.1                                                            & \begin{tabular}[c]{@{}c@{}}1.03 $\pm$ 0.01, \\ 1.03 $\pm$ 0.01, \\ 1.02 $\pm$ 0.01\end{tabular}                                    & \begin{tabular}[c]{@{}c@{}}9.93 $\pm$ 0.14, \\ 9.76 $\pm$ 0.17, \\ 9.89 $\pm$ 0.15\end{tabular}                                     & \begin{tabular}[c]{@{}c@{}}0.538, \\ 0.451, \\ 0.452\ \end{tabular}                           \\ \hline
+% $^\text{nat}$Ti      & 99.999\%              & \ce{^{47}Ti} (7.44\%)                                                             & 450.6                                                            & \begin{tabular}[c]{@{}c@{}}1.16 $\pm$ 0.02, \\ 1.15 $\pm$ 0.02\end{tabular}                                                         & \begin{tabular}[c]{@{}c@{}}9.93 $\pm$ 0.04, \\ 9.94 $\pm$ 0.03\end{tabular}                                                          & \begin{tabular}[c]{@{}c@{}}0.337, \\ 0.337\ \end{tabular}                                   \\ \bottomrule
+% \end{tabular}%
+% }
+% \end{table*}
 
 % \comment{Need foil data from Mauricio's 2nd Ti run}
 
@@ -557,7 +652,7 @@ This distribution has been well documented \cite{Liskien_Paulsen_1973} and is sh
 
 Since the samples are separated by only  8 mm from the DD reaction surface they  subtend a fairly significant  (\mytilde 17\degree)
 % the above figure assumes a 5mm diameter beam seperated by 8 mm from a 10 cm diameter target, looking at the angle between the two edges
-angular range and experience an impressive  (approximately $\sci{1.3}{7}$neutrons/cm$^2$s) neutron flux.
+angular range in a region of impressive  (approximately $\sci{1.3}{7}$neutrons/cm$^2$s) neutron flux.
 This stands in contrast to other measurements which feature collimated beams and significantly lower total neutron flux.
  
 
@@ -665,7 +760,7 @@ Two detectors were used in this measurement.
 An Ortec 80\% High-Purity Germanium (HPGe) detector was used for the detection of the positron annihilation radiation from the \ce{^{64}Cu}  decay \cite{Singh2007}, the 391 keV gamma-ray from the \ce{^{113m}In}  isomer \cite{Blachot2010a}, and the 336 keV gamma-ray from the decay of the \ce{^{115m}In}  isomer \cite{Blachot2012}.
 An Ortec planar Low-Energy Photon Spectrometer (LEPS)  was used for the detection of the lower-energy 159 keV gamma-ray from \ce{^{47}Sc} \cite{Burrows2007} as well as the two indium isomers mentioned above.
 Both detectors were calibrated for energy and efficiency, using \ce{^{133}Ba}, \ce{^{137}Cs}, and \ce{^{152}Eu} sources at various distances from the front face of each detector.
-These efficiencies, along with gamma ray intensities for each transition, are used to convert the integrated counts in each gamma ray photopeak into an activity for the activated isotopes and isomeric states.
+These efficiencies, along with gamma ray intensities for each transition, were used to convert the integrated counts in each gamma ray photopeak into an activity for the activated isotopes and isomeric states.
 
 
 % Please add the following required packages to your document preamble:
@@ -750,20 +845,21 @@ Example spectra for each production pathway can be seen in \autoref{fig:spectra_
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[width=5in]{./figures/ti_foils.png}
-        \includegraphics[width=5in]{./figures/47sc_gspectrum_alt.pdf}
-        \caption{ Gamma spectrum for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} production pathway foils, counted using a LEPS detector}
-        \label{fig:spectra_a}
+        \subfigimg[width=5in]{a)}{./figures/47sc_gspectrum_alt.pdf}
+%         \caption{ Gamma spectrum for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} production pathway foils, counted using a LEPS detector}
+% 	\caption{}
+        \refstepcounter{subfigure}\label{fig:spectra_a}
     \end{subfigure}%
     \\
     \begin{subfigure}[t]{\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
 %         \includegraphics[width=5in]{./figures/Sample_spectra.png}
-        \includegraphics[width=5in]{./figures/64Cu_gspectrum_alt.pdf}
-        \caption{Gamma spectrum for the \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production pathway foils, counted using an 80\% HPGe detector.}
-                \label{fig:spectra_b}
+        \subfigimg[width=5in]{b)}{./figures/64Cu_gspectrum_alt.pdf}
+%         \caption{Gamma spectrum for the \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production pathway foils, counted using an 80\% HPGe detector.}
+          \refstepcounter{subfigure}       \label{fig:spectra_b}
     \end{subfigure}
-    \caption{Example gamma spectra collected to monitor radioisotope production.}
+    \caption{Example gamma spectra collected to monitor radioisotope production. (a)  Gamma spectrum for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} production pathway foils, counted using a LEPS detector and (b) gamma spectrum for the \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production pathway foils, counted using an 80\% HPGe detector.}
      \label{fig:main_spectra}
 \end{figure*}
 
@@ -779,34 +875,34 @@ The fitted functions for each transition agree (at the 1$\sigma$ confidence leve
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \includegraphics[scale=0.6]{./figures/336keV_curve_new.pdf}
-        \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
-        \label{fig:decay_curve_336}
+        \subfigimg[scale=0.6]{a)}{./figures/336keV_curve_new.pdf}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+         \refstepcounter{subfigure}\label{fig:decay_curve_336}
     \end{subfigure}%
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \includegraphics[scale=0.6]{./figures/391keV_curve_new.pdf}
-        \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
-        \label{fig:decay_curve_391}
+        \subfigimg[scale=0.6]{b)}{./figures/391keV_curve_new.pdf}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+         \refstepcounter{subfigure}\label{fig:decay_curve_391}
     \end{subfigure}%
     \\
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \includegraphics[scale=0.6]{./figures/417keV_curve_new.pdf}
-        \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
-                \label{fig:decay_curve_417}
+        \subfigimg[scale=0.6]{c)}{./figures/417keV_curve_new.pdf}
+%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+                 \refstepcounter{subfigure}\label{fig:decay_curve_417}
     \end{subfigure}
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \includegraphics[scale=0.6]{./figures/511keV_curve_new.pdf}
-        \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-        \label{fig:decay_curve_511}
+        \subfigimg[scale=0.6]{d)}{./figures/511keV_curve_new.pdf}
+%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+        \refstepcounter{subfigure} \label{fig:decay_curve_511}
     \end{subfigure}%
-    \caption{Decay curves used to verify photopeak transition assignment.}
+    \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
      \label{fig:decay_curves}
 \end{figure*}
 
@@ -820,21 +916,54 @@ The background-subtracted integrated counts in each photopeak, as well as the co
 \caption{Counting times and photopeak counts for each of the (Zn/In) and (Ti/In)  experiments.  The uncertainties in photopeak counts are a combination of the fit error and counting statistics.}
 \label{tab:peak_counts}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{c|ccccc}
-Reference Foil                     & \ce{^{nat}In}         & \ce{^{nat}In}       & \ce{^{nat}In} & \ce{^{nat}In}     & \ce{^{nat}In}  \\ \hline
-Reference Foil Mass (g)            & 0.248         & 0.248       & 0.241 & 0.247     & 0.248 \\ \hline
-Target Foil                        & \ce{^{nat}Zn}         & \ce{^{nat}Zn}       & \ce{^{nat}Zn} & \ce{^{nat}Ti}     & \ce{^{nat}Ti}  \\ \hline
-Target Foil Mass (g)               & 0.538         & 0.451       & 0.452 & 0.337     & 0.337   \\ \hline
-Irradiation Time, $t_1$ (s)           & 10800         & 10800       & 12629 & 11837     & 14254   \\ \hline
-Start of Count, $t_2$ (s)             & 12585         & 26985       & 14919 & 101245    & 16644   \\ \hline
-End of Count, $t_3$ (s)               & 103773        & 80993       & 68919 & 187669    & 110275   \\ \hline
-Photopeak Counts, 336 keV (\ce{^{115m}In}) & 113665 $\pm$ 1490 & 74321 $\pm$ 275 & 39895 $\pm$ 201 & 2122 $\pm$ 55 & 55102 $\pm$ 268   \\ \hline
-Photopeak Counts, 391 keV (\ce{^{113m}In}) & 3382 $\pm$ 171    & 860 $\pm$ 40    & 2545 $\pm$ 54 &    \hrulefill       &  \hrulefill      \\ \hline
-Photopeak Counts, 511 keV (\ce{^{64}Cu})   & 16055 $\pm$ 643   & 12852 $\pm$ 118 & 24464 $\pm$ 159 &    \hrulefill       &   \hrulefill     \\ \hline
-Photopeak Counts, 159 keV (\ce{^{47}Sc})   &   \hrulefill            &    \hrulefill         &   \hrulefill    & 3877 $\pm$ 83 & 5544 $\pm$ 257  
+\begin{tabular}{l|ccccc}
+\toprule
+% \multicolumn{1}{c}{Reference Foil}                      & \ce{^{nat}In}         & \ce{^{nat}In}       & \ce{^{nat}In} & \ce{^{nat}In}     & \ce{^{nat}In}  \\ \hline
+Reference Foil                     & \ce{^{nat}In}         & \ce{^{nat}In}       & \ce{^{nat}In} & \ce{^{nat}In}     & \ce{^{nat}In}  \\ \midrule
+Reference Foil Mass (g)            & 0.248         & 0.248       & 0.241 & 0.247     & 0.248 \\ 
+Target Foil                        & \ce{^{nat}Zn}         & \ce{^{nat}Zn}       & \ce{^{nat}Zn} & \ce{^{nat}Ti}     & \ce{^{nat}Ti}  \\ 
+Target Foil Mass (g)               & 0.538         & 0.451       & 0.452 & 0.337     & 0.337   \\ 
+Irradiation Time, $t_1$ (s)           & 10800         & 10800       & 12629 & 11837     & 14254   \\ 
+Start of Count, $t_2$ (s)             & 12585         & 26985       & 14919 & 101245    & 16644   \\ 
+End of Count, $t_3$ (s)               & 103773        & 80993       & 68919 & 187669    & 110275   \\ 
+Photopeak Counts, 336 keV (\ce{^{115m}In}) & 113665 $\pm$ 1490 & 74321 $\pm$ 275 & 39895 $\pm$ 201 & 2122 $\pm$ 55 & 55102 $\pm$ 268   \\ 
+Photopeak Counts, 391 keV (\ce{^{113m}In}) & 3382 $\pm$ 171    & 860 $\pm$ 40    & 2545 $\pm$ 54 &    \hrulefill       &  \hrulefill      \\ 
+Photopeak Counts, 511 keV (\ce{^{64}Cu})   & 16055 $\pm$ 643   & 12852 $\pm$ 118 & 24464 $\pm$ 159 &    \hrulefill       &   \hrulefill     \\ 
+Photopeak Counts, 159 keV (\ce{^{47}Sc})   &   \hrulefill            &    \hrulefill         &   \hrulefill    & 3877 $\pm$ 83 & 5544 $\pm$ 257 \\ \bottomrule
 \end{tabular}%
 }
 \end{table*}
+% 
+% % Please add the following required packages to your document preamble:
+% % \usepackage{graphicx}
+% \begin{table*}
+% \centering
+% \caption{Counting times and photopeak counts for each of the (Zn/In) and (Ti/In)  experiments.  The uncertainties in photopeak counts are a combination of the fit error and counting statistics.}
+% \label{tab:peak_counts}
+% \resizebox{\textwidth}{!}{%
+% \begin{tabular}{@{}l|
+%                   S[table-format=+5.1,table-figures-uncertainty=1]|
+%                   S[table-format=+5.1,table-figures-uncertainty=1]|
+%                   S[table-format=+5.1,table-figures-uncertainty=1]|
+%                   S[table-format=+5.1,table-figures-uncertainty=1]|
+%                   S[table-format=+5.1,table-figures-uncertainty=1]|
+%                   @{}}% \multicolumn{1}{c}{Reference Foil}                      & \ce{^{nat}In}         & \ce{^{nat}In}       & \ce{^{nat}In} & \ce{^{nat}In}     & \ce{^{nat}In}  \\ \hline
+% Reference Foil                     & \multirow{1}*{\minitab[c]{$^\text{nat}$In}}         & \ce{^{nat}In}       & \ce{^{nat}In} & \ce{^{nat}In}     & \ce{^{nat}In}  \\ \hline
+% Reference Foil Mass (g)            & 0.248         & 0.248       & 0.241 & 0.247     & 0.248 \\ \hline
+% Target Foil                        & \ce{^{nat}Zn}         & \ce{^{nat}Zn}       & \ce{^{nat}Zn} & \ce{^{nat}Ti}     & \ce{^{nat}Ti}  \\ \hline
+% Target Foil Mass (g)               & 0.538         & 0.451       & 0.452 & 0.337     & 0.337   \\ \hline
+% Irradiation Time, $t_1$ (s)           & 10800         & 10800       & 12629 & 11837     & 14254   \\ \hline
+% Start of Count, $t_2$ (s)             & 12585         & 26985       & 14919 & 101245    & 16644   \\ \hline
+% End of Count, $t_3$ (s)               & 103773        & 80993       & 68919 & 187669    & 110275   \\ \hline
+% Photopeak Counts, 336 keV (\ce{^{115m}In}) & 113665 \pm 1490 & 74321 \pm 275 & 39895 \pm 201 & 2122 \pm 55 & 55102 \pm 268   \\ \hline
+% Photopeak Counts, 391 keV (\ce{^{113m}In}) & 3382 \pm 171    & 860 \pm 40    & 2545 \pm 54 &    \hrulefill       &  \hrulefill      \\ \hline
+% Photopeak Counts, 511 keV (\ce{^{64}Cu})   & 16055 \pm 643   & 12852 \pm 118 & 24464 \pm 159 &    \hrulefill       &   \hrulefill     \\ \hline
+% Photopeak Counts, 159 keV (\ce{^{47}Sc})   &   \hrulefill            &    \hrulefill         &   \hrulefill    & 3877 \pm 83 & 5544 \pm 257  
+% \end{tabular}%
+% }
+% \end{table*}
+
+
 
 % % Please add the following required packages to your document preamble:
 % % \usepackage{booktabs}
@@ -996,7 +1125,7 @@ This total  uncertainty will be plotted as the cross section error bar in the ex
 The largest source of systematic uncertainty in the cross section determined via the \enquote{ratio approach} is the 2.586\% uncertainty in the \ce{^{115}In}(n,n')\ce{^{115m}In}  cross section and the 1.447\% uncertainty in the \ce{^{113}In}(n,n')\ce{^{113m}In}  cross section  \cite{Capote2012,zsolnay2012technical}.
  An additional uncertainty arises from the fact that the Zn/Ti samples are not located at exactly the same location as the indium monitor foils, and are therefore not subject to precisely the same neutron flux.
  However, the MCNP6 simulations shown in \autoref{fig:mcnp_flux} indicate that the difference in the flux that the two foils are subjected to is less than 1\%, negligible compared to other sources of systematic uncertainty.
- Other monitor foils could be used instead of indium, with \ce{^{58}Ni}(n,p)\ce{^{58}Co} (\ce{^{58}Co} $t_{1/2}$ = 70.86 d \cite{Nesaraja2010}) being one possible candidate, but the 4.486 hour and 99.476 minute half-lives of the \ce{^{115m}In} and \ce{^{113m}In} isomers \cite{Blachot2012,Blachot2010a}, respectively, makes indium a better candidate for measuring the production of radionuclides with lifetimes much less than 71+ days.
+ Other monitor foils could be used instead of indium, with \ce{^{58}Ni}(n,p)\ce{^{58}Co} (\ce{^{58}Co} $t_{1/2}$ = 70.86 d \cite{Nesaraja2010}) being one possible candidate, but the 4.486 hour and 99.476 minute half-lives of the \ce{^{115m}In} and \ce{^{113m}In} isomers \cite{Blachot2012,Blachot2010a}, respectively, makes indium a better candidate for measuring the production of radionuclides with lifetimes much less than 71 days.
 The largest source of uncertainty in energy window arises from uncertainties in the actual dimension of the deuteron beam on the production target.
  We believe, based on \enquote{burn marks} on the production target, that the beam was approximately circular, with a flat intensity profile and a 5 mm diameter.
  However, every 1 mm change in the beam radius would cause a 0.028 MeV shift in the centroid and a 0.053 MeV increase in the effective energy bin width.
@@ -1057,7 +1186,7 @@ Reaction                                                                        
 \end{tabular}
 \end{table}
 
-
+\comment{Karl:  \enquote{For the figures, let me suggest you make a red solid rectangle whose dimensions represent the error bars in both energy and cross section.  Then put a large red circle around it, whose diameter is of order 10\% of the size of the whole graph, to focus the eyes.  In the caption, mention that the size of the rectangle represents the error limits.}}
 
 Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} present the determined cross sections for the production of  \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu}  relative to literature data retrieved from EXFOR \cite{Otuka2014272,PhysRev.114.565,doi:10.1143/JPSJ.17.1215,paulsen1967cross,doi:10.1139/p72-336,Smith1975,King1979,Hussain1983,Ikeda1991,Shimizu2004543,PhysRev.126.271,Armitage1967,Ikeda1990,Senga2000,Shimizu2004975}.
 The weighted average of the measurements give   46.415 $\pm$ 1.720 mb (relative to \ce{^{113}In}) and  49.315 $\pm$ 2.567 mb (relative to \ce{^{115}In})    for \ce{^{64}Zn}(n,p)\ce{^{64}Cu},   and 26.262 $\pm$  0.822 mb for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}.
@@ -1120,6 +1249,7 @@ Using activation methods on thin foils, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \c
 The cross sections were measured with less than  5\% uncertainty relative to the well-known \ce{^{115}In}(n,n')\ce{^{115m}In} and \ce{^{113}In}(n,n')\ce{^{113m}In} fast neutron cross sections \cite{Capote2012,zsolnay2012technical}.
 The measured values of  26.262 $\pm$  0.822 mb and  46.415 $\pm$ 1.720 mb (relative to \ce{^{113}In})  or 49.315 $\pm$ 2.567 mb (relative to \ce{^{115}In}), respectively, are consistent with earlier experimental data and theoretical models, but have smaller uncertainties than previous measurements.
 In addition, the results for the production of \ce{^{116}In} via the \ce{^{115}In}(n,$\gamma$) reaction was shown to be consistent with activation from the capture of fast \textcolor{red}{(e.g., $\approx$2.45 MeV)} neutrons, rather than from \enquote{room return} thermal neutrons.
+\comment{Karl: \enquote{You may wish to add a statement that this is a significant finding of this work.  It wasn't a foregone conclusion that it would work out this way, given the several order of magnitude difference in cross section.}}
 The use of DD neutron generators can be an efficient method for the measurement of low-energy (n,p) reaction channels, as well as a relative method used to normalize measurements at higher neutron energies.
 
 
@@ -1169,6 +1299,7 @@ An optimal design for the neutron generator would also allow for the possibility
  In the case of \ce{^{47}Sc}, this would lead to the presence of \ce{^{46}Sc} ($t_{1/2}$ = 83.79 d \cite{Wu2000}) in the sample, which might pose some concerns for medical applications.
  However, this is not an issue for \ce{^{64}Cu} since the (n,pn) channel leads to the production of stable \ce{^{63}Cu}.
  
+ \comment{Karl: \enquote{Excellent paragraph. You may with to say that the HFNG is now operating at 10$^9$ n/sec, with a clear path towards 10$^{10}$, and a design study is underway for such a neutron-reflector assisted HFNG for actual medical isotope production.}}
 
 
 In closing, we have measured the \ce{^{64}Cu}(n,p) and \ce{^{47}Ti}(n,p) cross sections for 2.765 MeV incident neutrons.
@@ -1179,7 +1310,7 @@ In closing, we have measured the \ce{^{64}Cu}(n,p) and \ce{^{47}Ti}(n,p) cross s
 
 
  Future work will involve the continued measurement of the (n,p) production cross sections for various other emerging therapeutic and diagnostic radioisotopes, to expand the toolset of options available for modern medical imaging and cancer therapy.
-This will focus on radionuclides which permit more customized and precise dose deposition, as well as patient-specific treatments
+This will focus on radionuclides which permit more customized and precise dose deposition, as well as patient-specific treatments.
  
 %  \comment{Should we specifically mention other isotopes we plan to measure?}
 
@@ -1188,12 +1319,11 @@ This will focus on radionuclides which permit more customized and precise dose d
  \section{Acknowledgements}
  
  This work has been carried out at the University of California, Berkeley, and performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under contract \# DE-AC52-07NA27344 and Lawrence Berkeley National Laboratory under contract \# DE-AC02-05CH11231.
-Funding has been provided from the US Nuclear Regulatory Commission, the US Nuclear Data Program, and  DFG Research Fellowship RU 2065/1-1.
+Funding has been provided from the US Nuclear Regulatory Commission, the US Nuclear Data Program, \textcolor{red}{NSF ARRA Grant \# XXXXXXXX}, the University of California Laboratory Fees Research Grant \# 12-LR-238745, and  DFG Research Fellowship \# RU 2065/1-1.
 
+\comment{Add NSF Grant number from P. Renne.}
  
- We also wish to acknowledge Glenn Jones for \textcolor{red}{XXXXX XXXXXX}.
- 
- \comment{Please provide appropriate language for Glenn Jones. Who else should we acknowledge?}
+We acknowledge Glenn Jones of G\&J Jones Enterprises of Dublin, CA for the construction and commissioning of the High Flux Neutron Generator. 
 
 
 % \pagebreak
