@@ -315,7 +315,7 @@ The HFNG is a compact neutron generator designed as a \enquote{flux-trap} that m
 The study was motivated by interest in the production of \ce{^{47}Sc} and \ce{^{64}Cu} as emerging medical isotopes.
 The cross sections were measured in ratio to the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} inelastic scattering reactions on co-irradiated indium samples.
 Post-irradiation counting using an HPGe and LEPS detectors allowed for cross section determination to within 5\% uncertainty.
-The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section for 2.765$^{+0.015}_{-0.022}$ MeV neutrons is reported as   46.415 $\pm$ 1.720 mb (relative to \ce{^{113}In})  or 49.315 $\pm$ 2.567 mb (relative to \ce{^{115}In}), and the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section is reported as 26.262 $\pm$  0.822 mb.
+The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section for 2.765$^{+0.015}_{-0.022}$ MeV neutrons is reported as    49.315 $\pm$ 2.567 mb (relative to \ce{^{113}In}) or 46.415 $\pm$ 1.720 mb (relative to \ce{^{115}In}), and the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section is reported as 26.262 $\pm$  0.822 mb.
 The cross sections were determined with lower uncertainty than existing measurements and are found to be  in good agreement with both empirical and theoretical values.
 This work highlights the utility of compact, flux-trap DD-based neutron sources for nuclear data measurements and potentially the production of radionuclides for medical applications.
 
@@ -923,7 +923,8 @@ The background-subtracted integrated counts in each photopeak, as well as the co
 \caption{Counting times and photopeak counts for each of the (Zn/In) and (Ti/In)  experiments.  The uncertainties in photopeak counts are a combination of the fit error and counting statistics.}
 \label{tab:peak_counts}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{l|ccccc}
+% \begin{tabular}{l|ccccc}
+\begin{tabular}{lccccc}
 \toprule
 % \multicolumn{1}{c}{Reference Foil}                      & \ce{^{nat}In}         & \ce{^{nat}In}       & \ce{^{nat}In} & \ce{^{nat}In}     & \ce{^{nat}In}  \\ \hline
 Reference Foil                     & \ce{^{nat}In}         & \ce{^{nat}In}       & \ce{^{nat}In} & \ce{^{nat}In}     & \ce{^{nat}In}  \\ \midrule
@@ -1187,8 +1188,8 @@ These values are recorded in \autoref{tab:xs_results}.
 \begin{tabular}{@{}cc@{}}
 \toprule
 Reaction                                                                            & $\sigma$($E_n$ = 2.765$^{+0.015}_{-0.022}$ MeV) (mb)                                                                       \\ \midrule
-\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{113}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}45.958 $\pm$ 2.553, \\ 46.498 $\pm$ 1.745, \\ 46.841 $\pm$ 3.170\end{tabular}  \\ \\[0.1ex]    
-\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}49.926 $\pm$ 3.190, \\ 49.219 $\pm$ 2.709, \\ 49.011 $\pm$ 2.540\end{tabular} \\  \\[0.1ex]   
+\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{113}In})\end{tabular} &  \begin{tabular}[c]{@{}c@{}}49.926 $\pm$ 3.190, \\ 49.219 $\pm$ 2.709, \\ 49.011 $\pm$ 2.540\end{tabular} \\  \\[0.1ex]  
+\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}45.958 $\pm$ 2.553, \\ 46.498 $\pm$ 1.745, \\ 46.841 $\pm$ 3.170\end{tabular}  \\ \\[0.1ex]    
 \begin{tabular}[c]{@{}c@{}}\ce{^{47}Ti}(n,p)\ce{^{47}Sc} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}25.904 $\pm$ 1.193, \\ 26.751 $\pm$ 1.394*\end{tabular}                   \\ \bottomrule
 \end{tabular}
 \end{table}
@@ -1196,7 +1197,7 @@ Reaction                                                                        
 \comment{Karl:  \enquote{For the figures, let me suggest you make a red solid rectangle whose dimensions represent the error bars in both energy and cross section.  Then put a large red circle around it, whose diameter is of order 10\% of the size of the whole graph, to focus the eyes.  In the caption, mention that the size of the rectangle represents the error limits.}  Lee: \enquote{I would suggest that you zoom in on the energy and cross section value we measured (say 2.5-3.0 MeV and 10-70 mb).  Use a thicker line for our data point and/or make it larger. - Lee}}
 
 Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} present the determined cross sections for the production of  \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu}  relative to literature data retrieved from EXFOR \cite{Otuka2014272,PhysRev.114.565,doi:10.1143/JPSJ.17.1215,paulsen1967cross,doi:10.1139/p72-336,Smith1975,King1979,Hussain1983,Ikeda1991,Shimizu2004543,PhysRev.126.271,Armitage1967,Ikeda1990,Senga2000,Shimizu2004975}.
-The weighted average of the measurements give   46.415 $\pm$ 1.720 mb (relative to \ce{^{113}In}) and  49.315 $\pm$ 2.567 mb (relative to \ce{^{115}In})    for \ce{^{64}Zn}(n,p)\ce{^{64}Cu},   and 26.262 $\pm$  0.822 mb for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}.
+The weighted average of the measurements give   49.315 $\pm$ 2.567 mb (relative to \ce{^{113}In}) and 46.415 $\pm$ 1.720 mb (relative to \ce{^{115}In})   for \ce{^{64}Zn}(n,p)\ce{^{64}Cu},   and 26.262 $\pm$  0.822 mb for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}.
 The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section measured in this work is consistent with  other literature results, but with a smaller uncertainty (\textless 5\%).
 However, in the case of the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section, our results are consistent with the results from the Smith (1975), Armitage (1967), and Ikeda (1990) groups \cite{Smith1975,Armitage1967,Ikeda1990} and both the ENDF/B-VII.1 \cite{Chadwick2011} and TALYS \cite{Koning2012}  values, but significantly below the results from Hussain (1983), Gonzalez (1962), and Shimizu (2004) \cite{Hussain1983,PhysRev.126.271,Shimizu2004975}.
  
@@ -1309,23 +1310,19 @@ An optimal design for the neutron generator would also allow for the possibility
 
 Using activation methods on thin foils, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections were measured for  2.765$^{+0.015}_{-0.022}$ MeV neutrons produced using the High Flux Neutron Generator (HFNG) at UC Berkeley.
 The cross sections were measured with less than  5\% uncertainty relative to the well-known \ce{^{115}In}(n,n')\ce{^{115m}In} and \ce{^{113}In}(n,n')\ce{^{113m}In} fast neutron cross sections \cite{Capote2012,zsolnay2012technical}.
-The measured values of  26.262 $\pm$  0.822 mb and  46.415 $\pm$ 1.720 mb (relative to \ce{^{113}In})  or 49.315 $\pm$ 2.567 mb (relative to \ce{^{115}In}), respectively, are consistent with earlier experimental data and theoretical models, but have smaller uncertainties than previous measurements.
+The measured values of  26.262 $\pm$  0.822 mb and  49.315 $\pm$ 2.567 mb (relative to \ce{^{113}In}) or 46.415 $\pm$ 1.720 mb (relative to \ce{^{115}In}), respectively, are consistent with earlier experimental data and theoretical models, but have smaller uncertainties than previous measurements.
  
  In addition, the   production of the \ce{^{116}In}  via the \ce{^{115}In}(n,$\gamma$) reaction was close to the value one would expect given an incident neutron energy of 2.45 MeV.  
  While this is not consistent with the average neutron energy at the target location (2.765$^{+0.015}_{-0.022}$ MeV), the fact that it was close indicates the paucity of thermal neutrons in this central location.  
  This in turn highlights the usefulness of such compact DD-neutron sources  for producing \enquote{clean} activities via the (n,p) channel.  
 The use of DD neutron generators can be an efficient method for the measurement of low-energy (n,p) reaction channels, as well as a relative method used to normalize measurements at higher neutron energies.
-
- In addition to improving the value of these measurements nuclear reaction evaluation, our results highlight the potential use of compact neutron generators for the production of radionuclides locally for medical applications.
+ In addition to improving the value of these measurements for nuclear reaction evaluation, our results highlight the potential use of compact neutron generators for the production of radionuclides locally for medical applications.
 
 
 % In closing, we have measured the \ce{^{64}Cu}(n,p) and \ce{^{47}Ti}(n,p) cross sections for 2.765 MeV incident neutrons.
- In the future we plan to perform additional cross section measurements at the HFNG, and to explore methods to extract the radionuclides from the sample using both chemical and physical separation techniques.
  It is worth noting that at the time of publication, the  HFNG is now operating at 10$^9$ n/sec, with
 a clear path towards 10$^{10}$.
- 
-
-
+%  In the future we plan to perform additional cross section measurements at the HFNG, and to explore methods to extract the radionuclides from the sample using both chemical and physical separation techniques.
  Future work will involve the continued measurement of the (n,p) production cross sections for various other emerging therapeutic and diagnostic radioisotopes, to expand the toolset of options available for modern medical imaging and cancer therapy.
 This will focus on radionuclides which permit more customized and precise dose deposition, as well as patient-specific treatments.
  
@@ -1336,7 +1333,7 @@ This will focus on radionuclides which permit more customized and precise dose d
  \section{Acknowledgements}
  
  We would like to particularly point out the crucial role played by Cory Waltz in the design and commissioning of the HFNG.
- We acknowledge Glenn Jones of G\&J Jones Enterprises of Dublin, CA for the construction and commissioning of the High Flux Neutron Generator. 
+ We acknowledge Glenn Jones of G\&J Jones Enterprises of Dublin, CA for the construction  of the High Flux Neutron Generator. 
  Lastly, we would like to acknowledge the students in the Nuclear Reactions and Radiation (NE102) laboratory course at UC Berkeley who participated in these experiments, including Joe Corvino, Nizelle Fajardo, Scott Parker and Evan Still.  
  
  This work has been carried out at the University of California, Berkeley, and performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under contract \# DE-AC52-07NA27344 and Lawrence Berkeley National Laboratory under contract \# DE-AC02-05CH11231.
