@@ -545,21 +545,6 @@ Prior to loading, each foil was washed with isopropanol and dried, to remove any
 \toprule
 {Foils Used} & {Metal Purity}          & {Abundance (a/o)}                                                           & \minitab[c]{Foil Density \\ (mg/cm$^2$)} & {Thickness (mm)}                                                                                                         & {Diameter (mm)}                                                                                                           & {Mass (g)}                                                                                    \\ \midrule
 
-
-
-
-\multirow{5}*{\minitab[c]{$^\text{nat}$In}}      & \multirow{5}*{\minitab[c]{\textgreater 99.999\%}} & \multirow{5}*{\minitab[c]{\ce{^{113}In} (4.29\%),\\ \ce{^{115}In} (95.71\%)}} & \multirow{5}*{\minitab[c]{317.6}}                                                              & 0.49 \pm 0.02*  & 9.75 \pm 0.09* & 0.248 \pm 0.005* \\
-
- &  & & & 0.50 \pm 0.03* & 9.98 \pm 0.15*  & 0.248 \pm 0.005* \\
- 
-  &  & & & 0.49 \pm 0.03* & 9.96 \pm 0.10* &  0.241 \pm 0.005* \\
-  
-   &  & & & 0.53 \pm 0.06$^\dagger$ & 10.01 \pm 0.11$^\dagger$ & 0.247 \pm 0.005$^\dagger$\\
-   
-    &  & & & 0.50 \pm 0.02$^\dagger$ & 10.00 \pm 0.09$^\dagger$  & 0.248 \pm 0.005$^\dagger$ \\ \hline
-
-
-
 \multirow{3}*{\minitab[c]{$^\text{nat}$Zn}}      & \multirow{3}*{\minitab[c]{\textgreater 99.99\%}} & \multirow{3}*{\minitab[c]{\ce{^{64}Zn} (49.17\%) }} & \multirow{3}*{\minitab[c]{698.9}}                                                              &   1.03 \pm 0.01 &  9.93 \pm 0.14  & 0.538 \pm 0.005 \\
 
  &  & & & 1.03 \pm 0.01 & 9.76 \pm 0.17 & 0.521 \pm 0.005 \\
@@ -570,7 +555,22 @@ Prior to loading, each foil was washed with isopropanol and dried, to remove any
 \multirow{2}*{\minitab[c]{$^\text{nat}$Ti}}      & \multirow{2}*{\minitab[c]{99.999\%   }} & \multirow{2}*{\minitab[c]{\ce{^{47}Ti} (7.44\%)   }} & \multirow{2}*{\minitab[c]{434.7}}                                                              &   1.16 \pm 0.02 &  9.93 \pm 0.04  & 0.337 \pm 0.005 \\
 
  
-  &  & & &  1.15 \pm 0.02 & 9.94 \pm 0.03 & 0.337 \pm 0.005  \\   \bottomrule
+  &  & & &  1.15 \pm 0.02 & 9.94 \pm 0.03 & 0.337 \pm 0.005  \\  \hline
+
+
+\multirow{5}*{\minitab[c]{$^\text{nat}$In}}      & \multirow{5}*{\minitab[c]{\textgreater 99.999\%}} & \multirow{5}*{\minitab[c]{\ce{^{113}In} (4.29\%),\\ \ce{^{115}In} (95.71\%)}} & \multirow{5}*{\minitab[c]{317.6}}                                                              & 0.49 \pm 0.02*  & 9.75 \pm 0.09* & 0.248 \pm 0.005* \\
+
+ &  & & & 0.50 \pm 0.03* & 9.98 \pm 0.15*  & 0.248 \pm 0.005* \\
+ 
+  &  & & & 0.49 \pm 0.03* & 9.96 \pm 0.10* &  0.241 \pm 0.005* \\
+  
+   &  & & & 0.53 \pm 0.06$^\dagger$ & 10.01 \pm 0.11$^\dagger$ & 0.247 \pm 0.005$^\dagger$\\
+   
+    &  & & & 0.50 \pm 0.02$^\dagger$ & 10.00 \pm 0.09$^\dagger$  & 0.248 \pm 0.005$^\dagger$ \\ \bottomrule
+
+
+
+ 
 \end{tabular}%
 }
 \end{table*}
@@ -653,13 +653,13 @@ This distribution has been well documented \cite{Liskien_Paulsen_1973} and is sh
  \centering
  \includegraphics[scale=0.6]{./figures/scatt_angle.pdf}
  % scatt_angle.pdf: 369x295 pixel, 72dpi, 13.02x10.41 cm, bb=0 0 369 295
- \caption{Energy-angle distribution for neutrons emitted following DD fusion, for 100 keV incident deuterons.}
+ \caption{Energy-angle distribution for neutrons emitted following DD fusion, for 100 keV incident deuterons \cite{Liskien_Paulsen_1973}.}
  \label{fig:scatt_angle}
 \end{figure}
 
 Since the samples are separated by only  8 mm from the DD reaction surface they  subtend a fairly significant  (\mytilde 17\degree)
 % the above figure assumes a 5mm diameter beam seperated by 8 mm from a 10 cm diameter target, looking at the angle between the two edges
-angular range in a region of impressive  (approximately $\sci{1.3}{7}$neutrons/cm$^2$s) neutron flux.
+angular range in a region of  high  (approximately $\sci{1.3}{7}$neutrons/cm$^2$s) neutron flux.
 This stands in contrast to other measurements which feature collimated beams and significantly lower total neutron flux.
  
 
@@ -707,10 +707,10 @@ This spectrum, peaked around 2.75 MeV, illustrates the forward-focused kinematic
 While this shows that the sample foils experience a very narrow energy distribution of incident neutrons, an effective neutron energy window must be determined.
 The MCNP6 simulation shows an identical flux-weighted average neutron energy of 2.765 MeV for both the Indium and target foils to the 1 keV level.
 Due to the kinematics of DD neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry is 2.783 MeV \cite{Liskien_Paulsen_1973}.
-For this maximum energy, the number of reactions induced in a foil (containing $N_i$ target nuclei) is given by:
+For this maximum energy, the number of reactions induced in a foil (containing $N_T$ target nuclei) is given by:
 
 \begin{equation}
-R = N_i \int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE
+R = N_T \int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE
 \end{equation}
 
 
@@ -737,7 +737,7 @@ F\pp{E'} = \dfrac{\int_0^{E'} \sigma(E) \dfrac{d\phi}{dE} dE}{\int_0^{E_{max}} \
  \centering
  \includegraphics[scale=0.6]{./figures/fracplot_new.pdf}
  % fracplot.pdf: 372x295 pixel, 72dpi, 13.12x10.41 cm, bb=0 0 372 295
- \caption{Fraction of total reactions induced in the Indium foil between the energies [0, $E'$]. The red arrows indicate the energy region that corresponds to 67\% of the total activation.}
+ \caption{Fraction of total reactions induced in the Indium foil between the energies [0, $E'$]. The solid red boundaries indicate the energy region that corresponds to 68.2\% of the total activation.}
  \label{fig:frac_plot}
 \end{figure}
 
@@ -913,7 +913,7 @@ The fitted functions for each transition agree (at the 1$\sigma$ confidence leve
      \label{fig:decay_curves}
 \end{figure*}
 
-The spectra for the different samples were summed and the net peak areas were fitted using gf3, part of the RadWare analysis package from Oak Ridge National Laboratory   \cite{radford2000radware, Radford1995}.
+The spectra for each sample were summed and the net peak areas were fitted using gf3, part of the RadWare analysis package from Oak Ridge National Laboratory   \cite{radford2000radware, Radford1995}.
 The background-subtracted integrated counts in each photopeak, as well as the counting duration for each experiment, are tabulated in \autoref{tab:peak_counts}.
 
 % Please add the following required packages to your document preamble:
@@ -930,13 +930,13 @@ The background-subtracted integrated counts in each photopeak, as well as the co
 Reference Foil                     & \ce{^{nat}In}         & \ce{^{nat}In}       & \ce{^{nat}In} & \ce{^{nat}In}     & \ce{^{nat}In}  \\ \midrule
 Reference Foil Mass (g)            & 0.248         & 0.248       & 0.241 & 0.247     & 0.248 \\ 
 Target Foil                        & \ce{^{nat}Zn}         & \ce{^{nat}Zn}       & \ce{^{nat}Zn} & \ce{^{nat}Ti}     & \ce{^{nat}Ti}  \\ 
-Target Foil Mass (g)               & 0.538         & 0.451       & 0.452 & 0.337     & 0.337   \\ 
-Irradiation Time, $t_1$ (s)           & 10800         & 10800       & 12629 & 11837     & 14254   \\ 
-Start of Count, $t_2$ (s)             & 12585         & 26985       & 14919 & 101245    & 16644   \\ 
-End of Count, $t_3$ (s)               & 103773        & 80993       & 68919 & 187669    & 110275   \\ 
-Photopeak Counts, 336 keV (\ce{^{115m}In}) & 113665 $\pm$ 1490 & 74321 $\pm$ 275 & 39895 $\pm$ 201 & 2122 $\pm$ 55 & 55102 $\pm$ 268   \\ 
-Photopeak Counts, 391 keV (\ce{^{113m}In}) & 3382 $\pm$ 171    & 860 $\pm$ 40    & 2545 $\pm$ 54 &    \hrulefill       &  \hrulefill      \\ 
-Photopeak Counts, 511 keV (\ce{^{64}Cu})   & 16055 $\pm$ 643   & 12852 $\pm$ 118 & 24464 $\pm$ 159 &    \hrulefill       &   \hrulefill     \\ 
+Target Foil Mass (g)               & 0.538         & 0.521       & 0.542 & 0.337     & 0.337   \\ 
+Irradiation Time, $t_i$ (s)           & 10800         & 10800       & 12629 & 11837     & 14254   \\ 
+Delay Time, $t_d$ (s)             & 1785         & 16185       & 2290 & 89408    & 2390   \\ 
+Counting Time, $t_c$ (s)               & 91188        & 54008       & 54002 & 86424    & 93631   \\ 
+Photopeak Counts, 336 keV (\ce{^{115m}In}) & 113665 $\pm$ 1490 & 76321 $\pm$ 275 & 39895 $\pm$ 201 & 2122 $\pm$ 55 & 55102 $\pm$ 268   \\ 
+Photopeak Counts, 391 keV (\ce{^{113m}In}) & 3382 $\pm$ 171    & 890 $\pm$ 40    & 3505 $\pm$ 54 &    \hrulefill       &  \hrulefill      \\ 
+Photopeak Counts, 511 keV (\ce{^{64}Cu})   & 16055 $\pm$ 643   & 12852 $\pm$ 118 & 27164 $\pm$ 159 &    \hrulefill       &   \hrulefill     \\ 
 Photopeak Counts, 159 keV (\ce{^{47}Sc})   &   \hrulefill            &    \hrulefill         &   \hrulefill    & 3877 $\pm$ 83 & 5544 $\pm$ 257 \\ \bottomrule
 \end{tabular}%
 }
@@ -1035,19 +1035,24 @@ For a thin target consisting of \(N_T\) target nuclei (with a reaction cross sec
 R = N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} 
 \end{equation}
 
-If this irradiation lasts for  some time $t_1$, and gamma ray spectrum acquisition begins at a later time $t_2$ and ends at  $t_3$, then the number of product decays ($D$; with decay constant $\lambda$) during the acquisition will be:
+If the target is subjected this flux  for an irradiation  time $t_i$ and decays for a  delay time $t_d$ (after end-of-beam) before gamma ray spectrum acquisition occurs for a counting time  $t_c$, then the number of product decays ($N_D$; with decay constant $\lambda$) during the acquisition will be:
 
 
-
-\begin{equation}
-\begin{aligned}
-D &= \dfrac{R}{\lambda}\pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_3} - e^{-\lambda t_2}}
+\begin{align}
+N_D &= \dfrac{R}{\lambda}\pp{1 - e^{-\lambda t_i}} e^{-\lambda t_d} \pp{1 - e^{-\lambda t_c}}
 \\
-&= \dfrac{N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} }{\lambda}\pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_3} - e^{-\lambda t_2}} 
-\end{aligned}
-\end{equation}
+&= \dfrac{N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} }{\lambda}\pp{1 - e^{-\lambda t_i}} e^{-\lambda t_d} \pp{1 - e^{-\lambda t_c}} \nonumber
+\end{align}
 
-If this decay emits a gamma ray with absolute intensity $I_\gamma$ (photons emitted per decay), and is detected with an absolute efficiency  of $\epsilon_\gamma$ (photons detected / photons emitted), then the number of observed decays between $t_2$ and $t_3$ will be:
+% \begin{equation}
+% \begin{aligned}
+% N_D &= \dfrac{R}{\lambda}\pp{1 - e^{-\lambda t_i}} e^{-\lambda t_d} \pp{1 - e^{-\lambda t_c}}
+% \\
+% &= \dfrac{N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} }{\lambda}\pp{1 - e^{-\lambda t_i}} e^{-\lambda t_d} \pp{1 - e^{-\lambda t_c}} 
+% \end{aligned}
+% \end{equation}
+
+If this decay emits a gamma ray with absolute intensity $I_\gamma$ (photons emitted per decay), and is detected with an absolute efficiency  of $\epsilon_\gamma$ (photons detected / photons emitted), then the number of observed gamma rays during the acquisition will be:
 
 % \begin{equation}
 % \begin{aligned}
@@ -1059,15 +1064,19 @@ If this decay emits a gamma ray with absolute intensity $I_\gamma$ (photons emit
  
 
 \begin{align}
-N_{obs} &= D \epsilon_\gamma I_\gamma \\
-&=  \epsilon_\gamma I_\gamma  \dfrac{N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} }{\lambda}\pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_3} - e^{-\lambda t_2}} \nonumber
+N_{\gamma} &= N_D \epsilon_\gamma I_\gamma \\
+&=  \epsilon_\gamma I_\gamma  \dfrac{N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} }{\lambda}\pp{1 - e^{-\lambda t_i}}  e^{-\lambda t_d} \pp{1 - e^{-\lambda t_c}} \nonumber
 \end{align}
 
 Solving this equation for the  cross section results in:
 
-\begin{equation}\label{eqn:single_xs_eqn}
-\sigma\pp{\bar{E}} = \dfrac{N_{obs}\lambda}{N_T \epsilon_\gamma I_\gamma  \phi\pp{\bar{E}}  \pp{e^{\lambda t_1}-1}\pp{e^{-\lambda t_3} - e^{-\lambda t_2}}}
-\end{equation}
+\begin{align}\label{eqn:single_xs_eqn}
+\sigma\pp{\bar{E}} = \dfrac{N_{\gamma}\lambda}{N_T \epsilon_\gamma I_\gamma  \phi\pp{\bar{E}}  \pp{1 - e^{-\lambda t_i}} e^{-\lambda t_d} \pp{1 - e^{-\lambda t_c}}}
+\end{align}
+
+% \begin{equation}\label{eqn:single_xs_eqn}
+% \sigma\pp{\bar{E}} = \dfrac{N_{obs}\lambda}{N_T \epsilon_\gamma I_\gamma  \phi\pp{\bar{E}}  \pp{1 - e^{-\lambda t_i}} e^{-\lambda t_d} \pp{1 - e^{-\lambda t_c}}}
+% \end{equation}
 
 \autoref{eqn:single_xs_eqn} can be used to determine the unknown (n,p) cross sections relative to the well-known \ce{^{115}In}(n,n')\ce{^{115m}In} and \ce{^{113}In}(n,n')\ce{^{113m}In} inelastic scattering cross sections since the Zn and Ti samples were co-irradiated with indium foils.
 This approach has a number of advantages since the result is independent of neutron flux and only depends on the relative detector efficiencies at each gamma-ray energy.
@@ -1077,8 +1086,8 @@ A minor term was added to correct for the small self-attenuation of the gamma ra
 
 
 \begin{align}\label{eqn:calc_eqn}
-\dfrac{\sigma_P}{\sigma_{In}} &=  \dfrac{A_P}{A_{In}} \dfrac{N_{T,In}}{N_{T,P}} \dfrac{\lambda_P}{\lambda_{In}} \dfrac{e^{\lambda_{In}t_1}-1}{e^{\lambda_{P}t_1}-1} \times \\
-&\times \dfrac{e^{-\lambda_{In}t_3}-e^{-\lambda_{In}t_2}}{e^{-\lambda_{P}t_3} - e^{-\lambda_{P}t_2}} \dfrac{\epsilon_{In}}{\epsilon_P}  \dfrac{I_{\gamma,In}}{I_{\gamma,P}} \dfrac{e^{-\mu_{In}x_{In}/2}\times e^{-\mu_{In}x_{P}}}{e^{-\mu_{P}x_{P}/2}} \nonumber
+\dfrac{\sigma_P}{\sigma_{In}} &=  \dfrac{N_{\gamma,P}}{N_{\gamma,In}}  \dfrac{N_{T,In}}{N_{T,P}} \dfrac{\lambda_P}{\lambda_{In}} \pp{\dfrac{1 - e^{-\lambda_{In}t_i}}{1 - e^{-\lambda_{P}t_i}}} \dfrac{e^{-\lambda_{In}t_d}}{ e^{-\lambda_{P}t_d}} \times \\
+&\times \pp{\dfrac{1 - e^{-\lambda_{In}t_c}}{1 - e^{-\lambda_{P}t_c}}} \dfrac{\epsilon_{In}}{\epsilon_P}  \dfrac{I_{\gamma,In}}{I_{\gamma,P}} \dfrac{e^{-\mu_{In}x_{In}/2}\times e^{-\mu_{In}x_{P}}}{e^{-\mu_{P}x_{P}/2}} \nonumber
 \end{align}
 
 where:
@@ -1086,7 +1095,9 @@ where:
 \begin{itemize}
   
 
-\item $A$ is the integrated counts under a photopeak [counts],
+% \item $N_{\gamma}$ is the integrated counts under a photopeak [counts],
+\item $N_{\gamma}$ is the integrated counts under a photopeak,
+
 
 \item $\sigma$ is the cross section for either the production of a product or isomer [mb],
 
@@ -1094,11 +1105,11 @@ where:
 
 \item $\lambda$  is the decay constant [s$^{-1}$],
 
-\item $t_1$ is the irradiation time [s],
+\item $t_i$ is the irradiation time [s],
 
-\item $t_2$ is the time between the start-of-beam and the start of counting [s],
+\item $t_d$ is the delay time (between the end-of-beam and the start of counting) [s],
 
-\item $t_3$ is the time  between the start-of-beam and the end of counting [s],
+\item $t_c$ is the counting time   [s],
 
 \item $\epsilon$ is the  detector efficiency for a particular photopeak,
 
@@ -1124,7 +1135,7 @@ Based on the assumption that these uncertainties are uncorrelated, the total rel
 \delta_\sigma = \norm{ \ensuremath{\vec{\delta}} }_2 = \sqrt{\sum_{i=1}^N  \delta_i^2  }
 \end{equation}
 
-This total  uncertainty will be plotted as the cross section error bar in the excitation function for these production reactions.
+This total  uncertainty is plotted as the cross section uncertainty in \autoref{fig:sc_xs} and \autoref{fig:cu_xs_zoom}.
 
 
 
@@ -1194,12 +1205,12 @@ Reaction                                                                        
 \end{tabular}
 \end{table}
 
-\comment{Karl:  \enquote{For the figures, let me suggest you make a red solid rectangle whose dimensions represent the error bars in both energy and cross section.  Then put a large red circle around it, whose diameter is of order 10\% of the size of the whole graph, to focus the eyes.  In the caption, mention that the size of the rectangle represents the error limits.}  Lee: \enquote{I would suggest that you zoom in on the energy and cross section value we measured (say 2.5-3.0 MeV and 10-70 mb).  Use a thicker line for our data point and/or make it larger. - Lee}}
+% \comment{Karl:  \enquote{For the figures, let me suggest you make a red solid rectangle whose dimensions represent the error bars in both energy and cross section.  Then put a large red circle around it, whose diameter is of order 10\% of the size of the whole graph, to focus the eyes.  In the caption, mention that the size of the rectangle represents the error limits.}  Lee: \enquote{I would suggest that you zoom in on the energy and cross section value we measured (say 2.5-3.0 MeV and 10-70 mb).  Use a thicker line for our data point and/or make it larger. - Lee}}
 
 Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} present the determined cross sections for the production of  \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu}  relative to literature data retrieved from EXFOR \cite{Otuka2014272,PhysRev.114.565,doi:10.1143/JPSJ.17.1215,paulsen1967cross,doi:10.1139/p72-336,Smith1975,King1979,Hussain1983,Ikeda1991,Shimizu2004543,PhysRev.126.271,Armitage1967,Ikeda1990,Senga2000,Shimizu2004975}.
 The weighted average of the measurements give   49.315 $\pm$ 2.567 mb (relative to \ce{^{113}In}) and 46.415 $\pm$ 1.720 mb (relative to \ce{^{115}In})   for \ce{^{64}Zn}(n,p)\ce{^{64}Cu},   and 26.262 $\pm$  0.822 mb for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}.
 The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section measured in this work is consistent with  other literature results, but with a smaller uncertainty (\textless 5\%).
-However, in the case of the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section, our results are consistent with the results from the Smith (1975), Armitage (1967), and Ikeda (1990) groups \cite{Smith1975,Armitage1967,Ikeda1990} and both the ENDF/B-VII.1 \cite{Chadwick2011} and TALYS \cite{Koning2012}  values, but significantly below the results from Hussain (1983), Gonzalez (1962), and Shimizu (2004) \cite{Hussain1983,PhysRev.126.271,Shimizu2004975}.
+However, in the case of the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section, our results are consistent with the results from the Smith (1975), Armitage (1967), and Ikeda (1990) groups \cite{Smith1975,Armitage1967,Ikeda1990} and both the ENDF/B-VII.1 \cite{Chadwick2011} and TALYS \cite{Koning2012}  values, but significantly below the results from the Hussain (1983), Gonzalez (1962), and Shimizu (2004) groups \cite{Hussain1983,PhysRev.126.271,Shimizu2004975}.
  
 
 %\comment{I referenced the original publication for each data set in \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} as ''Author (Year)''. Is this acceptable, or should I add the parenthetical ([28], [29],[etc]) onto each entry in the figure legends as well?}
@@ -1271,7 +1282,7 @@ These measurements also highlight the possibility of using fast neutrons from DD
  The production of a radionuclide sample with an activity $A$ driven to secular equilibrium using a neutron source with a total flux $\phi$ and a reaction cross section $\sigma$ acting on sample of $N_{target}$ atoms is given by the expression:
 
 \begin{equation}
-A = \lambda N_{product} = \eta \phi \sigma N_{target}
+A = \lambda N_{product} = \eta \phi \sigma N_{T}
 \end{equation}
 
 where we have introduced the dimensionless \emph{neutron utilization factor} $\eta$, which represents the likelihood of a neutron inducing the desired reaction on one of the target sample atoms:
