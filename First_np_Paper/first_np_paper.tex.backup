@@ -315,8 +315,8 @@ The HFNG is a compact neutron generator designed as a \enquote{flux-trap} that m
 The study was motivated by interest in the production of \ce{^{47}Sc} and \ce{^{64}Cu} as emerging medical isotopes.
 The cross sections were measured in ratio to the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} inelastic scattering reactions on co-irradiated indium samples.
 Post-irradiation counting using an HPGe and LEPS detectors allowed for cross section determination to within 5\% uncertainty.
-The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section for 2.765$^{+0.015}_{-0.022}$ MeV neutrons is reported as    49.315 $\pm$ 2.567 mb (relative to \ce{^{113}In}) or 46.415 $\pm$ 1.720 mb (relative to \ce{^{115}In}), and the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section is reported as 26.262 $\pm$  0.822 mb.
-The cross sections were determined with lower uncertainty than existing measurements and are found to be  in good agreement with both empirical and theoretical values.
+The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section for 2.76$^{+0.01}_{-0.02}$ MeV neutrons is reported as    49.3 $\pm$ 2.6 mb (relative to \ce{^{113}In}) or 46.4 $\pm$ 1.7 mb (relative to \ce{^{115}In}), and the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section is reported as 26.26 $\pm$  0.82 mb.
+The measured cross sections  are found to be  in good agreement with existing measured values but with lower uncertainty (\textless 5\%), and also in agreement with  theoretical values.
 This work highlights the utility of compact, flux-trap DD-based neutron sources for nuclear data measurements and potentially the production of radionuclides for medical applications.
 
 
@@ -352,7 +352,7 @@ This work highlights the utility of compact, flux-trap DD-based neutron sources 
 %%
 % \linenumbers
 
-\listoftodos
+% \listoftodos
 
 
 %% main text 
@@ -371,7 +371,7 @@ This interest is due to the volumetric absorption of neutrons as compared to cha
 
 Two other potential neutron sources for (n,x) reactions exist in addition to the secondary neutron fields generated at existing isotope production facilities: reactors and neutron generators that utilize the D(T,n)$\alpha$ (\enquote{DT}) and D(D,n)\ce{^3He} (\enquote{DD}) reactions.
  While reactors produce copious quantities of neutrons, their energy spectra is often not well-suited to the preparation of high-purity samples due to the co-production of unwanted activities via neutron capture, in addition to the significant start-up costs and proliferation concerns involved in their commissioning \cite{Updegraff2013}.
- Similarly, while the higher energy 14-15 MeV neutrons produced at DT generators are capable of initiating (n,p) and (n,$\alpha$) reactions, their higher energy opens the possibility of creating unwanted activities via (n,pxn) and (n,$\alpha$xn) reactions that cannot easily be separated from the desired radionuclides.
+ Similarly, while the higher energy 14-15 MeV neutrons produced at DT generators are capable of initiating (n,p) and (n,$\alpha$) reactions, their higher energy opens the possibility of creating unwanted activities via (n,pxn) and (n,$\alpha$xn) reactions that cannot easily be separated from the desired radionuclides. DT generators may also often be limited by the restricted use of tritium at many institutions.
  
 
 In contrast,  the neutron spectrum from a DD reaction, which ranges from approximately 2-3 MeV, is ideally suited to (n,p) radionuclide production.
@@ -401,7 +401,7 @@ In addition, when paired with \ce{^{44}Sc}, \ce{^{47}Sc} forms a promising \enqu
 
 
 Current methodology in radiochemistry has shown recovery of upwards of 95\% of produced \ce{^{64}Cu} \cite{bhatki1969preparation,mirzadeh1992spontaneous} and \ce{^{47}Sc} \cite{Aly1971,Bokhari2010,BF02047448} from solid target designs, without the need for additional carrier.
-By expanding the base of efficient reaction pathways, great advances can be made in making production of medical radionuclides more efficient and affordable for those in need.
+By expanding the base of efficient reaction pathways, great advances are possible in making production of medical radionuclides more efficient and affordable for those in need.  It is this desire to improve the options available for modern medical imaging and cancer therapy which has motivated the campaign of nuclear data measurements for isotope production at the UC Berkeley HFNG.
 
 
 
@@ -476,7 +476,7 @@ A 100 kV deuterium beam was extracted at 1.3 mA, creating a flux of approximatel
 
 
 The approach used in both measurements was to irradiate foils of zinc or titanium, which were co-loaded with indium foils in order to determine their (n,p) cross sections relative to the well-established \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} neutron dosimetry standards \cite{Capote2012,zsolnay2012technical}.
-  \autoref{tab:foil_specs} records physical characteristics of each foil for the various irradiations.
+  \autoref{tab:foil_specs} lists physical characteristics of each foil for the various irradiations.
 In each experiment, the co-loaded foils were irradiated for 3 hours at nominal operating conditions of 1.3 mA and 100 kV.
  After irradiation, the foils were removed and placed in front of an appropriate High-Purity Germanium (HPGe) gamma-ray detector and time-dependent decay gamma-ray spectra were collected.
   
@@ -678,6 +678,8 @@ This stands in contrast to other measurements which feature collimated beams and
 % \comment{Does \autoref{fig:mcnp_vised} serve any purpose? I'm starting to think it doesn't - should we just cut it?}
 
 The Monte Carlo N-Particle transport code  MCNP6 \cite{goorley2013initial} was used to model the neutron energy spectrum incident upon target foils co-loaded into the HFNG (see \autoref{fig:mcnp_flux}).
+The neutron spectral distribution is also broadened by the temperature of the target.  
+This gives rise to a slight difference in the neutron energy at the target location \cite{Waltz2016a}, which has been included in our stated energy window.
 This spectrum, peaked around 2.75 MeV, illustrates the forward-focused kinematics of the DD reaction subtended by the co-loaded sample foils.
 
 % \comment{\autoref{fig:mcnp_flux} to be updated with new data from Joe - no change in results, purely cosmetic.}
@@ -782,7 +784,7 @@ Nuclide & \begin{tabular}[c]{@{}c@{}}Gamma-Ray \\ Energy (keV)\end{tabular} & In
 \ce{^{64}Cu} \cite{Singh2007}    & 511.0                                                             & 35.2 $\pm$ 0.4        & 12.701 h   \\
 \ce{^{47}Sc} \cite{Burrows2007}    & 159.381                                                           & 68.3 $\pm$ 0.4      & 3.3492 d   \\
 \ce{^{113m}In} \cite{Blachot2010a}  & 391.698                                                           & 64.94 $\pm$ 0.17    & 99.476 m  \\
-\ce{^{115m}In} \cite{Blachot2012} & 336.241                                                           & 45.9 $\pm$ 0.1      & 4.486 h    \\
+\ce{^{115m}In} \cite{Hansen1974} & 336.241                                                           & 45.9 $\pm$ 0.1      & 4.486 h    \\
 \ce{^{116m}In} \cite{Blachot2010}  & 416.90                                                            & 27.2 $\pm$ 0.4      & 54.29 m   \\ \bottomrule
 \end{tabular}
 \end{table}
@@ -1321,7 +1323,7 @@ An optimal design for the neutron generator would also allow for the possibility
 
 Using activation methods on thin foils, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections were measured for  2.765$^{+0.015}_{-0.022}$ MeV neutrons produced using the High Flux Neutron Generator (HFNG) at UC Berkeley.
 The cross sections were measured with less than  5\% uncertainty relative to the well-known \ce{^{115}In}(n,n')\ce{^{115m}In} and \ce{^{113}In}(n,n')\ce{^{113m}In} fast neutron cross sections \cite{Capote2012,zsolnay2012technical}.
-The measured values of  26.262 $\pm$  0.822 mb and  49.315 $\pm$ 2.567 mb (relative to \ce{^{113}In}) or 46.415 $\pm$ 1.720 mb (relative to \ce{^{115}In}), respectively, are consistent with earlier experimental data and theoretical models, but have smaller uncertainties than previous measurements.
+The measured values of  26.26 $\pm$  0.82 mb and  49.3 $\pm$ 2.6 mb (relative to \ce{^{113}In}) or 46.4 $\pm$ 1.7 mb (relative to \ce{^{115}In}), respectively, are consistent with earlier experimental data and theoretical models, but have smaller uncertainties than previous measurements.
  
  In addition, the   production of the \ce{^{116}In}  via the \ce{^{115}In}(n,$\gamma$) reaction was close to the value one would expect given an incident neutron energy of 2.45 MeV.  
  While this is not consistent with the average neutron energy at the target location (2.765$^{+0.015}_{-0.022}$ MeV), the fact that it was close indicates the paucity of thermal neutrons in this central location.  
@@ -1331,7 +1333,7 @@ The use of DD neutron generators can be an efficient method for the measurement 
 
 
 % In closing, we have measured the \ce{^{64}Cu}(n,p) and \ce{^{47}Ti}(n,p) cross sections for 2.765 MeV incident neutrons.
- It is worth noting that at the time of publication, the  HFNG is now operating at 10$^9$ n/sec, with
+ It is worth noting that at the time of publication, the  HFNG is now operating at close to 10$^9$ n/sec, with
 a clear path towards 10$^{10}$.
 %  In the future we plan to perform additional cross section measurements at the HFNG, and to explore methods to extract the radionuclides from the sample using both chemical and physical separation techniques.
  Future work will involve the continued measurement of the (n,p) production cross sections for various other emerging therapeutic and diagnostic radioisotopes, to expand the toolset of options available for modern medical imaging and cancer therapy.
@@ -1348,9 +1350,9 @@ This will focus on radionuclides which permit more customized and precise dose d
  Lastly, we would like to acknowledge the students in the Nuclear Reactions and Radiation (NE102) laboratory course at UC Berkeley who participated in these experiments, including Joe Corvino, Nizelle Fajardo, Scott Parker and Evan Still.  
  
  This work has been carried out at the University of California, Berkeley, and performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under contract \# DE-AC52-07NA27344 and Lawrence Berkeley National Laboratory under contract \# DE-AC02-05CH11231.
-Funding has been provided from the US Nuclear Regulatory Commission, the US Nuclear Data Program, \textcolor{red}{NSF ARRA Grant \# XXXXXXXX}, the University of California Laboratory Fees Research Grant \# 12-LR-238745, and  DFG Research Fellowship \# RU 2065/1-1.
+Funding has been provided from the US Nuclear Regulatory Commission, the US Nuclear Data Program, the Berkeley Geochronology Center, NSF ARRA Grant \# EAR-0960138, the University of California Laboratory Fees Research Grant \# 12-LR-238745, and  DFG Research Fellowship \# RU 2065/1-1.
 
-\comment{Add NSF Grant number from P. Renne.}
+% \comment{Add NSF Grant number from P. Renne.}
  
 
 
