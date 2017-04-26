@@ -1131,7 +1131,7 @@ In addition to the \ce{^{115}In}(n,n')\ce{^{115m}In} reference cross section, th
 
 
 
-With the exception of decay constants  and time measurement, which have negligible uncertainty compared to other sources of uncertainties in this work, each of the parameters in this model carries am uncertainty.
+With the exception of decay constants  and time measurement, which have negligible uncertainty compared to other sources of uncertainties in this work, each of the parameters in this model carries an uncertainty.
 Based on the assumption that these uncertainties are uncorrelated, the total relative statistical uncertainty $\delta_\sigma$ is calculated by taking the quadrature sum of the relative uncertainties of each parameter  $\delta_i$:
 
 \begin{equation}
@@ -1195,18 +1195,37 @@ These values are recorded in \autoref{tab:xs_results}.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
+% \begin{table}
+% \centering
+% \caption{Results of cross section measurement. Note that the last data point for the \ce{^{47}Sc} measurement (marked with *) was performed at a slightly different beam spot location, leading to a difference in effective neutron energy.}
+% \label{tab:xs_results}
+% \begin{tabular}{@{}cc@{}}
+% \toprule
+% Reaction                                                                            & $\sigma$($E_n$ = 2.76$^{+0.01}_{-0.02}$ MeV) (mb)                                                                       \\ \midrule
+% \begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{113}In})\end{tabular} &  \begin{tabular}[c]{@{}c@{}}49.9 $\pm$ 3.2, \\ 49.2 $\pm$ 2.7, \\ 49.0 $\pm$ 2.5\end{tabular} \\  \\[0.1ex]  
+% \begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}45.9 $\pm$ 2.6, \\ 46.5 $\pm$ 1.7, \\ 46.8 $\pm$ 3.2\end{tabular}  \\ \\[0.1ex]    
+% \begin{tabular}[c]{@{}c@{}}\ce{^{47}Ti}(n,p)\ce{^{47}Sc} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}25.9 $\pm$ 1.2, \\ 26.7 $\pm$ 1.4*\end{tabular}                   \\ \bottomrule
+% \end{tabular}
+% \end{table}
 \begin{table}
 \centering
 \caption{Results of cross section measurement. Note that the last data point for the \ce{^{47}Sc} measurement (marked with *) was performed at a slightly different beam spot location, leading to a difference in effective neutron energy.}
 \label{tab:xs_results}
-\begin{tabular}{@{}cc@{}}
+\begin{tabular}{@{}cS[table-format=+2.1,
+                  table-figures-uncertainty=1]@{}}
 \toprule
-Reaction                                                                            & $\sigma$($E_n$ = 2.76$^{+0.01}_{-0.02}$ MeV) (mb)                                                                       \\ \midrule
-\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{113}In})\end{tabular} &  \begin{tabular}[c]{@{}c@{}}49.9 $\pm$ 3.2, \\ 49.2 $\pm$ 2.7, \\ 49.0 $\pm$ 2.5\end{tabular} \\  \\[0.1ex]  
-\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}45.9 $\pm$ 2.6, \\ 46.5 $\pm$ 1.7, \\ 46.8 $\pm$ 3.2\end{tabular}  \\ \\[0.1ex]    
-\begin{tabular}[c]{@{}c@{}}\ce{^{47}Ti}(n,p)\ce{^{47}Sc} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}25.9 $\pm$ 1.2, \\ 26.7 $\pm$ 1.4*\end{tabular}                   \\ \bottomrule
+Reaction                   & \multirow{1}*{\minitab[c]{$\sigma$($E_n$ = 2.76$^{+0.01}_{-0.02}$ MeV) (mb)}}       \\ \midrule
+\multirow{3}*{\minitab[c]{\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{113}In})}} & 49.9 \pm 3.2 \\ 
+											& 49.2 \pm 2.7 \\ 
+											& 49.0 \pm 2.5 \\  \\[0.1ex]  
+\multirow{3}*{\minitab[c]{\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{115}In})}} & 45.9 \pm 2.6 \\ 
+											& 46.5 \pm 1.7 \\ 
+											& 46.8 \pm 3.2  \\ \\[0.1ex]    
+\multirow{2}*{\minitab[c]{\ce{^{47}Ti}(n,p)\ce{^{47}Sc} \\ (relative to \ce{^{115}In})}} & 25.9 \pm 1.2 \\ 
+											& 26.7 \pm 1.4*                   \\ \bottomrule
 \end{tabular}
 \end{table}
+   
 
 % \comment{Karl:  \enquote{For the figures, let me suggest you make a red solid rectangle whose dimensions represent the error bars in both energy and cross section.  Then put a large red circle around it, whose diameter is of order 10\% of the size of the whole graph, to focus the eyes.  In the caption, mention that the size of the rectangle represents the error limits.}  Lee: \enquote{I would suggest that you zoom in on the energy and cross section value we measured (say 2.5-3.0 MeV and 10-70 mb).  Use a thicker line for our data point and/or make it larger. - Lee}}
 
