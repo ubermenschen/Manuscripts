@@ -1,0 +1,155 @@
+% Cover letter using letter.sty
+\documentclass{letter} % Uses 10pt
+%Use \documentstyle[newcent]{letter} for New Century Schoolbook postscript font
+% the following commands control the margins:
+\topmargin=-1in    % Make letterhead start about 1 inch from top of page 
+\textheight=8in  % text height can be bigger for a longer letter
+\oddsidemargin=0pt % leftmargin is 1 inch
+\textwidth=6.5in   % textwidth of 6.5in leaves 1 inch for right margin
+\usepackage[american]{babel}
+
+\usepackage [autostyle, english = american]{csquotes}
+\usepackage[version=3]{mhchem} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+
+% \newcommand{\colornote}[1]{\textcolor{red}{ COMMENT\large\footnote{\textcolor{red}{#1}}}}
+\newcommand{\colornote}[1]{\textcolor{red}{#1}}
+
+
+\begin{document}
+
+\signature{Andrew S. Voyles}           % name for signature 
+\longindentation=0pt                       % needed to get closing flush left
+\let\raggedleft\raggedright                % needed to get date flush left
+ 
+ 
+\begin{letter}{Mark Breese, PhD \\
+Editor \\
+Nuclear Instruments and Methods in Physics Research Section B: \\
+Beam Interactions with Materials and Atoms}
+
+
+\begin{flushleft}
+{\large\bf Andrew S. Voyles}
+\end{flushleft}
+\medskip\hrule height 1pt
+\begin{flushright}
+\hfill The University of California, Berkeley \\
+\hfill 1106B Etcheverry Hall, Berkeley, CA  94720-1730 \\
+\hfill (850) 281-0217 or (510) 486-7310 
+\end{flushright} 
+\vfill % forces letterhead to top of page
+
+ 
+\opening{Dear Mark,} 
+
+  \renewcommand*{\thefootnote}{\alph{footnote}}
+
+  \noindent I am writing to submit my point-by-point responses to the issues raised by the reviewers for my submitted manuscript entitled \enquote{\emph{Measurement of the \ce{^{64}Zn},\ce{^{47}Ti}(n,p) Cross Sections using a DD Neutron Generator for Medical Isotope Studies}}  for publication in Nuclear Instruments and Methods in Physics Research Section B.  Please find my responses detailed in \colornote{red text.}
+
+  \vfill
+  
+ \pagebreak
+ 
+ 
+ 
+ Reviewer \#1:
+
+describes the activation measurement of 64Zn(n,p)64Cu and 47Ti(n,p)47Sc with DD neutrons from the High-Flux Neutron Generator of University of California in Berkeley relative to indium (n,n') activation foils.
+The produced radioactive isotopes 64Cu, 47Sc are relevant for nuclear medicine.
+64Cu is a positron emitter, while 47Sc decays by beta-minus emission.
+The use of DD neutrons has the advantage that at this energy no other radioactive copper or scandium isotopes are produced.
+
+It features a very compact double sided titanium-copper target on which high intensity deuteron beams with 100 kV impinge from nearby ion sources from opposite sides.
+
+In the experiment a deuteron current of 1.3 mA created a flux of 1.3E7 neutrons /cm2 /s on the target. Inside the target small activation samples can be mounted only 8 mm away from the neutron producing target surface. The target foils consisted of thin metallic zinc and titanium foils in
+addition to indium foils to provide a reference for a relative measurement of the activation reactions by gamma-ray spectroscopy.
+
+The neutron spectrum produced in the target is simulated with MCNP6 and an effective energy range for neutron activation of indium is determined.
+The incident neutron energy also depends on the position of the deuteron beam spot on the target. A square array of nine indium foils  with smaller diameter is used to measure the neutron beam intensity. The beam seems mostly centered on the target;an asymmetry of the neutron beam intensity in the horizontal direction is illustrated in Fig. 8.
+
+The induced activity of the irradiated zinc, titanium and indium samples is measured using HPGe detectors calibrated with several gamma-ray calibration sources. The half-live of the different indium and 64Cu activities are measured for a verification of the identification of the gamma-ray peaks.
+The measured activity of the irradiated samples is used to determine the  cross section of 64Zn(n,p)64Cu and 47Ti(n,p)47Sc relative to 115In(n,n'). Statistical uncertainties due to the counting statistics are about 4 \%. The main systematic uncertainty is due to the uncertainty of the normalizing indium cross sections. Additional systematic uncertainties are the position
+and size of the deuteron beam relative to the target irradiation samples as this induces a shift in the neutron energy spectrum of the activation. Additional uncertainties like the relative gamma-ray detection efficiency are not listed. The 115In neutron capture cross section was determined to
+an effective energy of 2.45 MeV which indicates that there might be some contribution of lower energy neutrons contributing to the activation yield.
+
+As several target positions can be irradiated simultaneously a group of activation cross sections from 2.6 to 2.7 MeV can be measured. The saturation activity that can be reached is proportional to activation cross section, the number of irradiated target atoms and the neutron flux per cm2 and second. This activity should be in the mCi range to be useful for
+medical use. The quantity eta (eq.10) is added to the known formula for the activation by neutron irradiation as a dimensionless neutron utilisation factor.
+
+The paper describes an activation cross section measurement with a
+novel quasimonoenergetic neutron source using deuteron beams from two sides on a compact target assembly. It is well structured and nicely written and contains most aspects of the measurement. The neutron intensity of this source (at the future 1.E10 level might have the potential
+to be useful for medical radioisotope production, although this point should be more clearly made in the discussion section.
+
+The paper ist suitable for publication in NIM B after the following items have been addressed, which should be a minor revision. The corrections relate mainly to the fact, statements are made, but not quantified with numbers that should be easily available from the data analysis.
+
+1. The "neutron utilisation factor" eta is not clearly explained.
+% Usually "likelihood of a neutron inducing the desired reaction on one of the target sample atoms" is simply the cross section:  N_reac/ N_neutron = sigma(Cm2) * n_target( atoms/cm2) To determine the saturation activity from an activation with a constant neutron flux this factor is not required.
+The discussion section does not include the value of the saturation activity of the reported measurement, e.g. for 64Cu it should be ca. 1.5 kBq (using 1.3E7 n/(s cm2), 50 mbarn cross section and 0.5 g of nat-Zn). With some intensity improvements (factor 100-1000) which seems realistic, the mCi (37 MBq) range can be reached. This is however not stated in the
+paper. The discussion of eq.(9) and (10) should be improved, and quantitative results related to the current measurement should be reported. Maybe eq.(10) is not required.
+
+2. In an activation measurement the integral of the neutron spectrum and cross section determines the yield, see. eq.(1).
+The thresholds for (n,p) on Cu or Ti and (n,n') on indium are not the same. Fig. 5 shows the effective energy range for indium only. Is there systematic effect on the measured (n,p) cross sections due to the low energy tail of the neutron spectrum shown in Fig. 4 ?
+The interpretation of the 115In capture cross section effective energy is not clear. Can there be an estimate made on how many thermal neutrons are in the spectrum ?
+What is the meaning of the data symbols in Fig. 4  and why does the spectrum stop at the
+highest flux (around 4 units) should it not drop to zero yield above the 2.75 MeV peak ?
+
+3. The HPGe and LEPS detectors were calibrated at various distances with calibration sources.
+How well is the relative efficiency known for the gamma-rays used in the measurement ?
+This could add to the systematic uncertainty. Especially 133Ba and 152Eu as multi-line sources might require a correction for coincident summing if the distance to the sample was small.
+
+4. In the description of the experiment it is never explicitely stated that deuteron beams were impinging from both sides on the target or not. Fig.1 seems to indicate that there are two deuteron ion sources, although Fig. 2 shows neutrons only coming from one side.
+The authors should clarify the mode of operation.
+
+Typos:
+p.1 line 45 right column "their energy spectra are often not well-suited"
+p.2 line 27 left: 47Sc is not a positron emitter
+p.10. line 31 Ref.[1] is incomplete.
+
+ \pagebreak
+
+Reviewer \#2:
+
+ This article describes the use of a modern, compact D-D neutron source to produce radioisotopes for medical and other applications. The radioisotopes 47Sc and 64Cu were chosen because they have potential for diagnostic or therapeutic medical applications, and can be produced using the (n,p) reaction that is an open reaction channel at the energy of the neutron source. The radioisotope production cross sections were measured relative to indium inelastic activation cross sections that are well determined. The authors performed a thorough and detailed analysis of the energy and angle dependence of the neutron flux, as well as properly accounting for the production and decay of the radioisotopes in determining the reaction cross sections. The resulting cross section values agree within uncertainties with some previous measurements and have smaller uncertainties than previous work. The results show the potential of using such a compact D-D neutron source for both medical
+radioisotope production and nuclear research. Because the work is of interest to the NIM B audience, is thorough and well-presented, it should be published. There are however, some minor corrections to the text that are necessary, as well as some changes to the references that are needed before publication. These corrections are listed below.
+
+P 1 "energy spectra is…" should be "energy spectra are…"
+P 2 "100 kV deuterium beam" correct "kV" to "keV"
+P 4 Table 1. My preference is for "at. %" rather than "a/o"
+P 5 missing "to" in "subjected to this flux" and Fig. 8 - the authors should comment on the significance of the flux at right (8.35 E6) that is nearly the same as the center value.
+P 8 "makes indium a better" correct to "make indium …"; "for incident" should be "for an incident"; and "The results for the production of 116In …" should be "The result…".
+References -
+[1] - this reference needs details of the source - report, book or article and particulars
+[2] - page and year of journal article are needed
+[3] - a URL for access to the dissertation would benefit the reader
+Along with references 2 and 3, adding Q. Ji, A. Sy, and J. W. Kwan, Rev. Sci. Instr. 81, 02B312 (2010) is needed for completeness.
+[13] - page and year are needed
+[25] Add "Los Alamos Report" LA-UR-13-22934
+[30] Add URL - http://radware.phy.ornl.gov/gf3/gf3.html
+
+ \pagebreak
+
+
+
+Reviewer \#3:
+
+Excellent contribution to the field of medical radioisotope production.
+I believe there is one significant omission from the discussion.
+What do the authors believe will be the attainable saturation activity for the two nuclides considered?
+
+The principle of the estimate is indicated. The numbers are missing. These numbers should be compared with foreseen need.
+
+\pagebreak
+
+Please find our manuscript attached. I hope that this work will be deemed of sufficient merit to be published in NIM, and I look forward to working with the editorial staff if this is the case. 
+ 
+\closing{Sincerely yours,} 
+ 
+
+ 
+% \encl{}  				% Enclosures
+
+\end{letter}
+ 
+
+\end{document}
