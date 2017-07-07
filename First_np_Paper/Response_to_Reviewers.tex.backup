@@ -12,9 +12,19 @@
 \usepackage[version=3]{mhchem} 
 \usepackage[hidelinks]{hyperref}
 \usepackage{color}
+\usepackage[ampersand]{easylist}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsmath}
+
+
+\newfloat{figure}{htbp}{figs}
 
 % \newcommand{\colornote}[1]{\textcolor{red}{ COMMENT\large\footnote{\textcolor{red}{#1}}}}
 \newcommand{\colornote}[1]{\textcolor{red}{#1}}
+\newcommand{\sci}[2]{ #1 \cdot 10^{#2}\ }
+\newcommand{\pp}[1]{\left( #1\right)}
 
 
 \begin{document}
@@ -83,28 +93,58 @@ to be useful for medical radioisotope production, although this point should be 
 
 The paper ist suitable for publication in NIM B after the following items have been addressed, which should be a minor revision. The corrections relate mainly to the fact, statements are made, but not quantified with numbers that should be easily available from the data analysis.
 
-1. The "neutron utilisation factor" eta is not clearly explained.
-% Usually "likelihood of a neutron inducing the desired reaction on one of the target sample atoms" is simply the cross section:  N_reac/ N_neutron = sigma(Cm2) * n_target( atoms/cm2) To determine the saturation activity from an activation with a constant neutron flux this factor is not required.
-The discussion section does not include the value of the saturation activity of the reported measurement, e.g. for 64Cu it should be ca. 1.5 kBq (using 1.3E7 n/(s cm2), 50 mbarn cross section and 0.5 g of nat-Zn). With some intensity improvements (factor 100-1000) which seems realistic, the mCi (37 MBq) range can be reached. This is however not stated in the
-paper. The discussion of eq.(9) and (10) should be improved, and quantitative results related to the current measurement should be reported. Maybe eq.(10) is not required.
 
-2. In an activation measurement the integral of the neutron spectrum and cross section determines the yield, see. eq.(1).
-The thresholds for (n,p) on Cu or Ti and (n,n') on indium are not the same. Fig. 5 shows the effective energy range for indium only. Is there systematic effect on the measured (n,p) cross sections due to the low energy tail of the neutron spectrum shown in Fig. 4 ?
-The interpretation of the 115In capture cross section effective energy is not clear. Can there be an estimate made on how many thermal neutrons are in the spectrum ?
+
+\begin{easylist}[enumerate]
+\ListProperties(Style2*=$\bullet~$,Numbers1=a,Hide2=100,FinalMark={)})
+& The "neutron utilisation factor" eta is not clearly explained.
+Usually "likelihood of a neutron inducing the desired reaction on one of the target sample atoms" is simply the cross section:  N$_{reac}$/ N$_{neutron}$ = sigma(Cm2) * n$_{target}$( atoms/cm2) To determine the saturation activity from an activation with a constant neutron flux this factor is not required.\\
+The discussion section does not include the value of the saturation activity of the reported measurement, e.g. for 64Cu it should be ca. 1.5 kBq (using 1.3E7 n/(s cm2), 50 mbarn cross section and 0.5 g of nat-Zn). With some intensity improvements (factor 100-1000) which seems realistic, the mCi (37 MBq) range can be reached. This is however not stated in the
+paper. \\ The discussion of eq.(9) and (10) should be improved, and quantitative results related to the current measurement should be reported. Maybe eq.(10) is not required.:
+&& \colornote{The point of introducing the $\eta$-factor is to qualitatively show the characteristics of compact DD generators which make them attractive for \emph{high specific-activity} isotope production.\\
+The $\int_0^E \text{d}E_n \dfrac{\sigma_{(n,p)}}{\sigma_{(n,x)} + \sigma_{(n,p)}}$ term in $\eta$ shows the fraction (integrated over the neutron energy range seen by a target) of the total reaction cross section which produces the desired reaction channel. For example, if no other competing contamination reaction channels are energetically possible on [0,E], then the term would go to unity. As other competing contamination channels open up ((n,$\gamma$), (n,pn), (n,$\alpha$), etc), the term would drop towards 0, as more of the total reactions are stolen away from the desired channel. The $\int N_{target} \pp{r,\theta,\varphi} \text{d}\mathbf{V}$ term shows the fraction of target subtended by the neutron flux. For externally mounted targets, or DD generators using collimated beamlines, the target subtends a much smaller fraction of the flux, essentially wasting that component of the flux. The proximity of targets to the DD reaction surface and the high specific activity of isotope production in a design similar to the HFNG give it a value of $\eta$ much closer to unity than other conventional DD generators. }
+& In an activation measurement the integral of the neutron spectrum and cross section determines the yield, see. eq.(1).
+The thresholds for (n,p) on Cu or Ti and (n,n') on indium are not the same. Fig. 5 shows the effective energy range for indium only.\\ Is there systematic effect on the measured (n,p) cross sections due to the low energy tail of the neutron spectrum shown in Fig. 4 ?\\
+The interpretation of the 115In capture cross section effective energy is not clear. \\ Can there be an estimate made on how many thermal neutrons are in the spectrum ?\\
 What is the meaning of the data symbols in Fig. 4  and why does the spectrum stop at the
 highest flux (around 4 units) should it not drop to zero yield above the 2.75 MeV peak ?
-
-3. The HPGe and LEPS detectors were calibrated at various distances with calibration sources.
+&& \colornote{In performing the cross-section measurement for (n,p) on Zn or Ti, the use of indium as a monitor serves two purposes: measuring the integral neutron flux seen by the Zn/Ti targets (though in ratio, this integral flux cancels out, which eliminates the flux as the typical largest source of systematic uncertainty), and verification of the neutron energy distribution.  This is why Fig. 5 only shows the energy range in indium - a similar curve for 64Zn(n,p)64Cu would have a different threshold, but would also require a well-characterized excitation function.  Such an excitation function does not exist, which this work seeks to help remedy (at one energy). As a result, MCNP is used to determine the energy distribution in the Zn/Ti targets (Fig. 4), and Fig 5. is used to provide appropriate ``error bars'' to report the effective energy width seen by our target foils.  \\ The low-energy tail in Figure 5 is not well-visible, due to Figure 5 being zoomed-in to illustrate how rapidly the $F(E')$ quantity rises over the 2.7-2.8 MeV range.  The zoomed-out version of this is seen below in  \autoref{fig:cu_xs_zoom}, which illustrates almost negligible contribution to the total activation until above 2.5 MeV neutrons. As an example, the entire low-energy tail from 0-2 MeV neutron only contributes 2.17\% of the total activity in Indium, and the epithermal range (0-10 keV) contributes only $\sci{1.3}{-8}$ of the total activity.\\ The 115In capture note is more of an observation than a reportable. The cross sections we have measured are for the effective neutron energy of 2.76 MeV. At this energy, the 116In activity produced would predict a 64Zn(n,p)64Cu cross section, for example, of approx 41 mb, which is approx 20\% lower than the cross sections relative to the 113mIn and 115mIn standards. This is because the 116In capture activity is far more sensitive to lower-energy neutron contributions than the 113mIn/115mIn inelastic scattering activities. As a simple exercise, one can very the effective neutron energy for the 116In capture channel until the 64Zn(n,p)64Cu cross section observed (relative to the 116In ``monitor channel'') agrees with the 113mIn/115mIn monitor channels.  This occurs if one assumes an effective neutron energy of 2.45 MeV for 115In(n,gamma)116In.  The point we were making in describing this observation is that it offers further proof that there are very few thermal neutrons seen by the target positions in the HFNG - otherwise, the effective neutron energy would have shifted far lower in energy than from 2.76 MeV to just 2.45 MeV.  This low population of thermals, in turn, confirms that DD neutrons are a potentially effective method to produce radionuclides with high specific activity (very little unwanted competing nuclides produced) - the low energy of DD neutrons energetically prevents (n,pn) channels from being open for production, and the apparent tiny population of thermal/epithermal neutrons makes (n,gamma) contamination minimal, relative to the desired (n,p) channel.  \\The thermal neutron population (0-0.0253 eV) makes up 0.00320\% of the total neutron population in the indium foils. Even considering epithermal neutrons (0-10 keV), they still only make up 0.0771\% of the total neutron population. The semilog axes of Fig. 4 exaggerate the relative population of thermal / epithermal neutrons.\\ Since the indium/target spectra are so very similar to each other in Fig. 4 (and the void/non-void spectra as well, above approx 2.6 MeV), the markers were added to differentiate the spectra if the manuscript were being viewed in greyscale / by a colorblind individual.  Without distinct  markers, the various spectra are nearly indistinguishable, due to the proximity of both target and indium foils to the DD reaction surface. \\ The peak flux occurs at 2.777 MeV - the 2.75 MeV number quoted on P. 3 was a typo and has been corrected. However, the energy of the peak flux is expected to be higher than the flux-weighted average of 2.765 MeV, as the low-energy contributions shift the flux-weighted average down in energy. However, the tiny shift below the peak is further evidence of how few thermal / low-energy neutrons are present. As for the zero yield, yes, the flux does begin turning down above the peak, and the highest-energy neutron observed is at 2.783 MeV, as noted on P. 3 of the manuscript. Above 2.783 MeV, no neutrons are observed. However, in plotting on log axes, a value in $y$ of 0 cannot be plotted, as ln(0) is undefined.  This is why the curve appears to stop instead of immediately dropping to zero, and the drop to zero yield may be seen in a linear y-axis version of Fig. 4, seen in \autoref{fig:lin_xs_zoom} below. This nuances and detailed information about the spectral shape (in particular the rapid rise above the 2.25 MeV shoulder) of the log-y version are masked in this lin-y version, which is why the former was chosen to be included in the manuscript.}
+& The HPGe and LEPS detectors were calibrated at various distances with calibration sources.
 How well is the relative efficiency known for the gamma-rays used in the measurement ?
 This could add to the systematic uncertainty. Especially 133Ba and 152Eu as multi-line sources might require a correction for coincident summing if the distance to the sample was small.
-
-4. In the description of the experiment it is never explicitely stated that deuteron beams were impinging from both sides on the target or not. Fig.1 seems to indicate that there are two deuteron ion sources, although Fig. 2 shows neutrons only coming from one side.
+&& \colornote{Samples were counted far enough away to avoid any large coincident summing effects, and regardless, and ``no summing corrections needed to be made for the irradiated targets since all of the gammas are either non-coincident or formed in a back-to-back annihilation event'' (See P. 5, Line 1).  As for calibration, the relative efficiency of detectors is known to the 1-1.5\% level.  This efficiency uncertainty is included in the total uncertainty in section 2.6 (``With the exception of decay constants  and time measurement, which have negligible uncertainty compared to other sources of uncertainties in this work, each of the parameters in this model carries an uncertainty.''  (P. 8, lines 8-11))}
+& In the description of the experiment it is never explicitely stated that deuteron beams were impinging from both sides on the target or not. Fig.1 seems to indicate that there are two deuteron ion sources, although Fig. 2 shows neutrons only coming from one side.
 The authors should clarify the mode of operation.
+&& \colornote{Two deuterium ion sources exist (to effectively double the neutron flux seen by an irradiation target), but only a single source was operated during this work.  This has been clarified on page 1, end of section 2.1 (``While the machine's design\ldots'').}
+\end{easylist}
+
+\begin{figure}
+ \centering
+ \includegraphics[scale=0.65]{./figures/zoomed_out_fracplot.pdf}
+ % zoomed_out_fracplot.pdf: 366x294 pixel, 72dpi, 12.91x10.37 cm, bb=0 0 366 294
+ \caption{Zoomed-out version of Figure 5 from the manuscript.}
+ \label{fig:cu_xs_zoom}
+\end{figure}
+
+\begin{figure}
+ \centering
+ \includegraphics[scale=0.65]{./figures/lin_mcnp_flux.pdf}
+ % zoomed_out_fracplot.pdf: 366x294 pixel, 72dpi, 12.91x10.37 cm, bb=0 0 366 294
+ \caption{Linear y-axis version of Figure 4 from the manuscript.}
+ \label{fig:lin_xs_zoom}
+\end{figure}
 
 Typos:
-p.1 line 45 right column "their energy spectra are often not well-suited"
-p.2 line 27 left: 47Sc is not a positron emitter
-p.10. line 31 Ref.[1] is incomplete.
+
+\begin{easylist}[enumerate]
+\ListProperties(Style2*=$\bullet~$,Numbers1=a,Hide2=100,FinalMark={)})
+& p.1 line 45 right column "their energy spectra are often not well-suited"
+&& \colornote{Typo corrected.}
+& p.2 line 27 left: 47Sc is not a positron emitter
+&& \colornote{Roles of each radionuclide have been clarified.}
+& p.10. line 31 Ref.[1] is incomplete.
+&& \colornote{Reference updated.  See the Reviewer \#2 section for more detail.}
+\end{easylist}
 
  \pagebreak
 
@@ -113,19 +153,55 @@ Reviewer \#2:
  This article describes the use of a modern, compact D-D neutron source to produce radioisotopes for medical and other applications. The radioisotopes 47Sc and 64Cu were chosen because they have potential for diagnostic or therapeutic medical applications, and can be produced using the (n,p) reaction that is an open reaction channel at the energy of the neutron source. The radioisotope production cross sections were measured relative to indium inelastic activation cross sections that are well determined. The authors performed a thorough and detailed analysis of the energy and angle dependence of the neutron flux, as well as properly accounting for the production and decay of the radioisotopes in determining the reaction cross sections. The resulting cross section values agree within uncertainties with some previous measurements and have smaller uncertainties than previous work. The results show the potential of using such a compact D-D neutron source for both medical
 radioisotope production and nuclear research. Because the work is of interest to the NIM B audience, is thorough and well-presented, it should be published. There are however, some minor corrections to the text that are necessary, as well as some changes to the references that are needed before publication. These corrections are listed below.
 
-P 1 "energy spectra is…" should be "energy spectra are…"
-P 2 "100 kV deuterium beam" correct "kV" to "keV"
-P 4 Table 1. My preference is for "at. %" rather than "a/o"
-P 5 missing "to" in "subjected to this flux" and Fig. 8 - the authors should comment on the significance of the flux at right (8.35 E6) that is nearly the same as the center value.
-P 8 "makes indium a better" correct to "make indium …"; "for incident" should be "for an incident"; and "The results for the production of 116In …" should be "The result…".
+
+\begin{easylist}[enumerate]
+\ListProperties(Style2*=$\bullet~$,Numbers1=a,Hide2=100,FinalMark={)})
+& P 1 "energy spectra is…" should be "energy spectra are…"
+
+&& \colornote{Typo corrected.}
+& P 2 "100 kV deuterium beam" correct "kV" to "keV"
+
+&& \colornote{Typo corrected.}
+& P 4 Table 1. My preference is for "at. \%" rather than "a/o"
+
+&& \colornote{Change implemented.}
+& P 5 missing "to" in "subjected to this flux" and Fig. 8 - the authors should comment on the significance of the flux at right (8.35 E6) that is nearly the same as the center value.
+
+
+&& \colornote{Change implemented.  In addition, more discussion of the small horizontal asymmetry in neutron flux is provided in the same paragraph.}
+& P 8 "makes indium a better" correct to "make indium …"; "for incident" should be "for an incident"; and "The results for the production of 116In …" should be "The result…".
+
+
+&& \colornote{Changes implemented.}
+\end{easylist}
+
 References -
-[1] - this reference needs details of the source - report, book or article and particulars
-[2] - page and year of journal article are needed
-[3] - a URL for access to the dissertation would benefit the reader
-Along with references 2 and 3, adding Q. Ji, A. Sy, and J. W. Kwan, Rev. Sci. Instr. 81, 02B312 (2010) is needed for completeness.
-[13] - page and year are needed
-[25] Add "Los Alamos Report" LA-UR-13-22934
-[30] Add URL - http://radware.phy.ornl.gov/gf3/gf3.html
+
+
+\begin{easylist}[enumerate]
+\ListProperties(Style2*=$\bullet~$,Numbers1=a,Hide2=100,FinalMark={)})
+& [1] - this reference needs details of the source - report, book or article and particulars
+
+&& \colornote{Reference Updated.  The report is only publicly available from\\ \url{https://www.aaas.org/report/nuclear-medicine-without-nuclear-reactors-or-uranium-enrichment}, but the reference has been updated with more detail.}
+& [2] - page and year of journal article are needed
+
+&& \colornote{Article was accepted and in publication at the time of this manuscript's submission, but has now been published.  Reference updated.}
+& [3] - a URL for access to the dissertation would benefit the reader
+
+&& \colornote{The Elsevier-recommended \url{elsarticle-num} BibTeX style does not support a URL in a PhD Thesis citation. I have hacked one in, \emph{but the editors are welcome to remove it in the final processing if it does not conform to journal style standards.} If another method for referencing a URL is preferred, the Thesis is hosted by UC Berkeley at  \url{http://search.proquest.com/docview/1834600459}}
+& Along with references 2 and 3, adding Q. Ji, A. Sy, and J. W. Kwan, Rev. Sci. Instr. 81, 02B312 (2010) is needed for completeness.
+
+&& \colornote{Per Ref [2,3], the ion sources used in the HFNG are based on the similar design of the Ji (2010) article, but not identical. This has been noted on p.2 lines 12-13, right column (``using ion sources\ldots'') . }
+& [13] - page and year are needed
+
+&& \colornote{Reference updated.}
+& [25] Add "Los Alamos Report" LA-UR-13-22934
+
+&& \colornote{Reference updated.}
+& [30] Add URL - http://radware.phy.ornl.gov/gf3/gf3.html
+
+&& \colornote{See above.  URLs are not allowed in this BibTeX format; I hacked it in, but the editors are welcome to remove it in order to maintain journal style.}
+\end{easylist}
 
  \pagebreak
 
@@ -139,9 +215,17 @@ What do the authors believe will be the attainable saturation activity for the t
 
 The principle of the estimate is indicated. The numbers are missing. These numbers should be compared with foreseen need.
 
+
+\begin{easylist}[enumerate]
+\ListProperties(Style2*=$\bullet~$,Numbers1=a,Hide=2,FinalMark={)})
+& 
+
+&& \colornote{Response}
+\end{easylist}
+
 \pagebreak
 
-Please find our manuscript attached. I hope that this work will be deemed of sufficient merit to be published in NIM, and I look forward to working with the editorial staff if this is the case. 
+Please find our revised manuscript attached. 
  
 \closing{Sincerely yours,} 
  

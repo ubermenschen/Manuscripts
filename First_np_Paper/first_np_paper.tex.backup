@@ -37,6 +37,7 @@
 \usepackage{subcaption}
 \usepackage{booktabs,siunitx}
 \usepackage{gensymb}
+\usepackage[normalem]{ulem}
 
 % \usepackage{mathtools, cuted}
 
@@ -179,6 +180,9 @@
 \newcommand{\angstrom}{\mbox{\normalfont\AA}}
 \newcommand{\norm}[1]{\lVert #1 \rVert}
 
+\newcommand{\textred}[1]{\textcolor{red}{ #1}}
+\newcommand{\redactedit}[1]{\textcolor{blue}{ \sout{#1}}}
+
 
 \newcommand{\colornote}[1]{\textcolor{red}{ COMMENT\large\footnote{\textcolor{red}{#1}}}}
 
@@ -310,6 +314,7 @@
 % \comment{Need Daniel's middle initial} - he doesn't have one
 
 
+
 Cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} reactions have been measured for quasi-monoenergetic DD neutrons produced by the UC Berkeley High Flux Neutron Generator (HFNG).
 The HFNG is a compact neutron generator designed as a \enquote{flux-trap} that maximizes the probability that a neutron will interact with a sample loaded into a specific, central location.  
 The study was motivated by interest in the production of \ce{^{47}Sc} and \ce{^{64}Cu} as emerging medical isotopes.
@@ -371,9 +376,10 @@ This interest is due to the volumetric absorption of neutrons as compared to cha
  
 
 Two other potential neutron sources for (n,x) reactions exist in addition to the secondary neutron fields generated at existing isotope production facilities: reactors and neutron generators that utilize the D(T,n)$\alpha$ (\enquote{DT}) and D(D,n)\ce{^3He} (\enquote{DD}) reactions.
- While reactors produce copious quantities of neutrons, their energy spectra is often not well-suited to the preparation of high-purity samples due to the co-production of unwanted activities via neutron capture, in addition to the significant start-up costs and proliferation concerns involved in their commissioning \cite{Updegraff2013}.
+ While reactors produce copious quantities of neutrons, their energy spectra \redactedit{is }\textred{are} often not well-suited to the preparation of high-purity samples due to the co-production of unwanted activities via neutron capture, in addition to the significant start-up costs and proliferation concerns involved in their commissioning \cite{Updegraff2013}.
  Similarly, while the higher energy 14-15 MeV neutrons produced at DT generators are capable of initiating (n,p) and (n,$\alpha$) reactions, their higher energy opens the possibility of creating unwanted activities via (n,pxn) and (n,$\alpha$xn) reactions that cannot easily be separated from the desired radionuclides. DT generators may also often be limited by the restricted use of tritium at many institutions.
- 
+
+
 
 In contrast,  the neutron spectrum from a DD reaction, which ranges from approximately 2-3 MeV, is ideally suited to (n,p) radionuclide production.
 However, the lower achievable flux from these generators limits their production capabilities.
@@ -381,13 +387,13 @@ However, the lower achievable flux from these generators limits their production
  
 
 The purpose of the present work is to explore the potential to use high-flux neutron generators to produce high-specific activity samples of radionuclides at the mCi level for local use in the application community. 
- The research group at UC Berkeley has  developed a High Flux Neutron Generator (HFNG) that features an internal target where samples can be placed just several millimeters from the neutron producing surface in order to maximize the utilization of the neutron yield for the production of a desired radionuclide \cite{Waltz2017,Waltz2016a}.
+ The research group at UC Berkeley has  developed a High Flux Neutron Generator (HFNG) that features an internal target where samples can be placed just several millimeters from the neutron producing surface in order to maximize the utilization of the neutron yield for the production of a desired radionuclide \cite{Waltz2017,Waltz2016a,doi:10.1063/1.3267832}.
  The HFNG uses the D(D,n)\ce{^3He} reaction to produce neutrons with energies near 2.45 MeV together with a self-loading target design to maintain continuous operation without target replacement.
  In addition to the generator itself, efforts are underway to design neutron reflection capabilities to allow scattered neutrons multiple opportunities to interact with an  internally mounted target.
 While these design efforts are underway, the HFNG can be used to better characterize production cross sections at the appropriate neutron energy.
 
 
-The present work features a pair of cross section measurements for the production of two non-standard positron emitters: \ce{^{64}Zn}(n,p)\ce{^{64}Cu} and \ce{^{47}Ti}(n,p)\ce{^{47}Sc}.
+The present work features a pair of cross section measurements for the production of two \textred{emerging} non-standard \textred{medical radionuclides} \redactedit{positron emitters}: \textred{the positron emitter} \ce{^{64}Zn}(n,p)\ce{^{64}Cu} and \textred{the single-photon emission computed tomography (SPECT) tracer} \ce{^{47}Ti}(n,p)\ce{^{47}Sc}.
 \ce{^{64}Cu}  ($t_{1/2}$ = 12.7 h) undergoes $\beta^+$ decay (61.5\% branching ratio) to \ce{^{64}Ni} or $\beta^-$ decay (38.5\% branching ratio) to \ce{^{64}Zn} \cite{Singh2007}.
 The emitted short-range 190-keV $\beta^-$ particle makes this an  attractive  therapeutic radionuclide, which also has the possibility for simultaneous positron emission tomography (PET) imaging for real-time dose monitoring and verification.
 This makes \ce{^{64}Cu} particularly desirable  for emerging radiation therapy protocols \cite{Lewis2003,NSACIsotopesSubcommittee2015,Bandari2014,mp500671j}.
@@ -419,11 +425,12 @@ By expanding the base of efficient reaction pathways, great advances are possibl
 % Neutron activation was carried out via irradiation in the High-Flux Neutron Generator (HFNG), a DD neutron generator at the University of California, Berkeley, seen in  \autoref{fig:hfng_a}. This generator extracts deuterium ions from an RF-heated deuterium plasma through a nozzle, whose shape was designed to form a flat-profile beam 5 mm in diameter. This deuterium beam is incident upon a water-cooled, self-loading titanium-coated copper target, where the titanium layer acts as a reaction surface for DD fusion, producing neutrons with a well-known energy distribution as a function of  emission angle \cite{Liskien_Paulsen_1973}. Targets are inserted in the center of the target, approximately 8 mm from the DD reaction surface, prior to startup. \autoref{fig:hfng_b} displays a cut-away schematic of the HFNG. A 100 kV deuterium beam was extracted at 1.5 mA, creating a fluence of approximately  $\sci{1.3}{7}$ neutrons/cm$^2$ on the target.
 
 Neutron activation was carried out via irradiation in the High-Flux Neutron Generator (HFNG), a DD neutron generator at the University of California, Berkeley.
-This generator extracts deuterium ions from an RF-heated deuterium plasma through a nozzle, whose shape was designed to form a flat-profile beam, 5 mm in diameter.
+This generator extracts deuterium ions from an RF-heated deuterium plasma \textcolor{red}{(using ion sources similar to  designs from the Lawrence Berkeley National Laboratory \cite{doi:10.1063/1.3267832})} through a nozzle, whose shape was designed to form a flat-profile beam, 5 mm in diameter.
 This deuterium beam is incident upon a water-cooled, self-loading titanium-coated copper target \cite{Waltz2017,Waltz2016a}, where the titanium layer acts as a reaction surface for DD fusion, producing neutrons with a well-known energy distribution as a function of  emission angle \cite{Liskien_Paulsen_1973}.
+\textred{While the machine's design features two deuterium ion sources impinging from both sides of the target, only a single source was used in the present work.}
 Irradiation targets are inserted in the center of the titanium layer deuteron target, approximately 8 mm from the DD reaction surface, prior to startup.
 \autoref{fig:hfng_b} displays a cut-away schematic of the HFNG.
-A 100 kV deuterium beam was extracted at 1.3 mA, creating a flux of approximately  $\sci{1.3}{7}$ neutrons/cm$^2$s on the target.
+A 100 k\textred{e}V deuterium beam was extracted at 1.3 mA, creating a flux of approximately  $\sci{1.3}{7}$ neutrons/cm$^2$s on the target.
 
 
 
@@ -544,7 +551,7 @@ Prior to loading, each foil was washed with isopropanol and dried, to remove any
                   table-figures-uncertainty=1]S[table-format=+1.3,
                   table-figures-uncertainty=1]@{}}
 \toprule
-{Foils Used} & {Metal Purity}          & {Abundance (a/o)}                                                           & \minitab[c]{Foil Density \\ (mg/cm$^2$)} & {Thickness (mm)}                                                                                                         & {Diameter (mm)}                                                                                                           & {Mass (g)}                                                                                    \\ \midrule
+{Foils Used} & {Metal Purity}          & {Abundance (at. \%)}                                                           & \minitab[c]{Foil Density \\ (mg/cm$^2$)} & {Thickness (mm)}                                                                                                         & {Diameter (mm)}                                                                                                           & {Mass (g)}                                                                                    \\ \midrule
 
 \multirow{3}*{\minitab[c]{$^\text{nat}$Zn}}      & \multirow{3}*{\minitab[c]{\textgreater 99.99\%}} & \multirow{3}*{\minitab[c]{\ce{^{64}Zn} (49.17\%) }} & \multirow{3}*{\minitab[c]{698.9}}                                                              &   1.03 \pm 0.01 &  9.93 \pm 0.14  & 0.538 \pm 0.005 \\
 
@@ -681,7 +688,7 @@ This stands in contrast to other measurements which feature collimated beams and
 The Monte Carlo N-Particle transport code  MCNP6 \cite{goorley2013initial} was used to model the neutron energy spectrum incident upon target foils co-loaded into the HFNG (see \autoref{fig:mcnp_flux}).
 The neutron spectral distribution is also broadened by the temperature of the target.  
 This gives rise to a slight difference in the neutron energy at the target location \cite{Waltz2016a}, which has been included in our stated energy window.
-This spectrum, peaked around 2.75 MeV, illustrates the forward-focused kinematics of the DD reaction subtended by the co-loaded sample foils.
+This spectrum, peaked around 2.777 MeV, illustrates the forward-focused kinematics of the DD reaction subtended by the co-loaded sample foils.
 
 % \comment{\autoref{fig:mcnp_flux} to be updated with new data from Joe - no change in results, purely cosmetic.}
 
@@ -709,7 +716,7 @@ This spectrum, peaked around 2.75 MeV, illustrates the forward-focused kinematic
 
 While this shows that the sample foils experience a very narrow energy distribution of incident neutrons, an effective neutron energy window must be determined.
 The MCNP6 simulation shows an identical flux-weighted average neutron energy of 2.765 MeV for both the Indium and target foils to the 1 keV level.
-Due to the kinematics of DD neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry is 2.783 MeV \cite{Liskien_Paulsen_1973}.
+Due to \textred{geometry and} the kinematics of DD neutron emission, $E_{max}$,  the maximum energy of a neutron subtending the target foils in this geometry is 2.783 MeV \cite{Liskien_Paulsen_1973}.
 For this maximum energy, the number of reactions induced in a foil (containing $N_T$ target nuclei) is given by:
 
 \begin{equation}
@@ -1009,7 +1016,7 @@ As shown in \autoref{sec:sample_loading} above, the effective neutron energy dep
  This centroid position of the beam was measured using a 3 x 3 array of 0.5 cm diameter indium foils.
  The relative activity of these foils was then determined via post-irradiation counting of the \ce{^{115m}In} isomer ($t_{1/2}$ = 4.486 h) \cite{Blachot2012}.
  \autoref{fig:in_heat_plot}  shows the measured activities for these 9 indium foils.
- Based on these values we are able to verify that the beam was indeed centered on the middle of the zinc and titanium samples.
+ Based on these values we are able to verify that the beam was indeed \textred{vertically} centered on the middle of the zinc and titanium samples\textred{,  with a slight asymmetry of the neutron flux in the horizontal direction, accounted for in MCNP6 modeling of the energy-differential neutron flux. This small asymmetry likely contributes to the effective energy bin being lower than the 2.78 MeV expected for 0\degree\ neutron emission angle in \autoref{fig:scatt_angle}}.
   
 
 
@@ -1038,7 +1045,7 @@ For a thin target consisting of \(N_T\) target nuclei (with a reaction cross sec
 R = N_T \sigma\pp{\bar{E}} \phi\pp{\bar{E}} 
 \end{equation}
 
-If the target is subjected this flux  for an irradiation  time $t_i$ and decays for a  delay time $t_d$ (after end-of-beam) before gamma ray spectrum acquisition occurs for a counting time  $t_c$, then the number of product decays ($N_D$; with decay constant $\lambda$) during the acquisition will be:
+If the target is subjected \textred{to} this flux  for an irradiation  time $t_i$ and decays for a  delay time $t_d$ (after end-of-beam) before gamma ray spectrum acquisition occurs for a counting time  $t_c$, then the number of product decays ($N_D$; with decay constant $\lambda$) during the acquisition will be:
 
 
 \begin{align}
@@ -1147,7 +1154,7 @@ This total  uncertainty is plotted as the cross section uncertainty in \autoref{
 The largest source of systematic uncertainty in the cross section determined via the \enquote{ratio approach} is the 2.586\% uncertainty in the \ce{^{115}In}(n,n')\ce{^{115m}In}  cross section and the 1.447\% uncertainty in the \ce{^{113}In}(n,n')\ce{^{113m}In}  cross section  \cite{Capote2012,zsolnay2012technical}.
  An additional uncertainty arises from the fact that the Zn/Ti samples are not located at exactly the same location as the indium monitor foils, and are therefore not subject to precisely the same neutron flux.
  However, the MCNP6 simulations shown in \autoref{fig:mcnp_flux} indicate that the difference in the flux that the two foils are subjected to is less than 1\%, negligible compared to other sources of systematic uncertainty.
- Other monitor foils could be used instead of indium, with \ce{^{58}Ni}(n,p)\ce{^{58}Co} (\ce{^{58}Co} $t_{1/2}$ = 70.86 d \cite{Nesaraja2010}) being one possible candidate, but the 4.486 hour and 99.476 minute half-lives of the \ce{^{115m}In} and \ce{^{113m}In} isomers \cite{Blachot2012,Blachot2010a}, respectively, makes indium a better candidate for measuring the production of radionuclides with lifetimes much less than 71 days.
+ Other monitor foils could be used instead of indium, with \ce{^{58}Ni}(n,p)\ce{^{58}Co} (\ce{^{58}Co} $t_{1/2}$ = 70.86 d \cite{Nesaraja2010}) being one possible candidate, but the 4.486 hour and 99.476 minute half-lives of the \ce{^{115m}In} and \ce{^{113m}In} isomers \cite{Blachot2012,Blachot2010a}, respectively, make\redactedit{s} indium a better candidate for measuring the production of radionuclides with lifetimes much less than 71 days.
 The largest source of uncertainty in energy window arises from uncertainties in the actual dimension of the deuteron beam on the production target.
  We believe, based on \enquote{burn marks} on the neutron production target, that the beam was approximately circular, with a flat intensity profile and a 5 mm diameter.
  However, every 1 mm change in the beam radius would cause a 0.028 MeV shift in the centroid and a 0.053 MeV increase in the effective energy bin width, which places a natural limit on the reported effective neutron energy.
@@ -1169,7 +1176,7 @@ The largest source of uncertainty in energy window arises from uncertainties in 
 \section{Results}
 
 
-Using the ratio method described, the cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} reactions have been calculated for incident neutron energy of $E_n$ =2.76$^{+0.01}_{-0.02}$ MeV.
+Using the ratio method described, the cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} reactions have been calculated for \textred{an} incident neutron energy of $E_n$ =2.76$^{+0.01}_{-0.02}$ MeV.
 These values are recorded in \autoref{tab:xs_results}.
 
 
@@ -1195,18 +1202,37 @@ These values are recorded in \autoref{tab:xs_results}.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
+% \begin{table}
+% \centering
+% \caption{Results of cross section measurement. Note that the last data point for the \ce{^{47}Sc} measurement (marked with *) was performed at a slightly different beam spot location, leading to a difference in effective neutron energy.}
+% \label{tab:xs_results}
+% \begin{tabular}{@{}cc@{}}
+% \toprule
+% Reaction                                                                            & $\sigma$($E_n$ = 2.76$^{+0.01}_{-0.02}$ MeV) (mb)                                                                       \\ \midrule
+% \begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{113}In})\end{tabular} &  \begin{tabular}[c]{@{}c@{}}49.9 $\pm$ 3.2, \\ 49.2 $\pm$ 2.7, \\ 49.0 $\pm$ 2.5\end{tabular} \\  \\[0.1ex]  
+% \begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}45.9 $\pm$ 2.6, \\ 46.5 $\pm$ 1.7, \\ 46.8 $\pm$ 3.2\end{tabular}  \\ \\[0.1ex]    
+% \begin{tabular}[c]{@{}c@{}}\ce{^{47}Ti}(n,p)\ce{^{47}Sc} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}25.9 $\pm$ 1.2, \\ 26.7 $\pm$ 1.4*\end{tabular}                   \\ \bottomrule
+% \end{tabular}
+% \end{table}
 \begin{table}
 \centering
 \caption{Results of cross section measurement. Note that the last data point for the \ce{^{47}Sc} measurement (marked with *) was performed at a slightly different beam spot location, leading to a difference in effective neutron energy.}
 \label{tab:xs_results}
-\begin{tabular}{@{}cc@{}}
+\begin{tabular}{@{}cS[table-format=+2.1,
+                  table-figures-uncertainty=1]@{}}
 \toprule
-Reaction                                                                            & $\sigma$($E_n$ = 2.76$^{+0.01}_{-0.02}$ MeV) (mb)                                                                       \\ \midrule
-\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{113}In})\end{tabular} &  \begin{tabular}[c]{@{}c@{}}49.9 $\pm$ 3.2, \\ 49.2 $\pm$ 2.7, \\ 49.0 $\pm$ 2.5\end{tabular} \\  \\[0.1ex]  
-\begin{tabular}[c]{@{}c@{}}\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}45.9 $\pm$ 2.6, \\ 46.5 $\pm$ 1.7, \\ 46.8 $\pm$ 3.2\end{tabular}  \\ \\[0.1ex]    
-\begin{tabular}[c]{@{}c@{}}\ce{^{47}Ti}(n,p)\ce{^{47}Sc} \\ (relative to \ce{^{115}In})\end{tabular} & \begin{tabular}[c]{@{}c@{}}25.9 $\pm$ 1.2, \\ 26.7 $\pm$ 1.4*\end{tabular}                   \\ \bottomrule
+Reaction                   & \multirow{1}*{\minitab[c]{$\sigma$($E_n$ = 2.76$^{+0.01}_{-0.02}$ MeV) (mb)}}       \\ \midrule
+\multirow{3}*{\minitab[c]{\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{113}In})}} & 49.9 \pm 3.2 \\ 
+											& 49.2 \pm 2.7 \\ 
+											& 49.0 \pm 2.5 \\  \\[0.1ex]  
+\multirow{3}*{\minitab[c]{\ce{^{64}Zn}(n,p)\ce{^{64}Cu} \\ (relative to \ce{^{115}In})}} & 45.9 \pm 2.6 \\ 
+											& 46.5 \pm 1.7 \\ 
+											& 46.8 \pm 3.2  \\ \\[0.1ex]    
+\multirow{2}*{\minitab[c]{\ce{^{47}Ti}(n,p)\ce{^{47}Sc} \\ (relative to \ce{^{115}In})}} & 25.9 \pm 1.2 \\ 
+											& 26.7 \pm 1.4*                   \\ \bottomrule
 \end{tabular}
 \end{table}
+   
 
 % \comment{Karl:  \enquote{For the figures, let me suggest you make a red solid rectangle whose dimensions represent the error bars in both energy and cross section.  Then put a large red circle around it, whose diameter is of order 10\% of the size of the whole graph, to focus the eyes.  In the caption, mention that the size of the rectangle represents the error limits.}  Lee: \enquote{I would suggest that you zoom in on the energy and cross section value we measured (say 2.5-3.0 MeV and 10-70 mb).  Use a thicker line for our data point and/or make it larger. - Lee}}
 
@@ -1255,7 +1281,7 @@ However, in the case of the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section, our res
 
 
 As mentioned above, the cross section can be obtained relative to both the inelastic scattering cross sections on \ce{^{113}In} and \ce{^{115}In}, and the capture of fast, unmoderated neutrons on \ce{^{115}In}.
-The results for the production of \ce{^{116}In} via the \ce{^{115}In}(n,$\gamma$) reaction was shown to be consistent with activation predominantly from the capture of fast neutrons, rather than from \enquote{room return} thermal neutrons.
+The result\redactedit{s} for the production of \ce{^{116}In} via the \ce{^{115}In}(n,$\gamma$) reaction was shown to be consistent with activation predominantly from the capture of fast neutrons, rather than from \enquote{room return} thermal neutrons.
  This will be discussed in greater detail in the conclusion section below.
 
 
@@ -1285,10 +1311,10 @@ These measurements also highlight the possibility of using fast neutrons from DD
  The production of a radionuclide sample with an activity $A$ driven to secular equilibrium using a neutron source with a total flux $\phi$ and a reaction cross section $\sigma$ acting on sample of $N_{target}$ atoms is given by the expression:
 
 \begin{equation}
-A = \lambda N_{product} = \eta \phi \sigma N_{T}
+A = \lambda N_{product} = \eta \phi \sigma N_{\textred{target}\redactedit{\text{T}}}
 \end{equation}
 
-where we have introduced the dimensionless \emph{neutron utilization factor} $\eta$, which represents the likelihood of a neutron inducing the desired reaction on one of the target sample atoms:
+where we have introduced the dimensionless \emph{neutron utilization factor} $\eta$, which represents the likelihood of a neutron inducing the desired \textred{(n,p)} reaction \textred{(as opposed to a competing elastic, inelastic, (n,x), etc. channel)} on one of the target sample atoms:
 
 
 % \begin{figure*}[H]
@@ -1308,6 +1334,7 @@ where we have introduced the dimensionless \emph{neutron utilization factor} $\e
 % \end{strip}
 
 
+
 An optimal design for the neutron generator would also allow for the possibility of reflecting fast neutrons back onto the target to maximize their utilization for radionuclide production.
  This sort of \enquote{flux trap} has been used for the production of radionuclides in reactors, but has not to date been optimized for use with fast neutrons  at DD and/or DT neutron sources.
  The HFNG, with its self-loading target and \enquote{flux trap} geometry, has many features that make it well-suited for such isotope production purpose.
@@ -1316,7 +1343,7 @@ An optimal design for the neutron generator would also allow for the possibility
  In the case of \ce{^{47}Sc}, this would lead to the presence of \ce{^{46}Sc} ($t_{1/2}$ = 83.79 d \cite{Wu2000}) in the sample, which might pose some concerns for medical applications.
  However, this is not an issue for \ce{^{64}Cu} since the (n,pn) channel leads to the production of stable \ce{^{63}Cu}.
  
-
+\textred{Assuming a neutron flux of  $\sci{1.3}{7}$ neutrons/cm$^2$s on the target, masses of 0.533 g of natural zinc and 0.337 g of natural titanium, and cross sections of 47.5 mb for \ce{^{64}Zn}(n,p)\ce{^{64}Cu}   and 26.26  mb for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}, theoretical saturation activities for current operation at the time of this work are estimated to be 1.5 kBq of \ce{^{64}Cu} and 0.11 kBq of \ce{^{47}Sc}. This falls short of the mCi (37 MBq) level required for commercial application by a factor of 3-4 orders of magnitude, but with the operation of the second deuterium ion source, increased current, and fast neutron reflection, this goal may  well be within reach. Based on   }
  
  
  
@@ -1326,7 +1353,7 @@ Using activation methods on thin foils, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \c
 The cross sections were measured with less than  5\% uncertainty relative to the well-known \ce{^{115}In}(n,n')\ce{^{115m}In} and \ce{^{113}In}(n,n')\ce{^{113m}In} fast neutron cross sections \cite{Capote2012,zsolnay2012technical}.
 The measured values of  26.26 $\pm$  0.82 mb and  49.3 $\pm$ 2.6 mb (relative to \ce{^{113}In}) or 46.4 $\pm$ 1.7 mb (relative to \ce{^{115}In}), respectively, are consistent with earlier experimental data and theoretical models, but have smaller uncertainties than previous measurements.
  
- In addition, the   production of the \ce{^{116}In}  via the \ce{^{115}In}(n,$\gamma$) reaction was close to the value one would expect given an incident neutron energy of 2.45 MeV.  
+ In addition, the   production of the \ce{^{116}In}  via the \ce{^{115}In}(n,$\gamma$) reaction was close to the value one would expect given an \textred{effective} incident neutron energy of 2.45 MeV.  
  While this is not consistent with the average neutron energy at the target location (2.76$^{+0.01}_{-0.02}$ MeV), the fact that it was close indicates the paucity of thermal neutrons in this central location.  
  This in turn highlights the usefulness of such compact DD-neutron sources  for producing \enquote{clean} activities via the (n,p) channel.  
 The use of DD neutron generators can be an efficient method for the measurement of low-energy (n,p) reaction channels, as well as a relative method used to normalize measurements at higher neutron energies.
