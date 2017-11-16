@@ -10,9 +10,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% The '3p' and 'times' class options of elsarticle are used for Elsevier CRC
-\documentclass[5p]{elsarticle}
+% \documentclass[5p]{elsarticle}
+% Good for final formatting  - two column
+% 
 % \documentclass[3p,times]{elsarticle}
-% \documentclass[3p]{elsarticle}
+\documentclass[3p]{elsarticle}
+% Good for proofing - single column
+% 
 
 \usepackage[american]{babel}
 \usepackage{amsmath}
@@ -49,6 +53,9 @@
 
 \usepackage[section]{placeins}
 \usepackage{multirow}
+
+\usepackage{lineno}
+
 
 
 \lstset{basicstyle=\small\ttfamily,columns=fullflexible}
@@ -261,6 +268,8 @@
 
 \author[uwm]{Jonathan W. Engle}
 
+\author[uwm]{Stephen A. Graves}
+
 \author[lanl]{Francois M. Nortier}
 
 % \author[ucb]{M.A. Unzueta}
@@ -333,11 +342,16 @@ Nb+p \sep Cu+p \sep Niobium \sep Copper\sep Aluminum \sep Nuclear cross sections
 \end{frontmatter}
 
 %%
+%%  To-do list for comments
+%%
+\listoftodos
+
+
+%%
 %% Start line numbering here if you want
 %%
-% \linenumbers
+\linenumbers
 
-% \listoftodos
 
 
 %% main text 
@@ -345,8 +359,110 @@ Nb+p \sep Cu+p \sep Niobium \sep Copper\sep Aluminum \sep Nuclear cross sections
 
 % \comment{cite theranostic papers, etc}
 
+Every year, approximately 17 million nuclear medicine procedures (both diagnostic and therapeutic) are performed in the U.S. alone - a multi-billion dollar industry which has made incredible strides in improving our ability to detect and treat a variety of life-threatening diseases \cite{Delbeke2011,NSACIsotopesSubcommittee2015}.
+The vast majority of the radioisotopes currently used for these procedures are produced in the field's array of low- (E \textless\ 30 MeV / A) and intermediate-energy (30 \textless\ E \textless\ 200 MeV / A) accelerator capabilities, which routinely produce many of the staple medical radionuclides, such as \ce{^{18}F} \ce{^{68}Ge}, \ce{^{82}Rb}, and \ce{^{123}I}, as well as many of the non-medical radioisotopes of commercial value, such as  \ce{^{32}Si}, \ce{^{73}As}, \ce{^{95m}Tc}, and  \ce{^{109}Cd} \cite{international2009iaea,schlyer2008cyclotron}. 
+\comment{Should \enquote{intermediate-energy} be less than 200 MeV, or 100 MeV?  I find conflicting descriptions in the literature.}
+ The future of nuclear medicine would appear to be the paradigm of personalized medicine - targeted radionuclide therapy to spare healthy tissue \cite{Mulford2005,Qaim201731}, and theranostic medicine, which pairs an imaging isotope with a therapeutic isotope of the same element, to provide simultaneous, real-time dose delivery and verification, leading to drastic reductions in prescribed patient dose \cite{Muller2014,Bentzen2005,Srivastava2012}. 
+Candidate isotopes to fill these needs have been identified based on their decay properties \cite{NSACIsotopesSubcommittee2015,Qaim201731,bernstein2015nuclear}, and a series of campaigns are underway to perform targeted, high-priority measurements of thin-target cross sections and thick-target integral yields, to facilitate production in sufficient quantities for cell studies.
 
-XXXXXX  \cite{Updegraff2013}.
+
+However, one significant obstacle exists for both high-fidelity measurements of emerging medical radionuclides, as well as conventional isotope production: well-characterized  dosimetry standards.  
+This is particularly true for intermediate-energy charged particle beams, where there is currently a paucity of such well-characterized data. 
+Indeed, the development of new dosimetry standards and the improved evaluation of existing standards is one of the areas of greatest cross-cutting need for nuclear data \cite{bernstein2015nuclear}. 
+Charged particle dosimetry data currently exists for low-to-intermediate energy charged particle beams (E \textless\ 50 MeV / A), but experimental data used for this evaluation is sparse above approximately 30 MeV / A and  uncertainties in experimental cross sections are large (6-15\%) \cite{gul2001charged}. 
+While work is needed to improve upon existing dosimetry data, the development of new dosimetry reactions can expand the available range of options for the monitoring of charged particle beams.
+
+
+Activation is one of the most fundamental techniques utilized in experimental nuclear physics, as it is a simple and straightforward method to probe the structure and behavior of nuclear matter,  dating back to the infancy of the field. 
+While the specifics have branched into ever-more-detailed probes into the world of the nucleus, activation, at heart, deals with the analysis and quantification of decaying radioactive nuclei created through irradiation via ionizing radiation \cite{ehmann1993radiochemistry,krüger1971principles}.
+Monitor reactions have  historically been part of such activation experiments, and in the context of charged particle induced reactions, serve two valuable purposes, depending upon the energy regime in question.  
+Between the reaction's energetic threshold  and the tail of its compound peak, the magnitude and shape of a monitor reaction's excitation function is rapidly changing with increasing incident particle energy.
+In this energy regime, a monitor reaction can be used to assign an energy bin to a thin irradiated target, especially when comparing between monitor reactions leading to two distinct residual nuclei from the same target, such as the $^\text{nat}$Cu(p,x)\ce{^{62}Zn} and $^\text{nat}$Cu(p,x)\ce{^{63}Zn} reactions \cite{gul2001charged}.
+This is extremely useful, as it allows one to screen for and eliminate systematic errors based on energy assignment, though this sensitivity to energy precludes their reliability as a beam current monitor.  
+
+Moving to the higher energy  of the reaction's pre-equilibrium tail, the excitation function becomes  smooth and generally flat as a function of energy.
+In this regime, the monitor reaction offers little-to-no energy sensitivity. 
+In return for giving up the ability to assign energy positions, monitor reactions in the pre-equilibrium regime become extremely useful for monitoring the integral beam current incident upon the target. 
+While cross section measurements often use external beam current monitors (such as an inductive pickup upstream of a target, or electrically-isolated target in a Faraday cup), these measure the integrated current incident upon an entire target assembly.
+For the case of stacked-target activation experiments, commonly employed to measure cross sections at multiple energy positions in a single activation, external beam current monitors can only measure the integral current incident upon the \enquote{front} (upstream) of the target stack.
+In these experiments, a series of monitor foils at each energy position allow one to measure the integral current at each position in the stack, reducing systematic errors in observed cross section magnitude.
+Both of these purposes make well-characterized dosimetry an invaluable asset to any activation experiment. 
+
+
+
+In practice, nearly any radioisotope can serve as a reaction monitor. 
+However, several characteristics are hallmarks of a reaction monitor worthy to be classified as a dosimetry standard.
+The primary factor involved in selecting a new monitor is ensuring that the desired radionuclide has  at least one (preferably multiple, to ensure accurate radionuclide identification) distinct decay radiation able to used to uniquely identify it during post-activation assay.  
+Generally, this means selecting a radionuclide with a number of distinct gamma rays, as gamma spectroscopy is commonly used to identify and quantify reaction products.
+The decay radiation should preferably have high intensities, so that they show up as strong peaks during spectroscopy, and minimize the amount of time needed to count the activated target in order to achieve acceptable counting statistics. 
+
+Care should be taken to avoid cases where a radionuclide which is one decay off of stability populates excited states in the excited daughter nucleus also populated in the decay to the daughter state from the opposite side of the valley of stability.
+This produces decay gamma rays with nearly exactly the same energy, making it difficult to disentangle production from both sides of stability.
+For example, $^\text{nat}$Ti(p,x)\ce{^{48}V} is commonly used as dosimetry for 5 \textless\ E \textless\ 30 MeV protons.
+The characteristic decay lines in \ce{^{48}V}  ($t_{1/2}$ = 15.97 d, $\epsilon=100\%$ to \ce{^{48}Ti}) are the 983.525 keV ($I_\gamma=99.98\%$) and 1312.106 keV ($I_\gamma=98.2\%$) gammas, which are also seen in the decay of \ce{^{48}Sc}  ($t_{1/2}$ = 43.67 h, $\beta^-=100\%$ to \ce{^{48}Ti}), yielding  a 983.526 keV ($I_\gamma=100.1\%$) and 1312.120 keV ($I_\gamma=100.1\%$) line \cite{Burrows2006}.
+Fortunately, these cases can occasionally be mitigated by either using a difference in half-life between the two feeding pathways to allow one to decay out, or by using a distinct gamma ray from one of the two isobar nuclei to subtract out the activity associated with it (such as the $E_\gamma=1037.522$ keV,$I_\gamma=97.6\%$ line in the decay of \ce{^{48}Ti}) \cite{Burrows2006}.
+However, this approach propagates larger uncertainties into the final activity of the desired monitor nucleus, so in principle it is far preferred to choose a monitor reaction which does not have overlapping gamma rays from another isobar nucleus.
+
+Another important decay factor to consider is that of the half-life of the desired monitor nucleus.
+It is preferred that the nucleus have a lifetime which is sufficiently long-lived to ensure that it may be quantified  conveniently and leisurely after end-of-beam without the majority if it decaying away.
+In addition, it is preferred that the lifetime be comparable to that of the reaction products being studied. 
+For proper quantification, it is also of vital importance that the proposed monitor nucleus have well-characterized decay data.
+A precise and well-established half-life is needed to properly correct for decay losses during production, as well as in between end-of-beam and the start of decay spectroscopy, but these are generally well-characterized.
+In practice, the weakest components of decay data are often the gamma ray intensities, which can routinely have uncertainties of 5\% or more.
+Since this uncertainty is propagated in quadrature from the activity of both the monitor reaction and the reaction product being studied, choosing a monitor with a well-established gamma ray intensity can make a significant reduction in measured cross section uncertainties.
+It is also of utmost importance to choose a reaction channel which cannot be populated via secondary particles incident upon the monitor target.
+This is typically mostly a concern for secondary neutrons produced through (z,xn) reactions on upstream targets, degraders, and stack materials, to avoid monitor reactions which can be populated through (n,x) reactions on the target.
+Any monitor reaction channel which can be populated by anything other than the primary beam should be avoided, as it is often a laborious task to separate out the fraction of secondary particles contributing to the total activation.  
+
+
+
+Finally, from a targetry  perspective, it is preferable to use a target that is readily commercially available at an affordable price and is generally chemically inert - any significant chemical changes during target preparation (rapid oxidation, etc) will affect the target's areal density, systematically changing the measured integral current. 
+Structurally, the target material should be malleable and supportive to be able to be formed into a thin target.
+For charged particle reactions, a thin target is desired for dosimetry, as thicker targets will cause more energy degradation and broaden the energy spectrum downstream of the target.
+% These are the primary characteristics involved in choosing an appropriate target for a monitor reaction
+
+
+
+
+% The purpose of the present work is to explore the potential to use high-flux neutron generators to produce high-specific activity samples of radionuclides at the mCi level for local use in the application community. 
+%  The research group at UC Berkeley has  developed a High Flux Neutron Generator (HFNG) that features an internal target where samples can be placed just several millimeters from the neutron producing surface in order to maximize the utilization of the neutron yield for the production of a desired radionuclide \cite{Waltz2017,Waltz2016a,doi:10.1063/1.3267832}.
+%  The HFNG uses the D(D,n)\ce{^3He} reaction to produce neutrons with energies near 2.45 MeV together with a self-loading target design to maintain continuous operation without target replacement.
+%  In addition to the generator itself, efforts are underway to design neutron reflection capabilities to allow scattered neutrons multiple opportunities to interact with an  internally mounted target.
+% While these design efforts are underway, the HFNG can be used to better characterize production cross sections at the appropriate neutron energy.
+% 
+% 
+% The present work features a pair of cross section measurements for the production of two emerging non-standard medical radionuclides: the positron emitter \ce{^{64}Zn}(n,p)\ce{^{64}Cu} and the single - photon emission computed tomography (SPECT) tracer \ce{^{47}Ti}(n,p)\ce{^{47}Sc}.
+% \ce{^{64}Cu}  ($t_{1/2}$ = 12.7 h) undergoes $\beta^+$ decay (61.5\% branching ratio) to \ce{^{64}Ni} or $\beta^-$ decay (38.5\% branching ratio) to \ce{^{64}Zn} \cite{Singh2007}.
+% The emitted short-range 190-keV $\beta^-$ particle makes this an  attractive  therapeutic radionuclide, which also has the possibility for simultaneous positron emission tomography (PET) imaging for real-time dose monitoring and verification.
+% This makes \ce{^{64}Cu} particularly desirable  for emerging radiation therapy protocols \cite{Lewis2003,NSACIsotopesSubcommittee2015,Bandari2014,mp500671j}.
+% In addition, copper radiochemistry is well developed, and many existing ligands and carriers may be used for selective delivery of the radionuclide to different sites in patients.
+% The second radionuclide studied, \ce{^{47}Sc} ($t_{1/2}$ = 3.35 d), undergoes $\beta^-$ decay to \ce{^{47}Ti}, emitting a high-intensity (63.8\%) 159-keV gamma ray in the process \cite{Burrows2007}.
+% This radionuclide is  attractive as an emerging diagnostic isotope, due to the similarity of the emitted gamma ray to that of the  well-established \ce{^{99m}Tc} \cite{Qaim2011,Qaim201731,Kolsky1998,mausner1995evaluation}.
+% Due to the short half-life ($t_{1/2}$ = 6.0 h) of and dwindling supplies of \ce{^{99m}Tc}, \ce{^{47}Sc} stands poised as a potential solution to this shortage, due to its longer half-life and multiple production pathways without the need for highly enriched uranium \cite{Browne2011}.
+% In addition, when paired with \ce{^{44}Sc}, \ce{^{47}Sc} forms a promising \enquote{theranostic} pair for use in simultaneous therapeutic and diagnostic applications \cite{Muller2014,Deilami-nezhad2016}.
+
+% \comment{cite theranostic papers, etc}
+
+
+One monitor reaction which satisfies these requirements is that of a new, intermediate-energy proton dosimetry standard based on \ce{^{93}Nb}(p,4n)\ce{^{90}Mo}. 
+Niobium is naturally monoisotopic, readily  available commercially in high purity, is chemically inert, and can easily be rolled down to foils as thin as 1 $\micro$m.  
+\ce{^{90}Mo} also has excellent decay properties - its fairly long-lived half-life ($\epsilon=100\%, t_{1/2}=5.56 \pm 0.09$ h) allows it to be counted at leisure without fear of the product \ce{^{90}Mo} decaying away excessively between end-of-beam and the start of counting, and it possesses seven strong, distinct gamma lines (notably its 122.370 keV ($I_\gamma = 64 \pm 3\%$) and 257.34 keV ($I_\gamma = 78 \pm 4\%$) lines) which can be used to uniquely and easily   quantify \ce{^{90}Mo} production \cite{Browne1997}. 
+In addition,  \ce{^{90}Mo} is completely immune from (n,x) production on  \ce{^{93}Nb}, being produced only via the primary proton beam, and the \ce{^{90}Mo} decay lines can only be observed in its decay, as its daughter, \ce{^{90}Nb}, is also unstable and decays via $\epsilon$ to stable \ce{^{90}Zr}. 
+ 
+The purpose of the present work is to  measure the production of the long-lived radionuclide \ce{^{90}Mo} ($t_{1/2}=5.56 \pm 0.09$ h \cite{Browne1997}) via the $^\text{nat}$Nb(p,x) reaction. 
+In addition to the $^\text{nat}$Nb(p,x)\ce{^{90}Mo} measurement, this experiment has also yielded measurements of 32 other (p,x) production cross sections between 40 -- 90 MeV  for a number of additional reaction products, including several emerging radionuclides with medical applications.
+These include the non-standard positron emission tomography (PET) emitters \ce{^{57}Ni}  ($t_{1/2}=35.60\pm0.06$ h \cite{Bhat1998}),  \ce{^{86}Y}  ($t_{1/2}=14.74\pm0.02$ h \cite{NEGRET20151}), \ce{^{89}Zr} ($t_{1/2}=78.41\pm0.12$ h \cite{Singh2013}),  \ce{^{90}Nb} ($t_{1/2}=14.60 \pm 0.05$ h \cite{Browne1997}), the $\beta^-$-therapy agent  \ce{^{64}Cu} ($t_{1/2}=12.701 \pm 0.002$ h \cite{Singh2007}),  and the Auger-therapy agent \ce{^{82\text{m}}Rb} ($t_{1/2}=6.472\pm0.006$ h \cite{Tuli2003}). This measurement has taken 
+
+
+  \comment{The following paragraph should only be included if we decide to touch on spin physics in this manuscript, or split it into a follow-on PhysRev C, etc.}
+
+In addition to the interest in the production of \ce{^{90}Mo} as an intermediate-energy dosimetry standard, this experiment offers an opportunity to study the distribution of angular momentum in compound nuclear and direct pre-equilibrium reactions via observation of a number of isomer-to-ground state ratios.
+These include the \ce{^{52\text{m}}Mn} ($t_{1/2}=21.1\pm0.2$ m; J$^\pi=2^+$) to \ce{^{52\text{g}}Mn}  ($t_{1/2}=5.591\pm0.003$ d; J$^\pi=6^+$), \ce{^{58\text{m}}Co} ($t_{1/2}=9.10\pm0.09$ h; J$^\pi=5^+$) to \ce{^{58\text{g}}Co}  ($t_{1/2}=70.86\pm0.06$ d; J$^\pi=2^+$),  \ce{^{85\text{m}}Y} ($t_{1/2}=4.86\pm0.13$ h; J$^\pi=\sfrac{9}{2}^+$) to \ce{^{85\text{g}}Y}  ($t_{1/2}=2.68\pm0.05$ h; J$^\pi=\sfrac{1}{2}^-$),  \ce{^{87\text{m}}Y} ($t_{1/2}=13.37\pm0.03$ h; J$^\pi=\sfrac{9}{2}^+$) to \ce{^{87\text{g}}Y}  ($t_{1/2}=79.8\pm0.3$ h; J$^\pi=\sfrac{1}{2}^-$),  and \ce{^{89\text{m}}Nb} ($t_{1/2}=66\pm2$ m; J$^\pi=\sfrac{1}{2}^-$) to \ce{^{89\text{g}}Nb}  ($t_{1/2}=2.03\pm0.07$ h; J$^\pi=\sfrac{9}{2}^+$)  ratios \cite{Dong2015,Nesaraja2010,Singh2014,Johnson2015,Singh2013}.  
+ 
+ 
+ 
+ 
+ 
 
 
 \section{Experimental methods and materials}\label{sec:experiment}
@@ -369,7 +485,7 @@ XXXXXX
 
 
 
-\subsection{Measurement of induced activities}\label{sec:gamma_spec}
+\subsection{Measurement of induced activities}\label{sec:spectroscopy}
 
 XXXXXX
 
@@ -378,7 +494,11 @@ XXXXXX
 % \comment{Regex to replace table hard link with LaTeX cross-reference. - match w/ [T,t]able[^*}]   }
 
 
+\subsection{Proton dosimetry}\label{sec:dosimetry}
 
+% describe integral equation for converting activities to currents here
+
+XXXXXX
 
 
 \subsection{Proton transport calculations}\label{sec:proton_transport}
@@ -395,21 +515,9 @@ XXXXXX
 
 
 
-\subsection{Measurement of induced activities}\label{sec:spectroscopy}
-
-XXXXXX
-
-
-
-\subsection{Experimental verification of incident neutron energy}\label{sec:lee_sec}
-
-XXXXXX
-
-
-
-
 \subsection{Calculation of measured cross sections}\label{sec:calcs_sec}
 
+%  include 1st and 2nd order bateman stuff here
 
 XXXXXX
 
@@ -448,7 +556,7 @@ XXXXXX
  
  
  
- \section{Conclusion and Future Work}
+ \section{Conclusions}
 
 XXXXXX
 
@@ -456,7 +564,9 @@ XXXXXX
  
  \section{Acknowledgements}
  
- Stephen Graves - consulting for methodology, guidance.
+%  Stephen Graves - consulting for methodology, guidance.
+ 
+ Michael Gallegos and Don Dry in the C-NR Countroom, David Reass and Mike Connors at IPF, and the LANSCE Accelerator Operations staff 
  
 %  We would like to particularly point out the crucial role played by Cory Waltz in the design and commissioning of the HFNG.
 %  We wish to thank Marc Garland and Saed Mirzadeh for discussions regarding the use of neutron generators for isotope production.
@@ -472,10 +582,10 @@ XXXXXX
 % 
 % \onecolumn
 % 
-% \appendix
+\appendix
 
 
-% \section{Data} \label{data}
+\section{Decay data} \label{data}
 % 
 % % \begin{longtable}{|c|c|c|c|c|} 
 % % \caption{My caption}
@@ -484,13 +594,12 @@ XXXXXX
 % %    \hline
 % %  
 % % \end{longtable}
-% hello world 
+Table of decay data used for observed gamma rays. 
+% 
+% 
+\section{Measured excitation functions} \label{fit_figures}
 
-% 
-% 
-% \section{Supplemental Figures} \label{fit_figures}
-% 
-% The remaining figures of the fitted \(\gamma\)-ray transition photopeaks are included here for reference, to avoid over-cluttering the main text.
+Plots of the cross sections measured in this work are presented here, in comparison with literature data and reaction modeling codes.
 % 
 % 
 % % \begin{figure}[h]
