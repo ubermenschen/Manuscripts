@@ -249,7 +249,7 @@
 
 
 % \author[rvt]{C.V. ̃Radhakrishnan\corref{cor1}\fnref{fn1}}
-\author[ucb]{A.S. Voyles \corref{cor1}}
+\author[ucb]{Andrew S. Voyles \corref{cor1}}
 \ead{andrew.voyles@berkeley.edu}
 
 % \author[lbl]{M.S. Basunia}
@@ -268,7 +268,10 @@
 
 \author[uwm]{Jonathan W. Engle}
 
-\author[uwm]{Stephen A. Graves}
+\author[iowa]{Stephen A. Graves}
+
+\author[ucb]{Amanda M. Lewis}
+
 
 \author[lanl]{Francois M. Nortier}
 
@@ -298,6 +301,7 @@
 % \address[geo]{Berkeley Geochronology Center, Berkeley CA,  94709  USA}
 \address[uwm]{Department of Medical Physics, University of Wisconsin -- Madison, 1111 Highland Ave., Madison, WI 53705, USA}
 \address[lanl]{Los Alamos National Laboratory, P.O. Box 1663, Los Alamos, NM 87544, USA}
+\address[iowa]{Department of Radiation Oncology, University of Iowa, 200 Hawkins Drive, Iowa City, IA 52242, USA}
 
 
 
@@ -476,15 +480,72 @@ By expanding the available set of dosimetry standards and well-characterized iso
 
 % \comment{Regex to replace all hard figure references with LaTeX cross-references  [F,f]igure[^s*}]     }
 
-XXXXXX
+The well-known stacked-target design was utilized for this work, in order that the (p,x) cross sections for each reaction channel could be measured at multiple energy positions in a single irradiation \cite{Graves2016}. 
+For targets, a series of nominal 25 \micro m \ce{^{nat}Nb} foils (99.8\%, lot \#T23A035), 25 \micro m \ce{^{nat}Al} foils (99.999\%, lot \#M06C032), and 50 \micro m \ce{^{nat}Cu} foils (99.9999\%, lot \#N26B062) were used (all from Alfa Aesar, Ward Hill, MA, 01835, USA).
+Six foils of each metal were cut down to 2.5 x 2.5 cm squares and characterized - for each foil, length and width measurements were taken at four different locations using a Mitutoyo caliper, thickness measurements were taken at four different locations using a Mitutoyo micrometer, and four mass measurements were taken using an analytical balance after cleaning the foils with isopropyl alcohol.
+Using these length, width, and mass readings, the areal density (in mg/cm$^2$) for each foil was calculated, along with the propagated uncertainty in areal density.
+The foils were tightly sealed into \enquote{packets} using two pieces of  3M 5413-Series Kapton polyimide film tape - each piece of tape consists of 43.2 \micro m of a silicone adhesive on 25.4 \micro m of a polyimide backing.
+The sealed foils were mounted over the hollow center of a 1.575 mm-thick plastic frame, and one \ce{^{nat}Al}, one \ce{^{nat}Cu}, and \ce{^{nat}Nb} mounted foil were bundled together using baling wire for each energy position.
+These foil packet bundles were lowered into the beam line by inserting them into a  water-cooled production target box.
+% These six foil packet bundles were inserted into one of six  
+The box, seen in \autoref{fig:target_stack}, is machined from 6061 aluminum alloy, has a thin (0.64 mm) Inconel beam entrance window, and  contains 6 \enquote{energy positions} for targets, formed by  5 slabs of 6061 aluminum alloy (previously characterized) which serve as proton energy degraders  between energy positions.
+At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor - after end-of-beam (EoB), $\beta$ particles emitted from these activated stainless steel foils may be used to develop Gafchromic film, revealing the spatial profile of the beam entering and exiting the stack.
+After loading all targets in the stack, the lid of the target box is sealed in place, using an inset o-ring to create a water-tight seal, and the box is lowered through a hot cell into the beamline, where it sits electrically isolated.
+The specifications of the target stack design for this work is presented in \autoref{tab:stack_table}.
 
-% \begin{figure}
-%     \centering
-%         \centering
-%         \includegraphics[height=2in]{./figures/cutaway.png}
-%         \caption{Cut-away schematic of the HFNG. The ion source is approximately 20 cm in diameter.}
-%                 \label{fig:hfng_b}
-% \end{figure}
+This target stack was assembled and 
+
+
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[scale=0.1,clip=true,trim=13cm 0cm 3cm 6cm]{./figures/IMG_1975.JPG}
+ % IMG_1975.JPG: 3264x2448 pixel, 72dpi, 115.15x86.36 cm, bb=0 0 3264 2448
+ \caption{Photograph of the assembled IPF target stack, before the stack's o-ring lid was sealed in place. The baling wire handles affixed to each bunch of Al+Cu+Nb foils are visible in each energy position, to facilitate removal of activated foils via robotic manipulators in the IPF hot cell. The circular Inconel beam entrance aperture is visible in the bottom center of the photograph.  }
+ \label{fig:target_stack}
+\end{figure}
+
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[h]
+\centering
+\caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \micro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$, but their areal densities are not listed here due to the variance minimization techniques described in this work.}
+\label{tab:stack_table}
+\begin{tabular}{@{}llll@{}}
+\toprule
+% Target Layer       & Nominal Thickness & Measured thickness (mg/cm\textasciicircum 2) & Thickness Uncertainty (\%) \\ \midrule
+Target layer       & \begin{tabular}[c]{@{}l@{}}Measured \\ thickness\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured areal\\density (mg/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Areal density \\ uncertainty (\%)\end{tabular} \\ \midrule
+SS profile monitor & 249.8 \micro m         & 194.555                                      & 0.290                      \\
+Al-1               & 25.0 \micro m          & 6.519                                        & 0.724                      \\
+Cu-1               & 61.3 \micro m          & 53.736                                       & 0.053                      \\
+Nb-1               & 30.0 \micro m          & 23.205                                       & 0.073                      \\
+Al Degrader 01     & 4.96 mm           & -                                            & -                          \\
+Al-2               & 25.5 \micro m          & 6.484                                        & 0.364                      \\
+Cu-2               & 61.8 \micro m          & 53.849                                       & 0.169                      \\
+Nb-2               & 30.8 \micro m          & 22.905                                       & 0.166                      \\
+Al Degrader 02     & 4.55 mm           & -                                            & -                          \\
+Al-3               & 25.8 \micro m          & 6.472                                        & 0.314                      \\
+Cu-3               & 61.5 \micro m          & 53.984                                       & 0.113                      \\
+Nb-3               & 31.0 \micro m          & 22.906                                       & 0.235                      \\
+Al Degrader 03     & 3.52 mm           & -                                            & -                          \\
+Al-4               & 26.3 \micro m          & 6.505                                        & 0.407                      \\
+Cu-4               & 61.3 \micro m          & 53.463                                       & 0.221                      \\
+Nb-4               & 30.8 \micro m          & 22.550                                       & 0.245                      \\
+Al Degrader 04     & 3.47 mm           & -                                            & -                          \\
+Al-5               & 26.5 \micro m          & 6.479                                        & 0.296                      \\
+Cu-5               & 61.5 \micro m          & 53.572                                       & 0.108                      \\
+Nb-5               & 30.8 \micro m          & 22.110                                       & 0.248                      \\
+Al Degrader 05     & 3.46 mm           & -                                            & -                          \\
+Al-6               & 26.3 \micro m          & 6.475                                        & 0.624                      \\
+Cu-6               & 62.0 \micro m          & 53.836                                       & 0.318                      \\
+Nb-6               & 31.3 \micro m          & 22.120                                       & 0.130                      \\
+SS profile monitor & 124.4 \micro m         & 101.336                                      & 0.226                      \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
 
 
 
