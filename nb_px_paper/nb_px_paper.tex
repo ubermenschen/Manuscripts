@@ -236,7 +236,7 @@
 %% use the ead command for the email address,
 %% and the form \ead[url] for the home page:
 %%
-\title{Measurement of nuclear excitation functions for proton induced reactions (E$_{\text{p}}$ = 40 -- 90 MeV) on Nb and Cu}
+\title{Measurement of nuclear excitation functions for proton induced reactions (E$_{\text{p}}$ = 40 -- 90 MeV) on natural Nb and Cu}
 
 %% \tnotetext[label1]{}
 %% \author{Name\corref{cor1}\fnref{label2}}
@@ -494,7 +494,7 @@ Six foils of each metal were cut down to 2.5 x 2.5 cm squares and characterized 
 Using these length, width, and mass readings, the areal density (in mg/cm$^2$) for each foil was calculated, along with the propagated uncertainty in areal density.
 The foils were tightly sealed into \enquote{packets} using two pieces of  3M 5413-Series Kapton polyimide film tape - each piece of tape consists of 43.2 \micro m of a silicone adhesive on 25.4 \micro m of a polyimide backing.
 The sealed foils were mounted over the hollow center of a 1.575 mm-thick plastic frame, and one \ce{^{nat}Al}, one \ce{^{nat}Cu}, and \ce{^{nat}Nb} mounted foil were bundled together using baling wire for each energy position.
-These foil packet bundles were lowered into the beam line by inserting them into a  water-cooled production target box.
+These foil packet bundles were lowered into the beamline by inserting them into a  water-cooled production target box.
 % These six foil packet bundles were inserted into one of six  
 The box, seen in \autoref{fig:target_stack}, is machined from 6061 aluminum alloy, has a thin (0.64 mm) Inconel beam entrance window, and  contains 6 \enquote{energy positions} for targets, formed by  5 slabs of 6061 aluminum alloy (previously characterized) which serve as proton energy degraders  between energy positions.
 At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor - after end-of-beam (EoB), $\beta$ particles emitted from these activated stainless steel foils may be used to develop Gafchromic film, revealing the spatial profile of the beam entering and exiting the stack.
@@ -615,7 +615,7 @@ For the case of cumulative cross sections, EoB activities were quantified by fit
 % \end{equation}
 Nonlinear regression was used for this fitting process, minimizing on $\chi^2$ / degree of freedom, so that not only would the uncertainty-weighted EoB activities be fitted, but that a 1-$\sigma$ confidence interval in $A_0$ would be reported as as well.
 As with the gamma ray intensities, all lifetimes used in this work are tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of \ref{data}.
-In the case of independent cross sections, a similar process was followed, instead regressing to the solutions to the Bateman equation:
+In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation:
 \begin{equation}
 A_n\pp{t} = \lambda_n \sum_{i=1}^n \left[  N_i\pp{0} \times \pp{\prod_{j=i}^{n-1}\lambda_j} \times \pp{\sum_{j=i}^n \dfrac{e^{-\lambda_j t}}{\prod_{i\neq j}^n \pp{\lambda_i - \lambda_j}}  }   \right]
 \end{equation}
@@ -624,7 +624,7 @@ While higher-order terms were added if needed, typically for an isomeric state i
 A_2\pp{t} = \dfrac{A_{1,0}\lambda_2}{\lambda_1 - \lambda_2} \pp{e^{-\lambda_2 t} - e^{-\lambda_1 t}} + A_{2,0} e^{-\lambda_2 t}
 \end{equation}
 In these cases, the previously-quantified EoB activities from decay precursors ($A_{1,0}$, etc) would be substituted in, that the feeding contributions from decay could be separated and an independent cross section reported.
-After quantifying the cumulative EoB activities at the top of a mass chain, and all subsequent independent EoB activities, these would be later used to report the various cross sections for all observed reaction products and isomeric states. 
+After quantifying the cumulative EoB activities at the top of a mass chain and all subsequent independent EoB activities, these will be later used to report the various cross sections for all observed reaction products and isomeric states. 
 
 
 
@@ -643,12 +643,42 @@ After quantifying the cumulative EoB activities at the top of a mass chain, and 
 
 % describe integral equation for converting activities to currents here
 
-XXXXXX
+As discussed previously, accurate proton dosimetry is the most important factor in performing high-fidelity cross section measurements.
+At the time of this work, the nondestructive beam current monitors in the LANSCE-IPF beamline possess resolution of 100 nAh.
+For a low-current irradiation such as this work, where a nominal fluence of 200 nAh is desired, additional dosimetry is thus needed to accurately normalize quantified EoB activities into cross sections.
+To this end, thin \ce{^{nat}Al} and \ce{^{nat}Cu} foils were included along with the \ce{^{nat}Nb} targets at each energy position, to provide another beam current monitor.
+These foils have been recommended for use as proton monitor foils in the 30 \textless\ E$_\text{p}$ \textless\ 100 MeV regime by the IAEA, as the \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions have been well-characterized for accurate proton fluence measurement \cite{gul2001charged}.
+The recommended cross section values for each of these reactions were used in all calculations of proton fluence for the above monitor reactions.
+Due to the large energy degradation between the front and  back of the target stack, a non-trivial broadening of the proton energy distribution is expected for all monitor and target foils.
+As a result, the integral form of the well-known activation equation is used to accurately determine proton fluence ($I \Delta t $) in each monitor foil by convolving the IAEA recommended cross section values with the proton energy distribution:
+% \begin{equation}
+% A_0 = I\ \rho \Delta r \pp{1-e^{-\lambda \Delta t}} \int \sigma\pp{E} \dfrac{d\phi}{dE} dE
+% \end{equation}
+\begin{equation}
+I \Delta t = \dfrac{A_0 \Delta t}{\rho \Delta r \pp{1-e^{-\lambda \Delta t}} \int \sigma\pp{E} \dfrac{d\phi}{dE} dE}
+\end{equation}
+where $A_0$ is the EoB activity for the monitor reaction product, $I$ is the proton current, $\rho \Delta r$ is the foil's areal density, $\lambda$ is the monitor reaction product's decay constant, $\Delta t$ is the length of irradiation, $\sigma\pp{E}$ is the IAEA recommended cross section at energy E, and $\frac{d\phi}{dE}$ is the differential proton fluence.
+Using this formalism, the quantified EoB activities for each monitor reaction may be converted into a measured proton fluence at each energy position.
+
+
+\comment{Add missing citations here}
+
+The propagated uncertainty in proton fluence is calculated as the quadrature sum of the uncertainty in quantified EoB activity, uncertainty in the duration of irradiation (conservatively estimated at 60 s, to account for any transient changes in beam current), uncertainty in foil areal density, uncertainty in monitor product half-life (included, but normally negligible), uncertainty in IAEA recommended cross section, and uncertainty in proton fluence.
+Of these, the first four contributions are all easily quantified in the preparation and execution of a stacked target irradiation;  the last two contributions prove to be more nuanced, however.
+The uncertainty in proton fluence for irradiated monitor foils is derived from statistical uncertainty in the modeling of proton transport in the stack irradiation, discussed in \autoref{sec:proton_transport}.
+The uncertainty in IAEA recommended cross section values must be estimated indirectly, as no uncertainty in the  recommended cross sections is provided in the current IAEA evaluation.
+Fortunately, the recommended cross section values for each monitor reaction tend to match one of the   selected experimental data sets used in their evaluation almost perfectly.
+Since these data sets have listed uncertainties in the original manuscripts, uncertainties in  IAEA recommended cross section values have been estimated by the uncertainty in the data set most closely matching the  IAEA recommended  values.
+For the monitor reactions employed in this work, these data sets are G. Steyn (1990) for  \ce{^{nat}Al}(p,x)\ce{^{22}Na} \textred{(insert Steyn citation here)}, M. Uddin (2004) for \ce{^{nat}Al}(p,x)\ce{^{24}Na} \cite{Uddin2004}, and S. Mills (1992) for \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} \cite{Mills1992}.
+
+
 
 
 \subsection{Proton transport calculations}\label{sec:proton_transport}
 
 XXXXXX
+
+
 
 % \begin{equation}
 % R = N_T \int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE
