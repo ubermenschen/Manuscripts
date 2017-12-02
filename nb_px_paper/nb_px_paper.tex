@@ -339,7 +339,7 @@ XXXXX
 
 \begin{keyword}
 %% keywords here, in the form: keyword \sep keyword
-Nb+p \sep Cu+p \sep Niobium \sep Copper\sep Aluminum \sep Nuclear cross sections \sep Proton activation \sep Proton transport \sep Stacked target activation \sep Monitor foils \sep Medical isotope production \sep MCNP \sep  LANL
+Nb+p \sep Cu+p \sep Niobium \sep Copper\sep Aluminum \sep Nuclear cross sections \sep Proton activation \sep Proton transport \sep Stacked target activation \sep Monitor foils \sep Medical isotope production \sep Isomer branching ratios \sep Nuclear spin distributions  \sep MCNP \sep  LANL
 
 %% MSC codes here, in the form: \MSC code \sep code
 %% or \MSC[2008] code \sep code (2000 is the default)
@@ -609,7 +609,7 @@ For all remaining observed reaction products in the mass chain, independent cros
 
 To convert these activities into cross sections, corrections must be made for the decay of the various reaction products in  between EoB and the spectrum acquisition, in order to calculate $A_0$, the initial activity at EoB.
 The use of  multiple gamma rays at multiple points after EoB to calculate initial activities  for each observed product nucleus allows for a more accurate  determination of $A_0$ than simply basing its calculation off of a single gamma ray observation.
-For the case of cumulative cross sections, EoB activities were quantified by fitting the activities observed at multiple time points to the well-known radioactive decay law.
+For the case of cumulative cross sections, EoB activities were quantified by fitting the activities observed at multiple time points $t$ (since EoB) to the well-known radioactive decay law.
 % \begin{equation}
 % A\pp{t} = A_0 e^{-\lambda t}
 % \end{equation}
@@ -676,9 +676,46 @@ For the monitor reactions employed in this work, these data sets are G. Steyn (1
 
 \subsection{Proton transport calculations}\label{sec:proton_transport}
 
-XXXXXX
+
+Initial estimates of the proton beam energy in all foils were calculated using the Anderson \& Ziegler (A\&Z) stopping power formalism \cite{Andersen_Ziegler_1977,Ziegler1985,Ziegler1999}.
+These estimates of average beam energy in each foil are useful for the preliminary stack design, as the A\&Z calculation provide reasonable approximations of 1-D proton transport due to its treatment of ionization and multiple Coulomb scattering. 
+However, for final energy determination and analysis, a more rigorous method of proton transport is needed.
+The Monte Carlo N-Particle transport code MCNP6.1 was used for simulation of the full 3-D target stack, and is used to calculate a full proton energy distribution for each stack position   \cite{Goorley2012}.
+In addition, MCNP6 provides a far more robust method of proton transport, as it is able to account for beam losses due to reactions, as well as production of secondary particles.
+As it is a Monte Carlo-based code, the uncertainty in energy distribution scales inversely with the number of source protons simulated - $10^8$ source protons were used for all simulations, which places the statistical uncertainty in proton energy distributions at less than 0.01\%.
+The ability to model the full energy distribution in each target position is vital for stacked target irradiations, due to the progressively larger energy straggling towards the rear of the stack.
+The initial proton beam has a finite energy spread (an approximately 0.1 MeV Gaussian width at 100 MeV), and since stopping power for charged particles is inversely proportional to their energy, the low-energy tail of the energy distribution is degraded more in each stack element than the high-energy tail.
+This effect compounds as one moves towards the rear of the stack, with the effect of a significantly broadened low-energy tail relative to the high-energy tail, and a progressively larger net shift of the centroid to a lower energy than the peak of the energy distribution. 
+% For each foil in the target stack, 
+To account for this increasing energy uncertainty, a suitably representative energy must be established for  each foil in the target stack.
+In this work, the flux-weighted average proton  energy, $\langle E \rangle$, in each foil is calculated to represent the energy centroid for protons in a target stack component, based on the energy distributions $\frac{d\phi}{dE}$ from MCNP6 modeling of proton transport:
+\begin{equation}
+\langle E \rangle = \dfrac{{\displaystyle\int E \dfrac{d\phi}{dE} dE}}{{\displaystyle\int \dfrac{d\phi}{dE} dE}}
+\end{equation}
+Likewise, to represent the energy uncertainty for each stack position, the full width at half maximum (FWHM) of the MCNP6-modeled energy distribution is chosen for each energy position reported.
+While most experimental uncertainties are reported at the 1$\sigma$ level, the $\approx2.3\sigma$ FWHM is used here to ensure at the 98\% confidence interval that this width includes  the \enquote{true} energy center-of-mass.
 
 
+
+
+\begin{figure}[ht]
+ \centering
+ \includegraphics[clip=true,trim=1.5in 3.4in 1.8in 3.5in, scale=0.8]{./figures/variation_curve.pdf}
+ % variation_curve.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
+ \caption{h}
+ \label{fig:h}
+\end{figure}
+
+
+\begin{figure}[ht]
+ \centering
+ \includegraphics[scale=.8]{./figures/Nb_ptallies.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{hh}
+ \label{fig:hh}
+\end{figure}
+
+comment that  peak-to-tail ratio increases
 
 % \begin{equation}
 % R = N_T \int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE
@@ -742,6 +779,8 @@ XXXXXX
 %  Stephen Graves - consulting for methodology, guidance.
  
  Michael Gallegos and Don Dry in the C-NR Countroom, David Reass and Mike Connors at IPF, and the LANSCE Accelerator Operations staff 
+ 
+ This research used the Savio computational cluster resource provided by the Berkeley Research Computing program at the University of California, Berkeley (supported by the UC Berkeley Chancellor, Vice Chancellor for Research, and Chief Information Officer).
  
  
  \comment{Please provide me here with all relevant contract / grant / fellowship / funding ID numbers.}
