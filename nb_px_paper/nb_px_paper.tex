@@ -488,11 +488,11 @@ While the reactions and mass region being explored in this work differ from the 
 
 % \comment{Regex to replace all hard figure references with LaTeX cross-references  [F,f]igure[^s*}]     }
 
-The well-known stacked-target design was utilized for this work, in order that the (p,x) cross sections for each reaction channel could be measured at multiple energy positions in a single irradiation. 
+The well-known stacked-target design was utilized for this work, in order that the (p,x) cross sections for each reaction channel could be measured at multiple energy positions in a single irradiation \cite{Cumming1963}. 
 For targets, a series of nominal 25 \micro m \ce{^{nat}Nb} foils (99.8\%, lot \#T23A035), 25 \micro m \ce{^{nat}Al} foils (99.999\%, lot \#M06C032), and 50 \micro m \ce{^{nat}Cu} foils (99.9999\%, lot \#N26B062) were used (all from Alfa Aesar, Ward Hill, MA, 01835, USA).
 Six foils of each metal were cut down to 2.5 x 2.5 cm squares and characterized - for each foil, length and width measurements were taken at four different locations using a Mitutoyo caliper, thickness measurements were taken at four different locations using a Mitutoyo micrometer, and four mass measurements were taken using an analytical balance after cleaning the foils with isopropyl alcohol.
 Using these length, width, and mass readings, the areal density (in mg/cm$^2$) for each foil was calculated, along with the propagated uncertainty in areal density.
-The foils were tightly sealed into \enquote{packets} using two pieces of  3M 5413-Series Kapton polyimide film tape - each piece of tape consists of 43.2 \micro m of a silicone adhesive on 25.4 \micro m of a polyimide backing.
+The foils were tightly sealed into \enquote{packets} using two pieces of  3M 5413-Series Kapton polyimide film tape - each piece of tape consists of 43.2 \micro m of a silicone adhesive (nominal 4.793 mg/cm$^2$) on 25.4 \micro m of a polyimide backing (nominal 3.607 mg/cm$^2$).
 The sealed foils were mounted over the hollow center of a 1.575 mm-thick plastic frame, and one \ce{^{nat}Al}, one \ce{^{nat}Cu}, and \ce{^{nat}Nb} mounted foil were bundled together using baling wire for each energy position.
 These foil packet bundles were lowered into the beamline by inserting them into a  water-cooled production target box.
 % These six foil packet bundles were inserted into one of six  
@@ -514,7 +514,7 @@ The activated foils were cleaned of all surface contamination, and transported t
 
 
 
-\begin{figure}[h]
+\begin{figure}
  \centering
  \includegraphics[scale=0.1,clip=true,trim=13cm 0cm 3cm 6cm]{./figures/IMG_1975.JPG}
  % IMG_1975.JPG: 3264x2448 pixel, 72dpi, 115.15x86.36 cm, bb=0 0 3264 2448
@@ -526,7 +526,7 @@ The activated foils were cleaned of all surface contamination, and transported t
 
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
-\begin{table}[ht]
+\begin{table}
 \centering
 \caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \micro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$, but their areal densities are not listed here due to the variance minimization techniques utilized  in this work.}
 \label{tab:stack_table}
@@ -578,7 +578,7 @@ The foils were counted for a period of 2 weeks following EoB, to accurately quan
 An example gamma ray spectrum collected in such a fashion is shown in \autoref{fig:gspec}.
 For all spectra collected, net peak areas were fitted using the gamma spectroscopy analysis code UNISAMPO \textred{(add UNISMPO citation)}, which has been shown to perform best in head-to-head comparisons with other common analysis codes \cite{Jackman2014}, due to its peak fitting algorithms and incorporation  of calibrated detector-specific peak shapes and widths. 
 
-\begin{figure}[ht]
+\begin{figure}
  \centering
  \includegraphics[width=6in]{./figures/sample_gspec.pdf}
  % sample_gspec.pdf: 489x257 pixel, 72dpi, 17.25x9.07 cm, bb=0 0 489 257
@@ -683,12 +683,14 @@ However, for final energy determination and analysis, a more rigorous method of 
 The Monte Carlo N-Particle transport code MCNP6.1 was used for simulation of the full 3-D target stack, and is used to calculate a full proton energy distribution for each stack position   \cite{Goorley2012}.
 In addition, MCNP6 provides a far more robust method of proton transport, as it is able to account for beam losses due to reactions, as well as production of secondary particles.
 As it is a Monte Carlo-based code, the uncertainty in energy distribution scales inversely with the number of source protons simulated - $10^8$ source protons were used for all simulations, which places the statistical uncertainty in proton energy distributions at less than 0.01\%.
+
+
 The ability to model the full energy distribution in each target position is vital for stacked target irradiations, due to the progressively larger energy straggling towards the rear of the stack.
 The initial proton beam has a finite energy spread (an approximately 0.1 MeV Gaussian width at 100 MeV), and since stopping power for charged particles is inversely proportional to their energy, the low-energy tail of the energy distribution is degraded more in each stack element than the high-energy tail.
 This effect compounds as one moves towards the rear of the stack, with the effect of a significantly broadened low-energy tail relative to the high-energy tail, and a progressively larger net shift of the centroid to a lower energy than the peak of the energy distribution. 
 % For each foil in the target stack, 
 To account for this increasing energy uncertainty, a suitably representative energy must be established for  each foil in the target stack.
-In this work, the flux-weighted average proton  energy, $\langle E \rangle$, in each foil is calculated to represent the energy centroid for protons in a target stack component, based on the energy distributions $\frac{d\phi}{dE}$ from MCNP6 modeling of proton transport:
+In this work, the flux-weighted average proton  energy in each foil, $\langle E \rangle$,  represents the energy centroid for protons in a target stack component, calculated using the energy distributions $\frac{d\phi}{dE}$ from MCNP6 modeling of proton transport:
 \begin{equation}
 \langle E \rangle = \dfrac{{\displaystyle\int E \dfrac{d\phi}{dE} dE}}{{\displaystyle\int \dfrac{d\phi}{dE} dE}}
 \end{equation}
@@ -698,30 +700,111 @@ While most experimental uncertainties are reported at the 1$\sigma$ level, the $
 
 
 
-\begin{figure}[ht]
+
+Based on the recent work of Graves \etal, the \enquote{variance minimization} techniques they outline have been employed here, to further reduce the uncertainty in proton energy assignments     \cite{Graves2016}.
+This method is based on the assumption that the independent measurements of proton fluence from the 5 monitor reactions used in this work should all be consistent at each energy position.
+If the monitor reaction cross sections and MCNP6 - modeled energy distributions are both accurate, then any disagreement in the  observed proton fluences is due to a systematic uncertainty in the stack design, namely, the areal densities of the stack components \cite{Graves2016,Marus2015}. 
+This disagreement is minor at the front of the stack, and gets progressively worse as the beam is degraded, due to the compounded effect of systematic uncertainties in stack areal densities.
+
+
+
+To correct for this, variance minimization techniques were employed here to correct for uncertainties in  the characterization of the stack components, the largest cause of uncertainties in energy and  fluence assignments.
+Due to the difficulty of characterizing uncertainty in areal density in the Kapton tape, the areal density of these layers were varied uniformly in MCNP6 simulations by up to $\pm$25\% of nominal values, but this had negligible impact on improving monitor reaction disagreement.
+This is due to the minor impact that their areal density has on beam degradation, relative to the thick 6061 aluminum degraders (nominal 3-5 mg/cm$^2$, relative to nominal 1000-1400 mg/cm$^2$).
+As such,  the areal density of each of the 6061 aluminum degraders  were varied uniformly in MCNP6 simulations  by a factor of up to $\pm$25\% of nominal values, to find the effective density which minimized variance in the measured proton fluence at the lowest energy position (Al-6, Cu-6).
+This lowest energy position was chosen as a minimization candidate, as it is most sensitive to systematic uncertainties in stack design.
+The results of this minimization technique, shown in \autoref{fig:variation_curve}, indicate a clear minimum in proton fluence variance for flux-weighted average 41.34 MeV protons entering the last energy position, approximately 2 MeV lower than the nominal MCNP6 simulations, and approximately 3 MeV lower than nominal A\&Z calculations, both of which used the nominal 2.80 g/cm$^3$ measured density of the 6061 aluminum degraders.
+This energy corresponds to a 6061 aluminum areal density of 2.53\% greater than nominal measurements, and serves as a lump correction for other minor systematic uncertainties in stack design, including stack areal densities and incident beam energy.
+
+
+
+The impact of this variance minimization may  clearly be seen in   \autoref{fig:variance_mins}.
+As expected, the 2.53\% increase in 6061 aluminum areal density has an almost negligible impact on the higher-energy positions, but causes a progressively larger downshift  in proton energies at the later energy positions.
+In addition, as one moves to the rear energy positions, the disagreement in the independent proton fluence measurements is reduced.
+It is worth noting that the proton fluence measured by the \ce{^{nat}Al}(p,x)\ce{^{22}Na} monitor reaction is consistently higher in magnitude than all other monitor channels, with an increasing disparity at higher energies.
+This phenomenon is observed for the \ce{^{nat}Cu}(p,x)\ce{^{56}Co} monitor reaction as well, though to a much smaller degree.
+In both cases, this disparity is caused by the fact that both of these monitor reactions may also form the \ce{^{22}Na} and \ce{^{56}Co} reaction products through contamination by secondary neutron (n,x) channels, increasing the apparent fluence as observed by these monitor reactions.
+Since no method for reliably separating the fraction of \ce{^{22}Na} and \ce{^{56}Co} activities induced through (n,x) exists, the fluences predicted by these monitor channels are not used in the final determination of the proton fluence seen by Nb foils. 
+The fact that this \enquote{extra fluence} diminishes at lower energy is likely attributed to the fact that the \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Cu}(p,x)\ce{^{56}Co} have energetic thresholds of 23.35 and 36.76 MeV, respectively - the fraction of secondary neutrons produced by (p,xn)  which are energetic enough to populate the  \ce{^{22}Na} and \ce{^{56}Co} reaction products at the lower energy positions becomes progressively smaller.
+This serves as an example of the importance of selecting monitor reaction products inaccessible through (n,x) channels, as noted previously.
+However,  the fact that both monitor reactions measure consistently higher fluence than the other channels on each foil builds confidence that the monitor reactions accurately indicate the presence of the secondary neutron flux.
+
+
+
+
+
+
+
+\begin{figure}
  \centering
  \includegraphics[clip=true,trim=1.5in 3.4in 1.8in 3.5in, scale=0.8]{./figures/variation_curve.pdf}
  % variation_curve.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
- \caption{h}
- \label{fig:h}
+ \caption{Result of variance minimization, performed by varying the degrader density in MCNP6 simulations of the target stack.  A flux-weighted average proton energy of 41.34 MeV entering the last energy position creates a clear minimum in observed reaction fluence variance, corresponding to an areal density 2.53\% greater than nominal. The variance minimum occurring at a lower incident energy than nominal MCNP6 and A\&Z calculations indicates that there exists an additional systematic beam degradation not accounted for in modeling of proton transport in the stack design.}
+ \label{fig:variation_curve}
 \end{figure}
 
 
-\begin{figure}[ht]
+\begin{figure*}
+    \centering
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \subfigimg[scale=0.59]{a)}{./figures/before_minimization_plot.pdf}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+         \refstepcounter{subfigure}\label{fig:before_minimization}
+    \end{subfigure}%
+     \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+        \subfigimg[scale=0.59]{b)}{./figures/after_minimization_plot.pdf}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+         \refstepcounter{subfigure}\label{fig:after_minimization}
+    \end{subfigure}%
+    \caption{Results of variance minimization through enhancement of 6061 aluminum effective areal density by 2.53\%. A noticeable reduction of variance in measured proton fluence is seen, in particular at the low-energy rear positions of the stack. The \enquote{extra fluence} observed in the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Cu}(p,x)\ce{^{56}Co} monitor channels is caused by activation through (n,x) reactions from the secondary neutron flux. By excluding these contaminated channels, the remaining 3 independent monitor reactions serve to minimize uncertainty in stack energy assignments and incident fluence.}
+     \label{fig:variance_mins}
+\end{figure*}
+
+Using this variance minimized degrader density, the final incident proton energy energy distributions $\frac{d\phi}{dE}$ from MCNP6 simulation are shown for the 6 irradiated Nb foils in \autoref{fig:Nb_ptallies}. 
+As expected, the energy distribution becomes increasingly more broadened at the lower energy positions, as result of the beam energy degradation.
+In addition, as the beam becomes more degraded, the magnitude of the peak of each energy distribution (as well as the integral of each distribution) is reduced in magnitude, as beam fluence is lost due to scattering, and the peak-to-low-energy-tail-ratio increases as more  secondary protons are produced upstream.
+As with the monitor foils, these distributions were used to calculate the  energy centroid  (as the  flux-weighted average proton  energy) and  uncertainty (as the FWHM of the distribution) for the final proton energy assignment of each Nb foil.
+
+
+
+
+
+An enhanced version of the final monitor reaction fluences may be seen in \autoref{fig:fluence_plot}, which shows the  \ce{^{nat}Al}(p,x)\ce{^{24}Na} observed fluence (the upper set of points), and the uncertainty-weighted average fluence from the  \ce{^{nat}Cu}(p,x)\ce{^{62}Zn} and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions (the lower set of points).
+To determine the final fluence assignments for the Nb foils, uncertainty-weighted linear regression was used to fit the various fluence measurements, minimizing on $\chi^2$ / degree of freedom, so that  a 95\% confidence interval in fluence would be reported as as well.
+As with the FWHM, a greater than 1$\sigma$ confidence interval is used for reporting fluence uncertainty to avoid an unrealistically small fluence confidence interval, based on the spread in observed fluence from Al and Cu monitor foils.
+% The fluence and 2$\sigma$ uncertainties from this weighted-fit line are thus used in calculations of the various Nb(p,x) cross sections
+
+
+
+\begin{figure}
+ \centering
+ \includegraphics[scale=.8]{./figures/fluence_plot.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Final weighted-fit proton fluences throughout the target stack, based on the variance-minimized observed fluence from the the  \ce{^{nat}Al}(p,x)\ce{^{24}Na}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions. A 95\% ($2\sigma$) confidence interval is reported in the fitted proton fluence, to ensure a realistic uncertainty in fluence, which encompasses the true absolute fluence. A clear loss of fluence  is visible, dropping by approximately 8.1\% from the incident fluence of 202.2 nAh over the length of the target stack.  This is due to a combination of beam utilization, as well as scattering.}
+ \label{fig:fluence_plot}
+\end{figure}
+
+
+
+
+
+\begin{figure}
  \centering
  \includegraphics[scale=.8]{./figures/Nb_ptallies.pdf}
  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
- \caption{hh}
- \label{fig:hh}
+ \caption{Final variance minimized incident proton energy distributions for the Nb foils, as simulated in MCNP6. The distribution tallies in each foil are all normalized to be per source proton, which was $10^8$ in all simulations. As the beam is degraded, proton energy distributions become visibly broadened due to straggling, and drop in magnitude due to scattering losses.}
+ \label{fig:Nb_ptallies}
 \end{figure}
 
-comment that  peak-to-tail ratio increases
 
 % \begin{equation}
 % R = N_T \int_0^{E_{max}} \sigma(E) \dfrac{d\phi}{dE} dE
 % \end{equation}
-
-
 
 
 
@@ -733,7 +816,7 @@ comment that  peak-to-tail ratio increases
 
 XXXXXX
 
- 
+\comment{Double check this equation from my scratch work at LBL} 
 
 % \begin{align}
 % N_{\gamma} &= N_D \epsilon_\gamma I_\gamma \\
@@ -761,7 +844,7 @@ XXXXXX
           
 % \section{Discussion}
 
-
+\comment{Feel free to suggest / add other language describing medical radionuclide applications, or radiochemical separations here.}
 
 
 % XXXXXX
