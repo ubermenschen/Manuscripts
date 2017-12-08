@@ -502,10 +502,9 @@ After loading all targets in the stack, the lid of the target box is sealed in p
 The specifications of the target stack design for this work is presented in \autoref{tab:stack_table}.
 
 
-\comment{Confirm beam parameters below, from notebook}
 
 This target stack was assembled and irradiated at the Isotope Production Facility (IPF) at the Los Alamos National Laboratory (LANL), using the LANSCE linear accelerator. 
-The stack was irradiated for approximately 2 hours with a nominal current of 1 mA, using a \textred{100 \micro s pulse at a frequency of 1 Hz}, for an anticipated integral current of 205.9 nAh.
+The stack was irradiated for approximately 2 hours with a nominal current of 1 mA, using a 50 \micro s pulse at a frequency of 2 Hz, for an anticipated integral current of 205.9 nAh.
 The proton beam incident upon the stack's Inconel beam entrance window had a calculated energy of 100 MeV, with an approximately Gaussian energy distribution width of 0.1 MeV - this energy profile was used for all later analysis.
 At the end of the irradiation, the target stack was withdrawn from the beamline into the IPF hot cell, where it was disassembled and the activated foils removed using robotic manipulators.
 The activated foils were cleaned of all surface contamination, and transported to a counting lab for decay spectroscopy, which started approximately 7 hours following end-of-beam.
@@ -568,7 +567,6 @@ SS profile monitor & 124.4 \micro m         & 101.336                           
 
 \subsection{Measurement of induced activities}\label{sec:spectroscopy}
 
-\comment{get citation data for UNISAMPO}
 
 Following activation, the Al, Cu, and Nb foils  were  transferred to the LANL TA-48 counting lab, where their induced activities could be measured via gamma ray spectroscopy.
 For consistency, a single detector was used in this measurement, an ORTEC GEM Series  High-Purity Germanium (HPGe) detector.
@@ -576,7 +574,7 @@ The detector is a mechanically-cooled coaxial p-type HPGe with a 1 mm aluminum w
 Samples were counted at fixed positions ranging 4.5 - 83.5  cm from the front face of the detector, with a series of standard calibration sources used to determine in-house energy, efficiency, and pileup calibrations for each position.
 The foils were counted for a period of 2 weeks following EoB, to accurately quantify all induced activities.
 An example gamma ray spectrum collected in such a fashion is shown in \autoref{fig:gspec}.
-For all spectra collected, net peak areas were fitted using the gamma spectroscopy analysis code UNISAMPO \textred{(add UNISMPO citation)}, which has been shown to perform best in head-to-head comparisons with other common analysis codes \cite{Jackman2014}, due to its peak fitting algorithms and incorporation  of calibrated detector-specific peak shapes and widths. 
+For all spectra collected, net peak areas were fitted using the gamma spectroscopy analysis code UNISAMPO \cite{Aarnio2001}, which has been shown to perform best in head-to-head comparisons with other common analysis codes \cite{Jackman2014}, due to its peak fitting algorithms and incorporation  of calibrated detector-specific peak shapes and widths. 
 
 \begin{figure}
  \centering
@@ -595,7 +593,6 @@ The measured activity for each gamma ray possesses a total propagated uncertaint
 
 
 
-\comment{Add 1st and 2nd order bateman stuff here, maybe cite Cetnar2006 also }
 
 
 
@@ -615,7 +612,7 @@ For the case of cumulative cross sections, EoB activities were quantified by fit
 % \end{equation}
 Nonlinear regression was used for this fitting process, minimizing on $\chi^2$ / degree of freedom, so that not only would the uncertainty-weighted EoB activities be fitted, but that a 1-$\sigma$ confidence interval in $A_0$ would be reported as as well.
 As with the gamma ray intensities, all lifetimes used in this work are tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of \ref{data}.
-In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation:
+In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation \cite{bateman1910solution,Cetnar2006}:
 \begin{equation}
 A_n\pp{t} = \lambda_n \sum_{i=1}^n \left[  N_i\pp{0} \times \pp{\prod_{j=i}^{n-1}\lambda_j} \times \pp{\sum_{j=i}^n \dfrac{e^{-\lambda_j t}}{\prod_{i\neq j}^n \pp{\lambda_i - \lambda_j}}  }   \right]
 \end{equation}
@@ -661,7 +658,6 @@ where $A_0$ is the EoB activity for the monitor reaction product, $I$ is the pro
 Using this formalism, the quantified EoB activities for each monitor reaction may be converted into a measured proton fluence at each energy position.
 
 
-\comment{Add missing citations here}
 
 The propagated uncertainty in proton fluence is calculated as the quadrature sum of the uncertainty in quantified EoB activity, uncertainty in the duration of irradiation (conservatively estimated at 60 s, to account for any transient changes in beam current), uncertainty in foil areal density, uncertainty in monitor product half-life (included, but normally negligible), uncertainty in IAEA recommended cross section, and uncertainty in differential proton fluence.
 Of these, the first four contributions are all easily quantified in the preparation and execution of a stacked target irradiation;  the last two contributions prove to be more nuanced, however.
@@ -669,7 +665,7 @@ The uncertainty in proton fluence for irradiated monitor foils is derived from s
 The uncertainty in IAEA recommended cross section values must be estimated indirectly, as no uncertainty in the  recommended cross sections is provided in the current IAEA evaluation.
 Fortunately, the recommended cross section values for each monitor reaction tend to match one of the   selected experimental data sets used in their evaluation almost perfectly.
 Since these data sets have listed uncertainties in the original manuscripts, uncertainties in  IAEA recommended cross section values have been estimated by the uncertainty in the data set most closely matching the  IAEA recommended  values.
-For the monitor reactions employed in this work, these data sets are G. Steyn (1990) for  \ce{^{nat}Al}(p,x)\ce{^{22}Na} \textred{(insert Steyn citation here)}, M. Uddin (2004) for \ce{^{nat}Al}(p,x)\ce{^{24}Na} \cite{Uddin2004}, and S. Mills (1992) for \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} \cite{Mills1992}.
+For the monitor reactions employed in this work, these data sets are G. Steyn (1990) for  \ce{^{nat}Al}(p,x)\ce{^{22}Na} \cite{Steyn1990}, M. Uddin (2004) for \ce{^{nat}Al}(p,x)\ce{^{24}Na} \cite{Uddin2004}, and S. Mills (1992) for \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} \cite{Mills1992}.
 
 
 
@@ -999,7 +995,7 @@ E$_\text{p}$ (MeV)          & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ 
 \ce{^{58}Co}\,($\sigma_c$)    & $55.7\pm3.5$            & $53.2\pm4.1$            & $41.8\pm2.9$            & $32.8\pm2.5$            & $38.4\pm3.4$            & $62.7\pm3.4$            \\
 \ce{^{58g}Co}\,($\sigma_i$)   & $13.6\pm2.3$            & $10.5\pm1.9$            & $5.9\pm1.6$             & $7.6\pm1.3$             & $7.0\pm1.7$             & $1.13\pm0.31$           \\
 \ce{^{58m}Co}\,($\sigma_i$)   & $42.2\pm2.7$            & $42.8\pm3.6$            & $35.8\pm2.5$            & $25.2\pm2.1$            & $31.5\pm2.9$            & $61.6\pm3.4$            \\
-\ce{^{59}Fe}\,($\sigma_c$)    & $0.836\pm0.027$         & $0.810\pm0.022$         & $0.733\pm0.020$         & $0.601\pm0.017$         & $0.206\pm0.010$         & $0.93\pm0.15$           \\
+\ce{^{59}Fe}\,($\sigma_c$)    & $0.836\pm0.027$         & $0.810\pm0.022$         & $0.733\pm0.020$         & $0.601\pm0.017$         & $0.206\pm0.010$         & \hrulefill        \\
 \ce{^{60}Co}\,($\sigma_c$)    & $12.79\pm0.43$          & $13.04\pm0.42$          & $10.89\pm0.78$          & $11.15\pm0.58$          & $9.17\pm0.74$           & $6.7\pm1.0$             \\
 \ce{^{61}Cu}\,($\sigma_c$)    & $48.8\pm1.5$            & $54.4\pm1.7$            & $63.7\pm2.1$            & $70.3\pm2.1$            & $79.5\pm2.7$            & $158.2\pm3.2$           \\
 \ce{^{64}Cu}\,($\sigma_c$)    & $37.4\pm1.4$            & $41.4\pm1.2$            & $44.5\pm1.7$            & $49.0\pm1.5$            & $54.9\pm1.4$            & $63.7\pm1.6$            \\ \bottomrule
@@ -1221,9 +1217,8 @@ Finally, this work provides another example of the usefulness of the recently-de
 % %  
 % % \end{longtable}
 Table of decay data  for observed gamma rays. 
-The  values for lifetime and gamma ray branching ratios  listed here were used in all calculations of measured cross sections \cite{Wang2017,Dong2015,Dong2014,JUNDE2008787,Junde2011,Bhat1998,Nesaraja2010,BAGLIN2002,Browne2013,Zuber20151,NICHOLS2012973,Singh2007,Browne2010,Tuli2003,McCutchan2015,Singh2014,NEGRET20151,Johnson2015,McCutchan2014,Singh2013,Browne1997,Baglin2013,Baglin2012}. 
+The  values for lifetime and gamma ray branching ratios  listed here were used in all calculations of measured cross sections \cite{Basunia2015,Firestone2007,Wang2017,Dong2015,Dong2014,JUNDE2008787,Junde2011,Bhat1998,Nesaraja2010,BAGLIN2002,Browne2013,Zuber20151,NICHOLS2012973,Singh2007,Browne2010,Tuli2003,McCutchan2015,Singh2014,NEGRET20151,Johnson2015,McCutchan2014,Singh2013,Browne1997,Baglin2013,Baglin2012,Baglin2011}. 
 
-\comment{add citation for NDS A=22,24,93}
 
 \comment{I had to remove about 30 of the lines I used from this table (removing the weakest lines in nuclides with even more lines than shown here, but never removing lines in nuclides with only 2 or less), as even splitting the data into 2 tables created tables too large to fit on a single page.  My purpose here was 1) to show that I used multiple lines to quantify each nuclide (increasing confidence in results), and 2) to list all the used \ce{^{90}Mo} lines, since they form the basis of it as a monitor.  Is this good as is, or should it be pared down even more?}
 
@@ -1505,14 +1500,12 @@ Nuclide & Half-life & E$_\gamma$ (keV) & I$_\gamma$ (\%)\\
 % 
 \section{Measured excitation functions} \label{fit_figures}
 
-Figures of the cross sections measured in this work are presented here, in comparison with literature data \cite{Albouy1963,PhysRev.162.1055,PhysRevC.6.1235,Grutter1982,Greenwood1984,Aleksandrov1987,levkovski1991cross,Mills1992,MICHEL1997153,Fassbender1997,Ido2002,sisterson2002selected,YashimaH2003,A2006,Ditroi2008,Ditroi2009,steyn2011excitation,Titarenko2011,Shahid2015,Garrido2016,Graves2016}, the TENDL-2015 data library \textred{(cite me!)}, and the reaction modeling codes EMPIRE-3.2.3 and TALYS-1.8 \cite{Koning2012}.
-
-\comment{add EMPIRE citation here!}
-
-\comment{add TENDL citation here!}
+Figures of the cross sections measured in this work are presented here, in comparison with literature data \cite{Albouy1963,PhysRev.162.1055,PhysRevC.6.1235,Grutter1982,Greenwood1984,Aleksandrov1987,levkovski1991cross,Mills1992,MICHEL1997153,Fassbender1997,Ido2002,sisterson2002selected,YashimaH2003,A2006,Ditroi2008,Ditroi2009,steyn2011excitation,Titarenko2011,Shahid2015,Garrido2016,Graves2016}, the TENDL-2015 data library \cite{Koning2012}, and the reaction modeling codes EMPIRE-3.2.3 and TALYS-1.8 \cite{Herman2007,Koning2012}.
 
 
-\comment{Fix a few figure labels (c/i) based on Jon;s email}
+
+
+% \comment{Fix a few figure labels (c/i) based on Jon;s email}
 
 
 
