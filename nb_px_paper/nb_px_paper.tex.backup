@@ -314,10 +314,27 @@
 
 
 
+A stacked target of natural Nb, Cu, and Al thin foils were irradiated by 100 MeV protons at the Los Alamos National Laboratory's Isotope Production Facility.
+The irradiation was motivated by interest in the characterization of the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} reaction as a new dosimetry standard for intermediate-energy protons.
+Through this, a set of 38 measurements of cross sections for the \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40.34 - 89.74 MeV are presented in this work, as well as 5 independent measurements of isomer branching ratios.
+The cross sections were measured using the well-characterized \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions  for accurate proton fluence measurement, with all activities quantified using high-purity germanium spectroscopy.
+The measured cross sections are shown to be in excellent agreement with  literature values, and have been measured with significantly less uncertainty than previous measurements, through the use of variance minimization techniques to reduce proton energy uncertainties.
 
 
 
-XXXXX
+
+
+Cross sections for the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} reactions have been measured for quasi-monoenergetic DD neutrons produced by the UC Berkeley High Flux Neutron Generator (HFNG).
+The HFNG is a compact neutron generator designed as a \enquote{flux-trap} that maximizes the probability that a neutron will interact with a sample loaded into a specific, central location.  
+The study was motivated by interest in the production of \ce{^{47}Sc} and \ce{^{64}Cu} as emerging medical isotopes.
+The cross sections were measured in ratio to the \ce{^{113}In}(n,n')\ce{^{113m}In} and \ce{^{115}In}(n,n')\ce{^{115m}In} inelastic scattering reactions on co-irradiated indium samples.
+Post-irradiation counting using an HPGe and LEPS detectors allowed for cross section determination to within 5\% uncertainty.
+The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section for 2.76$^{+0.01}_{-0.02}$ MeV neutrons is reported as    49.3 $\pm$ 2.6 mb (relative to \ce{^{113}In}) or 46.4 $\pm$ 1.7 mb (relative to \ce{^{115}In}), and the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section is reported as 26.26 $\pm$  0.82 mb.
+The measured cross sections  are found to be  in good agreement with existing measured values but with lower uncertainty (\textless 5\%), and also in agreement with  theoretical values.
+This work highlights the utility of compact, flux-trap DD-based neutron sources for nuclear data measurements and potentially the production of radionuclides for medical applications.
+
+
+
 
 
 
@@ -339,7 +356,7 @@ XXXXX
 
 \begin{keyword}
 %% keywords here, in the form: keyword \sep keyword
-Nb+p \sep Cu+p \sep Niobium \sep Copper\sep Aluminum \sep Nuclear cross sections \sep Proton activation \sep Proton transport \sep Stacked target activation \sep Monitor foils \sep Medical isotope production \sep Isomer branching ratios \sep Nuclear spin distributions  \sep MCNP \sep  LANL
+Nb+p \sep Cu+p \sep Niobium \sep Copper\sep Aluminum \sep \ce{^{90}Mo}  \sep Nuclear cross sections \sep Proton activation \sep Proton transport \sep Stacked target activation \sep Monitor reactions \sep Monitor foils \sep Medical isotope production \sep Isomer branching ratios \sep Nuclear spin distributions  \sep MCNP \sep  LANL
 
 %% MSC codes here, in the form: \MSC code \sep code
 %% or \MSC[2008] code \sep code (2000 is the default)
@@ -593,7 +610,6 @@ The measured activity for each gamma ray possesses a total propagated uncertaint
 
 
 
-\comment{Add 1st and 2nd order bateman stuff here, maybe cite Cetnar2006 also }
 
 
 
@@ -613,7 +629,7 @@ For the case of cumulative cross sections, EoB activities were quantified by fit
 % \end{equation}
 Nonlinear regression was used for this fitting process, minimizing on $\chi^2$ / degree of freedom, so that not only would the uncertainty-weighted EoB activities be fitted, but that a 1-$\sigma$ confidence interval in $A_0$ would be reported as as well.
 As with the gamma ray intensities, all lifetimes used in this work are tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of \ref{data}.
-In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation:
+In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation \cite{bateman1910solution,Cetnar2006}:
 \begin{equation}
 A_n\pp{t} = \lambda_n \sum_{i=1}^n \left[  N_i\pp{0} \times \pp{\prod_{j=i}^{n-1}\lambda_j} \times \pp{\sum_{j=i}^n \dfrac{e^{-\lambda_j t}}{\prod_{i\neq j}^n \pp{\lambda_i - \lambda_j}}  }   \right]
 \end{equation}
@@ -996,7 +1012,7 @@ E$_\text{p}$ (MeV)          & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ 
 \ce{^{58}Co}\,($\sigma_c$)    & $55.7\pm3.5$            & $53.2\pm4.1$            & $41.8\pm2.9$            & $32.8\pm2.5$            & $38.4\pm3.4$            & $62.7\pm3.4$            \\
 \ce{^{58g}Co}\,($\sigma_i$)   & $13.6\pm2.3$            & $10.5\pm1.9$            & $5.9\pm1.6$             & $7.6\pm1.3$             & $7.0\pm1.7$             & $1.13\pm0.31$           \\
 \ce{^{58m}Co}\,($\sigma_i$)   & $42.2\pm2.7$            & $42.8\pm3.6$            & $35.8\pm2.5$            & $25.2\pm2.1$            & $31.5\pm2.9$            & $61.6\pm3.4$            \\
-\ce{^{59}Fe}\,($\sigma_c$)    & $0.836\pm0.027$         & $0.810\pm0.022$         & $0.733\pm0.020$         & $0.601\pm0.017$         & $0.206\pm0.010$         & $0.93\pm0.15$           \\
+\ce{^{59}Fe}\,($\sigma_c$)    & $0.836\pm0.027$         & $0.810\pm0.022$         & $0.733\pm0.020$         & $0.601\pm0.017$         & $0.206\pm0.010$         & \hrulefill        \\
 \ce{^{60}Co}\,($\sigma_c$)    & $12.79\pm0.43$          & $13.04\pm0.42$          & $10.89\pm0.78$          & $11.15\pm0.58$          & $9.17\pm0.74$           & $6.7\pm1.0$             \\
 \ce{^{61}Cu}\,($\sigma_c$)    & $48.8\pm1.5$            & $54.4\pm1.7$            & $63.7\pm2.1$            & $70.3\pm2.1$            & $79.5\pm2.7$            & $158.2\pm3.2$           \\
 \ce{^{64}Cu}\,($\sigma_c$)    & $37.4\pm1.4$            & $41.4\pm1.2$            & $44.5\pm1.7$            & $49.0\pm1.5$            & $54.9\pm1.4$            & $63.7\pm1.6$            \\ \bottomrule
@@ -1218,9 +1234,8 @@ Finally, this work provides another example of the usefulness of the recently-de
 % %  
 % % \end{longtable}
 Table of decay data  for observed gamma rays. 
-The  values for lifetime and gamma ray branching ratios  listed here were used in all calculations of measured cross sections \cite{Wang2017,Dong2015,Dong2014,JUNDE2008787,Junde2011,Bhat1998,Nesaraja2010,BAGLIN2002,Browne2013,Zuber20151,NICHOLS2012973,Singh2007,Browne2010,Tuli2003,McCutchan2015,Singh2014,NEGRET20151,Johnson2015,McCutchan2014,Singh2013,Browne1997,Baglin2013,Baglin2012}. 
+The  values for lifetime and gamma ray branching ratios  listed here were used in all calculations of measured cross sections \cite{Basunia2015,Firestone2007,Wang2017,Dong2015,Dong2014,JUNDE2008787,Junde2011,Bhat1998,Nesaraja2010,BAGLIN2002,Browne2013,Zuber20151,NICHOLS2012973,Singh2007,Browne2010,Tuli2003,McCutchan2015,Singh2014,NEGRET20151,Johnson2015,McCutchan2014,Singh2013,Browne1997,Baglin2013,Baglin2012,Baglin2011}. 
 
-\comment{add citation for NDS A=22,24,93}
 
 \comment{I had to remove about 30 of the lines I used from this table (removing the weakest lines in nuclides with even more lines than shown here, but never removing lines in nuclides with only 2 or less), as even splitting the data into 2 tables created tables too large to fit on a single page.  My purpose here was 1) to show that I used multiple lines to quantify each nuclide (increasing confidence in results), and 2) to list all the used \ce{^{90}Mo} lines, since they form the basis of it as a monitor.  Is this good as is, or should it be pared down even more?}
 
@@ -1502,14 +1517,12 @@ Nuclide & Half-life & E$_\gamma$ (keV) & I$_\gamma$ (\%)\\
 % 
 \section{Measured excitation functions} \label{fit_figures}
 
-Figures of the cross sections measured in this work are presented here, in comparison with literature data \cite{Albouy1963,PhysRev.162.1055,PhysRevC.6.1235,Grutter1982,Greenwood1984,Aleksandrov1987,levkovski1991cross,Mills1992,MICHEL1997153,Fassbender1997,Ido2002,sisterson2002selected,YashimaH2003,A2006,Ditroi2008,Ditroi2009,steyn2011excitation,Titarenko2011,Shahid2015,Garrido2016,Graves2016}, the TENDL-2015 data library \textred{(cite me!)}, and the reaction modeling codes EMPIRE-3.2.3 and TALYS-1.8 \cite{Koning2012}.
-
-\comment{add EMPIRE citation here!}
-
-\comment{add TENDL citation here!}
+Figures of the cross sections measured in this work are presented here, in comparison with literature data \cite{Albouy1963,PhysRev.162.1055,PhysRevC.6.1235,Grutter1982,Greenwood1984,Aleksandrov1987,levkovski1991cross,Mills1992,MICHEL1997153,Fassbender1997,Ido2002,sisterson2002selected,YashimaH2003,A2006,Ditroi2008,Ditroi2009,steyn2011excitation,Titarenko2011,Shahid2015,Garrido2016,Graves2016}, the TENDL-2015 data library \cite{Koning2012}, and the reaction modeling codes EMPIRE-3.2.3 and TALYS-1.8 \cite{Herman2007,Koning2012}.
 
 
-\comment{Fix a few figure labels (c/i) based on Jon;s email}
+
+
+% \comment{Fix a few figure labels (c/i) based on Jon;s email}
 
 
 
