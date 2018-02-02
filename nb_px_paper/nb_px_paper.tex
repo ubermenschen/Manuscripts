@@ -190,6 +190,8 @@
 \newcommand{\textred}[1]{\textcolor{red}{ #1}}
 \newcommand{\redactedit}[1]{\textcolor{blue}{ \sout{#1}}}
 
+\newcommand{\cmmnt}[1]{}
+
 
 \newcommand{\colornote}[1]{\textcolor{red}{ COMMENT\large\footnote{\textcolor{red}{#1}}}}
 
@@ -408,22 +410,22 @@ Both of these purposes make well-characterized dosimetry an invaluable asset to 
 
 In practice, nearly any radioisotope can serve as a reaction monitor. 
 However, several characteristics are hallmarks of a reaction monitor worthy to be classified as a dosimetry standard.
-The primary factor involved in selecting a new monitor is ensuring that the desired radionuclide emit  at least one (preferably multiple, to ensure accurate radionuclide identification) distinct decay gamma rays which can be used to uniquely identify it during post-activation assay.  
-Generally, this means selecting a radionuclide with a number of distinct gamma rays.
+The primary factor involved in selecting a new monitor is ensuring that the desired radionuclide emit  at least one (preferably multiple, to ensure accurate radionuclide identification) distinct decay gamma-rays which can be used to uniquely identify it during post-activation assay.  
+Generally, this means selecting a radionuclide with a number of distinct gamma-rays.
 The decay radiation should preferably have high intensities, so that they show up as strong peaks, and minimize the amount of time needed to count the activated target in order to achieve acceptable counting statistics. 
 
 Care should be taken to avoid cases where two radionuclides which are produced by two different reactions on the same monitor foil lead to states in the same daughter nuclide.  
 For example, \ce{^{48}V}  ($t_{1/2}$ = 15.97 d, $\epsilon=100\%$ to \ce{^{48}Ti}) and \ce{^{48}Sc}  ($t_{1/2}$ = 43.67 h, $\beta^-=100\%$ to \ce{^{48}Ti}) can both be formed via $^\text{nat}$Ti(p,x) reactions, yielding the same 983.52 keV transition in \ce{^{48}Ti} \cite{Burrows2006}.
-Fortunately, these cases can occasionally be mitigated by either using a difference in half-life between the two feeding pathways to allow one to decay out, or by using a distinct gamma ray from one of the two isobar nuclei to subtract out the activity associated with it (such as the $E_\gamma=1037.522$ keV,$I_\gamma=97.6\%$ line in the decay of \ce{^{48}Ti}) \cite{Burrows2006}.
-However, this approach propagates larger uncertainties into the final activity of the desired monitor nucleus, so in principle it is far preferred to choose a monitor reaction which does not have overlapping gamma rays from another isobar nucleus.
+Fortunately, these cases can occasionally be mitigated by either using a difference in half-life between the two feeding pathways to allow one to decay out, or by using a distinct gamma-ray from one of the two isobar nuclei to subtract out the activity associated with it (such as the $E_\gamma=1037.522$ keV,$I_\gamma=97.6\%$ line in the decay of \ce{^{48}Ti}) \cite{Burrows2006}.
+However, this approach propagates larger uncertainties into the final activity of the desired monitor nucleus, so in principle it is far preferred to choose a monitor reaction which does not have overlapping gamma-rays from another isobar nucleus.
 
 Another important decay factor to consider is that of the half-life of the desired monitor nucleus.
 Ideally, the nucleus has a lifetime which is sufficiently long-lived to ensure that it may be quantified  conveniently and leisurely after end-of-beam without the majority if it decaying away.
 In addition, it is preferred that the lifetime be comparable to that of the reaction products being studied. 
 For proper quantification, it is also of vital importance that the proposed monitor nucleus have well-characterized decay data.
 This includes a precise and well-established half-life,  needed to  correct for decay losses, as well as well-characterized decay gamma-ray intensities.
-In practice, the weakest components of decay data are often the gamma ray intensities, which can routinely have uncertainties of 5\% or more.
-Since this uncertainty is propagated in quadrature from the activity of both the monitor reaction and the reaction product being studied, choosing a monitor with a well-established gamma ray intensity can make a significant reduction in measured cross section uncertainties.
+In practice, the weakest components of decay data are often the gamma-ray intensities, which can routinely have uncertainties of 5\% or more.
+Since this uncertainty is propagated in quadrature from the activity of both the monitor reaction and the reaction product being studied, choosing a monitor with a well-established gamma-ray intensity can make a significant reduction in measured cross section uncertainties.
 Lastly, and perhaps most importantly for high-energy dosimetry applications, it is  of utmost importance to choose a reaction channel which cannot be populated via secondary particles incident upon the monitor target.
 This is typically mostly a concern for secondary neutrons produced through (z,xn) reactions on upstream targets, degraders, and stack materials, to avoid monitor reactions which can be populated through (n,x) reactions on the target.
 Any monitor reaction channel which can be populated by anything other than the primary beam should be avoided, as it is often a laborious task to separate out the fraction of secondary particles contributing to the total activation.  
@@ -450,8 +452,8 @@ For charged particle reactions, a thin target is desired for dosimetry, as thick
 % The emitted short-range 190-keV $\beta^-$ particle makes this an  attractive  therapeutic radionuclide, which also has the possibility for simultaneous positron emission tomography (PET) imaging for real-time dose monitoring and verification.
 % This makes \ce{^{64}Cu} particularly desirable  for emerging radiation therapy protocols \cite{Lewis2003,NSACIsotopesSubcommittee2015,Bandari2014,mp500671j}.
 % In addition, copper radiochemistry is well developed, and many existing ligands and carriers may be used for selective delivery of the radionuclide to different sites in patients.
-% The second radionuclide studied, \ce{^{47}Sc} ($t_{1/2}$ = 3.35 d), undergoes $\beta^-$ decay to \ce{^{47}Ti}, emitting a high-intensity (63.8\%) 159-keV gamma ray in the process \cite{Burrows2007}.
-% This radionuclide is  attractive as an emerging diagnostic isotope, due to the similarity of the emitted gamma ray to that of the  well-established \ce{^{99m}Tc} \cite{Qaim2011,Qaim201731,Kolsky1998,mausner1995evaluation}.
+% The second radionuclide studied, \ce{^{47}Sc} ($t_{1/2}$ = 3.35 d), undergoes $\beta^-$ decay to \ce{^{47}Ti}, emitting a high-intensity (63.8\%) 159-keV gamma-ray in the process \cite{Burrows2007}.
+% This radionuclide is  attractive as an emerging diagnostic isotope, due to the similarity of the emitted gamma-ray to that of the  well-established \ce{^{99m}Tc} \cite{Qaim2011,Qaim201731,Kolsky1998,mausner1995evaluation}.
 % Due to the short half-life ($t_{1/2}$ = 6.0 h) of and dwindling supplies of \ce{^{99m}Tc}, \ce{^{47}Sc} stands poised as a potential solution to this shortage, due to its longer half-life and multiple production pathways without the need for highly enriched uranium \cite{Browne2011}.
 % In addition, when paired with \ce{^{44}Sc}, \ce{^{47}Sc} forms a promising \enquote{theranostic} pair for use in simultaneous therapeutic and diagnostic applications \cite{Muller2014,Deilami-nezhad2016}.
 
@@ -512,6 +514,7 @@ The specifications of the target stack design for this work is presented in \aut
 
 This target stack was assembled and irradiated at the Isotope Production Facility (IPF) at the Los Alamos National Laboratory (LANL), using the LANSCE linear accelerator. 
 The stack was irradiated for approximately 2 hours with a nominal current of 1 mA, using a 50 \micro s pulse at a frequency of 2 Hz, for an anticipated integral current of 205.9 nAh.
+The beam current, measured using an inductive pickup, remained stable under these conditions for the duration of the irradiation, with the exception of approximately 70\,s of downtime, which occurred approximately 3 minutes into irradiation.
 The proton beam incident upon the stack's Inconel beam entrance window had a calculated energy of 100 MeV, with an approximately Gaussian energy distribution width of 0.1 MeV - this energy profile was used for all later analysis.
 At the end of the irradiation, the target stack was withdrawn from the beamline into the IPF hot cell, where it was disassembled and the activated foils removed using robotic manipulators.
 The activated foils were cleaned of all surface contamination, and transported to a counting lab for decay spectroscopy, which started approximately 7 hours following end-of-beam.
@@ -534,7 +537,7 @@ The activated foils were cleaned of all surface contamination, and transported t
 % \usepackage{booktabs}
 \begin{table}
 \centering
-\caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \micro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$, but their areal densities are not listed here due to the variance minimization techniques utilized  in this work.}
+\caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \micro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and the earlier paper by Graves \etal \cite{Graves2016}}
 \label{tab:stack_table}
 \small
 \begin{tabular}{@{}llll@{}}
@@ -576,59 +579,60 @@ SS profile monitor & 124.4 \micro m         & 101.336                           
 \subsection{Measurement of induced activities}\label{sec:spectroscopy}
 
 
-Following activation, the Al, Cu, and Nb foils  were  transferred to the LANL TA-48 counting lab, where their induced activities could be measured via gamma ray spectroscopy.
+Following activation, the Al, Cu, and Nb foils  were  transferred to the LANL TA-48 counting lab, where their induced activities could be measured via gamma-ray spectroscopy.
 For consistency, a single detector was used in this measurement, an ORTEC GEM Series  High-Purity Germanium (HPGe) detector.
 The detector is a mechanically-cooled coaxial p-type HPGe with a 1 mm aluminum window, and a 49.2 mm diameter, 27.9 mm long crystal.
-Samples were counted at fixed positions ranging 4.5 - 83.5  cm from the front face of the detector, with a series of standard calibration sources used to determine in-house energy, efficiency, and pileup calibrations for each position.
-The foils were counted for a period of 2 weeks following EoB, to accurately quantify all induced activities.
-An example gamma ray spectrum collected in such a fashion is shown in \autoref{fig:gspec}.
+Samples were counted at fixed positions ranging 4.5 - 83.5  cm from the front face of the detector, with a series of standard calibration sources used to determine energy, efficiency, and pileup calibrations for each position.
+The foils were counted  for a period of 2 weeks following EoB, to accurately quantify all induced activities,  with dead time never exceeding 5\%.
+An example gamma-ray spectrum collected in such a fashion is shown in \autoref{fig:gspec}.
 For all spectra collected, net peak areas were fitted using the gamma spectroscopy analysis code UNISAMPO \cite{Aarnio2001}, which has been shown to perform best in head-to-head comparisons with other common analysis codes \cite{Jackman2014}, due to its peak fitting algorithms and incorporation  of calibrated detector-specific peak shapes and widths. 
 
 \begin{figure}
  \centering
  \includegraphics[width=6in]{./figures/sample_gspec.pdf}
  % sample_gspec.pdf: 489x257 pixel, 72dpi, 17.25x9.07 cm, bb=0 0 489 257
- \caption{Example gamma spectra, collected from an activated Nb foil at approximately 80 MeV, to monitor radioisotope production. While the majority of observed reaction products are visible in this spectrum, it is particularly noteworthy that the \ce{^{90}Mo} decay lines which form the basis of the \ce{^{93}Nb}(p,x)\ce{^{90}Mo} monitor reaction are high in intensity and clearly isolated from surrounding peaks, greatly aiding its activity quantification.}
+ \caption{A gamma spectrum, collected from an activated Nb foil at approximately 80 MeV. While the majority of observed reaction products are visible in this spectrum,  the \ce{^{90}Mo} decay lines, which form the basis of the \ce{^{93}Nb}(p,x)\ce{^{90}Mo} monitor reaction, are high in intensity and clearly isolated from surrounding peaks.}
  \label{fig:gspec}
 \end{figure}
 
 
 Following  acquisition, the decaying product nuclei corresponding to each observed peak in the collected spectra were identified.
-The calibrated detector efficiencies, along with gamma ray intensities for each transition, were used to convert the net  counts in each fitted gamma ray photopeak into an activity for the activated isotopes and isomeric states.
+The calibrated detector efficiencies, along with gamma-ray intensities for each transition, were used to convert the net  counts in each fitted gamma-ray photopeak into an activity for the decay of the activation products.  
 For reference, the nuclear decay data used in this work is tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of \ref{data}.
-As nearly all of the product nuclei created in this work have multiple high-intensity gamma rays, each product nuclei had measurements of its present activity at multiple points in time (up to 2 weeks after EoB), as well as multiple independent activity measurements at each time point, based on each of its observed gamma rays.
-The measured activity for each gamma ray possesses a total propagated uncertainty which is the quadrature sum of the uncertainty in  fitted peak areas, uncertainty in detector efficiency calibration, and uncertainty in the gamma ray branching ratio data.
+As nearly all of the product nuclei have multiple high-intensity gamma-rays, decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), as well as multiple independent activity measurements at each time point, based on each of its observed gamma-rays.
+The measured activity for each gamma-ray possesses a total propagated uncertainty which is the quadrature sum of the uncertainty in  fitted peak areas, uncertainty in detector efficiency calibration, and uncertainty in the gamma-ray branching ratio data.
 
 
 
 
 
 
-Since many of the reaction products populated by energetic protons are more than one decay off of stability, many of these are produced not only  directly by reactions, but also indirectly produced by decay down a mass chain.
+Since many of the reaction products populated by energetic protons are more than one decay off of stability, many of these are produced not only  directly by reactions, but also indirectly by decay down a mass chain.
 To this end, it is useful to differentiate between the types of cross sections reported in this work. 
 For the first observable product nuclei in a mass chain, its (p,x) cross section will be reported as a cumulative cross section ($\sigma_c$), which is the sum of direct production of that nucleus, as well as decay of its decay precursors and any other independent cross sections leading to that nucleus. 
 In addition, cumulative cross sections will be reported whenever it is impossible to use decay spectroscopy to distinguish direct production of a nucleus from decay feeding.
-For all remaining observed reaction products in the mass chain, independent cross sections ($\sigma_i$) will be reported, leaving solely direct nucleus production by subtracting out the feeding of decay precursors.
+For all remaining observed reaction products in the mass chain, independent cross sections ($\sigma_i$) will be reported, allowing for determination of the direct production via subtraction.  
 
 
 
-To convert these activities into cross sections, corrections must be made for the decay of the various reaction products in  between EoB and the spectrum acquisition, in order to calculate $A_0$, the initial activity at EoB.
-The use of  multiple gamma rays at multiple points after EoB to calculate initial activities  for each observed product nucleus allows for a more accurate  determination of $A_0$ than simply basing its calculation off of a single gamma ray observation.
+To convert these activities into cross sections, corrections must be made for the decay of the various reaction products during the time between EoB and the spectrum acquisition, in order to calculate $A_0$, the initial activity at EoB.
+The use of  multiple gamma-rays at multiple points after EoB to calculate initial activities  for each observed product nucleus allows for a more accurate  determination of $A_0$ than simply basing its calculation off of a single gamma-ray observation.
 For the case of cumulative cross sections, EoB activities were quantified by fitting the activities observed at multiple time points $t$ (since EoB) to the well-known radioactive decay law.
 % \begin{equation}
 % A\pp{t} = A_0 e^{-\lambda t}
 % \end{equation}
 Nonlinear regression was used for this fitting process, minimizing on $\chi^2$ / degree of freedom, so that not only would the uncertainty-weighted EoB activities be fitted, but that a 1-$\sigma$ confidence interval in $A_0$ would be reported as as well.
-As with the gamma ray intensities, all lifetimes used in this work are tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of \ref{data}.
+As with the gamma-ray intensities, all lifetimes used in this work are tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of \ref{data}.
 In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation \cite{bateman1910solution,Cetnar2006}:
 \begin{equation}
 A_n\pp{t} = \lambda_n \sum_{i=1}^n \left[  N_i\pp{0} \times \pp{\prod_{j=i}^{n-1}\lambda_j} \times \pp{\sum_{j=i}^n \dfrac{e^{-\lambda_j t}}{\prod_{i\neq j}^n \pp{\lambda_i - \lambda_j}}  }   \right]
 \end{equation}
+where $j$ refers to a precursor nucleus populating a specific end-product.  
 While higher-order terms were added if needed, typically for an isomeric state in a particular mass chain,  the second-order expansion ($n=2$) was often sufficient to quantify EoB activities in a mass chain, simplifying to:
 \begin{equation}
 A_2\pp{t} = \dfrac{A_{1,0}\lambda_2}{\lambda_1 - \lambda_2} \pp{e^{-\lambda_2 t} - e^{-\lambda_1 t}} + A_{2,0} e^{-\lambda_2 t}
 \end{equation}
-In these cases, the previously-quantified EoB activities from decay precursors ($A_{1,0}$, etc) would be substituted in, that the feeding contributions from decay could be separated and an independent cross section reported.
+In these cases, the previously-quantified EoB activities from decay precursors ($A_{1,0}$, etc) would be substituted in, so that the feeding contributions from decay could be separated and an independent cross section reported.
 After quantifying the cumulative EoB activities at the top of a mass chain and all subsequent independent EoB activities, these will be later used to report the various cross sections for all observed reaction products and isomeric states. 
 
 
@@ -648,8 +652,8 @@ After quantifying the cumulative EoB activities at the top of a mass chain and a
 
 % describe integral equation for converting activities to currents here
 
-As discussed previously, accurate proton dosimetry is the most important factor in performing high-fidelity cross section measurements.
-At the time of this work, the nondestructive beam current monitors in the LANSCE-IPF beamline possess resolution of 100 nAh.
+An accurate integrated proton current is one of the most important factors in performing high-fidelity cross section measurements.
+At the time of this work, the nondestructive beam current monitors in the LANSCE-IPF beamline had a  resolution of 100 nAh.
 For a low-current irradiation such as this work, where a nominal fluence of 200 nAh is desired, additional dosimetry is thus needed to accurately normalize quantified EoB activities into cross sections.
 To this end, thin \ce{^{nat}Al} and \ce{^{nat}Cu} foils were included along with the \ce{^{nat}Nb} targets at each energy position, to provide another beam current monitor.
 These foils have been recommended for use as proton monitor foils in the 30 \textless\ E$_\text{p}$ \textless\ 100 MeV regime by the IAEA, as the \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions have been well-characterized for accurate proton fluence measurement \cite{gul2001charged}.
@@ -684,14 +688,14 @@ For the monitor reactions employed in this work, these data sets are G. Steyn (1
 Initial estimates of the proton beam energy in all foils were calculated using the Anderson \& Ziegler (A\&Z) stopping power formalism \cite{Andersen_Ziegler_1977,Ziegler1985,Ziegler1999}.
 These estimates of average beam energy in each foil are useful for the preliminary stack design, as the A\&Z calculation provide reasonable approximations of 1-D proton transport due to its treatment of ionization and multiple Coulomb scattering. 
 However, for final energy determination and analysis, a more rigorous method of proton transport is needed.
-The Monte Carlo N-Particle transport code MCNP6.1 was used for simulation of the full 3-D target stack, and is used to calculate a full proton energy distribution for each stack position   \cite{Goorley2012}.
+The Monte Carlo N-Particle transport code MCNP6.1 was used for simulation of the full 3-D target stack, including determination of the full proton energy distribution for each stack position   \cite{Goorley2012}.
 In addition, MCNP6 provides a far more robust method of proton transport, as it is able to account for beam losses due to reactions, as well as production of secondary particles.
-As it is a Monte Carlo-based code, the uncertainty in energy distribution scales inversely with the number of source protons simulated - $10^8$ source protons were used for all simulations, which places the statistical uncertainty in proton energy distributions at less than 0.01\%.
+As it is a Monte Carlo-based code, the uncertainty in energy distribution scales inversely with the number of source protons simulated.  $10^8$ source protons were used for all simulations, which places the statistical uncertainty in proton energy distributions at less than 0.01\%.
 
 
 The ability to model the full energy distribution in each target position is vital for stacked target irradiations, due to the progressively larger energy straggling towards the rear of the stack.
 The initial proton beam has a finite energy spread (an approximately 0.1 MeV Gaussian width at 100 MeV), and since stopping power for charged particles is inversely proportional to their energy, the low-energy tail of the energy distribution is degraded more in each stack element than the high-energy tail.
-This effect compounds as one moves towards the rear of the stack, with the effect of a significantly broadened low-energy tail relative to the high-energy tail, and a progressively larger net shift of the centroid to a lower energy than the peak of the energy distribution. 
+This effect compounds  towards the rear of the stack, creating a significantly broadened low-energy tail, and a progressively larger net shift of the centroid to a lower energy. 
 % For each foil in the target stack, 
 To account for this increasing energy uncertainty, a suitably representative energy must be established for  each foil in the target stack.
 In this work, the flux-weighted average proton  energy in each foil, $\langle E \rangle$,  represents the energy centroid for protons in a target stack component, calculated using the energy distributions $\frac{d\phi}{dE}$ from MCNP6 modeling of proton transport:
@@ -699,39 +703,41 @@ In this work, the flux-weighted average proton  energy in each foil, $\langle E 
 \langle E \rangle = \dfrac{{\displaystyle\int E \dfrac{d\phi}{dE} dE}}{{\displaystyle\int \dfrac{d\phi}{dE} dE}}
 \end{equation}
 Likewise, to represent the energy uncertainty for each stack position, the full width at half maximum (FWHM) of the MCNP6-modeled energy distribution is chosen for each energy position reported.
-While most experimental uncertainties are reported at the 1$\sigma$ level, the $\approx2.3\sigma$ FWHM is used here to ensure at the 98\% confidence interval that this width includes  the \enquote{true} energy center-of-mass.
+While most experimental uncertainties are reported at the 1$\sigma$ level, the $\approx2.3\sigma$ FWHM is used here to ensure at the 98\% confidence interval that this width includes  the \enquote{true} energy centroid value.
 
 
 
 
 
-Based on the recent work of Graves \etal, the \enquote{variance minimization} techniques they outline have been employed here, to further reduce the uncertainty in proton energy assignments     \cite{Graves2016}.
+The \enquote{variance minimization} techniques  described by  Graves \etal,  have been employed here to further reduce the uncertainty in proton energy assignments     \cite{Graves2016}.
 This method is based on the assumption that the independent measurements of proton fluence from the 5 monitor reactions used in this work should all be consistent at each energy position.
 If the monitor reaction cross sections and MCNP6 - modeled energy distributions are both accurate, then any disagreement in the  observed proton fluences is due to a systematic uncertainty in the stack design, namely, the areal densities of the stack components \cite{Graves2016,Marus2015}. 
 This disagreement is minor at the front of the stack, and gets progressively worse as the beam is degraded, due to the compounded effect of systematic uncertainties in stack areal densities.
 
 
 
-To correct for this, variance minimization techniques were employed here to correct for uncertainties in  the characterization of the stack components, the largest cause of uncertainties in energy and  fluence assignments.
-Due to the difficulty of characterizing uncertainty in areal density in the Kapton tape, the areal density of these layers were varied uniformly in MCNP6 simulations by up to $\pm$25\% of nominal values, but this had negligible impact on improving monitor reaction disagreement.
-This is due to the minor impact that their areal density has on beam degradation, relative to the thick 6061 aluminum degraders (nominal 3-5 mg/cm$^2$, relative to nominal 1000-1400 mg/cm$^2$).
+Variance minimization techniques were employed  to correct for uncertainties in  the characterization of the stack components, the largest cause of uncertainties in energy and  fluence assignments.
+Due to the difficulty of characterizing uncertainty in areal density in the Kapton tape, the areal density of these layers were varied uniformly in MCNP6 simulations by up to $\pm$25\% of nominal values.
+This had negligible impact on improving monitor reaction disagreement  due to the small effect that their areal density has on beam degradation relative to the thick 6061 aluminum degraders (nominal 3-5 mg/cm$^2$, relative to nominal 1000-1400 mg/cm$^2$).
 As such,  the areal density of each of the 6061 aluminum degraders  were varied uniformly in MCNP6 simulations  by a factor of up to $\pm$25\% of nominal values, to find the effective density which minimized variance in the measured proton fluence at the lowest energy position (Al-6, Cu-6).
 This lowest energy position was chosen as a minimization candidate, as it is most sensitive to systematic uncertainties in stack design.
-The results of this minimization technique, shown in \autoref{fig:variation_curve}, indicate a clear minimum in proton fluence variance for flux-weighted average 41.34 MeV protons entering the last energy position, approximately 2 MeV lower than the nominal MCNP6 simulations, and approximately 3 MeV lower than nominal A\&Z calculations, both of which used the nominal 2.80 g/cm$^3$ measured density of the 6061 aluminum degraders.
+The results of this minimization technique, shown in \autoref{fig:variation_curve}, indicate a clear minimum in proton fluence variance for flux-weighted average 41.34 MeV protons entering the last energy position.
+This is approximately 2 MeV lower than the nominal MCNP6 simulations, and approximately 3 MeV lower than nominal A\&Z calculations, both of which used the nominal 2.80 g/cm$^3$ measured density of the 6061 aluminum degraders.
 This energy corresponds to a 6061 aluminum areal density of 2.53\% greater than nominal measurements, and serves as a lump correction for other minor systematic uncertainties in stack design, including stack areal densities and incident beam energy.
 
 
 
 The impact of this variance minimization may  clearly be seen in   \autoref{fig:variance_mins}.
 As expected, the 2.53\% increase in 6061 aluminum areal density has an almost negligible impact on the higher-energy positions, but causes a progressively larger downshift  in proton energies at the later energy positions.
-In addition, as one moves to the rear energy positions, the disagreement in the independent proton fluence measurements is reduced.
+In addition, as one moves to the rear  positions, the disagreement in the independent proton fluence measurements is reduced.
 It is worth noting that the proton fluence measured by the \ce{^{nat}Al}(p,x)\ce{^{22}Na} monitor reaction is consistently higher in magnitude than all other monitor channels, with an increasing disparity at higher energies.
 This phenomenon is observed for the \ce{^{nat}Cu}(p,x)\ce{^{56}Co} monitor reaction as well, though to a much smaller degree.
 In both cases, this disparity is caused by the fact that both of these monitor reactions may also form the \ce{^{22}Na} and \ce{^{56}Co} reaction products through contamination by secondary neutron (n,x) channels, increasing the apparent fluence as observed by these monitor reactions.
 Since no method for reliably separating the fraction of \ce{^{22}Na} and \ce{^{56}Co} activities induced through (n,x) exists, the fluences predicted by these monitor channels are not used in the final determination of the proton fluence seen by Nb foils. 
-The fact that this \enquote{extra fluence} diminishes at lower energy is likely attributed to the fact that the \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Cu}(p,x)\ce{^{56}Co} have energetic thresholds of 23.35 and 36.76 MeV, respectively - the fraction of secondary neutrons produced by (p,xn)  which are energetic enough to populate the  \ce{^{22}Na} and \ce{^{56}Co} reaction products at the lower energy positions becomes progressively smaller.
+The fact that this \enquote{extra fluence} diminishes at lower energy is likely attributed to the fact that the \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Cu}(p,x)\ce{^{56}Co} have energetic thresholds of 23.35 and 36.76 MeV, respectively. 
+The fraction of secondary neutrons produced by (p,xn)  which are energetic enough to populate the  \ce{^{22}Na} and \ce{^{56}Co} reaction products at the lower energy positions becomes progressively smaller.
 This serves as an example of the importance of selecting monitor reaction products inaccessible through (n,x) channels, as noted previously.
-However,  the fact that both monitor reactions measure consistently higher fluence than the other channels on each foil builds confidence that the monitor reactions accurately indicate the presence of the secondary neutron flux.
+However,  the fact that both monitor reactions measure consistently higher fluence than the other channels on each foil builds confidence that the monitor reactions accurately indicate the presence of a non-negligible secondary neutron flux.
 
 
 
@@ -743,7 +749,7 @@ However,  the fact that both monitor reactions measure consistently higher fluen
  \centering
  \includegraphics[clip=true,trim=1.5in 3.4in 1.8in 3.5in, scale=0.8]{./figures/variation_curve.pdf}
  % variation_curve.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
- \caption{Result of variance minimization, performed by varying the degrader density in MCNP6 simulations of the target stack.  A flux-weighted average proton energy of 41.34 MeV entering the last energy position creates a clear minimum in observed reaction fluence variance, corresponding to an areal density 2.53\% greater than nominal. The variance minimum occurring at a lower incident energy than nominal MCNP6 and A\&Z calculations indicates that there exists an additional systematic beam degradation not accounted for in modeling of proton transport in the stack design.}
+ \caption{Result of the variance minimization performed by adjusting the degrader density in MCNP6 simulations of the target stack.  A flux-weighted average proton energy of 41.34 MeV entering the last energy position creates a clear minimum in observed reaction fluence variance, corresponding to an areal density 2.53\% greater than nominal. The variance minimum occurring at a lower incident energy than nominal MCNP6 and A\&Z calculations indicates that there exists an additional systematic beam degradation not accounted for in modeling of proton transport in the stack design.}
  \label{fig:variation_curve}
 \end{figure}
 
@@ -765,12 +771,12 @@ However,  the fact that both monitor reactions measure consistently higher fluen
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:after_minimization}
     \end{subfigure}%
-    \caption{Results of variance minimization through enhancement of 6061 aluminum effective areal density by 2.53\%. A noticeable reduction of variance in measured proton fluence is seen, in particular at the low-energy rear positions of the stack. The \enquote{extra fluence} observed in the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Cu}(p,x)\ce{^{56}Co} monitor channels is caused by activation through (n,x) reactions from the secondary neutron flux. By excluding these contaminated channels, the remaining 3 independent monitor reactions serve to minimize uncertainty in stack energy assignments and incident fluence.}
+    \caption{Results of variance minimization through enhancement of the effective areal density of the 6061 aluminum degraders by 2.53\%. A noticeable reduction of variance in measured proton fluence is seen,  particularly at the  rear stack positions. The \enquote{extra fluence} observed in the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Cu}(p,x)\ce{^{56}Co} monitor channels is caused by activation through (n,x) reactions from the secondary neutron flux. By excluding these contaminated channels, the remaining 3 independent monitor reactions serve to minimize uncertainty in stack energy assignments and incident fluence.\comment{Lee: I think you should make the fonts ridiculously larger.  }}
      \label{fig:variance_mins}
 \end{figure*}
 
 Using this variance minimized degrader density, the final incident proton energy energy distributions $\frac{d\phi}{dE}$ from MCNP6 simulation are shown for the 6 irradiated Nb foils in \autoref{fig:Nb_ptallies}. 
-As expected, the energy distribution becomes increasingly more broadened at the lower energy positions, as result of the beam energy degradation.
+As expected, the energy distribution becomes increasingly more broadened at the lower energy positions, as a result of the beam energy degradation.
 In addition, as the beam becomes more degraded, the magnitude of the peak of each energy distribution (as well as the integral of each distribution) is reduced in magnitude, as beam fluence is lost due to scattering, and the peak-to-low-energy-tail-ratio increases as more  secondary protons are produced upstream.
 As with the monitor foils, these distributions were used to calculate the  energy centroid  (as the  flux-weighted average proton  energy) and  uncertainty (as the FWHM of the distribution) for the final proton energy assignment of each Nb foil.
 
@@ -779,7 +785,8 @@ As with the monitor foils, these distributions were used to calculate the  energ
 
 
 An enhanced version of the final monitor reaction fluences may be seen in \autoref{fig:fluence_plot}, which shows the  \ce{^{nat}Al}(p,x)\ce{^{24}Na} observed fluence (the upper set of points), and the uncertainty-weighted average fluence from the  \ce{^{nat}Cu}(p,x)\ce{^{62}Zn} and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions (the lower set of points).
-To determine the final fluence assignments for the Nb foils, uncertainty-weighted linear regression was used to fit the various fluence measurements, minimizing on $\chi^2$ / degree of freedom, so that  a 95\% confidence interval in fluence would be reported as as well.
+To determine the final fluence assignments for the Nb foils, uncertainty-weighted linear regression was used to fit the various fluence measurements.
+This involved minimizing on $\chi^2$ / degree of freedom, so that  a 95\% confidence interval in fluence would be reported as as well.
 As with the FWHM, a greater than 1$\sigma$ confidence interval is used for reporting fluence uncertainty to avoid an unrealistically small fluence confidence interval, based on the spread in observed fluence from Al and Cu monitor foils.
 % The fluence and 2$\sigma$ uncertainties from this weighted-fit line are thus used in calculations of the various Nb(p,x) cross sections
 
@@ -818,13 +825,14 @@ As with the FWHM, a greater than 1$\sigma$ confidence interval is used for repor
 
 %  include 1st and 2nd order bateman stuff here
 
-Using the quantified EoB activities along with the variance-minimized proton fluence, it is possible to calculate the final cross sections for the various Nb(p,x) reactions observed in decay spectroscopy.
+Using the quantified EoB activities along with the variance-minimized proton fluence, it is possible to calculate the final cross sections for the various observed Nb(p,x) reactions.
 While thin ($\approx$ 22 mg/cm$^2$) Nb foils were irradiated to minimize the energy width of these cross section measurements, it is important to note that all cross sections reported here are flux-averaged cross sections, over the energy distribution subtended by each foil, as seen in \autoref{fig:Nb_ptallies}.
 For both the cumulative and independent activities quantified, cross sections were calculated as:
 \begin{equation}
 \sigma = \dfrac{A_0 }{\rho \Delta r I \pp{1-e^{-\lambda \Delta t}} }
 \end{equation}
 where $A_0$ is the EoB activity for the monitor reaction product, $I$ is the proton current, $\rho \Delta r$ is the foil's areal density, $\lambda$ is the monitor reaction product's decay constant, and $\Delta t$ is the length of irradiation.
+The beam current, measured using an inductive pickup, remained stable for the duration of the irradiation, with the exception of approximately 70\,s of downtime,  occurring approximately 3 minutes into irradiation.
 The propagated uncertainty in cross section is calculated as the quadrature sum of the uncertainty in quantified EoB activity, uncertainty in the duration of irradiation (conservatively estimated at 60 s, to account for any transient changes in beam current), uncertainty in foil areal density, uncertainty in monitor product half-life (included, but normally negligible),  and uncertainty in proton current (quantified in the $2\sigma$ confidence interval in \autoref{fig:fluence_plot}).
 
 
@@ -862,7 +870,7 @@ This loss of fluence is due to a combination of beam utilization for the various
 
 Using the final proton fluence at each energy position, cross sections for  \ce{^{51}Cr},  \ce{^{52g}Mn}, \ce{^{52m}Mn}, \ce{^{54}Mn}, \ce{^{55}Co}, \ce{^{56}Ni}, \ce{^{57}Ni}, \ce{^{57}Co},  \ce{^{58g}Co}, \ce{^{58m}Co}, \ce{^{59}Fe}, \ce{^{60}Co}, \ce{^{61}Cu}, and \ce{^{64}Cu} were extracted for (p,x) reactions  on \ce{^{nat}Cu} foils in the 40 - 90 MeV region, as recorded in \autoref{tab:cu_rp_table}.
 For  (p,x) reactions on \ce{^{nat}Nb} foils, the (p,x) cross sections for \ce{^{82m}Rb}, \ce{^{83}Sr}, \ce{^{85g}Y}, \ce{^{85m}Y}, \ce{^{86}Zr}, \ce{^{86}Y}, \ce{^{87}Zr}, \ce{^{87g}Y}, \ce{^{87m}Y}, \ce{^{88}Zr}, \ce{^{88}Y}, \ce{^{89g}Nb}, \ce{^{89m}Nb}, \ce{^{89}Zr}, \ce{^{90}Mo}, \ce{^{90}Nb}, \ce{^{91m}Nb}, \ce{^{92m}Nb}, and \ce{^{93m}Mo} were extracted, as recorded in \autoref{tab:nb_rp_table}.
-In addition, as there exist a number of isomers with radioactive ground states in these mass regions,  independent measurements of isomer-to-ground-state branching ratios for \ce{^{52m/g}Mn},\ce{^{58m/g}Co},\ce{^{85m/g}Y},\ce{^{87m/g}Y}, and \ce{^{89m/g}Nb} were  extracted from these data as well, which are recorded in \autoref{tab:ibr_table}.
+In addition, as there exist a number of isomers with radioactive ground states in these mass regions,  independent measurements of isomer-to-ground-state branching ratios for \ce{^{52m/g}Mn},\ce{^{58m/g}Co},\ce{^{85m/g}Y},\ce{^{87m/g}Y}, and \ce{^{89m/g}Nb} were  extracted and are recorded in \autoref{tab:ibr_table}.
 Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR \cite{Otuka2014272}) are seen in the figures of \ref{fit_figures} and \ref{ibr_figures}.
 The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity ($\pm$1-7\%), proton fluence ($\pm$2-3\%), and foil areal density ($\pm$0.1-0.6\%).
 
@@ -880,26 +888,26 @@ The propagated uncertainty in these cross sections varies widely based on the re
 % \begin{tabular}{@{}lllllll@{}}
 % \toprule
 % E$_\text{p}$ (MeV) & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ & $69.70^{+0.90}_{-0.85}$ & $61.07^{+1.05}_{-0.98}$ & $51.51^{+1.25}_{-1.21}$ & $40.34^{+1.58}_{-1.55}$ \\ \midrule
-% 82mRb      & $2.39\pm0.18$           & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 83Sr       & $3.88\pm0.56$           & $4.63\pm0.34$           & $3.42\pm0.32$           & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 85cum Y    & $13.31\pm0.30$          & $7.28\pm0.44$           & $2.06\pm0.12$           & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 85gY       & $2.286\pm0.057$         & $2.010\pm0.150$         & $0.545\pm0.030$         & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 85mY       & $11.03\pm0.30$          & $5.27\pm0.42$           & $1.52\pm0.12$           & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 86Zr       & $12.25\pm0.32$          & $17.63\pm0.44$          & $18.86\pm0.43$          & $6.00\pm0.15$           & \hrulefill              & \hrulefill              \\
-% 86Y        & $32.25\pm0.89$          & $40.30\pm1.07$          & $39.02\pm1.00$          & $13.22\pm0.34$          & \hrulefill              & \hrulefill              \\
+% 82mRb      & $2.39\pm0.18$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 83Sr       & $3.88\pm0.56$           & $4.63\pm0.34$           & $3.42\pm0.32$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 85cum Y    & $13.31\pm0.30$          & $7.28\pm0.44$           & $2.06\pm0.12$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 85gY       & $2.286\pm0.057$         & $2.010\pm0.150$         & $0.545\pm0.030$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 85mY       & $11.03\pm0.30$          & $5.27\pm0.42$           & $1.52\pm0.12$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 86Zr       & $12.25\pm0.32$          & $17.63\pm0.44$          & $18.86\pm0.43$          & $6.00\pm0.15$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 86Y        & $32.25\pm0.89$          & $40.30\pm1.07$          & $39.02\pm1.00$          & $13.22\pm0.34$          & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 % 87Zr       & $45.82\pm5.82$          & $27.09\pm1.72$          & $31.46\pm1.49$          & $48.55\pm2.92$          & $37.66\pm1.58$          & $1.13\pm0.10$           \\
 % 87cum Y    & $106.26\pm5.81$         & $52.92\pm1.70$          & $59.63\pm1.47$          & $87.77\pm2.90$          & $66.29\pm1.56$          & $2.93\pm0.10$           \\
 % 87gY       & $27.03\pm5.45$          & $7.15\pm1.19$           & $6.41\pm0.55$           & $5.65\pm2.13$           & $2.59\pm0.45$           & $0.949\pm0.045$         \\
 % 87mY       & $79.23\pm2.01$          & $45.78\pm1.22$          & $53.22\pm1.37$          & $82.12\pm1.97$          & $63.70\pm1.49$          & $1.98\pm0.09$           \\
 % 88Zr       & $153.69\pm3.93$         & $140.02\pm3.48$         & $60.99\pm1.70$          & $20.65\pm0.49$          & $33.16\pm0.97$          & $65.82\pm1.32$          \\
 % 88Y        & $16.64\pm0.76$          & $12.85\pm0.60$          & $7.81\pm0.61$           & $2.83\pm0.20$           & $9.05\pm1.33$           & $9.96\pm0.33$           \\
-% 89cum Nb   & \hrulefill              & \hrulefill              & $175.52\pm12.44$        & $208.99\pm4.33$         & \hrulefill              & \hrulefill              \\
-% 89gNb      & \hrulefill              & \hrulefill              & $141.58\pm12.28$        & $181.73\pm4.08$         & \hrulefill              & \hrulefill              \\
-% 89mNb      & \hrulefill              & \hrulefill              & $33.94\pm1.97$          & $27.26\pm1.45$          & \hrulefill              & \hrulefill              \\
+% 89cum Nb   & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $175.52\pm12.44$        & $208.99\pm4.33$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 89gNb      & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $141.58\pm12.28$        & $181.73\pm4.08$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 89mNb      & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $33.94\pm1.97$          & $27.26\pm1.45$          & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 % 89Zr       & $203.76\pm5.32$         & $235.36\pm6.57$         & $287.50\pm6.76$         & $250.32\pm5.77$         & $54.63\pm1.15$          & $15.61\pm0.31$          \\
 % 90Mo       & $20.57\pm0.68$          & $25.58\pm0.76$          & $33.75\pm0.90$          & $60.38\pm1.86$          & $120.28\pm2.93$         & $24.38\pm0.71$          \\
 % 90Nb       & $152.93\pm4.72$         & $169.31\pm4.78$         & $204.70\pm5.79$         & $265.19\pm7.77$         & $363.35\pm9.78$         & $165.16\pm4.54$         \\
-% 91mNb      & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              & $66.96\pm4.16$          \\
+% 91mNb      & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $66.96\pm4.16$          \\
 % 92mNb      & $42.18\pm1.15$          & $45.74\pm1.16$          & $48.75\pm1.21$          & $51.59\pm1.34$          & $54.49\pm1.37$          & $60.36\pm1.23$          \\
 % 93mMo      & $0.93\pm0.18$           & $1.25\pm0.13$           & $1.58\pm0.22$           & $1.80\pm0.12$           & $1.83\pm0.10$           & $2.010\pm0.084$         \\ \bottomrule
 % \end{tabular}
@@ -916,26 +924,26 @@ The propagated uncertainty in these cross sections varies widely based on the re
 % \toprule
 %       &            & \multicolumn{6}{c}{Production cross section (mb)}                                                                                                         \\ 
 %       & E\_p (MeV) & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ & $69.70^{+0.90}_{-0.85}$ & $61.07^{+1.05}_{-0.98}$ & $51.51^{+1.25}_{-1.21}$ & $40.34^{+1.58}_{-1.55}$ \\ \midrule
-% 82mRb & $\sigma_c$ & $2.39\pm0.18$           & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 83Sr  & $\sigma_c$ & $3.88\pm0.56$           & $4.63\pm0.34$           & $3.42\pm0.32$           & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 85 Y  & $\sigma_c$ & $13.31\pm0.30$          & $7.28\pm0.44$           & $2.06\pm0.12$           & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 85gY  & $\sigma_i$ & $2.286\pm0.057$         & $2.010\pm0.150$         & $0.545\pm0.030$         & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 85mY  & $\sigma_i$ & $11.03\pm0.30$          & $5.27\pm0.42$           & $1.52\pm0.12$           & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 86Zr  & $\sigma_c$ & $12.25\pm0.32$          & $17.63\pm0.44$          & $18.86\pm0.43$          & $6.00\pm0.15$           & \hrulefill              & \hrulefill              \\
-% 86Y   & $\sigma_c$ & $32.25\pm0.89$          & $40.30\pm1.07$          & $39.02\pm1.00$          & $13.22\pm0.34$          & \hrulefill              & \hrulefill              \\
+% 82mRb & $\sigma_c$ & $2.39\pm0.18$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 83Sr  & $\sigma_c$ & $3.88\pm0.56$           & $4.63\pm0.34$           & $3.42\pm0.32$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 85 Y  & $\sigma_c$ & $13.31\pm0.30$          & $7.28\pm0.44$           & $2.06\pm0.12$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 85gY  & $\sigma_i$ & $2.286\pm0.057$         & $2.010\pm0.150$         & $0.545\pm0.030$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 85mY  & $\sigma_i$ & $11.03\pm0.30$          & $5.27\pm0.42$           & $1.52\pm0.12$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 86Zr  & $\sigma_c$ & $12.25\pm0.32$          & $17.63\pm0.44$          & $18.86\pm0.43$          & $6.00\pm0.15$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 86Y   & $\sigma_c$ & $32.25\pm0.89$          & $40.30\pm1.07$          & $39.02\pm1.00$          & $13.22\pm0.34$          & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 % 87Zr  & $\sigma_c$ & $45.82\pm5.82$          & $27.09\pm1.72$          & $31.46\pm1.49$          & $48.55\pm2.92$          & $37.66\pm1.58$          & $1.13\pm0.10$           \\
 % 87 Y  & $\sigma_c$ & $106.26\pm5.81$         & $52.92\pm1.70$          & $59.63\pm1.47$          & $87.77\pm2.90$          & $66.29\pm1.56$          & $2.93\pm0.10$           \\
 % 87gY  & $\sigma_i$ & $27.03\pm5.45$          & $7.15\pm1.19$           & $6.41\pm0.55$           & $5.65\pm2.13$           & $2.59\pm0.45$           & $0.949\pm0.045$         \\
 % 87mY  & $\sigma_i$ & $79.23\pm2.01$          & $45.78\pm1.22$          & $53.22\pm1.37$          & $82.12\pm1.97$          & $63.70\pm1.49$          & $1.98\pm0.09$           \\
 % 88Zr  & $\sigma_c$ & $153.69\pm3.93$         & $140.02\pm3.48$         & $60.99\pm1.70$          & $20.65\pm0.49$          & $33.16\pm0.97$          & $65.82\pm1.32$          \\
 % 88Y   & $\sigma_c$ & $16.64\pm0.76$          & $12.85\pm0.60$          & $7.81\pm0.61$           & $2.83\pm0.20$           & $9.05\pm1.33$           & $9.96\pm0.33$           \\
-% 89 Nb & $\sigma_c$ & \hrulefill              & \hrulefill              & $175.52\pm12.44$        & $208.99\pm4.33$         & \hrulefill              & \hrulefill              \\
-% 89gNb & $\sigma_i$ & \hrulefill              & \hrulefill              & $141.58\pm12.28$        & $181.73\pm4.08$         & \hrulefill              & \hrulefill              \\
-% 89mNb & $\sigma_i$ & \hrulefill              & \hrulefill              & $33.94\pm1.97$          & $27.26\pm1.45$          & \hrulefill              & \hrulefill              \\
+% 89 Nb & $\sigma_c$ & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $175.52\pm12.44$        & $208.99\pm4.33$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 89gNb & $\sigma_i$ & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $141.58\pm12.28$        & $181.73\pm4.08$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 89mNb & $\sigma_i$ & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $33.94\pm1.97$          & $27.26\pm1.45$          & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 % 89Zr  & $\sigma_c$ & $203.76\pm5.32$         & $235.36\pm6.57$         & $287.50\pm6.76$         & $250.32\pm5.77$         & $54.63\pm1.15$          & $15.61\pm0.31$          \\
 % 90Mo  & $\sigma_c$ & $20.57\pm0.68$          & $25.58\pm0.76$          & $33.75\pm0.90$          & $60.38\pm1.86$          & $120.28\pm2.93$         & $24.38\pm0.71$          \\
 % 90Nb  & $\sigma_c$ & $152.93\pm4.72$         & $169.31\pm4.78$         & $204.70\pm5.79$         & $265.19\pm7.77$         & $363.35\pm9.78$         & $165.16\pm4.54$         \\
-% 91mNb & $\sigma_c$ & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              & $66.96\pm4.16$          \\
+% 91mNb & $\sigma_c$ & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $66.96\pm4.16$          \\
 % 92mNb & $\sigma_c$ & $42.18\pm1.15$          & $45.74\pm1.16$          & $48.75\pm1.21$          & $51.59\pm1.34$          & $54.49\pm1.37$          & $60.36\pm1.23$          \\
 % 93mMo & $\sigma_c$ & $0.93\pm0.18$           & $1.25\pm0.13$           & $1.58\pm0.22$           & $1.80\pm0.12$           & $1.83\pm0.10$           & $2.010\pm0.084$         \\ \bottomrule
 % \end{tabular}
@@ -952,26 +960,26 @@ The propagated uncertainty in these cross sections varies widely based on the re
 % \toprule
 %       &            & \multicolumn{6}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){3-8} 
 %       & E\_p (MeV) & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ & $69.70^{+0.90}_{-0.85}$ & $61.07^{+1.05}_{-0.98}$ & $51.51^{+1.25}_{-1.21}$ & $40.34^{+1.58}_{-1.55}$ \\ \midrule
-% \ce{^{82m}Rb} & $\sigma_c$ & $2.39\pm0.18$           & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 83Sr  & $\sigma_c$ & $3.88\pm0.56$           & $4.63\pm0.34$           & $3.42\pm0.32$           & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 85 Y  & $\sigma_c$ & $13.31\pm0.30$          & $7.28\pm0.44$           & $2.06\pm0.12$           & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 85gY  & $\sigma_i$ & $2.286\pm0.057$         & $2.010\pm0.150$         & $0.545\pm0.030$         & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 85mY  & $\sigma_i$ & $11.03\pm0.30$          & $5.27\pm0.42$           & $1.52\pm0.12$           & \hrulefill              & \hrulefill              & \hrulefill              \\
-% 86Zr  & $\sigma_c$ & $12.25\pm0.32$          & $17.63\pm0.44$          & $18.86\pm0.43$          & $6.00\pm0.15$           & \hrulefill              & \hrulefill              \\
-% 86Y   & $\sigma_c$ & $32.25\pm0.89$          & $40.30\pm1.07$          & $39.02\pm1.00$          & $13.22\pm0.34$          & \hrulefill              & \hrulefill              \\
+% \ce{^{82m}Rb} & $\sigma_c$ & $2.39\pm0.18$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 83Sr  & $\sigma_c$ & $3.88\pm0.56$           & $4.63\pm0.34$           & $3.42\pm0.32$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 85 Y  & $\sigma_c$ & $13.31\pm0.30$          & $7.28\pm0.44$           & $2.06\pm0.12$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 85gY  & $\sigma_i$ & $2.286\pm0.057$         & $2.010\pm0.150$         & $0.545\pm0.030$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 85mY  & $\sigma_i$ & $11.03\pm0.30$          & $5.27\pm0.42$           & $1.52\pm0.12$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 86Zr  & $\sigma_c$ & $12.25\pm0.32$          & $17.63\pm0.44$          & $18.86\pm0.43$          & $6.00\pm0.15$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 86Y   & $\sigma_c$ & $32.25\pm0.89$          & $40.30\pm1.07$          & $39.02\pm1.00$          & $13.22\pm0.34$          & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 % 87Zr  & $\sigma_c$ & $45.82\pm5.82$          & $27.09\pm1.72$          & $31.46\pm1.49$          & $48.55\pm2.92$          & $37.66\pm1.58$          & $1.13\pm0.10$           \\
 % 87 Y  & $\sigma_c$ & $106.26\pm5.81$         & $52.92\pm1.70$          & $59.63\pm1.47$          & $87.77\pm2.90$          & $66.29\pm1.56$          & $2.93\pm0.10$           \\
 % 87gY  & $\sigma_i$ & $27.03\pm5.45$          & $7.15\pm1.19$           & $6.41\pm0.55$           & $5.65\pm2.13$           & $2.59\pm0.45$           & $0.949\pm0.045$         \\
 % 87mY  & $\sigma_i$ & $79.23\pm2.01$          & $45.78\pm1.22$          & $53.22\pm1.37$          & $82.12\pm1.97$          & $63.70\pm1.49$          & $1.98\pm0.09$           \\
 % 88Zr  & $\sigma_c$ & $153.69\pm3.93$         & $140.02\pm3.48$         & $60.99\pm1.70$          & $20.65\pm0.49$          & $33.16\pm0.97$          & $65.82\pm1.32$          \\
 % 88Y   & $\sigma_c$ & $16.64\pm0.76$          & $12.85\pm0.60$          & $7.81\pm0.61$           & $2.83\pm0.20$           & $9.05\pm1.33$           & $9.96\pm0.33$           \\
-% 89 Nb & $\sigma_c$ & \hrulefill              & \hrulefill              & $175.52\pm12.44$        & $208.99\pm4.33$         & \hrulefill              & \hrulefill              \\
-% 89gNb & $\sigma_i$ & \hrulefill              & \hrulefill              & $141.58\pm12.28$        & $181.73\pm4.08$         & \hrulefill              & \hrulefill              \\
-% 89mNb & $\sigma_i$ & \hrulefill              & \hrulefill              & $33.94\pm1.97$          & $27.26\pm1.45$          & \hrulefill              & \hrulefill              \\
+% 89 Nb & $\sigma_c$ & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $175.52\pm12.44$        & $208.99\pm4.33$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 89gNb & $\sigma_i$ & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $141.58\pm12.28$        & $181.73\pm4.08$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+% 89mNb & $\sigma_i$ & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $33.94\pm1.97$          & $27.26\pm1.45$          & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 % 89Zr  & $\sigma_c$ & $203.76\pm5.32$         & $235.36\pm6.57$         & $287.50\pm6.76$         & $250.32\pm5.77$         & $54.63\pm1.15$          & $15.61\pm0.31$          \\
 % 90Mo  & $\sigma_c$ & $20.57\pm0.68$          & $25.58\pm0.76$          & $33.75\pm0.90$          & $60.38\pm1.86$          & $120.28\pm2.93$         & $24.38\pm0.71$          \\
 % 90Nb  & $\sigma_c$ & $152.93\pm4.72$         & $169.31\pm4.78$         & $204.70\pm5.79$         & $265.19\pm7.77$         & $363.35\pm9.78$         & $165.16\pm4.54$         \\
-% 91mNb & $\sigma_c$ & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              & $66.96\pm4.16$          \\
+% 91mNb & $\sigma_c$ & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $66.96\pm4.16$          \\
 % 92mNb & $\sigma_c$ & $42.18\pm1.15$          & $45.74\pm1.16$          & $48.75\pm1.21$          & $51.59\pm1.34$          & $54.49\pm1.37$          & $60.36\pm1.23$          \\
 % 93mMo & $\sigma_c$ & $0.93\pm0.18$           & $1.25\pm0.13$           & $1.58\pm0.22$           & $1.80\pm0.12$           & $1.83\pm0.10$           & $2.010\pm0.084$         \\ \bottomrule
 % \end{tabular}
@@ -991,19 +999,19 @@ The propagated uncertainty in these cross sections varies widely based on the re
 \toprule
                             & \multicolumn{6}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-7} 
 E$_\text{p}$ (MeV)          & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ & $70.17^{+0.91}_{-0.85}$ & $61.58^{+1.03}_{-0.98}$ & $52.10^{+1.25}_{-1.20}$ & $41.05^{+1.62}_{-1.54}$ \\ \midrule
-\ce{^{51}Cr}\,($\sigma_c$)    & $0.888\pm0.058$         & $0.361\pm0.015$         & $0.440\pm0.019$         & $0.2949\pm0.0070$       & \hrulefill              & \hrulefill              \\
-\ce{^{52}Mn}\,($\sigma_c$)    & $1.640\pm0.042$         & $0.552\pm0.014$         & $0.0398\pm0.0012$       & $0.00513\pm0.00051$     & \hrulefill              & \hrulefill              \\
-\ce{^{52g}Mn}\,($\sigma_i$)   & $0.650\pm0.018$         & $0.231\pm0.013$         & $0.0160\pm0.0021$       & $0.000961\pm0.000027$   & \hrulefill              & \hrulefill              \\
-\ce{^{52m}Mn}\,($\sigma_i$)   & $0.989\pm0.037$         & $0.321\pm0.020$         & $0.0238\pm0.0032$       & $0.00417\pm0.00043$     & \hrulefill              & \hrulefill              \\
-\ce{^{54}Mn}\,($\sigma_c$)    & $5.67\pm0.15$           & $3.65\pm0.11$           & $4.05\pm0.11$           & $4.71\pm0.12$           & $1.656\pm0.042$         & \hrulefill              \\
-\ce{^{55}Co}\,($\sigma_c$)    & $1.656\pm0.048$         & $0.983\pm0.030$         & $0.1892\pm0.0076$       & $0.0291\pm0.0024$       & $0.00231\pm0.00019$     & \hrulefill              \\
-\ce{^{56}Ni}\,($\sigma_c$)    & $0.0779\pm0.0022$       & $0.0973\pm0.0025$       & $0.0886\pm0.0022$       & $0.02967\pm0.00079$     & \hrulefill              & \hrulefill              \\
+\ce{^{51}Cr}\,($\sigma_c$)    & $0.888\pm0.058$         & $0.361\pm0.015$         & $0.440\pm0.019$         & $0.2949\pm0.0070$       & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+\ce{^{52}Mn}\,($\sigma_c$)    & $1.640\pm0.042$         & $0.552\pm0.014$         & $0.0398\pm0.0012$       & $0.00513\pm0.00051$     & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+\ce{^{52g}Mn}\,($\sigma_i$)   & $0.650\pm0.018$         & $0.231\pm0.013$         & $0.0160\pm0.0021$       & $0.000961\pm0.000027$   & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+\ce{^{52m}Mn}\,($\sigma_i$)   & $0.989\pm0.037$         & $0.321\pm0.020$         & $0.0238\pm0.0032$       & $0.00417\pm0.00043$     & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+\ce{^{54}Mn}\,($\sigma_c$)    & $5.67\pm0.15$           & $3.65\pm0.11$           & $4.05\pm0.11$           & $4.71\pm0.12$           & $1.656\pm0.042$         & --\cmmnt{\hrulefill}              \\
+\ce{^{55}Co}\,($\sigma_c$)    & $1.656\pm0.048$         & $0.983\pm0.030$         & $0.1892\pm0.0076$       & $0.0291\pm0.0024$       & $0.00231\pm0.00019$     & --\cmmnt{\hrulefill}              \\
+\ce{^{56}Ni}\,($\sigma_c$)    & $0.0779\pm0.0022$       & $0.0973\pm0.0025$       & $0.0886\pm0.0022$       & $0.02967\pm0.00079$     & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 \ce{^{57}Ni}\,($\sigma_c$)    & $1.416\pm0.039$         & $1.164\pm0.030$         & $1.370\pm0.033$         & $2.074\pm0.051$         & $1.543\pm0.035$         & $0.02638\pm0.00077$     \\
 \ce{^{57}Co}\,($\sigma_i$)    & $38.78\pm0.99$          & $34.42\pm0.84$          & $35.06\pm0.81$          & $47.3\pm1.1$            & $47.0\pm1.1$            & $3.227\pm0.081$         \\
 \ce{^{58}Co}\,($\sigma_c$)    & $55.7\pm3.5$            & $53.2\pm4.1$            & $41.8\pm2.9$            & $32.8\pm2.5$            & $38.4\pm3.4$            & $62.7\pm3.4$            \\
 \ce{^{58g}Co}\,($\sigma_i$)   & $13.6\pm2.3$            & $10.5\pm1.9$            & $5.9\pm1.6$             & $7.6\pm1.3$             & $7.0\pm1.7$             & $1.13\pm0.31$           \\
 \ce{^{58m}Co}\,($\sigma_i$)   & $42.2\pm2.7$            & $42.8\pm3.6$            & $35.8\pm2.5$            & $25.2\pm2.1$            & $31.5\pm2.9$            & $61.6\pm3.4$            \\
-\ce{^{59}Fe}\,($\sigma_c$)    & $0.836\pm0.027$         & $0.810\pm0.022$         & $0.733\pm0.020$         & $0.601\pm0.017$         & $0.206\pm0.010$         & \hrulefill        \\
+\ce{^{59}Fe}\,($\sigma_c$)    & $0.836\pm0.027$         & $0.810\pm0.022$         & $0.733\pm0.020$         & $0.601\pm0.017$         & $0.206\pm0.010$         & --\cmmnt{\hrulefill}        \\
 \ce{^{60}Co}\,($\sigma_c$)    & $12.79\pm0.43$          & $13.04\pm0.42$          & $10.89\pm0.78$          & $11.15\pm0.58$          & $9.17\pm0.74$           & $6.7\pm1.0$             \\
 \ce{^{61}Cu}\,($\sigma_c$)    & $48.8\pm1.5$            & $54.4\pm1.7$            & $63.7\pm2.1$            & $70.3\pm2.1$            & $79.5\pm2.7$            & $158.2\pm3.2$           \\
 \ce{^{64}Cu}\,($\sigma_c$)    & $37.4\pm1.4$            & $41.4\pm1.2$            & $44.5\pm1.7$            & $49.0\pm1.5$            & $54.9\pm1.4$            & $63.7\pm1.6$            \\ \bottomrule
@@ -1022,26 +1030,26 @@ E$_\text{p}$ (MeV)          & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ 
 \toprule
                             & \multicolumn{6}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-7} 
 E$_\text{p}$ (MeV)          & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ & $69.70^{+0.90}_{-0.85}$ & $61.07^{+1.05}_{-0.98}$ & $51.51^{+1.25}_{-1.21}$ & $40.34^{+1.58}_{-1.55}$ \\ \midrule
-\ce{^{82m}Rb}\,($\sigma_c$)   & $2.39\pm0.18$           & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              \\
-\ce{^{83}Sr}\,($\sigma_c$)    & $3.88\pm0.56$           & $4.63\pm0.34$           & $3.42\pm0.32$           & \hrulefill              & \hrulefill              & \hrulefill              \\
-\ce{^{85}Y}\,($\sigma_c$)     & $13.31\pm0.30$          & $7.28\pm0.44$           & $2.06\pm0.12$           & \hrulefill              & \hrulefill              & \hrulefill              \\
-\ce{^{85g}Y}\,($\sigma_i$)    & $2.286\pm0.057$         & $2.01\pm0.15$           & $0.545\pm0.030$         & \hrulefill              & \hrulefill              & \hrulefill              \\
-\ce{^{85m}Y}\,($\sigma_i$)    & $11.03\pm0.30$          & $5.27\pm0.42$           & $1.52\pm0.12$           & \hrulefill              & \hrulefill              & \hrulefill              \\
-\ce{^{86}Zr}\,($\sigma_c$)    & $12.25\pm0.32$          & $17.63\pm0.44$          & $18.86\pm0.43$          & $6.00\pm0.15$           & \hrulefill              & \hrulefill              \\
-\ce{^{86}Y}\,($\sigma_i$)     & $32.25\pm0.89$          & $40.3\pm1.1$            & $39.0\pm1.0$            & $13.22\pm0.34$          & \hrulefill              & \hrulefill              \\
+\ce{^{82m}Rb}\,($\sigma_c$)   & $2.39\pm0.18$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+\ce{^{83}Sr}\,($\sigma_c$)    & $3.88\pm0.56$           & $4.63\pm0.34$           & $3.42\pm0.32$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+\ce{^{85}Y}\,($\sigma_c$)     & $13.31\pm0.30$          & $7.28\pm0.44$           & $2.06\pm0.12$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+\ce{^{85g}Y}\,($\sigma_i$)    & $2.286\pm0.057$         & $2.01\pm0.15$           & $0.545\pm0.030$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+\ce{^{85m}Y}\,($\sigma_i$)    & $11.03\pm0.30$          & $5.27\pm0.42$           & $1.52\pm0.12$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+\ce{^{86}Zr}\,($\sigma_c$)    & $12.25\pm0.32$          & $17.63\pm0.44$          & $18.86\pm0.43$          & $6.00\pm0.15$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+\ce{^{86}Y}\,($\sigma_i$)     & $32.25\pm0.89$          & $40.3\pm1.1$            & $39.0\pm1.0$            & $13.22\pm0.34$          & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 \ce{^{87}Zr}\,($\sigma_c$)    & $45.8\pm5.8$            & $27.1\pm1.7$            & $31.5\pm1.5$            & $48.5\pm2.9$            & $37.7\pm1.6$            & $1.13\pm0.10$           \\
 \ce{^{87}Y}\,($\sigma_i$)     & $106.3\pm5.8$           & $52.9\pm1.7$            & $59.6\pm1.5$            & $87.8\pm2.9$            & $66.3\pm1.6$            & $2.93\pm0.10$           \\
 \ce{^{87g}Y}\,($\sigma_i$)    & $27.0\pm5.4$            & $7.1\pm1.2$             & $6.41\pm0.55$           & $5.6\pm2.1$             & $2.59\pm0.45$           & $0.949\pm0.045$         \\
 \ce{^{87m}Y}\,($\sigma_i$)    & $79.2\pm2.0$            & $45.8\pm1.2$            & $53.2\pm1.4$            & $82.1\pm2.0$            & $63.7\pm1.5$            & $1.983\pm0.093$         \\
 \ce{^{88}Zr}\,($\sigma_c$)    & $153.7\pm3.9$           & $140.0\pm3.5$           & $61.0\pm1.7$            & $20.65\pm0.49$          & $33.16\pm0.97$          & $65.8\pm1.3$            \\
 \ce{^{88}Y}\,($\sigma_i$)     & $16.64\pm0.76$          & $12.85\pm0.60$          & $7.81\pm0.61$           & $2.83\pm0.20$           & $9.0\pm1.3$             & $9.96\pm0.33$           \\
-\ce{^{89}Nb}\,($\sigma_c$)    & \hrulefill              & \hrulefill              & $176\pm12$          & $209.0\pm4.3$           & \hrulefill              & \hrulefill              \\
-\ce{^{89g}Nb}\,($\sigma_i$)   & \hrulefill              & \hrulefill              & $142\pm12$          & $181.7\pm4.1$           & \hrulefill              & \hrulefill              \\
-\ce{^{89m}Nb}\,($\sigma_i$)   & \hrulefill              & \hrulefill              & $33.9\pm2.0$            & $27.3\pm1.4$            & \hrulefill              & \hrulefill              \\
+\ce{^{89}Nb}\,($\sigma_c$)    & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $176\pm12$          & $209.0\pm4.3$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+\ce{^{89g}Nb}\,($\sigma_i$)   & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $142\pm12$          & $181.7\pm4.1$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
+\ce{^{89m}Nb}\,($\sigma_i$)   & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $33.9\pm2.0$            & $27.3\pm1.4$            & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 \ce{^{89}Zr}\,($\sigma_i$)   & $203.8\pm5.3$           & $235.4\pm6.6$           & $287.5\pm6.8$           & $250.3\pm5.8$           & $54.6\pm1.1$            & $15.61\pm0.31$          \\
 \ce{^{90}Mo}\,($\sigma_c$)    & $20.6\pm0.7$            & $25.58\pm0.76$          & $33.75\pm0.90$          & $60.4\pm1.9$            & $120.3\pm2.9$           & $24.38\pm0.71$          \\
 \ce{^{90}Nb}\,($\sigma_i$)    & $152.9\pm4.7$           & $169.3\pm4.8$           & $204.7\pm5.8$           & $265.2\pm7.8$           & $363.4\pm9.8$           & $165.2\pm4.5$           \\
-\ce{^{91m}Nb}\,($\sigma_c$)   & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              & \hrulefill              & $67.0\pm4.2$            \\
+\ce{^{91m}Nb}\,($\sigma_c$)   & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $67.0\pm4.2$            \\
 \ce{^{92m}Nb}\,($\sigma_c$)   & $42.2\pm1.2$            & $45.7\pm1.2$            & $48.8\pm1.2$            & $51.6\pm1.3$            & $54.5\pm1.4$            & $60.4\pm1.2$            \\
 \ce{^{93m}Mo}\,($\sigma_c$)   & $0.93\pm0.18$           & $1.25\pm0.13$           & $1.58\pm0.22$           & $1.80\pm0.12$           & $1.83\pm0.10$           & $2.010\pm0.084$         \\ \bottomrule
 \end{tabular}
@@ -1064,12 +1072,12 @@ E$_\text{p}$ (MeV)          & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ 
 \toprule
                                & \multicolumn{6}{c}{Isomer branching ratio}                                                                                                                \\ \cmidrule(l){2-7} 
 E$_\text{p}$ (MeV)             & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ & $70.17^{+0.91}_{-0.85}$ & $61.58^{+1.03}_{-0.98}$ & $52.10^{+1.25}_{-1.20}$ & $41.05^{+1.62}_{-1.54}$ \\ \midrule
-\ce{^{nat}Cu}(p,x)\ce{^{52}Mn} & $0.603\pm0.027$         & $0.581\pm0.038$         & $0.598\pm0.083$         & $0.81\pm0.12$         & \hrulefill              & \hrulefill              \\
+\ce{^{nat}Cu}(p,x)\ce{^{52}Mn} & $0.603\pm0.027$         & $0.581\pm0.038$         & $0.598\pm0.083$         & $0.81\pm0.12$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 \ce{^{nat}Cu}(p,x)\ce{^{58}Co} & $0.757\pm0.068$         & $0.804\pm0.091$         & $0.858\pm0.084$         & $0.767\pm0.086$         & $0.82\pm0.11$         & $0.982\pm0.075$    \vspace{1em}     \\ 
 E$_\text{p}$ (MeV)             & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ & $69.70^{+0.90}_{-0.85}$ & $61.07^{+1.05}_{-0.98}$ & $51.51^{+1.25}_{-1.21}$ & $40.34^{+1.58}_{-1.55}$ \\ \midrule
-\ce{^{nat}Nb}(p,x)\ce{^{85}Y}  & $0.828\pm0.029$         & $0.724\pm0.072$         & $0.736\pm0.072$         & \hrulefill              & \hrulefill              & \hrulefill              \\
+\ce{^{nat}Nb}(p,x)\ce{^{85}Y}  & $0.828\pm0.029$         & $0.724\pm0.072$         & $0.736\pm0.072$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 \ce{^{nat}Nb}(p,x)\ce{^{87}Y}  & $0.746\pm0.045$         & $0.865\pm0.036$         & $0.893\pm0.032$         & $0.936\pm0.038$         & $0.961\pm0.032$         & $0.676\pm0.040$         \\
-\ce{^{nat}Nb}(p,x)\ce{^{89}Nb} & \hrulefill              & \hrulefill              & $0.193\pm0.018$         & $0.1304\pm0.0074$         & \hrulefill              & \hrulefill              \\ \bottomrule
+\ce{^{nat}Nb}(p,x)\ce{^{89}Nb} & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $0.193\pm0.018$         & $0.1304\pm0.0074$         &      --\cmmnt{\hrulefill}         & --\cmmnt{\hrulefill}              \\ \bottomrule
 \end{tabular}
 }
 \end{table}
@@ -1088,19 +1096,19 @@ Not only do the \ce{^{nat}Nb}(p,x) measurements in this work fill in the sparse 
 
 Furthermore, this work presents the first measurements of several observables in these mass regions.
 This work reports the first experimental measurement of the \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction in the 40 - 90 MeV region.
-We also present here the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn} ($2^+$) and  \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}  ($6^+$), as well as their  isomer branching ratio via \ce{^{nat}Cu}(p,x).  
-The cumulative cross section from these data are consistent with existing measurements of the cumulative \ce{^{nat}Cu}(p,x)\ce{^{52}Mn} cross section.
+It also represents  the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn} ($2^+$) and  \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}  ($6^+$), as well as their  isomer branching ratio via \ce{^{nat}Cu}(p,x).  
+The cumulative cross sections from these data are also consistent with existing measurements of the cumulative \ce{^{nat}Cu}(p,x)\ce{^{52}Mn} cross section.
 Similarly, this work offers the first measurement of the independent cross sections for \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y},  as well as the first measurement of the     \ce{^{85\text{m}}Y} ($\sfrac{9}{2}^+$) / \ce{^{85\text{g}}Y}  ($t\sfrac{1}{2}^-$) isomer branching ratio via \ce{^{nat}Nb}(p,x).
 
 
 
-Notably, this work serves as the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100 MeV to date, with cross sections measured in this energy region at the 2-3\% uncertainty level.
+Notably, this work serves as the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100 MeV to date, with cross sections measured  at the 2-3\% uncertainty level.
 This is important, as it presents the first step towards characterizing this reaction for use as a proton dosimetry standard below 100 MeV.
 The quantification of \ce{^{90}Mo} activity proved to be one of the most straightforward of all reaction products observed in this work.
 \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} can only be populated through the (p,4n) reaction channel, so no corrections for (n,x) contamination channels or decay down the A=90 isobar are needed, which makes activity quantification trivial.
-In addition, \ce{^{90}Mo}  possesses seven strong, distinct gamma lines which are easily able to be used for the identification and quantification of produced \ce{^{90}Mo}.
-Finally, the production of \ce{^{90}Mo}  in the 40 - 90 MeV region is well-fed, with a peak cross section of approximately 120 mb, which creates a strong signal for activity quantification.
-While additional measurements are needed to improve the characterization of this excitation function, this clearly presents the first step towards the use of \ce{^{90}Mo} as a clean and precise monitor for charged particle dosimetry in irradiations up to approximately 24 hours in duration.
+In addition, \ce{^{90}Mo}  possesses seven strong, distinct gamma lines which can easily  be used for its identification and quantification.
+Finally, the production of \ce{^{90}Mo}  in the 40 - 90 MeV region is quite strong, with a peak cross section of approximately 120 mb.
+This result presents the first step towards the use of \ce{^{90}Mo} as a clean and precise monitor for charged particle dosimetry in irradiations up to approximately 24 hours in duration.
 
 
 
@@ -1118,29 +1126,30 @@ Lower-energy production via \ce{^{nat}Co}(p,3n) at 24-40 MeV is below threshold 
 
 
 \ce{^{86}Y} ($t_{1/2}=14.74\pm0.02$ h, $\epsilon$=100\% to \ce{^{86}Sr}  \cite{NEGRET20151}) is another novel  emerging  PET emitter, whose longer half-life has poised it for applications as a tracer for slower metabolic processes, as well as in   pharmacokinetics studies \cite{Nickles2003,Qaim2008,QaimSyedM2011}.
-In particular, it is highly desired to form a theranostic pair with the widely-employed $\beta^-$ therapy agent \ce{^{90}Y} ($t_{1/2}=64.00\pm0.21$ h, $\beta^-$=100\% to \ce{^{90}Zr} \cite{Browne1997}), which emits no observable gamma rays or x-rays though decay, necessitating an imaging isotope to be paired with for quantification of its uptake and biodistribution  \cite{Herzog1993}.
-Conventional production of \ce{^{86}Y} proceeds through low-energy (7 - 14 MeV) irradiation via \ce{^{86}Sr}(p,n), which requires an enriched  \ce{^{86}Sr} target (9.86\% natural abundance), lest it suffer contamination from (p,n) on the other stable \ce{^{84,87,88}Sr} isotopes  \cite{Rosch1993}.
+In particular, it is highly desired to form a theranostic pair with the widely-employed $\beta^-$ therapy agent \ce{^{90}Y} ($t_{1/2}=64.00\pm0.21$ h, $\beta^-$=100\% to \ce{^{90}Zr} \cite{Browne1997}), which can be produced from a long-lived \ce{^{90}Sr} cow and emits no observable gamma-rays or x-rays though decay, necessitating an imaging isotope to be paired with for quantification of its uptake and biodistribution  \cite{Herzog1993}.
+Conventional production of \ce{^{86}Y} proceeds through low-energy (7 - 14 MeV) irradiation via \ce{^{86}Sr}(p,n), which requires an enriched  \ce{^{86}Sr} target (9.86\% natural abundance), in order to eliminate contamination from (p,n) on the other stable \ce{^{84,87,88}Sr} isotopes  \cite{Rosch1993}.
 Alternatively, production at 33-43 MeV via \ce{^{88}Sr}(p,3n) has been proposed - this pathway also requires an enriched target (82.58\% natural abundance) for the same reason, but contamination with other Y co-activities will be even more pronounced than via (p,n), due to the opening of (p,n) and (p,2n) channels on all stable Sr isotopes \cite{doi:10.1139/v67-193,levkovski1991cross}.
 Minimizing activity from other isotopes of the element in question is essential for producing radionuclides in high specific activity, as these competing isotopes are often extremely difficult to separate out.
-Unfortunately, it would appear that \ce{^{nat}Nb}(p,x) is a poor route for  \ce{^{86}Y} production in this respect, as it only reaches a maximum of approximately 35\% of all radio-yttrium activities produced.
-This is because the dominant radio-yttrium activity in 40-90 MeV \ce{^{nat}Nb}(p,x) is  \ce{^{87}Y}, the largest obstacle to high-specific activity production of  \ce{^{86}Y} due to the unnecessary patient dose it contributes,  its comparable half-life, and the single neutron difference making efficient separations nearly impossible. 
+As a result, it would appear that \ce{^{nat}Nb}(p,x) is a poor route for  \ce{^{86}Y} production in this respect, as it only reaches a maximum of approximately 35\% of all radio-yttrium activities produced.
+This is because the dominant radio-yttrium activity in 40-90 MeV \ce{^{nat}Nb}(p,x) is  \ce{^{87}Y}, the largest obstacle to high-specific activity production of  \ce{^{86}Y} due to the unnecessary patient dose it contributes,  its comparable half-life, and the fact that separation is impractical.
 However,  \ce{^{87}Y} itself has application as a generator for  \ce{^{87m}Sr} ($t_{1/2}=2.815\pm0.012$ h, IT=99.70\% to \ce{^{87}Sr} \cite{Johnson2015}), which is used for imaging studies of metastatic bone cancers, especially when in a theranostic pair with the established therapy agent \ce{^{89}Sr} ($t_{1/2}=50.563\pm0.0025$ d, $\beta^-$=100\% to \ce{^{89}Y} \cite{Singh2013}) \cite{Kiselev1974,Kandil2009}.
 Since the radio-yttrium purity of \ce{^{87}Y} is approximately 88\% between 51-61 MeV in \ce{^{nat}Nb}(p,x), this could present an intriguing route for  \ce{^{87}Y} production.
 
 
 
 
-\ce{^{89}Zr} ($t_{1/2}=78.41\pm0.12$ h, $\epsilon$=100\% to \ce{^{89}Y}  \cite{Singh2013}) is a long-lived PET emitter, whose long lifetime makes it useful as a tracer for slow biological processes, immune studies, and imaging of liver and  breast cancers \cite{Verel2003,Dijkers2009,Dijkers2010}.
+\ce{^{89}Zr} ($t_{1/2}=78.41\pm0.12$ h, $\epsilon$=100\% to \ce{^{89}Y}  \cite{Singh2013}) is a long-lived PET emitter, whose  lifetime makes it useful as a tracer for slow biological processes, immune studies, and imaging of liver and  breast cancers \cite{Verel2003,Dijkers2009,Dijkers2010}.
 Current production focuses on \ce{^{89}Y}(p,n)\ce{^{89}Zr} between 9 - 14 MeV, which offers an extremely high-purity route on a mono-isotopic target and a strong population of \ce{^{89}Zr}, with a peak cross section of nearly 800 mb   \cite{PhysRevC.38.1624,Omara2009}.
 Due to co-production of additional \ce{^{86,87,88}Zr} radio-zirconium,  \ce{^{nat}Nb}(p,x) is clearly inferior to  \ce{^{89}Y}(p,n)\ce{^{89}Zr}, as the Nb route has a smaller peak cross section of approximately 290 mb, and achieves only 50 -75\% radio-zirconium purity in the 50 - 90 MeV region.
 
 
 
 
-\ce{^{90}Nb} ($t_{1/2}=14.60 \pm 0.05$ h, $\epsilon$=100\% to \ce{^{90}Zr}  \cite{Browne1997}) is an emerging PET emitter with a moderate lifetime, making it suited for immune studies including tumor uptake studies    \cite{Busse2002,Radchenko2012}.
+\ce{^{90}Nb} ($t_{1/2}=14.60 \pm 0.05$ h, $\epsilon$=100\% to \ce{^{90}Zr}  \cite{Browne1997}) is an emerging PET emitter with a moderate lifetime, making it suited for immune and tumor uptake studies    \cite{Busse2002,Radchenko2012}.
 It is typically produced using 8 - 15 MeV protons via \ce{^{90}Zr}(p,n)\ce{^{89}Nb}, and requires an enriched target (51.45\% natural abundance), but produces a product with minimal contamination and a peak cross section of approximately 750 mb  \cite{Busse2002}.
 \ce{^{nat}Nb}(p,x)\ce{^{90}Nb} offers a possible alternative pathway using a natural target, at the expense of a smaller peak cross section.
 \ce{^{90}Nb} may be produced directly with an approximately 360 mb peak cross section and 87\% radio-niobium purity, or could be produced as a \ce{^{90}Mo}/\ce{^{90}Nb} generator, which would have nearly 100\% radio-molybdenum purity by using protons below the \ce{^{nat}Nb}(p,5n) threshold.
+However, the greatest problem with using the \ce{^{nat}Nb}(p,x) reaction to produce \ce{^{90}Nb} is the inability to separate the radioisotope from the target itself, rendering the production of a high-specific activity target impossible.  
 
 
 
@@ -1179,8 +1188,9 @@ It is clear that this production route offers no advantage over existing \ce{^{8
  
  \section{Conclusions}
 
-In summation, we present here a set of 38 measurements of cross sections for the \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40.34 - 89.74 MeV, as well as 5 independent measurements of isomer branching ratios.
-Nearly all cross sections have been reported with smaller uncertainties than previous measurements, and we report the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40 - 90 MeV region.
+In summation, we present here a set of 38 measurements of cross sections for the \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40--90 MeV, as well as 5 independent measurements of isomer branching ratios.
+Nearly all cross sections have been reported with smaller uncertainties than previous measurements.
+We report the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90 MeV region.
 We also use these measurements to illustrate the impact of pre-equilibrium particle emission in the reaction dynamics for 40 - 90 MeV \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
 Finally, this work provides another example of the usefulness of the recently-described variance minimization techniques for reducing energy uncertainties in stacked target charged particle irradiation experiments.
 
@@ -1224,8 +1234,8 @@ Finally, this work provides another example of the usefulness of the recently-de
 % %    \hline
 % %  
 % % \end{longtable}
-Table of decay data  for observed gamma rays. 
-The  values for lifetime and gamma ray branching ratios  listed here were used in all calculations of measured cross sections \cite{Basunia2015,Firestone2007,Wang2017,Dong2015,Dong2014,JUNDE2008787,Junde2011,Bhat1998,Nesaraja2010,BAGLIN2002,Browne2013,Zuber20151,NICHOLS2012973,Singh2007,Browne2010,Tuli2003,McCutchan2015,Singh2014,NEGRET20151,Johnson2015,McCutchan2014,Singh2013,Browne1997,Baglin2013,Baglin2012,Baglin2011}. 
+Table of decay data  for observed gamma-rays. 
+The  values for lifetime and gamma-ray branching ratios  listed here were used in all calculations of measured cross sections \cite{Basunia2015,Firestone2007,Wang2017,Dong2015,Dong2014,JUNDE2008787,Junde2011,Bhat1998,Nesaraja2010,BAGLIN2002,Browne2013,Zuber20151,NICHOLS2012973,Singh2007,Browne2010,Tuli2003,McCutchan2015,Singh2014,NEGRET20151,Johnson2015,McCutchan2014,Singh2013,Browne1997,Baglin2013,Baglin2012,Baglin2011}. 
 
 
 \comment{I had to remove about 30 of the lines I used from this table (removing the weakest lines in nuclides with even more lines than shown here, but never removing lines in nuclides with only 2 or less), as even splitting the data into 2 tables created tables too large to fit on a single page.  My purpose here was 1) to show that I used multiple lines to quantify each nuclide (increasing confidence in results), and 2) to list all the used \ce{^{90}Mo} lines, since they form the basis of it as a monitor.  Is this good as is, or should it be pared down even more?}
@@ -1235,7 +1245,7 @@ The  values for lifetime and gamma ray branching ratios  listed here were used i
 
 \begin{table}[ht]
 \centering
-\caption{Decay data for gamma rays observed in \ce{^{nat}Al}(p,x) and \ce{^{nat}Cu}(p,x).}
+\caption{Decay data for gamma-rays observed in \ce{^{nat}Al}(p,x) and \ce{^{nat}Cu}(p,x).}
 \label{tab:nudat_table_monitors}
 \begin{tabular}{@{}llll@{}}
 \toprule
@@ -1358,7 +1368,7 @@ Nuclide & Half-life & E$_\gamma$ (keV) & I$_\gamma$ (\%)\\
 
 \begin{table}[ht]
 \centering
-\caption{Decay data for gamma rays observed in \ce{^{nat}Nb}(p,x).}
+\caption{Decay data for gamma-rays observed in \ce{^{nat}Nb}(p,x).}
 \label{tab:nudat_table_nb}
 \begin{tabular}{@{}llll@{}}
 \toprule
