@@ -376,30 +376,31 @@ Nb+p \sep Cu+p \sep Niobium \sep Copper\sep Aluminum \sep \ce{^{90}Mo}  \sep Nuc
 
 Every year, approximately 17 million nuclear medicine procedures (both diagnostic and therapeutic) are performed in the U.S. alone - a multi-billion dollar industry which has made incredible strides in improving our ability to detect and treat a variety of life-threatening diseases \cite{Delbeke2011,NSACIsotopesSubcommittee2015}.
 The vast majority of the radioisotopes currently used for these procedures are produced in the field's array of low- (E \textless\ 30 MeV / A) and intermediate-energy (30 \textless\ E \textless\ 200 MeV / A) accelerator capabilities, which routinely produce many of the staple medical radionuclides, such as \ce{^{18}F} \ce{^{68}Ge}, \ce{^{82}Rb}, and \ce{^{123}I}, as well as many of the non-medical radioisotopes of commercial value, such as  \ce{^{32}Si}, \ce{^{73}As}, \ce{^{95m}Tc}, and  \ce{^{109}Cd} \cite{international2009iaea,schlyer2008cyclotron}. 
-\comment{Should \enquote{intermediate-energy} be less than 200 MeV, or 100 MeV?  I find conflicting descriptions in the literature.}
+\comment{Should \enquote{intermediate-energy} be less than 200 MeV, or 100 MeV?  I find conflicting descriptions in the literature.\\Lee:  I believe that 60 MeV is considered as the transition point\\ Stephen: }
  The future of nuclear medicine would appear to be the paradigm of personalized medicine - targeted radionuclide therapy to spare healthy tissue \cite{Mulford2005,Qaim201731}, and theranostic medicine, which pairs an imaging isotope with a therapeutic isotope of the same element, to provide simultaneous, real-time dose delivery and verification, leading to drastic reductions in prescribed patient dose \cite{Muller2014,Bentzen2005,Srivastava2012}. 
 Candidate isotopes to fill these needs have been identified based on their decay properties \cite{NSACIsotopesSubcommittee2015,Qaim201731,bernstein2015nuclear}, and a series of campaigns are underway to perform targeted, high-priority measurements of thin-target cross sections and thick-target integral yields, to facilitate production in sufficient quantities for cell studies.
 
 
-However, one significant obstacle exists for both high-fidelity measurements of emerging medical radionuclides, as well as conventional isotope production: well-characterized  dosimetry standards.  
-This is particularly true for intermediate-energy charged particle beams, where there is currently a paucity of such well-characterized data. 
+One significant obstacle to both high-fidelity measurements of production cross sections for emerging medical radionuclides, as well as conventional isotope production, is a lack of well-characterized  dosimetry standards.  
+This is particularly true for higher-energy charged particle beams, where there is currently a paucity of such data. 
 Indeed, the development of new dosimetry standards and the improved evaluation of existing standards is one of the areas of greatest cross-cutting need for nuclear data \cite{bernstein2015nuclear}. 
 Charged particle dosimetry data currently exists for low-to-intermediate energy charged particle beams (E \textless\ 50 MeV / A), but experimental data used for this evaluation is sparse above approximately 30 MeV / A and  uncertainties in experimental cross sections are large (6-15\%) \cite{gul2001charged}. 
-While work is needed to improve upon existing dosimetry data, the development of new dosimetry reactions can expand the available range of options for the monitoring of charged particle beams.
+While work is needed to improve upon existing dosimetry data, the development of new reactions can expand the available range of options for the monitoring of charged particle beams.
 
 
 Activation is one of the most fundamental techniques utilized in experimental nuclear physics, as it is a simple and straightforward method to probe the structure and behavior of nuclear matter,  dating back to the infancy of the field. 
-While the specifics have branched into ever-more-detailed probes into the world of the nucleus, activation, at heart, deals with the analysis and quantification of decaying radioactive nuclei created through irradiation via ionizing radiation \cite{ehmann1993radiochemistry,krüger1971principles}.
+All activation measurements involve the analysis and quantification of decaying radioactive nuclei created through irradiation via ionizing radiation \cite{ehmann1993radiochemistry,krüger1971principles}.
+\comment{Lee:  I think that you might want to mention a connection to BLIP, IPF, iThemba etc. here, and make it clear that you're dealing with protons only, not neutrons.  }
 Monitor reactions have  historically been part of such activation experiments, and in the context of charged particle induced reactions, serve two valuable purposes, depending upon the energy regime in question.  
-Between the reaction's energetic threshold  and the tail of its compound peak, the magnitude and shape of a monitor reaction's excitation function is rapidly changing with increasing incident particle energy.
-In this energy regime, a monitor reaction can be used to assign an energy bin to a thin irradiated target, especially when comparing between monitor reactions leading to two distinct residual nuclei from the same target, such as the $^\text{nat}$Cu(p,x)\ce{^{62}Zn} and $^\text{nat}$Cu(p,x)\ce{^{63}Zn} reactions \cite{gul2001charged}.
-This is extremely useful, as it allows one to screen for and eliminate systematic errors based on energy assignment, though this sensitivity to energy precludes their reliability as a beam current monitor.  
+Between the reaction's energetic threshold  and the end of its compound peak, the magnitude and shape of a monitor reaction's excitation function is rapidly changing with increasing incident particle energy, making it useful for assigning the incident particle energy bin in a thin irradiated target.
+This is particularly the case when comparing  monitor reactions leading to two distinct residual nuclei from the same target, such as the $^\text{nat}$Cu(p,x)\ce{^{62}Zn} and $^\text{nat}$Cu(p,x)\ce{^{63}Zn} reactions \cite{gul2001charged}.
+This is extremely valuable, as it allows the screening and minimization of systematic errors based on energy assignment, though this sensitivity to energy precludes their reliability as a beam current monitor.  
 
 Moving to the higher energy  of the reaction's pre-equilibrium tail, the excitation function becomes  smooth and generally flat as a function of energy.
 In this regime, the monitor reaction offers little-to-no energy sensitivity. 
-In return for giving up the ability to assign energy positions, monitor reactions in the pre-equilibrium regime become extremely useful for monitoring the integral beam current incident upon the target. 
-While cross section measurements often use external beam current monitors (such as an inductive pickup upstream of a target, or electrically-isolated target in a Faraday cup), these measure the integrated current incident upon an entire target assembly.
-For the case of stacked-target activation experiments, commonly employed to measure cross sections at multiple energy positions in a single activation, external beam current monitors can only measure the integral current incident upon the \enquote{front} (upstream) of the target stack.
+However,  in the pre-equilibrium regime, monitor reactions become extremely useful for determining the integral beam current. 
+While cross section measurements often use external beam current monitors (such as an inductive pickup upstream of a target, or an electrically-isolated target in a Faraday cup), these measure the integrated current incident upon an entire target assembly.
+For the case of stacked-target activation experiments, commonly employed to measure cross sections at multiple energies  in a single activation, external beam current monitors can only measure the integral current incident upon the \enquote{front} (upstream) of the target stack.
 In these experiments, a series of monitor foils at each energy position allow one to measure the integral current at each position in the stack, reducing systematic errors in observed cross section magnitude.
 Both of these purposes make well-characterized dosimetry an invaluable asset to any activation experiment. 
 
@@ -407,31 +408,29 @@ Both of these purposes make well-characterized dosimetry an invaluable asset to 
 
 In practice, nearly any radioisotope can serve as a reaction monitor. 
 However, several characteristics are hallmarks of a reaction monitor worthy to be classified as a dosimetry standard.
-The primary factor involved in selecting a new monitor is ensuring that the desired radionuclide has  at least one (preferably multiple, to ensure accurate radionuclide identification) distinct decay radiation able to used to uniquely identify it during post-activation assay.  
-Generally, this means selecting a radionuclide with a number of distinct gamma rays, as gamma spectroscopy is commonly used to identify and quantify reaction products.
-The decay radiation should preferably have high intensities, so that they show up as strong peaks during spectroscopy, and minimize the amount of time needed to count the activated target in order to achieve acceptable counting statistics. 
+The primary factor involved in selecting a new monitor is ensuring that the desired radionuclide emit  at least one (preferably multiple, to ensure accurate radionuclide identification) distinct decay gamma rays which can be used to uniquely identify it during post-activation assay.  
+Generally, this means selecting a radionuclide with a number of distinct gamma rays.
+The decay radiation should preferably have high intensities, so that they show up as strong peaks, and minimize the amount of time needed to count the activated target in order to achieve acceptable counting statistics. 
 
-Care should be taken to avoid cases where a radionuclide which is one decay off of stability populates excited states in the excited daughter nucleus also populated in the decay to the daughter state from the opposite side of the valley of stability.
-This produces decay gamma rays with nearly exactly the same energy, making it difficult to disentangle production from both sides of stability.
-For example, $^\text{nat}$Ti(p,x)\ce{^{48}V} is commonly used as dosimetry for 5 \textless\ E \textless\ 30 MeV protons.
-The characteristic decay lines in \ce{^{48}V}  ($t_{1/2}$ = 15.97 d, $\epsilon=100\%$ to \ce{^{48}Ti}) are the 983.525 keV ($I_\gamma=99.98\%$) and 1312.106 keV ($I_\gamma=98.2\%$) gammas, which are also seen in the decay of \ce{^{48}Sc}  ($t_{1/2}$ = 43.67 h, $\beta^-=100\%$ to \ce{^{48}Ti}), yielding  a 983.526 keV ($I_\gamma=100.1\%$) and 1312.120 keV ($I_\gamma=100.1\%$) line \cite{Burrows2006}.
+Care should be taken to avoid cases where two radionuclides which are produced by two different reactions on the same monitor foil lead to states in the same daughter nuclide.  
+For example, \ce{^{48}V}  ($t_{1/2}$ = 15.97 d, $\epsilon=100\%$ to \ce{^{48}Ti}) and \ce{^{48}Sc}  ($t_{1/2}$ = 43.67 h, $\beta^-=100\%$ to \ce{^{48}Ti}) can both be formed via $^\text{nat}$Ti(p,x) reactions, yielding the same 983.52 keV transition in \ce{^{48}Ti} \cite{Burrows2006}.
 Fortunately, these cases can occasionally be mitigated by either using a difference in half-life between the two feeding pathways to allow one to decay out, or by using a distinct gamma ray from one of the two isobar nuclei to subtract out the activity associated with it (such as the $E_\gamma=1037.522$ keV,$I_\gamma=97.6\%$ line in the decay of \ce{^{48}Ti}) \cite{Burrows2006}.
 However, this approach propagates larger uncertainties into the final activity of the desired monitor nucleus, so in principle it is far preferred to choose a monitor reaction which does not have overlapping gamma rays from another isobar nucleus.
 
 Another important decay factor to consider is that of the half-life of the desired monitor nucleus.
-It is preferred that the nucleus have a lifetime which is sufficiently long-lived to ensure that it may be quantified  conveniently and leisurely after end-of-beam without the majority if it decaying away.
+Ideally, the nucleus has a lifetime which is sufficiently long-lived to ensure that it may be quantified  conveniently and leisurely after end-of-beam without the majority if it decaying away.
 In addition, it is preferred that the lifetime be comparable to that of the reaction products being studied. 
 For proper quantification, it is also of vital importance that the proposed monitor nucleus have well-characterized decay data.
-A precise and well-established half-life is needed to properly correct for decay losses during production, as well as in between end-of-beam and the start of decay spectroscopy, but these are generally well-characterized.
+This includes a precise and well-established half-life,  needed to  correct for decay losses, as well as well-characterized decay gamma-ray intensities.
 In practice, the weakest components of decay data are often the gamma ray intensities, which can routinely have uncertainties of 5\% or more.
 Since this uncertainty is propagated in quadrature from the activity of both the monitor reaction and the reaction product being studied, choosing a monitor with a well-established gamma ray intensity can make a significant reduction in measured cross section uncertainties.
-It is also of utmost importance to choose a reaction channel which cannot be populated via secondary particles incident upon the monitor target.
+Lastly, and perhaps most importantly for high-energy dosimetry applications, it is  of utmost importance to choose a reaction channel which cannot be populated via secondary particles incident upon the monitor target.
 This is typically mostly a concern for secondary neutrons produced through (z,xn) reactions on upstream targets, degraders, and stack materials, to avoid monitor reactions which can be populated through (n,x) reactions on the target.
 Any monitor reaction channel which can be populated by anything other than the primary beam should be avoided, as it is often a laborious task to separate out the fraction of secondary particles contributing to the total activation.  
 
 
 
-Finally, from a targetry  perspective, it is preferable to use a target that is readily commercially available at an affordable price and is generally chemically inert - any significant chemical changes during target preparation (rapid oxidation, etc) will affect the target's areal density, systematically changing the measured integral current. 
+Finally, from a targetry  perspective, it is preferable to use a naturally mono-isotopic target that is readily commercially available at an affordable price and is generally chemically inert - any significant chemical changes during target preparation (significant oxidation, etc) will affect the target's areal density, systematically changing the measured integral current. 
 Structurally, the target material should be malleable and supportive to be able to be formed into a thin target.
 For charged particle reactions, a thin target is desired for dosimetry, as thicker targets will cause more energy degradation and broaden the energy spectrum downstream of the target.
 % These are the primary characteristics involved in choosing an appropriate target for a monitor reaction
@@ -460,7 +459,7 @@ For charged particle reactions, a thin target is desired for dosimetry, as thick
 
 
 One monitor reaction which satisfies these requirements is that of a new, intermediate-energy proton dosimetry standard based on \ce{^{93}Nb}(p,4n)\ce{^{90}Mo}. 
-Niobium is naturally monoisotopic, readily  available commercially in high purity, is chemically inert, and can easily be rolled down to foils as thin as 1 $\micro$m.  
+Niobium is naturally mono-isotopic, readily  available commercially in high purity, is chemically inert, and can easily be rolled down to foils as thin as 1 $\micro$m.  
 \ce{^{90}Mo} also has excellent decay properties - its fairly long-lived half-life ($\epsilon=100\%, t_{1/2}=5.56 \pm 0.09$ h) allows it to be counted at leisure without fear of the product \ce{^{90}Mo} decaying away excessively between end-of-beam and the start of counting, and it possesses seven strong, distinct gamma lines (notably its 122.370 keV ($I_\gamma = 64 \pm 3\%$) and 257.34 keV ($I_\gamma = 78 \pm 4\%$) lines) which can be used to uniquely and easily   quantify \ce{^{90}Mo} production \cite{Browne1997}. 
 In addition,  \ce{^{90}Mo} is completely immune from (n,x) production on  \ce{^{93}Nb}, being produced only via the primary proton beam, and the \ce{^{90}Mo} decay lines can only be observed in its decay, as its daughter, \ce{^{90}Nb}, is also unstable and decays via $\epsilon$ to stable \ce{^{90}Zr}. 
  
@@ -472,13 +471,13 @@ These include the non-standard positron emission tomography (PET) emitters \ce{^
   \comment{The following paragraph should only be included if we decide to touch on spin physics in this manuscript, or split it into a follow-on PhysRev C, etc.}
 
   
+In addition to being a potentially highly-valuable beam monitor, the Nb(p,x) reactions offer an opportunity to study the angular momentum deposition via pre-equilibrium reactions and the spin distribution in g$_{9/2}$ subshell nuclei via the observation of isomer-to-ground state ratios.  
 Measurements of isomer-to-ground state ratios have been used for over 20 years to probe the spin distribution of excited nuclear states in the A $\approx$ 190 region \cite{PhysRevC.73.034613,PhysRevC.45.1171}.
-In addition to the interest in the production of \ce{^{90}Mo} as an intermediate-energy dosimetry standard, this experiment offers an opportunity to study the distribution of angular momentum in compound nuclear and direct pre-equilibrium reactions via observation of a number of isomer-to-ground state ratios.
 These include the \ce{^{52\text{m}}Mn} ($t_{1/2}=21.1\pm0.2$ m; J$^\pi=2^+$) to \ce{^{52\text{g}}Mn}  ($t_{1/2}=5.591\pm0.003$ d; J$^\pi=6^+$), \ce{^{58\text{m}}Co} ($t_{1/2}=9.10\pm0.09$ h; J$^\pi=5^+$) to \ce{^{58\text{g}}Co}  ($t_{1/2}=70.86\pm0.06$ d; J$^\pi=2^+$),  \ce{^{85\text{m}}Y} ($t_{1/2}=4.86\pm0.13$ h; J$^\pi=\sfrac{9}{2}^+$) to \ce{^{85\text{g}}Y}  ($t_{1/2}=2.68\pm0.05$ h; J$^\pi=\sfrac{1}{2}^-$),  \ce{^{87\text{m}}Y} ($t_{1/2}=13.37\pm0.03$ h; J$^\pi=\sfrac{9}{2}^+$) to \ce{^{87\text{g}}Y}  ($t_{1/2}=79.8\pm0.3$ h; J$^\pi=\sfrac{1}{2}^-$),  and \ce{^{89\text{m}}Nb} ($t_{1/2}=66\pm2$ m; J$^\pi=\sfrac{1}{2}^-$) to \ce{^{89\text{g}}Nb}  ($t_{1/2}=2.03\pm0.07$ h; J$^\pi=\sfrac{9}{2}^+$)  ratios \cite{Dong2015,Nesaraja2010,Singh2014,Johnson2015,Singh2013}.  
  
  
-This measurement has taken place using a set of multiple monitor reactions in conjunction with statistical calculations and proton transport simulations to reduce systematic uncertainties in beam energy assignments, leading to some of the first and most precise measurements  for many of the excitation functions reported here. 
-By expanding the available set of dosimetry standards and well-characterized isotope production excitation functions, great advances are possible for improving the  available options for modern medical imaging and cancer therapy.
+The measurements described in this paper involve the use of multiple monitor reactions in conjunction with statistical calculations and proton transport simulations to reduce systematic uncertainties in beam energy assignments, leading to some of the first and most precise measurements  for many of the excitation functions reported here. 
+By expanding the available set of dosimetry standards and well-characterized isotope production excitation functions, this work should help optimize medical isotope production modalities, making more options   available for modern medical imaging and cancer therapy.
 
  
  
@@ -496,7 +495,7 @@ While the reactions and mass region being explored in this work differ from the 
 
 % \comment{Regex to replace all hard figure references with LaTeX cross-references  [F,f]igure[^s*}]     }
 
-The well-known stacked-target design was utilized for this work, in order that the (p,x) cross sections for each reaction channel could be measured at multiple energy positions in a single irradiation \cite{Cumming1963}. 
+A stacked-target design was utilized for this work in order that the (p,x) cross sections for each reaction channel could be measured at multiple energy positions in a single irradiation \cite{Cumming1963}. 
 For targets, a series of nominal 25 \micro m \ce{^{nat}Nb} foils (99.8\%, lot \#T23A035), 25 \micro m \ce{^{nat}Al} foils (99.999\%, lot \#M06C032), and 50 \micro m \ce{^{nat}Cu} foils (99.9999\%, lot \#N26B062) were used (all from Alfa Aesar, Ward Hill, MA, 01835, USA).
 Six foils of each metal were cut down to 2.5 x 2.5 cm squares and characterized - for each foil, length and width measurements were taken at four different locations using a Mitutoyo caliper, thickness measurements were taken at four different locations using a Mitutoyo micrometer, and four mass measurements were taken using an analytical balance after cleaning the foils with isopropyl alcohol.
 Using these length, width, and mass readings, the areal density (in mg/cm$^2$) for each foil was calculated, along with the propagated uncertainty in areal density.
@@ -1132,7 +1131,7 @@ Since the radio-yttrium purity of \ce{^{87}Y} is approximately 88\% between 51-6
 
 
 \ce{^{89}Zr} ($t_{1/2}=78.41\pm0.12$ h, $\epsilon$=100\% to \ce{^{89}Y}  \cite{Singh2013}) is a long-lived PET emitter, whose long lifetime makes it useful as a tracer for slow biological processes, immune studies, and imaging of liver and  breast cancers \cite{Verel2003,Dijkers2009,Dijkers2010}.
-Current production focuses on \ce{^{89}Y}(p,n)\ce{^{89}Zr} between 9 - 14 MeV, which offers an extremely high-purity route on a monoisotopic target and a strong population of \ce{^{89}Zr}, with a peak cross section of nearly 800 mb   \cite{PhysRevC.38.1624,Omara2009}.
+Current production focuses on \ce{^{89}Y}(p,n)\ce{^{89}Zr} between 9 - 14 MeV, which offers an extremely high-purity route on a mono-isotopic target and a strong population of \ce{^{89}Zr}, with a peak cross section of nearly 800 mb   \cite{PhysRevC.38.1624,Omara2009}.
 Due to co-production of additional \ce{^{86,87,88}Zr} radio-zirconium,  \ce{^{nat}Nb}(p,x) is clearly inferior to  \ce{^{89}Y}(p,n)\ce{^{89}Zr}, as the Nb route has a smaller peak cross section of approximately 290 mb, and achieves only 50 -75\% radio-zirconium purity in the 50 - 90 MeV region.
 
 
