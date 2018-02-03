@@ -318,16 +318,17 @@
 
 A stacked target of natural Nb, Cu, and Al thin foils were irradiated by 100 MeV protons at the Los Alamos National Laboratory's Isotope Production Facility.
 The irradiation was motivated by interest in the characterization of the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} reaction as a new dosimetry standard for intermediate-energy protons.
-Through this, a set of 38 measurements of cross sections for the \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40.34 - 89.74 MeV are presented in this work, as well as 5 independent measurements of isomer branching ratios.
-The cross sections were measured using the well-characterized \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions  for accurate proton fluence measurement, with all activities quantified using high-purity germanium spectroscopy.
-The measured cross sections are shown to be in excellent agreement with  literature values, and have been measured with significantly less uncertainty than previous measurements, through the use of variance minimization techniques to reduce proton energy uncertainties.
+A set of 38 measurements of cross sections for the \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40.34 -- 89.74 MeV are presented in this work, as well as 5 independent measurements of isomer branching ratios.
+Cross sections were measured using the well-characterized \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions  for accurate proton fluence measurement, with all activities quantified using high-purity germanium spectroscopy.
+Variance minimization techniques were employed to reduce systematic uncertainties in proton energy and fluence, improving the reliability of these measurements. 
+The measured cross sections are shown to be in excellent agreement with  literature values, and have been measured with improved precision compared with previous measurements.
 This work reports the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40 - 90 MeV region.
 Comparisons against the reaction modeling codes EMPIRE and TALYS are used to explore the impact of pre-equilibrium particle emission in the reaction dynamics for 40 - 90 MeV \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
 
 
+\comment{Stephen:  Not strictly true if you've omitted Na22 and Co56 from your fluence determination.  Update monitors here following discussion.}
 
-
-
+\comment{Stephen: Unless you've already discussed this with co-authors, I would have someone from LANL (i.e. Meiring) instead or in addition.  Add one following discussion.}
 
 
 
@@ -376,11 +377,12 @@ Nb+p \sep Cu+p \sep Niobium \sep Copper\sep Aluminum \sep \ce{^{90}Mo}  \sep Nuc
 
 % \comment{cite theranostic papers, etc}
 
-Every year, approximately 17 million nuclear medicine procedures (both diagnostic and therapeutic) are performed in the U.S. alone - a multi-billion dollar industry which has made incredible strides in improving our ability to detect and treat a variety of life-threatening diseases \cite{Delbeke2011,NSACIsotopesSubcommittee2015}.
-The vast majority of the radioisotopes currently used for these procedures are produced in the field's array of low- (E \textless\ 30 MeV / A) and intermediate-energy (30 \textless\ E \textless\ 200 MeV / A) accelerator capabilities, which routinely produce many of the staple medical radionuclides, such as \ce{^{18}F} \ce{^{68}Ge}, \ce{^{82}Rb}, and \ce{^{123}I}, as well as many of the non-medical radioisotopes of commercial value, such as  \ce{^{32}Si}, \ce{^{73}As}, \ce{^{95m}Tc}, and  \ce{^{109}Cd} \cite{international2009iaea,schlyer2008cyclotron}. 
-\comment{Should \enquote{intermediate-energy} be less than 200 MeV, or 100 MeV?  I find conflicting descriptions in the literature.\\Lee:  I believe that 60 MeV is considered as the transition point\\ Stephen: }
- The future of nuclear medicine would appear to be the paradigm of personalized medicine - targeted radionuclide therapy to spare healthy tissue \cite{Mulford2005,Qaim201731}, and theranostic medicine, which pairs an imaging isotope with a therapeutic isotope of the same element, to provide simultaneous, real-time dose delivery and verification, leading to drastic reductions in prescribed patient dose \cite{Muller2014,Bentzen2005,Srivastava2012}. 
-Candidate isotopes to fill these needs have been identified based on their decay properties \cite{NSACIsotopesSubcommittee2015,Qaim201731,bernstein2015nuclear}, and a series of campaigns are underway to perform targeted, high-priority measurements of thin-target cross sections and thick-target integral yields, to facilitate production in sufficient quantities for cell studies.
+Every year, approximately 17 million nuclear medicine procedures (both diagnostic and therapeutic) are performed in the U.S. alone,  which has made incredible strides in improving our ability to detect and treat a variety of life-threatening diseases \cite{Delbeke2011,NSACIsotopesSubcommittee2015}.
+The vast majority of the radioisotopes currently used for these procedures are produced in the field's array of low- (E \textless\ 30 MeV / A) and intermediate-energy (30 \textless\ E \textless\ 200 MeV / A) accelerator capabilities, which routinely produce many of the staple medical radionuclides, such as \ce{^{11}C}, \ce{^{18}F}, \ce{^{68}Ge}, \ce{^{82}Rb}, and \ce{^{123}I}, as well as many of the non-medical radioisotopes of commercial value, such as  \ce{^{32}Si}, \ce{^{73}As}, \ce{^{95m}Tc}, and  \ce{^{109}Cd} \cite{international2009iaea,schlyer2008cyclotron}. 
+\comment{Should \enquote{intermediate-energy} be less than 200 MeV, or 100 MeV?  I find conflicting descriptions in the literature.\\Lee:  I believe that 60 MeV is considered as the transition point\\ Stephen: In this context, I would make this definition based on what machines in the US are routinely used for medical isotope production - based on this, I agree with 200 MeV. }
+ The future of nuclear medicine would appear to be the paradigm of personalized medicine --- targeted radionuclide therapy to spare healthy tissue \cite{Mulford2005,Qaim201731}, and theranostic medicine, which pairs an imaging isotope with a therapeutic isotope (frequently, of the same element), to provide simultaneous, real-time dose delivery and verification, leading to drastic reductions in prescribed patient dose \cite{Muller2014,Bentzen2005,Srivastava2012}. 
+Other variants of theranostic medicine exist, including pre-imaging for treatment planning, or delivery of a single compound with different radioelements for imaging/therapy where the inter-element biodistribution has been validated.  
+Candidate isotopes to meet these needs have been identified based on their chemical and radioactive decay properties \cite{NSACIsotopesSubcommittee2015,Qaim201731,bernstein2015nuclear}, and a series of campaigns are underway to perform targeted, high-priority measurements of thin-target cross sections and thick-target integral yields, to facilitate production in sufficient quantities for cell studies.
 
 
 One significant obstacle to both high-fidelity measurements of production cross sections for emerging medical radionuclides, as well as conventional isotope production, is a lack of well-characterized  dosimetry standards.  
@@ -1097,18 +1099,18 @@ Not only do the \ce{^{nat}Nb}(p,x) measurements in this work fill in the sparse 
 Furthermore, this work presents the first measurements of several observables in these mass regions.
 This work reports the first experimental measurement of the \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction in the 40 - 90 MeV region.
 It also represents  the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn} ($2^+$) and  \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}  ($6^+$), as well as their  isomer branching ratio via \ce{^{nat}Cu}(p,x).  
-The cumulative cross section from these data are consistent with existing measurements of the cumulative \ce{^{nat}Cu}(p,x)\ce{^{52}Mn} cross section.
+The cumulative cross sections from these data are also consistent with existing measurements of the cumulative \ce{^{nat}Cu}(p,x)\ce{^{52}Mn} cross section.
 Similarly, this work offers the first measurement of the independent cross sections for \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y},  as well as the first measurement of the     \ce{^{85\text{m}}Y} ($\sfrac{9}{2}^+$) / \ce{^{85\text{g}}Y}  ($t\sfrac{1}{2}^-$) isomer branching ratio via \ce{^{nat}Nb}(p,x).
 
 
 
-Notably, this work serves as the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100 MeV to date, with cross sections measured in this energy region at the 2-3\% uncertainty level.
+Notably, this work serves as the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100 MeV to date, with cross sections measured  at the 2-3\% uncertainty level.
 This is important, as it presents the first step towards characterizing this reaction for use as a proton dosimetry standard below 100 MeV.
 The quantification of \ce{^{90}Mo} activity proved to be one of the most straightforward of all reaction products observed in this work.
 \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} can only be populated through the (p,4n) reaction channel, so no corrections for (n,x) contamination channels or decay down the A=90 isobar are needed, which makes activity quantification trivial.
-In addition, \ce{^{90}Mo}  possesses seven strong, distinct gamma lines which are easily able to be used for the identification and quantification of produced \ce{^{90}Mo}.
-Finally, the production of \ce{^{90}Mo}  in the 40 - 90 MeV region is well-fed, with a peak cross section of approximately 120 mb, which creates a strong signal for activity quantification.
-While additional measurements are needed to improve the characterization of this excitation function, this clearly presents the first step towards the use of \ce{^{90}Mo} as a clean and precise monitor for charged particle dosimetry in irradiations up to approximately 24 hours in duration.
+In addition, \ce{^{90}Mo}  possesses seven strong, distinct gamma lines which can easily  be used for its identification and quantification.
+Finally, the production of \ce{^{90}Mo}  in the 40 - 90 MeV region is quite strong, with a peak cross section of approximately 120 mb.
+This result presents the first step towards the use of \ce{^{90}Mo} as a clean and precise monitor for charged particle dosimetry in irradiations up to approximately 24 hours in duration.
 
 
 
@@ -1126,29 +1128,30 @@ Lower-energy production via \ce{^{nat}Co}(p,3n) at 24-40 MeV is below threshold 
 
 
 \ce{^{86}Y} ($t_{1/2}=14.74\pm0.02$ h, $\epsilon$=100\% to \ce{^{86}Sr}  \cite{NEGRET20151}) is another novel  emerging  PET emitter, whose longer half-life has poised it for applications as a tracer for slower metabolic processes, as well as in   pharmacokinetics studies \cite{Nickles2003,Qaim2008,QaimSyedM2011}.
-In particular, it is highly desired to form a theranostic pair with the widely-employed $\beta^-$ therapy agent \ce{^{90}Y} ($t_{1/2}=64.00\pm0.21$ h, $\beta^-$=100\% to \ce{^{90}Zr} \cite{Browne1997}), which emits no observable gamma-rays or x-rays though decay, necessitating an imaging isotope to be paired with for quantification of its uptake and biodistribution  \cite{Herzog1993}.
-Conventional production of \ce{^{86}Y} proceeds through low-energy (7 - 14 MeV) irradiation via \ce{^{86}Sr}(p,n), which requires an enriched  \ce{^{86}Sr} target (9.86\% natural abundance), lest it suffer contamination from (p,n) on the other stable \ce{^{84,87,88}Sr} isotopes  \cite{Rosch1993}.
+In particular, it is highly desired to form a theranostic pair with the widely-employed $\beta^-$ therapy agent \ce{^{90}Y} ($t_{1/2}=64.00\pm0.21$ h, $\beta^-$=100\% to \ce{^{90}Zr} \cite{Browne1997}), which can be produced from a long-lived \ce{^{90}Sr} cow and emits no observable gamma-rays or x-rays though decay, necessitating an imaging isotope to be paired with for quantification of its uptake and biodistribution  \cite{Herzog1993}.
+Conventional production of \ce{^{86}Y} proceeds through low-energy (7 - 14 MeV) irradiation via \ce{^{86}Sr}(p,n), which requires an enriched  \ce{^{86}Sr} target (9.86\% natural abundance), in order to eliminate contamination from (p,n) on the other stable \ce{^{84,87,88}Sr} isotopes  \cite{Rosch1993}.
 Alternatively, production at 33-43 MeV via \ce{^{88}Sr}(p,3n) has been proposed - this pathway also requires an enriched target (82.58\% natural abundance) for the same reason, but contamination with other Y co-activities will be even more pronounced than via (p,n), due to the opening of (p,n) and (p,2n) channels on all stable Sr isotopes \cite{doi:10.1139/v67-193,levkovski1991cross}.
 Minimizing activity from other isotopes of the element in question is essential for producing radionuclides in high specific activity, as these competing isotopes are often extremely difficult to separate out.
-Unfortunately, it would appear that \ce{^{nat}Nb}(p,x) is a poor route for  \ce{^{86}Y} production in this respect, as it only reaches a maximum of approximately 35\% of all radio-yttrium activities produced.
-This is because the dominant radio-yttrium activity in 40-90 MeV \ce{^{nat}Nb}(p,x) is  \ce{^{87}Y}, the largest obstacle to high-specific activity production of  \ce{^{86}Y} due to the unnecessary patient dose it contributes,  its comparable half-life, and the single neutron difference making efficient separations nearly impossible. 
+As a result, it would appear that \ce{^{nat}Nb}(p,x) is a poor route for  \ce{^{86}Y} production in this respect, as it only reaches a maximum of approximately 35\% of all radio-yttrium activities produced.
+This is because the dominant radio-yttrium activity in 40-90 MeV \ce{^{nat}Nb}(p,x) is  \ce{^{87}Y}, the largest obstacle to high-specific activity production of  \ce{^{86}Y} due to the unnecessary patient dose it contributes,  its comparable half-life, and the fact that separation is impractical.
 However,  \ce{^{87}Y} itself has application as a generator for  \ce{^{87m}Sr} ($t_{1/2}=2.815\pm0.012$ h, IT=99.70\% to \ce{^{87}Sr} \cite{Johnson2015}), which is used for imaging studies of metastatic bone cancers, especially when in a theranostic pair with the established therapy agent \ce{^{89}Sr} ($t_{1/2}=50.563\pm0.0025$ d, $\beta^-$=100\% to \ce{^{89}Y} \cite{Singh2013}) \cite{Kiselev1974,Kandil2009}.
 Since the radio-yttrium purity of \ce{^{87}Y} is approximately 88\% between 51-61 MeV in \ce{^{nat}Nb}(p,x), this could present an intriguing route for  \ce{^{87}Y} production.
 
 
 
 
-\ce{^{89}Zr} ($t_{1/2}=78.41\pm0.12$ h, $\epsilon$=100\% to \ce{^{89}Y}  \cite{Singh2013}) is a long-lived PET emitter, whose long lifetime makes it useful as a tracer for slow biological processes, immune studies, and imaging of liver and  breast cancers \cite{Verel2003,Dijkers2009,Dijkers2010}.
+\ce{^{89}Zr} ($t_{1/2}=78.41\pm0.12$ h, $\epsilon$=100\% to \ce{^{89}Y}  \cite{Singh2013}) is a long-lived PET emitter, whose  lifetime makes it useful as a tracer for slow biological processes, immune studies, and imaging of liver and  breast cancers \cite{Verel2003,Dijkers2009,Dijkers2010}.
 Current production focuses on \ce{^{89}Y}(p,n)\ce{^{89}Zr} between 9 - 14 MeV, which offers an extremely high-purity route on a mono-isotopic target and a strong population of \ce{^{89}Zr}, with a peak cross section of nearly 800 mb   \cite{PhysRevC.38.1624,Omara2009}.
 Due to co-production of additional \ce{^{86,87,88}Zr} radio-zirconium,  \ce{^{nat}Nb}(p,x) is clearly inferior to  \ce{^{89}Y}(p,n)\ce{^{89}Zr}, as the Nb route has a smaller peak cross section of approximately 290 mb, and achieves only 50 -75\% radio-zirconium purity in the 50 - 90 MeV region.
 
 
 
 
-\ce{^{90}Nb} ($t_{1/2}=14.60 \pm 0.05$ h, $\epsilon$=100\% to \ce{^{90}Zr}  \cite{Browne1997}) is an emerging PET emitter with a moderate lifetime, making it suited for immune studies including tumor uptake studies    \cite{Busse2002,Radchenko2012}.
+\ce{^{90}Nb} ($t_{1/2}=14.60 \pm 0.05$ h, $\epsilon$=100\% to \ce{^{90}Zr}  \cite{Browne1997}) is an emerging PET emitter with a moderate lifetime, making it suited for immune and tumor uptake studies    \cite{Busse2002,Radchenko2012}.
 It is typically produced using 8 - 15 MeV protons via \ce{^{90}Zr}(p,n)\ce{^{89}Nb}, and requires an enriched target (51.45\% natural abundance), but produces a product with minimal contamination and a peak cross section of approximately 750 mb  \cite{Busse2002}.
 \ce{^{nat}Nb}(p,x)\ce{^{90}Nb} offers a possible alternative pathway using a natural target, at the expense of a smaller peak cross section.
 \ce{^{90}Nb} may be produced directly with an approximately 360 mb peak cross section and 87\% radio-niobium purity, or could be produced as a \ce{^{90}Mo}/\ce{^{90}Nb} generator, which would have nearly 100\% radio-molybdenum purity by using protons below the \ce{^{nat}Nb}(p,5n) threshold.
+However, the greatest problem with using the \ce{^{nat}Nb}(p,x) reaction to produce \ce{^{90}Nb} is the inability to separate the radioisotope from the target itself, rendering the production of a high-specific activity target impossible.  
 
 
 
@@ -1187,8 +1190,9 @@ It is clear that this production route offers no advantage over existing \ce{^{8
  
  \section{Conclusions}
 
-In summation, we present here a set of 38 measurements of cross sections for the \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40.34 - 89.74 MeV, as well as 5 independent measurements of isomer branching ratios.
-Nearly all cross sections have been reported with smaller uncertainties than previous measurements, and we report the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40 - 90 MeV region.
+In summation, we present here a set of 38 measurements of cross sections for the \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40--90 MeV, as well as 5 independent measurements of isomer branching ratios.
+Nearly all cross sections have been reported with smaller uncertainties than previous measurements.
+We report the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90 MeV region.
 We also use these measurements to illustrate the impact of pre-equilibrium particle emission in the reaction dynamics for 40 - 90 MeV \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
 Finally, this work provides another example of the usefulness of the recently-described variance minimization techniques for reducing energy uncertainties in stacked target charged particle irradiation experiments.
 
