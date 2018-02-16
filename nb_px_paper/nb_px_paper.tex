@@ -1,22 +1,66 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                          %%
-%% Important note on usage                  %%
-%% -----------------------                  %%
-%% This file must be compiled with PDFLaTeX %%
-%% Using standard LaTeX will not work!      %%
-%%                                          %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% The '3p' and 'times' class options of elsarticle are used for Elsevier CRC
-% \documentclass[5p]{elsarticle}
-% Good for final formatting  - two column
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.1 distribution.
+%   Version 4.1r of REVTeX, August 2010
+%
+%   Copyright (c) 2009, 2010 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.1
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+superscriptaddress,
+onecolumn,
+linenumbers,
+notitlepage,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%showpacs,preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+prc,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-1}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%                                          %%
+% %% Important note on usage                  %%
+% %% -----------------------                  %%
+% %% This file must be compiled with PDFLaTeX %%
+% %% Using standard LaTeX will not work!      %%
+% %%                                          %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 
-% \documentclass[3p,times]{elsarticle}
-\documentclass[3p]{elsarticle}
-% Good for proofing - single column
-% 
+% %% The '3p' and 'times' class options of elsarticle are used for Elsevier CRC
+% % \documentclass[5p]{elsarticle}
+% % Good for final formatting  - two column
+% % 
+% % \documentclass[3p,times]{elsarticle}
+% \documentclass[3p]{elsarticle}
+% % Good for proofing - single column
+% % 
 
 \usepackage[american]{babel}
 \usepackage{amsmath}
@@ -37,7 +81,7 @@
 \usepackage{listings}
 \usepackage{mcode}
 \usepackage [autostyle, english = american]{csquotes}
-\usepackage{longtable}
+% \usepackage{longtable}
 \usepackage{subcaption}
 \usepackage{booktabs,siunitx}
 \usepackage{gensymb}
@@ -54,7 +98,11 @@
 \usepackage[section]{placeins}
 \usepackage{multirow}
 
-\usepackage{lineno}
+% \usepackage{lineno}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
 
 
 
@@ -70,80 +118,80 @@
 % \usepackage{bm}
 % \usepackage{csquotes}
 % \usepackage{mathtools}
-\usepackage{natbib}
+\usepackage[sort&compress]{natbib}
 % \usepackage{biblatex}
 
-%% The `ecrc' package must be called to make the CRC functionality available
-\usepackage{ecrc}
+% %% The `ecrc' package must be called to make the CRC functionality available
+% \usepackage{ecrc}
+% 
+% %% The ecrc package defines commands needed for running heads and logos.
+% %% For running heads, you can set the journal name, the volume, the starting page and the authors
+% 
+% %% set the volume if you know. Otherwise `00'
+% \volume{00}
+% 
+% %% set the starting page if not 1
+% \firstpage{1}
+% 
+% %% Give the name of the journal
+% \journalname{Nuclear Instruments and Methods in Physics Research B}
+% 
+% %% Give the author list to appear in the running head
+% %% Example \runauth{C.V. Radhakrishnan et al.}
+% \runauth{A.S. Voyles et al.}
+% 
+% %% The choice of journal logo is determined by the \jid and \jnltitlelogo commands.
+% %% A user-supplied logo with the name <\jid>logo.pdf will be inserted if present.
+% %% e.g. if \jid{yspmi} the system will look for a file yspmilogo.pdf
+% %% Otherwise the content of \jnltitlelogo will be set between horizontal lines as a default logo
+% 
+% %% Give the abbreviation of the Journal.
+% \jid{nimb}
+% % \jid{yspmi}
+% 
+% %% Give a short journal name for the dummy logo (if needed)
+% \jnltitlelogo{Nucl Instrum Meth B}
+% 
+% %% Hereafter the template follows `elsarticle'.
+% %% For more details see the existing template files elsarticle-template-harv.tex and elsarticle-template-num.tex.
+% 
+% %% Elsevier CRC generally uses a numbered reference style
+% %% For this, the conventions of elsarticle-template-num.tex should be followed (included below)
+% %% If using BibTeX, use the style file elsarticle-num.bst
+% 
+% %% End of ecrc-specific commands
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% %% The amssymb package provides various useful mathematical symbols
+% \usepackage{amssymb}
+% %% The amsthm package provides extended theorem environments
+% \usepackage{amsthm}
+% 
+% %% The lineno packages adds line numbers. Start line numbering with
+% %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+% %% for the whole article with \linenumbers after \end{frontmatter}.
+% %% \usepackage{lineno}
+% 
+% %% natbib.sty is loaded by default. However, natbib options can be
+% %% provided with \biboptions{...} command. Following options are
+% %% valid:
+% 
+% %%   round  -  round parentheses are used (default)
+% %%   square -  square brackets are used   [option]
+% %%   curly  -  curly braces are used      {option}
+% %%   angle  -  angle brackets are used    <option>
+% %%   semicolon  -  multiple citations separated by semi-colon
+% %%   colon  - same as semicolon, an earlier confusion
+% %%   comma  -  separated by comma
+% %%   numbers-  selects numerical citations
+% %%   super  -  numerical citations as superscripts
+% %%   sort   -  sorts multiple citations according to order in ref. list
+% %%   sort&compress   -  like sort, but also compresses numerical citations
+% %%   compress - compresses without sorting
+% %%
+% %% \biboptions{comma,round}
 
-%% The ecrc package defines commands needed for running heads and logos.
-%% For running heads, you can set the journal name, the volume, the starting page and the authors
-
-%% set the volume if you know. Otherwise `00'
-\volume{00}
-
-%% set the starting page if not 1
-\firstpage{1}
-
-%% Give the name of the journal
-\journalname{Nuclear Instruments and Methods in Physics Research B}
-
-%% Give the author list to appear in the running head
-%% Example \runauth{C.V. Radhakrishnan et al.}
-\runauth{A.S. Voyles et al.}
-
-%% The choice of journal logo is determined by the \jid and \jnltitlelogo commands.
-%% A user-supplied logo with the name <\jid>logo.pdf will be inserted if present.
-%% e.g. if \jid{yspmi} the system will look for a file yspmilogo.pdf
-%% Otherwise the content of \jnltitlelogo will be set between horizontal lines as a default logo
-
-%% Give the abbreviation of the Journal.
-\jid{nimb}
-% \jid{yspmi}
-
-%% Give a short journal name for the dummy logo (if needed)
-\jnltitlelogo{Nucl Instrum Meth B}
-
-%% Hereafter the template follows `elsarticle'.
-%% For more details see the existing template files elsarticle-template-harv.tex and elsarticle-template-num.tex.
-
-%% Elsevier CRC generally uses a numbered reference style
-%% For this, the conventions of elsarticle-template-num.tex should be followed (included below)
-%% If using BibTeX, use the style file elsarticle-num.bst
-
-%% End of ecrc-specific commands
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% The amssymb package provides various useful mathematical symbols
-\usepackage{amssymb}
-%% The amsthm package provides extended theorem environments
-\usepackage{amsthm}
-
-%% The lineno packages adds line numbers. Start line numbering with
-%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
-%% for the whole article with \linenumbers after \end{frontmatter}.
-%% \usepackage{lineno}
-
-%% natbib.sty is loaded by default. However, natbib options can be
-%% provided with \biboptions{...} command. Following options are
-%% valid:
-
-%%   round  -  round parentheses are used (default)
-%%   square -  square brackets are used   [option]
-%%   curly  -  curly braces are used      {option}
-%%   angle  -  angle brackets are used    <option>
-%%   semicolon  -  multiple citations separated by semi-colon
-%%   colon  - same as semicolon, an earlier confusion
-%%   comma  -  separated by comma
-%%   numbers-  selects numerical citations
-%%   super  -  numerical citations as superscripts
-%%   sort   -  sorts multiple citations according to order in ref. list
-%%   sort&compress   -  like sort, but also compresses numerical citations
-%%   compress - compresses without sorting
-%%
-%% \biboptions{comma,round}
-
-\biboptions{sort&compress}
+% \biboptions{sort&compress}
 
 % if you have landscape tables
 \usepackage[figuresright]{rotating}
@@ -225,7 +273,107 @@
 
 \begin{document}
 
-\begin{frontmatter}
+% \begin{frontmatter}
+
+
+%\preprint{APS/123-QED}
+
+\title{Measurement of nuclear excitation functions for proton induced reactions (E\texorpdfstring{$_{\text{p}}$\,=\,}{Ep = 40--90}40--90 MeV) on natural Nb}% Force line breaks with \\
+% \thanks{A footnote to the article title}%
+
+\author{Andrew S. Voyles}
+ \email{andrew.voyles@berkeley.edu}
+\affiliation{%
+ Department of Nuclear Engineering, University of California, Berkeley,  Berkeley, CA 94720, USA
+%  Authors' institution and/or address\\
+%  This line break forced with \textbackslash\textbackslash
+}% 
+\author{Lee A. Bernstein}
+\affiliation{Nuclear Science Division, Lawrence Berkeley National Laboratory,  Berkeley, CA 94720, USA}
+\affiliation{%
+ Department of Nuclear Engineering, University of California, Berkeley, Berkeley, CA 94720, USA
+%  Authors' institution and/or address\\
+%  This line break forced with \textbackslash\textbackslash
+}%
+\author{Eva R. Birnbaum}
+\affiliation{Isotope Production Facility, Chemistry Division, Los Alamos National Laboratory,  Los Alamos, NM 87544, USA}
+\author{Jonathan W. Engle}
+ \email{jwengle@wisc.edu}
+\affiliation{Department of Medical Physics, University of Wisconsin -- Madison,  Madison, WI 53705, USA}
+\author{Stephen A. Graves}
+\affiliation{Department of Radiation Oncology, University of Iowa,  Iowa City, IA 52242, USA}
+\author{Toshihiko ??? Kawano}
+\affiliation{Nuclear Physics Group, Theoretical Division, Los Alamos National Laboratory,  Los Alamos, NM 87544, USA}
+%  \altaffiliation[Also at ]{Physics Department, XYZ University.}%Lines break automatically or can be forced with \\
+\author{Amanda M. Lewis}%
+% \author{Eric F. Matthews}%
+%  \email{Second.Author@institution.edu}
+\affiliation{%
+ Department of Nuclear Engineering, University of California, Berkeley, Berkeley, CA 94720, USA
+%  Authors' institution and/or address\\
+%  This line break forced with \textbackslash\textbackslash
+}%
+\author{Francois M. Nortier}
+\affiliation{Isotope Production Facility, Chemistry Division, Los Alamos National Laboratory, Los Alamos, NM 87544, USA}
+
+
+
+% \author[rvt]{C.V. ̃Radhakrishnan\corref{cor1}\fnref{fn1}}
+% \author[ucb]{Andrew S. Voyles \corref{cor1}}
+% \ead{andrew.voyles@berkeley.edu}
+
+% \author[lbl]{M.S. Basunia}
+% 
+% \author[ucb]{J.C. Batchelder}
+% 
+% \author[llnl]{J.D. Bauer}
+% 
+% \author[geo]{T.A. Becker}
+
+
+% \author[ucb,lbl]{Lee A. Bernstein}
+
+
+% \author[lanl]{Eva R. Birnbaum}
+
+% \author[uwm]{Jonathan W. Engle}
+
+% \author[iowa]{Stephen A. Graves}
+
+% \author[ucb]{Amanda M. Lewis}
+
+
+% \author[lanl]{Francois M. Nortier}
+
+% \address[ucb]{Department of Nuclear Engineering, University of California, Berkeley, 4155 Etcheverry Hall, MC 1730, Berkeley, CA 94720, USA}
+% \address[lbl]{Lawrence Berkeley National Laboratory, 1 Cyclotron Rd., Berkeley, CA 94720, USA}
+% % \address[llnl]{Lawrence Livermore National Laboratory, Livermore CA, 94551 USA}
+% % \address[geo]{Berkeley Geochronology Center, Berkeley CA,  94709  USA}
+% \address[uwm]{Department of Medical Physics, University of Wisconsin -- Madison, 1111 Highland Ave., Madison, WI 53705, USA}
+% \address[lanl]{Los Alamos National Laboratory, P.O. Box 1663, Los Alamos, NM 87544, USA}
+% \address[iowa]{Department of Radiation Oncology, University of Iowa, 200 Hawkins Drive, Iowa City, IA 52242, USA}
+
+% \collaboration{MUSO Collaboration}%\noaffiliation
+% 
+% \author{Charlie Author}
+% %  \homepage{http://www.Second.institution.edu/~Charlie.Author}
+% \affiliation{
+%  Second institution and/or address\\
+%  This line break forced% with \\
+% }%
+% \affiliation{
+%  Third institution, the second for Charlie Author
+% }%
+% \author{Delta Author}
+% \affiliation{%
+%  Authors' institution and/or address\\
+%  This line break forced with \textbackslash\textbackslash
+% }%
+% 
+% \collaboration{CLEO Collaboration}%\noaffiliation
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
 
 %% Title, authors and addresses
 
@@ -238,7 +386,7 @@
 %% use the ead command for the email address,
 %% and the form \ead[url] for the home page:
 %%
-\title{Measurement of nuclear excitation functions for proton induced reactions (E$_{\text{p}}$ = 40 -- 90 MeV) on natural Nb and Cu}
+% \title{Measurement of nuclear excitation functions for proton induced reactions (E$_{\text{p}}$ = 40 -- 90 MeV) on natural Nb and Cu}
 
 %% \tnotetext[label1]{}
 %% \author{Name\corref{cor1}\fnref{label2}}
@@ -252,33 +400,33 @@
 % \dochead{Short}
 %% Use \dochead if there is an article header, e.g. \dochead{Short communication}
 
-
-% \author[rvt]{C.V. ̃Radhakrishnan\corref{cor1}\fnref{fn1}}
-\author[ucb]{Andrew S. Voyles \corref{cor1}}
-\ead{andrew.voyles@berkeley.edu}
-
-% \author[lbl]{M.S. Basunia}
 % 
-% \author[ucb]{J.C. Batchelder}
+% % \author[rvt]{C.V. ̃Radhakrishnan\corref{cor1}\fnref{fn1}}
+% \author[ucb]{Andrew S. Voyles \corref{cor1}}
+% \ead{andrew.voyles@berkeley.edu}
 % 
-% \author[llnl]{J.D. Bauer}
+% % \author[lbl]{M.S. Basunia}
+% % 
+% % \author[ucb]{J.C. Batchelder}
+% % 
+% % \author[llnl]{J.D. Bauer}
+% % 
+% % \author[geo]{T.A. Becker}
 % 
-% \author[geo]{T.A. Becker}
-
-
-\author[ucb,lbl]{Lee A. Bernstein}
-
-
-\author[lanl]{Eva R. Birnbaum}
-
-\author[uwm]{Jonathan W. Engle}
-
-\author[iowa]{Stephen A. Graves}
-
-\author[ucb]{Amanda M. Lewis}
-
-
-\author[lanl]{Francois M. Nortier}
+% 
+% \author[ucb,lbl]{Lee A. Bernstein}
+% 
+% 
+% \author[lanl]{Eva R. Birnbaum}
+% 
+% \author[uwm]{Jonathan W. Engle}
+% 
+% \author[iowa]{Stephen A. Graves}
+% 
+% \author[ucb]{Amanda M. Lewis}
+% 
+% 
+% \author[lanl]{Francois M. Nortier}
 
 % \author[ucb]{M.A. Unzueta}
 % 
@@ -291,7 +439,7 @@
 %% \address[label1]{<address>}
 %% \address[label2]{<address>}
 
-\cortext[cor1]{Corresponding author}
+% \cortext[cor1]{Corresponding author}
 % \cortext[cor2]{Principal corresponding author}
 % \fntext[fn1]{This is the specimen author footnote.}
 % \fntext[fn2]{Another author footnote, but a little more longer.}
@@ -300,21 +448,15 @@
 % \address[lbl]{Lawrence Berkeley National Laboratory,  1 Cyclotron Rd, Berkeley, CA 94720}
 % \address[llnl]{Lawrence Livermore National Laboratory, 7000 East Ave, Livermore, CA 94550}
 
-\address[ucb]{Department of Nuclear Engineering, University of California, Berkeley, 4155 Etcheverry Hall, MC 1730, Berkeley, CA 94720, USA}
-\address[lbl]{Lawrence Berkeley National Laboratory, 1 Cyclotron Rd., Berkeley, CA 94720, USA}
-% \address[llnl]{Lawrence Livermore National Laboratory, Livermore CA, 94551 USA}
-% \address[geo]{Berkeley Geochronology Center, Berkeley CA,  94709  USA}
-\address[uwm]{Department of Medical Physics, University of Wisconsin -- Madison, 1111 Highland Ave., Madison, WI 53705, USA}
-\address[lanl]{Los Alamos National Laboratory, P.O. Box 1663, Los Alamos, NM 87544, USA}
-\address[iowa]{Department of Radiation Oncology, University of Iowa, 200 Hawkins Drive, Iowa City, IA 52242, USA}
-
-
-
+% \address[ucb]{Department of Nuclear Engineering, University of California, Berkeley, 4155 Etcheverry Hall, MC 1730, Berkeley, CA 94720, USA}
+% \address[lbl]{Lawrence Berkeley National Laboratory, 1 Cyclotron Rd., Berkeley, CA 94720, USA}
+% % \address[llnl]{Lawrence Livermore National Laboratory, Livermore CA, 94551 USA}
+% % \address[geo]{Berkeley Geochronology Center, Berkeley CA,  94709  USA}
+% \address[uwm]{Department of Medical Physics, University of Wisconsin -- Madison, 1111 Highland Ave., Madison, WI 53705, USA}
+% \address[lanl]{Los Alamos National Laboratory, P.O. Box 1663, Los Alamos, NM 87544, USA}
+% \address[iowa]{Department of Radiation Oncology, University of Iowa, 200 Hawkins Drive, Iowa City, IA 52242, USA}
 
 \begin{abstract}
-
-
-
 
 A stacked target of natural Nb, Cu, and Al thin foils were irradiated by 100 MeV protons at the Los Alamos National Laboratory's Isotope Production Facility.
 The irradiation was motivated by interest in the characterization of the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} reaction as a new dosimetry standard for intermediate-energy protons.
@@ -326,13 +468,31 @@ This work reports the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb}
 Comparisons against the reaction modeling codes EMPIRE and TALYS are used to explore the impact of pre-equilibrium particle emission in the reaction dynamics for 40 - 90 MeV \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
 
 
-\comment{Stephen:  Not strictly true if you've omitted Na22 and Co56 from your fluence determination.  Update monitors here following discussion.}
 
-\comment{Stephen: Unless you've already discussed this with co-authors, I would have someone from LANL (i.e. Meiring) instead or in addition.  Add one following discussion.}
 
-\comment{Comment on the Si production here?}
+% \begin{description}
+% \item[Usage]
+% Secondary publications and information retrieval purposes.
+% \item[PACS numbers]
+% May be entered using the \verb+\pacs{#1}+ command.
+% \item[Structure]
+% You may use the \texttt{description} environment to structure your abstract;
+% use the optional argument of the \verb+\item+ command to give the category of each item. 
+% \end{description}
+\end{abstract}
 
-\comment{Add CoH to codes also, and add extra physics language with Lee.}
+% \pacs{Valid PACS appear here}% PACS, the Physics and Astronomy
+                             % Classification Scheme.
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+
+
+% \begin{abstract}
+
+
+
+
+\maketitle
 
 
 
@@ -350,18 +510,18 @@ Comparisons against the reaction modeling codes EMPIRE and TALYS are used to exp
 
 
 
-\end{abstract}
+% \end{abstract}
 
-\begin{keyword}
-%% keywords here, in the form: keyword \sep keyword
-Nb+p \sep Cu+p \sep Niobium \sep Copper\sep Aluminum \sep \ce{^{90}Mo}  \sep Nuclear cross sections \sep Proton activation \sep Proton transport \sep Stacked target activation \sep Monitor reactions \sep Monitor foils \sep Medical isotope production \sep Isomer branching ratios \sep Nuclear spin distributions  \sep MCNP \sep  LANL
+% \begin{keyword}
+% %% keywords here, in the form: keyword \sep keyword
+% Nb+p \sep Cu+p \sep Niobium \sep Copper\sep Aluminum \sep \ce{^{90}Mo}  \sep Nuclear cross sections \sep Proton activation \sep Proton transport \sep Stacked target activation \sep Monitor reactions \sep Monitor foils \sep Medical isotope production \sep Isomer branching ratios \sep Nuclear spin distributions  \sep MCNP \sep  LANL
+% 
+% %% MSC codes here, in the form: \MSC code \sep code
+% %% or \MSC[2008] code \sep code (2000 is the default)
+% 
+% \end{keyword}
 
-%% MSC codes here, in the form: \MSC code \sep code
-%% or \MSC[2008] code \sep code (2000 is the default)
-
-\end{keyword}
-
-\end{frontmatter}
+% \end{frontmatter}
 
 %%
 %%  To-do list for comments
@@ -372,12 +532,21 @@ Nb+p \sep Cu+p \sep Niobium \sep Copper\sep Aluminum \sep \ce{^{90}Mo}  \sep Nuc
 %%
 %% Start line numbering here if you want
 %%
-\linenumbers
+% \linenumbers
 
 
 
 %% main text 
 \section{Introduction} \label{sec:intro}
+
+Referring to abstract:
+\comment{Stephen:  Not strictly true if you've omitted Na22 and Co56 from your fluence determination.  Update monitors here following discussion.}
+
+\comment{Stephen: Unless you've already discussed this with co-authors, I would have someone from LANL (i.e. Meiring) instead or in addition.  Add one following discussion.}
+
+\comment{Comment on the Si production here?}
+
+\comment{Add CoH to codes also, and add extra physics language with Lee.}
 
 % \comment{cite theranostic papers, etc}
 
@@ -547,8 +716,7 @@ The activated foils were cleaned of all surface contamination, and transported t
  \centering
  \includegraphics[scale=0.1,clip=true,trim=13cm 0cm 3cm 6cm]{./figures/IMG_1975.JPG}
  % IMG_1975.JPG: 3264x2448 pixel, 72dpi, 115.15x86.36 cm, bb=0 0 3264 2448
- \caption{Photograph of the assembled IPF target stack, before the stack's o-ring lid was sealed in place. The baling wire handles affixed to each bunch of Al+Cu+Nb foils are visible in each energy position, to facilitate removal of activated foils via robotic manipulators in the IPF hot cell. The circular Inconel beam entrance aperture is visible in the bottom center of the photograph.  }
- \label{fig:target_stack}
+ \caption{\label{fig:target_stack}Photograph of the assembled IPF target stack, before the stack's o-ring lid was sealed in place. The baling wire handles affixed to each bunch of Al+Cu+Nb foils are visible in each energy position, to facilitate removal of activated foils via robotic manipulators in the IPF hot cell. The circular Inconel beam entrance aperture is visible in the bottom center of the photograph.  }
 \end{figure}
 
 
@@ -1899,7 +2067,8 @@ Plots of the isomer-to-ground state ratios measured in this work are presented h
 % \bibliographystyle{elsarticle-num-names}
 % \bibliography{<your-bib-database>}
 % \addcontentsline{toc}{chapter}{Bibliography}
-\bibliographystyle{elsarticle-num}
+% \bibliographystyle{elsarticle-num}
+\bibliographystyle{apsrev4-1}
 % \bibliographystyle{ieeetr}
 \bibliography{../../library}
 % \thispagestyle{fancyTOC}
