@@ -463,9 +463,9 @@ The irradiation was motivated by interest in the characterization of the \ce{^{9
 A set of 38 measurements of cross sections for the \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40--90 MeV are presented in this work, as well as 5 independent measurements of isomer branching ratios.
 Cross sections were measured using the well-characterized 
 % \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, 
-\ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions  for accurate proton fluence measurement, with all activities quantified using high-purity germanium spectroscopy.
+\ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions  for accurate proton fluence determination, with all activities quantified using high-purity germanium spectroscopy.
 Variance minimization techniques were employed to reduce systematic uncertainties in proton energy and fluence, improving the reliability of these measurements. 
-\textred{The \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, }
+\textred{The \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na}  monitor reactions  were excluded from proton fluence determination due to the production of \ce{^{22,24}Na} contamination by \ce{^{nat}Si}(p,x) activation of the silicone adhesive used for sealing foil packets.}}
 The measured cross sections are shown to be in excellent agreement with  literature values, and have been measured with improved precision compared with previous measurements.
 This work reports the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    
 % \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, 
@@ -536,7 +536,7 @@ Referring to abstract:
 % \comment{Stephen:  Not strictly true if you've omitted Na22 and Co56 from your fluence determination.  Update monitors here following discussion.}
 
 
-\comment{Comment on the Si production here?}
+\comment{Comment on the Si production here?  (see red text)}
 
 \comment{Add extra physics language with Lee.}
 
@@ -545,7 +545,7 @@ Referring to abstract:
 Every year, approximately 17 million nuclear medicine procedures (both diagnostic and therapeutic) are performed in the U.S. alone,  which has made incredible strides in improving our ability to detect and treat a variety of life-threatening diseases \cite{Delbeke2011,NSACIsotopesSubcommittee2015}.
 The vast majority of the radioisotopes currently used for these procedures are produced in the field's array of low- (E \textless\ 30 MeV / A) and intermediate-energy (30 \textless\ E \textless\ 200 MeV / A) accelerator capabilities, which routinely produce many of the staple medical radionuclides, such as \ce{^{11}C}, \ce{^{18}F}, \ce{^{68}Ge}, \ce{^{82}Rb}, and \ce{^{123}I}, as well as many of the non-medical radioisotopes of commercial value, such as  \ce{^{32}Si}, \ce{^{73}As}, \ce{^{95m}Tc}, and  \ce{^{109}Cd} \cite{international2009iaea,schlyer2008cyclotron}. 
 \comment{Should \enquote{intermediate-energy} be less than 200 MeV, or 100 MeV?  I find conflicting descriptions in the literature.\\Lee:  I believe that 60 MeV is considered as the transition point\\ Stephen: In this context, I would make this definition based on what machines in the US are routinely used for medical isotope production - based on this, I agree with 200 MeV. }
- The future of nuclear medicine would appear to be the paradigm of personalized medicine --- targeted radionuclide therapy to spare healthy tissue \cite{Mulford2005,Qaim201731}, and theranostic medicine, which pairs an imaging isotope with a therapeutic isotope (frequently, of the same element), to provide simultaneous, real-time dose delivery and verification, leading to drastic reductions in prescribed patient dose \cite{Muller2014,Bentzen2005,Srivastava2012}. 
+The future of nuclear medicine would appear to be the paradigm of personalized medicine --- targeted radionuclide therapy to spare healthy tissue \cite{Mulford2005,Qaim201731}, and theranostic medicine, which pairs an imaging isotope with a therapeutic isotope (frequently, of the same element), to provide simultaneous, real-time dose delivery and verification, leading to drastic reductions in prescribed patient dose \cite{Muller2014,Bentzen2005,Srivastava2012}. 
 Other variants of theranostic medicine exist, including pre-imaging for treatment planning, or delivery of a single compound with different radioelements for imaging/therapy where the inter-element biodistribution has been validated.  
 Candidate isotopes to meet these needs have been identified based on their chemical and radioactive decay properties \cite{NSACIsotopesSubcommittee2015,Qaim201731,bernstein2015nuclear}, and a series of campaigns are underway to perform targeted, high-priority measurements of thin-target cross sections and thick-target integral yields.
 These studies will serve to facilitate the production of pre-clinical quantities of radioactivity.
@@ -554,7 +554,7 @@ These studies will serve to facilitate the production of pre-clinical quantities
 One significant obstacle to both high-fidelity measurements of production cross sections for emerging medical radionuclides, as well as conventional isotope production, is a lack of well-characterized  dosimetry standards.  
 This is particularly true for higher-energy charged particle beams, where there is currently a paucity of such data. 
 Indeed, the development of new dosimetry standards and the improved evaluation of existing standards is one of the areas of greatest cross-cutting need for nuclear data \cite{bernstein2015nuclear}. 
-Charged particle dosimetry data currently exists for several low-to-intermediate energy charged particle beams (E \textless\ 50 MeV / A), but even the experimental data used for this evaluation are  sparse above approximately 30 MeV / A and  uncertainties in experimental cross sections are large (6-15\%) \cite{gul2001charged}. 
+Charged particle dosimetry data currently exists for several low-to-intermediate energy charged particle beams (E \textless\ 50 MeV / A), but even the experimental data used for this evaluation are  sparse above approximately 30 MeV / A and  uncertainties in experimental cross sections are large (6--15\%) \cite{gul2001charged}. 
 While work is needed to improve upon existing dosimetry data, the development of new reactions can expand the available range of options for the monitoring of charged particle beams.
 \comment{Stephen: I'm having a hard time following this paragraph. Some of your syntax overlaps significantly with nuclear medicine \& medical physics terminology with different intended meanings. For example 'dosimetry' is typically taken to mean the measurement of absorbed energy per unit mass (J/kg) and associated measurements/specifications. Another example, 'dosimetry standard' is used quite often when referring to NIST air kerma reference standards which are the bedrock of Accredited Dosimetry Calibration Lab (ADCL) measurements. As you are more familiar with classic Nuclear Physics writing, perhaps you better know how this language will be interpreted. }
 
@@ -573,8 +573,8 @@ In this regime, the monitor reaction offers little-to-no energy sensitivity.
 However,  in the pre-equilibrium regime, monitor reactions become extremely useful for determining the integral beam current. 
 While cross section measurements often use external beam current monitors (such as an inductive pickup upstream of a target, or an electrically-isolated target in a Faraday cup), these measure the integrated current incident upon an entire target assembly.
 For the case of stacked-target activation experiments, commonly employed to measure cross sections at multiple energies  in a single activation, external beam current monitors can only measure the integral current incident upon the \enquote{front} (upstream) of the target stack.
-In these experiments, a series of monitor foils at each energy position allow one to measure the integral current at each position in the stack, reducing systematic errors in observed cross section magnitude.
-\comment{Stephen:  ``and precision, unfortunately ''.  Update post-discussion.}
+In these experiments, a series of monitor foils at each energy position allows one to indirectly measure the integral current at each position in the stack, reducing systematic errors in observed cross section magnitude, but with reduced precision compared to direct measurement using a well-characterized suppressed Faraday cup.
+% \comment{Stephen:  ``and precision, unfortunately ''.  Update post-discussion.}
 Both of these purposes make well-characterized dosimetry an invaluable asset to any activation experiment. 
 
 
@@ -600,7 +600,7 @@ In practice, the weakest components of decay data are often the gamma-ray intens
 Since this uncertainty is propagated in quadrature from the activity of both the monitor reaction and the reaction product being studied, choosing a monitor with a well-established gamma-ray intensity can make a significant reduction in measured cross section uncertainties.
 
 
-From a targetry  perspective, it is preferable to use a naturally mono-isotopic target that is readily commercially available at an affordable price and is generally chemically inert - any significant chemical changes during target preparation (significant oxidation, etc) will affect the target's areal density, systematically changing the measured integral current. 
+From a targetry  perspective, it is preferable to use a naturally mono-isotopic target that is readily commercially available at an affordable price and is generally chemically inert --- any significant chemical changes during target preparation (significant oxidation, etc) will affect the target's areal density, systematically changing the measured integral current. 
 Structurally, the target material should be malleable and supportive to be able to be formed into a thin target.
 For charged particle reactions,  energy degradation scales with target areal density,  broadening the energy spectrum downstream of the target.
 However, since the monitor reaction yield also scales with target areal density, the use of a target which is too thin may provide insufficient counting statistics during decay spectroscopy.
@@ -610,7 +610,7 @@ Thickness selection will be subject to the context of an experiment, seeking to 
 
 
 
-\comment{Stephen:  This is also a discussion point. If you're trying to introduce the purpose of this paper, i.e. the establishment of a new monitor reaction, I would try to condense paragraphs 3-9 into two paragraphs: one paragraph explaining what a monitor reaction is used for, and the other describing considerations relevant to the use of a monitor reaction. The rest of this content can be included in the discussion if you feel it is necessary.}
+\comment{Stephen:  This is also a discussion point. If you're trying to introduce the purpose of this paper, i.e. the establishment of a new monitor reaction, I would try to condense paragraphs 3--9 into two paragraphs: one paragraph explaining what a monitor reaction is used for, and the other describing considerations relevant to the use of a monitor reaction. The rest of this content can be included in the discussion if you feel it is necessary.}
 Lastly, and perhaps most importantly for high-energy dosimetry applications, it is  of utmost importance to choose a reaction channel which cannot be populated via secondary particles incident upon the monitor target.
 This is typically mostly a concern for secondary neutrons produced through (z,xn) reactions on upstream targets, degraders, and stack materials, to avoid monitor reactions which can be populated through (n,x) reactions on the target.
 Any monitor reaction channel which can be populated by anything other than the primary beam should be avoided, as it is often a laborious task to separate out the fraction of secondary particles contributing to the total activation.  
@@ -618,33 +618,14 @@ Any monitor reaction channel which can be populated by anything other than the p
 
 
 
-% The purpose of the present work is to explore the potential to use high-flux neutron generators to produce high-specific activity samples of radionuclides at the mCi level for local use in the application community. 
-%  The research group at UC Berkeley has  developed a High Flux Neutron Generator (HFNG) that features an internal target where samples can be placed just several millimeters from the neutron producing surface in order to maximize the utilization of the neutron yield for the production of a desired radionuclide \cite{Waltz2017,Waltz2016a,doi:10.1063/1.3267832}.
-%  The HFNG uses the D(D,n)\ce{^3He} reaction to produce neutrons with energies near 2.45 MeV together with a self-loading target design to maintain continuous operation without target replacement.
-%  In addition to the generator itself, efforts are underway to design neutron reflection capabilities to allow scattered neutrons multiple opportunities to interact with an  internally mounted target.
-% While these design efforts are underway, the HFNG can be used to better characterize production cross sections at the appropriate neutron energy.
-% 
-% 
-% The present work features a pair of cross section measurements for the production of two emerging non-standard medical radionuclides: the positron emitter \ce{^{64}Zn}(n,p)\ce{^{64}Cu} and the single - photon emission computed tomography (SPECT) tracer \ce{^{47}Ti}(n,p)\ce{^{47}Sc}.
-% \ce{^{64}Cu}  ($t_{1/2}$ = 12.7 h) undergoes $\beta^+$ decay (61.5\% branching ratio) to \ce{^{64}Ni} or $\beta^-$ decay (38.5\% branching ratio) to \ce{^{64}Zn} \cite{Singh2007}.
-% The emitted short-range 190-keV $\beta^-$ particle makes this an  attractive  therapeutic radionuclide, which also has the possibility for simultaneous positron emission tomography (PET) imaging for real-time dose monitoring and verification.
-% This makes \ce{^{64}Cu} particularly desirable  for emerging radiation therapy protocols \cite{Lewis2003,NSACIsotopesSubcommittee2015,Bandari2014,mp500671j}.
-% In addition, copper radiochemistry is well developed, and many existing ligands and carriers may be used for selective delivery of the radionuclide to different sites in patients.
-% The second radionuclide studied, \ce{^{47}Sc} ($t_{1/2}$ = 3.35 d), undergoes $\beta^-$ decay to \ce{^{47}Ti}, emitting a high-intensity (63.8\%) 159-keV gamma-ray in the process \cite{Burrows2007}.
-% This radionuclide is  attractive as an emerging diagnostic isotope, due to the similarity of the emitted gamma-ray to that of the  well-established \ce{^{99m}Tc} \cite{Qaim2011,Qaim201731,Kolsky1998,mausner1995evaluation}.
-% Due to the short half-life ($t_{1/2}$ = 6.0 h) of and dwindling supplies of \ce{^{99m}Tc}, \ce{^{47}Sc} stands poised as a potential solution to this shortage, due to its longer half-life and multiple production pathways without the need for highly enriched uranium \cite{Browne2011}.
-% In addition, when paired with \ce{^{44}Sc}, \ce{^{47}Sc} forms a promising \enquote{theranostic} pair for use in simultaneous therapeutic and diagnostic applications \cite{Muller2014,Deilami-nezhad2016}.
-
-% \comment{cite theranostic papers, etc}
-
 
 One monitor reaction which satisfies these requirements is that of a new, intermediate-energy proton dosimetry standard based on \ce{^{93}Nb}(p,4n)\ce{^{90}Mo}. 
 Niobium is naturally mono-isotopic, readily  available commercially in high purity, is chemically inert, and can easily be rolled down to foils as thin as 1 $\micro$m.  
-\ce{^{90}Mo} also has excellent decay properties - its fairly long-lived lifetime ($\epsilon=100\%, t_{1/2}=5.56 \pm 0.09$ h) allows it to be counted at leisure without fear of the product \ce{^{90}Mo} decaying away excessively between end-of-beam and the start of counting, and it possesses seven strong, distinct gamma lines (notably its 122.370 keV ($I_\gamma = 64 \pm 3\%$) and 257.34 keV ($I_\gamma = 78 \pm 4\%$) lines) which can be used to uniquely and easily   quantify \ce{^{90}Mo} production \cite{Browne1997}. 
+\ce{^{90}Mo} also has excellent decay properties --- its fairly long-lived lifetime ($\epsilon=100\%, t_{1/2}=5.56 \pm 0.09$ h) allows it to be counted at leisure without fear of the product \ce{^{90}Mo} decaying away excessively between end-of-beam and the start of counting, and it possesses seven strong, distinct gamma lines (notably its 122.370 keV ($I_\gamma = 64 \pm 3\%$) and 257.34 keV ($I_\gamma = 78 \pm 4\%$) lines) which can be used to uniquely and easily   quantify \ce{^{90}Mo} production \cite{Browne1997}. 
 In addition,  \ce{^{90}Mo} is completely immune from (n,x) production on  \ce{^{93}Nb}, being produced only via the primary proton beam, and the \ce{^{90}Mo} decay lines can only be observed in its decay, as its daughter, \ce{^{90}Nb}, is also unstable and decays via $\epsilon$ to stable \ce{^{90}Zr}. 
  
 The purpose of the present work is to  measure the production of the long-lived radionuclide \ce{^{90}Mo} ($t_{1/2}=5.56 \pm 0.09$ h \cite{Browne1997}) via the $^\text{nat}$Nb(p,x) reaction. 
-In addition to the $^\text{nat}$Nb(p,x)\ce{^{90}Mo} measurement, this experiment has also yielded measurements of 32 other (p,x) production cross sections between 40 -- 90 MeV  for a number of additional reaction products, including several emerging radionuclides with medical applications.
+In addition to the $^\text{nat}$Nb(p,x)\ce{^{90}Mo} measurement, this experiment has also yielded measurements of 32 other (p,x) production cross sections between 40--90 MeV  for a number of additional reaction products, including several emerging radionuclides with medical applications.
 These include the non-standard positron emission tomography (PET) agent \ce{^{57}Ni}  ($t_{1/2}=35.60\pm0.06$ h \cite{Bhat1998}), \ce{^{64}Cu} ($t_{1/2}=12.701 \pm 0.002$ h \cite{Singh2007}), \ce{^{86}Y}  ($t_{1/2}=14.74\pm0.02$ h \cite{NEGRET20151}), \ce{^{89}Zr} ($t_{1/2}=78.41\pm0.12$ h \cite{Singh2013}),  \ce{^{90}Nb} ($t_{1/2}=14.60 \pm 0.05$ h \cite{Browne1997}),  and the diagnostic agent \ce{^{82\text{m}}Rb} ($t_{1/2}=6.472\pm0.006$ h \cite{Tuli2003}). 
 
 
@@ -679,15 +660,15 @@ While the reactions and mass region being explored in this work differ from the 
 
 A stacked-target design was utilized for this work in order that the (p,x) cross sections for each reaction channel could be measured at multiple energy positions in a single irradiation \cite{Cumming1963}. 
 For targets, a series of nominal 25 \micro m \ce{^{nat}Nb} foils (99.8\%, lot \#T23A035), 25 \micro m \ce{^{nat}Al} foils (99.999\%, lot \#M06C032), and 50 \micro m \ce{^{nat}Cu} foils (99.9999\%, lot \#N26B062) were used (all from Alfa Aesar, Ward Hill, MA, 01835, USA).
-Six foils of each metal were cut down to 2.5 x 2.5 cm squares and characterized - for each foil, length and width measurements were taken at four different locations using a digital caliper (Mitutoyo America Corp.), thickness measurements were taken at four different locations using a digital micrometer (Mitutoyo America Corp.), and four mass measurements were taken using an analytical balance after cleaning the foils with isopropyl alcohol.
+Six foils of each metal were cut down to 2.5 x 2.5 cm squares and characterized --- for each foil, length and width measurements were taken at four different locations using a digital caliper (Mitutoyo America Corp.), thickness measurements were taken at four different locations using a digital micrometer (Mitutoyo America Corp.), and four mass measurements were taken using an analytical balance after cleaning the foils with isopropyl alcohol.
 Using these length, width, and mass readings, the areal density (in mg/cm$^2$) for each foil was calculated, along with the propagated uncertainty in areal density.
-The foils were tightly sealed into \enquote{packets} using two pieces of  3M 5413-Series Kapton polyimide film tape - each piece of tape consists of 43.2 \micro m of a silicone adhesive (nominal 4.793 mg/cm$^2$) on 25.4 \micro m of a polyimide backing (nominal 3.607 mg/cm$^2$).
+The foils were tightly sealed into \enquote{packets} using two pieces of  3M 5413-Series Kapton polyimide film tape --- each piece of tape consists of 43.2 \micro m of a silicone adhesive (nominal 4.79 mg/cm$^2$) on 25.4 \micro m of a polyimide backing (nominal 3.61 mg/cm$^2$).
 The sealed foils were mounted over the hollow center of a 1.575 mm-thick plastic frame.
 One \ce{^{nat}Al}, one \ce{^{nat}Cu}, and \ce{^{nat}Nb} mounted foil were bundled together using baling wire for each energy position.
 These foil packet bundles were lowered into the beamline by inserting them into a  water-cooled production target box.
 % These six foil packet bundles were inserted into one of six  
 The box, seen in \autoref{fig:target_stack}, is machined from 6061 aluminum alloy, has a thin (0.64 mm) Inconel beam entrance window, and  contains 6 \enquote{energy positions} for targets, formed by  5 slabs of 6061 aluminum alloy (previously characterized) which serve as proton energy degraders  between energy positions.
-At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor - after end-of-beam (EoB), decay radiation emitted from these activated stainless steel foils may be used to develop radiochromic film (Gafchromic EBT3), revealing the spatial profile of the beam entering and exiting the stack.
+At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor --- after end-of-beam (EoB), decay radiation emitted from these activated stainless steel foils may be used to develop radiochromic film (Gafchromic EBT3), revealing the spatial profile of the beam entering and exiting the stack.
 After loading all targets in the stack, the lid of the target box is sealed in place, using an inset o-ring to create a water-tight seal, and the box is lowered through a hot cell into the beamline, where it sits electrically isolated.
 The specifications of the target stack design for this work is presented in \autoref{tab:stack_table}.
 
@@ -696,7 +677,7 @@ The specifications of the target stack design for this work is presented in \aut
 This target stack was assembled and irradiated at the Isotope Production Facility (IPF) at the Los Alamos National Laboratory (LANL), using the LANSCE linear accelerator. 
 The stack was irradiated for approximately 2 hours with a nominal current of 1 mA, using a 50 \micro s pulse at a frequency of 2 Hz, for an anticipated integral current of 205.9 nAh.
 The beam current, measured using an inductive pickup, remained stable under these conditions for the duration of the irradiation, with the exception of approximately 70\,s of downtime, which occurred approximately 3 minutes into irradiation.
-The proton beam incident upon the stack's Inconel beam entrance window had an average energy of 100 MeV determined via time-of-flight, with an approximately Gaussian energy distribution width of 0.1 MeV - this energy profile was used for all later analysis.
+The proton beam incident upon the stack's Inconel beam entrance window had an average energy of 100 MeV determined via time-of-flight, with an approximately Gaussian energy distribution width of 0.1 MeV --- this energy profile was used for all later analysis.
 At the end of the irradiation, the target stack was withdrawn from the beamline into the IPF hot cell, where it was disassembled and the activated foils removed using robotic manipulators.
 The activated foils were cleaned of all surface contamination, and transported to a counting lab for gamma spectroscopy, which started approximately 7 hours following end-of-beam.
 
@@ -761,7 +742,7 @@ SS profile monitor & 124.4 \micro m         & 101.34                            
 
 For consistency, a single detector was used in this measurement, an ORTEC GEM Series (model \#GEM10P4-70)  High-Purity Germanium (HPGe) detector.
 The detector is a mechanically-cooled coaxial p-type HPGe with a 1 mm aluminum window, and a 49.2 mm diameter, 27.9 mm long crystal.
-Samples were counted at fixed positions ranging 4.5 - 83.5  cm (5\% maximum permissible dead-time) from the front face of the detector, with a series of standard calibration sources used to determine energy, efficiency, and pileup calibrations for each position.
+Samples were counted at fixed positions ranging 4.5--83.5  cm (5\% maximum permissible dead-time) from the front face of the detector, with a series of standard calibration sources used to determine energy, efficiency, and pileup calibrations for each position.
 The foils were counted  for a period of 2 weeks following EoB, to accurately quantify all induced activities,  with dead time never exceeding 5\%.
 An example gamma-ray spectrum collected in such a fashion is shown in \autoref{fig:gspec}.
 For all spectra collected, net peak areas were fitted using the gamma spectroscopy analysis code UNISAMPO \cite{Aarnio2001}, which has been shown to perform best in comparisons with other common analysis codes \cite{Jackman2014}.
@@ -894,14 +875,14 @@ While most experimental uncertainties are reported at the 1$\sigma$ level, the $
 
 The \enquote{variance minimization} techniques  described by  Graves \etal\  have been employed here to further reduce the uncertainty in proton energy assignments     \cite{Graves2016}.
 This method is based on the assumption that the independent measurements of proton fluence from the 5 monitor reactions used in this work should all be consistent at each energy position.
-If the monitor reaction cross sections and MCNP6 - modeled energy distributions are both accurate, then any disagreement in the  observed proton fluences is due to a systematic uncertainty in the stack design, namely, the areal densities of the stack components \cite{Graves2016,Marus2015}. 
+If the monitor reaction cross sections and MCNP6-modeled energy distributions are both accurate, then any disagreement in the  observed proton fluences is due to a systematic uncertainty in the stack design, namely, the areal densities of the stack components \cite{Graves2016,Marus2015}. 
 This disagreement is minor at the front of the stack, and gets progressively worse as the beam is degraded, due to the compounded effect of systematic uncertainties in stack areal densities.
 
 
 
 Variance minimization techniques were employed  to correct for uncertainties in  the characterization of the stack components, the largest cause of uncertainties in energy and  fluence assignments.
 Due to the difficulty of characterizing uncertainty in areal density in the Kapton tape, the areal density of these layers were varied uniformly in MCNP6 simulations by up to $\pm$25\% of nominal values.
-This had negligible impact on improving monitor reaction disagreement  due to the small effect that their areal density has on beam degradation relative to the thick 6061 aluminum degraders (nominal 3-5 mg/cm$^2$, relative to nominal 1000-1400 mg/cm$^2$).
+This had negligible impact on improving monitor reaction disagreement  due to the small effect that their areal density has on beam degradation relative to the thick 6061 aluminum degraders (nominal 3--5 mg/cm$^2$, relative to nominal 1000--1400 mg/cm$^2$).
 As such,  the areal density of each of the 6061 aluminum degraders  were varied uniformly in MCNP6 simulations  by a factor of up to $\pm$25\% of nominal values, to find the effective density which minimized variance in the measured proton fluence at the lowest energy position (Al-6, Cu-6).
 This lowest energy position was chosen as a minimization candidate, as it is most sensitive to systematic uncertainties in stack design.
 The results of this minimization technique, shown in \autoref{fig:variation_curve}, indicate a clear minimum in proton fluence variance for flux-weighted average 41.34 MeV protons entering the last energy position.
@@ -1060,7 +1041,7 @@ Using the final proton fluence at each energy position, cross sections for  \ce{
 For  (p,x) reactions on \ce{^{nat}Nb} foils, the (p,x) cross sections for \ce{^{82m}Rb}, \ce{^{83}Sr}, \ce{^{85g}Y}, \ce{^{85m}Y}, \ce{^{86}Zr}, \ce{^{86}Y}, \ce{^{87}Zr}, \ce{^{87g}Y}, \ce{^{87m}Y}, \ce{^{88}Zr}, \ce{^{88}Y}, \ce{^{89g}Nb}, \ce{^{89m}Nb}, \ce{^{89}Zr}, \ce{^{90}Mo}, \ce{^{90}Nb}, \ce{^{91m}Nb}, \ce{^{92m}Nb}, and \ce{^{93m}Mo} were extracted, as recorded in \autoref{tab:nb_rp_table}.
 In addition, as there exist a number of isomers with radioactive ground states in these mass regions,  independent measurements of isomer-to-ground-state branching ratios for \ce{^{52m/g}Mn},\ce{^{58m/g}Co},\ce{^{85m/g}Y},\ce{^{87m/g}Y}, and \ce{^{89m/g}Nb} were  extracted and are recorded in \autoref{tab:ibr_table}.
 Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR \cite{Otuka2014272}) are seen in the figures of \ref{fit_figures} and \ref{ibr_figures}.
-The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity ($\pm$1-7\%), proton fluence ($\pm$2-3\%), and foil areal density ($\pm$0.1-0.6\%).
+The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity ($\pm$1--7\%), proton fluence ($\pm$2--3\%), and foil areal density ($\pm$0.1--0.6\%).
 \comment{Update these with new numbers!\\ Stephen: Very impressive, if you feel this is realistic. }
 
 
@@ -1276,27 +1257,27 @@ E$_\text{p}$ (MeV)             & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64
 
 These results have several notable takeaways.
 The various \ce{^{nat}Cu}(p,x) cross sections measured here are in excellent agreement with the body of measurements in the literature,  but have been measured nearly exclusively with the highest precision to date.
-Similarly, the various \ce{^{nat}Nb}(p,x) cross sections measured here are in excellent agreement with literature data, which is far more sparse in the 40 - 90 MeV region than for \ce{^{nat}Cu}(p,x) -  less than 3 existing measurements have been performed for the majority of the reactions presented here.
+Similarly, the various \ce{^{nat}Nb}(p,x) cross sections measured here are in excellent agreement with literature data, which is far more sparse in the 40--90 MeV region than for \ce{^{nat}Cu}(p,x) ---  less than 3 existing measurements have been performed for the majority of the reactions presented here.
 Indeed,  the \ce{^{nat}Nb}(p,x)\ce{^{83}Sr}, \ce{^{nat}Nb}(p,x)\ce{^{85}Y}, \ce{^{nat}Nb}(p,x)\ce{^{89}Nb}, \ce{^{nat}Nb}(p,x)\ce{^{90}Mo}, \ce{^{nat}Nb}(p,x)\ce{^{91m}Nb}, and \ce{^{nat}Nb}(p,x)\ce{^{98m}Mo} reactions each possess no more than a total of 3 data points in this energy region.
 Not only do the \ce{^{nat}Nb}(p,x) measurements in this work fill in the sparse data in this energy region, but they have been measured with the highest precision relative to existing literature data.
 
 
 
 Furthermore, this work presents the first measurements of several observables in these mass regions.
-This work reports the first experimental measurement of the \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction in the 40 - 90 MeV region.
+This work reports the first experimental measurement of the \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction in the 40--90 MeV region.
 It also represents  the first measurement of the independent cross section for       \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, as well as the \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$)  isomer branching ratio via \ce{^{nat}Cu}(p,x).  
 The cumulative cross sections from these data are also consistent with existing measurements of the cumulative \ce{^{nat}Cu}(p,x)\ce{^{52}Mn} cross section.
 Similarly, this work offers the first measurement of the independent cross sections for \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y},  as well as the first measurement of the     \ce{^{85\text{m}}Y} ($\sfrac{9}{2}^+$) / \ce{^{85\text{g}}Y}  ($\sfrac{1}{2}^-$) isomer branching ratio via \ce{^{nat}Nb}(p,x).
 
 
 
-Notably, this work serves as the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100 MeV to date, with cross sections measured  at the 2-3\% uncertainty level.
+Notably, this work serves as the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100 MeV to date, with cross sections measured  at the 2--3\% uncertainty level.
 This is important, as it presents the first step towards characterizing this reaction for use as a proton dosimetry standard below 100 MeV.
 The quantification of \ce{^{90}Mo} activity proved to be one of the most straightforward of all reaction products observed in this work.
 \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} can only be populated through the (p,4n) reaction channel, so no corrections for (n,x) contamination channels or decay down the A=90 isobar are needed, which makes activity quantification trivial.
 In addition, \ce{^{90}Mo}  possesses seven strong, distinct gamma lines which can easily  be used for its identification and quantification.
-Finally, the production of \ce{^{90}Mo}  in the 40 - 90 MeV region is quite strong, with a peak cross section of approximately 120 mb.
-Combining the reaction yield and gamma abundance, the use of approximately 23 mg/cm$^2$ Nb targets easily provided sufficient counting statistics for activity quantification in the 40 - 90 MeV region.
+Finally, the production of \ce{^{90}Mo}  in the 40--90 MeV region is quite strong, with a peak cross section of approximately 120 mb.
+Combining the reaction yield and gamma abundance, the use of approximately 23 mg/cm$^2$ Nb targets easily provided sufficient counting statistics for activity quantification in the 40--90 MeV region.
 This result presents the first step towards the use of \ce{^{90}Mo} as a clean and precise monitor for charged particle dosimetry in irradiations up to approximately 24 hours in duration.
 
 
@@ -1309,37 +1290,37 @@ These include the non-standard positron emitters \ce{^{57}Ni},  \ce{^{86}Y}, \ce
 
 
 \ce{^{57}Ni} ($t_{1/2}=35.60\pm0.06$ h, $\epsilon$=100\% to \ce{^{57}Co} \cite{Bhat1998}), while useful on its own as a positron emitter, stands poised as a particularly promising candidate for theranostic pairing with the soft $\beta^-$ emitter \ce{^{66}Ni} ($t_{1/2}=54.6\pm0.3$ h, $\beta^-$=100\% to \ce{^{66}Cu} \cite{Browne2010a}) \cite{PMID:7632762,zweit1996medium,Graves2016,Rosch2014}. 
-\ce{^{nat}Cu}(p,x)\ce{^{57}Ni} would seem to be an intriguing production pathway, due to the ready availability of Cu metal as target, combined with the fact that production in this pathway strongly favors \ce{^{57}Ni} over \ce{^{56}Ni} - indeed, the \ce{^{57}Ni}/\ce{^{56}Ni} 
+\ce{^{nat}Cu}(p,x)\ce{^{57}Ni} would seem to be an intriguing production pathway, due to the ready availability of Cu metal as target, combined with the fact that production in this pathway strongly favors \ce{^{57}Ni} over \ce{^{56}Ni} --- indeed, the \ce{^{57}Ni}/\ce{^{56}Ni} 
 %ratio of cross sections is approximately 70 at 61.58 MeV, and varies from 11-18 at the 70-90 MeV positions.
 ratio of production rates is approximately 290 at 61.58 MeV, and varies from 45--75 at the 70--90 MeV positions.
 The traditional route for \ce{^{57}Ni} production is via \ce{^{nat}Co}(p,3n)\ce{^{57}Ni}, but at moderate energies, suffers from more  \ce{^{56}Ni} contamination than \ce{^{nat}Cu}(p,x)  ($\sigma_\text{57Ni} / \sigma_\text{56Ni}\approx$ 10 at maximum).
-Lower-energy production via \ce{^{nat}Co}(p,3n) at 24-40 MeV is below threshold for \ce{^{56}Ni}, but has a peak cross section of approximately 10 mb, making \ce{^{nat}Cu}(p,x) the superior production route for moderate-energy accelerators  \cite{MICHEL1997153,Ditrói2013}.
+Lower-energy production via \ce{^{nat}Co}(p,3n) at 24--40 MeV is below threshold for \ce{^{56}Ni}, but has a peak cross section of approximately 10 mb, making \ce{^{nat}Cu}(p,x) the superior production route for moderate-energy accelerators  \cite{MICHEL1997153,Ditrói2013}.
 
 
 \ce{^{86}Y} ($t_{1/2}=14.74\pm0.02$ h, $\epsilon$=100\% to \ce{^{86}Sr}  \cite{NEGRET20151}) is another novel  emerging  PET isotope, whose longer half-life has poised it for applications as a tracer for slower metabolic processes, as well as in   pharmacokinetics studies \cite{Valdovinos2017,Nickles2003,Qaim2008,QaimSyedM2011}.
 In particular, it is highly desired to form a theranostic pair with the widely-employed $\beta^-$ therapy agent \ce{^{90}Y} ($t_{1/2}=64.00\pm0.21$ h, $\beta^-$=100\% to \ce{^{90}Zr} \cite{Browne1997}), which can be produced from a long-lived \ce{^{90}Sr} cow and emits no discrete observable gamma-rays or x-rays though decay \cite{Herzog1993}.
 Although a weak positron branch exists and bremsstrahlung scintigraphy is commonly used for clinical imaging of the \ce{^{90}Y} biodistribution, theranostics  necessitate an imaging isotope to be paired for quantification of its uptake and biodistribution  \cite{Nickles2004}.
-Conventional production of \ce{^{86}Y} proceeds through low-energy (7 - 14 MeV) irradiation via \ce{^{86}Sr}(p,n), which requires an enriched  \ce{^{86}Sr} target (9.86\% natural abundance), in order to eliminate contamination from (p,n) on the other stable \ce{^{84,87,88}Sr} isotopes  \cite{Rosch1993}.
-Alternatively, production at 33-43 MeV via \ce{^{88}Sr}(p,3n) has been proposed - this pathway also requires an enriched target (82.58\% natural abundance) for the same reason, but contamination with other Y co-activities will be even more pronounced than via (p,n), due to the opening of (p,n) and (p,2n) channels on all stable Sr isotopes \cite{doi:10.1139/v67-193,levkovski1991cross}.
-Minimizing activity from other isotopes of the element in question is essential for producing radionuclides in high specific activity, as these competing isotopes are often extremely difficult to separate out.
-\comment{Stephen:  impossible by radiochemical means, and impossible by affordable/practical means.\\Substitute for ``difficult'' post-discussion.}
+Conventional production of \ce{^{86}Y} proceeds through low-energy (7--14 MeV) irradiation via \ce{^{86}Sr}(p,n), which requires an enriched  \ce{^{86}Sr} target (9.86\% natural abundance), in order to eliminate contamination from (p,n) on the other stable \ce{^{84,87,88}Sr} isotopes  \cite{Rosch1993}.
+Alternatively, production at 33--43 MeV via \ce{^{88}Sr}(p,3n) has been proposed --- this pathway also requires an enriched target (82.58\% natural abundance) for the same reason, but contamination with other Y co-activities will be even more pronounced than via (p,n), due to the opening of (p,n) and (p,2n) channels on all stable Sr isotopes \cite{doi:10.1139/v67-193,levkovski1991cross}.
+Minimizing activity from other isotopes of the element in question is essential for producing radionuclides in high specific activity, as these competing isotopes are often impractical to separate out by radiochemical means.
+% \comment{Stephen:  impossible by radiochemical means, and impossible by affordable/practical means.\\Substitute for ``difficult'' post-discussion.}
 As a result, it would appear that \ce{^{nat}Nb}(p,x) is a poor route for  \ce{^{86}Y} production in this respect, as it only reaches a maximum of approximately 35\% radioisotopic purity.
 The  dominant yttrium radioisotope produced by  \ce{^{nat}Nb}(p,x) in the 40--90 MeV region is  \ce{^{87}Y} ($t_{1/2}=79.8\pm0.3$ h, $\epsilon^-$=100\% to \ce{^{87m}Sr} \cite{Johnson2015}).
 However,  \ce{^{87}Y} itself has application as a generator for  \ce{^{87m}Sr} ($t_{1/2}=2.815\pm0.012$ h, IT=99.70\% to \ce{^{87}Sr} \cite{Johnson2015}), which is used for imaging studies of metastatic bone cancers, especially when in a theranostic pair with the established therapy agent \ce{^{89}Sr} ($t_{1/2}=50.563\pm0.0025$ d, $\beta^-$=100\% to \ce{^{89}Y} \cite{Singh2013}) \cite{Kiselev1974,Kandil2009}.
-% Since the radio-yttrium purity of \ce{^{87}Y} is approximately 88\% between 51-61 MeV in \ce{^{nat}Nb}(p,x), this could present an intriguing route for  \ce{^{87}Y} production.
+% Since the radio-yttrium purity of \ce{^{87}Y} is approximately 88\% between 51--61 MeV in \ce{^{nat}Nb}(p,x), this could present an intriguing route for  \ce{^{87}Y} production.
 
 
 
 
 \ce{^{89}Zr} ($t_{1/2}=78.41\pm0.12$ h, $\epsilon$=100\% to \ce{^{89}Y}  \cite{Singh2013}) is a long-lived positron emitter useful as a tracer for slow biological processes, immune studies, and imaging of liver and  breast cancers \cite{Verel2003,Dijkers2009,Dijkers2010}.
-Current production focuses on \ce{^{89}Y}(p,n)\ce{^{89}Zr} between 9 - 14 MeV, which offers an extremely high-purity route on a mono-isotopic target and a strong population of \ce{^{89}Zr}, with a peak cross section of nearly 800 mb   \cite{PhysRevC.38.1624,Omara2009}.
+Current production focuses on \ce{^{89}Y}(p,n)\ce{^{89}Zr} between 9--14 MeV, which offers an extremely high-purity route on a mono-isotopic target and a strong population of \ce{^{89}Zr}, with a peak cross section of nearly 800 mb   \cite{PhysRevC.38.1624,Omara2009}.
 Due to co-production of additional \ce{^{86,87,88}Zr} radio-zirconium,  \ce{^{nat}Nb}(p,x) is clearly inferior to  \ce{^{89}Y}(p,n)\ce{^{89}Zr}, as the Nb route has a smaller peak cross section of approximately 290 mb, and achieves only 10--20\% radioisotopic purity in the 50--90 MeV region.
 
 
 
 
 \ce{^{90}Nb} ($t_{1/2}=14.60 \pm 0.05$ h, $\epsilon$=100\% to \ce{^{90}Zr}  \cite{Browne1997}) is an emerging PET emitter with a moderate lifetime, making it suited for immune and tumor uptake studies    \cite{Busse2002,Radchenko2012}.
-It is typically produced using 8 - 15 MeV protons via \ce{^{90}Zr}(p,n)\ce{^{90}Nb}, using an enriched target (51.45\% natural abundance) for high radioisotopic purity, and produces a product with minimal contamination and a peak cross section of approximately 750 mb  \cite{Busse2002}.
+It is typically produced using 8--15 MeV protons via \ce{^{90}Zr}(p,n)\ce{^{90}Nb}, using an enriched target (51.45\% natural abundance) for high radioisotopic purity, and produces a product with minimal contamination and a peak cross section of approximately 750 mb  \cite{Busse2002}.
 \ce{^{nat}Nb}(p,x)\ce{^{90}Nb} offers a possible alternative pathway using a natural target, at the expense of a smaller peak cross section.
 \ce{^{90}Nb} may be produced directly with an approximately 360 mb peak cross section and 99\% radioisotopic purity, or could be produced as a \ce{^{90}Mo}/\ce{^{90}Nb} generator, which would have nearly 100\% radioisotopic purity by using protons below the \ce{^{nat}Nb}(p,5n) threshold of 45.76 MeV.
 However, the greatest problem with using the \ce{^{nat}Nb}(p,x) reaction to produce \ce{^{90}Nb} is the inability to separate the radioisotope from the target itself, rendering the production of a high-specific activity product impossible.  
@@ -1351,7 +1332,7 @@ However, the greatest problem with using the \ce{^{nat}Nb}(p,x) reaction to prod
 The emitted short-range 190-keV $\beta^-$ particle makes this an  attractive  therapeutic radionuclide, and the PET branch gives  \ce{^{64}Cu}  the possibility for real-time dose monitoring and verification \cite{Lewis2003,Bandari2014,mp500671j}.
 % This makes \ce{^{64}Cu} particularly desirable  for emerging radiation therapy protocols \cite{Lewis2003,Bandari2014,mp500671j}.
 Several production routes currently exist: \ce{^{64}Ni}(p,n)  uses 8--14 MeV protons on the expensive enriched target \ce{^{64}Ni} (0.9255\% natural abundance), but offers a high radioisotopic purity assuming a highly enriched target \cite{Szelecsenyi1993,Aslam2009}.
-\ce{^{68}Zn}(p,$\alpha$n) requires more energetic 20 - 30 MeV protons, and necessitates an enriched target (18.45\% natural abundance) to avoid the co-production of radio-copper impurities \cite{Hilgers2003a,Szelecsenyi2005}.
+\ce{^{68}Zn}(p,$\alpha$n) requires more energetic 20--30 MeV protons, and necessitates an enriched target (18.45\% natural abundance) to avoid the co-production of radio-copper impurities \cite{Hilgers2003a,Szelecsenyi2005}.
 More recently, the use of compact DD neutron generators for \ce{^{nat}Zn}(n,p) production has been proposed, with the promise of mCi-scale production with high specific activity  \cite{Voyles2017}.
 % \ce{^{nat}Cu}(p,x)\ce{^{64}Cu} could be another potential production pathway 
 
@@ -1361,7 +1342,7 @@ More recently, the use of compact DD neutron generators for \ce{^{nat}Zn}(n,p) p
 Finally, \ce{^{82\text{m}}Rb} ($t_{1/2}=6.472\pm0.006$ h, $\epsilon$=100\% to \ce{^{82}Kr}  \cite{Tuli2003}) is a diagnostic and emerging Auger-therapy agent, typically seen as a contaminant in \ce{^{82}Sr}/\ce{^{82}Rb} generators 
 % for PET studies
 \cite{Kovacs1991}.
-It is commonly produced via \ce{^{82}Kr}(p,n) at 10 - 15 MeV, using an enriched \ce{^{82}Kr} gaseous target, with a peak cross section of approximately 400 mb at 12 MeV \cite{Kovacs1991}.
+It is commonly produced via \ce{^{82}Kr}(p,n) at 10--15 MeV, using an enriched \ce{^{82}Kr} gaseous target, with a peak cross section of approximately 400 mb at 12 MeV \cite{Kovacs1991}.
 Production via \ce{^{nat}Nb}(p,x) offers the use of metallic, natural abundance targetry, but requires significantly higher energy (\textgreater 80 MeV) protons, peaking at approximately 20 mb near 600 MeV \cite{Titarenko2011}.
 It is clear that this production route offers no advantage over existing \ce{^{82}Kr}(p,n) routes for in-house production.
 
@@ -1389,7 +1370,7 @@ It is clear that this production route offers no advantage over existing \ce{^{8
 We present here a set of 38 measurements of cross sections for the \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40--90 MeV, as well as 5 independent measurements of isomer branching ratios.
 Nearly all cross sections have been reported with higher precision than previous measurements.
 We report the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90 MeV region.
-We also use these measurements to illustrate the impact of pre-equilibrium particle emission in the reaction dynamics for 40 - 90 MeV \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
+We also use these measurements to illustrate the impact of pre-equilibrium particle emission in the reaction dynamics for 40--90 MeV \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
 Finally, this work provides another example of the usefulness of the recently-described variance minimization techniques for reducing energy uncertainties in stacked target charged particle irradiation experiments.
 
 
@@ -1401,17 +1382,26 @@ Finally, this work provides another example of the usefulness of the recently-de
  
  The authors would like to particularly acknowledge the assistance and support of  Michael Gallegos and Don Dry in the LANL C-NR Countroom, David Reass and Mike Connors at LANSCE-IPF, and the LANSCE Accelerator Operations staff. 
  
- This research used the Savio computational cluster resource provided by the Berkeley Research Computing program at the University of California, Berkeley (supported by the UC Berkeley Chancellor, Vice Chancellor for Research, and Chief Information Officer).
+We gratefully acknowledge support for this work from the United States Department of Energy, Office of Science via the Isotope Development and Production for Research and Applications subprogram in the Office of Nuclear Physics. 
+This work has been carried out  under the auspices of the U.S. Department of Energy by  Lawrence Berkeley National Laboratory and the U.S. Nuclear Data Program under contract \# DE-AC02-05CH11231.
+This research was performed under appointment to the Rickover Fellowship Program in Nuclear Engineering, sponsored by the Naval Reactors Division of the U.S. Department of Energy
+Additional support has been provided by the U.S. Nuclear Regulatory Commission.
+
+
+
+ 
+This research used the Savio computational cluster resource provided by the Berkeley Research Computing program at the University of California, Berkeley (supported by the UC Berkeley Chancellor, Vice Chancellor for Research, and Chief Information Officer).
+
  
 %  This work has been carried out at the University of California, Berkeley, and performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under contract \# DE-AC52-07NA27344 and Lawrence Berkeley National Laboratory under contract \# DE-AC02-05CH11231.
 % Funding has been provided from the US Nuclear Regulatory Commission, the US Nuclear Data Program, the Berkeley Geochronology Center, NSF ARRA Grant \# EAR-0960138, the University of California Laboratory Fees Research Grant \# 12-LR-238745, and  DFG Research Fellowship \# RU 2065/1-1.
 
-This work has been carried out  under the auspices of the U.S. Department of Energy by  Lawrence Berkeley National Laboratory under contract \# DE-AC02-05CH11231.
-Funding has been provided from the US Nuclear Regulatory Commission and the US Nuclear Data Program.
+% This work has been carried out  under the auspices of the U.S. Department of Energy by  Lawrence Berkeley National Laboratory under contract \# DE-AC02-05CH11231.
+% Funding has been provided from the US Nuclear Regulatory Commission and the US Nuclear Data Program.
 
  
  
- \comment{Please provide me here with all relevant contract / grant / fellowship / funding ID numbers, as well as anyone else that you feel should be acknowledged here.}
+%  \comment{Please provide me here with all relevant contract / grant / fellowship / funding ID numbers, as well as anyone else that you feel should be acknowledged here.}
  
 %  We would like to particularly point out the crucial role played by Cory Waltz in the design and commissioning of the HFNG.
 %  We wish to thank Marc Garland and Saed Mirzadeh for discussions regarding the use of neutron generators for isotope production.
