@@ -7,43 +7,6 @@
 \documentclass{ucbthesis}
 \usepackage{natbib}
 
-\usepackage[american]{babel}
-\usepackage{amsmath}
-\usepackage[version=3]{mhchem} 
-% \usepackage{fixltx2e}
-% \usepackage{refcount}
-% \usepackage{siunitx}
-% \usepackage{lastpage}
-% \usepackage{textcomp}
-\usepackage{mathtools}
-
-\usepackage{xfrac}
-\usepackage{lmodern}
-\usepackage[hidelinks]{hyperref}
-% \usepackage{cool}
-% \usepackage{cancel}
-\usepackage{microtype}
-\usepackage{listings}
-\usepackage{mcode}
-\usepackage [autostyle, english = american]{csquotes}
-% \usepackage{longtable}
-\usepackage{subcaption}
-\usepackage{booktabs,siunitx}
-% \usepackage{gensymb}
-\usepackage[normalem]{ulem}
-
-% \usepackage{mathtools, cuted}
-
-
-% \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\usepackage{color}
-
-\usepackage[colorinlistoftodos]{todonotes}
-
-\usepackage[section]{placeins}
-\usepackage{multirow}
-
-
 % \usepackage{biblatex}
 
 % To compile this file, run "latex thesis", then "biber thesis"
@@ -60,7 +23,7 @@
 
 \newtheorem{theorem}{Jibberish}
 
-\bibliography{../../library}
+\bibliography{references}
 
 \hyphenation{mar-gin-al-ia}
 \hyphenation{bra-va-do}
@@ -146,12 +109,10 @@ And exposition? Of go. No upstairs do fingering.
 
 \include{chap1}
 \include{chap2}
-\include{chap3}
 
 % \appendix
 % \chapter{More Monticello Candidates}
 
-
-% \printbibliography
+\printbibliography
 
 \end{document}

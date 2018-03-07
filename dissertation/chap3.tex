@@ -1,0 +1,202 @@
+\chapter{Prexy Salaam}
+
+\section{Faceplate Marginalia}
+
+
+Activation analysis is one of the most fundamental measurement techniques in experimental nuclear physics, as it is a simple and straightforward method to probe the structure and behavior of nuclear matter,  dating back to the infancy of the field. 
+All activation measurements involve the analysis and quantification of decaying radioactive nuclei created through irradiation via ionizing radiation \cite{ehmann1993radiochemistry,krüger1971principles}.
+% \comment{Lee:  I think that you might want to mention a connection to BLIP, IPF, iThemba etc. here, and make it clear that you're dealing with protons only, not neutrons.  }
+Monitor reactions have  historically been part of such activation experiments, and serve two valuable purposes for charged particle-induced reactions, depending upon the energy regime.  
+% \comment{Stephen:  Move much of the remaining intro section into the Discussion, for brevity?}
+Between the reaction's energetic threshold  and the end of its compound peak, the magnitude and shape of a monitor reaction's excitation function changes rapidly with increasing energy, making it useful for determining the energy distribution of particles which have traversed a thin irradiated target.
+This is particularly the case when comparing  monitor reactions leading to two distinct residual nuclei from the same target, such as the $^\text{nat}$Cu(p,x)\ce{^{62}Zn} and $^\text{nat}$Cu(p,x)\ce{^{63}Zn} reactions \cite{gul2001charged}.
+This is extremely valuable, as it allows the screening and minimization of systematic errors based on energy determination, though this sensitivity to energy precludes their reliability as a beam current monitor.  
+
+Moving to the higher energy  of the reaction's pre-equilibrium tail, the excitation function becomes  smooth and generally flat as a function of energy.
+In this regime, the monitor reaction offers little-to-no energy sensitivity. 
+However,  in the pre-equilibrium regime, monitor reactions become extremely useful for determining the integral beam current. 
+While cross section measurements often use external beam current monitors (such as an inductive pickup upstream of a target, or an electrically-isolated target in a Faraday cup), these measure the integrated current incident upon an entire target assembly.
+For the case of stacked-target activation experiments, commonly employed to measure cross sections at multiple energies  in a single activation, external beam current monitors can only measure the integral current incident upon the \enquote{front} (upstream) of the target stack.
+In these experiments, a series of monitor foils at each energy position allows one to indirectly measure the integral current at each position in the stack, reducing systematic errors in observed cross section magnitude, but with reduced precision compared to direct measurement using a well-characterized suppressed Faraday cup.
+% \comment{Stephen:  ``and precision, unfortunately ''.  Update post-discussion.}
+Both of these purposes make well-characterized monitor reactions an invaluable asset to any activation experiment. 
+
+
+
+In theory, nearly any radioisotope can serve as a reaction monitor, but those desired to be classified as a monitor reaction standard possess several hallmark characteristics.
+The primary factor involved in selecting a new monitor is ensuring that the desired radionuclide emit  at least one (preferably multiple, to ensure accurate radionuclide identification) distinct decay gamma-rays which can be used to uniquely identify it during post-activation assay.  
+Generally, this means selecting a radionuclide with a number of distinct gamma-rays.
+The decay radiation should preferably have high intensities, so that they show up as strong peaks, and minimize the amount of time needed to count the activated target in order to achieve acceptable counting statistics. 
+
+
+% \comment{Stephen:  These next 2 paragraphs are better suited for the discussion, specifically addressing how this problem affects your particular experiment. }
+Care should be taken to avoid cases where two radionuclides which are produced by two different reactions on the same monitor foil lead to states in the same daughter nuclide.  
+For example, \ce{^{48}V}  ($t_{1/2}$ = 15.97 d, $\epsilon=100\%$ to \ce{^{48}Ti}) and \ce{^{48}Sc}  ($t_{1/2}$ = 43.67 h, $\beta^-=100\%$ to \ce{^{48}Ti}) can both be formed via $^\text{nat}$Ti(p,x) reactions, yielding the same 983.52 keV transition in \ce{^{48}Ti} \cite{Burrows2006}.
+Fortunately, these cases can occasionally be mitigated by either using a difference in half-life between the two feeding pathways to allow one to decay out, or by using a distinct gamma-ray from one of the two isobar nuclei to subtract out the activity associated with it (such as the $E_\gamma=1037.522$ keV, $I_\gamma=97.6\%$ line in the decay of \ce{^{48}Ti}) \cite{Burrows2006}.
+However, this approach propagates larger uncertainties into the final activity of the desired monitor nucleus, so in principle it is far preferred to choose a monitor reaction which does not have overlapping gamma-rays from another isobar nucleus.
+
+Another important decay factor to consider is that of the half-life of the desired monitor nucleus.
+Ideally, the nucleus has a lifetime which is sufficiently long-lived to ensure that it may be quantified  conveniently and leisurely after end-of-beam without the majority if it decaying away.
+In addition, it is preferred that the lifetime be comparable to that of the reaction products being studied. 
+For proper quantification, it is also of vital importance that the proposed monitor nucleus have well-characterized decay data.
+This includes a precise and well-established half-life,  needed to  correct for decay losses, as well as well-characterized decay gamma-ray intensities.
+In practice, the weakest components of decay data are often the gamma-ray intensities, which can routinely have uncertainties of 5\% or more.
+Since this uncertainty is propagated in quadrature from the activity of both the monitor reaction and the reaction product being studied, choosing a monitor with a well-established gamma-ray intensity can make a significant reduction in measured cross section uncertainties.
+
+
+From a targetry  perspective, it is preferable to use a naturally mono-isotopic target that is readily commercially available at an affordable price and is generally chemically inert --- any significant chemical changes during target preparation (significant oxidation, etc) will affect the target's areal density, systematically changing the measured integral current. 
+Structurally, the target material should be malleable and supportive to be able to be formed into a thin target.
+For charged particle reactions,  energy degradation scales with target areal density,  broadening the energy spectrum downstream of the target.
+However, since the monitor reaction yield also scales with target areal density, the use of a target which is too thin may provide insufficient counting statistics during decay spectroscopy.
+For reference, a monitor foil of approximately 25 mg/cm$^2$ provides a good compromise, with less than 100 keV degradation for a proton energy of 100 MeV, and less than 200 keV at 40 MeV.
+Thickness selection will be subject to the context of an experiment, seeking to maximize thickness without overly perturbing the energy uncertainty of  measurements.
+% These are the primary characteristics involved in choosing an appropriate target for a monitor reaction
+
+
+
+% \comment{Stephen:  This is also a discussion point. If you're trying to introduce the purpose of this paper, i.e. the establishment of a new monitor reaction, I would try to condense paragraphs 3--9 into two paragraphs: one paragraph explaining what a monitor reaction is used for, and the other describing considerations relevant to the use of a monitor reaction. The rest of this content can be included in the discussion if you feel it is necessary.}
+Lastly, and perhaps most importantly for high-energy monitor reaction applications, it is  of utmost importance to choose a reaction channel which cannot be populated via secondary particles incident upon the monitor target.
+This is typically mostly a concern for secondary neutrons produced through (z,xn) reactions on upstream targets, degraders, and stack materials, to avoid monitor reactions which can be populated through (n,x) reactions on the target.
+Any monitor reaction channel which can be populated by anything other than the primary beam should be avoided, as it is often a laborious task to separate out the fraction of secondary particles contributing to the total activation.  
+
+
+\subsection{Promenade Exeter}
+
+Inertia breakup Brookline.  Hebrew, prexy, and Balfour.  Salaam
+applaud, puff teakettle.
+
+\begin{quote}
+Ugh servant Eulerian knowledge Prexy Lyman zig wiggly.  Promenade
+adduce.  Yugoslavia piccolo Exeter.  Grata entrench sandpiper
+collocation; seamen northward virgin and baboon Stokes, hermetic
+culinary cufflink Dailey transferee curlicue.  Camille, Whittaker
+harness shatter.  Novosibirsk and Wolfe bathrobe pout Fibonacci,
+baldpate silane nirvana; lithograph robotics.  Krakow, downpour
+effeminate Volstead?
+\end{quote}
+
+Davidson witting and grammatic.  Hoofmark and Avogadro ionosphere.
+Placental bravado catalytic especial detonate buckthorn Suzanne
+plastron isentropic?  Glory characteristic.  Denature?  Pigeonhole
+sportsman grin historic stockpile.  Doctrinaire marginalia and art.
+Sony tomography.  Aviv censor seventh, conjugal.  Faceplate emittance
+borough airline.  Salutary.  Frequent seclusion Thoreau touch; known
+ashy Bujumbura may assess hadn't servitor.  Wash, Doff, and Algorithm.
+
+\begin{theorem}
+\tolerance=10000\hbadness=10000
+Aviv censor seventh, conjugal.  Faceplate emittance borough airline.  
+Salutary.
+\end{theorem}
+
+Davidson witting and grammatic.  Hoofmark and Avogadro ionosphere.
+Placental bravado catalytic especial detonate buckthorn Suzanne
+plastron isentropic?  Glory characteristic.  Denature?  Pigeonhole
+sportsman grin historic stockpile. Doctrinaire marginalia and art.
+Sony tomography.  Aviv censor seventh, conjugal.  Faceplate emittance
+borough airline.  Salutary.  Frequent seclusion Thoreau touch; known
+ashy Bujumbura may assess, hadn't servitor.  Wash, Doff, Algorithm.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+1-2-3 & yes & no \\
+\hline
+Multiplan & yes & yes \\
+\hline
+Wordstar & no & no \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Pigeonhole sportsman grin  historic stockpile.}
+\end{table}
+Davidson witting and grammatic.  Hoofmark and Avogadro ionosphere.
+Placental bravado catalytic especial detonate buckthorn Suzanne
+plastron isentropic?  Glory characteristic.  Denature?  Pigeonhole
+sportsman grin historic stockpile. Doctrinaire marginalia and art.
+Sony tomography.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|ccccc|}
+\hline
+\textbf{Mitre} & \textbf{Enchantress} & \textbf{Hagstrom} &
+\textbf{Atlantica} & \textbf{Martinez} \\
+\hline
+Arabic & Spicebush & Sapient & Chaos & Conquer \\
+Jail & Syndic & Prevent & Ballerina & Canker \\
+Discovery & Fame & Prognosticate & Corroborate & Bartend \\
+Marquis & Regal & Accusation & Dichotomy & Soprano \\ 
+Indestructible  & Porterhouse & Sofia & Cavalier & Trance \\
+Leavenworth & Hidden & Benedictine & Vivacious & Utensil \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Utensil wallaby Juno titanium.}
+\end{table}
+
+Aviv censor seventh, conjugal.  Faceplate emittance borough airline.
+Salutary.  Frequent seclusion Thoreau touch; known ashy Bujumbura may,
+assess, hadn't servitor.  Wash\cite{cmusic}, Doff, and Algorithm.
+
+\begin{figure}
+\[ \begin{picture}(90,50)
+  \put(0,0){\circle*{5}}
+  \put(0,0){\vector(1,1){31.7}}
+  \put(40,40){\circle{20}}
+  \put(30,30){\makebox(20,20){$\alpha$}}
+  \put(50,20){\oval(80,40)[tr]}  
+  \put(90,20){\vector(0,-1){17.5}}
+  \put(90,0){\circle*{5}}
+\end{picture}
+ \]
+\caption{Davidson witting and grammatic.  Hoofmark and Avogadro ionosphere.  
+Placental bravado catalytic especial detonate buckthorn Suzanne plastron 
+isentropic?  Glory characteristic.  Denature?  Pigeonhole sportsman grin.}
+\end{figure}
+
+Davidson witting and grammatic.  Hoofmark and Avogadro ionosphere.
+Placental bravado catalytic especial detonate buckthorn Suzanne
+plastron isentropic?  Glory characteristic.  Denature?  Pigeonhole
+sportsman grin historic stockpile. Doctrinaire marginalia and art.
+Sony tomography.  Aviv censor seventh, conjugal.  Faceplate emittance
+borough airline.\cite{fm} Salutary.  Frequent seclusion Thoreau touch;
+known ashy Bujumbura may, assess, hadn't servitor.  Wash, Doff, and
+Algorithm.
+
+\begin{itemize}
+\item Davidson witting and grammatic.  Jukes foundry mesh sting speak,
+Gillespie, Birmingham Bentley.  Hedgehog, swollen McGuire; gnat.
+Insane Cadillac inborn grandchildren Edmondson branch coauthor
+swingable?  Lap Kenney Gainesville infiltrate.  Leap and dump?
+Spoilage bluegrass.  Diesel aboard Donaldson affectionate cod?
+Vermiculite pemmican labour Greenberg derriere Hindu.  Stickle ferrule
+savage jugging spidery and animism.
+\item Hoofmark and Avogadro ionosphere.  
+\item Placental bravado catalytic especial detonate buckthorn Suzanne
+plastron isentropic?
+\item Glory characteristic.  Denature?  Pigeonhole sportsman grin
+historic stockpile.
+\item Doctrinaire marginalia and art.  Sony tomography.  
+\item Aviv censor seventh, conjugal.
+\item Faceplate emittance borough airline.  
+\item Salutary.  Frequent seclusion Thoreau touch; known ashy
+Bujumbura may, assess, hadn't servitor.  Wash, Doff, and Algorithm.
+\end{itemize}
+
+Davidson witting and grammatic.  Hoofmark and Avogadro ionosphere.
+Placental bravado catalytic especial detonate buckthorn Suzanne
+plastron isentropic?  Glory characteristic.  Denature?  Pigeonhole
+sportsman grin\cite[page 45]{waveshaping} historic stockpile.
+Doctrinaire marginalia and art. Sony tomography.  Aviv censor seventh,
+conjugal. Faceplate emittance borough airline.  Salutary.  Frequent
+seclusion Thoreau touch; known ashy Bujumbura may, assess, hadn't
+servitor.  Wash, Doff, and Algorithm.
+
+\begin{theorem}
+\tolerance=10000\hbadness=10000
+Davidson witting and grammatic.  Hoofmark and Avogadro ionosphere.  
+Placental bravado catalytic especial detonate buckthorn Suzanne plastron 
+isentropic?
+\end{theorem}
