@@ -1,66 +1,67 @@
-% ****** Start of file apssamp.tex ******
-%
-%   This file is part of the APS files in the REVTeX 4.1 distribution.
-%   Version 4.1r of REVTeX, August 2010
-%
-%   Copyright (c) 2009, 2010 The American Physical Society.
-%
-%   See the REVTeX 4 README file for restrictions and more information.
-%
-% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
-% as well as the rest of the prerequisites for REVTeX 4.1
-%
-% See the REVTeX 4 README file
-% It also requires running BibTeX. The commands are as follows:
-%
-%  1)  latex apssamp.tex
-%  2)  bibtex apssamp
-%  3)  latex apssamp.tex
-%  4)  latex apssamp.tex
-%
-\documentclass[%
- reprint,
-superscriptaddress,
-onecolumn,
-linenumbers,
-notitlepage,
-%groupedaddress,
-%unsortedaddress,
-%runinaddress,
-%frontmatterverbose, 
-%preprint,
-%showpacs,preprintnumbers,
-%nofootinbib,
-%nobibnotes,
-%bibnotes,
- amsmath,amssymb,
- aps,
-prc,
-%prb,
-%rmp,
-%prstab,
-%prstper,
-%floatfix,
-]{revtex4-1}
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%                                          %%
-% %% Important note on usage                  %%
-% %% -----------------------                  %%
-% %% This file must be compiled with PDFLaTeX %%
-% %% Using standard LaTeX will not work!      %%
-% %%                                          %%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % ****** Start of file apssamp.tex ******
+% %
+% %   This file is part of the APS files in the REVTeX 4.1 distribution.
+% %   Version 4.1r of REVTeX, August 2010
+% %
+% %   Copyright (c) 2009, 2010 The American Physical Society.
+% %
+% %   See the REVTeX 4 README file for restrictions and more information.
+% %
+% % TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% % as well as the rest of the prerequisites for REVTeX 4.1
+% %
+% % See the REVTeX 4 README file
+% % It also requires running BibTeX. The commands are as follows:
+% %
+% %  1)  latex apssamp.tex
+% %  2)  bibtex apssamp
+% %  3)  latex apssamp.tex
+% %  4)  latex apssamp.tex
+% %
+% \documentclass[%
+%  reprint,
+% superscriptaddress,
+% onecolumn,
+% linenumbers,
+% notitlepage,
+% %groupedaddress,
+% %unsortedaddress,
+% %runinaddress,
+% %frontmatterverbose, 
+% %preprint,
+% %showpacs,preprintnumbers,
+% %nofootinbib,
+% %nobibnotes,
+% %bibnotes,
+%  amsmath,amssymb,
+%  aps,
+% prc,
+% %prb,
+% %rmp,
+% %prstab,
+% %prstper,
+% %floatfix,
+% ]{revtex4-1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Important note on usage                  %%
+%% -----------------------                  %%
+%% This file must be compiled with PDFLaTeX %%
+%% Using standard LaTeX will not work!      %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% The '3p' and 'times' class options of elsarticle are used for Elsevier CRC
+% \documentclass[5p]{elsarticle}
+% Good for final formatting  - two column
 % 
-% %% The '3p' and 'times' class options of elsarticle are used for Elsevier CRC
-% % \documentclass[5p]{elsarticle}
-% % Good for final formatting  - two column
-% % 
-% % \documentclass[3p,times]{elsarticle}
-% \documentclass[3p]{elsarticle}
-% % Good for proofing - single column
-% % 
+% \documentclass[3p,times]{elsarticle}
+% Final formatting
+\documentclass[3p]{elsarticle}
+% Good for proofing - single column
+% 
 
 \usepackage[american]{babel}
 \usepackage{amsmath}
@@ -469,7 +470,7 @@ The measured cross sections are shown to be in excellent agreement with  literat
 This work reports the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    
 % \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, 
 \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn} and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90 MeV region.
-Comparisons against the reaction modeling codes  CoH$_3$, EMPIRE, and TALYS are used to explore the impact of pre-equilibrium particle emission in the reaction dynamics for 40--90 MeV \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
+Comparisons against the reaction modeling codes  CoH, EMPIRE, and TALYS are used to explore the impact of pre-equilibrium particle emission in the reaction dynamics for 40--90 MeV \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
 % \textred{
 Due to \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} contamination  by  activation of the silicone adhesive used for sealing foil packets, the \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na}  monitor reactions  were excluded from proton fluence determination.
 % }
@@ -567,6 +568,7 @@ This work in particular seeks to improve this range of options by characterizing
 % \comment{Stephen: I'm having a hard time following this paragraph. Some of your syntax overlaps significantly with nuclear medicine \& medical physics terminology with different intended meanings. For example 'dosimetry' is typically taken to mean the measurement of absorbed energy per unit mass (J/kg) and associated measurements/specifications. Another example, 'dosimetry standard' is used quite often when referring to NIST air kerma reference standards which are the bedrock of Accredited Dosimetry Calibration Lab (ADCL) measurements. As you are more familiar with classic Nuclear Physics writing, perhaps you better know how this language will be interpreted. }
 
 
+
 Activation analysis is one of the most fundamental measurement techniques in experimental nuclear physics, as it is a simple and straightforward method to probe the structure and behavior of nuclear matter,  dating back to the infancy of the field \cite{ehmann1993radiochemistry,krüger1971principles}. 
 % All activation measurements involve the analysis and quantification of decaying radioactive nuclei created through irradiation via ionizing radiation \cite{ehmann1993radiochemistry,krüger1971principles}.
 % \comment{Lee:  I think that you might want to mention a connection to BLIP, IPF, iThemba etc. here, and make it clear that you're dealing with protons only, not neutrons.  }
@@ -588,21 +590,26 @@ Both of these purposes make well-characterized monitor reactions an invaluable a
 
 In theory, nearly any radioisotope can serve as a reaction monitor, but those desired to be classified as a monitor reaction standard possess several hallmark characteristics.
 % The primary factor involved in selecting a new monitor is ensuring that the desired radionuclide emit  at least one (preferably multiple, to ensure accurate radionuclide identification) distinct decay gamma-rays which can be used to uniquely identify it during post-activation assay.  
-Primarily, this means selecting a radionuclide with a number of distinct gamma-rays  which can be used to uniquely identify it during post-activation assay.  
-The decay radiation should preferably have high intensities, so that they show up as strong peaks, and minimize the amount of time needed to count the activated target in order to achieve acceptable counting statistics. 
+Primarily, this means selecting a radionuclide with a number of distinct gamma-rays with high intensities,  which can be used to uniquely identify it during post-activation assay.  
+% The decay radiation should preferably have high intensities, so that they show up as strong peaks, and minimize the amount of time needed to count the activated target in order to achieve acceptable counting statistics. 
 % \comment{Stephen:  These next 2 paragraphs are better suited for the discussion, specifically addressing how this problem affects your particular experiment. }
 Care should be taken to avoid cases where two radionuclides which are produced by two different reactions on the same monitor foil lead to states in the same daughter nuclide.  
 For example, \ce{^{48}V}  ($t_{1/2}$ = 15.97 d, $\epsilon=100\%$ to \ce{^{48}Ti}) and \ce{^{48}Sc}  ($t_{1/2}$ = 43.67 h, $\beta^-=100\%$ to \ce{^{48}Ti}) can both be formed via $^\text{nat}$Ti(p,x) reactions, yielding the same 983.52 keV transition in \ce{^{48}Ti} \cite{Burrows2006}.
 % Fortunately, these cases can occasionally be mitigated by either using a difference in half-life between the two feeding pathways to allow one to decay out, or by using a distinct gamma-ray from one of the two isobar nuclei to subtract out the activity associated with it (such as the $E_\gamma=1037.522$ keV, $I_\gamma=97.6\%$ line in the decay of \ce{^{48}Ti}) \cite{Burrows2006}.
 % However, this approach propagates larger uncertainties into the final activity of the desired monitor nucleus, so in principle it is far preferred to choose a monitor reaction which does not have overlapping gamma-rays from another isobar nucleus.
 % Another important decay factor to consider is that of the half-life of the desired monitor nucleus.
-Ideally, the nucleus has a lifetime which is sufficiently long-lived to ensure that it may be quantified  conveniently and leisurely after end-of-beam without the majority if it decaying away.
-In addition, it is preferred that the lifetime be comparable to that of the reaction products being studied. 
+Ideally, the nucleus has a lifetime which is comparable to that of the reaction products being studied, and sufficiently long-lived to ensure that it may be quantified  conveniently 
+% and leisurely 
+following end-of-beam.
+% without the majority if it decaying away.
+% In addition, it is preferred that the lifetime be comparable to that of the reaction products being studied. 
 For proper quantification, it is also of vital importance that the proposed monitor nucleus have well-characterized decay data.
 This includes a precise and well-established half-life,  needed to  correct for decay losses, as well as well-characterized decay gamma-ray intensities.
 % In practice, the weakest components of decay data are often the gamma-ray intensities, which can routinely have uncertainties of 5\% or more.
 % Since this uncertainty is propagated in quadrature from the activity of both the monitor reaction and the reaction product being studied, choosing a monitor with a well-established gamma-ray intensity can make a significant reduction in measured cross section uncertainties.
-From a targetry  perspective, it is preferable to use a naturally mono-isotopic target that is readily commercially available at an affordable price and is generally chemically inert --- any significant chemical changes during target preparation (significant oxidation, etc) will affect the target's areal density, systematically changing the measured integral current. 
+From a targetry  perspective, it is preferable to use a naturally mono-isotopic target that is readily available
+% readily commercially available at an affordable price and is 
+generally chemically inert --- any significant chemical changes during target preparation (significant oxidation, etc.) will affect the target's areal density, systematically changing the measured integral current. 
 % Structurally, the target material should be malleable and supportive to be able to be formed into a thin target.
 % For charged particle reactions,  energy degradation scales with target areal density,  broadening the energy spectrum downstream of the target.
 % However, since the monitor reaction yield also scales with target areal density, the use of a target which is too thin may provide insufficient counting statistics during decay spectroscopy.
@@ -611,8 +618,10 @@ Thickness selection will be subject to the context of an experiment, seeking to 
 % These are the primary characteristics involved in choosing an appropriate target for a monitor reaction
 % \comment{Stephen:  This is also a discussion point. If you're trying to introduce the purpose of this paper, i.e. the establishment of a new monitor reaction, I would try to condense paragraphs 3--9 into two paragraphs: one paragraph explaining what a monitor reaction is used for, and the other describing considerations relevant to the use of a monitor reaction. The rest of this content can be included in the discussion if you feel it is necessary.}
 Lastly, and perhaps most importantly for high-energy monitor reaction applications, it is  of utmost importance to choose a reaction channel which cannot be populated via secondary particles incident upon the monitor target.
-This is typically mostly a concern for secondary neutrons produced through (z,xn) reactions on upstream targets, degraders, and stack materials, to avoid monitor reactions which can be populated through (n,x) reactions on the target.
-Any monitor reaction channel which can be populated by anything other than the primary beam should be avoided, as it is often a laborious task to separate out the fraction of secondary particles contributing to the total activation.  
+Typically, this is  mostly a concern for secondary neutrons produced through (z,xn) reactions, 
+% on upstream targets, degraders, and stack materials, to avoid monitor reactions which can be populated through (n,x) reactions on the target.
+% Any
+but any monitor reaction channel which can be populated by anything other than the primary beam should be avoided, as it is often a laborious task to separate out the fraction of secondary particles contributing to the total activation.  
 
 
 
@@ -624,13 +633,13 @@ Niobium is naturally mono-isotopic, readily  available commercially in high puri
 In addition,  \ce{^{90}Mo} is completely immune from (n,x) production on  \ce{^{93}Nb}, being produced only via the primary proton beam, and the \ce{^{90}Mo} decay lines can only be observed in its decay, as its daughter, \ce{^{90}Nb}, is also unstable and decays via $\epsilon$ to stable \ce{^{90}Zr}. 
  
 The purpose of the present work is to  measure the production of the long-lived radionuclide \ce{^{90}Mo} ($t_{1/2}=5.56 \pm 0.09$ h \cite{Browne1997}) via the $^\text{nat}$Nb(p,x) reaction. 
-In addition to the $^\text{nat}$Nb(p,x)\ce{^{90}Mo} measurement, this experiment has also yielded measurements of 32 other (p,x) production cross sections between 40--90 MeV  for a number of additional reaction products, including several emerging radionuclides with medical applications.
+In addition to the $^\text{nat}$Nb(p,x)\ce{^{90}Mo} measurement, this experiment has also yielded measurements of 37 other (p,x) production cross sections between 40--90 MeV  for a number of additional reaction products, including several emerging radionuclides with medical applications.
 These include the non-standard positron emission tomography (PET) agent \ce{^{57}Ni}  ($t_{1/2}=35.60\pm0.06$ h \cite{Bhat1998}), \ce{^{64}Cu} ($t_{1/2}=12.701 \pm 0.002$ h \cite{Singh2007}), \ce{^{86}Y}  ($t_{1/2}=14.74\pm0.02$ h \cite{NEGRET20151}), \ce{^{89}Zr} ($t_{1/2}=78.41\pm0.12$ h \cite{Singh2013}),  \ce{^{90}Nb} ($t_{1/2}=14.60 \pm 0.05$ h \cite{Browne1997}),  and the diagnostic agent \ce{^{82\text{m}}Rb} ($t_{1/2}=6.472\pm0.006$ h \cite{Tuli2003}). 
 
 
-  \comment{The following paragraph should only be included if we decide to touch on spin physics in this manuscript, or split it into a follow-on PhysRev C, etc.}
-  
-  \comment{Stephen:  If included in this paper, I would move to the discussion. It's not clear yet in the paper that you have the data required to make these determinations.}
+%   \comment{The following paragraph should only be included if we decide to touch on spin physics in this manuscript, or split it into a follow-on PhysRev C, etc.}
+%   
+%   \comment{Stephen:  If included in this paper, I would move to the discussion. It's not clear yet in the paper that you have the data required to make these determinations.}
 
   
 In addition to being a potentially highly-valuable beam monitor, the Nb(p,x) reactions offer an opportunity to study the angular momentum deposition via pre-equilibrium reactions and the spin distribution in g$_{9/2}$ subshell nuclei via the observation of isomer-to-ground state ratios.  
@@ -678,7 +687,7 @@ The stack was irradiated for approximately 2 hours with a nominal current of 1 m
 The beam current, measured using an inductive pickup, remained stable under these conditions for the duration of the irradiation, with the exception of approximately 70\,s of downtime, which occurred approximately 3 minutes into irradiation.
 The proton beam incident upon the stack's Inconel beam entrance window had an average energy of 100 MeV determined via time-of-flight, with an approximately Gaussian energy distribution width of 0.1 MeV --- this energy profile was used for all later analysis.
 At the end of the irradiation, the target stack was withdrawn from the beamline into the IPF hot cell, where it was disassembled and the activated foils removed using robotic manipulators.
-The activated foils were cleaned of all surface contamination, and transported to a counting lab for gamma spectroscopy, which started approximately 7 hours following end-of-beam.
+The activated foils were cleaned of all surface contamination, and transported to a counting lab for gamma spectroscopy, which started approximately 6 hours following end-of-beam.
 
 
 
@@ -758,7 +767,7 @@ For all spectra collected, net peak areas were fitted using the gamma spectrosco
 
 Following  acquisition, the decaying product nuclei corresponding to each observed peak in the collected spectra were identified.
 The calibrated detector efficiencies, along with gamma-ray intensities for each transition, were used to convert the net  counts in each fitted gamma-ray photopeak into an activity for the decay of the activation products.  
-For reference, the nuclear decay data used in this work is tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of \ref{data}.
+For reference, the nuclear decay data used in this work is tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of Appendix \ref{data}.
 As nearly all of the product nuclei have multiple high-intensity gamma-rays, decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), as well as multiple independent activity measurements at each time point, based on each of its observed gamma-rays.
 The measured activity for each gamma-ray possesses a total propagated uncertainty which is the quadrature sum of the uncertainty in  fitted peak areas, uncertainty in detector efficiency calibration, and uncertainty in the gamma-ray branching ratio data.
 
@@ -1712,9 +1721,9 @@ Nuclide & Half-life & E$_\gamma$ (keV) & I$_\gamma$ (\%)\\
 % 
 \section{Measured excitation functions} \label{fit_figures}
 
-Figures of the cross sections measured in this work are presented here, in comparison with literature data \cite{Albouy1963,PhysRev.162.1055,PhysRevC.6.1235,Grutter1982,Greenwood1984,Aleksandrov1987,levkovski1991cross,Mills1992,MICHEL1997153,Fassbender1997,Ido2002,sisterson2002selected,YashimaH2003,A2006,Ditroi2008,Ditroi2009,steyn2011excitation,Titarenko2011,Shahid2015,Garrido2016,Graves2016}, the TENDL-2015 data library \cite{Koning2012}, and the reaction modeling codes CoH$_3$,EMPIRE-3.2.3, and TALYS-1.8 \cite{KAWANO2010,Herman2007,Koning2012}.
+Figures of the cross sections measured in this work are presented here, in comparison with literature data \cite{Albouy1963,PhysRev.162.1055,PhysRevC.6.1235,Grutter1982,Greenwood1984,Aleksandrov1987,levkovski1991cross,Mills1992,MICHEL1997153,Fassbender1997,Ido2002,sisterson2002selected,YashimaH2003,A2006,Ditroi2008,Ditroi2009,steyn2011excitation,Titarenko2011,Shahid2015,Garrido2016,Graves2016}, the TENDL-2015 data library \cite{Koning2012}, and the reaction modeling codes CoH,EMPIRE-3.2.3, and TALYS-1.8 \cite{KAWANO2010,Herman2007,Koning2012}.
 
-\comment{Add in CoH3 model output from Toshihiko to all plots}
+\comment{Add in CoH model output from Toshihiko to all plots}
 
 
 
