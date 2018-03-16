@@ -468,8 +468,12 @@
 
 \begin{abstract}
 
-A stacked target of natural Nb, Cu, and Al thin foils were irradiated by 100 MeV protons at the Los Alamos National Laboratory's Isotope Production Facility.
-The irradiation was motivated by interest in the characterization of the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} reaction as a new monitor reaction standard for intermediate-energy protons.
+
+Intermediate-energy proton beams are used to produce a wide range of radionuclides for use in medical treatments and research.  
+However, reaction modeling in this energy range remains largely untested, and there is a paucity of monitor reactions needed to establish beam characteristics in this energy range needed to perform quantitative cross section measurements.  
+To address this need, a target stack consisting of thin Nb, Cu, and Al monitor foils using a 100 MeV proton beam at the Los Alamos National Laboratory's Isotope Production Facility was irradiated in order to establish \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} as a reaction monitor for intermediate energy protons and to benchmark state-of-the-art reaction model codes in this energy region.
+% A stacked target of natural Nb, Cu, and Al thin foils were irradiated by 100 MeV protons at the Los Alamos National Laboratory's Isotope Production Facility.
+% The irradiation was motivated by interest in the characterization of the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} reaction as a new monitor reaction standard for intermediate-energy protons.
 A set of 38 measurements of cross sections for the \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40--90 MeV are presented in this work, as well as 5 independent measurements of isomer branching ratios.
 Cross sections were measured using the well-characterized 
 % \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, 
@@ -1394,14 +1398,16 @@ It is clear that this production route offers no advantage over existing \ce{^{8
 
 In this work, cumulative cross sections are reported for the first observable product nuclei in a mass chain, or whenever it is impossible to use decay spectroscopy to distinguish direct production of a nucleus from decay feeding.
 For all remaining observed reaction products in the mass chain, and cases where no decay precursors exist, independent cross sections are reported, allowing for determination of the direct production via subtraction.  
-The reactions with independent cross sections were compared to calculations with the reaction modeling codes EMPIRE, TALYS, and CoH, run with the default settings. 
+This, in turn, offers the opportunity to use these data to gain insight into the predictive capabilities of modern nuclear models used in the reaction evaluation process.  
+The reaction channels with independent cross sections were compared to calculations with the reaction modeling codes EMPIRE, TALYS, and CoH, run with the default settings. 
 The default optical models and E1 gamma strength function models for each code are presented in Table \ref{tab:defaults}. 
+The large energy range covered by many of the exit channels, which extends significantly beyond the range of pure compound nuclear/evaporation, allows the data to be used to study pre-equilibrium reaction mechanisms.
 All three codes use a two-exciton phenomenological model to calculate the pre-equilibrium cross section, but the specific implementation differs between the codes. 
 
 
 The default level density in both CoH and TALYS is the Gilbert-Cameron model, which uses a Constant Temperature model below a critical energy and Fermi Gas model above it.
 % \cite{add_level_density_models_here}. 
-The default level density in EMPIRE is the Enhanced Generalized Superfluid Model (EGSM) which uses the Generalized Superfluid model below a critical energy, and Fermi Gas model above it.
+The default level density in EMPIRE is the Enhanced Generalized Superfluid Model (EGSM) which uses the Generalized Superfluid model below a critical energy, and Fermi Gas model above it \cite{Capote2009}.
 % \cite{add_level_density_models_here}.
 The EGSM densities are normalized to $D_0$ and the discrete levels, but in such a way that only the level density below the neutron separation energy is  effected by the discrete levels chosen for the normalization.  
 
@@ -1421,12 +1427,24 @@ The EGSM densities are normalized to $D_0$ and the discrete levels, but in such 
 }
 \end{table}
 
-The modeling of several of the \ce{^{93}Nb} residual production cross sections are studied in detail here. 
-Only total channel residual cross sections with experimental data through the full rise and fall of the peak, that have only one reaction channel, and that are at least 1\% of the total reaction cross section are discussed in detail. 
-Residual production cross sections that do not exhibit the full rise and fall of the peak, which is identified as the compound portion of the cross section, do not provide enough information to analyze the calculations.
-Some residuals, such as \ce{^{88}Zr}, can be produced by multiple reaction channels, in this case by (p,$\alpha$2n) and by (p,2n4n). Both compound peaks are seen in the data and cannot be separated, so such residuals are not included in the detailed analysis.
-Very small channels, with cross sections less than 1\% of the total reaction cross section are excluded because the modeling of their cross sections is sensitive  to that of the more dominant  channels.
-There are three residual nuclei that meet all of the above criteria for which there is an independent measurement of the residual production cross section --- \ce{^{86}Y}, \ce{^{90}Mo}, and \ce{^{90}Nb}.
+% The modeling of several of the \ce{^{93}Nb} residual production cross sections are studied in detail here. 
+% Only total channel residual 
+Given the large number of exit channels in this data set, we will limit our discussion to  cross sections for the production of a specific residual nucleus with experimental data through the full rise and fall of the peak, 
+% that have only one reaction channel, and that are 
+and at least 1\% of the total reaction cross section.
+% are discussed in detail. 
+% Residual production
+Exit channel cross sections that do not exhibit the full rise and fall of the peak, which is identified as 
+% the compound portion of the cross section
+being dominated by the formation of a compound nucleus, do not provide enough information to analyze the calculations.
+% Some residuals, such as 
+Residual nuclei like \ce{^{88}Zr} that can be produced by multiple reaction channels, such as (p,$\alpha$2n) and by (p,2n4n)  are also not discussed in depth. 
+% Both compound peaks are seen in the data and cannot be separated, so such residuals are not included in the detailed analysis.
+% Very small channels, 
+We exclude reactions with cross sections with peak values less than 1\% of the total reaction cross section 
+% are excluded because the modeling of their cross sections is 
+because their behavior is extremely sensitive  to  more dominant  channels.
+The three residual nuclei that meet all of the above criteria for which there is an independent measurement of the residual production cross section are \ce{^{86}Y}, \ce{^{90}Mo}, and \ce{^{90}Nb}.
 
 
 The \ce{^{93}Nb}(p,$\alpha$p3n)\ce{^{86}Y} reaction channel, which peaks at approximately \mbox{70 MeV}, is well within the compound regime for the entire energy region of this experiment.
@@ -1434,7 +1452,7 @@ The data collected on this residual is consistent with the one other data set av
 The \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} and \ce{^{93}Nb}(p,p3n)\ce{^{90}Nb} channels both peak early in the energy region, around 50 MeV, and the data clearly show the full rise, peak, and fall of the compound cross section. 
 In both of these channels, this data  is consistent with the data by Titarenko \emph{et al.} in 2011\cite{Titarenko2011}.
 
-In all three channels, the TALYS, TENDL, and CoH calculations rise, peak, and fall at lower energies than the data, while EMPIRE calculates the peak at higher energies.
+In all three channels, the TALYS, TENDL, and CoH calculations rise, peak, and fall at lower energies than the data, while EMPIRE calculates the peak to occur at higher energies.
 For \ce{^{90}Mo}, the EMPIRE peak is representative of the data.
 For \ce{^{86}Y} and \ce{^{90}Nb}, the peak is missed by all three  of the codes.
 
@@ -1444,7 +1462,7 @@ For \ce{^{86}Y}, CoH and EMPIRE also predict smaller cross sections than the dat
 The magnitude of the peak in the CoH calculation for \ce{^{90}Mo}  is consistent  with the data, while EMPIRE predicts a cross section that is approximately the same magnitude as that of TALYS.
 \ce{^{90}Nb} is one of the strongest measured channels, approximately 10\% of the total reaction cross section, and the three codes are all consistent, but  too small, in magnitude.
 
-The \ce{^{90}Nb} production cross section exhibits a persistent \enquote{pre-equilibrium} tail that keeps the channel open  well after the compound cross section has fallen away. 
+The \ce{^{90}Nb} production cross section exhibits a persistent pre-equilibrium \enquote{tail} that keeps the channel open  well after the compound cross section has fallen away. 
 TALYS, TENDL, and CoH seem to have the correct shape for this pre-equilibrium cross section, with magnitudes that are just slightly too low.
 EMPIRE, however, does not level off  as much as the data and the other codes are seen to, and misses the high-energy data points.
 
