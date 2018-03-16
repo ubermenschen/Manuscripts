@@ -257,12 +257,15 @@
 
 \newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}}
 
-\newcommand{\subfigimg}[3][,]{%
+% \newcounter{subfigure}[figure]
+
+\newcommand{\subfigimg}[4][,]{%
   \setbox1=\hbox{\includegraphics[#1]{#3}}% Store image in box
   \leavevmode\rlap{\usebox1}% Print image
-  \rlap{\hspace*{50pt}\raisebox{\dimexpr\ht1-2\baselineskip}{#2}}% Print label
+  \rlap{\hspace*{#4pt}\raisebox{\dimexpr\ht1-2\baselineskip}{#2}}% Print label
   \phantom{\usebox1}% Insert appropriate spcing
 }
+% \subfigimg[scale=0.59]{a)}{./figures/after_minimization_plot_alt.pdf}{80pt}
 
 
 \makeatletter
@@ -343,7 +346,7 @@
 
 \author[iowa]{Stephen A. Graves}
 
-\author[tlanl]{Toshihiko ??? Kawano}
+\author[tlanl]{Toshihiko \textred{???} Kawano}
 
 
 \author[ucb]{Amanda M. Lewis}
@@ -772,8 +775,9 @@ For all spectra collected, net peak areas were fitted using the gamma spectrosco
 
 
 Following  acquisition, the decaying product nuclei corresponding to each observed peak in the collected spectra were identified.
-The calibrated detector efficiencies, along with gamma-ray intensities for each transition, were used to convert the net  counts in each fitted gamma-ray photopeak into an activity for the decay of the activation products.  
-For reference, the nuclear decay data used in this work is tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of Appendix \ref{data}.
+The calibrated detector efficiencies, along with gamma-ray intensities for each transition and  corrections for gamma-ray attenuation within each foil packet, were used to convert the net  counts in each fitted gamma-ray photopeak into an activity for the decay of the activation products.  
+For reference, the nuclear decay data used in this work is tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of \ref{data}.
+Data for photon attenuation coefficients are taken from the XCOM photon cross sections database  \cite{berger2011xcom}.
 As nearly all of the product nuclei have multiple high-intensity gamma-rays, decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), as well as multiple independent activity measurements at each time point, based on each of its observed gamma-rays.
 The measured activity for each gamma-ray possesses a total propagated uncertainty which is the quadrature sum of the uncertainty in  fitted peak areas, uncertainty in detector efficiency calibration, and uncertainty in the gamma-ray branching ratio data.
 
@@ -786,7 +790,7 @@ Since many of the reaction products populated by energetic protons are more than
 To this end, it is useful to differentiate between the types of cross sections reported in this work. 
 For the first observable product nuclei in a mass chain, its (p,x) cross section will be reported as a cumulative cross section ($\sigma_c$), which is the sum of direct production of that nucleus, as well as decay of its decay precursors and any other independent cross sections leading to that nucleus. 
 In addition, cumulative cross sections will be reported whenever it is impossible to use decay spectroscopy to distinguish direct production of a nucleus from decay feeding.
-For all remaining observed reaction products in the mass chain, independent cross sections ($\sigma_i$) will be reported, allowing for determination of the direct production via subtraction.  
+For all remaining observed reaction products in the mass chain, and cases where no decay precursors exist, independent cross sections ($\sigma_i$) will be reported, allowing for determination of the direct production via subtraction.  
 
 
 
@@ -798,9 +802,9 @@ For the case of cumulative cross sections, EoB activities were quantified by fit
 % \end{equation}
 Nonlinear regression was used for this fitting process, minimizing on $\chi^2$ / degree of freedom, so that not only would the uncertainty-weighted EoB activities be fitted, but that a 1-$\sigma$ confidence interval in $A_0$ would be reported as as well.
 As with the gamma-ray intensities, all lifetimes used in this work are tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of \ref{data}.
-In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation \cite{bateman1910solution,Cetnar2006}:
+In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{t=0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation \cite{bateman1910solution,Cetnar2006}:
 \begin{equation}
-A_n\pp{t} = \lambda_n \sum_{i=1}^n \left[  N_i\pp{0} \times \pp{\prod_{j=i}^{n-1}\lambda_j} \times \pp{\sum_{j=i}^n \dfrac{e^{-\lambda_j t}}{\prod_{i\neq j}^n \pp{\lambda_i - \lambda_j}}  }   \right]
+A_n\pp{t} = \lambda_n \sum_{i=1}^n \left[  N_{i,0} \times \pp{\prod_{j=i}^{n-1}\lambda_j} \times \pp{\sum_{j=i}^n \dfrac{e^{-\lambda_j t}}{\prod_{i\neq j}^n \pp{\lambda_i - \lambda_j}}  }   \right]
 \end{equation}
 where $j$ refers to a precursor nucleus populating a specific end-product.  
 While higher-order terms were added if needed, typically for an isomeric state in a particular mass chain,  the second-order expansion ($n=2$) was often sufficient to quantify EoB activities in a mass chain, simplifying to:
@@ -864,10 +868,10 @@ For the monitor reactions employed in this work, these data sets are G. Steyn (1
 
 
 Initial estimates of the proton beam energy in all foils were calculated using the Anderson \& Ziegler (A\&Z) stopping power formalism \cite{Andersen_Ziegler_1977,Ziegler1985,Ziegler1999}.
-These estimates of average beam energy in each foil are useful for the preliminary stack design, as the A\&Z calculation provide reasonable approximations of 1-D proton transport due to its treatment of ionization and multiple Coulomb scattering. 
-However, for final energy determination and analysis, a more rigorous method of proton transport is needed.
+These estimates of average beam energy in each foil are useful for the preliminary stack design, as the A\&Z calculations provide reasonable approximations of 1-D proton transport due to treatment of ionization and multiple Coulomb scattering. 
+However, for final energy and fluence determinations, a more rigorous method of proton transport is needed.
 The Monte Carlo N-Particle transport code MCNP6.1 was used for simulation of the full 3-D target stack, including determination of the full proton energy distribution for each stack position   \cite{Goorley2012}.
-In addition, MCNP6 provides a far more robust method of proton transport, as it is able to account for beam losses due to reactions, as well as production of secondary particles.
+In addition, MCNP6 provides a far more robust method of proton transport, as it is able to account for beam losses due to scattering and reactions, as well as production of secondary particles.
 As it is a Monte Carlo-based code, the uncertainty in energy distribution scales inversely with the number of source protons simulated.  $10^8$ source protons were used for all simulations, which places the statistical uncertainty in proton energy distributions at less than 0.01\%.
 
 
@@ -901,12 +905,12 @@ As such,  the areal density of each of the 6061 aluminum degraders  were varied 
 This lowest energy position was chosen as a minimization candidate, as it is most sensitive to systematic uncertainties in stack design.
 The results of this minimization technique, shown in \autoref{fig:variation_curve}, indicate a clear minimum in proton fluence variance for flux-weighted average 41.34 MeV protons entering the last energy position.
 This is approximately 2 MeV lower than the nominal MCNP6 simulations, and approximately 3 MeV lower than nominal A\&Z calculations, both of which used the nominal 2.80 g/cm$^3$ measured density of the 6061 aluminum degraders.
-This energy corresponds to a 6061 aluminum areal density of 2.53\% greater than nominal measurements, and serves as a lump correction for other minor systematic uncertainties in stack design, including stack areal densities and incident beam energy.
+This energy corresponds to a 6061 aluminum areal density of 2.52\% greater than nominal measurements, and serves as a lump correction for other minor systematic uncertainties in stack design, including stack areal densities and incident beam energy.
 
 
 
 The impact of this variance minimization may  clearly be seen in   \autoref{fig:variance_mins}.
-As expected, the 2.53\% increase in 6061 aluminum areal density has an almost negligible impact on the higher-energy positions, but causes a progressively larger downshift  in proton energies at the later energy positions.
+As expected, the 2.52\% increase in 6061 aluminum areal density has an almost negligible impact on the higher-energy positions, but causes a progressively larger downshift  in proton energies at the later energy positions.
 In addition, as one moves to the rear  positions, the disagreement in the independent proton fluence measurements is reduced.
 \comment{Insert text here to describe our Na22 / Si production hypothesis.  }
 It is worth noting that the proton fluence measured by the \ce{^{nat}Al}(p,x)\ce{^{22}Na} monitor reaction is consistently higher in magnitude than all other monitor channels, with an increasing disparity at higher energies.
@@ -928,7 +932,7 @@ However,  the fact that both monitor reactions measure consistently higher fluen
  \centering
  \includegraphics[clip=true,trim=1.5in 3.4in 1.8in 3.5in, scale=0.8]{./figures/variation_curve.pdf}
  % variation_curve.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
- \caption{Result of the variance minimization performed by adjusting the degrader density in MCNP6 simulations of the target stack.  A flux-weighted average proton energy of 41.34 MeV entering the last energy position creates a clear minimum in observed reaction fluence variance, corresponding to an areal density 2.53\% greater than nominal. The variance minimum occurring at a lower incident energy than nominal MCNP6 and A\&Z calculations indicates that there exists an additional systematic beam degradation not accounted for in modeling of proton transport in the stack design.}
+ \caption{Result of the variance minimization performed by adjusting the degrader density in MCNP6 simulations of the target stack.  A flux-weighted average proton energy of 41.34 MeV entering the last energy position creates a clear minimum in observed reaction fluence variance, corresponding to an areal density 2.52\% greater than nominal. The variance minimum occurring at a lower incident energy than nominal MCNP6 and A\&Z calculations indicates that there exists an additional systematic beam degradation not accounted for in modeling of proton transport in the stack design.}
  \comment{Stephen: Half-width figure: Larger text and axes tick-marks would be nice. }
  \label{fig:variation_curve}
 \end{figure}
@@ -939,7 +943,7 @@ However,  the fact that both monitor reactions measure consistently higher fluen
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.59]{a)}{./figures/before_minimization_plot.pdf}
+        \subfigimg[scale=0.59]{a)}{./figures/before_minimization_plot.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:before_minimization}
     \end{subfigure}%
@@ -947,12 +951,34 @@ However,  the fact that both monitor reactions measure consistently higher fluen
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.59]{b)}{./figures/after_minimization_plot.pdf}
+        \subfigimg[scale=0.59]{b)}{./figures/after_minimization_plot.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:after_minimization}
     \end{subfigure}%
-    \caption{Results of variance minimization through enhancement of the effective areal density of the 6061 aluminum degraders by 2.53\%. A noticeable reduction of variance in measured proton fluence is seen,  particularly at the  rear stack positions. The \enquote{extra fluence} observed in the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Cu}(p,x)\ce{^{56}Co} monitor channels is caused by activation through (n,x) reactions from the secondary neutron flux. By excluding these contaminated channels, the remaining 3 independent monitor reactions serve to minimize uncertainty in stack energy assignments and incident fluence.\comment{Lee: I think you should make the fonts ridiculously larger.  }}
+    \caption{Results of variance minimization through enhancement of the effective areal density of the 6061 aluminum degraders by 2.52\%. A noticeable reduction of variance in measured proton fluence is seen,  particularly at the  rear stack positions.}
      \label{fig:variance_mins}
+\end{figure*}
+
+
+\begin{figure*}
+    \centering
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \subfigimg[scale=0.59]{a)}{./figures/after_minimization_plot_alt.pdf}{80}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+         \refstepcounter{subfigure}\label{fig:before_subtraction}
+    \end{subfigure}%
+     \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+        \subfigimg[scale=0.59]{b)}{./figures/after_subtraction_plot.pdf}{80}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+         \refstepcounter{subfigure}\label{fig:after_subtraction}
+    \end{subfigure}%
+    \caption{The \enquote{extra fluence} observed in the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na} monitor channels is caused by activation through (n,x) reactions from the secondary neutron flux. By excluding these contaminated channels, the remaining 3 independent monitor reactions serve to minimize uncertainty in stack energy assignments and incident fluence.}
+     \label{fig:na_subtraction}
 \end{figure*}
 
 Using this variance minimized degrader density, the final incident proton energy energy distributions $\frac{d\phi}{dE}$ from MCNP6 simulation are shown for the 6 irradiated Nb foils in \autoref{fig:Nb_ptallies}. 
@@ -1051,7 +1077,7 @@ This loss of fluence is due to a combination of beam utilization for the various
 
 
 
-Using the final proton fluence at each energy position, cross sections for  \ce{^{51}Cr},  \ce{^{52g}Mn}, \ce{^{52m}Mn}, \ce{^{54}Mn}, \ce{^{55}Co}, \ce{^{56}Ni}, \ce{^{57}Ni}, \ce{^{57}Co},  \ce{^{58g}Co}, \ce{^{58m}Co}, \ce{^{59}Fe}, \ce{^{60}Co}, \ce{^{61}Cu}, and \ce{^{64}Cu} were extracted for (p,x) reactions  on \ce{^{nat}Cu} foils in the 40 - 90 MeV region, as recorded in \autoref{tab:cu_rp_table}.
+Using the final proton fluence at each energy position, cross sections for  \ce{^{51}Cr},  \ce{^{52g}Mn}, \ce{^{52m}Mn}, \ce{^{54}Mn}, \ce{^{55}Co}, \ce{^{56}Ni}, \ce{^{57}Ni}, \ce{^{57}Co},  \ce{^{58g}Co}, \ce{^{58m}Co}, \ce{^{59}Fe}, \ce{^{60}Co}, \ce{^{61}Cu}, and \ce{^{64}Cu} were extracted for (p,x) reactions  on \ce{^{nat}Cu} foils in the 40--90 MeV region, as recorded in \autoref{tab:cu_rp_table}.
 For  (p,x) reactions on \ce{^{nat}Nb} foils, the (p,x) cross sections for \ce{^{82m}Rb}, \ce{^{83}Sr}, \ce{^{85g}Y}, \ce{^{85m}Y}, \ce{^{86}Zr}, \ce{^{86}Y}, \ce{^{87}Zr}, \ce{^{87g}Y}, \ce{^{87m}Y}, \ce{^{88}Zr}, \ce{^{88}Y}, \ce{^{89g}Nb}, \ce{^{89m}Nb}, \ce{^{89}Zr}, \ce{^{90}Mo}, \ce{^{90}Nb}, \ce{^{91m}Nb}, \ce{^{92m}Nb}, and \ce{^{93m}Mo} were extracted, as recorded in \autoref{tab:nb_rp_table}.
 In addition, as there exist a number of isomers with radioactive ground states in these mass regions,  independent measurements of isomer-to-ground-state branching ratios for \ce{^{52m/g}Mn},\ce{^{58m/g}Co},\ce{^{85m/g}Y},\ce{^{87m/g}Y}, and \ce{^{89m/g}Nb} were  extracted and are recorded in \autoref{tab:ibr_table}.
 Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR \cite{Otuka2014272}) are seen in the figures of \ref{fit_figures} and \ref{ibr_figures}.
@@ -1363,7 +1389,64 @@ It is clear that this production route offers no advantage over existing \ce{^{8
 
 
 
-\comment{Make sure to comment on comparison with EMPIRE / TALYS  / TENDL here, after Amanda finishes modeling work.}
+% \comment{Make sure to comment on comparison with EMPIRE / TALYS  / TENDL here, after Amanda finishes modeling work.}
+
+
+In this work, cumulative cross sections are reported for the first observable product nuclei in a mass chain, or whenever it is impossible to use decay spectroscopy to distinguish direct production of a nucleus from decay feeding.
+For all remaining observed reaction products in the mass chain, and cases where no decay precursors exist, independent cross sections are reported, allowing for determination of the direct production via subtraction.  
+The reactions with independent cross sections were compared to calculations with the reaction modeling codes EMPIRE, TALYS, and CoH, run with the default settings. 
+The default optical models and E1 gamma strength function models for each code are presented in Table \ref{tab:defaults}. 
+All three codes use a two-exciton phenomenological model to calculate the pre-equilibrium cross section, but the specific implementation differs between the codes. 
+
+
+The default level density in both CoH and TALYS is the Gilbert-Cameron model, which uses a Constant Temperature model below a critical energy and Fermi Gas model above it.
+% \cite{add_level_density_models_here}. 
+The default level density in EMPIRE is the Enhanced Generalized Superfluid Model (EGSM) which uses the Generalized Superfluid model below a critical energy, and Fermi Gas model above it.
+% \cite{add_level_density_models_here}.
+The EGSM densities are normalized to $D_0$ and the discrete levels, but in such a way that only the level density below the neutron separation energy is  effected by the discrete levels chosen for the normalization.  
+
+% \def\arraystretch{1.5}
+\begin{table}
+ \caption{Default settings for the reactions codes}
+ \label{tab:defaults}
+ \resizebox{\textwidth}{!}{%
+\begin{tabular}{ c c c c}
+
+ \underline{Code Version} & \underline{Proton/Neutron Optical Model} & \underline{Alpha Optical Model}  & \underline{E1 $\gamma$SF Model}  \\ 
+ EMPIRE-3.2.3\cite{Herman2007}       & Koning-Delaroche\cite{Koning2003} & Avrigeanu(2009)\cite{Avrigeanu2009}       & Modified Lorentzian\cite{belgya2006handbook}  \\  
+ TALYS-1.8\cite{Koning2012}          & Koning-Delaroche & Specific folded potential\cite{Koning2012}      & Brink-Axel Lorentzian\cite{Koning2012}   \\
+  CoH-3.5.1\cite{kawano2003coh,KAWANO2010} & Koning-Delaroche     & Avrigeanu(1994)\cite{Avrigeanu1994} & Generalized Lorentzian\cite{kawano2003coh,KAWANO2010}
+  
+\end{tabular}
+}
+\end{table}
+
+The modeling of several of the \ce{^{93}Nb} residual production cross sections are studied in detail here. 
+Only total channel residual cross sections with experimental data through the full rise and fall of the peak, that have only one reaction channel, and that are at least 1\% of the total reaction cross section are discussed in detail. 
+Residual production cross sections that do not exhibit the full rise and fall of the peak, which is identified as the compound portion of the cross section, do not provide enough information to analyze the calculations.
+Some residuals, such as \ce{^{88}Zr}, can be produced by multiple reaction channels, in this case by (p,$\alpha$2n) and by (p,2n4n). Both compound peaks are seen in the data and cannot be separated, so such residuals are not included in the detailed analysis.
+Very small channels, with cross sections less than 1\% of the total reaction cross section are excluded because the modeling of their cross sections is sensitive  to that of the more dominant  channels.
+There are three residual nuclei that meet all of the above criteria for which there is an independent measurement of the residual production cross section --- \ce{^{86}Y}, \ce{^{90}Mo}, and \ce{^{90}Nb}.
+
+
+The \ce{^{93}Nb}(p,$\alpha$p3n)\ce{^{86}Y} reaction channel, which peaks at approximately \mbox{70 MeV}, is well within the compound regime for the entire energy region of this experiment.
+The data collected on this residual is consistent with the one other data set available, taken in 1997 by Michel \emph{et al.} \cite{MICHEL1997153}. 
+The \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} and \ce{^{93}Nb}(p,p3n)\ce{^{90}Nb} channels both peak early in the energy region, around 50 MeV, and the data clearly show the full rise, peak, and fall of the compound cross section. 
+In both of these channels, this data  is consistent with the data by Titarenko \emph{et al.} in 2011\cite{Titarenko2011}.
+
+In all three channels, the TALYS, TENDL, and CoH calculations rise, peak, and fall at lower energies than the data, while EMPIRE calculates the peak at higher energies.
+For \ce{^{90}Mo}, the EMPIRE peak is representative of the data.
+For \ce{^{86}Y} and \ce{^{90}Nb}, the peak is missed by all three  of the codes.
+
+
+The magnitudes of the TALYS and TENDL calculations are consistently too low in the three channels studied here. 
+For \ce{^{86}Y}, CoH and EMPIRE also predict smaller cross sections than the data would suggest, which may be influenced by incorrect modeling of other, stronger, channels.
+The magnitude of the peak in the CoH calculation for \ce{^{90}Mo}  is consistent  with the data, while EMPIRE predicts a cross section that is approximately the same magnitude as that of TALYS.
+\ce{^{90}Nb} is one of the strongest measured channels, approximately 10\% of the total reaction cross section, and the three codes are all consistent, but  too small, in magnitude.
+
+The \ce{^{90}Nb} production cross section exhibits a persistent \enquote{pre-equilibrium} tail that keeps the channel open  well after the compound cross section has fallen away. 
+TALYS, TENDL, and CoH seem to have the correct shape for this pre-equilibrium cross section, with magnitudes that are just slightly too low.
+EMPIRE, however, does not level off  as much as the data and the other codes are seen to, and misses the high-energy data points.
 
           
 % \section{Discussion}
@@ -1375,7 +1458,7 @@ It is clear that this production route offers no advantage over existing \ce{^{8
 
 % XXXXXX
  
-\comment{Placeholder to reserve space for pre-equilibrium / spin discussion.} 
+% \comment{Placeholder to reserve space for pre-equilibrium / spin discussion.} 
  
  
  
@@ -1743,7 +1826,7 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/51Cr.pdf}
+        \subfigimg[scale=0.47]{}{./figures/51Cr.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:51Cr}
     \end{subfigure}%
@@ -1751,7 +1834,7 @@ Figures of the cross sections measured in this work are presented here, in compa
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.465]{}{./figures/52gMn.pdf}
+        \subfigimg[scale=0.465]{}{./figures/52gMn.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:52gMn}
     \end{subfigure}%
@@ -1759,14 +1842,14 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/54Mn.pdf}
+        \subfigimg[scale=0.47]{}{./figures/54Mn.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:54Mn}
     \end{subfigure}
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/55Co.pdf}
+        \subfigimg[scale=0.47]{}{./figures/55Co.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:55Co}
     \end{subfigure}%
@@ -1774,14 +1857,14 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.465]{}{./figures/56Ni.pdf}
+        \subfigimg[scale=0.465]{}{./figures/56Ni.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:56Ni}
     \end{subfigure}
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/57Co.pdf}
+        \subfigimg[scale=0.47]{}{./figures/57Co.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:57Co}
     \end{subfigure}%
@@ -1797,7 +1880,7 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/57Ni.pdf}
+        \subfigimg[scale=0.47]{}{./figures/57Ni.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:57Ni}
     \end{subfigure}%
@@ -1805,7 +1888,7 @@ Figures of the cross sections measured in this work are presented here, in compa
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.47]{}{./figures/58Co.pdf}
+        \subfigimg[scale=0.47]{}{./figures/58Co.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:58Co}
     \end{subfigure}%
@@ -1813,14 +1896,14 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.465]{}{./figures/59Fe.pdf}
+        \subfigimg[scale=0.465]{}{./figures/59Fe.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:59Fe}
     \end{subfigure}
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/60Co.pdf}
+        \subfigimg[scale=0.47]{}{./figures/60Co.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:60Co}
     \end{subfigure}%
@@ -1828,14 +1911,14 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/61Cu.pdf}
+        \subfigimg[scale=0.47]{}{./figures/61Cu.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:61Cu}
     \end{subfigure}
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/64Cu.pdf}
+        \subfigimg[scale=0.47]{}{./figures/64Cu.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:64Cu}
     \end{subfigure}%
@@ -1850,7 +1933,7 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/82mRb.pdf}
+        \subfigimg[scale=0.47]{}{./figures/82mRb.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:82mRb}
     \end{subfigure}%
@@ -1858,7 +1941,7 @@ Figures of the cross sections measured in this work are presented here, in compa
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.47]{}{./figures/83Sr.pdf}
+        \subfigimg[scale=0.47]{}{./figures/83Sr.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:83Sr}
     \end{subfigure}%
@@ -1866,14 +1949,14 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/85Y.pdf}
+        \subfigimg[scale=0.47]{}{./figures/85Y.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:85Y}
     \end{subfigure}
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/86Y.pdf}
+        \subfigimg[scale=0.47]{}{./figures/86Y.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:86Y}
     \end{subfigure}%
@@ -1881,14 +1964,14 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/86Zr.pdf}
+        \subfigimg[scale=0.47]{}{./figures/86Zr.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:86Zr}
     \end{subfigure}
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/87Y.pdf}
+        \subfigimg[scale=0.47]{}{./figures/87Y.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:87Y}
     \end{subfigure}%
@@ -1903,7 +1986,7 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/87Zr.pdf}
+        \subfigimg[scale=0.47]{}{./figures/87Zr.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:87Zr}
     \end{subfigure}%
@@ -1911,7 +1994,7 @@ Figures of the cross sections measured in this work are presented here, in compa
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.47]{}{./figures/88Y.pdf}
+        \subfigimg[scale=0.47]{}{./figures/88Y.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:88Y}
     \end{subfigure}%
@@ -1919,14 +2002,14 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/88Zr.pdf}
+        \subfigimg[scale=0.47]{}{./figures/88Zr.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:88Zr}
     \end{subfigure}
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/89Nb.pdf}
+        \subfigimg[scale=0.47]{}{./figures/89Nb.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:89Nb}
     \end{subfigure}%
@@ -1934,14 +2017,14 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/89Zr.pdf}
+        \subfigimg[scale=0.47]{}{./figures/89Zr.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:89Zr}
     \end{subfigure}
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.465]{}{./figures/90Mo.pdf}
+        \subfigimg[scale=0.465]{}{./figures/90Mo.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:90Mo}
     \end{subfigure}%
@@ -1957,7 +2040,7 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/90Nb.pdf}
+        \subfigimg[scale=0.47]{}{./figures/90Nb.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:90Nb}
     \end{subfigure}%
@@ -1965,7 +2048,7 @@ Figures of the cross sections measured in this work are presented here, in compa
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.47]{}{./figures/91mNb.pdf}
+        \subfigimg[scale=0.47]{}{./figures/91mNb.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:91mNb}
     \end{subfigure}%
@@ -1973,14 +2056,14 @@ Figures of the cross sections measured in this work are presented here, in compa
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/92mNb.pdf}
+        \subfigimg[scale=0.47]{}{./figures/92mNb.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:92mNb}
     \end{subfigure}
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/93mMo.pdf}
+        \subfigimg[scale=0.47]{}{./figures/93mMo.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:93mMo}
     \end{subfigure}%
@@ -2006,7 +2089,7 @@ Plots of the isomer-to-ground state ratios measured in this work are presented h
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/52Mn_IBR.pdf}
+        \subfigimg[scale=0.47]{}{./figures/52Mn_IBR.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:52Mn_IBR}
     \end{subfigure}%
@@ -2014,7 +2097,7 @@ Plots of the isomer-to-ground state ratios measured in this work are presented h
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.47]{}{./figures/58Co_IBR.pdf}
+        \subfigimg[scale=0.47]{}{./figures/58Co_IBR.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:58Co_IBR}
     \end{subfigure}%
@@ -2022,14 +2105,14 @@ Plots of the isomer-to-ground state ratios measured in this work are presented h
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/85Y_IBR.pdf}
+        \subfigimg[scale=0.47]{}{./figures/85Y_IBR.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:85Y_IBR}
     \end{subfigure}
      \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/87Y_IBR.pdf}
+        \subfigimg[scale=0.47]{}{./figures/87Y_IBR.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:87Y_IBR}
     \end{subfigure}%
@@ -2037,7 +2120,7 @@ Plots of the isomer-to-ground state ratios measured in this work are presented h
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/89Nb_IBR.pdf}
+        \subfigimg[scale=0.47]{}{./figures/89Nb_IBR.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:89Nb_IBR}
     \end{subfigure}
