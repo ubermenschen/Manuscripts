@@ -1050,10 +1050,15 @@ As with the monitor foils, these distributions were used to calculate the  energ
 
 
 
-An enhanced version of the final monitor reaction fluences may be seen in \autoref{fig:fluence_plot}, which shows the  \ce{^{nat}Al}(p,x)\ce{^{24}Na} observed fluence (the upper set of points), and the uncertainty-weighted average fluence from the  \ce{^{nat}Cu}(p,x)\ce{^{62}Zn} and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions (the lower set of points).
-To determine the final fluence assignments for the Nb foils, uncertainty-weighted linear regression was used to fit the various fluence measurements.
-This involved minimizing on $\chi^2$ / degree of freedom, so that  a 95\% confidence interval in fluence would be reported as as well.
-As with the FWHM, a greater than 1$\sigma$ confidence interval is used for reporting fluence uncertainty to avoid an unrealistically small fluence confidence interval, based on the spread in observed fluence from Al and Cu monitor foils.
+An enhanced version of the final monitor reaction fluences may be seen in \autoref{fig:fluence_plot}, which shows the   observed fluence of the \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reaction channels.
+Without the reliable use of the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na} monitor channels, local interpolation cannot be used for fluence assignment to the Nb foils, and global interpolation is reliant upon a validated model for fluence loss.
+In the interest of surety of because they are consistent, the uncertainty-weighted mean  for the three \ce{^{nat}Cu}(p,x) monitor channels was calculated at each energy position, to determine the final fluence assignments for the Nb and Cu foils.
+Uncertainty in proton fluence  is likewise calculated as the error propagation of the fluence values  at each energy position.
+These weighted-mean fluences are also plotted in in \autoref{fig:fluence_plot}, along with the estimated fluence according to both the MCNP6 transport model, as well as an uncertainty-weighted linear $\chi^2$ fit to the individual  fluence measurements in each monitor channel.
+Both models reproduce the observed fluence data consistently within uncertainty, with the MCNP6 model predicting a slightly more aggressive fluence loss throughout the stack.
+These models are used purely to provide an extrapolation from the 90 MeV energy position back to the \enquote{front} of the stack at 100 MeV, to compare with the nominal fluence measured by the IPF upstream current monitors.
+% This involved minimizing on $\chi^2$ / degree of freedom, so that  a 95\% confidence interval in fluence would be reported as as well.
+% As with the FWHM, a greater than 1$\sigma$ confidence interval is used for reporting fluence uncertainty to avoid an unrealistically small fluence confidence interval, based on the spread in observed fluence from Al and Cu monitor foils.
 % The fluence and 2$\sigma$ uncertainties from this weighted-fit line are thus used in calculations of the various Nb(p,x) cross sections
 
 
@@ -1069,7 +1074,9 @@ As with the FWHM, a greater than 1$\sigma$ confidence interval is used for repor
  \centering
  \includegraphics[width=0.5\linewidth]{./figures/fluence_plot.pdf}
  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
- \caption{Final weighted-fit proton fluences throughout the target stack, based on the variance-minimized observed fluence from the the  \ce{^{nat}Al}(p,x)\ce{^{24}Na}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions. A 95\% ($2\sigma$) confidence interval is reported in the fitted proton fluence, to ensure a realistic uncertainty in fluence, which encompasses the true absolute fluence. A clear loss of fluence  is visible, dropping by approximately 8.1\% from the incident fluence of 202.2 nAh over the length of the target stack.  This is due to a combination of beam utilization, as well as scattering.}
+ \caption{Final uncertainty-weighted mean proton fluences throughout the target stack, based on the variance-minimized observed fluence from the the  \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions. 
+%  A 95\% ($2\sigma$) confidence interval is reported in the fitted proton fluence, to ensure a realistic uncertainty in fluence, which encompasses the true absolute fluence. 
+  A clear loss of fluence  is visible, dropping by approximately 7.2--8.9\% from the incident fluence of 196.9--198.8 nAh over the length of the target stack, based on fluence loss models from MCNP6 simulations and an empirical fit to  fluence measurements.  This is due to a combination of beam utilization, as well as scattering.}
  \label{fig:fluence_plot}
 \end{figure}
 
@@ -1099,7 +1106,7 @@ For both the cumulative and independent activities quantified, cross sections we
 \end{equation}
 where $A_0$ is the EoB activity for the monitor reaction product, $I$ is the proton current, $\rho \Delta r$ is the foil's areal density, $\lambda$ is the monitor reaction product's decay constant, and $\Delta t$ is the length of irradiation.
 The beam current, measured using an inductive pickup, remained stable for the duration of the irradiation, with the exception of approximately 70\,s of downtime,  occurring approximately 3 minutes into irradiation.
-The propagated uncertainty in cross section is calculated as the quadrature sum of the uncertainty in quantified EoB activity, uncertainty in the duration of irradiation (conservatively estimated at 60 s, to account for any transient changes in beam current), uncertainty in foil areal density, uncertainty in monitor product half-life (included, but normally negligible),  and uncertainty in proton current (quantified in the $2\sigma$ confidence interval in \autoref{fig:fluence_plot}).
+The propagated uncertainty in cross section is calculated as the quadrature sum of the uncertainty in quantified EoB activity (which includes uncertainty in detector efficiencies), uncertainty in the duration of irradiation (conservatively estimated at 60 s, to account for any transient changes in beam current), uncertainty in foil areal density, uncertainty in monitor product half-life (included, but normally negligible),  and uncertainty in proton current (quantified by error propagation of the monitor reaction fluence values  at each energy position, as seen in \autoref{fig:fluence_plot}).
 
 
 % \begin{align}
@@ -1127,8 +1134,10 @@ After irradiation, all foils were confirmed to still be sealed inside their Kapt
 In addition, each activated foil had a small \enquote{blister} under the Kapton tape layer, caused by a combination of thermal swelling and the formation of short-lived beta activities.
 % \comment{Maybe some Ne formed by Al(p,2a)Ne / Si(p,2ap)Ne?}
 This blister   shows the location where the primary proton beam was incident upon the foil.
-Based on the \ce{^{nat}Al}(p,x)\ce{^{24}Na}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions used to determine the average fluence at each energy position (seen in \autoref{fig:fluence_plot}), a fluence of 202.2$\pm$5.4 nAh was calculated to be incident upon the target stack, which shows excellent agreement with the nominal fluence of 205.9 nAh based on IPF upstream current monitors.
-This incident fluence dropped by approximately 8.1\% to  185.9 $\pm$3.4 nAh over the length of the target stack, which is consistent with similar measurements at IPF in the past \cite{Graves2016}.
+Based on the \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions used to determine the mean fluence at each energy position (seen in \autoref{fig:fluence_plot}).
+A fluence of 198.8$\pm$6.7 nAh was calculated to be incident upon the target stack using the MCNP6 fluence model, and a  fluence of 196.9$\pm$11.3 nAh using the linear fit model, both of which are consistent with the nominal fluence of 205.9 nAh based on IPF upstream current monitors.
+As fluence loss in the target box's entrance window scales with $\sigma_{\mathrm{tot}}\rho\Delta r$, it is expected that an extrapolation back to the stack entrance will underestimate the nominal fluence incident upon the box.
+This incident fluence dropped by approximately 8.9\% to  180.9 $\pm$5.4 nAh (and by 7.2\% to  182.7 $\pm$13.5 nAh using the linear fit model) over the length of the target stack, which is consistent with similar measurements at IPF in the past \cite{Graves2016}.
 This loss of fluence is due to a combination of beam utilization for the various (p,x) reactions throughout the target stack, as well as large-angle deflections (primarily in the aluminum degraders) from scattering of the beam.
 
 
