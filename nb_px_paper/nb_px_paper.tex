@@ -538,7 +538,7 @@ Nb+p \sep Cu+p \sep Niobium \sep Copper\sep Aluminum \sep \ce{^{90}Mo}  \sep Nuc
 %%
 %%  To-do list for comments
 %%
-\listoftodos
+% \listoftodos
 
 
 %%
@@ -927,18 +927,18 @@ This energy corresponds to a 6061 aluminum areal density of 2.52\% greater than 
 
 \begin{figure}
     \centering
-    \begin{subfigure}[t]{0.49\textwidth}
+    \begin{subfigure}[t]{0.50\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.59]{a)}{./figures/before_minimization_plot.pdf}{50}
+        \subfigimg[width=\linewidth]{a)}{./figures/before_minimization_plot.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:before_minimization}
     \end{subfigure}%
-     \begin{subfigure}[t]{0.49\textwidth}
+     \begin{subfigure}[t]{0.50\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.59]{b)}{./figures/after_minimization_plot.pdf}{50}
+        \subfigimg[width=\linewidth]{b)}{./figures/after_minimization_plot.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:after_minimization}
     \end{subfigure}%
@@ -948,18 +948,18 @@ This energy corresponds to a 6061 aluminum areal density of 2.52\% greater than 
 
 \begin{figure}
     \centering
-    \begin{subfigure}[t]{0.49\textwidth}
+    \begin{subfigure}[t]{0.50\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.57]{a)}{./figures/Na22_activity_compare.pdf}{50}
+        \subfigimg[width=\linewidth]{a)}{./figures/Na22_activity_compare.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:Na22_activity_compare}
     \end{subfigure}%
-     \begin{subfigure}[t]{0.49\textwidth}
+     \begin{subfigure}[t]{0.50\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.57]{b)}{./figures/Na24_activity_compare.pdf}{180}
+        \subfigimg[width=\linewidth]{b)}{./figures/Na24_activity_compare.pdf}{180}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:Na24_activity_compare}
     \end{subfigure}%
@@ -1022,18 +1022,18 @@ This serves as a pointed example of the importance of selecting monitor reaction
 
 \begin{figure}
     \centering
-    \begin{subfigure}[t]{0.49\textwidth}
+    \begin{subfigure}[t]{0.50\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.59]{a)}{./figures/after_minimization_plot_alt.pdf}{80}
+        \subfigimg[width=\linewidth]{a)}{./figures/after_minimization_plot_alt.pdf}{80}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:before_subtraction}
     \end{subfigure}%
-     \begin{subfigure}[t]{0.49\textwidth}
+     \begin{subfigure}[t]{0.50\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.59]{b)}{./figures/after_subtraction_plot.pdf}{80}
+        \subfigimg[width=\linewidth]{b)}{./figures/after_subtraction_plot.pdf}{80}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:after_subtraction}
     \end{subfigure}%
@@ -1134,10 +1134,10 @@ After irradiation, all foils were confirmed to still be sealed inside their Kapt
 In addition, each activated foil had a small \enquote{blister} under the Kapton tape layer, caused by a combination of thermal swelling and the formation of short-lived beta activities.
 % \comment{Maybe some Ne formed by Al(p,2a)Ne / Si(p,2ap)Ne?}
 This blister   shows the location where the primary proton beam was incident upon the foil.
-Based on the \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions used to determine the mean fluence at each energy position (seen in \autoref{fig:fluence_plot}).
+The \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions were used to determine the uncertainty-weighted mean fluence at each energy position (seen in \autoref{fig:fluence_plot}).
 A fluence of 198.8$\pm$6.7 nAh was calculated to be incident upon the target stack using the MCNP6 fluence model, and a  fluence of 196.9$\pm$11.3 nAh using the linear fit model, both of which are consistent with the nominal fluence of 205.9 nAh based on IPF upstream current monitors.
 As fluence loss in the target box's entrance window scales with $\sigma_{\mathrm{tot}}\rho\Delta r$, it is expected that an extrapolation back to the stack entrance will underestimate the nominal fluence incident upon the box.
-This incident fluence dropped by approximately 8.9\% to  180.9 $\pm$5.4 nAh (and by 7.2\% to  182.7 $\pm$13.5 nAh using the linear fit model) over the length of the target stack, which is consistent with similar measurements at IPF in the past \cite{Graves2016}.
+This incident fluence dropped by approximately 8.9\% to  180.9$\pm$5.4 nAh (and by 7.2\% to  182.7$\pm$13.5 nAh using the linear fit model) over the length of the target stack, which is consistent with similar measurements at IPF in the past \cite{Graves2016}.
 This loss of fluence is due to a combination of beam utilization for the various (p,x) reactions throughout the target stack, as well as large-angle deflections (primarily in the aluminum degraders) from scattering of the beam.
 
 
@@ -1148,8 +1148,8 @@ Using the final proton fluence at each energy position, cross sections for  \ce{
 For  (p,x) reactions on \ce{^{nat}Nb} foils, the (p,x) cross sections for \ce{^{82m}Rb}, \ce{^{83}Sr}, \ce{^{85g}Y}, \ce{^{85m}Y}, \ce{^{86}Zr}, \ce{^{86}Y}, \ce{^{87}Zr}, \ce{^{87g}Y}, \ce{^{87m}Y}, \ce{^{88}Zr}, \ce{^{88}Y}, \ce{^{89g}Nb}, \ce{^{89m}Nb}, \ce{^{89}Zr}, \ce{^{90}Mo}, \ce{^{90}Nb}, \ce{^{91m}Nb}, \ce{^{92m}Nb}, and \ce{^{93m}Mo} were extracted, as recorded in \autoref{tab:nb_rp_table}.
 In addition, as there exist a number of isomers with radioactive ground states in these mass regions,  independent measurements of isomer-to-ground-state branching ratios for \ce{^{52m/g}Mn},\ce{^{58m/g}Co},\ce{^{85m/g}Y},\ce{^{87m/g}Y}, and \ce{^{89m/g}Nb} were  extracted and are recorded in \autoref{tab:ibr_table}.
 Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR \cite{Otuka2014272}) are seen in the figures of \ref{fit_figures} and \ref{ibr_figures}.
-The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity ($\pm$1--7\%), proton fluence ($\pm$2--3\%), and foil areal density ($\pm$0.1--0.6\%).
-\comment{Update these with new numbers!\\ Stephen: Very impressive, if you feel this is realistic. }
+The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity ($\pm$3--7\%), proton fluence ($\pm$4--6\%), and foil areal density ($\pm$0.1--0.6\%).
+% \comment{Update these with new numbers!\\ Stephen: Very impressive, if you feel this is realistic. }
 
 
 
@@ -1279,7 +1279,7 @@ E$_\text{p}$ (MeV)          & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ 
 \ce{^{52}Mn}\,($\sigma_c$)    & $1.640\pm0.042$         & $0.552\pm0.014$         & $0.0398\pm0.0012$       & $0.00513\pm0.00051$     & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 \ce{^{52g}Mn}\,($\sigma_i$)   & $0.650\pm0.018$         & $0.231\pm0.013$         & $0.0160\pm0.0021$       & $0.000961\pm0.000027$   & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 \ce{^{52m}Mn}\,($\sigma_c$)   & $0.989\pm0.037$         & $0.321\pm0.020$         & $0.0238\pm0.0032$       & $0.00417\pm0.00043$     & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{54}Mn}\,($\sigma_c$)    & $5.67\pm0.15$           & $3.65\pm0.11$           & $4.05\pm0.11$           & $4.71\pm0.12$           & $1.656\pm0.042$         & --\cmmnt{\hrulefill}              \\
+\ce{^{54}Mn}\,($\sigma_i$)    & $5.67\pm0.15$           & $3.65\pm0.11$           & $4.05\pm0.11$           & $4.71\pm0.12$           & $1.656\pm0.042$         & --\cmmnt{\hrulefill}              \\
 \ce{^{55}Co}\,($\sigma_c$)    & $1.656\pm0.048$         & $0.983\pm0.030$         & $0.1892\pm0.0076$       & $0.0291\pm0.0024$       & $0.00231\pm0.00019$     & --\cmmnt{\hrulefill}              \\
 \ce{^{56}Ni}\,($\sigma_c$)    & $0.0779\pm0.0022$       & $0.0973\pm0.0025$       & $0.0886\pm0.0022$       & $0.02967\pm0.00079$     & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 \ce{^{57}Ni}\,($\sigma_c$)    & $1.416\pm0.039$         & $1.164\pm0.030$         & $1.370\pm0.033$         & $2.074\pm0.051$         & $1.543\pm0.035$         & $0.02638\pm0.00077$     \\
@@ -1290,7 +1290,7 @@ E$_\text{p}$ (MeV)          & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ 
 \ce{^{59}Fe}\,($\sigma_c$)    & $0.836\pm0.027$         & $0.810\pm0.022$         & $0.733\pm0.020$         & $0.601\pm0.017$         & $0.206\pm0.010$         & --\cmmnt{\hrulefill}        \\
 \ce{^{60}Co}\,($\sigma_c$)    & $12.79\pm0.43$          & $13.04\pm0.42$          & $10.89\pm0.78$          & $11.15\pm0.58$          & $9.17\pm0.74$           & $6.7\pm1.0$             \\
 \ce{^{61}Cu}\,($\sigma_c$)    & $48.8\pm1.5$            & $54.4\pm1.7$            & $63.7\pm2.1$            & $70.3\pm2.1$            & $79.5\pm2.7$            & $158.2\pm3.2$           \\
-\ce{^{64}Cu}\,($\sigma_c$)    & $37.4\pm1.4$            & $41.4\pm1.2$            & $44.5\pm1.7$            & $49.0\pm1.5$            & $54.9\pm1.4$            & $63.7\pm1.6$            \\ \bottomrule
+\ce{^{64}Cu}\,($\sigma_i$)    & $37.4\pm1.4$            & $41.4\pm1.2$            & $44.5\pm1.7$            & $49.0\pm1.5$            & $54.9\pm1.4$            & $63.7\pm1.6$            \\ \bottomrule
 \end{tabular}
 }
 \end{table}
@@ -1323,11 +1323,11 @@ E$_\text{p}$ (MeV)          & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ 
 \ce{^{89g}Nb}\,($\sigma_i$)   & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $142\pm12$          & $181.7\pm4.1$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 \ce{^{89m}Nb}\,($\sigma_i$)   & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $33.9\pm2.0$            & $27.3\pm1.4$            & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
 \ce{^{89}Zr}\,($\sigma_i$)   & $203.8\pm5.3$           & $235.4\pm6.6$           & $287.5\pm6.8$           & $250.3\pm5.8$           & $54.6\pm1.1$            & $15.61\pm0.31$          \\
-\ce{^{90}Mo}\,($\sigma_c$)    & $20.6\pm0.7$            & $25.58\pm0.76$          & $33.75\pm0.90$          & $60.4\pm1.9$            & $120.3\pm2.9$           & $24.38\pm0.71$          \\
+\ce{^{90}Mo}\,($\sigma_i$)    & $20.6\pm0.7$            & $25.58\pm0.76$          & $33.75\pm0.90$          & $60.4\pm1.9$            & $120.3\pm2.9$           & $24.38\pm0.71$          \\
 \ce{^{90}Nb}\,($\sigma_i$)    & $152.9\pm4.7$           & $169.3\pm4.8$           & $204.7\pm5.8$           & $265.2\pm7.8$           & $363.4\pm9.8$           & $165.2\pm4.5$           \\
 \ce{^{91m}Nb}\,($\sigma_c$)   & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $67.0\pm4.2$            \\
-\ce{^{92m}Nb}\,($\sigma_c$)   & $42.2\pm1.2$            & $45.7\pm1.2$            & $48.8\pm1.2$            & $51.6\pm1.3$            & $54.5\pm1.4$            & $60.4\pm1.2$            \\
-\ce{^{93m}Mo}\,($\sigma_c$)   & $0.93\pm0.18$           & $1.25\pm0.13$           & $1.58\pm0.22$           & $1.80\pm0.12$           & $1.83\pm0.10$           & $2.010\pm0.084$         \\ \bottomrule
+\ce{^{92m}Nb}\,($\sigma_i$)   & $42.2\pm1.2$            & $45.7\pm1.2$            & $48.8\pm1.2$            & $51.6\pm1.3$            & $54.5\pm1.4$            & $60.4\pm1.2$            \\
+\ce{^{93m}Mo}\,($\sigma_i$)   & $0.93\pm0.18$           & $1.25\pm0.13$           & $1.58\pm0.22$           & $1.80\pm0.12$           & $1.83\pm0.10$           & $2.010\pm0.084$         \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -1515,6 +1515,37 @@ The data collected on this residual is consistent with the one other data set av
 The \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} and \ce{^{93}Nb}(p,p3n)\ce{^{90}Nb} channels both peak early in the energy region, around 50 MeV, and the data clearly show the full rise, peak, and fall of the compound cross section. 
 In both of these channels, this data  is consistent with the data by Titarenko \emph{et al.} in 2011\cite{Titarenko2011}.
 
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\linewidth]{./figures/86Y.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{93}Nb}(p,x)\ce{^{86}Y} cross section, with the \ce{^{93}Nb}(p,$\alpha$p3n)\ce{^{86}Y} reaction channel visibly peaking at approximately \mbox{70 MeV}.}
+ \label{fig:86Y}
+\end{figure}
+
+
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\linewidth]{./figures/90Mo.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{93}Nb}(p,x)\ce{^{90}Mo} cross section, with the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} reaction channel visibly peaking at approximately \mbox{50 MeV}.}
+ \label{fig:90Mo}
+\end{figure}
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\linewidth]{./figures/90Nb.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{93}Nb}(p,x)\ce{^{90}Nb} cross section, with the \ce{^{93}Nb}(p,p3n)\ce{^{90}Nb} reaction channel visibly peaking at approximately \mbox{50 MeV}.}
+ \label{fig:90Nb}
+\end{figure}
+
+
+
+
 In all three channels, the TALYS, TENDL, and CoH calculations rise, peak, and fall at lower energies than the data, while EMPIRE calculates the peak to occur at higher energies.
 For \ce{^{90}Mo}, the EMPIRE peak is representative of the data.
 For \ce{^{86}Y} and \ce{^{90}Nb}, the peak is missed by all three  of the codes.
@@ -1532,14 +1563,20 @@ EMPIRE, however, does not level off  as much as the data and the other codes are
           
 % \section{Discussion}
 
-\comment{Feel free to expand / suggest / add other language describing medical radionuclide applications, or radiochemical separations here.}
+% \comment{Feel free to expand / suggest / add other language describing medical radionuclide applications, or radiochemical separations here.}
 
 
-\comment{Make sure to comment on avoiding the use of silicone-based adhesives for Al monitor foils.}
+% \comment{Make sure to comment on avoiding the use of silicone-based adhesives for Al monitor foils.}
 
-First off, at the next planned stack irradiation at IPF, we would strongly encourage that a Kapton "blank" (no foil in the packet) be irradiated to confirm this.  We intend to do the same for our next proton irradiation at LBL.
+Finally, we wish to urge caution in future stacked-target activation experiments by avoiding the use of silicone adhesive-based tapes for foil containment, especially when paired with the use of Al monitor foils.
+Acrylic-based tape options are commercially available, and are immune from (p,x) production of \ce{^{22,24}Na} activities, due to being of too low-Z for these reaction channels to be possible.
+Even with subtraction of \ce{^{22,24}Na} activities though irradiating a Kapton tape \enquote{blank} or similar, we observe the Al monitor channels to measure consistently higher proton fluence than via Cu monitor channels, by 5--8\%. 
+If Al monitors are used in conjunction with silicone-based tapes, even with subtraction of excess \ce{^{22}Na} activities, a systematically enhanced fluence may be determined, leading to cross sections reported with inaccurately diminished magnitude.
+Furthermore, since data for monitor reactions are often self-referencing, the propagated impact of this systematic enhancement in fluence may have far-reaching consequences for both medical isotope production, as well as for  the evaluated nuclear data libraries, which use these proton activation experiments as input.
 
-We would highly encourage people to be careful about the small details, notably using a silicone-based adhesive for any future Al monitor foils.  This has potentially far-reaching consequences, unless a non-silicon-based Kapton (such as the acrylic adhesive versions) is instead used.
+% First off, at the next planned stack irradiation at IPF, we would strongly encourage that a Kapton "blank" (no foil in the packet) be irradiated to confirm this.  We intend to do the same for our next proton irradiation at LBL.
+% 
+% We would highly encourage people to be careful about the small details, notably using a silicone-based adhesive for any future Al monitor foils.  This has potentially far-reaching consequences, unless a non-silicon-based Kapton (such as the acrylic adhesive versions) is instead used.
 
 
 % XXXXXX
@@ -1554,6 +1591,7 @@ We present here a set of 38 measurements of cross sections for the \ce{^{nat}Nb}
 Nearly all cross sections have been reported with higher precision than previous measurements.
 We report the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90 MeV region.
 We also use these measurements to illustrate the impact of pre-equilibrium particle emission in the reaction dynamics for 40--90 MeV \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
+We advise that future activation experiments avoid the use of silicone-based adhesives, particularly in conjunction with aluminum monitor foils, to avoid reporting an enhanced fluence due to \ce{^{22,24}Na} contamination.
 Finally, this work provides another example of the usefulness of the recently-described variance minimization techniques for reducing energy uncertainties in stacked target charged particle irradiation experiments.
 
 
@@ -1612,11 +1650,11 @@ This research used the Savio computational cluster resource provided by the Berk
 % %    \hline
 % %  
 % % \end{longtable}
-Table of decay data  for observed gamma-rays. 
-The  values for lifetime and gamma-ray branching ratios  listed here were used in all calculations of measured cross sections \cite{Basunia2015,Firestone2007,Wang2017,Dong2015,Dong2014,JUNDE2008787,Junde2011,Bhat1998,Nesaraja2010,BAGLIN2002,Browne2013,Zuber20151,NICHOLS2012973,Singh2007,Browne2010,Tuli2003,McCutchan2015,Singh2014,NEGRET20151,Johnson2015,McCutchan2014,Singh2013,Browne1997,Baglin2013,Baglin2012,Baglin2011}. 
+% Table of decay data  for observed gamma-rays. 
+The   lifetimes and gamma-ray branching ratios  listed in these tables were used for all calculations of measured cross sections reported in this work, and have been taken from the most recent edition of  Nuclear Data Sheets for a particular mass chain  \cite{Basunia2015,Firestone2007,Wang2017,Dong2015,Dong2014,JUNDE2008787,Junde2011,Bhat1998,Nesaraja2010,BAGLIN2002,Browne2013,Zuber20151,NICHOLS2012973,Singh2007,Browne2010,Tuli2003,McCutchan2015,Singh2014,NEGRET20151,Johnson2015,McCutchan2014,Singh2013,Browne1997,Baglin2013,Baglin2012,Baglin2011}. 
 
 
-\comment{I had to remove about 30 of the lines I used from this table (removing the weakest lines in nuclides with even more lines than shown here, but never removing lines in nuclides with only 2 or less), as even splitting the data into 2 tables created tables too large to fit on a single page.  My purpose here was 1) to show that I used multiple lines to quantify each nuclide (increasing confidence in results), and 2) to list all the used \ce{^{90}Mo} lines, since they form the basis of it as a monitor.  Is this good as is, or should it be pared down even more?}
+% \comment{I had to remove about 30 of the lines I used from this table (removing the weakest lines in nuclides with even more lines than shown here, but never removing lines in nuclides with only 2 or less), as even splitting the data into 2 tables created tables too large to fit on a single page.  My purpose here was 1) to show that I used multiple lines to quantify each nuclide (increasing confidence in results), and 2) to list all the used \ce{^{90}Mo} lines, since they form the basis of it as a monitor.  Is this good as is, or should it be pared down even more?}
 
 
 % Preview source code for paragraph 0
@@ -1896,9 +1934,9 @@ Nuclide & Half-life & E$_\gamma$ (keV) & I$_\gamma$ (\%)\\
 % 
 \section{Measured excitation functions} \label{fit_figures}
 
-Figures of the cross sections measured in this work are presented here, in comparison with literature data \cite{Albouy1963,PhysRev.162.1055,PhysRevC.6.1235,Grutter1982,Greenwood1984,Aleksandrov1987,levkovski1991cross,Mills1992,MICHEL1997153,Fassbender1997,Ido2002,sisterson2002selected,YashimaH2003,A2006,Ditroi2008,Ditroi2009,steyn2011excitation,Titarenko2011,Shahid2015,Garrido2016,Graves2016}, the TENDL-2015 data library \cite{Koning2012}, and the reaction modeling codes CoH,EMPIRE-3.2.3, and TALYS-1.8 \cite{KAWANO2010,Herman2007,Koning2012}.
+Figures of the cross sections measured in this work are presented here, in comparison with literature data \cite{Albouy1963,PhysRev.162.1055,PhysRevC.6.1235,Grutter1982,Greenwood1984,Aleksandrov1987,levkovski1991cross,Mills1992,MICHEL1997153,Fassbender1997,Ido2002,sisterson2002selected,YashimaH2003,A2006,Ditroi2008,Ditroi2009,steyn2011excitation,Titarenko2011,Shahid2015,Garrido2016,Graves2016}, the TENDL-2015 data library \cite{Koning2012}, and the reaction modeling codes CoH-3.5.1, EMPIRE-3.2.3, and TALYS-1.8 \cite{KAWANO2010,Herman2007,Koning2012}.
 
-\comment{Add in CoH model output from Toshihiko to all plots}
+% \comment{Add in CoH model output from Toshihiko to all plots}
 
 
 
@@ -1909,50 +1947,51 @@ Figures of the cross sections measured in this work are presented here, in compa
 
 \begin{figure*}
     \centering
-    \begin{subfigure}[t]{0.49\textwidth}
+    \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/51Cr.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/51Cr.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:51Cr}
     \end{subfigure}%
-     \begin{subfigure}[t]{0.49\textwidth}
+     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.465]{}{./figures/52gMn.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/52Mn.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
-         \refstepcounter{subfigure}\label{fig:52gMn}
+         \refstepcounter{subfigure}\label{fig:52Mn}
     \end{subfigure}%
     \\
-    \begin{subfigure}[t]{0.49\textwidth}
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \subfigimg[width=\linewidth]{}{./figures/52gMn.pdf}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+         \refstepcounter{subfigure}\label{fig:52gMn}
+    \end{subfigure}%
+     \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+        \subfigimg[width=\linewidth]{}{./figures/52mMn.pdf}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+         \refstepcounter{subfigure}\label{fig:52mMn}
+    \end{subfigure}%
+    \\
+    \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/54Mn.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/54Mn.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:54Mn}
     \end{subfigure}
-     \begin{subfigure}[t]{0.49\textwidth}
+     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/55Co.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/55Co.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:55Co}
-    \end{subfigure}%
-    \\
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-%         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.465]{}{./figures/56Ni.pdf}{50}
-%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
-                 \refstepcounter{subfigure}\label{fig:56Ni}
-    \end{subfigure}
-     \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/57Co.pdf}{50}
-%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-        \refstepcounter{subfigure} \label{fig:57Co}
     \end{subfigure}%
 %     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
      \label{fig:xs_curves_p1}
@@ -1963,50 +2002,50 @@ Figures of the cross sections measured in this work are presented here, in compa
 
 \begin{figure*}
     \centering
-    \begin{subfigure}[t]{0.49\textwidth}
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\textwidth]{./figures/target2.png}
+        \subfigimg[width=\linewidth]{}{./figures/56Ni.pdf}{50}
+%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+                 \refstepcounter{subfigure}\label{fig:56Ni}
+    \end{subfigure}
+     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/57Ni.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/57Co.pdf}{50}
+%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+        \refstepcounter{subfigure} \label{fig:57Co}
+    \end{subfigure}%
+    \\
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \subfigimg[width=\linewidth]{}{./figures/57Ni.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:57Ni}
     \end{subfigure}%
-     \begin{subfigure}[t]{0.49\textwidth}
+     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.47]{}{./figures/58Co.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/58Co.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:58Co}
     \end{subfigure}%
     \\
-    \begin{subfigure}[t]{0.49\textwidth}
+    \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.465]{}{./figures/59Fe.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/58gCo.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
-                 \refstepcounter{subfigure}\label{fig:59Fe}
+                 \refstepcounter{subfigure}\label{fig:58gCo}
     \end{subfigure}
-     \begin{subfigure}[t]{0.49\textwidth}
+     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/60Co.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/58mCo.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-        \refstepcounter{subfigure} \label{fig:60Co}
-    \end{subfigure}%
-    \\
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-%         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/61Cu.pdf}{50}
-%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
-                 \refstepcounter{subfigure}\label{fig:61Cu}
-    \end{subfigure}
-     \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/64Cu.pdf}{50}
-%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-        \refstepcounter{subfigure} \label{fig:64Cu}
+        \refstepcounter{subfigure} \label{fig:58mCo}
     \end{subfigure}%
 %     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
      \label{fig:xs_curves_p2}
@@ -2016,50 +2055,50 @@ Figures of the cross sections measured in this work are presented here, in compa
 
 \begin{figure*}
     \centering
-    \begin{subfigure}[t]{0.49\textwidth}
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\textwidth]{./figures/target2.png}
+        \subfigimg[width=\linewidth]{}{./figures/59Fe.pdf}{50}
+%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+                 \refstepcounter{subfigure}\label{fig:59Fe}
+    \end{subfigure}
+     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/82mRb.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/60Co.pdf}{50}
+%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+        \refstepcounter{subfigure} \label{fig:60Co}
+    \end{subfigure}%
+    \\
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\textwidth]{./figures/target2.png}
+        \subfigimg[width=\linewidth]{}{./figures/61Cu.pdf}{50}
+%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+                 \refstepcounter{subfigure}\label{fig:61Cu}
+    \end{subfigure}
+     \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \subfigimg[width=\linewidth]{}{./figures/64Cu.pdf}{50}
+%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+        \refstepcounter{subfigure} \label{fig:64Cu}
+    \end{subfigure}%
+    \\
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \subfigimg[width=\linewidth]{}{./figures/82mRb.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:82mRb}
     \end{subfigure}%
-     \begin{subfigure}[t]{0.49\textwidth}
+     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.47]{}{./figures/83Sr.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/83Sr.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:83Sr}
-    \end{subfigure}%
-    \\
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-%         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/85Y.pdf}{50}
-%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
-                 \refstepcounter{subfigure}\label{fig:85Y}
-    \end{subfigure}
-     \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/86Y.pdf}{50}
-%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-        \refstepcounter{subfigure} \label{fig:86Y}
-    \end{subfigure}%
-    \\
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-%         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/86Zr.pdf}{50}
-%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
-                 \refstepcounter{subfigure}\label{fig:86Zr}
-    \end{subfigure}
-     \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/87Y.pdf}{50}
-%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-        \refstepcounter{subfigure} \label{fig:87Y}
     \end{subfigure}%
 %     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
      \label{fig:xs_curves_p3}
@@ -2069,93 +2108,208 @@ Figures of the cross sections measured in this work are presented here, in compa
 
 \begin{figure*}
     \centering
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/87Zr.pdf}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
-         \refstepcounter{subfigure}\label{fig:87Zr}
-    \end{subfigure}%
-     \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.47]{}{./figures/88Y.pdf}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
-         \refstepcounter{subfigure}\label{fig:88Y}
-    \end{subfigure}%
-    \\
-    \begin{subfigure}[t]{0.49\textwidth}
+    \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/88Zr.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/85Y.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
-                 \refstepcounter{subfigure}\label{fig:88Zr}
+                 \refstepcounter{subfigure}\label{fig:85Y}
     \end{subfigure}
-     \begin{subfigure}[t]{0.49\textwidth}
+     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/89Nb.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/85gY.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-        \refstepcounter{subfigure} \label{fig:89Nb}
+        \refstepcounter{subfigure} \label{fig:85gY}
     \end{subfigure}%
     \\
-    \begin{subfigure}[t]{0.49\textwidth}
+    \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/89Zr.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/85mY.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
-                 \refstepcounter{subfigure}\label{fig:89Zr}
+                 \refstepcounter{subfigure}\label{fig:85mY}
     \end{subfigure}
-     \begin{subfigure}[t]{0.49\textwidth}
+%      \begin{subfigure}[t]{0.495\textwidth}
+%         \centering
+% %         \includegraphics[width=\textwidth]{./figures/target2.png}
+%         \subfigimg[width=\linewidth]{}{./figures/86Y.pdf}{50}
+% %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+%                  \refstepcounter{subfigure}\label{fig:86Y}
+%     \end{subfigure}
+%     \\
+    \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.465]{}{./figures/90Mo.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/86Zr.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-        \refstepcounter{subfigure} \label{fig:90Mo}
+        \refstepcounter{subfigure} \label{fig:86Zr}
     \end{subfigure}%
+    \\
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\textwidth]{./figures/target2.png}
+        \subfigimg[width=\linewidth]{}{./figures/87Y.pdf}{50}
+%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+                 \refstepcounter{subfigure}\label{fig:87Y}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\textwidth]{./figures/target2.png}
+        \subfigimg[width=\linewidth]{}{./figures/87gY.pdf}{50}
+%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+                 \refstepcounter{subfigure}\label{fig:87gY}
+    \end{subfigure}
 %     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
      \label{fig:xs_curves_p4}
 \end{figure*}
 
-
-
-
 \begin{figure*}
     \centering
-    \begin{subfigure}[t]{0.49\textwidth}
+%      \begin{subfigure}[t]{0.495\textwidth}
+%         \centering
+% %         \includegraphics[width=\textwidth]{./figures/target2.png}
+%         \subfigimg[width=\linewidth]{}{./figures/87gY.pdf}{50}
+% %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+%                  \refstepcounter{subfigure}\label{fig:87gY}
+%     \end{subfigure}
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\textwidth]{./figures/target2.png}
+        \subfigimg[width=\linewidth]{}{./figures/87mY.pdf}{50}
+%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+                 \refstepcounter{subfigure}\label{fig:87mY}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/90Nb.pdf}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
-         \refstepcounter{subfigure}\label{fig:90Nb}
+        \subfigimg[width=\linewidth]{}{./figures/87Zr.pdf}{50}
+%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+        \refstepcounter{subfigure} \label{fig:87Zr}
     \end{subfigure}%
-     \begin{subfigure}[t]{0.49\textwidth}
+    \\
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \subfigimg[width=\linewidth]{}{./figures/88Y.pdf}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+         \refstepcounter{subfigure}\label{fig:88Y}
+    \end{subfigure}%
+     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.47]{}{./figures/91mNb.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/88Zr.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
-         \refstepcounter{subfigure}\label{fig:91mNb}
+         \refstepcounter{subfigure}\label{fig:88Zr}
     \end{subfigure}%
     \\
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-%         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/92mNb.pdf}{50}
-%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
-                 \refstepcounter{subfigure}\label{fig:92mNb}
-    \end{subfigure}
-     \begin{subfigure}[t]{0.49\textwidth}
+         \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/93mMo.pdf}{50}
-%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-        \refstepcounter{subfigure} \label{fig:93mMo}
+%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+        \subfigimg[width=\linewidth]{}{./figures/89Nb.pdf}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+         \refstepcounter{subfigure}\label{fig:89Nb}
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+        \subfigimg[width=\linewidth]{}{./figures/89gNb.pdf}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+         \refstepcounter{subfigure}\label{fig:89gNb}
     \end{subfigure}%
 %     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-     \label{fig:xs_curves_p5}
+     \label{fig:xs_curves_p8}
 \end{figure*}
+
+\begin{figure*}
+    \centering    
+%          \begin{subfigure}[t]{0.495\textwidth}
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+%         \subfigimg[width=\linewidth]{}{./figures/89gNb.pdf}{50}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+%          \refstepcounter{subfigure}\label{fig:89gNb}
+%     \end{subfigure}%
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\textwidth]{./figures/target2.png}
+        \subfigimg[width=\linewidth]{}{./figures/89mNb.pdf}{50}
+%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+                 \refstepcounter{subfigure}\label{fig:89mNb}
+    \end{subfigure}
+     \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \subfigimg[width=\linewidth]{}{./figures/89Zr.pdf}{50}
+%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+        \refstepcounter{subfigure} \label{fig:89Zr}
+    \end{subfigure}%
+    \\
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\textwidth]{./figures/target2.png}
+        \subfigimg[width=\linewidth]{}{./figures/91mNb.pdf}{50}
+%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+                 \refstepcounter{subfigure}\label{fig:91mNb}
+    \end{subfigure}
+     \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \subfigimg[width=\linewidth]{}{./figures/92mNb.pdf}{50}
+%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+        \refstepcounter{subfigure} \label{fig:92mNb}
+    \end{subfigure}%
+    \\
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \subfigimg[width=\linewidth]{}{./figures/93mMo.pdf}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+         \refstepcounter{subfigure}\label{fig:93mMo}
+    \end{subfigure}%
+%     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+     \label{fig:xs_curves_p7}
+\end{figure*}
+
+% \begin{figure*}
+%     \centering
+%     \begin{subfigure}[t]{0.495\textwidth}
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \subfigimg[width=\linewidth]{}{./figures/93mMo.pdf}{50}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+%          \refstepcounter{subfigure}\label{fig:93mMo}
+%     \end{subfigure}%
+% %      \begin{subfigure}[t]{0.495\textwidth}
+% %         \centering
+% % %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% % %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+% %         \subfigimg[width=\linewidth]{}{./figures/91mNb.pdf}{50}
+% % %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+% %          \refstepcounter{subfigure}\label{fig:91mNb}
+% %     \end{subfigure}%
+% %     \\
+% %     \begin{subfigure}[t]{0.495\textwidth}
+% %         \centering
+% % %         \includegraphics[width=\textwidth]{./figures/target2.png}
+% %         \subfigimg[width=\linewidth]{}{./figures/92mNb.pdf}{50}
+% % %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+% %                  \refstepcounter{subfigure}\label{fig:92mNb}
+% %     \end{subfigure}
+% %      \begin{subfigure}[t]{0.495\textwidth}
+% %         \centering
+% % %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% %         \subfigimg[width=\linewidth]{}{./figures/93mMo.pdf}{50}
+% % %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+% %         \refstepcounter{subfigure} \label{fig:93mMo}
+% %     \end{subfigure}%
+% %     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+%      \label{fig:xs_curves_p5}
+% \end{figure*}
 
 
 
@@ -2172,41 +2326,41 @@ Plots of the isomer-to-ground state ratios measured in this work are presented h
 
 \begin{figure*}
     \centering
-    \begin{subfigure}[t]{0.49\textwidth}
+    \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/52Mn_IBR.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/52Mn_IBR.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:52Mn_IBR}
     \end{subfigure}%
-     \begin{subfigure}[t]{0.49\textwidth}
+     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[scale=0.47]{}{./figures/58Co_IBR.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/58Co_IBR.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:58Co_IBR}
     \end{subfigure}%
     \\
-    \begin{subfigure}[t]{0.49\textwidth}
+    \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/85Y_IBR.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/85Y_IBR.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:85Y_IBR}
     \end{subfigure}
-     \begin{subfigure}[t]{0.49\textwidth}
+     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \subfigimg[scale=0.47]{}{./figures/87Y_IBR.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/87Y_IBR.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:87Y_IBR}
     \end{subfigure}%
     \\
-    \begin{subfigure}[t]{0.49\textwidth}
+    \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[scale=0.47]{}{./figures/89Nb_IBR.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/89Nb_IBR.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:89Nb_IBR}
     \end{subfigure}
