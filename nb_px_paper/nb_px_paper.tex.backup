@@ -1958,9 +1958,25 @@ Figures of the cross sections measured in this work are presented here, in compa
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[width=\linewidth]{}{./figures/52gMn.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/52Mn.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+         \refstepcounter{subfigure}\label{fig:52Mn}
+    \end{subfigure}%
+    \\
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \subfigimg[width=\linewidth]{}{./figures/52gMn.pdf}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:52gMn}
+    \end{subfigure}%
+     \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+        \subfigimg[width=\linewidth]{}{./figures/52mMn.pdf}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+         \refstepcounter{subfigure}\label{fig:52mMn}
     \end{subfigure}%
     \\
     \begin{subfigure}[t]{0.495\textwidth}
@@ -1977,7 +1993,15 @@ Figures of the cross sections measured in this work are presented here, in compa
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:55Co}
     \end{subfigure}%
-    \\
+%     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+     \label{fig:xs_curves_p1}
+\end{figure*}
+
+
+
+
+\begin{figure*}
+    \centering
     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
@@ -1992,15 +2016,7 @@ Figures of the cross sections measured in this work are presented here, in compa
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:57Co}
     \end{subfigure}%
-%     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-     \label{fig:xs_curves_p1}
-\end{figure*}
-
-
-
-
-\begin{figure*}
-    \centering
+    \\
     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
@@ -2017,6 +2033,28 @@ Figures of the cross sections measured in this work are presented here, in compa
          \refstepcounter{subfigure}\label{fig:58Co}
     \end{subfigure}%
     \\
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\textwidth]{./figures/target2.png}
+        \subfigimg[width=\linewidth]{}{./figures/58gCo.pdf}{50}
+%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+                 \refstepcounter{subfigure}\label{fig:58gCo}
+    \end{subfigure}
+     \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \subfigimg[width=\linewidth]{}{./figures/58mCo.pdf}{50}
+%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+        \refstepcounter{subfigure} \label{fig:58mCo}
+    \end{subfigure}%
+%     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+     \label{fig:xs_curves_p2}
+\end{figure*}
+
+
+
+\begin{figure*}
+    \centering
     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
@@ -2046,14 +2084,7 @@ Figures of the cross sections measured in this work are presented here, in compa
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:64Cu}
     \end{subfigure}%
-%     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-     \label{fig:xs_curves_p2}
-\end{figure*}
-
-
-
-\begin{figure*}
-    \centering
+    \\
     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
@@ -2069,7 +2100,14 @@ Figures of the cross sections measured in this work are presented here, in compa
 %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
          \refstepcounter{subfigure}\label{fig:83Sr}
     \end{subfigure}%
-    \\
+%     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+     \label{fig:xs_curves_p3}
+\end{figure*}
+
+
+
+\begin{figure*}
+    \centering
     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
@@ -2078,6 +2116,29 @@ Figures of the cross sections measured in this work are presented here, in compa
                  \refstepcounter{subfigure}\label{fig:85Y}
     \end{subfigure}
      \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \subfigimg[width=\linewidth]{}{./figures/85gY.pdf}{50}
+%         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+        \refstepcounter{subfigure} \label{fig:85gY}
+    \end{subfigure}%
+    \\
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\textwidth]{./figures/target2.png}
+        \subfigimg[width=\linewidth]{}{./figures/85mY.pdf}{50}
+%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+                 \refstepcounter{subfigure}\label{fig:85mY}
+    \end{subfigure}
+%      \begin{subfigure}[t]{0.495\textwidth}
+%         \centering
+% %         \includegraphics[width=\textwidth]{./figures/target2.png}
+%         \subfigimg[width=\linewidth]{}{./figures/86Y.pdf}{50}
+% %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+%                  \refstepcounter{subfigure}\label{fig:86Y}
+%     \end{subfigure}
+%     \\
+    \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
         \subfigimg[width=\linewidth]{}{./figures/86Zr.pdf}{50}
@@ -2092,21 +2153,41 @@ Figures of the cross sections measured in this work are presented here, in compa
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
                  \refstepcounter{subfigure}\label{fig:87Y}
     \end{subfigure}
-     \begin{subfigure}[t]{0.495\textwidth}
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\textwidth]{./figures/target2.png}
+        \subfigimg[width=\linewidth]{}{./figures/87gY.pdf}{50}
+%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+                 \refstepcounter{subfigure}\label{fig:87gY}
+    \end{subfigure}
+%     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+     \label{fig:xs_curves_p4}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+%      \begin{subfigure}[t]{0.495\textwidth}
+%         \centering
+% %         \includegraphics[width=\textwidth]{./figures/target2.png}
+%         \subfigimg[width=\linewidth]{}{./figures/87gY.pdf}{50}
+% %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+%                  \refstepcounter{subfigure}\label{fig:87gY}
+%     \end{subfigure}
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\textwidth]{./figures/target2.png}
+        \subfigimg[width=\linewidth]{}{./figures/87mY.pdf}{50}
+%         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+                 \refstepcounter{subfigure}\label{fig:87mY}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
         \subfigimg[width=\linewidth]{}{./figures/87Zr.pdf}{50}
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:87Zr}
     \end{subfigure}%
-%     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-     \label{fig:xs_curves_p3}
-\end{figure*}
-
-
-
-\begin{figure*}
-    \centering
+    \\
     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
@@ -2123,12 +2204,42 @@ Figures of the cross sections measured in this work are presented here, in compa
          \refstepcounter{subfigure}\label{fig:88Zr}
     \end{subfigure}%
     \\
+         \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+        \subfigimg[width=\linewidth]{}{./figures/89Nb.pdf}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+         \refstepcounter{subfigure}\label{fig:89Nb}
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.495\textwidth}
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+        \subfigimg[width=\linewidth]{}{./figures/89gNb.pdf}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+         \refstepcounter{subfigure}\label{fig:89gNb}
+    \end{subfigure}%
+%     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+     \label{fig:xs_curves_p8}
+\end{figure*}
+
+\begin{figure*}
+    \centering    
+%          \begin{subfigure}[t]{0.495\textwidth}
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+%         \subfigimg[width=\linewidth]{}{./figures/89gNb.pdf}{50}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+%          \refstepcounter{subfigure}\label{fig:89gNb}
+%     \end{subfigure}%
     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\textwidth]{./figures/target2.png}
-        \subfigimg[width=\linewidth]{}{./figures/89Nb.pdf}{50}
+        \subfigimg[width=\linewidth]{}{./figures/89mNb.pdf}{50}
 %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
-                 \refstepcounter{subfigure}\label{fig:89Nb}
+                 \refstepcounter{subfigure}\label{fig:89mNb}
     \end{subfigure}
      \begin{subfigure}[t]{0.495\textwidth}
         \centering
@@ -2152,15 +2263,7 @@ Figures of the cross sections measured in this work are presented here, in compa
 %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
         \refstepcounter{subfigure} \label{fig:92mNb}
     \end{subfigure}%
-%     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-     \label{fig:xs_curves_p4}
-\end{figure*}
-
-
-
-
-\begin{figure*}
-    \centering
+    \\
     \begin{subfigure}[t]{0.495\textwidth}
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
@@ -2168,32 +2271,45 @@ Figures of the cross sections measured in this work are presented here, in compa
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          \refstepcounter{subfigure}\label{fig:93mMo}
     \end{subfigure}%
-%      \begin{subfigure}[t]{0.495\textwidth}
-%         \centering
-% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-% %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-%         \subfigimg[width=\linewidth]{}{./figures/91mNb.pdf}{50}
-% %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
-%          \refstepcounter{subfigure}\label{fig:91mNb}
-%     \end{subfigure}%
-%     \\
+%     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+     \label{fig:xs_curves_p7}
+\end{figure*}
+
+% \begin{figure*}
+%     \centering
 %     \begin{subfigure}[t]{0.495\textwidth}
-%         \centering
-% %         \includegraphics[width=\textwidth]{./figures/target2.png}
-%         \subfigimg[width=\linewidth]{}{./figures/92mNb.pdf}{50}
-% %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
-%                  \refstepcounter{subfigure}\label{fig:92mNb}
-%     \end{subfigure}
-%      \begin{subfigure}[t]{0.495\textwidth}
 %         \centering
 % %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
 %         \subfigimg[width=\linewidth]{}{./figures/93mMo.pdf}{50}
-% %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-%         \refstepcounter{subfigure} \label{fig:93mMo}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+%          \refstepcounter{subfigure}\label{fig:93mMo}
 %     \end{subfigure}%
-%     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
-     \label{fig:xs_curves_p5}
-\end{figure*}
+% %      \begin{subfigure}[t]{0.495\textwidth}
+% %         \centering
+% % %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% % %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+% %         \subfigimg[width=\linewidth]{}{./figures/91mNb.pdf}{50}
+% % %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+% %          \refstepcounter{subfigure}\label{fig:91mNb}
+% %     \end{subfigure}%
+% %     \\
+% %     \begin{subfigure}[t]{0.495\textwidth}
+% %         \centering
+% % %         \includegraphics[width=\textwidth]{./figures/target2.png}
+% %         \subfigimg[width=\linewidth]{}{./figures/92mNb.pdf}{50}
+% % %         \caption{Decay curve for the $\beta^-$ decay of \ce{^{116}In}.}
+% %                  \refstepcounter{subfigure}\label{fig:92mNb}
+% %     \end{subfigure}
+% %      \begin{subfigure}[t]{0.495\textwidth}
+% %         \centering
+% % %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% %         \subfigimg[width=\linewidth]{}{./figures/93mMo.pdf}{50}
+% % %         \caption{ Decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+% %         \refstepcounter{subfigure} \label{fig:93mMo}
+% %     \end{subfigure}%
+% %     \caption{Decay curves used to verify photopeak transition assignment. (a) Decay curve for the isomeric transition of \ce{^{115m}In}, (b) decay curve for the isomeric transition of \ce{^{113m}In}, (c) decay curve for the $\beta^-$ decay of \ce{^{116}In}, and (d) decay curve for the $\beta^+$ decay of \ce{^{64}Cu}.}
+%      \label{fig:xs_curves_p5}
+% \end{figure*}
 
 
 
