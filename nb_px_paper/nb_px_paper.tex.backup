@@ -1275,22 +1275,22 @@ The propagated uncertainty in these cross sections varies widely based on the re
 \toprule
                             & \multicolumn{6}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-7} 
 E$_\text{p}$ (MeV)          & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ & $70.17^{+0.91}_{-0.85}$ & $61.58^{+1.03}_{-0.98}$ & $52.10^{+1.25}_{-1.20}$ & $41.05^{+1.62}_{-1.54}$ \\ \midrule
-\ce{^{51}Cr}\,($\sigma_c$)    & $0.888\pm0.058$         & $0.361\pm0.015$         & $0.440\pm0.019$         & $0.2949\pm0.0070$       & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{52}Mn}\,($\sigma_c$)    & $1.640\pm0.042$         & $0.552\pm0.014$         & $0.0398\pm0.0012$       & $0.00513\pm0.00051$     & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{52g}Mn}\,($\sigma_i$)   & $0.650\pm0.018$         & $0.231\pm0.013$         & $0.0160\pm0.0021$       & $0.000961\pm0.000027$   & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{52m}Mn}\,($\sigma_c$)   & $0.989\pm0.037$         & $0.321\pm0.020$         & $0.0238\pm0.0032$       & $0.00417\pm0.00043$     & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{54}Mn}\,($\sigma_i$)    & $5.67\pm0.15$           & $3.65\pm0.11$           & $4.05\pm0.11$           & $4.71\pm0.12$           & $1.656\pm0.042$         & --\cmmnt{\hrulefill}              \\
-\ce{^{55}Co}\,($\sigma_c$)    & $1.656\pm0.048$         & $0.983\pm0.030$         & $0.1892\pm0.0076$       & $0.0291\pm0.0024$       & $0.00231\pm0.00019$     & --\cmmnt{\hrulefill}              \\
-\ce{^{56}Ni}\,($\sigma_c$)    & $0.0779\pm0.0022$       & $0.0973\pm0.0025$       & $0.0886\pm0.0022$       & $0.02967\pm0.00079$     & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{57}Ni}\,($\sigma_c$)    & $1.416\pm0.039$         & $1.164\pm0.030$         & $1.370\pm0.033$         & $2.074\pm0.051$         & $1.543\pm0.035$         & $0.02638\pm0.00077$     \\
-\ce{^{57}Co}\,($\sigma_i$)    & $38.78\pm0.99$          & $34.42\pm0.84$          & $35.06\pm0.81$          & $47.3\pm1.1$            & $47.0\pm1.1$            & $3.227\pm0.081$         \\
-\ce{^{58}Co}\,($\sigma_c$)    & $55.7\pm3.5$            & $53.2\pm4.1$            & $41.8\pm2.9$            & $32.8\pm2.5$            & $38.4\pm3.4$            & $62.7\pm3.4$            \\
-\ce{^{58g}Co}\,($\sigma_i$)   & $13.6\pm2.3$            & $10.5\pm1.9$            & $5.9\pm1.6$             & $7.6\pm1.3$             & $7.0\pm1.7$             & $1.13\pm0.31$           \\
-\ce{^{58m}Co}\,($\sigma_i$)   & $42.2\pm2.7$            & $42.8\pm3.6$            & $35.8\pm2.5$            & $25.2\pm2.1$            & $31.5\pm2.9$            & $61.6\pm3.4$            \\
-\ce{^{59}Fe}\,($\sigma_c$)    & $0.836\pm0.027$         & $0.810\pm0.022$         & $0.733\pm0.020$         & $0.601\pm0.017$         & $0.206\pm0.010$         & --\cmmnt{\hrulefill}        \\
-\ce{^{60}Co}\,($\sigma_c$)    & $12.79\pm0.43$          & $13.04\pm0.42$          & $10.89\pm0.78$          & $11.15\pm0.58$          & $9.17\pm0.74$           & $6.7\pm1.0$             \\
-\ce{^{61}Cu}\,($\sigma_c$)    & $48.8\pm1.5$            & $54.4\pm1.7$            & $63.7\pm2.1$            & $70.3\pm2.1$            & $79.5\pm2.7$            & $158.2\pm3.2$           \\
-\ce{^{64}Cu}\,($\sigma_i$)    & $37.4\pm1.4$            & $41.4\pm1.2$            & $44.5\pm1.7$            & $49.0\pm1.5$            & $54.9\pm1.4$            & $63.7\pm1.6$            \\ \bottomrule
+\ce{^{51}Cr}\,($\sigma_c$)  & $0.919\pm0.079$         & $0.373\pm0.023$         & $0.450\pm0.028$         & $0.303\pm0.016$         & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{52}Mn}\,($\sigma_c$)  & $1.70\pm0.11$           & $0.570\pm0.031$         & $0.0407\pm0.0022$       & $0.00526\pm0.00057$     & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{52g}Mn}\,($\sigma_i$) & $0.673\pm0.043$         & $0.239\pm0.018$         & $0.0164\pm0.0023$       & $0.000986\pm0.000053$   & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{52m}Mn}\,($\sigma_c$) & $1.023\pm0.091$         & $0.331\pm0.030$         & $0.0244\pm0.0036$       & $0.00427\pm0.00052$     & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{54}Mn}\,($\sigma_i$)  & $5.87\pm0.37$           & $3.77\pm0.21$           & $4.14\pm0.22$           & $4.84\pm0.26$           & $1.680\pm0.091$         & --\cmmnt{\hrulefill}    \\
+\ce{^{55}Co}\,($\sigma_c$)  & $1.71\pm0.11$           & $1.015\pm0.058$         & $0.193\pm0.012$         & $0.0299\pm0.0028$       & $0.00235\pm0.00022$     & --\cmmnt{\hrulefill}    \\
+\ce{^{56}Ni}\,($\sigma_c$)  & $0.0806\pm0.0051$       & $0.1005\pm0.0055$       & $0.0906\pm0.0046$       & $0.0304\pm0.0016$       & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{57}Ni}\,($\sigma_c$)  & $1.465\pm0.093$         & $1.202\pm0.065$         & $1.400\pm0.071$         & $2.13\pm0.11$           & $1.565\pm0.083$         & $0.0262\pm0.0015$       \\
+\ce{^{57}Co}\,($\sigma_i$)  & $40.1\pm2.5$          & $35.6\pm1.9$          & $35.8\pm1.8$          & $48.5\pm2.5$            & $47.7\pm2.5$            & $3.21\pm0.18$           \\
+\ce{^{58}Co}\,($\sigma_c$)  & $57.7\pm4.5$            & $55.0\pm4.7$            & $42.7\pm3.4$            & $33.7\pm2.8$            & $39.0\pm3.8$            & $62.3\pm4.6$            \\
+\ce{^{58g}Co}\,($\sigma_i$) & $14.0\pm2.5$            & $10.8\pm2.1$            & $6.1\pm1.6$             & $7.8\pm1.4$             & $7.1\pm1.7$             & $1.12\pm0.32$           \\
+\ce{^{58m}Co}\,($\sigma_i$) & $43.6\pm3.7$            & $44.2\pm4.3$            & $36.6\pm3.0$            & $25.8\pm2.5$            & $31.9\pm3.3$            & $61.1\pm4.6$            \\
+\ce{^{59}Fe}\,($\sigma_c$)  & $0.865\pm0.057$         & $0.837\pm0.046$         & $0.749\pm0.039$         & $0.616\pm0.034$         & $0.209\pm0.014$         & --\cmmnt{\hrulefill}    \\
+\ce{^{60}Co}\,($\sigma_c$)  & $13.23\pm0.87$          & $13.47\pm0.78$          & $11.14\pm0.94$          & $11.44\pm0.80$          & $9.30\pm0.87$           & $6.6\pm1.1$             \\
+\ce{^{61}Cu}\,($\sigma_c$)  & $50.5\pm3.3$            & $56.1\pm3.2$            & $65.1\pm3.6$            & $72.2\pm4.0$            & $80.6\pm4.7$            & $157.1\pm8.6$           \\
+\ce{^{64}Cu}\,($\sigma_i$)  & $38.7\pm2.7$            & $42.8\pm2.4$            & $45.5\pm2.7$            & $50.2\pm2.8$            & $55.7\pm3.0$            & $63.3\pm3.6$                 \\ \bottomrule
 \end{tabular}
 }
 \end{table}
@@ -1306,28 +1306,28 @@ E$_\text{p}$ (MeV)          & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ 
 \toprule
                             & \multicolumn{6}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-7} 
 E$_\text{p}$ (MeV)          & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ & $69.70^{+0.90}_{-0.85}$ & $61.07^{+1.05}_{-0.98}$ & $51.51^{+1.25}_{-1.21}$ & $40.34^{+1.58}_{-1.55}$ \\ \midrule
-\ce{^{82m}Rb}\,($\sigma_c$)   & $2.39\pm0.18$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{83}Sr}\,($\sigma_c$)    & $3.88\pm0.56$           & $4.63\pm0.34$           & $3.42\pm0.32$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{85}Y}\,($\sigma_c$)     & $13.31\pm0.30$          & $7.28\pm0.44$           & $2.06\pm0.12$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{85g}Y}\,($\sigma_i$)    & $2.286\pm0.057$         & $2.01\pm0.15$           & $0.545\pm0.030$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{85m}Y}\,($\sigma_i$)    & $11.03\pm0.30$          & $5.27\pm0.42$           & $1.52\pm0.12$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{86}Zr}\,($\sigma_c$)    & $12.25\pm0.32$          & $17.63\pm0.44$          & $18.86\pm0.43$          & $6.00\pm0.15$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{86}Y}\,($\sigma_i$)     & $32.25\pm0.89$          & $40.3\pm1.1$            & $39.0\pm1.0$            & $13.22\pm0.34$          & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{87}Zr}\,($\sigma_c$)    & $45.8\pm5.8$            & $27.1\pm1.7$            & $31.5\pm1.5$            & $48.5\pm2.9$            & $37.7\pm1.6$            & $1.13\pm0.10$           \\
-\ce{^{87}Y}\,($\sigma_i$)     & $106.3\pm5.8$           & $52.9\pm1.7$            & $59.6\pm1.5$            & $87.8\pm2.9$            & $66.3\pm1.6$            & $2.93\pm0.10$           \\
-\ce{^{87g}Y}\,($\sigma_i$)    & $27.0\pm5.4$            & $7.1\pm1.2$             & $6.41\pm0.55$           & $5.6\pm2.1$             & $2.59\pm0.45$           & $0.949\pm0.045$         \\
-\ce{^{87m}Y}\,($\sigma_i$)    & $79.2\pm2.0$            & $45.8\pm1.2$            & $53.2\pm1.4$            & $82.1\pm2.0$            & $63.7\pm1.5$            & $1.983\pm0.093$         \\
-\ce{^{88}Zr}\,($\sigma_c$)    & $153.7\pm3.9$           & $140.0\pm3.5$           & $61.0\pm1.7$            & $20.65\pm0.49$          & $33.16\pm0.97$          & $65.8\pm1.3$            \\
-\ce{^{88}Y}\,($\sigma_i$)     & $16.64\pm0.76$          & $12.85\pm0.60$          & $7.81\pm0.61$           & $2.83\pm0.20$           & $9.0\pm1.3$             & $9.96\pm0.33$           \\
-\ce{^{89}Nb}\,($\sigma_c$)    & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $176\pm12$          & $209.0\pm4.3$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{89g}Nb}\,($\sigma_i$)   & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $142\pm12$          & $181.7\pm4.1$           & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{89m}Nb}\,($\sigma_i$)   & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $33.9\pm2.0$            & $27.3\pm1.4$            & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{89}Zr}\,($\sigma_i$)   & $203.8\pm5.3$           & $235.4\pm6.6$           & $287.5\pm6.8$           & $250.3\pm5.8$           & $54.6\pm1.1$            & $15.61\pm0.31$          \\
-\ce{^{90}Mo}\,($\sigma_i$)    & $20.6\pm0.7$            & $25.58\pm0.76$          & $33.75\pm0.90$          & $60.4\pm1.9$            & $120.3\pm2.9$           & $24.38\pm0.71$          \\
-\ce{^{90}Nb}\,($\sigma_i$)    & $152.9\pm4.7$           & $169.3\pm4.8$           & $204.7\pm5.8$           & $265.2\pm7.8$           & $363.4\pm9.8$           & $165.2\pm4.5$           \\
-\ce{^{91m}Nb}\,($\sigma_c$)   & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $67.0\pm4.2$            \\
-\ce{^{92m}Nb}\,($\sigma_i$)   & $42.2\pm1.2$            & $45.7\pm1.2$            & $48.8\pm1.2$            & $51.6\pm1.3$            & $54.5\pm1.4$            & $60.4\pm1.2$            \\
-\ce{^{93m}Mo}\,($\sigma_i$)   & $0.93\pm0.18$           & $1.25\pm0.13$           & $1.58\pm0.22$           & $1.80\pm0.12$           & $1.83\pm0.10$           & $2.010\pm0.084$         \\ \bottomrule
+\ce{^{82m}Rb}\,($\sigma_c$) & $2.48\pm0.22$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{83}Sr}\,($\sigma_c$)  & $4.02\pm0.61$           & $4.78\pm0.42$           & $3.49\pm0.36$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{85}Y}\,($\sigma_c$)   & $13.78\pm0.55$          & $7.52\pm0.51$           & $2.11\pm0.14$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{85g}Y}\,($\sigma_i$)  & $2.37\pm0.11$           & $2.08\pm0.17$           & $0.557\pm0.037$         & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{85m}Y}\,($\sigma_i$)  & $11.41\pm0.54$          & $5.44\pm0.48$           & $1.55\pm0.13$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{86}Zr}\,($\sigma_c$)  & $12.68\pm0.68$          & $18.21\pm0.93$          & $19.28\pm0.97$          & $6.16\pm0.32$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{86}Y}\,($\sigma_i$)   & $33.4\pm1.8$            & $41.6\pm2.2$            & $39.9\pm2.1$            & $13.56\pm0.72$          & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{87}Zr}\,($\sigma_c$)  & $47.4\pm7.3$            & $28.0\pm2.8$            & $32.2\pm2.9$            & $49.8\pm5.0$            & $38.2\pm3.7$            & $1.12\pm0.17$           \\
+\ce{^{87}Y}\,($\sigma_i$)   & $110.0\pm7.2$           & $54.7\pm2.8$            & $61.0\pm2.9$            & $90.0\pm4.9$            & $67.2\pm3.6$            & $2.91\pm0.17$           \\
+\ce{^{87g}Y}\,($\sigma_i$)  & $28.0\pm5.8$            & $7.4\pm1.3$             & $6.55\pm0.64$           & $5.8\pm2.2$             & $2.63\pm0.47$           & $0.942\pm0.073$         \\
+\ce{^{87m}Y}\,($\sigma_i$)  & $82.0\pm4.3$            & $47.3\pm2.5$            & $54.4\pm2.8$            & $84.2\pm4.4$            & $64.6\pm3.6$            & $1.97\pm0.15$           \\
+\ce{^{88}Zr}\,($\sigma_c$)  & $159.1\pm7.8$           & $144.6\pm6.8$           & $62.4\pm3.1$            & $21.2\pm1.0$            & $33.6\pm1.8$            & $65.3\pm4.0$            \\
+\ce{^{88}Y}\,($\sigma_i$)   & $17.2\pm1.1$            & $13.27\pm0.86$          & $7.98\pm0.72$           & $2.91\pm0.25$           & $9.2\pm1.4$             & $9.88\pm0.69$           \\
+\ce{^{89}Nb}\,($\sigma_c$)  & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & $179\pm14$              & $214.4\pm9.8$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{89g}Nb}\,($\sigma_i$) & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & $145\pm14$              & $186.4\pm9.6$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{89m}Nb}\,($\sigma_i$) & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & $34.7\pm2.6$            & $28.0\pm2.0$            & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{89}Zr}\,($\sigma_i$)  & $211\pm11$              & $243\pm13$              & $294\pm15$              & $257\pm13$              & $55.4\pm3.0$            & $15.5\pm1.0$            \\
+\ce{^{90}Mo}\,($\sigma_i$)  & $21.3\pm1.1$            & $26.4\pm1.3$            & $34.5\pm1.6$            & $61.9\pm3.1$            & $122.0\pm6.1$           & $24.2\pm1.5$            \\
+\ce{^{90}Nb}\,($\sigma_i$)  & $158.3\pm8.1$           & $174.9\pm8.5$           & $209.3\pm9.9$           & $272\pm14$              & $369\pm19$              & $163.9\pm9.8$           \\
+\ce{^{91m}Nb}\,($\sigma_c$) & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & $66.5\pm5.8$            \\
+\ce{^{92m}Nb}\,($\sigma_i$) & $43.7\pm2.4$            & $47.3\pm2.4$            & $49.8\pm2.6$            & $52.9\pm2.8$            & $55.3\pm3.1$            & $59.9\pm3.9$            \\
+\ce{^{93m}Mo}\,($\sigma_i$) & $0.97\pm0.20$           & $1.29\pm0.15$           & $1.62\pm0.24$           & $1.85\pm0.15$           & $1.86\pm0.14$           & $2.00\pm0.15$               \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -1348,12 +1348,12 @@ E$_\text{p}$ (MeV)          & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ 
 \toprule
                                & \multicolumn{6}{c}{Isomer branching ratio}                                                                                                                \\ \cmidrule(l){2-7} 
 E$_\text{p}$ (MeV)             & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ & $70.17^{+0.91}_{-0.85}$ & $61.58^{+1.03}_{-0.98}$ & $52.10^{+1.25}_{-1.20}$ & $41.05^{+1.62}_{-1.54}$ \\ \midrule
-\ce{^{nat}Cu}(p,x)\ce{^{52}Mn} & $0.603\pm0.027$         & $0.581\pm0.038$         & $0.598\pm0.083$         & $0.81\pm0.12$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{nat}Cu}(p,x)\ce{^{58}Co} & $0.757\pm0.068$         & $0.804\pm0.091$         & $0.858\pm0.084$         & $0.767\pm0.086$         & $0.82\pm0.11$         & $0.982\pm0.075$    \vspace{1em}     \\ 
+\ce{^{nat}Cu}(p,x)\ce{^{52}Mn} & $0.603\pm0.066$         & $0.581\pm0.062$         & $0.598\pm0.095$         & $0.81\pm0.13$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{nat}Cu}(p,x)\ce{^{58}Co} & $0.757\pm0.088$         & $0.80\pm0.10$         & $0.858\pm0.099$         & $0.767\pm0.097$         & $0.82\pm0.12$           & $0.98\pm0.10$            \vspace{1em}     \\ 
 E$_\text{p}$ (MeV)             & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ & $69.70^{+0.90}_{-0.85}$ & $61.07^{+1.05}_{-0.98}$ & $51.51^{+1.25}_{-1.21}$ & $40.34^{+1.58}_{-1.55}$ \\ \midrule
-\ce{^{nat}Nb}(p,x)\ce{^{85}Y}  & $0.828\pm0.029$         & $0.724\pm0.072$         & $0.736\pm0.072$         & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              \\
-\ce{^{nat}Nb}(p,x)\ce{^{87}Y}  & $0.746\pm0.045$         & $0.865\pm0.036$         & $0.893\pm0.032$         & $0.936\pm0.038$         & $0.961\pm0.032$         & $0.676\pm0.040$         \\
-\ce{^{nat}Nb}(p,x)\ce{^{89}Nb} & --\cmmnt{\hrulefill}              & --\cmmnt{\hrulefill}              & $0.193\pm0.018$         & $0.1304\pm0.0074$         &      --\cmmnt{\hrulefill}         & --\cmmnt{\hrulefill}              \\ \bottomrule
+\ce{^{nat}Nb}(p,x)\ce{^{85}Y}  & $0.828\pm0.051$         & $0.724\pm0.080$         & $0.736\pm0.080$         & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{nat}Nb}(p,x)\ce{^{87}Y}  & $0.746\pm0.063$         & $0.865\pm0.063$         & $0.893\pm0.063$         & $0.936\pm0.070$         & $0.961\pm0.075$         & $0.676\pm0.065$         \\
+\ce{^{nat}Nb}(p,x)\ce{^{89}Nb} & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & $0.193\pm0.021$         & $0.130\pm0.011$         & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\ \bottomrule
 \end{tabular}
 }
 \end{table}
@@ -1378,7 +1378,7 @@ Similarly, this work offers the first measurement of the independent cross secti
 
 
 
-Notably, this work serves as the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100 MeV to date, with cross sections measured  at the 2--3\% uncertainty level.
+Notably, this work serves as the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100 MeV to date, with cross sections measured  at the 4--6\% uncertainty level.
 This is important, as it presents the first step towards characterizing this reaction for use as a proton monitor reaction standard below 100 MeV.
 The quantification of \ce{^{90}Mo} activity proved to be one of the most straightforward of all reaction products observed in this work.
 \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} can only be populated through the (p,4n) reaction channel, so no corrections for (n,x) contamination channels or decay down the A=90 isobar are needed, which makes activity quantification trivial.
@@ -1429,7 +1429,7 @@ Due to co-production of additional \ce{^{86,87,88}Zr} radio-zirconium,  \ce{^{na
 \ce{^{90}Nb} ($t_{1/2}=14.60 \pm 0.05$ h, $\epsilon$=100\% to \ce{^{90}Zr}  \cite{Browne1997}) is an emerging PET emitter with a moderate lifetime, making it suited for immune and tumor uptake studies    \cite{Busse2002,Radchenko2012}.
 It is typically produced using 8--15 MeV protons via \ce{^{90}Zr}(p,n)\ce{^{90}Nb}, using an enriched target (51.45\% natural abundance) for high radioisotopic purity, and produces a product with minimal contamination and a peak cross section of approximately 750 mb  \cite{Busse2002}.
 \ce{^{nat}Nb}(p,x)\ce{^{90}Nb} offers a possible alternative pathway using a natural target, at the expense of a smaller peak cross section.
-\ce{^{90}Nb} may be produced directly with an approximately 360 mb peak cross section and 99\% radioisotopic purity, or could be produced as a \ce{^{90}Mo}/\ce{^{90}Nb} generator, which would have nearly 100\% radioisotopic purity by using protons below the \ce{^{nat}Nb}(p,5n) threshold of 45.76 MeV.
+\ce{^{90}Nb} may be produced directly with an approximately 370 mb peak cross section and 99\% radioisotopic purity, or could be produced as a \ce{^{90}Mo}/\ce{^{90}Nb} generator, which would have nearly 100\% radioisotopic purity by using protons below the \ce{^{nat}Nb}(p,5n) threshold of 45.76 MeV.
 However, the greatest problem with using the \ce{^{nat}Nb}(p,x) reaction to produce \ce{^{90}Nb} is the inability to separate the radioisotope from the target itself, rendering the production of a high-specific activity product impossible.  
 
 
