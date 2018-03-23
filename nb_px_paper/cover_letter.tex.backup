@@ -1,0 +1,129 @@
+% Cover letter using letter.sty
+\documentclass{letter} % Uses 10pt
+%Use \documentstyle[newcent]{letter} for New Century Schoolbook postscript font
+% the following commands control the margins:
+\topmargin=-1in    % Make letterhead start about 1 inch from top of page 
+\textheight=8in  % text height can be bigger for a longer letter
+\oddsidemargin=0pt % leftmargin is 1 inch
+\textwidth=6.5in   % textwidth of 6.5in leaves 1 inch for right margin
+\usepackage[american]{babel}
+
+\usepackage [autostyle, english = american]{csquotes}
+\usepackage[version=3]{mhchem} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs,siunitx}
+
+
+
+\begin{document}
+
+\signature{Andrew S. Voyles}           % name for signature 
+\longindentation=0pt                       % needed to get closing flush left
+\let\raggedleft\raggedright                % needed to get date flush left
+ 
+ 
+\begin{letter}{Editorial Board \\
+Nuclear Instruments and Methods in Physics Research Section B: \\
+Beam Interactions with Materials and Atoms}
+
+
+\begin{flushleft}
+{\large\bf Andrew S. Voyles}
+\end{flushleft}
+\medskip\hrule height 1pt
+\begin{flushright}
+\hfill The University of California, Berkeley \\
+\hfill 1106B Etcheverry Hall, Berkeley, CA  94720-1730 \\
+\hfill (presently) +47 486 43 444 \\ 
+\hfill (normally) +1 (850) 281-0217 or +1 (510) 486-7310 
+\end{flushright} 
+\vfill % forces letterhead to top of page
+
+ 
+\opening{To whom it may concern:} 
+
+  \renewcommand*{\thefootnote}{\alph{footnote}}
+
+ 
+\noindent I am writing to submit an original manuscript entitled \enquote{\emph{Measurement of nuclear excitation functions for proton induced reactions (E$_{\text{p}}$ = 40--90 MeV) on natural Nb}}  for publication in Nuclear Instruments and Methods in Physics Research Section B.  This manuscript describes an original work conducted by myself, the first and corresponding author, along with my co-authors and collaborators Lee A. Bernstein\footnotemark[1]\footnotemark[2], Eva R. Birnbaum\footnotemark[3], Jonathan W. Engle\footnotemark[4], Stephen A. Graves\footnotemark[5], Toshihiko Kawano\footnotemark[6], Amanda M. Lewis\footnotemark[2], and Francois M. Nortier\footnotemark[3].
+
+\footnotetext[1]{Nuclear Science Division, Lawrence Berkeley National Laboratory,  Berkeley, CA 94720, USA}
+\footnotetext[2]{Department of Nuclear Engineering, University of California, Berkeley,  Berkeley, CA 94720, USA}
+% \address[llnl]{Lawrence Livermore National Laboratory, Livermore CA, 94551 USA}
+\footnotetext[3]{Isotope Production Facility, Chemistry Division, Los Alamos National Laboratory,  Los Alamos, NM 87544, USA}
+\footnotetext[4]{Department of Medical Physics, University of Wisconsin -- Madison,  Madison, WI 53705, USA}
+\footnotetext[5]{Department of Radiation Oncology, University of Iowa,  Iowa City, IA 52242, USA}
+\footnotetext[6]{Nuclear Physics Group, Theoretical Division, Los Alamos National Laboratory,  Los Alamos, NM 87544, USA}
+
+ 
+\noindent This work described in this manuscript is a measurement of 38 unique cross sections spanning 40--90 MeV for the \ce{^{nat}Nb}(p,x) and \ce{^{nat}Cu}(p,x) reactions, along with 5 independent measurements of isomer branching ratios for pairs of radioisotope isomer/ground states. This is part of a recent, ongoing effort at UC Berkeley and Lawrence Berkeley National Laboratory to address the gaps in existing nuclear data which have been identified by the applications community, focusing in particular on the production of novel and emerging medical radioisotopes. The primary motivation for this work is to provide the most comprehensive characterization of the \ce{Nb}(p,4n)\ce{^{90}Mo} reaction, which has been proposed as a new monitor reaction standard for the in-beam measurement  of proton fluence in energetic (\textgreater 40 MeV) proton beams.
+
+\noindent The methodology used to measure these cross sections involved a stacked-target activation of thin (25--50 \SI{}{\micro\meter}) metal foils,  at the Los Alamos National Laboratory's Isotope production Facility (LANL-IPF). Target foils of natural Niobium metal were irradiated with a nominal 100 MeV proton beam, along with Copper and Aluminum monitor foils at each energy position.   This stack design allows for measurement of cross sections at multiple energies within a single irradiation. Our work also makes use of the ``variance minimization'' techniques described by S.A. Graves, \emph{et. al.}\footnotemark[7] to significantly reduce the systematic uncertainties associated with energy assignment, typical in many stacked-target irradiations.
+
+\footnotetext[7]{S.A. Graves, \emph{et. al.}, NIM B: 386, 44--53, (2016), doi:10.1016/j.nimb.2016.09.018}
+
+
+\noindent Several major novel contributions are reported in the present work. Most notably, this work serves as the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100 MeV to date, with cross sections measured  at the 4--6\% uncertainty level. 
+This result presents the first step towards the use of \ce{^{90}Mo} as a clean and precise   charged particle monitor reaction standard in irradiations up to approximately 24 hours in duration.
+In addition, the \ce{^{nat}Nb}(p,x) measurements in this work fill in the extremely sparse data in this energy region, and have been measured with the highest precision relative to existing literature data. 
+Indeed, nearly all cross sections for both \ce{^{nat}Nb}(p,x) and \ce{^{nat}Cu}(p,x) have been reported with higher precision than previous measurements.
+We also report the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90 MeV region.
+We  use these measurements to illustrate the impact of pre-equilibrium particle emission in the reaction dynamics for 40--90 MeV \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
+Finally, we present evidence for \ce{^{22,24}Na} contamination of the \ce{^{nat}Al}(p,x)\ce{^{22,24}Na} monitor reaction channels, due to activation of silicon via \ce{^{nat}Si}(p,x)\ce{^{22,24}Na}  in the silicone-based adhesive used for sealing foils.
+This phenomenon has been observed as an unattributable systematic enhancement of apparent \ce{^{22,24}Na}-based fluence monitors in prior work. 
+We advise that future activation experiments avoid the use of silicone-based adhesives, particularly in conjunction with aluminum monitor foils, to avoid unintentionally reporting an enhanced fluence due to \ce{^{22,24}Na} contamination.
+% Finally, this work provides another example of the usefulness of the recently-described variance minimization techniques for reducing energy uncertainties in stacked target charged particle irradiation experiments.
+
+
+%%
+
+
+
+
+% Furthermore, this work presents the first measurements of several observables in these mass regions.
+% This work reports the first experimental measurement of the \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction in the 40--90 MeV region.
+% It also represents  the first measurement of the independent cross section for       \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, as well as the \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$)  isomer branching ratio via \ce{^{nat}Cu}(p,x).  
+% The cumulative cross sections from these data are also consistent with existing measurements of the cumulative \ce{^{nat}Cu}(p,x)\ce{^{52}Mn} cross section.
+% Similarly, this work offers the first measurement of the independent cross sections for \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y},  as well as the first measurement of the     \ce{^{85\text{m}}Y} ($\sfrac{9}{2}^+$) / \ce{^{85\text{g}}Y}  ($\sfrac{1}{2}^-$) isomer branching ratio via \ce{^{nat}Nb}(p,x).
+
+
+
+% Notably, this work serves as the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100 MeV to date, with cross sections measured  at the 4--6\% uncertainty level.
+% This is important, as it presents the first step towards characterizing this reaction for use as a proton monitor reaction standard below 100 MeV.
+% The quantification of \ce{^{90}Mo} activity proved to be one of the most straightforward of all reaction products observed in this work.
+% \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} can only be populated through the (p,4n) reaction channel, so no corrections for (n,x) contamination channels or decay down the A=90 isobar are needed, which makes activity quantification trivial.
+% In addition, \ce{^{90}Mo}  possesses seven strong, distinct gamma lines which can easily  be used for its identification and quantification.
+% Finally, the production of \ce{^{90}Mo}  in the 40--90 MeV region is quite strong, with a peak cross section of approximately 120 mb.
+% Combining the reaction yield and gamma abundance, the use of approximately 23 mg/cm$^2$ Nb targets easily provided sufficient counting statistics for activity quantification in the 40--90 MeV region.
+% This result presents the first step towards the use of \ce{^{90}Mo} as a clean and precise   charged particle monitor reaction standard in irradiations up to approximately 24 hours in duration.
+
+%%
+
+
+
+
+ 
+\noindent The attached manuscript is an original work which bears no significant overlap with any journal or conference papers published by any of the authors herein. Previous measurements exist in the literature for nearly all of the cross sections presented in this work, though our measurements have lower uncertainty than any previous measurements at the energy in this work. The most recent previous measurement of the \ce{^{64}Zn}(n,p)\ce{^{64}Cu} reaction was by Shimizu \emph{et. al.}\footnote{T. Shimizu, \emph{et. al.}, NIM A: 527 (3)
+(2004) 543–553. doi:10.1016/j.nima.2004.03.184.}, and the most recent previous measurement of the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} reaction was by  Shimizu \emph{et. al.}\footnote{T. Shimizu, \emph{et. al.}, Annals of Nuclear Energy 31 (9) (2004) 975–990. doi:10.1016/j.anucene.2003.12.005.}.
+
+Several notable experts have been proposed as potential reviewers for this manuscript: Md. Uddin of the Atomic Energy Research Establishment, Bangladesh (\url{md.shuzauddin@yahoo.com}), Steve Wender of Los Alamos National Laboratory  (\url{wender@lanl.gov}), Ron Nelson of Los Alamos National Laboratory  	   (\url{rnelson@lanl.gov	}), Steven Yates of the University of Kentucky	  (\url{yates@uky.edu	}), Arjan Plompen of the Belgian Joint Research Centre	   (\url{Arjan.Plompen@ec.europa.eu	}), Roland Beyer of Helmholtz-Zentrum Dresden-Rossendorf	  (\url{roland.beyer@hzdr.de	}), and Zsolt Revay of the Technical University of Munich	  (\url{zsolt.revay@frm2.tum.de	}).  All of these individuals are highly experienced in the nuclear data community, and have many years of experience in nuclear reaction evaluation and cross section measurements.
+
+As a physicist with a background in ion beam interactions and accelerator physics, I believe that Mark Breese would be the best-qualified editor to handle this paper during the review process. In addition, I have worked with him previously for the publication of a recent article\footnotemark[11], and had a very smooth experience - it would be a pleasure to work with him once more. However, any of the editorial staff with the technical background to properly evaluate the manuscript would be welcome on our end.  This would primarily involve a familiarity with activation experiments and nuclear spectroscopy. 
+
+\footnotetext[11]{A.S. Voyles, \emph{et. al.}, NIM B: 410, 230--239, (2017), doi:10.1016/j.nimb.2017.08.021}
+
+
+
+
+Please find our manuscript attached. I hope that this work will be deemed of sufficient merit to be published in NIM, and I look forward to once more working with the editorial staff if this is the case. 
+ 
+\closing{Sincerely yours,} 
+ 
+
+ 
+% \encl{}  				% Enclosures
+
+\end{letter}
+ 
+
+\end{document}
