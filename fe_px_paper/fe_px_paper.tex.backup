@@ -62,8 +62,7 @@ prc,
 
 %\preprint{APS/123-QED}
 
-% \title{Measurement of nuclear excitation functions for proton induced reactions  (E\texorpdfstring{$_{\text{p}}$\,=\,}{Ep = ???--55}???--55 MeV) on natural Fe}% Force line breaks with \\
-\title{Measurement of nuclear excitation functions for proton induced reactions (E$_{\text{p}}$\,=\,???--55 MeV) on natural Fe}% Force line breaks with \\
+\title{Measurement of nuclear excitation functions for proton induced reactions (E$_{\text{p}}$ = ??? -- 55 MeV) on natural Fe and Cu}% Force line breaks with \\
 % \thanks{A footnote to the article title}%
 
 \author{Andrew S. Voyles}
@@ -110,7 +109,7 @@ prc,
 % \author{Eric F. Matthews}%
 %  \email{Second.Author@institution.edu}
 \affiliation{%
- Fakult{\"a}t f{\"u}r Physik, Karlsruhe Institute of Technology, 76131 Karlsruhe, Germany
+ Department of Nuclear Engineering, University of California, Berkeley, Berkeley, CA 94720, USA
 %  Authors' institution and/or address\\
 %  This line break forced with \textbackslash\textbackslash
 }%
