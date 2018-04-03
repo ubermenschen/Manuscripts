@@ -820,7 +820,8 @@ SS profile monitor & 124.4 \micro m         & 101.34                            
 \subsection{Measurement of induced activities}\label{sec:spectroscopy}
 
 
-For consistency, a single detector was used in this measurement, an ORTEC GEM Series (model \#GEM10P4-70)  High-Purity Germanium (HPGe) detector.
+% For consistency, a
+A single detector was used in this measurement, an ORTEC GEM Series (model \#GEM10P4-70)  High-Purity Germanium (HPGe) detector.
 The detector is a mechanically-cooled coaxial p-type HPGe with a 1 mm aluminum window, and a 49.2 mm diameter, 27.9 mm long crystal.
 Samples were counted at fixed positions ranging 4.5--83.5  cm (5\% maximum permissible dead-time) from the front face of the detector, with a series of standard calibration sources used to determine energy, efficiency, and pileup calibrations for each position.
 The foils were counted  for a period of 2 weeks following EoB, to accurately quantify all induced activities,  with dead time never exceeding 5\%.
@@ -859,13 +860,14 @@ For all remaining observed reaction products in the mass chain, and cases where 
 
 
 
-To convert these activities into cross sections, corrections must be made for the decay of the various reaction products during the time between EoB and the spectrum acquisition, in order to calculate $A_0$, the initial activity at EoB.
+% To convert these activities into cross sections, c
+Corrections must be made for the decay of the various reaction products during the time between EoB and the spectrum acquisition, in order to calculate $A_0$, the initial activity at EoB, from the measured activities.
 The use of  multiple gamma-rays at multiple points after EoB to calculate initial activities  for each observed product nucleus allows for a more accurate  determination of $A_0$ than simply basing its calculation off of a single gamma-ray observation.
 For the case of cumulative cross sections, EoB activities were quantified by fitting the activities observed at multiple time points $t$ (since EoB) to the well-known radioactive decay law.
 % \begin{equation}
 % A\pp{t} = A_0 e^{-\lambda t}
 % \end{equation}
-Nonlinear regression was used for this fitting process, minimizing on $\chi^2$ / degree of freedom, so that not only would the uncertainty-weighted EoB activities be fitted, but that a 1-$\sigma$ confidence interval in $A_0$ would be reported as as well.
+Nonlinear regression was used for this fitting process, minimizing on $\chi^2$ / degree of freedom, so that not only would the uncertainty-weighted EoB activities be fitted, but that a 1-$\sigma$ confidence interval in $A_0$ could be reported as as well.
 As with the gamma-ray intensities, all lifetimes used in this work are tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of \ref{data}.
 In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{t=0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation \cite{bateman1910solution,Cetnar2006}:
 \begin{equation}
@@ -905,10 +907,12 @@ After quantifying the cumulative EoB activities at the top of a mass chain and a
 % % % 
 % An accurate integrated proton current is one of the most important factors in performing high-fidelity cross section measurements.
 % At the time of this work, the nondestructive beam current monitors in the LANSCE-IPF beamline had a  resolution of 100 nAh.
-For a low-current irradiation such as this work, where a nominal fluence of 200 nAh is desired, additional fluence sensitivity is thus needed to accurately normalize quantified EoB activities into cross sections.
-To this end, thin \ce{^{nat}Al} and \ce{^{nat}Cu} foils were included along with the \ce{^{nat}Nb} targets at each energy position, to provide another beam current monitor.
-These foils have been recommended for use as proton monitor foils in the 30 \textless\ E$_\text{p}$ \textless\ 100 MeV regime by the IAEA, as the \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions have been well-characterized for accurate proton fluence measurement \cite{gul2001charged}.
-The recommended cross section values for each of these reactions were used in all calculations of proton fluence for the above monitor reactions.
+% For a low-current irradiation such as this work, where a nominal fluence of 200 nAh is desired, additional fluence sensitivity is thus needed to accurately normalize quantified EoB activities into cross sections.
+% To this end, 
+In addition to direct beam current measurements, thin \ce{^{nat}Al} and \ce{^{nat}Cu} foils were included along with the \ce{^{nat}Nb} targets at each energy position, to provide another beam current monitor.
+% These foils have been recommended for use as proton monitor foils in the 30 \textless\ E$_\text{p}$ \textless\ 100 MeV regime by the IAEA, as the
+The IAEA-recommended \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions were used for  proton fluence measurement \cite{gul2001charged}.
+% The recommended cross section values for each of these reactions were used in all calculations of proton fluence for the above monitor reactions.
 Due to the large energy degradation between the front and  back of the target stack, a non-trivial broadening of the proton energy distribution is expected for all monitor and target foils.
 As a result, the integral form of the well-known activation equation is used to accurately determine proton fluence ($I \Delta t $) in each monitor foil:
 %by convolving the IAEA recommended cross section values with the proton energy distribution:
@@ -927,7 +931,7 @@ The propagated uncertainty in proton fluence is calculated as the quadrature sum
 Of these, the first four contributions are all easily quantified in the preparation and execution of a stacked target irradiation;  the last two contributions prove to be more nuanced, however.
 The uncertainty in proton fluence for irradiated monitor foils is derived from statistical uncertainty in the modeling of proton transport in the stack irradiation, discussed in \autoref{sec:proton_transport}.
 The uncertainty in IAEA recommended cross section values must be estimated indirectly, as no uncertainty in the  recommended cross sections is provided in the current IAEA evaluation.
-Fortunately, the recommended cross section values for each monitor reaction tend to closely match one of the   selected experimental data sets used in their evaluation.
+Fortunately, the recommended cross section values for each monitor reaction tend to closely match one of the   selected experimental source data sets used in their evaluation.
 Since these data sets have listed uncertainties in the original manuscripts, uncertainties in  IAEA recommended cross section values have been estimated by the uncertainty in the data set most closely matching the  IAEA recommended  values.
 For the monitor reactions employed in this work, these data sets are G. Steyn (1990) for  \ce{^{nat}Al}(p,x)\ce{^{22}Na} \cite{Steyn1990}, M. Uddin (2004) for \ce{^{nat}Al}(p,x)\ce{^{24}Na} \cite{Uddin2004}, and S. Mills (1992) for \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} \cite{Mills1992}.
 
@@ -938,10 +942,12 @@ For the monitor reactions employed in this work, these data sets are G. Steyn (1
 
 
 Initial estimates of the proton beam energy in all foils were calculated using the Anderson \& Ziegler (A\&Z) stopping power formalism \cite{Andersen_Ziegler_1977,Ziegler1985,Ziegler1999}.
-These estimates of average beam energy in each foil are useful for the preliminary stack design, as the A\&Z calculations provide reasonable approximations of 1-D proton transport due to treatment of ionization and multiple Coulomb scattering. 
-However, for final energy and fluence determinations, a more rigorous method of proton transport is needed.
+These estimates of average beam energy in each foil are useful for the preliminary stack design.
+% , as the A\&Z calculations provide reasonable approximations of 1-D proton transport due to treatment of ionization and multiple Coulomb scattering. 
+However, for final energy and fluence determinations, a more rigorous method of proton transport modeling is needed.
 The Monte Carlo N-Particle transport code MCNP6.1 was used for simulation of the full 3-D target stack, including determination of the full proton energy distribution for each stack position   \cite{Goorley2012}.
-In addition, MCNP6 provides a far more robust method of proton transport, as it is able to account for beam losses due to scattering and reactions, as well as production of secondary particles.
+% In addition, 
+MCNP6 provides a far more robust method of proton transport, as it is able to account for beam losses due to scattering and reactions, as well as production of secondary particles.
 As it is a Monte Carlo-based code, the uncertainty in energy distribution scales inversely with the number of source protons simulated.  $10^8$ source protons were used for all simulations, which places the statistical uncertainty in proton energy distributions at less than 0.01\%.
 
 
@@ -970,10 +976,13 @@ This disagreement is minor at the front of the stack, and gets progressively wor
 
 
 
-Variance minimization techniques were employed  to correct for uncertainties in  the characterization of the stack components, the largest cause of uncertainties in energy and  fluence assignments.
-Due to the difficulty of characterizing uncertainty in areal density in the Kapton tape, the areal density of these layers were varied uniformly in MCNP6 simulations by up to $\pm$25\% of nominal values.
-This had negligible impact on improving monitor reaction disagreement  due to the small effect that their areal density has on beam degradation relative to the thick 6061 aluminum degraders (nominal 3--5 mg/cm$^2$, relative to nominal 1000--1400 mg/cm$^2$).
-As such,  the areal density of each of the 6061 aluminum degraders  were varied uniformly in MCNP6 simulations  by a factor of up to $\pm$25\% of nominal values, to find the effective density which minimized variance in the measured proton fluence at the lowest energy position (Al-6, Cu-6).
+% Variance minimization techniques were employed  to correct for uncertainties in  the characterization of the stack components, the largest cause of uncertainties in energy and  fluence assignments.
+Due to the  
+% difficulty of characterizing uncertainty in areal density in the Kapton tape, the areal density of these layers were varied uniformly in MCNP6 simulations by up to $\pm$25\% of nominal values.
+% This had negligible impact on improving monitor reaction disagreement  due to the small effect that their areal density has on beam degradation relative to 
+significantly greater areal density of the thick 6061 aluminum degraders as compared to the other stack elements (nominal 3--5 mg/cm$^2$, relative to nominal 1000--1400 mg/cm$^2$),
+% As such
+the areal density of each of the 6061 aluminum degraders  were varied uniformly in MCNP6 simulations  by a factor of up to $\pm$25\% of nominal values, to find the effective density which minimized variance in the measured proton fluence at the lowest energy position (Al-6, Cu-6).
 This lowest energy position was chosen as a minimization candidate, as it is most sensitive to systematic uncertainties in stack design.
 The results of this minimization technique, shown in \autoref{fig:variation_curve}, indicate a clear minimum in proton fluence variance for flux-weighted average 41.34 MeV protons entering the last energy position.
 This is approximately 2 MeV lower than the nominal MCNP6 simulations, and approximately 3 MeV lower than nominal A\&Z calculations, both of which used the nominal 2.80 g/cm$^3$ measured density of the 6061 aluminum degraders.
@@ -1037,13 +1046,13 @@ This energy corresponds to a 6061 aluminum areal density of 2.52\% greater than 
 
 
 
-The impact of this variance minimization may  clearly be seen in   \autoref{fig:variance_mins}.
+The impact of this variance minimization is  clearly  seen in   \autoref{fig:variance_mins}.
 As expected, the 2.52\% increase in 6061 aluminum areal density has an almost negligible impact on the higher-energy positions, but causes a progressively larger downshift  in proton energies at the later energy positions.
 In addition, as one moves to the rear  positions, the disagreement in the independent proton fluence measurements is reduced.
 % \comment{Insert text here to describe our Na22 / Si production hypothesis.  }
 It is worth noting that the proton fluence measured by the \ce{^{nat}Al}(p,x)\ce{^{22}Na} monitor reaction (threshold 21.0 MeV) is consistently higher in magnitude than all other monitor channels, with an increasing disparity at higher energies.
 This phenomenon is observed for the \ce{^{nat}Al}(p,x)\ce{^{24}Na} monitor reaction as well (threshold 24.6 MeV), though to a much smaller degree.
-In both cases, this disparity is caused by the fact that the Kapton tape used for sealing foil packets (comprised of a silicone adhesive layer on a polyimide backing) contains a significant amount of silicon, making up approximately 10\% of the silicone on a stoichiometric basis.
+In both cases, this disparity is caused by the fact that the Kapton tape used for sealing the foil packets (comprised of a silicone adhesive layer on a polyimide backing) contains a significant amount of silicon, making up approximately 10\% of the silicone on a stoichiometric basis.
 \ce{^{22}Na} and \ce{^{24}Na}, the residual nuclei used as monitors, can also be populated off of natural silicon  (92.2\% \ce{^{28}Si}), predominantly via \ce{^{28}Si}(p,$\alpha$2pn)\ce{^{22}Na} (threshold 35.3 MeV) and \ce{^{28}Si}(p,4pn)\ce{^{24}Na} (threshold 44.6 MeV).
 \ce{^{29}Si} and \ce{^{30}Si} are also potential targets for (p,x)\ce{^{22,24}Na}, albeit with higher energetic thresholds and smaller cross sections.
 In addition, each aluminum foil packet contains approximately 6.5 mg/cm$^2$ of Al, as well as approximately  9.6 mg/cm$^2$ of silicone.
@@ -1065,11 +1074,17 @@ The observed \ce{^{24}Na} activities also follow the shape of the TENDL-2015 \ce
 
 
 While these TENDL cross sections simply provide approximate \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} yields,  there are several important  conclusions to be drawn from this quick estimate.
-The observation of the \ce{^{22,24}Na} activities in Cu and Nb foils  represents an indirect measurement of the \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} cross sections, but they will not be reported due to the number of assumptions involved in such a calculation.
-The EoB \ce{^{22,24}Na} activities have been measured directly, but to convert these into absolute cross sections, accurate knowledge of the precise silicone composition and areal density are required.
-These have been taken as 10\% (stoichiometric basis) and 4.79 mg/cm$^2$ (based on bulk density), respectively, for the purposes of transport calculations, but this level of confidence is insufficient for the reporting of a cross section.
-In principle, it would be possible  to subtract out the measured \ce{^{22,24}Na} activity at each Nb and Cu foil position (correcting for the minor difference in proton energy between adjacent foils) from the total \ce{^{22,24}Na} apparent activities observed in each Al foil packet, in order to obtain the \enquote{true} or uncontaminated fluence via the aluminum monitor reactions.
-The results of this  may be seen in \autoref{fig:na_subtraction} --- following subtraction, the \ce{^{22,24}Na} fluences become consistent with other monitor reaction channels, within a mere 3--4\% spread.
+The observation of the \ce{^{22,24}Na} activities in Cu and Nb foils  represents an indirect measurement of the \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} cross sections, but they will not be reported due to 
+% the number of assumptions involved in such a calculation.
+uncertainties in the areal density of the Si in the adhesive.
+% The EoB \ce{^{22,24}Na} activities have been measured directly, but to convert these into absolute cross sections, accurate knowledge of the precise silicone composition and areal density are required.
+% These have been taken as
+However, if we assume a 10\% Si stoichiometric basis and an areal density of 4.79 mg/cm$^2$ (based on bulk density),
+% respectively, for the purposes of transport calculations, but this level of confidence is insufficient for the reporting of a cross section.
+% In principle, it would be possible  to 
+we can subtract out the measured \ce{^{22,24}Na} activity at each Nb and Cu foil position (correcting for the minor difference in proton energy between adjacent foils) from the total \ce{^{22,24}Na} apparent activities observed in each Al foil packet, in order to obtain the \enquote{true} or uncontaminated fluence via the aluminum monitor reactions.
+The results of this  may be seen in \autoref{fig:na_subtraction}.
+Following subtraction, the \ce{^{22,24}Na} fluences become consistent with other monitor reaction channels, within a mere 3--4\% spread.
 While this would circumvent the assumptions needed for reporting \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} cross sections, subtraction of  inaccurately quantified \ce{^{22,24}Na} activity in each Nb and Cu foil would propagate into the final fluence determination at each energy position, shifting the magnitude of all reported cross sections.
 Even following subtraction, the \ce{^{22}Na} fluence remains 3--6\% higher than the weighted mean of the remaining monitor reaction channels.
 While the dramatic improvement in monitor reaction consistency builds confidence, in the interest of surety and because they are consistent, only the \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reaction channels will be used for fluence determination for the reported cross sections.
@@ -1120,10 +1135,13 @@ As with the monitor foils, these distributions were used to calculate the  energ
 
 An enhanced version of the final monitor reaction fluences may be seen in \autoref{fig:fluence_plot}, which shows the   observed fluence of the \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reaction channels.
 Without the reliable use of the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na} monitor channels, local interpolation cannot be used for fluence assignment to the Nb foils, and global interpolation is reliant upon a validated model for fluence loss.
-In the interest of surety of because they are consistent, the uncertainty-weighted mean  for the three \ce{^{nat}Cu}(p,x) monitor channels was calculated at each energy position, to determine the final fluence assignments for the Nb and Cu foils.
+% In the interest of surety of because they are consistent, t
+The uncertainty-weighted mean  for the three \ce{^{nat}Cu}(p,x) monitor channels was calculated at each energy position, to determine the final fluence assignments for the Nb and Cu foils.
 Uncertainty in proton fluence  is likewise calculated as the error propagation of the fluence values  at each energy position.
-These weighted-mean fluences are also plotted in in \autoref{fig:fluence_plot}, along with the estimated fluence according to both the MCNP6 transport model, as well as an uncertainty-weighted linear $\chi^2$ fit to the individual  fluence measurements in each monitor channel.
-Both models reproduce the observed fluence data consistently within uncertainty, with the MCNP6 model predicting a slightly more aggressive fluence loss throughout the stack.
+These weighted-mean fluences are also plotted in in \autoref{fig:fluence_plot}, along with the estimated fluence according to both the MCNP6 transport 
+% model, as well as 
+and an uncertainty-weighted linear $\chi^2$ fit to the individual  fluence measurements in each monitor channel.
+Both models reproduce the observed fluence data consistently within uncertainty, with the MCNP6 model predicting a slightly greater fluence loss throughout the stack.
 These models are used purely to provide an extrapolation from the 90 MeV energy position back to the \enquote{front} of the stack at 100 MeV, to compare with the nominal fluence measured by the IPF upstream current monitors.
 % This involved minimizing on $\chi^2$ / degree of freedom, so that  a 95\% confidence interval in fluence would be reported as as well.
 % As with the FWHM, a greater than 1$\sigma$ confidence interval is used for reporting fluence uncertainty to avoid an unrealistically small fluence confidence interval, based on the spread in observed fluence from Al and Cu monitor foils.
@@ -1167,7 +1185,9 @@ These models are used purely to provide an extrapolation from the 90 MeV energy 
 %  include 1st and 2nd order bateman stuff here
 
 Using the quantified EoB activities along with the variance-minimized proton fluence, it is possible to calculate the final cross sections for the various observed Nb(p,x) reactions.
-While thin ($\approx$ 22 mg/cm$^2$) Nb foils were irradiated to minimize the energy width of these cross section measurements, it is important to note that all cross sections reported here are flux-averaged cross sections, over the energy distribution subtended by each foil, as seen in \autoref{fig:Nb_ptallies}.
+While thin ($\approx$ 22 mg/cm$^2$) Nb foils were irradiated to minimize the energy width of these cross section measurements, it is important to note that all cross sections reported here are  
+% flux-averaged 
+cross sections, over the energy distribution subtended by each foil, as seen in \autoref{fig:Nb_ptallies}.
 For both the cumulative and independent activities quantified, cross sections were calculated as:
 \begin{equation}
 \sigma = \dfrac{A_0 }{\rho \Delta r I \pp{1-e^{-\lambda \Delta t}} }
