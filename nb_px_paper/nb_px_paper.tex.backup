@@ -468,7 +468,9 @@ A stack  of thin Nb
 foils was irradiated with the 100 MeV proton beam at  Los Alamos National Laboratory's Isotope Production Facility,  to investigate the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} nuclear reaction as a  monitor for intermediate energy proton experiments and to benchmark state-of-the-art reaction model codes.
 % A stacked target of natural Nb, Cu, and Al thin foils were irradiated by 100 MeV protons at the Los Alamos National Laboratory's Isotope Production Facility.
 % The irradiation was motivated by interest in the characterization of the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} reaction as a new monitor reaction standard for intermediate-energy protons.
-A set of 38 measured  cross sections for  \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40--90 MeV, as well as 5 independent measurements of isomer branching ratios, are reported.
+A set of 38 measured  cross sections for  \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40--90 MeV, as well as 5 independent measurements of isomer branching ratios, are reported. 
+% The measurements are 
+These are useful in medical and basic science radionuclide productions at intermediate energies. 
 % Cross sections were measured using the well-characterized 
 The
 % \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, 
@@ -479,11 +481,6 @@ The measured cross sections are shown to be in excellent agreement with  literat
 This work also reports the first measurement of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, and of the independent cross sections for    
 % \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, 
 \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn} and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90 MeV region.
-% Comparisons against the 
-\emph{A priori} predictions of the reaction modeling codes  CoH, EMPIRE, and TALYS are compared with experimentally measured values and used to explore the impact of pre-equilibrium particle emission  for the 
-% 40--90 MeV 
-\ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
-The measurements are useful in medical and basic science radionuclide productions at intermediate energies. 
 % \textred{
 % Due to \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} contamination  by  activation of the silicone adhesive used for sealing foil packets, the \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na}  monitor reactions  were excluded, in the interest of surety, from proton fluence determination.
 % }
@@ -492,6 +489,12 @@ The measurements are useful in medical and basic science radionuclide production
 The effects of  \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} contamination, arising from  silicone adhesive in the Kapton tape used to encapsulate the aluminum monitor foils, is also discussed as a cautionary note to future stacked-target cross section measurements.
 % strongly discouraged.
 % }
+% Comparisons against the 
+\emph{A priori} predictions of the reaction modeling codes  CoH, EMPIRE, and TALYS are compared with experimentally measured values and used to explore the differences between codes for the
+% impact of pre-equilibrium particle emission  for the 
+% 40--90 MeV 
+\ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
+
 
 
 
@@ -527,7 +530,9 @@ Nb+p \sep Cu+p \sep Niobium
 % Proton transport \sep 
 Stacked target activation \sep Monitor reactions \sep 
 % Monitor foils 
-Medical isotope production \sep Isomer branching ratios \sep Nuclear spin distributions  \sep MCNP \sep  LANL
+Medical isotope production \sep Isomer branching ratios \sep  
+% Nuclear spin distributions  \sep 
+MCNP \sep  LANL
 % 
 % %% MSC codes here, in the form: \MSC code \sep code
 % %% or \MSC[2008] code \sep code (2000 is the default)
@@ -666,7 +671,9 @@ For example, \ce{^{48}V}  ($t_{1/2}$ = 15.97 d, $\epsilon=100\%$ to \ce{^{48}Ti}
 % In addition, it is preferred that the lifetime be comparable to that of the reaction products being studied. 
 % For proper quantification, i
 It is also of vital importance that the proposed monitor nucleus have well-characterized decay data.
-This includes a precise and well-established half-life,  needed to  correct for decay losses, as well as well-characterized decay gamma-ray intensities.
+This includes a precise and well-established half-life,  
+% needed to  correct for decay losses, 
+as well as well-characterized decay gamma-ray intensities.
 % In practice, the weakest components of decay data are often the gamma-ray intensities, which can routinely have uncertainties of 5\% or more.
 % Since this uncertainty is propagated in quadrature from the activity of both the monitor reaction and the reaction product being studied, choosing a monitor with a well-established gamma-ray intensity can make a significant reduction in measured cross section uncertainties.
 From a targetry  perspective, it is preferable to use a naturally mono-isotopic target that is readily available
@@ -677,7 +684,7 @@ and  chemically inert.
 % For charged particle reactions,  energy degradation scales with target areal density,  broadening the energy spectrum downstream of the target.
 % However, since the monitor reaction yield also scales with target areal density, the use of a target which is too thin may provide insufficient counting statistics during decay spectrometry.
 % For reference, a monitor foil of approximately 25 mg/cm$^2$ provides a good compromise, with less than 100 keV degradation for a proton energy of 100 MeV, and less than 200 keV at 40 MeV.
-Targets which can be formed into a wide thickness range are convenient, as selection will be subject to the context of an experiment, seeking to maximize thickness without overly perturbing the energy uncertainty of  measurements.
+Targets which can be formed into a wide thickness range are convenient, as selection is subject to the context of an experiment, seeking to maximize thickness without overly perturbing the energy uncertainty of  measurements.
 % These are the primary characteristics involved in choosing an appropriate target for a monitor reaction
 % \comment{Stephen:  This is also a discussion point. If you're trying to introduce the purpose of this paper, i.e. the establishment of a new monitor reaction, I would try to condense paragraphs 3--9 into two paragraphs: one paragraph explaining what a monitor reaction is used for, and the other describing considerations relevant to the use of a monitor reaction. The rest of this content can be included in the discussion if you feel it is necessary.}
 Lastly, and perhaps most importantly for high-energy monitor reaction applications, it is  of utmost importance to choose a reaction channel which cannot be populated via secondary particles incident upon the monitor target.
@@ -696,24 +703,28 @@ One  reaction which satisfies these requirements is that of a new, intermediate-
 Niobium is naturally mono-isotopic, readily  available commercially in high purity, is fairly chemically inert, and can easily be rolled down to foils as thin as 1 $\micro$m.  
 \ce{^{90}Mo} also has 
 % excellent decay properties ---
-a sufficiently long lifetime ($\epsilon=100\%, t_{1/2}=5.56 \pm 0.09$ h)  
+a sufficiently long lifetime ($\epsilon=100\%, t_{1/2}=5.56 \pm 0.09$ h \cite{Browne1997})  
 % allows it to be counted at leisure without fear of the product \ce{^{90}Mo} decaying away excessively between end-of-bombardment and the start of counting, and it possesses
-and seven strong, distinct gamma lines (notably its 122.370 keV [$I_\gamma = 64 \pm 3\%$] and 257.34 keV [$I_\gamma = 78 \pm 4\%$] lines) which can be used to uniquely and easily   quantify \ce{^{90}Mo} production \cite{Browne1997}. 
+and seven strong, distinct gamma lines (notably its 122.370 keV [$I_\gamma = 64 \pm 3\%$] and 257.34 keV [$I_\gamma = 78 \pm 4\%$] lines) which can be used to uniquely and easily   quantify \ce{^{90}Mo} production. 
 In addition,  \ce{^{90}Mo} is completely immune from (n,x) production on  \ce{^{93}Nb}, being produced only via the primary proton beam, and the \ce{^{90}Mo} decay lines can only be observed in its decay, as its daughter, \ce{^{90}Nb}, is also unstable and decays via $\epsilon$ to stable \ce{^{90}Zr}. 
  
-The purpose of the present work is to  measure the production of the long-lived radionuclide \ce{^{90}Mo} ($t_{1/2}=5.56 \pm 0.09$ h \cite{Browne1997}) via the $^\text{nat}$Nb(p,x) reaction. 
+The purpose of the present work is to  measure the production of the long-lived radionuclide \ce{^{90}Mo}  
+% ($t_{1/2}=5.56 \pm 0.09$ h \cite{Browne1997}) 
+via the $^\text{nat}$Nb(p,x) reaction. 
 In addition to the $^\text{nat}$Nb(p,x)\ce{^{90}Mo} measurement, this experiment has also yielded measurements of 37 other (p,x) production cross sections between 40--90 MeV  for a number of additional reaction products, including several emerging radionuclides with medical applications.
-These include the non-standard positron emission tomography (PET) agents \ce{^{57}Ni}  ($t_{1/2}=35.60\pm0.06$ h \cite{Bhat1998}), \ce{^{64}Cu} ($t_{1/2}=12.701 \pm 0.002$ h \cite{Singh2007}), \ce{^{86}Y}  ($t_{1/2}=14.74\pm0.02$ h \cite{NEGRET20151}), \ce{^{89}Zr} ($t_{1/2}=78.41\pm0.12$ h \cite{Singh2013}),  \ce{^{90}Nb} ($t_{1/2}=14.60 \pm 0.05$ h \cite{Browne1997}),  and the diagnostic agent \ce{^{82\text{m}}Rb} ($t_{1/2}=6.472\pm0.006$ h \cite{Tuli2003}). 
-
+% These include the non-standard positron emission tomography (PET) agents \ce{^{57}Ni}  ($t_{1/2}=35.60\pm0.06$ h \cite{Bhat1998}), \ce{^{64}Cu} ($t_{1/2}=12.701 \pm 0.002$ h \cite{Singh2007}), \ce{^{86}Y}  ($t_{1/2}=14.74\pm0.02$ h \cite{NEGRET20151}), \ce{^{89}Zr} ($t_{1/2}=78.41\pm0.12$ h \cite{Singh2013}),  \ce{^{90}Nb} ($t_{1/2}=14.60 \pm 0.05$ h \cite{Browne1997}),  and the diagnostic agent \ce{^{82\text{m}}Rb} ($t_{1/2}=6.472\pm0.006$ h \cite{Tuli2003}). 
+These include the non-standard positron emitters \ce{^{57}Ni}, \ce{^{64}Cu},  \ce{^{86}Y}, \ce{^{89}Zr},  \ce{^{90}Nb}, 
+% the $\beta^-$-therapy agent  \ce{^{64}Cu},  
+and the diagnostic agent \ce{^{82\text{m}}Rb}. 
 
 %   \comment{The following paragraph should only be included if we decide to touch on spin physics in this manuscript, or split it into a follow-on PhysRev C, etc.}
 %   
 %   \comment{Stephen:  If included in this paper, I would move to the discussion. It's not clear yet in the paper that you have the data required to make these determinations.}
 
   
-In addition to being a potentially highly-valuable beam monitor, the Nb(p,x) reactions offer an opportunity to study the angular momentum deposition via pre-equilibrium reactions and the spin distribution in g$_{9/2}$ subshell nuclei via the observation of isomer-to-ground state ratios.  
-Measurements of isomer-to-ground state ratios have been used for over 20 years to probe the spin distribution of excited nuclear states in the A $\approx$ 190 region \cite{PhysRevC.73.034613,PhysRevC.45.1171}.
-These include the \ce{^{52\text{m}}Mn} ($t_{1/2}=21.1\pm0.2$ m; J$^\pi=2^+$) to \ce{^{52\text{g}}Mn}  ($t_{1/2}=5.591\pm0.003$ d; J$^\pi=6^+$), \ce{^{58\text{m}}Co} ($t_{1/2}=9.10\pm0.09$ h; J$^\pi=5^+$) to \ce{^{58\text{g}}Co}  ($t_{1/2}=70.86\pm0.06$ d; J$^\pi=2^+$),  \ce{^{85\text{m}}Y} ($t_{1/2}=4.86\pm0.13$ h; J$^\pi=\sfrac{9}{2}^+$) to \ce{^{85\text{g}}Y}  ($t_{1/2}=2.68\pm0.05$ h; J$^\pi=\sfrac{1}{2}^-$),  \ce{^{87\text{m}}Y} ($t_{1/2}=13.37\pm0.03$ h; J$^\pi=\sfrac{9}{2}^+$) to \ce{^{87\text{g}}Y}  ($t_{1/2}=79.8\pm0.3$ h; J$^\pi=\sfrac{1}{2}^-$),  and \ce{^{89\text{m}}Nb} ($t_{1/2}=66\pm2$ m; J$^\pi=\sfrac{1}{2}^-$) to \ce{^{89\text{g}}Nb}  ($t_{1/2}=2.03\pm0.07$ h; J$^\pi=\sfrac{9}{2}^+$)  ratios \cite{Dong2015,Nesaraja2010,Singh2014,Johnson2015,Singh2013}.  
+In addition to providing a potentially highly-valuable beam monitor, the Nb(p,x) reactions offer an opportunity to study the angular momentum deposition via pre-equilibrium reactions and the spin distribution in g$_{9/2}$ subshell nuclei via the observation of isomer-to-ground state ratios.  
+Measurements of isomer-to-ground state ratios have been used for over 20 years to probe the spin distribution of excited nuclear states in the A\,$\approx$\,190 region \cite{PhysRevC.73.034613,PhysRevC.45.1171}.
+These include the \ce{^{52\text{m}}Mn} ($t_{1/2}=21.1\pm0.2$\,m; J$^\pi=2^+$) to \ce{^{52\text{g}}Mn}  ($t_{1/2}=5.591\pm0.003$\,d; J$^\pi=6^+$), \ce{^{58\text{m}}Co} ($t_{1/2}=9.10\pm0.09$\,h; J$^\pi=5^+$) to \ce{^{58\text{g}}Co}  ($t_{1/2}=70.86\pm0.06$\,d; J$^\pi=2^+$),  \ce{^{85\text{m}}Y} ($t_{1/2}=4.86\pm0.13$\,h; J$^\pi=\sfrac{9}{2}^+$) to \ce{^{85\text{g}}Y}  ($t_{1/2}=2.68\pm0.05$\,h; J$^\pi=\sfrac{1}{2}^-$),  \ce{^{87\text{m}}Y} ($t_{1/2}=13.37\pm0.03$\,h; J$^\pi=\sfrac{9}{2}^+$) to \ce{^{87\text{g}}Y}  ($t_{1/2}=79.8\pm0.3$\,h; J$^\pi=\sfrac{1}{2}^-$),  and \ce{^{89\text{m}}Nb} ($t_{1/2}=66\pm2$\,m; J$^\pi=\sfrac{1}{2}^-$) to \ce{^{89\text{g}}Nb}  ($t_{1/2}=2.03\pm0.07$\,h; J$^\pi=\sfrac{9}{2}^+$)  ratios \cite{Dong2015,Nesaraja2010,Singh2014,Johnson2015,Singh2013}.  
  
  
 The measurements described in this paper involve the use of multiple monitor reactions in conjunction with statistical calculations and proton transport simulations to reduce systematic uncertainties in beam energy assignments, leading to some of the first and most precise measurements  for many of the excitation functions reported here. 
@@ -744,11 +755,11 @@ Using these length, width, and mass readings, the areal density and its uncertai
 % , along with the propagated uncertainty in areal density.
 The foils were tightly sealed into \enquote{packets} using two pieces of  3M 5413-Series Kapton polyimide film tape --- each piece of tape consists of 43.2 \micro m of a silicone adhesive (nominal 4.79 mg/cm$^2$) on 25.4 \micro m of a polyimide backing (nominal 3.61 mg/cm$^2$).
 The sealed foils were mounted over the hollow center of a 1.575 mm-thick plastic frame.
-One \ce{^{nat}Al}, one \ce{^{nat}Cu}, and \ce{^{nat}Nb} mounted foil were bundled together using baling wire for each energy position.
+One \ce{^{nat}Al}, one \ce{^{nat}Cu}, and one \ce{^{nat}Nb} mounted foil were bundled together using baling wire for each energy position.
 These foil packet bundles were lowered into the beamline by inserting them into a  water-cooled production target box.
 % These six foil packet bundles were inserted into one of six  
 The box, seen in \autoref{fig:target_stack}, is machined from 6061 aluminum alloy, has a thin (0.64 mm) Inconel beam entrance window, and  contains 6 \enquote{energy positions} for targets, formed by  5 slabs of 6061 aluminum alloy (previously characterized) which serve as proton energy degraders  between energy positions.
-At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor --- after end-of-bombardment (EoB), decay radiation emitted from these activated stainless steel foils were used to develop radiochromic film (Gafchromic EBT3), revealing the spatial profile of the beam entering and exiting the stack.
+% At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor --- after end-of-bombardment (EoB), decay radiation emitted from these activated stainless steel foils were used to develop radiochromic film (Gafchromic EBT3), revealing the spatial profile of the beam entering and exiting the stack.
 After loading all targets in the stack, the lid of the target box is sealed in place, using an inset o-ring to create a water-tight seal, and the box is lowered through a hot cell into the beamline, where it sits electrically isolated.
 The specifications of the target stack design for this work is presented in \autoref{tab:stack_table}.
 
@@ -778,7 +789,7 @@ The activated foils were cleaned of all surface contamination, and transported t
 % \usepackage{booktabs}
 \begin{table}
 \centering
-\caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \micro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and the earlier paper by Graves \etal \cite{Graves2016}}
+\caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \micro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and the earlier paper by Graves \etal\ \cite{Graves2016}. At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor --- after end-of-bombardment (EoB), decay radiation emitted from these activated stainless steel foils were used to develop radiochromic film (Gafchromic EBT3), revealing the spatial profile of the beam entering and exiting the stack.}
 \label{tab:stack_table}
 \small
 \begin{tabular}{@{}llll@{}}
@@ -824,7 +835,7 @@ SS profile monitor & 124.4 \micro m         & 101.34                            
 A single detector was used in this measurement, an ORTEC GEM Series (model \#GEM10P4-70)  High-Purity Germanium (HPGe) detector.
 The detector is a mechanically-cooled coaxial p-type HPGe with a 1 mm aluminum window, and a 49.2 mm diameter, 27.9 mm long crystal.
 Samples were counted at fixed positions ranging 4.5--83.5  cm (5\% maximum permissible dead-time) from the front face of the detector, with a series of standard calibration sources used to determine energy, efficiency, and pileup calibrations for each position.
-The foils were counted  for a period of 2 weeks following EoB, to accurately quantify all induced activities,  with dead time never exceeding 5\%.
+The foils were counted  for a period of 2 weeks following end-of-bombardment (EoB), to accurately quantify all induced activities,  with dead time never exceeding 5\%.
 An example of one of the gamma-ray spectra collected in such a fashion is shown in \autoref{fig:gspec}.
 For all spectra collected, net peak areas were fitted using the gamma spectrometry analysis code UNISAMPO \cite{Aarnio2001}, which has been shown to perform best in comparisons with other common analysis codes \cite{Jackman2014}.
 %, due to its peak fitting algorithms and incorporation  of calibrated detector-specific peak shapes and widths. 
@@ -842,9 +853,11 @@ Following  acquisition, the decaying product nuclei corresponding to each observ
 The calibrated detector efficiencies, along with gamma-ray intensities for each transition and  corrections for gamma-ray attenuation within each foil packet, were used to convert the net  counts in each fitted gamma-ray photopeak into an activity for the decay of the activation products.  
 % For reference, t
 The nuclear decay data used in this work is tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of \ref{data}.
-Data for photon attenuation coefficients are taken from the XCOM photon cross sections database  \cite{berger2011xcom}.
-As nearly all of the product nuclei have multiple high-intensity gamma-rays, decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), as well as multiple independent activity measurements at each time point, based on each of its observed gamma-rays.
-The measured activity for each gamma-ray possesses a total propagated uncertainty which is the quadrature sum of the uncertainty in  fitted peak areas, uncertainty in detector efficiency calibration, and uncertainty in the gamma-ray branching ratio data.
+Data for photon attenuation coefficients were taken from the XCOM photon cross sections database  \cite{berger2011xcom}.
+% As nearly all of the product nuclei have multiple high-intensity gamma-rays, decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), as well as multiple independent activity measurements at each time point, based on each of its observed gamma-rays.
+Decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), and as nearly all of the product nuclei have multiple high-intensity gamma-rays, this provided independent activity measurements at each time point.
+% activity for each gamma-ray possesses a 
+The total propagated uncertainty of the measured activity is the quadrature sum of the uncertainty in  fitted peak areas, uncertainty in detector efficiency calibration, and uncertainty in the gamma-ray branching ratio data.
 
 
 
@@ -855,8 +868,8 @@ Since many of the reaction products populated by energetic protons are more than
 To this end, it is useful to differentiate between the types of cross sections reported in this work. 
 For the first observable product nuclei in a mass chain, its (p,x) cross section will be reported as a cumulative cross section ($\sigma_c$), which is the sum of direct production of that nucleus, as well as decay of its  precursors and any other independent cross sections leading to that nucleus. 
 % In addition, 
-Cumulative cross sections will be reported whenever it is impossible to use decay spectrometry to distinguish direct production of a nucleus from decay feeding.
-For all remaining observed reaction products in the mass chain, and cases where no decay precursors exist, independent cross sections ($\sigma_i$) will be reported, allowing for determination of the direct production via subtraction  and facilitating comparison to reaction model calculations.  
+Cumulative cross sections will be reported whenever it is impossible to use decay spectrometry to distinguish independent production of a nucleus from decay feeding.
+For all remaining observed reaction products in the mass chain, and cases where no decay precursors exist, independent cross sections ($\sigma_i$) will be reported, allowing for determination of the independent production via subtraction  and facilitating comparison to reaction model calculations.  
 
 
 
@@ -867,7 +880,7 @@ For the case of cumulative cross sections, EoB activities were quantified by fit
 % \begin{equation}
 % A\pp{t} = A_0 e^{-\lambda t}
 % \end{equation}
-Nonlinear regression was used for this fitting process, minimizing on $\chi^2$ / degree of freedom, so that not only would the uncertainty-weighted EoB activities be fitted, but that a 1-$\sigma$ confidence interval in $A_0$ could be reported as as well.
+Nonlinear regression was used for this fitting process, minimizing on $\chi^2$\,/\,degree of freedom, so that not only would the uncertainty-weighted EoB activities be fitted, but that a 1-$\sigma$ confidence interval in $A_0$ could be reported as as well.
 As with the gamma-ray intensities, all lifetimes used in this work are tabulated in \autoref{tab:nudat_table_monitors} and \autoref{tab:nudat_table_nb} of \ref{data}.
 In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{t=0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation \cite{bateman1910solution,Cetnar2006}:
 \begin{equation}
@@ -909,12 +922,12 @@ After quantifying the cumulative EoB activities at the top of a mass chain and a
 % At the time of this work, the nondestructive beam current monitors in the LANSCE-IPF beamline had a  resolution of 100 nAh.
 % For a low-current irradiation such as this work, where a nominal fluence of 200 nAh is desired, additional fluence sensitivity is thus needed to accurately normalize quantified EoB activities into cross sections.
 % To this end, 
-In addition to direct beam current measurements, thin \ce{^{nat}Al} and \ce{^{nat}Cu} foils were included along with the \ce{^{nat}Nb} targets at each energy position, to provide another beam current monitor.
+In addition to the LANSCE-IPF beamline's direct beam current measurements, thin \ce{^{nat}Al} and \ce{^{nat}Cu} foils were included along with the \ce{^{nat}Nb} targets at each energy position, to provide more sensitive beam current monitors.
 % These foils have been recommended for use as proton monitor foils in the 30 \textless\ E$_\text{p}$ \textless\ 100 MeV regime by the IAEA, as the
 The IAEA-recommended \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions were used for  proton fluence measurement \cite{gul2001charged}.
 % The recommended cross section values for each of these reactions were used in all calculations of proton fluence for the above monitor reactions.
-Due to the large energy degradation between the front and  back of the target stack, a non-trivial broadening of the proton energy distribution is expected for all monitor and target foils.
-As a result, the integral form of the well-known activation equation is used to accurately determine proton fluence ($I \Delta t $) in each monitor foil:
+Due to the large energy degradation between the front and  back of the target stack, a non-trivial broadening of the proton energy distribution was expected for all monitor and target foils.
+As a result, the integral form of the well-known activation equation was used to accurately determine proton fluence ($I \Delta t $) in each monitor foil:
 %by convolving the IAEA recommended cross section values with the proton energy distribution:
 % \begin{equation}
 % A_0 = I\ \rho \Delta r \pp{1-e^{-\lambda \Delta t}} \int \sigma\pp{E} \dfrac{d\phi}{dE} dE
@@ -961,14 +974,14 @@ In this work, the flux-weighted average proton  energy in each foil, $\langle E 
 \langle E \rangle = \dfrac{{\displaystyle\int E \dfrac{d\phi}{dE} dE}}{{\displaystyle\int \dfrac{d\phi}{dE} dE}}
 \end{equation}
 Likewise, to represent the energy uncertainty for each stack position, the full width at half maximum (FWHM) of the MCNP6-modeled energy distribution is chosen for each energy position reported.
-While most experimental uncertainties are reported at the 1$\sigma$ level, the $\approx2.3\sigma$ FWHM is used here to ensure at the 98\% confidence interval that this width includes  the \enquote{true} energy centroid value.
+While most experimental uncertainties are reported at the 1$\sigma$ level, the $2.355\sigma$ FWHM is used here to ensure at the 98\% confidence interval that this width includes  the \enquote{true} energy centroid value.
 
 
 
 
 
 The \enquote{variance minimization} techniques  described by  Graves \etal\  have been employed here to further reduce the uncertainty in proton energy assignments     \cite{Graves2016}.
-This method is based on the assumption that the independent measurements of proton fluence from the 5 monitor reactions used in this work should all be consistent at each energy position.
+This method is based on the assumption that the independent measurements of proton fluence from the five monitor reactions used in this work should all be consistent at each energy position.
 If the monitor reaction cross sections and MCNP6-modeled energy distributions are both accurate, disagreement in the  observed proton fluences is due to poorly characterized stopping power in simulations, or a systematic error in the 
 % stack design, namely, the
 areal densities of the stack components \cite{Graves2016,Marus2015}. 
@@ -1050,10 +1063,10 @@ The impact of this variance minimization is  clearly  seen in   \autoref{fig:var
 As expected, the 2.52\% increase in 6061 aluminum areal density has an almost negligible impact on the higher-energy positions, but causes a progressively larger downshift  in proton energies at the later energy positions.
 In addition, as one moves to the rear  positions, the disagreement in the independent proton fluence measurements is reduced.
 % \comment{Insert text here to describe our Na22 / Si production hypothesis.  }
-It is worth noting that the proton fluence measured by the \ce{^{nat}Al}(p,x)\ce{^{22}Na} monitor reaction (threshold 21.0 MeV) is consistently higher in magnitude than all other monitor channels, with an increasing disparity at higher energies.
-This phenomenon is observed for the \ce{^{nat}Al}(p,x)\ce{^{24}Na} monitor reaction as well (threshold 24.6 MeV), though to a much smaller degree.
+It is worth noting that the proton fluence measured by the \ce{^{nat}Al}(p,x)\ce{^{22}Na} monitor reaction (threshold 21.0\,MeV) is consistently higher in magnitude than all other monitor channels, with an increasing disparity at higher energies.
+% This phenomenon is observed for the \ce{^{nat}Al}(p,x)\ce{^{24}Na} monitor reaction as well (threshold 24.6\,MeV), though to a much smaller degree.
 In both cases, this disparity is caused by the fact that the Kapton tape used for sealing the foil packets (comprised of a silicone adhesive layer on a polyimide backing) contains a significant amount of silicon, making up approximately 10\% of the silicone on a stoichiometric basis.
-\ce{^{22}Na} and \ce{^{24}Na}, the residual nuclei used as monitors, can also be populated off of natural silicon  (92.2\% \ce{^{28}Si}), predominantly via \ce{^{28}Si}(p,$\alpha$2pn)\ce{^{22}Na} (threshold 35.3 MeV) and \ce{^{28}Si}(p,4pn)\ce{^{24}Na} (threshold 44.6 MeV).
+\ce{^{22}Na} and \ce{^{24}Na}, the residual nuclei used as monitors, can also be populated off of natural silicon  (92.2\%\,\ce{^{28}Si}), predominantly via \ce{^{28}Si}(p,$\alpha$2pn)\ce{^{22}Na} (threshold 35.3\,MeV) and \ce{^{28}Si}(p,4pn)\ce{^{24}Na} (threshold 44.6\,MeV).
 \ce{^{29}Si} and \ce{^{30}Si} are also potential targets for (p,x)\ce{^{22,24}Na}, albeit with higher energetic thresholds and smaller cross sections.
 In addition, each aluminum foil packet contains approximately 6.5 mg/cm$^2$ of Al, as well as approximately  9.6 mg/cm$^2$ of silicone.
 The attribution of excess Al(p,x)\ce{^{22,24}Na} activity to the silicone adhesive is confirmed by the observation of \ce{^{22}Na} and \ce{^{24}Na} activities in all Cu and Nb foil positions.
@@ -1124,9 +1137,9 @@ This serves as a pointed example of the importance of selecting monitor reaction
      \label{fig:na_subtraction}
 \end{figure}
 
-Using this variance minimized degrader density, the final incident proton energy energy distributions $\frac{d\phi}{dE}$ from MCNP6 simulation are shown for the 6 irradiated Nb foils in \autoref{fig:Nb_ptallies}. 
+Using this variance minimized degrader density, the final incident proton energy energy distributions $\frac{d\phi}{dE}$ from MCNP6 simulation are shown for the six irradiated Nb foils in \autoref{fig:Nb_ptallies}. 
 As expected, the energy distribution becomes increasingly more broadened at the lower energy positions, as a result of the beam energy degradation.
-In addition, as the beam becomes more degraded, the magnitude of the peak of each energy distribution (as well as the integral of each distribution) is reduced in magnitude, as beam fluence is lost due to scattering, and the peak-to-low-energy-tail ratio increases as more  secondary protons are produced upstream.
+In addition, as the beam becomes more degraded, the magnitude of the peak of each energy distribution (as well as the integral of each distribution) is reduced, as beam fluence is lost due to scattering, and the peak-to-low-energy-tail ratio increases as more  secondary protons are produced upstream.
 As with the monitor foils, these distributions were used to calculate the  energy centroid  (as the  flux-weighted average proton  energy) and  uncertainty (as the FWHM of the distribution) for the final proton energy assignment of each Nb foil.
 
 
@@ -1162,7 +1175,9 @@ These models are used purely to provide an extrapolation from the 90 MeV energy 
  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
  \caption{Final uncertainty-weighted mean proton fluences throughout the target stack, based on the variance-minimized observed fluence from the the  \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions. 
 %  A 95\% ($2\sigma$) confidence interval is reported in the fitted proton fluence, to ensure a realistic uncertainty in fluence, which encompasses the true absolute fluence. 
-  A clear loss of fluence  is visible, dropping by approximately 7.2--8.9\% from the incident fluence of 196.9--198.8 nAh over the length of the target stack, based on fluence loss models from MCNP6 simulations and an empirical fit to  fluence measurements.  This is due to a combination of beam utilization, as well as scattering.}
+%   A clear loss of 
+  The fluence  drops by approximately 7.2--8.9\% from the incident fluence of 196.9--198.8 nAh over the length of the target stack, based on fluence loss models from MCNP6 simulations and an empirical fit to  fluence measurements.}  
+%   This is due to a combination of beam utilization, as well as scattering.}
  \label{fig:fluence_plot}
 \end{figure}
 
@@ -1185,9 +1200,9 @@ These models are used purely to provide an extrapolation from the 90 MeV energy 
 %  include 1st and 2nd order bateman stuff here
 
 Using the quantified EoB activities along with the variance-minimized proton fluence, it is possible to calculate the final cross sections for the various observed Nb(p,x) reactions.
-While thin ($\approx$ 22 mg/cm$^2$) Nb foils were irradiated to minimize the energy width of these cross section measurements, it is important to note that all cross sections reported here are  
-% flux-averaged 
-cross sections, over the energy distribution subtended by each foil, as seen in \autoref{fig:Nb_ptallies}.
+While thin ($\approx$ 22 mg/cm$^2$) Nb foils were irradiated to minimize the energy width of these cross section measurements, it is important to note that all cross sections reported here are flux-averaged  
+% cross sections, 
+over the energy distribution subtended by each foil, as seen in \autoref{fig:Nb_ptallies}.
 For both the cumulative and independent activities quantified, cross sections were calculated as:
 \begin{equation}
 \sigma = \dfrac{A_0 }{\rho \Delta r I \pp{1-e^{-\lambda \Delta t}} }
@@ -1220,10 +1235,12 @@ In addition, each activated foil had a small \enquote{blister} under the Kapton 
 % \comment{Maybe some Ne formed by Al(p,2a)Ne / Si(p,2ap)Ne?}
 This blister   shows the location where the primary proton beam was incident upon the foil.
 The \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions were used to determine the uncertainty-weighted mean fluence at each energy position (seen in \autoref{fig:fluence_plot}).
-A fluence of 198.8$\pm$6.7 nAh was calculated to be incident upon the target stack using the MCNP6 fluence model, and a  fluence of 196.9$\pm$11.3 nAh using the linear fit model, both of which are consistent with the nominal fluence of 205.9 nAh based on IPF upstream current monitors.
+A fluence of 198.8$\pm$6.7\,nAh was calculated to be incident upon the target stack using the MCNP6 fluence model, and a  fluence of 196.9$\pm$11.3\,nAh using the linear fit model, both of which are consistent with the nominal fluence of 205.9\,nAh based on IPF upstream current monitors.
 As fluence loss in the target box's entrance window scales with $\sigma_{\mathrm{tot}}\rho\Delta r$, it is expected that an extrapolation back to the stack entrance will underestimate the nominal fluence incident upon the box.
-This incident fluence dropped by approximately 8.9\% to  180.9$\pm$5.4 nAh (and by 7.2\% to  182.7$\pm$13.5 nAh using the linear fit model) over the length of the target stack, which is consistent with similar measurements at IPF in the past \cite{Graves2016}.
-This loss of fluence is due to a combination of beam utilization for the various (p,x) reactions throughout the target stack, as well as large-angle deflections (primarily in the aluminum degraders) from scattering of the beam.
+This incident fluence dropped by approximately 8.9\% to  180.9$\pm$5.4\,nAh (and by 7.2\% to  182.7$\pm$13.5\,nAh using the linear fit model) over the length of the target stack, which is consistent with similar measurements at IPF in the past \cite{Graves2016}.
+This loss of fluence is due to a combination of 
+% beam utilization for the various 
+(p,x) reactions throughout the target stack, as well as large-angle deflections (primarily in the aluminum degraders) from scattering of the beam.
 
 
 
@@ -1340,17 +1357,21 @@ E$_\text{p}$ (MeV)             & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64
 
 
 
-These results have several notable takeaways.
+These results have several notable features.
 The various \ce{^{nat}Cu}(p,x) cross sections measured here are in excellent agreement with the body of measurements in the literature,  but have been measured nearly exclusively with the highest precision to date.
-Similarly, the various \ce{^{nat}Nb}(p,x) cross sections measured here are in excellent agreement with literature data, which is far more sparse in the 40--90 MeV region than for \ce{^{nat}Cu}(p,x) ---  less than 3 existing measurements have been performed for the majority of the reactions presented here.
-Indeed,  the \ce{^{nat}Nb}(p,x)\ce{^{83}Sr}, \ce{^{nat}Nb}(p,x)\ce{^{85}Y}, \ce{^{nat}Nb}(p,x)\ce{^{89}Nb}, \ce{^{nat}Nb}(p,x)\ce{^{90}Mo}, \ce{^{nat}Nb}(p,x)\ce{^{91m}Nb}, and \ce{^{nat}Nb}(p,x)\ce{^{98m}Mo} reactions each possess no more than a total of 3 data points in this energy region.
+Similarly, the various \ce{^{nat}Nb}(p,x) cross sections measured here are in excellent agreement with literature data, which is far more sparse in the 40--90 MeV region than for \ce{^{nat}Cu}(p,x) ---  fewer than three existing measurements have been performed for the majority of the reactions presented here.
+Indeed,  the \ce{^{nat}Nb}(p,x)\ce{^{83}Sr}, \ce{^{nat}Nb}(p,x)\ce{^{85}Y}, \ce{^{nat}Nb}(p,x)\ce{^{89}Nb}, \ce{^{nat}Nb}(p,x)\ce{^{90}Mo}, \ce{^{nat}Nb}(p,x)\ce{^{91m}Nb}, and \ce{^{nat}Nb}(p,x)\ce{^{98m}Mo} reactions each possess no more than a total of three data points in this energy region.
 Not only do the \ce{^{nat}Nb}(p,x) measurements in this work fill in the sparse data in this energy region, but they have been measured with the highest precision relative to existing literature data.
 
 
 
-Furthermore, this work presents the first measurements of several observables in these mass regions.
-This work reports the first experimental measurement of the \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction in the 40--90 MeV region.
-It also represents  the first measurement of the independent cross section for       \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, as well as the \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$)  isomer branching ratio via \ce{^{nat}Cu}(p,x).  
+% Furthermore, t
+This work presents the first measurements of several observables in 
+% these mass regions.
+% This work reports the first experimental measurement of
+this mass region, including the \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction in the 40--90 MeV region, 
+% It also represents  the first measurement of 
+the independent cross section for       \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and the \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$)  isomer branching ratio via \ce{^{nat}Cu}(p,x).  
 The cumulative cross sections from these data are also consistent with existing measurements of the cumulative \ce{^{nat}Cu}(p,x)\ce{^{52}Mn} cross section.
 Similarly, this work offers the first measurement of the independent cross sections for \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y},  as well as the first measurement of the     \ce{^{85\text{m}}Y} ($\sfrac{9}{2}^+$) / \ce{^{85\text{g}}Y}  ($\sfrac{1}{2}^-$) isomer branching ratio via \ce{^{nat}Nb}(p,x).
 
@@ -1359,8 +1380,10 @@ Similarly, this work offers the first measurement of the independent cross secti
 Notably, this work serves as the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100 MeV to date, with cross sections measured  at the 4--6\% uncertainty level.
 This is important, as it presents the first step towards characterizing this reaction for use as a proton monitor reaction standard below 100 MeV.
 % The quantification of \ce{^{90}Mo} activity proved to be one of the most straightforward of all reaction products observed in this work.
-\ce{^{nat}Nb}(p,x)\ce{^{90}Mo} can only be populated through the (p,4n) reaction channel, so no corrections for (n,x) contamination channels or decay down the A=90 isobar are needed, which makes activity quantification trivial.
-In addition, \ce{^{90}Mo}  possesses seven strong, distinct gamma lines which can easily  be used for its identification and quantification.
+\ce{^{nat}Nb}(p,x)\ce{^{90}Mo} can only be populated through the (p,4n) reaction channel, so no corrections for (n,x) contamination channels or decay down the A=90 isobar are needed.
+% , which makes activity quantification trivial.
+% In addition, 
+\ce{^{90}Mo}  possesses seven strong, distinct gamma lines which can easily  be used for its identification and quantification.
 Finally, the production of \ce{^{90}Mo}  in the 40--90 MeV region is quite strong, with a peak cross section of approximately 120 mb.
 Combining the reaction yield and gamma abundance, the use of approximately 23 mg/cm$^2$ Nb targets easily provided sufficient counting statistics for activity quantification in the 40--90 MeV region.
 This result presents the first step towards the use of \ce{^{90}Mo} as a clean and precise   charged particle monitor reaction standard in irradiations up to approximately 24 hours in duration.
@@ -1445,16 +1468,33 @@ It is clear that this production route offers no advantage over existing \ce{^{8
 
 
 
+% \comment{Make sure to comment on avoiding the use of silicone-based adhesives for Al monitor foils.}
+
+% Finally, w
+We wish to urge caution in future stacked-target activation experiments by avoiding the use of silicone adhesive-based tapes for foil containment, especially when paired with the use of Al monitor foils.
+Acrylic-based tape options are commercially available, and are immune from (p,x) production of \ce{^{22,24}Na} activities, due to being of too low-Z for these reaction channels to be possible.
+Even with subtraction of \ce{^{22,24}Na} activities though irradiating a Kapton tape \enquote{blank} or similar, we observe the Al monitor channels to measure consistently higher proton fluence than via Cu monitor channels, by 5--8\%. 
+If Al monitors are used in conjunction with silicone-based tapes, even with subtraction of excess \ce{^{22}Na} activities, a systematically enhanced fluence may be determined, leading to cross sections reported with inaccurately diminished magnitude.
+Furthermore, since data for monitor reactions are often self-referencing, the propagated impact of this systematic enhancement in fluence may have far-reaching consequences for both medical isotope production, as well as for  the evaluated nuclear data libraries, which use these proton activation experiments as input.
+
+% First off, at the next planned stack irradiation at IPF, we would strongly encourage that a Kapton "blank" (no foil in the packet) be irradiated to confirm this.  We intend to do the same for our next proton irradiation at LBL.
+% 
+% We would highly encourage people to be careful about the small details, notably using a silicone-based adhesive for any future Al monitor foils.  This has potentially far-reaching consequences, unless a non-silicon-based Kapton (such as the acrylic adhesive versions) is instead used.
+
+
 % \comment{Make sure to comment on comparison with EMPIRE / TALYS  / TENDL here, after Amanda finishes modeling work.}
 
 
-In this work, cumulative cross sections are reported for the first observable product nuclei in a mass chain, or whenever it is impossible to use decay spectrometry to distinguish direct production of a nucleus from decay feeding.
+% In this work
+As mentioned before, cumulative cross sections are reported here for the first observable product nuclei in a mass chain, or whenever it is impossible to use decay spectrometry to distinguish direct production of a nucleus from decay feeding.
 For all remaining observed reaction products in the mass chain, and cases where no decay precursors exist, independent cross sections are reported, allowing for determination of the direct production via subtraction.  
-This, in turn, offers the opportunity to use these data to gain insight into the predictive capabilities of modern nuclear models used in the reaction evaluation process.  
+This, in turn, offers the opportunity to 
+% use these data to gain insight into 
+gauge the predictive capabilities of modern nuclear models used in the reaction evaluation process.  
 The reaction channels with independent cross sections were compared to calculations with the reaction modeling codes EMPIRE, TALYS, and CoH, run with the default settings. 
 The default optical models and E1 gamma strength function models for each code are presented in Table \ref{tab:defaults}. 
-The large energy range covered by many of the exit channels, which extends significantly beyond the range of pure compound nuclear/evaporation, allows the data to be used to study pre-equilibrium reaction mechanisms.
-All three codes use a two-exciton phenomenological model to calculate the pre-equilibrium cross section, but the specific implementation differs between the codes. 
+The large energy range covered by many of the exit channels, which extends significantly beyond the range of pure compound nuclear/evaporation, allows the data to be used to study the differences between these modeling codes in the  pre-equilibrium regime.
+% All three codes use a two-exciton phenomenological model to calculate the pre-equilibrium cross section, but the specific implementation differs between the codes. 
 
 
 The default level density in both CoH and TALYS is the Gilbert-Cameron model, which uses a Constant Temperature model below a critical energy and Fermi Gas model above it.
@@ -1462,6 +1502,8 @@ The default level density in both CoH and TALYS is the Gilbert-Cameron model, wh
 The default level density in EMPIRE is the Enhanced Generalized Superfluid Model (EGSM) which uses the Generalized Superfluid model below a critical energy, and Fermi Gas model above it \cite{Capote2009}.
 % \cite{add_level_density_models_here}.
 The EGSM densities are normalized to $D_0$ and the discrete levels, but in such a way that only the level density below the neutron separation energy is  effected by the discrete levels chosen for the normalization.  
+All three codes use a two-exciton phenomenological model to calculate the pre-equilibrium cross section, but the specific implementation differs between the codes. 
+
 
 % \def\arraystretch{1.5}
 \begin{table}
@@ -1543,7 +1585,7 @@ For \ce{^{86}Y} and \ce{^{90}Nb}, the peak is missed by all three  of the codes.
 The magnitudes of the TALYS and TENDL calculations are consistently too low in the three channels studied here. 
 For \ce{^{86}Y}, CoH and EMPIRE also predict smaller cross sections than the data would suggest, which may be influenced by incorrect modeling of other, stronger, channels.
 The magnitude of the peak in the CoH calculation for \ce{^{90}Mo}  is consistent  with the data, while EMPIRE predicts a cross section that is approximately the same magnitude as that of TALYS.
-\ce{^{90}Nb} is one of the strongest measured channels, approximately 10\% of the total reaction cross section, and the three codes are all consistent, but  too small, in magnitude.
+\ce{^{90}Nb} is one of the strongest measured channels, approximately 10\% of the total reaction cross section, and the values from the three codes are all consistent, but  too small, in magnitude.
 
 The \ce{^{90}Nb} production cross section exhibits a persistent pre-equilibrium \enquote{tail} that keeps the channel open  well after the compound cross section has fallen away. 
 TALYS, TENDL, and CoH seem to have the correct shape for this pre-equilibrium cross section, with magnitudes that are just slightly too low.
@@ -1555,17 +1597,6 @@ EMPIRE, however, does not level off  as much as the data and the other codes are
 % \comment{Feel free to expand / suggest / add other language describing medical radionuclide applications, or radiochemical separations here.}
 
 
-% \comment{Make sure to comment on avoiding the use of silicone-based adhesives for Al monitor foils.}
-
-Finally, we wish to urge caution in future stacked-target activation experiments by avoiding the use of silicone adhesive-based tapes for foil containment, especially when paired with the use of Al monitor foils.
-Acrylic-based tape options are commercially available, and are immune from (p,x) production of \ce{^{22,24}Na} activities, due to being of too low-Z for these reaction channels to be possible.
-Even with subtraction of \ce{^{22,24}Na} activities though irradiating a Kapton tape \enquote{blank} or similar, we observe the Al monitor channels to measure consistently higher proton fluence than via Cu monitor channels, by 5--8\%. 
-If Al monitors are used in conjunction with silicone-based tapes, even with subtraction of excess \ce{^{22}Na} activities, a systematically enhanced fluence may be determined, leading to cross sections reported with inaccurately diminished magnitude.
-Furthermore, since data for monitor reactions are often self-referencing, the propagated impact of this systematic enhancement in fluence may have far-reaching consequences for both medical isotope production, as well as for  the evaluated nuclear data libraries, which use these proton activation experiments as input.
-
-% First off, at the next planned stack irradiation at IPF, we would strongly encourage that a Kapton "blank" (no foil in the packet) be irradiated to confirm this.  We intend to do the same for our next proton irradiation at LBL.
-% 
-% We would highly encourage people to be careful about the small details, notably using a silicone-based adhesive for any future Al monitor foils.  This has potentially far-reaching consequences, unless a non-silicon-based Kapton (such as the acrylic adhesive versions) is instead used.
 
 
 % XXXXXX
