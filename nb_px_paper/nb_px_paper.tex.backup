@@ -558,7 +558,7 @@ MCNP \sep  LANL
 %%
 %% Start line numbering here if you want
 %%
-\linenumbers
+% \linenumbers
 
 
 
@@ -1173,9 +1173,9 @@ Without the reliable use of the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al
 % In the interest of surety of because they are consistent, t
 The uncertainty-weighted mean  for the three \ce{^{nat}Cu}(p,x) monitor channels was calculated at each energy position, to determine the final fluence assignments for the Nb and Cu foils.
 Uncertainty in proton fluence  is likewise calculated by error propagation of the fluence values  at each energy position.
-These weighted-mean fluences are also plotted in in \autoref{fig:fluence_plot}, along with the estimated fluence according to both  MCNP6 transport 
+These weighted-mean fluences are  plotted in in \autoref{fig:fluence_plot}, along with the estimated fluence according to both  MCNP6 transport 
 % model, as well as 
-and an uncertainty-weighted linear $\chi^2$ fit to the individual  fluence measurements in each monitor channel.
+and an uncertainty-weighted linear $\chi^2$ fit to the individual monitor channel fluence measurements.
 Both models reproduce the observed fluence data consistently within uncertainty, with the MCNP6 model predicting a slightly greater fluence loss throughout the stack.
 These models are used purely to provide an extrapolation from the 90 MeV energy position back to the \enquote{front} of the stack at 100 MeV, to compare with the nominal fluence measured by  IPF upstream current monitors.
 % This involved minimizing on $\chi^2$ / degree of freedom, so that  a 95\% confidence interval in fluence would be reported as as well.
@@ -1711,6 +1711,7 @@ The   lifetimes and gamma-ray branching ratios  listed in these tables were used
 \centering
 \caption{Decay data for gamma-rays observed in \ce{^{nat}Al}(p,x) and \ce{^{nat}Cu}(p,x).}
 \label{tab:nudat_table_monitors}
+\small
 \begin{tabular}{@{}llll@{}}
 \toprule
 % \begin{tabular}{|c|c|c|c|}
@@ -1834,6 +1835,7 @@ Nuclide & Half-life & E$_\gamma$ (keV) & I$_\gamma$ (\%)\\
 \centering
 \caption{Decay data for gamma-rays observed in \ce{^{nat}Nb}(p,x).}
 \label{tab:nudat_table_nb}
+\small
 \begin{tabular}{@{}llll@{}}
 \toprule
 % \begin{tabular}{|c|c|c|c|}
@@ -2427,6 +2429,7 @@ Plots of the isomer-to-ground state ratios measured in this work are presented h
 % \bibliography{<your-bib-database>}
 % \addcontentsline{toc}{chapter}{Bibliography}
 \bibliographystyle{elsarticle-num}
+% ``Overfull \hbox in .bbl'' message fixed by commenting out ''write.url'' in /usr/share/texlive/texmf-dist/bibtex/bst/elsarticle/elsarticle-num.bst for affected entry types (likely, 'article' and 'book', all but 'phdthesis')
 % \bibliographystyle{apsrev4-1}
 % \bibliographystyle{ieeetr}
 \bibliography{../../library}
