@@ -24,7 +24,7 @@ e.g., \ce{^{11}C}, \ce{^{18}F}, \ce{^{68}Ga}, \ce{^{82}Rb}, and \ce{^{123}I}.
 These accelerators also produce 
 % , as well as many  
 % of the 
-non-medical radionuclides with commercial value, such as  \ce{^{32}Si}, \ce{^{73}As}, \ce{^{95m}Tc}, and  \ce{^{109}Cd} \cite{international2009iaea,schlyer2008cyclotron}. 
+non-medical radionuclides with commercial value, such as  \ce{^{22}Na}, \ce{^{73}As}, \ce{^{95m}Tc}, and  \ce{^{109}Cd} \cite{international2009iaea,schlyer2008cyclotron}. 
 % \comment{Should \enquote{intermediate-energy} be less than 200 MeV, or 100 MeV?  I find conflicting descriptions in the literature.\\Lee:  I believe that 60 MeV is considered as the transition point\\ Stephen: In this context, I would make this definition based on what machines in the US are routinely used for medical isotope production - based on this, I agree with 200 MeV. }
 % The future of nuclear medicine would appear to be the paradigm of personalized medicine --- targeted radionuclide therapy to spare healthy tissue \cite{Mulford2005,Qaim201731}, and theranostic medicine, which pairs an imaging isotope with a therapeutic isotope (frequently, of the same element), to provide simultaneous, real-time dose delivery and verification, leading to drastic reductions in prescribed patient dose \cite{Muller2014,Bentzen2005,Srivastava2012}. 
 % Other variants of theranostic medicine exist, including pre-imaging for treatment planning, or delivery of a single compound with different radioelements for imaging/therapy where the inter-element biodistribution has been validated.  
@@ -93,7 +93,7 @@ possess several hallmark characteristics,
 % a number of 
 including intense, distinct gamma-rays, 
 % with high intensities,  
-which can be used to uniquely identify it during post-activation assay, and lifetimes long enough to enable removal after a reasonable length irradiation.    
+which can be used for unique identification during post-activation assay, and lifetimes long enough to enable removal after a reasonable length irradiation.    
 % The decay radiation should preferably have high intensities, so that they show up as strong peaks, and minimize the amount of time needed to count the activated target in order to achieve acceptable counting statistics. 
 % \comment{Stephen:  These next 2 paragraphs are better suited for the discussion, specifically addressing how this problem affects your particular experiment. }
 Care should also be taken to avoid cases where two radionuclides which are produced by two different reactions on the same monitor foil lead to states in the same daughter nuclide.  
@@ -110,7 +110,7 @@ For example, \ce{^{48}V}  ($t_{1/2}$ = 15.97 d, $\epsilon=100\%$ to \ce{^{48}Ti}
 It is also of vital importance that the proposed monitor nucleus have well-characterized decay data.
 This includes a precise and well-established half-life,  
 % needed to  correct for decay losses, 
-as well as well-characterized decay gamma-ray intensities.
+and well-characterized decay gamma-ray intensities.
 % In practice, the weakest components of decay data are often the gamma-ray intensities, which can routinely have uncertainties of 5\% or more.
 % Since this uncertainty is propagated in quadrature from the activity of both the monitor reaction and the reaction product being studied, choosing a monitor with a well-established gamma-ray intensity can make a significant reduction in measured cross section uncertainties.
 From a targetry  perspective, it is preferable to use a naturally mono-isotopic target that is readily available
@@ -219,7 +219,7 @@ The activated foils were cleaned of all surface contamination, and transported t
  \centering
  \includegraphics[width=0.5\linewidth,clip=true,trim=13cm 0cm 3cm 6cm]{./figures/IMG_1975.JPG}
  % IMG_1975.JPG: 3264x2448 pixel, 72dpi, 115.15x86.36 cm, bb=0 0 3264 2448
- \caption{\label{fig:target_stack}Photograph of the assembled IPF target stack, before the stack's o-ring lid was sealed in place. The baling wire handles affixed to each bunch of Al+Cu+Nb foils are visible in each energy position, to facilitate removal of activated foils via robotic manipulators in the IPF hot cell. The circular Inconel beam entrance aperture is visible in the bottom center of the photograph.  }
+ \caption{\label{fig:target_stack}Photograph of the assembled IPF target stack, before the stack's o-ring lid was sealed in place. The baling wire handles affixed to each bunch of Al+Cu+Nb foils are visible in each energy position, to facilitate removal of activated foils via  manipulators in the IPF hot cell. The circular Inconel beam entrance aperture is visible in the bottom center of the photograph.  }
 \end{figure}
 
 
@@ -283,7 +283,7 @@ For all spectra collected, net peak areas were fitted using the gamma spectromet
  \centering
  \includegraphics[width=6in]{./figures/sample_gspec.pdf}
  % sample_gspec.pdf: 489x257 pixel, 72dpi, 17.25x9.07 cm, bb=0 0 489 257
- \caption{A gamma spectrum, collected from an activated Nb foil at approximately 80 MeV. While the majority of observed reaction products are visible in this spectrum,  the \ce{^{90}Mo} decay lines, which form the basis of the \ce{^{93}Nb}(p,x)\ce{^{90}Mo} monitor reaction, are high in intensity and clearly isolated from surrounding peaks.}
+ \caption{A gamma spectrum collected from an activated Nb foil at approximately 80 MeV. While the majority of observed reaction products are visible in this spectrum,  the \ce{^{90}Mo} decay lines, which form the basis of the \ce{^{93}Nb}(p,x)\ce{^{90}Mo} monitor reaction, are high in intensity and clearly isolated from surrounding peaks.}
  \label{fig:gspec}
 \end{figure}
 
@@ -544,8 +544,9 @@ seen when comparing the total measured activities of \ce{^{22,24}Na}
 % and \ce{^{24}Na} 
 in each Al foil packet, 
 % (which combines both Al- and Si-based production routes), 
-relative to the expected EoB activities for each reaction channel.
-This is presented in \autoref{fig:Na_activity_compare}.
+relative to the expected EoB activities for each reaction channel 
+% This is presented in 
+(\autoref{fig:Na_activity_compare}).
 Since no evaluated  cross section data exists in this energy region  for  \ce{^{28}Si}(p,x)\ce{^{22}Na}  (and only minimal \ce{^{nat}Si} data exists),  the TENDL-2015 library is used to estimate the expected relative EoB activities for \ce{^{nat}Al}(p,x)\ce{^{22,24}Na} and \ce{^{nat}Si}(p,x)\ce{^{22,24}Na}, 
 % in comparison with the
 relative to IAEA recommended \ce{^{nat}Al}(p,x)\ce{^{22,24}Na} cross sections.
@@ -569,8 +570,9 @@ uncertainties in the areal density of the Si in the adhesive.
 However, if we assume a 10\% Si stoichiometric basis and an areal density of 4.79\,mg/cm$^2$ (based on bulk density),
 % respectively, for the purposes of transport calculations, but this level of confidence is insufficient for the reporting of a cross section.
 % In principle, it would be possible  to 
-we can subtract out the measured \ce{^{22,24}Na} activity at each Nb and Cu foil position (correcting for the minor difference in proton energy between adjacent foils) from the apparent \ce{^{22,24}Na}  activities observed in each Al foil packet, in order to obtain the \enquote{true} or uncontaminated fluence via the Al monitor reactions.
-The results of this  may be seen in \autoref{fig:na_subtraction}.
+we can subtract out the measured \ce{^{22,24}Na} activity at each Nb and Cu foil position (correcting for the minor difference in proton energy between adjacent foils) from the apparent \ce{^{22,24}Na}  activities observed in each Al foil packet, in order to obtain the \enquote{true} or uncontaminated fluence via the Al monitor reactions, shown  
+% The results of this  may be seen 
+in \autoref{fig:na_subtraction}.
 Following subtraction, the \ce{^{22,24}Na} fluences become more consistent with other monitor reaction channels, 
 % within a 
 % mere 
@@ -627,7 +629,7 @@ As with the monitor foils, these distributions were used to calculate the  energ
 
 
 
-An enhanced version of the final \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reaction fluences may be seen in \autoref{fig:fluence_plot}.
+An enhanced version of the final \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reaction fluences is shown in \autoref{fig:fluence_plot}.
 % , which shows the   observed fluence of the \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reaction channels.
 Without the reliable use of the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na} monitor channels, local interpolation cannot be used for fluence assignment to the Nb foils, and global interpolation is reliant upon a validated model for fluence loss.
 % In the interest of surety of because they are consistent, t
@@ -779,7 +781,8 @@ E$_\text{p}$ (MeV)          & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ 
 \caption{Measured cross sections for the various \ce{^{nat}Nb}(p,x) reaction products observed in this work. Cumulative cross sections are designated as $\sigma_c$, independent cross sections are designated as $\sigma_i$.}
 \label{tab:nb_rp_table}
 \small
-\resizebox{\textwidth}{!}{%
+% Disable next line for journal submission
+% \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lllllll@{}}
 \toprule
                             & \multicolumn{6}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-7} 
@@ -807,7 +810,7 @@ E$_\text{p}$ (MeV)          & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ 
 \ce{^{92m}Nb}\,($\sigma_i$) & $43.7\pm2.4$            & $47.3\pm2.4$            & $49.8\pm2.6$            & $52.9\pm2.8$            & $55.3\pm3.1$            & $59.9\pm3.9$            \\
 \ce{^{93m}Mo}\,($\sigma_i$) & $0.97\pm0.20$           & $1.29\pm0.15$           & $1.62\pm0.24$           & $1.85\pm0.15$           & $1.86\pm0.14$           & $2.00\pm0.15$               \\ \bottomrule
 \end{tabular}
-}
+% }
 \end{table}
 
 
@@ -1037,10 +1040,14 @@ because their behavior is extremely sensitive  to  more dominant  channels.
 The three residual nuclei that meet all of the above criteria for which there is an independent measurement of the residual production cross section are \ce{^{86}Y}, \ce{^{90}Mo}, and \ce{^{90}Nb}.
 
 
-The \ce{^{93}Nb}(p,$\alpha$p3n)\ce{^{86}Y} reaction channel, which peaks at approximately \mbox{70 MeV}, is well within the compound regime for the entire energy region of this experiment.
+The \ce{^{93}Nb}(p,$\alpha$p3n)\ce{^{86}Y} reaction channel, which peaks at approximately \mbox{70 MeV}, is well within the compound regime for the entire energy region of this experiment (\autoref{fig:86Y}).
 The data collected on this residual is consistent with the one other data set available, taken in 1997 by Michel \emph{et al.} \cite{MICHEL1997153}. 
-The \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} and \ce{^{93}Nb}(p,p3n)\ce{^{90}Nb} channels both peak early in the energy region, around 50 MeV, and the data clearly show the full rise, peak, and fall of the compound cross section. 
-In both of these channels, this data  is consistent with the data by Titarenko \emph{et al.} in 2011\cite{Titarenko2011}.
+The \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} and \ce{^{93}Nb}(p,p3n)\ce{^{90}Nb} channels both peak early in the energy region, around 50 MeV, and the data clearly show the full rise, peak, and fall of the compound cross section (\autoref{fig:90Mo} \& \ref{fig:90Nb}). 
+In both of these channels, this data  is consistent with the data by Titarenko \emph{et al.} in 2011 \cite{Titarenko2011}.
+
+The \ce{^{90}Nb} production cross section exhibits a persistent pre-equilibrium \enquote{tail} that keeps the channel open  well after the compound cross section has fallen away. 
+TALYS, TENDL, and CoH seem to have the correct shape for this pre-equilibrium cross section, with magnitudes that are just slightly too low.
+EMPIRE, however, does not level off  as much as the data and the other codes are seen to, and misses the high-energy data points.
 
 \begin{figure}
  \centering
@@ -1083,9 +1090,7 @@ For \ce{^{86}Y}, CoH and EMPIRE also predict smaller cross sections than the dat
 The magnitude of the peak in the CoH calculation for \ce{^{90}Mo}  is consistent  with the data, while EMPIRE predicts a cross section that is approximately the same magnitude as that of TALYS.
 \ce{^{90}Nb} is one of the strongest measured channels, approximately 10\% of the total reaction cross section, and the values from the three codes are all consistent, but  too small, in magnitude.
 
-The \ce{^{90}Nb} production cross section exhibits a persistent pre-equilibrium \enquote{tail} that keeps the channel open  well after the compound cross section has fallen away. 
-TALYS, TENDL, and CoH seem to have the correct shape for this pre-equilibrium cross section, with magnitudes that are just slightly too low.
-EMPIRE, however, does not level off  as much as the data and the other codes are seen to, and misses the high-energy data points.
+
 
           
 % \section{Discussion}
