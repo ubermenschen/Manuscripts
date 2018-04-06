@@ -273,6 +273,14 @@
 % Remove a), b), etc labels from subfigs
 \captionsetup[subfigure]{labelformat=empty}
 
+% Sick of fighting siunitx - consistent text micro symbol
+% DO NOT uncomment this!!! or else broken unicode (Âţ)
+% \sisetup{math-micro=\text{µ},text-micro=µ}
+% \si\micro
+\newcommand{\mmicro}{\si\micro} 
+
+\usepackage{adjustbox}
+
 
 \makeatletter
 % Make common definition of mean
@@ -537,7 +545,7 @@ MCNP \sep  LANL
  
 We gratefully acknowledge support for this work from the United States Department of Energy, Office of Science via the Isotope Development and Production for Research and Applications subprogram in the Office of Nuclear Physics. 
 This work has been carried out  under the auspices of the U.S. Department of Energy by  Lawrence Berkeley National Laboratory and the U.S. Nuclear Data Program under contract \# DE-AC02-05CH11231.
-This research was performed under appointment to the Rickover Fellowship Program in Nuclear Engineering, sponsored by the Naval Reactors Division of the U.S. Department of Energy
+This research was performed under appointment to the Rickover Fellowship Program in Nuclear Engineering, sponsored by the Naval Reactors Division of the U.S. Department of Energy.
 Additional support has been provided by the U.S. Nuclear Regulatory Commission.
 
 
