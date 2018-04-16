@@ -273,7 +273,7 @@ The Monte Carlo N-Particle transport code  MCNP6 \cite{goorley2013initial} was u
 The neutron spectral distribution is also broadened by the temperature of the target.  
 This gives rise to a slight difference in the neutron energy at the target location \cite{Waltz2016a}, which has been included in our stated energy window.
 This spectrum, peaked around 2.777 MeV, illustrates the forward-focused kinematics of the DD reaction subtended by the co-loaded sample foils.
- As expected, the  production target is the dominant source of scatter - approximately 0.78\%  of the neutrons incident on the foils can be attributed to scatter in the neutron production target.  
+ As expected, the  production target is the dominant source of scatter --- approximately 0.78\%  of the neutrons incident on the foils can be attributed to scatter in the neutron production target.  
  
 
 % \comment{\autoref{fig:mcnp_flux} to be updated with new data from Joe - no change in results, purely cosmetic.}
@@ -372,14 +372,14 @@ These efficiencies, along with gamma ray intensities for each transition, were u
 \centering
 \caption{Gamma-ray properties for the decay lines measured in the present work.}
 \label{tab:decay_props}
-\begin{tabular}{@{}cccc@{}}
+\begin{tabular}{@{}llll@{}}
 \toprule
 Nuclide & \begin{tabular}[c]{@{}c@{}}Gamma-Ray \\ Energy (keV)\end{tabular} & Intensity (\%) & $t_{1/2}$        \\ \midrule
-\ce{^{64}Cu} \cite{Singh2007}    & 511.0                                                             & 35.2 $\pm$ 0.4        & 12.701 h   \\
-\ce{^{47}Sc} \cite{Burrows2007}    & 159.381                                                           & 68.3 $\pm$ 0.4      & 3.3492 d   \\
-\ce{^{113m}In} \cite{Blachot2010a}  & 391.698                                                           & 64.94 $\pm$ 0.17    & 99.476 m  \\
-\ce{^{115m}In} \cite{Hansen1974} & 336.241                                                           & 45.9 $\pm$ 0.1      & 4.486 h    \\
-\ce{^{116m}In} \cite{Blachot2010}  & 416.90                                                            & 27.2 $\pm$ 0.4      & 54.29 m   \\ \bottomrule
+\ce{^{64}Cu} \cite{Singh2007}    & 511.0                                                             & 35.2\,$\pm$\,0.4        & 12.701 h   \\
+\ce{^{47}Sc} \cite{Burrows2007}    & 159.381                                                           & 68.3\,$\pm$\,0.4      & 3.3492 d   \\
+\ce{^{113m}In} \cite{Blachot2010a}  & 391.698                                                           & 64.94\,$\pm$\,0.17    & 99.476 m  \\
+\ce{^{115m}In} \cite{Hansen1974} & 336.241                                                           & 45.9\,$\pm$\,0.1      & 4.486 h    \\
+\ce{^{116m}In} \cite{Blachot2010}  & 416.90                                                            & 27.2\,$\pm$\,0.4      & 54.29 m   \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -437,8 +437,8 @@ For each experiment the detector dead time was verified to be less than 5\%.
 
 For the  \ce{^{47}Sc} production experiments, the foils were counted simultaneously using a planar LEPS detector.
 For the \ce{^{64}Cu} production experiments, the Indium foil was first counted separately using an 80\% HPGe detector, to capture the short-lived Indium activities.
-This is due to the fact that the contaminant \ce{^{115}In}(n,$\gamma$) reaction results in the production of \ce{^{116m}In} which has a 54 minute half-life and results in the production of 1097 keV (58.5\% branching), 1293 keV (84.8\% branching) and 2112 keV (15.09\% branching) gamma-rays that in turn produce a significant number of 511 keV gammas from pair-production followed by annihilation \cite{Blachot2010}.
-The foils were counted together again after approximately 4 hours of separate collection, to allow for nearly all of the produced \ce{^{116}In} to decay.
+This is due to the fact that the contaminant \ce{^{115}In}(n,$\gamma$) reaction results in the production of \ce{^{116m}In} which has a 54 min half-life and results in the production of 1097 keV (58.5\% branching), 1293 keV (84.8\% branching) and 2112 keV (15.09\% branching) gamma-rays that in turn produce a significant number of 511 keV gammas from pair-production followed by annihilation \cite{Blachot2010}.
+The foils were counted together again after approximately 4 h of separate collection, to allow for nearly all of the produced \ce{^{116}In} to decay.
 % Example spectra for each production pathway can be seen in Figures \autoref{fig:spectra_a} and \autoref{fig:spectra_b}.
 Example spectra for each production pathway can be seen in Figures \autoref{fig:main_spectra}a and \autoref{fig:main_spectra}b.
 
@@ -478,7 +478,7 @@ Example spectra for each production pathway can be seen in Figures \autoref{fig:
 \end{figure*}
 
 
-To verify that each peak corresponds to the assigned decay product, spectra were acquired in a sequence of 15 - 30 minute intervals.
+To verify that each peak corresponds to the assigned decay product, spectra were acquired in a sequence of 15--30 min intervals.
 The resulting time series displayed in Figures \ref{fig:decay_curves}a - \ref{fig:decay_curves}d allow the fitting of exponential decay functions for each nuclide and comparison of the measured half-life with literature values.
 The fitted functions for each transition agree (at the 1$\sigma$ confidence level) with accepted half-lives \cite{Burrows2007,Singh2007,Blachot2010a,Blachot2012,Blachot2010}, confirming the respective peak assignments.
 
@@ -555,10 +555,10 @@ Target Foil Mass (g)               & 0.538         & 0.521       & 0.542 & 0.337
 Irradiation Time, $t_i$ (s)           & 10800         & 10800       & 12629 & 11837     & 14254   \\ 
 Delay Time, $t_d$ (s)             & 1785         & 16185       & 2290 & 89408    & 2390   \\ 
 Counting Time, $t_c$ (s)               & 91188        & 54008       & 54002 & 86424    & 93631   \\ 
-Photopeak Counts, 336 keV (\ce{^{115m}In}) & 113665 $\pm$ 1490 & 76321 $\pm$ 275 & 39895 $\pm$ 201 & 2122 $\pm$ 55 & 55102 $\pm$ 268   \\ 
-Photopeak Counts, 391 keV (\ce{^{113m}In}) & 3382 $\pm$ 171    & 890 $\pm$ 40    & 3505 $\pm$ 54 &    \hrulefill       &  \hrulefill      \\ 
-Photopeak Counts, 511 keV (\ce{^{64}Cu})   & 16055 $\pm$ 643   & 12852 $\pm$ 118 & 27164 $\pm$ 159 &    \hrulefill       &   \hrulefill     \\ 
-Photopeak Counts, 159 keV (\ce{^{47}Sc})   &   \hrulefill            &    \hrulefill         &   \hrulefill    & 3877 $\pm$ 83 & 5544 $\pm$ 257 \\ \bottomrule
+Photopeak Counts, 336 keV (\ce{^{115m}In}) & 113665\,$\pm$\,1490 & 76321\,$\pm$\,275 & 39895\,$\pm$\,201 & 2122\,$\pm$\,55 & 55102\,$\pm$\,268   \\ 
+Photopeak Counts, 391 keV (\ce{^{113m}In}) & 3382\,$\pm$\,171    & 890\,$\pm$\,40    & 3505\,$\pm$\,54 &    \hrulefill       &  \hrulefill      \\ 
+Photopeak Counts, 511 keV (\ce{^{64}Cu})   & 16055\,$\pm$\,643   & 12852\,$\pm$\,118 & 27164\,$\pm$\,159 &    \hrulefill       &   \hrulefill     \\ 
+Photopeak Counts, 159 keV (\ce{^{47}Sc})   &   \hrulefill            &    \hrulefill         &   \hrulefill    & 3877\,$\pm$\,83 & 5544\,$\pm$\,257 \\ \bottomrule
 \end{tabular}%
 }
 \end{table*}
@@ -569,7 +569,7 @@ Photopeak Counts, 159 keV (\ce{^{47}Sc})   &   \hrulefill            &    \hrule
 
 As shown in \autoref{sec:sample_loading} above, the effective neutron energy depends on the angle range subtended by the sample with respect to the incident deuteron beam.
  In order to determine this angle it is necessary to measure the lateral location of the beam with respect to the sample location.
- This centroid position of the beam was measured using a 3 x 3 array of 0.5 cm diameter indium foils.
+ This centroid position of the beam was measured using a 3 $\times$ 3 array of 0.5 cm diameter indium foils.
  The relative activity of these foils was then determined via post-irradiation counting of the \ce{^{115m}In} isomer ($t_{1/2}$ = 4.486 h) \cite{Blachot2012}.
  \autoref{fig:in_heat_plot}  shows the measured activities for these 9 indium foils.
  Based on these values we are able to verify that the beam was indeed vertically centered on the middle of the zinc and titanium samples,  with a slight asymmetry of the neutron flux in the horizontal direction, accounted for in MCNP6 modeling of the energy-differential neutron flux. This small asymmetry likely contributes to the effective energy bin being lower than the 2.78 MeV expected for 0\si{\degree}\ \degree\ neutron emission angle in \autoref{fig:scatt_angle}.
@@ -687,7 +687,7 @@ where:
 \end{itemize}
 
 In addition to the \ce{^{115}In}(n,n')\ce{^{115m}In} reference cross section, the \ce{^{115}In}(n,$\gamma$)\ce{^{116m}In}  ($t_{1/2}$ = 54.29 min \cite{Blachot2010}) activity can be used to determine the  \ce{^{64}Zn}(n,p) and \ce{^{47}Ti}(n,p) cross section.
- The capture activity is potentially subject to contamination from lower energy, especially thermal, \enquote{room return} neutrons since the (n,$\gamma$) cross section at 25 meV is approximately 2,000 times greater than at 2.7 MeV  \cite{Capote2012,zsolnay2012technical}.
+ The capture activity is potentially subject to contamination from lower energy, especially thermal, \enquote{room return} neutrons since the (n,$\gamma$) cross section at 25 meV is approximately 2000 times greater than at 2.7 MeV  \cite{Capote2012,zsolnay2012technical}.
    
 
 % \comment{cite relevant NDS article}
@@ -710,7 +710,7 @@ This total  uncertainty is plotted as the cross section uncertainty in \autoref{
 The largest source of systematic uncertainty in the cross section determined via the \enquote{ratio approach} is the 2.586\% uncertainty in the \ce{^{115}In}(n,n')\ce{^{115m}In}  cross section and the 1.447\% uncertainty in the \ce{^{113}In}(n,n')\ce{^{113m}In}  cross section  \cite{Capote2012,zsolnay2012technical}.
  An additional uncertainty arises from the fact that the Zn/Ti samples are not located at exactly the same location as the indium monitor foils, and are therefore not subject to precisely the same neutron flux.
  However, the MCNP6 simulations shown in \autoref{fig:mcnp_flux} indicate that the difference in the flux that the two foils are subjected to is less than 1\%, negligible compared to other sources of systematic uncertainty.
- Other monitor foils could be used instead of indium, with \ce{^{58}Ni}(n,p)\ce{^{58}Co} (\ce{^{58}Co} $t_{1/2}$ = 70.86 d \cite{Nesaraja2010}) being one possible candidate, but the 4.486 hour and 99.476 minute half-lives of the \ce{^{115m}In} and \ce{^{113m}In} isomers \cite{Blachot2012,Blachot2010a}, respectively, make indium a better candidate for measuring the production of radionuclides with lifetimes much less than 71 days.
+ Other monitor foils could be used instead of indium, with \ce{^{58}Ni}(n,p)\ce{^{58}Co} (\ce{^{58}Co} $t_{1/2}$ = 70.86 d \cite{Nesaraja2010}) being one possible candidate, but the 4.486 h and 99.476 min half-lives of the \ce{^{115m}In} and \ce{^{113m}In} isomers \cite{Blachot2012,Blachot2010a}, respectively, make indium a better candidate for measuring the production of radionuclides with lifetimes much less than 71 days.
 The largest source of uncertainty in energy window arises from uncertainties in the actual dimension of the deuteron beam on the production target.
  We believe, based on \enquote{burn marks} on the neutron production target, that the beam was approximately circular, with a flat intensity profile and a 5 mm diameter.
  However, every 1 mm change in the beam radius would cause a 0.028 MeV shift in the centroid and a 0.053 MeV increase in the effective energy bin width, which places a natural limit on the reported effective neutron energy.
@@ -754,9 +754,9 @@ These values are recorded in \autoref{tab:xs_results}.
 % \begin{tabular}{@{}cc@{}}
 % \toprule
 % h                                 & $\sigma$($E_n$ = 2.7645 MeV) (mb)                                                                     \\ \midrule
-% \ce{^{64}Zn}(n,p)\ce{^{64}Cu} (relative to \ce{^{113}In}) & \begin{tabular}[c]{@{}c@{}}45.953 $\pm$ 3.351, \\ 46.493 $\pm$ 2.805, \\ 46.9 $\pm$ 3.189\end{tabular}  \\
-% \ce{^{64}Zn}(n,p)\ce{^{64}Cu} (relative to \ce{^{115}In}) & \begin{tabular}[c]{@{}c@{}}49.716 $\pm$ 3.335, \\ 49.011 $\pm$ 2.698, \\ XXXX $\pm$ XXXXXX\end{tabular} \\
-% \ce{^{47}Ti}(n,p)\ce{^{47}Sc} (relative to \ce{^{115}In}) & \begin{tabular}[c]{@{}c@{}}25.901 $\pm$ 1.7089, \\ XXXXX $\pm$ XXXXX\end{tabular}                   \\ \bottomrule
+% \ce{^{64}Zn}(n,p)\ce{^{64}Cu} (relative to \ce{^{113}In}) & \begin{tabular}[c]{@{}c@{}}45.953\,$\pm$\,3.351, \\ 46.493\,$\pm$\,2.805, \\ 46.9\,$\pm$\,3.189\end{tabular}  \\
+% \ce{^{64}Zn}(n,p)\ce{^{64}Cu} (relative to \ce{^{115}In}) & \begin{tabular}[c]{@{}c@{}}49.716\,$\pm$\,3.335, \\ 49.011\,$\pm$\,2.698, \\ XXXX\,$\pm$\,XXXXXX\end{tabular} \\
+% \ce{^{47}Ti}(n,p)\ce{^{47}Sc} (relative to \ce{^{115}In}) & \begin{tabular}[c]{@{}c@{}}25.901\,$\pm$\,1.7089, \\ XXXXX\,$\pm$\,XXXXX\end{tabular}                   \\ \bottomrule
 % \end{tabular}
 % \end{table}
 
@@ -784,7 +784,7 @@ Reaction                   & \multirows{1}*{\minitab[c]{$\sigma$($E_n$ = 2.76$^{
 % \comment{Karl:  \enquote{For the figures, let me suggest you make a red solid rectangle whose dimensions represent the error bars in both energy and cross section.  Then put a large red circle around it, whose diameter is of order 10\% of the size of the whole graph, to focus the eyes.  In the caption, mention that the size of the rectangle represents the error limits.}  Lee: \enquote{I would suggest that you zoom in on the energy and cross section value we measured (say 2.5-3.0 MeV and 10-70 mb).  Use a thicker line for our data point and/or make it larger. - Lee}}
 
 Figures \ref{fig:sc_xs} and \ref{fig:cu_xs_zoom} present the determined cross sections for  production of  \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu}  relative to literature data retrieved from EXFOR \cite{Otuka2014272,PhysRev.114.565,doi:10.1143/JPSJ.17.1215,paulsen1967cross,doi:10.1139/p72-336,Smith1975,King1979,Hussain1983,Ikeda1991,Shimizu2004543,PhysRev.126.271,Armitage1967,Ikeda1990,Senga2000,Shimizu2004975}.
-The weighted average of the measurements give   49.3 $\pm$ 2.6 mb (relative to \ce{^{113}In}) and 46.4 $\pm$ 1.7 mb (relative to \ce{^{115}In})   for \ce{^{64}Zn}(n,p)\ce{^{64}Cu},   and 26.26 $\pm$  0.82 mb for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}.
+The weighted average of the measurements give   49.3\,$\pm$\,2.6 mb (relative to \ce{^{113}In}) and 46.4\,$\pm$\,1.7 mb (relative to \ce{^{115}In})   for \ce{^{64}Zn}(n,p)\ce{^{64}Cu},   and 26.26\,$\pm$\, 0.82 mb for  \ce{^{47}Ti}(n,p)\ce{^{47}Sc}.
 The \ce{^{64}Zn}(n,p)\ce{^{64}Cu} cross section measured in this work is consistent with  other literature results, but with a smaller uncertainty (\textless 5\%).
 However, in the case of the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} cross section, our results are consistent with the results from the Smith (1975), Armitage (1967), and Ikeda (1990) groups \cite{Smith1975,Armitage1967,Ikeda1990} and both the ENDF/B-VII.1 \cite{Chadwick2011} and TALYS \cite{Koning2012}  values, but significantly below the results from the Hussain (1983), Gonzalez (1962), and Shimizu (2004) groups \cite{Hussain1983,PhysRev.126.271,Shimizu2004975}.
  
@@ -892,7 +892,7 @@ R_{production} = R_{decay} = \lambda N_{product}
 
 
 While the saturation activity represents the maximum activity that can be made at a generator with a given total neutron output, there may be situations where either a smaller activity is needed, or a shorter irradiation is desired. 
-In this case, it is useful to introduce a neutron utilization factor ($\eta_x$).  $\eta_x$ is the constant of proportionality between $R_n$, the neutron source output (in neutrons/second), and the saturation activity:
+In this case, it is useful to introduce a neutron utilization factor ($\eta_x$).  $\eta_x$ is the constant of proportionality between $R_n$, the neutron source output (in neutrons/s), and the saturation activity:
 
 \begin{equation}
 A_{saturation} = \eta_x R_n
@@ -965,11 +965,11 @@ A factor of 10 in $\eta_x$ could easily be gained through use of targets  1-cm i
  
  
  
- \section{Conclusion and Future Work}
+ \section{Conclusion and future work}
 
 Using activation methods on thin foils, the \ce{^{47}Ti}(n,p)\ce{^{47}Sc} and \ce{^{64}Zn}(n,p)\ce{^{64}Cu} production cross sections were measured for  2.76$^{+0.01}_{-0.02}$ MeV neutrons produced using the High Flux Neutron Generator (HFNG) at UC Berkeley.
 The cross sections were measured with less than  5\% uncertainty relative to the well-known \ce{^{115}In}(n,n')\ce{^{115m}In} and \ce{^{113}In}(n,n')\ce{^{113m}In} fast neutron cross sections \cite{Capote2012,zsolnay2012technical}.
-The measured values of  26.26 $\pm$  0.82 mb and  49.3 $\pm$ 2.6 mb (relative to \ce{^{113}In}) or 46.4 $\pm$ 1.7 mb (relative to \ce{^{115}In}), respectively, are consistent with earlier experimental data and theoretical models, but have smaller uncertainties than previous measurements.
+The measured values of  26.26\,$\pm$\, 0.82 mb and  49.3\,$\pm$\,2.6 mb (relative to \ce{^{113}In}) or 46.4\,$\pm$\,1.7 mb (relative to \ce{^{115}In}), respectively, are consistent with earlier experimental data and theoretical models, but have smaller uncertainties than previous measurements.
  
  In addition, the   production of the \ce{^{116}In}  via the \ce{^{115}In}(n,$\gamma$) reaction was close to the value one would expect given an effective incident neutron energy of 2.45 MeV.  
  While this is not consistent with the average neutron energy at the target location (2.76$^{+0.01}_{-0.02}$ MeV), the fact that it was close indicates the paucity of thermal neutrons in this central location.  
@@ -979,7 +979,7 @@ The use of DD neutron generators can be an efficient method for the measurement 
 
 
 % In closing, we have measured the \ce{^{64}Cu}(n,p) and \ce{^{47}Ti}(n,p) cross sections for 2.765 MeV incident neutrons.
- It is worth noting that at the time of publication, the  HFNG is now operating at close to 10$^9$ n/sec, with
+ It is worth noting that at the time of publication, the  HFNG is now operating at close to 10$^9$ n/s, with
 a clear path towards 10$^{10}$.
 %  In the future we plan to perform additional cross section measurements at the HFNG, and to explore methods to extract the radionuclides from the sample using both chemical and physical separation techniques.
  Future work will involve the continued measurement of the (n,p) production cross sections for various other emerging therapeutic and diagnostic radioisotopes, to expand the toolset of options available for modern medical imaging and cancer therapy.
