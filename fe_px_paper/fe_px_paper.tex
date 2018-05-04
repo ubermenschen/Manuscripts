@@ -18,6 +18,10 @@
 %  3)  latex apssamp.tex
 %  4)  latex apssamp.tex
 %
+% This file may be formatted in either the \texttt{preprint} or
+% \texttt{reprint} style. \texttt{reprint} format mimics final journal output. 
+% Either format may be used for submission purposes. \texttt{letter} sized paper should
+% be used when submitting to APS journals.
 \documentclass[%
  reprint,
 superscriptaddress,
@@ -58,12 +62,61 @@ prc,
 %%height=10in,a5paper,hmargin={3cm,0.8in},
 %]{geometry}
 
+
+\usepackage[american]{babel}
+\usepackage{amsmath}
+\usepackage[version=3]{mhchem} 
+% \usepackage{fixltx2e}
+% \usepackage{refcount}
+% \usepackage{siunitx}
+% \usepackage{lastpage}
+% \usepackage{textcomp}
+\usepackage{mathtools}
+
+\usepackage{xfrac}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+% \usepackage{cool}
+% \usepackage{cancel}
+\usepackage{microtype}
+\usepackage{listings}
+% \usepackage{mcode}
+\usepackage [autostyle, english = american]{csquotes}
+% \usepackage{longtable}
+% \usepackage{subcaption}
+\usepackage{booktabs,siunitx}
+\usepackage{gensymb}
+\usepackage[normalem]{ulem}
+
+\newcommand{\etal}{\emph{et\,al.}} 
+
+
+% To-do comments
+\usepackage[colorinlistoftodos]{todonotes}
+\newcommand{\comment}[1]{\todo[color=blue!20!white,inline]{ASV: #1}} 
+\newcommand{\cmmnt}[1]{}
+
+
+% Red highlighting quick macro
+\newcommand{\textred}[1]{\textcolor{red}{ #1}}
+
+% Sick of fighting siunitx - consistent text micro symbol
+\usepackage{siunitx}
+% DO NOT uncomment this!!! or else broken unicode (Âţ)
+% \sisetup{math-micro=\text{µ},text-micro=µ}
+% \si\micro
+\newcommand{\mmicro}{\si\micro} 
+
+
+
+
+
 \begin{document}
 
 %\preprint{APS/123-QED}
 
 % \title{Measurement of nuclear excitation functions for proton induced reactions  (E\texorpdfstring{$_{\text{p}}$\,=\,}{Ep = ???--55}???--55 MeV) on natural Fe}% Force line breaks with \\
-\title{Measurement of nuclear excitation functions for proton induced reactions (E$_{\text{p}}$\,=\,???--55 MeV) on natural Fe}% Force line breaks with \\
+\title{Measurement of nuclear excitation functions for proton induced reactions (E\texorpdfstring{$_{\text{p}}$\,=\,???--55\,}{Ep = ???--55 }MeV) on natural Fe}% Force line breaks with \\
 % \thanks{A footnote to the article title}%
 
 \author{Andrew S. Voyles}
@@ -81,6 +134,9 @@ prc,
 %  Authors' institution and/or address\\
 %  This line break forced with \textbackslash\textbackslash
 }%
+
+\author{M. Shamsuzzoha Basunia}
+\affiliation{Nuclear Science Division, Lawrence Berkeley National Laboratory,  Berkeley, CA 94720, USA}
 \author{Lee A. Bernstein}
 \affiliation{Nuclear Science Division, Lawrence Berkeley National Laboratory,  Berkeley, CA 94720, USA}
 \affiliation{%
@@ -155,7 +211,8 @@ prc,
 
 \end{abstract}
 
-\pacs{Valid PACS appear here}% PACS, the Physics and Astronomy
+% Not using PACS anymore - deprecated in favor of PhySH now?
+% \pacs{Valid PACS appear here}% PACS, the Physics and Astronomy
                              % Classification Scheme.
 %\keywords{Suggested keywords}%Use showkeys class option if keyword
                               %display desired
@@ -163,9 +220,34 @@ prc,
 
 %\tableofcontents
 
+%%
+%%  To-do list for comments
+%%
+\listoftodos
+
 
 
 \input{./fe_body_text}
+
+
+
+ \section{Acknowledgements}
+ 
+%  Stephen Graves - consulting for methodology, guidance.
+ 
+ The authors would like to particularly acknowledge the assistance and support of  
+%  Michael Gallegos and Don Dry in the LANL C-NR Countroom, David Reass and Mike Connors at LANSCE-IPF, and the LANSCE Accelerator Operations staff. 
+(mention staff of the 88 )
+ 
+% We gratefully acknowledge support for this work from the United States Department of Energy, Office of Science via the Isotope Development and Production for Research and Applications subprogram in the Office of Nuclear Physics. 
+This work has been carried out  under the auspices of the U.S. Department of Energy by  Lawrence Berkeley National Laboratory and the U.S. Nuclear Data Program under contract \# DE-AC02-05CH11231.
+This research was performed under appointment to the Rickover Fellowship Program in Nuclear Engineering, sponsored by the Naval Reactors Division of the U.S. Department of Energy
+Additional support has been provided by the U.S. Nuclear Regulatory Commission.
+
+
+
+ 
+This research used the Savio computational cluster resource provided by the Berkeley Research Computing program at the University of California, Berkeley (supported by the UC Berkeley Chancellor, Vice Chancellor for Research, and Chief Information Officer).
 
 
 
@@ -177,6 +259,10 @@ prc,
 % 
 % 
 % \input{./fe_appendix_text}
+
+
+\bibliography{../../library}
+
 
 
 \end{document}

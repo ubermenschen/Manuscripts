@@ -218,15 +218,17 @@ SS profile monitor SS-6 & 131.5 \mmicro m                                       
 \end{table}
 
 
-Both target stacks were assembled and separately irradiated at the  Lawrence Berkeley National Laboratory  (LBNL), using the 88-Inch Cyclotron, a  K=140 sector-focused cyclotron.
-The 25\,MeV stack was irradiated for approximately 20\,minutes with a nominal current of 100\,nA,  for an anticipated integral current of 31.61\,nAh. 
-The 55\,MeV stack was irradiated for approximately 10\,minutes with a nominal current of 120\,nA,  for an anticipated integral current of 20.78\,nAh. 
+Both target stacks were assembled and irradiated at the  Lawrence Berkeley National Laboratory  (LBNL), using the 88-Inch Cyclotron, a  K=140 sector-focused cyclotron.
+The 25\,MeV stack was irradiated for approximately 20 minutes with a nominal current of 100\,nA,  for an anticipated integral current of 31.61\,nAh. 
+The 55\,MeV stack was irradiated for approximately 10 minutes with a nominal current of 120\,nA,  for an anticipated integral current of 20.78\,nAh. 
 The beam current, measured using a current integrator on the electrically-isolated beamline, remained stable under these conditions for the duration of each irradiation.
-The proton beam incident upon each stack's upstream stainless steel profile monitor had a maximum energy of either 25 or 55\,MeV, with an approximately 1.5\% energy width due to multi-turn extraction --- these energy profiles were used for all later analysis.
-Following end-of-bombardment (EoB), each stack was removed from the beamline and disassembled.
-All activated foils were transported to a counting lab for gamma spectrometry, which started approximately 30\,minutes following the end of each irradiation.
+The proton beam incident upon each stack’s upstream stainless steel profile monitor had a maximum energy of either 25 or 55\,MeV, with an approximately 1.5\% energy width due to multi-turn extraction --- these energy profile were used for all later analysis.
 
 
+Two stacks were run at two different initial beam energies: 25 MeV and 55 MeV
+protons. The experimental work was conducted at the 88-Inch K-140 cyclotron at
+Lawrence Berkeley National Laboratory (LBNL) in Berkeley, California. Irradiation
+took place on the 15th and 16th of December 2016.
 
 
 % The \texttt{widetext} environment will make the text the width of the
