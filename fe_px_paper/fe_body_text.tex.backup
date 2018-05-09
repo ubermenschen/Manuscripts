@@ -39,9 +39,9 @@ Novel applications are being explored for several radionuclides whose production
 The work described herein follows the  methods utilized in our recent work and established by Graves \etal\ 
 % for the measurement of cross sections in stacked target irradiations   
 for monitor reaction characterization of beam energy and fluence in stacked target irradiations \cite{Voyles2018,Graves2016}.
+Preliminary analysis  was previously reported in the Master's thesis of one co-author, but the conclusive results of this work are described here  \cite{springer2017investigation}.
 
-
-
+\comment{Do we really need to cite Alex's thesis?}
 
 
 \subsection{\label{sec:target_design_fe}Stacked-target design}
@@ -218,17 +218,15 @@ SS profile monitor SS-6 & 131.5 \mmicro m                                       
 \end{table}
 
 
-Both target stacks were assembled and irradiated at the  Lawrence Berkeley National Laboratory  (LBNL), using the 88-Inch Cyclotron, a  K=140 sector-focused cyclotron.
-The 25\,MeV stack was irradiated for approximately 20 minutes with a nominal current of 100\,nA,  for an anticipated integral current of 31.61\,nAh. 
-The 55\,MeV stack was irradiated for approximately 10 minutes with a nominal current of 120\,nA,  for an anticipated integral current of 20.78\,nAh. 
+Both target stacks were assembled and separately irradiated at the  Lawrence Berkeley National Laboratory  (LBNL), using the 88-Inch Cyclotron, a  K=140 sector-focused cyclotron.
+The 25\,MeV stack was irradiated for approximately 20\,minutes with a nominal current of 100\,nA,  for an anticipated integral current of 31.61\,nAh. 
+The 55\,MeV stack was irradiated for approximately 10\,minutes with a nominal current of 120\,nA,  for an anticipated integral current of 20.78\,nAh. 
 The beam current, measured using a current integrator on the electrically-isolated beamline, remained stable under these conditions for the duration of each irradiation.
-The proton beam incident upon each stack’s upstream stainless steel profile monitor had a maximum energy of either 25 or 55\,MeV, with an approximately 1.5\% energy width due to multi-turn extraction --- these energy profile were used for all later analysis.
+The proton beam incident upon each stack's upstream stainless steel profile monitor had a maximum energy of either 25 or 55\,MeV, with an approximately 1.5\% energy width due to multi-turn extraction --- these energy profiles were used for all later analysis.
+Following end-of-bombardment (EoB), each stack was removed from the beamline and disassembled.
+All activated foils were transported to a counting lab for gamma spectrometry, which started approximately 30\,minutes following the end of each irradiation.
 
 
-Two stacks were run at two different initial beam energies: 25 MeV and 55 MeV
-protons. The experimental work was conducted at the 88-Inch K-140 cyclotron at
-Lawrence Berkeley National Laboratory (LBNL) in Berkeley, California. Irradiation
-took place on the 15th and 16th of December 2016.
 
 
 % The \texttt{widetext} environment will make the text the width of the
@@ -238,9 +236,71 @@ took place on the 15th and 16th of December 2016.
 % The width-changing commands only take effect in two-column formatting. 
 % There is no effect if text is in a single column.
 
-\subsection{\label{sec:spectroscopy_fe}Measurement of induced activities}
+\subsection{\label{sec:spectroscopy_fe}Quantification of induced activities}
 
-Blah blah blah
+\comment{Get detector specs from Alex}
+
+% For consistency, a
+A single detector was used in this measurement, an ORTEC \textred{GEM Series (model \#GEM10P4-70)}  High-Purity Germanium (HPGe) detector.
+The detector is a nitrogen-cooled \textred{coaxial p-type HPGe with a 1 mm aluminum window, and a 49.2 mm diameter, 27.9 mm long crystal}.
+Samples were counted at fixed positions ranging 5--60  cm (5\% maximum permissible dead-time) from the front face of the detector, with a series of standard calibration sources used to determine energy and efficiency for each position.
+The foils were counted  for a period of 4 weeks following end-of-bombardment (EoB), to accurately quantify all induced activities.
+% An example of one of the gamma-ray spectra collected in such a fashion is shown in \autoref{fig:gspec}.
+For all spectra collected, net peak areas were fitted using the gamma spectrometry analysis code FitzPeaks \cite{fitzgerald2009fitzpeaks}, which utilizes the SAMPO fitting algorithms for gamma ray spectra \cite{Aarnio2001}.
+% , which has been shown to perform best in comparisons with other common analysis codes \cite{Jackman2014}.
+%, due to its peak fitting algorithms and incorporation  of calibrated detector-specific peak shapes and widths. 
+
+
+
+% Following  acquisition, the decaying product nuclei corresponding to each observed peak in the collected spectra were identified.
+The net  counts in each fitted gamma-ray photopeak were converted into  activities for  decay of the activation products, using calibrated detector efficiencies and gamma-ray intensities for each transition.
+% and  corrections for gamma-ray attenuation within each foil packet
+% The calibrated detector efficiencies, along with gamma-ray intensities for each transition and  corrections for gamma-ray attenuation within each foil packet, were used to convert the net  counts in each fitted gamma-ray photopeak into an activity for the decay of the activation products.  
+The nuclear decay data used in this work is tabulated, for reference, in \autoref{tab:fe_nudat_table_monitors} and \autoref{tab:fe_nudat_table_nb} of Appendix \ref{sec:fe_data}.
+Corrections for gamma-ray attenuation within each foil packet
+Data for photon attenuation coefficients were taken from the XCOM photon cross sections database  \cite{berger2011xcom}.
+% As nearly all of the product nuclei have multiple high-intensity gamma-rays, decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), as well as multiple independent activity measurements at each time point, based on each of its observed gamma-rays.
+% Decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), and as nearly all of the product nuclei have multiple high-intensity gamma-rays, this provided independent activity measurements at each time point.
+% activity for each gamma-ray possesses a 
+The total propagated uncertainty of the measured activity is the quadrature sum of the uncertainty in  fitted peak areas, uncertainty in detector efficiency calibration, and uncertainty in the gamma-ray branching ratio data.
+
+
+
+
+
+
+Since many of the reaction products populated by energetic protons are more than one decay off of stability, many of these are produced not only  directly by reactions, but also indirectly by decay down a mass chain.
+To this end, it is useful to differentiate between the types of cross sections reported in this work. 
+For the first observable product nuclei in a mass chain, its (p,x) cross section will be reported as a cumulative cross section ($\sigma_c$), which is the sum of direct production of that nucleus, as well as decay of its  precursors and any other independent cross sections leading to that nucleus. 
+% In addition, 
+Cumulative cross sections will be reported whenever it is impossible to use decay spectrometry to distinguish independent production of a nucleus from decay feeding.
+For all remaining observed reaction products in the mass chain, and cases where no decay precursors exist, independent cross sections ($\sigma_i$) will be reported, allowing for determination of the independent production via subtraction  and facilitating comparison to reaction model calculations.  
+
+
+
+% To convert these activities into cross sections, c
+Corrections must be made for the decay of the various reaction products during the time between EoB and the spectrum acquisition, in order to calculate $A_0$, the initial activity at EoB, from the measured activities.
+The use of  multiple gamma-rays at multiple points after EoB to calculate initial activities  for each observed product nucleus allows for a more accurate  determination of $A_0$ than simply basing its calculation off of a single gamma-ray observation.
+For the case of cumulative cross sections, EoB activities were quantified by fitting the activities observed at multiple time points $t$ (since EoB) to the well-known radioactive decay law.
+% \begin{equation}
+% A\pp{t} = A_0 e^{-\lambda t}
+% \end{equation}
+Nonlinear regression was used for this fitting process, minimizing on $\chi^2$\,/\,degree of freedom, so that not only would the uncertainty-weighted EoB activities be fitted, but that a 1-$\sigma$ confidence interval in $A_0$ could be reported as as well.
+As with the gamma-ray intensities, all lifetimes used in this work are tabulated in \autoref{tab:fe_nudat_table_monitors} and \autoref{tab:fe_nudat_table_nb} of \ref{sec:fe_data}.
+In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{t=0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation \cite{bateman1910solution,Cetnar2006}:
+\begin{equation}
+A_n\pp{t} = \lambda_n \sum_{i=1}^n \left[  N_{i,0} \times \pp{\prod_{j=i}^{n-1}\lambda_j} \times \pp{\sum_{j=i}^n \dfrac{e^{-\lambda_j t}}{\prod_{i\neq j}^n \pp{\lambda_i - \lambda_j}}  }   \right]
+\end{equation}
+where $j$ refers to a precursor nucleus populating a specific end-product.  
+While higher-order terms were added if needed, typically for an isomeric state in a particular mass chain,  the second-order expansion ($n=2$) was often sufficient to quantify EoB activities in a mass chain, simplifying to:
+\begin{equation}
+A_2\pp{t} = \dfrac{A_{1,0}\lambda_2}{\lambda_1 - \lambda_2} \pp{e^{-\lambda_2 t} - e^{-\lambda_1 t}} + A_{2,0} e^{-\lambda_2 t}
+\end{equation}
+In these cases, the previously-quantified EoB activities from decay precursors ($A_{1,0}$, etc) would be substituted in, so that the feeding contributions from decay could be separated and an independent cross section reported.
+After quantifying the cumulative EoB activities at the top of a mass chain and all subsequent independent EoB activities, these will be later used to report the various cross sections for all observed reaction products and isomeric states. 
+
+
+
 
 
 % A citation in text uses the command \verb+\cite{#1}+ or

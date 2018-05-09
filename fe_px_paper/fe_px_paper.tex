@@ -88,6 +88,18 @@ prc,
 \usepackage{gensymb}
 \usepackage[normalem]{ulem}
 
+
+
+% Sin and Cos with auto-parentheses 
+\newcommand{\sinp}[1]{\sin{\left( #1\right)}}
+\newcommand{\cosp}[1]{\cos{\left( #1\right)}}
+\newcommand{\expp}[1]{\exp{\left( #1\right)}}
+\newcommand{\sinhp}[1]{\sinh{\left( #1\right)}}
+\newcommand{\lnp}[1]{\ln{\left( #1\right)}}
+\newcommand{\pp}[1]{\left( #1\right)}
+\newcommand{\sci}[2]{ #1 \cdot 10^{#2}\ }
+\newcommand{\angstrom}{\mbox{\normalfont\AA}}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
 \newcommand{\etal}{\emph{et\,al.}} 
 
 
@@ -255,10 +267,10 @@ This research used the Savio computational cluster resource provided by the Berk
 % % 
 % % \onecolumn
 % % 
-% \appendix
-% 
-% 
-% \input{./fe_appendix_text}
+\appendix
+
+
+\input{./fe_appendix_text}
 
 
 \bibliography{../../library}
