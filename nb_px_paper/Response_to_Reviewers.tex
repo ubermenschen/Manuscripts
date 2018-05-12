@@ -1,0 +1,105 @@
+% Cover letter using letter.sty
+\documentclass{letter} % Uses 10pt
+%Use \documentstyle[newcent]{letter} for New Century Schoolbook postscript font
+% the following commands control the margins:
+\topmargin=-1in    % Make letterhead start about 1 inch from top of page 
+\textheight=8in  % text height can be bigger for a longer letter
+\oddsidemargin=0pt % leftmargin is 1 inch
+\textwidth=6.5in   % textwidth of 6.5in leaves 1 inch for right margin
+\usepackage[american]{babel}
+
+\usepackage [autostyle, english = american]{csquotes}
+\usepackage[version=3]{mhchem} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\usepackage[ampersand]{easylist}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsmath}
+
+
+\newfloat{figure}{htbp}{figs}
+
+% \newcommand{\colornote}[1]{\textcolor{red}{ COMMENT\large\footnote{\textcolor{red}{#1}}}}
+\newcommand{\colornote}[1]{\textcolor{red}{#1}}
+\newcommand{\sci}[2]{ #1 \cdot 10^{#2}\ }
+\newcommand{\pp}[1]{\left( #1\right)}
+
+
+\begin{document}
+
+\signature{Andrew S. Voyles}           % name for signature 
+\longindentation=0pt                       % needed to get closing flush left
+\let\raggedleft\raggedright                % needed to get date flush left
+ 
+ 
+\begin{letter}{Mark Breese, PhD \\
+Editor \\
+Nuclear Instruments and Methods in Physics Research Section B: \\
+Beam Interactions with Materials and Atoms}
+
+
+\begin{flushleft}
+{\large\bf Andrew S. Voyles}
+\end{flushleft}
+\medskip\hrule height 1pt
+\begin{flushright}
+\hfill The University of California, Berkeley \\
+\hfill 1106B Etcheverry Hall, Berkeley, CA  94720-1730 \\
+\hfill (850) 281-0217 or (510) 486-7310 
+\end{flushright} 
+\vfill % forces letterhead to top of page
+
+ 
+\opening{Dear Dr. Breese,} 
+
+  \renewcommand*{\thefootnote}{\alph{footnote}}
+
+  \noindent I am writing to submit my point-by-point responses to the issues raised by the reviewers for my submitted manuscript entitled \enquote{\emph{Excitation functions for (p,x) reactions of niobium in the energy range of E\texorpdfstring{$_{\text{p}}$\,=\,40--90\,}{Ep = 40--90 }MeV}}  for publication in Nuclear Instruments and Methods in Physics Research Section B.  Please find my responses detailed in \colornote{red text.}
+  
+  \noindent Along with my co-authors, I wanted to take the opportunity to personally thank you for your continued assistance in helping along the process of our submitted manuscript, and for finding such thorough and conscientious referees for reviewing it.  We would especially like to thank the referees for their thorough reading and critique, which has made it a better paper. Their comments were very constructive and pointed out some valuable improvements.
+  
+  Please find the feedback following here, and our revised manuscript attached. 
+  
+  Sincerely yours,\\ \\ \\ \\ Andrew S. Voyles
+ 
+% \closing{Sincerely yours,} 
+
+  \vfill
+  
+ \pagebreak
+ 
+ 
+ 
+ Reviewer \#1:
+ 
+ Authors have reported excitation function of the proton induced nuclear reactions on niobium. Details on experimental techniques, data analysis and error calculations related to cross section measurements are given. 
+
+The work is interesting to get standard reaction, isotope production and radiation safety analysis. The results will rich the data bank. Authors emphasized on the 93Nb(p,4n)90Mo reaction because of its importance as monitor reaction.  
+
+However, this work reported cross sections only at six energies, which are also not consistent with the model calculations in many cases. The results of this work are not sufficient to extract standard data as well as to establish 93Nb(p,4n)90Mo as monitor reaction. Therefore, title of the paper should be changed to \enquote{Excitation functions for (p,xn) reactions of niobium in the energy range of Ep= 40-90 MeV}.
+
+ \colornote{We thank the reviewer for their thoughtful comments, and the excellent suggestion for shifting the title to reflect the broader scope of work covered by this manuscript.  We would, however, respectfully suggest that the title should become \enquote{Excitation functions for (p,x) reactions on niobium in the energy range of Ep= 40-90 MeV}, as \enquote{(p,xn)} typically refers to reactions where only neutrons are secondaries, and many of the reactions we measured  include charged particles in the exit channel.}
+ 
+%   \colornote{We would first like thank the reviewer for their  detailed summary and suggestions of the manuscript. It is clear that they read the manuscript thoroughly, and the feedback they have provided here has been vital for the improvement of the paper as a whole.}
+
+As mentioned in section 2, authors have performed a single irradiation. Therefore, in section 4 (Conclusion), "\ldots 38 measurements of cross sections\ldots." and "\ldots five independent measurements of isomer \ldots." are wrong. It should be corrected.
+
+\colornote{We  thank the reviewer for their  correction, as our language incorrectly implied multiple measurements instead of multiple reported cross sections arising from a single measurement. We have corrected this language to "\ldots  measurements of 38 cross sections\ldots." and "\ldots  independent measurements of five isomer \ldots."}
+
+The manuscript in well written and I would like to recommend this paper to accept for publication in NIMB after the above corrections.
+
+
+
+
+
+ 
+
+ 
+% \encl{}  				% Enclosures
+
+\end{letter}
+ 
+
+\end{document}
