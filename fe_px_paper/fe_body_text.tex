@@ -38,7 +38,7 @@ Novel applications are being explored for several radionuclides whose production
 
 The work described herein follows the  methods utilized in our recent work and established by Graves \etal\ 
 % for the measurement of cross sections in stacked target irradiations   
-for monitor reaction characterization of beam energy and fluence in stacked target irradiations \cite{Voyles2018,Graves2016}.
+for monitor reaction characterization of beam energy and fluence in stacked target irradiations \cite{Voyles2018a,Graves2016}.
 Preliminary analysis  was previously reported in the Master's thesis of one co-author, but the conclusive results of this work are described here  \cite{springer2017investigation}.
 
 \comment{Do we really need to cite Alex's thesis?}
@@ -173,7 +173,9 @@ The specifications of both target stack designs for this work are presented in \
 % \usepackage{booktabs}
 \begin{table}
 \centering
-\caption{Specifications of the 25\,MeV and 55\,MeV target stack designs in the present work. The proton beam enters the stack upstream of the SS-5 and SS-3 profile monitors, respectively, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.69 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and the earlier paper by Graves \etal\ \cite{Graves2016}. A 316 stainless steel foil is inserted at both the front and rear of each target stack as a monitor of the beam's spatial profile, by developing radiochromic film (Gafchromic EBT3) after end-of-bombardment (EoB).}
+\caption{Specifications of the 25\,MeV and 55\,MeV target stack designs in the present work. The proton beam enters the stack upstream of the SS-5 and SS-3 profile monitors, respectively, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.69 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and our earlier paper \cite{Voyles2018a}. 
+% the earlier paper by Graves \etal\ \cite{Graves2016}.
+A 316 stainless steel foil is inserted at both the front and rear of each target stack as a monitor of the beam's spatial profile, by developing radiochromic film (Gafchromic EBT3) after end-of-bombardment (EoB).}
 \label{tab:fe_stack_table}
 \small
 \resizebox{\textwidth}{!}{%
@@ -222,7 +224,7 @@ Both target stacks were assembled and separately irradiated at the  Lawrence Ber
 The 25\,MeV stack was irradiated for approximately 20\,minutes with a nominal current of 100\,nA,  for an anticipated integral current of 31.61\,nAh. 
 The 55\,MeV stack was irradiated for approximately 10\,minutes with a nominal current of 120\,nA,  for an anticipated integral current of 20.78\,nAh. 
 The beam current, measured using a current integrator on the electrically-isolated beamline, remained stable under these conditions for the duration of each irradiation.
-The proton beam incident upon each stack's upstream stainless steel profile monitor had a maximum energy of either 25 or 55\,MeV, with an approximately 1.5\% energy width due to multi-turn extraction --- these energy profiles were used for all later analysis.
+The proton beam incident upon each stack's upstream stainless steel profile monitor had a maximum energy of either 25 or 55\,MeV, with an approximately 2\% energy width due to multi-turn extraction --- these energy profiles were used for all later analysis.
 Following end-of-bombardment (EoB), each stack was removed from the beamline and disassembled.
 All activated foils were transported to a counting lab for gamma spectrometry, which started approximately 30\,minutes following the end of each irradiation.
 
@@ -245,6 +247,7 @@ A single detector was used in this measurement, an ORTEC GMX Series (model \#GMX
 The detector is a nitrogen-cooled coaxial n-type HPGe with a 0.5\,mm beryllium window, and a 64.9\,mm diameter, 57.8\,mm long crystal.
 Samples were counted at fixed positions ranging 5--60  cm (5\% maximum permissible dead-time) from the front face of the detector, with a series of standard calibration sources used to determine energy and efficiency for each position.
 The foils were counted  for a period of 4 weeks following end-of-bombardment (EoB), to accurately quantify all induced activities.
+An example of one of the gamma-ray spectra collected in such a fashion is shown in \autoref{fig:gspec_femn}.
 % An example of one of the gamma-ray spectra collected in such a fashion is shown in \autoref{fig:gspec}.
 For all spectra collected, net peak areas were fitted using the gamma spectrometry analysis code FitzPeaks \cite{fitzgerald2009fitzpeaks}, which utilizes the SAMPO fitting algorithms for gamma ray spectra \cite{Aarnio2001}.
 % , which has been shown to perform best in comparisons with other common analysis codes \cite{Jackman2014}.
@@ -266,7 +269,7 @@ The total propagated uncertainty in  activity is the quadrature sum of the uncer
 
 
 
-As in our previous work, these activities used to calculate cross sections, and are differentiated between cumulative and independent \cite{Voyles2018}.
+As in our previous work, these activities used to calculate cross sections, and are differentiated between cumulative and independent \cite{Voyles2018a}.
 For the first observable product nuclei in a mass chain, its (p,x) cross section will be reported as a cumulative cross section ($\sigma_c$), which is the sum of direct production of that nucleus, as well as decay of its  precursors and any other independent cross sections leading to that nucleus. 
 % In addition, 
 Cumulative cross sections will be reported whenever it is impossible to use decay spectrometry to distinguish independent production of a nucleus from decay feeding.
@@ -274,6 +277,14 @@ For all remaining observed reaction products in the mass chain, and cases where 
 Solutions to the first- and higher-order  Bateman equations are used for separation of  feeding contributions from decay precursors, that  independent cross sections may be reported \cite{bateman1910solution,Cetnar2006}.
 
 
+
+\begin{figure}
+ \centering
+ \includegraphics[width=6in]{./figures/AP161219_Fe01_10cm.png}
+ % sample_gspec.pdf: 489x257 pixel, 72dpi, 17.25x9.07 cm, bb=0 0 489 257
+ \caption{\textred{Replace this figure!!!}  A gamma spectrum collected from an activated Fe foil at approximately \textred{80 MeV}. While the majority of observed reaction products are visible in this spectrum,  the \ce{^{51}Cr}, \ce{^{52m}Mn}, and \ce{^{52g}Mn} decay lines, which form the   primary reaction channels of interest, are  clearly isolated from surrounding peaks.}
+ \label{fig:gspec_femn}
+\end{figure}
 
 
 
@@ -317,7 +328,24 @@ Solutions to the first- and higher-order  Bateman equations are used for separat
 
 \subsection{\label{sec:dosimetry_fe}Proton fluence determination}
 
-Blah blah blah
+
+In addition to the stack's overall beam current measurements using  beamline current integrators, thin \ce{^{nat}Ti} and \ce{^{nat}Cu} foils were included along with the \ce{^{nat}Fe} targets at each energy position, to monitor beam current at each position within the stack.
+% These foils have been recommended for use as proton monitor foils in the 30 \textless\ E$_\text{p}$ \textless\ 100 MeV regime by the IAEA, as the
+The IAEA-recommended \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V},  \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions were used for  proton fluence measurement 
+% , using values  
+% and uncertainties 
+% from the 2017 IAEA re-evaluation  
+\cite{Hermanne2018}.
+% The recommended cross section values for each of these reactions were used in all calculations of proton fluence for the above monitor reactions.
+As in our previous work, the integral form of the well-known activation equation was used to  determine proton fluence ($I \Delta t $),
+% in each monitor foil
+in order to account for energy loss across each monitor foil:
+\begin{equation}
+I \Delta t = \dfrac{A_0 \Delta t}{\rho \Delta r \pp{1-e^{-\lambda \Delta t}} \int \sigma\pp{E} \dfrac{d\phi}{dE} dE}
+\end{equation}
+The propagated uncertainty in proton fluence is calculated as the quadrature sum of (1) the uncertainty in quantified EoB activity, (2) uncertainty in the duration of irradiation (conservatively estimated at 60 s, to account for any transient changes in beam current), (3) uncertainty in foil areal density, (4) uncertainty in monitor product half-life (included, but normally negligible), (5) uncertainty in IAEA recommended cross section (using values  rom the 2017 IAEA re-evaluation  \cite{Hermanne2018}), and (6) uncertainty in differential proton fluence (from transport simulations).
+
+
 
 
 
