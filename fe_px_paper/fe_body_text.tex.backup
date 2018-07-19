@@ -202,7 +202,7 @@ Cu-17                   & 29 \mmicro m                                          
 Fe-12                   & 27.01 \mmicro m                                               & 20.03                                                                       & 0.12                                                                      & Cu-04                   & 28.78 \mmicro m                                               & 22.38                                                                       & 0.29                                                                      \\
 Ti-18                   & 25.01 \mmicro m                                               & 11.00                                                                       & 0.87                                                                      & Al Degrader C-2         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
 Cu-18                   & 28.75 \mmicro m                                               & 22.33                                                                       & 0.14                                                                      & Fe-05                   & 25.64 \mmicro m                                               & 20.02                                                                       & 0.24                                                                      \\
-Fe-013                  & 26.25 \mmicro m                                               & 20.05                                                                       & 0.16                                                                      & Ti-05                   & 25.86 \mmicro m                                               & 10.99                                                                       & 0.30                                                                      \\
+Fe-13                  & 26.25 \mmicro m                                               & 20.05                                                                       & 0.16                                                                      & Ti-05                   & 25.86 \mmicro m                                               & 10.99                                                                       & 0.30                                                                      \\
 Ti-19                   & 26.6 \mmicro m                                                & 11.01                                                                       & 0.22                                                                      & Cu-05                   & 28.77 \mmicro m                                               & 22.35                                                                       & 0.12                                                                      \\
 Cu-19                   & 28.75 \mmicro m                                               & 22.32                                                                       & 0.19                                                                      & Al Degrader C-3         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
 Fe-14                   & 25.75 \mmicro m                                               & 20.11                                                                       & 0.19                                                                      & Fe-06                   & 25.75 \mmicro m                                               & 20.21                                                                       & 0.26                                                                      \\
@@ -331,30 +331,20 @@ Solutions to the first- and higher-order  Bateman equations are used for separat
 
 In addition to the stack's overall beam current measurements using  beamline current integrators, thin \ce{^{nat}Ti} and \ce{^{nat}Cu} foils were included along with the \ce{^{nat}Fe} targets at each energy position, to monitor beam current at each position within the stack.
 % These foils have been recommended for use as proton monitor foils in the 30 \textless\ E$_\text{p}$ \textless\ 100 MeV regime by the IAEA, as the
-The IAEA-recommended \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V},  \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions were used for  proton fluence measurement, using values  
+The IAEA-recommended \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V},  \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions were used for  proton fluence measurement 
+% , using values  
 % and uncertainties 
-from the 2017 IAEA re-evaluation  \cite{Hermanne2018}.
+% from the 2017 IAEA re-evaluation  
+\cite{Hermanne2018}.
 % The recommended cross section values for each of these reactions were used in all calculations of proton fluence for the above monitor reactions.
-As in our previous work, 
-
-
+As in our previous work, the integral form of the well-known activation equation was used to  determine proton fluence ($I \Delta t $),
+% in each monitor foil
+in order to account for energy loss across each monitor foil:
 \begin{equation}
 I \Delta t = \dfrac{A_0 \Delta t}{\rho \Delta r \pp{1-e^{-\lambda \Delta t}} \int \sigma\pp{E} \dfrac{d\phi}{dE} dE}
 \end{equation}
+The propagated uncertainty in proton fluence is calculated as the quadrature sum of (1) the uncertainty in quantified EoB activity, (2) uncertainty in the duration of irradiation (conservatively estimated at 60 s, to account for any transient changes in beam current), (3) uncertainty in foil areal density, (4) uncertainty in monitor product half-life (included, but normally negligible), (5) uncertainty in IAEA recommended cross section (using values  from the 2017 IAEA re-evaluation  \cite{Hermanne2018}), and (6) uncertainty in differential proton fluence (from transport simulations).
 
-
-Due to the large energy degradation between the front and  back of the target stack, a non-trivial broadening of the proton energy distribution was expected for all monitor and target foils.
-As a result, the integral form of the well-known activation equation was used to accurately determine proton fluence ($I \Delta t $) in each monitor foil:
-
-
-
-The propagated uncertainty in proton fluence is calculated as the quadrature sum of the uncertainty in quantified EoB activity, uncertainty in the duration of irradiation (conservatively estimated at 60 s, to account for any transient changes in beam current), uncertainty in foil areal density, uncertainty in monitor product half-life (included, but normally negligible), uncertainty in IAEA recommended cross section, and uncertainty in differential proton fluence.
-Of these, the first four contributions are all easily quantified in the preparation and execution of a stacked target irradiation;  the last two contributions prove to be more nuanced, however.
-The uncertainty in proton fluence for irradiated monitor foils is derived from statistical uncertainty in the modeling of proton transport in the stack irradiation, discussed in \autoref{sec:proton_transport}.
-The uncertainty in IAEA recommended cross section values must be estimated indirectly, as no uncertainty in the  recommended cross sections is provided in the current IAEA evaluation.
-Fortunately, the recommended cross section values for each monitor reaction tend to closely match one of the   selected experimental source data sets used in their evaluation.
-Since these data sets have listed uncertainties in the original manuscripts, uncertainties in  IAEA recommended cross section values have been estimated by the uncertainty in the data set most closely matching the  IAEA recommended  values.
-For the monitor reactions employed in this work, these data sets are G. Steyn (1990) for  \ce{^{nat}Al}(p,x)\ce{^{22}Na} \cite{Steyn1990}, M. Uddin (2004) for \ce{^{nat}Al}(p,x)\ce{^{24}Na} \cite{Uddin2004}, and S. Mills (1992) for \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} \cite{Mills1992}.
 
 
 
@@ -366,7 +356,124 @@ For the monitor reactions employed in this work, these data sets are G. Steyn (1
 
 \subsection{\label{sec:proton_transport_fe}Proton transport calculations}
 
-Blah blah blah
+Estimates of the proton beam energy for preliminary stack designs were calculated using the Anderson \& Ziegler (A\&Z) stopping power formalism \cite{Andersen_Ziegler_1977,Ziegler1985,Ziegler1999}.
+However, the more rigorous Monte Carlo N-Particle transport code MCNP6.1 was used for simulation of the full 3-D target stack, to determine the full proton energy and fluence distribution for each foil   \cite{Goorley2012}. 
+$10^8$ source protons were used for all MCNP simulations, which places the statistical uncertainty in proton energy distributions at less than 0.01\%.
+As with the determination of proton fluence in monitor foils, the progressively increasing energy straggle towards the rear of each stack is accounted for using the differential proton fluence from MCNP simulation of proton transport.
+These energy distributions $\frac{d\phi}{dE}$ are used to calculate a flux-weighted average proton  energy $\langle E \rangle$, which accounts for the slowing-down of protons within a foil (particularly in the low-energy stack) and reports the effective  energy centroid for each foil:
+\begin{equation}
+\langle E \rangle = \dfrac{{\displaystyle\int E \dfrac{d\phi}{dE} dE}}{{\displaystyle\int \dfrac{d\phi}{dE} dE}}
+\end{equation}
+To report a complete description of the representative energy for each foil, a bin width is provided through the  energy uncertainty, calculated as the full width at half maximum (FWHM) of the MCNP6-modeled energy distribution for each foil.
+
+
+To correct for a spread in the apparent proton fluence, seen most strongly in rear stack positions, the \enquote{variance minimization} techniques utilized in our recent work and established by Graves \etal\ have been used to reduce uncertainty in proton fluence assignments \cite{Voyles2018a,Graves2016}.
+This method is based on the assumption that the independent measurements of proton fluence from the different monitor reactions used in this work should all be consistent at each energy position.
+Assuming that the recommended monitor reaction cross sections and MCNP6-modeled energy distributions are both accurate, residual disagreement in the  observed proton fluences is thus primarily due to poorly characterized stopping power in simulations, or a systematic error in the 
+% stack design, namely, the
+areal densities of the stack components. 
+This disagreement is minor at the front of the stack, and gets progressively worse as the beam is degraded, due to the compounded effect of systematic uncertainties in stack areal densities.
+
+
+
+When performing  a variance minimization, it is important to apply this variation of effective areal density  to the stack components which  have the most significant impact on beam degradation, as any systematic error in the areal densities used for these components will cause a disagreement in the observed fluences.
+For the 55\,MeV stack, the aluminum degraders are used for variance minimization, as they make up more than 80\% of the areal density of the stack, and this play the largest role in beam degradation.
+% 
+% Update this post-results!
+% 
+% Delete  the paragraph break!
+% 
+
+\textred{Update this post-results!}
+For the 25\,MeV stack, the Kapton tape was chosen for variance minimization, as the foil packets themselves are responsible for the majority of beam degradation.
+While it only makes up approximately 20\% of the low-energy stack's areal density, the Kapton surrounding each foil packet has a greater areal density than the foil itself.
+In addition, it is far easier to directly characterize the areal density of the metallic foils than it is for the Kapton, resulting in only an approximate value for the latter.
+This is of relatively minor consequence for higher-energy irradiations (especially relative to any beam degraders), but the stopping power of the Kapton at this energy range may cause as much as a loss of 0.5\,MeV by the rear of this stack, making the precise areal density a source of significant uncertainty.
+
+
+
+
+In performing the  minimization, the areal density of each of the  aluminum degraders (for the 55\,MeV stack)  were varied uniformly in MCNP6 simulations  by a factor of up to $\pm$25\% of nominal values, to find the effective density which minimized variance in the measured proton fluence at the lowest energy position (Ti-07, Cu-07).
+For the 25\,MeV stack, the areal density of the E-09 and H-01 aluminum degraders was taken from that reached in the minimization of the 55\,MeV stack.
+Using this value, the areal density of each of the  Kapton tape  layers  were likewise varied uniformly   by a factor of up to $\pm$25\% of nominal values, to find the effective density which minimized variance in the measured proton fluence at the next-to-lowest energy position (Ti-19, Cu-19).
+These lowest energy positions were chosen as  minimization candidates, as they are the most sensitive to systematic uncertainties in stack design, due to the compounded effect of proton stopping powers.
+In the 25\,MeV stack, activity was not seen in gamma spectrometry for the lowest-energy (Ti-20, Cu-20) monitor foils, implying that the beam was stopped at some point in between Fe-14 and Ti-20.
+This observation is conclusive proof that  the true areal densities of the stack components differs from nominally measured values (primarily for the difficult-to-characterize Kapton tape), as transport calculations using nominal areal densities predict that the beam should exit the stack (at the SS-6 profile monitor) with an energy of approximately 7\,MeV.
+As a result, this position was not used for minimization, with the Ti-19 and Cu-19 position being the lowest-energy reliable monitor foils in the stack.
+The results of the minimization technique indicate a clear minimum in proton fluence variance for flux-weighted average \textred{41.34\,MeV} protons entering the last energy position of the 55\,MeV stack.
+This is approximately \textred{2\,MeV} lower than the nominal MCNP6 simulations, and approximately \textred{3\,MeV} lower than nominal A\&Z calculations, both of which used the nominal 2.80\,g/cm$^3$ measured density of the  aluminum degraders.
+This energy corresponds to an aluminum areal density of \textred{2.52\%} greater than nominal measurements, and serves as a lump correction for other minor systematic uncertainties in stack design, including stack areal densities and incident beam energy.
+Similarly, for the 25\,Me stack, variance minimization converges on  flux-weighted average \textred{41.34\,MeV} protons entering the Fe-13/Ti-19/Cu-19 energy position, which is approximately \textred{2\,MeV} lower than the nominal MCNP6 simulations, and approximately \textred{3\,MeV} lower than nominal A\&Z calculations.
+This energy corresponds to a Kapton tape areal density of \textred{2.52\%} greater than nominal measurements.
+The impact of this variance minimization for improving disagreement in proton fluence is  clearly  seen in   \autoref{fig:fe_variance_mins}.
+
+
+
+
+\begin{figure}
+    \centering
+    \subfloat{
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \hspace{-5pt}\subfigimg[width=0.5\textwidth]{a)}{./figures/before_minimization_plot.pdf}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+         %         \refstepcounter{subfigure}
+         \label{fig:before_minimization}
+   \hspace{-5pt}}%
+     \subfloat{
+        \centering
+
+%         \subfigimg[width=0.5\textwidth]{b)}{./figures/after_minimization_plot.pdf}{50}
+        \subfigimg[width=0.5\textwidth]{b)}{./figures/current_norm_az.pdf}{50}
+         %         \refstepcounter{subfigure}
+         \label{fig:after_minimization}
+   \hspace{-5pt}}%
+    \caption{\textred{Update this figure!!!} Results of variance minimization through enhancement of the effective areal density of the  aluminum degraders by \textred{2.52\%} (55\,MeV stack) and Kapton tape by \textred{2.52\%} (25\,MeV stack). A noticeable reduction of variance in measured proton fluence is seen,  particularly at the  rear stack positions.} 
+%     Following minimization, additional apparent fluence is observed in the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na} monitor channels, due to contamination from \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} on the silicone adhesive used for sealing foil packets.}
+     \label{fig:fe_variance_mins}
+\end{figure}
+
+
+
+
+An enhanced version of the final \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reaction fluences is shown in \autoref{fig:fe_fluence_plot}.
+% , which shows the   observed fluence of the \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reaction channels.
+Without the reliable use of the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na} monitor channels, local interpolation cannot be used for fluence assignment to the Nb foils, and global interpolation is reliant upon a validated model for fluence loss.
+% In the interest of surety of because they are consistent, t
+The uncertainty-weighted mean  for the three \ce{^{nat}Cu}(p,x) monitor channels was calculated at each energy position, to determine the final fluence assignments for the Nb and Cu foils.
+Uncertainty in proton fluence  is likewise calculated by error propagation of the fluence values  at each energy position.
+These weighted-mean fluences are  plotted  in \autoref{fig:fluence_plot}, along with the estimated fluence according to both  MCNP6 transport 
+% model, as well as 
+and an uncertainty-weighted linear $\chi^2$ fit to the individual monitor channel fluence measurements.
+Both models reproduce the observed fluence data consistently within uncertainty, with the MCNP6 model predicting a slightly greater fluence loss throughout the stack.
+These models are used purely to provide an extrapolation from the 90\,MeV energy position back to the \enquote{front} of the stack at 100\,MeV, to compare with the nominal fluence measured by  IPF upstream current monitors.
+% This involved minimizing on $\chi^2$ / degree of freedom, so that  a 95\% confidence interval in fluence would be reported as as well.
+% As with the FWHM, a greater than 1$\sigma$ confidence interval is used for reporting fluence uncertainty to avoid an unrealistically small fluence confidence interval, based on the spread in observed fluence from Al and Cu monitor foils.
+% The fluence and 2$\sigma$ uncertainties from this weighted-fit line are thus used in calculations of the various Nb(p,x) cross sections
+
+
+% \begin{figure}
+%  \centering
+%  \includegraphics[width=0.5\linewidth]{./figures/Nb_ptallies.pdf}
+%  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+%  \caption{Final variance minimized incident proton energy distributions for the Nb foils, as simulated in MCNP6. The distribution tallies in each foil are all normalized to be per source proton, which was $10^8$ in all simulations. As the beam is degraded, proton energy distributions become visibly broadened due to straggling, and drop in magnitude due to scattering losses.}
+%  \label{fig:Nb_ptallies}
+% \end{figure}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\linewidth]{./figures/fe_fluence_plot.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Final uncertainty-weighted mean proton fluences throughout the target stack, based on the variance-minimized observed fluence from the the  \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions. 
+%  A 95\% ($2\sigma$) confidence interval is reported in the fitted proton fluence, to ensure a realistic uncertainty in fluence, which encompasses the true absolute fluence. 
+%   A clear loss of 
+  The fluence  drops by approximately 7.2--8.9\% from the incident fluence of 196.9--198.8 nAh over the length of the target stack, based on fluence loss models from MCNP6 simulations and an empirical fit to  fluence measurements.}  
+%   This is due to a combination of beam utilization, as well as scattering.}
+ \label{fig:fluence_plot}
+\end{figure}
+
+
+
 
 
 

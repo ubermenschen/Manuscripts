@@ -120,6 +120,16 @@ prc,
 \newcommand{\mmicro}{\si\micro} 
 
 
+\usepackage{subfig}
+% Remove a), b), etc labels from subfigs
+\captionsetup[subfigure]{labelformat=empty}
+
+\newcommand{\subfigimg}[4][,]{%
+  \setbox1=\hbox{\noindent\includegraphics[#1]{#3}}% Store image in box
+  \leavevmode\rlap{\usebox1}% Print image
+  \rlap{\hspace*{#4pt}\raisebox{\dimexpr\ht1-2\baselineskip}{#2}}% Print label
+  \phantom{\usebox1}% Insert appropriate spcing
+}
 
 
 
