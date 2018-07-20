@@ -39,9 +39,13 @@ Novel applications are being explored for several radionuclides whose production
 The work described herein follows the  methods utilized in our recent work and established by Graves \etal\ 
 % for the measurement of cross sections in stacked target irradiations   
 for monitor reaction characterization of beam energy and fluence in stacked target irradiations \cite{Voyles2018a,Graves2016}.
-Preliminary analysis  was previously reported in the Master's thesis of one co-author, but the conclusive results of this work are described here  \cite{springer2017investigation}.
+% 
+% Make sure to add this back in for the journal article
+% 
+% 
+% Preliminary analysis  was previously reported in the Master's thesis of one co-author, but the conclusive results of this work are described here  \cite{springer2017investigation}.
 
-\comment{Do we really need to cite Alex's thesis?}
+% \comment{Do we really need to cite Alex's thesis?}
 
 
 \subsection{\label{sec:target_design_fe}Stacked-target design}
@@ -75,7 +79,7 @@ The specifications of both target stack designs for this work are presented in \
  \centering
  \includegraphics[width=0.5\linewidth]{./figures/SAM_2494.JPG}
  % IMG_1975.JPG: 3264x2448 pixel, 72dpi, 115.15x86.36 cm, bb=0 0 3264 2448
- \caption{\label{fig:fe_target_stack}Photograph of the assembled 25\,MeV target stack, before it was mounted in the beamline. The proton beam enters through the circular entrance in the foreground, and the upstream stainless steel profile monitor is visible at the front of the stack.}
+ \caption{\label{fig:fe_target_stack}Photograph of the assembled 25\,MeV target stack, before it was mounted in the beamline. The proton beam enters through the circular entrance in the foreground, and the upstream stainless steel profile monitor (SS-5) is visible at the front of the stack.}
 \end{figure}
 
 % Separate tables
@@ -462,7 +466,7 @@ These models are used purely to provide an extrapolation from the highest-energy
 %  \includegraphics[width=0.5\linewidth]{./figures/fe_fluence_plot.pdf}
  \includegraphics[width=0.5\linewidth]{./figures/current_norm_az.pdf}
  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
- \caption{Final uncertainty-weighted mean proton fluences throughout the target stack, based on the variance-minimized observed fluence from the the  \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions. 
+ \caption{\textred{Update this figure!!!} Final uncertainty-weighted mean proton fluences throughout the target stack, based on the variance-minimized observed fluence from the the  \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions. 
 %  A 95\% ($2\sigma$) confidence interval is reported in the fitted proton fluence, to ensure a realistic uncertainty in fluence, which encompasses the true absolute fluence. 
 %   A clear loss of 
   The fluence  drops by approximately \textred{7.2--8.9\%} from the incident fluence of \textred{196.9--198.8 nAh} over the length of the target stack, based on fluence loss models from MCNP6 simulations and an empirical fit to  fluence measurements.}  
@@ -477,13 +481,190 @@ These models are used purely to provide an extrapolation from the highest-energy
 
 \subsection{\label{sec:calcs_sec_fe}Calculation of measured cross sections}
 
-Blah blah blah
 
+Using the quantified EoB activities along with the variance-minimized proton fluence, it is possible to calculate the final cross sections for the various observed (p,x) reactions.
+While thin ($\approx$ 10--20\,mg/cm$^2$)  foils were irradiated to minimize the energy bins of these cross section measurements, it is important to note that all cross sections reported here are flux-averaged  
+% cross sections, 
+over the energy distribution subtended by each foil, as seen in \autoref{fig:Fe_ptallies}.
+For both the cumulative and independent activities quantified, cross sections were calculated as:
+\begin{equation}
+\sigma = \dfrac{A_0 }{\rho \Delta r I \pp{1-e^{-\lambda \Delta t}} }
+\end{equation}
+where $A_0$ is the EoB activity for the monitor reaction product, $I$ is the proton current, $\rho \Delta r$ is the foil's areal density, $\lambda$ is the monitor reaction product's decay constant, and $\Delta t$ is the length of irradiation.
+The beam current, measured using a current integrator connected to the electrically-isolated target box, remained stable for the duration of the irradiation.
+The propagated uncertainty in cross section is calculated as the quadrature sum of the uncertainty in quantified EoB activity (which includes uncertainty in detector efficiencies), uncertainty in the duration of irradiation (conservatively estimated at 30\,s, to account for any minor transient changes in beam current), uncertainty in foil areal density, uncertainty in monitor product half-life (included, but normally negligible),  and uncertainty in proton current (quantified by error propagation of the monitor reaction fluence values  at each energy position, as seen in \autoref{fig:fe_fluence_plot}).
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\linewidth]{./figures/Fe_mcnp_spectrum.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{\textred{Add 25\,MeV stack tallies here! } Final variance minimized incident proton energy distributions for the Fe foils, as simulated in MCNP6. The distribution tallies in each foil are all normalized to be per source proton, which was $10^8$ in all simulations. As the beam is degraded, proton energy distributions become visibly broadened due to straggling, and drop in magnitude due to scattering losses.}
+ \label{fig:Fe_ptallies}
+\end{figure}
 
 
 \section{\label{sec:results_fe}Results and Discussion}
 
-Blah blah blah
+
+\subsection{Measurement of nuclear excitation functions}
+
+After irradiation, all foils were confirmed to still be sealed inside their Kapton packets, verifying that no activation products were lost due to packet failure and dispersal.
+With the exception of two foils (Cu-20 and Ti-20), each activated foil had a small \enquote{blister} under the Kapton tape layer, caused by a combination of thermal swelling and the formation of short-lived beta activities.
+% \comment{Maybe some Ne formed by Al(p,2a)Ne / Si(p,2ap)Ne?}
+This blister   verifies that the primary proton beam was incident upon the foil, and provided the first evidence (before gamma-ray spectrometry) that the beam was stopped in the stack between Fe-14 and Ti-20.
+Using the \ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn} monitor reactions, as discussed in \autoref{sec:proton_transport_fe}, a fluence of \textred{198.8$\pm$6.7\,nAh} was calculated to be incident upon the 55\,MeV target stack using the MCNP6 fluence model, and a  fluence of \textred{196.9$\pm$11.3\,nAh} using the linear fit model.
+Similarly, for the 25\,MeV stack, a fluence of \textred{198.8$\pm$6.7\,nAh} was calculated to be incident upon the 55\,MeV target stack using the MCNP6 fluence model, and a  fluence of \textred{196.9$\pm$11.3\,nAh} using the linear fit model.
+\textred{All of these are consistent with the nominal fluence of 20.78\,nAh (for the 55\,MeV stack) and 31.61\,nAh (for the 25\,MeV stack) measured using the beamline current integrators.}
+\textred{As fluence loss scales with $\sigma_{\mathrm{tot}}\rho\Delta r$, it is expected that an extrapolation back to the stack entrance (through the SS-3/SS-5 profile monitors) will underestimate the nominal fluence incident upon the box.}
+This incident fluence dropped by approximately \textred{8.9\% to  180.9$\pm$5.4\,nAh (and by 7.2\% to  182.7$\pm$13.5\,nAh using the linear fit model)} over the length of the target stack, which is consistent with similar measurements at IPF in the past \cite{Voyles2018a,Graves2016}.
+This loss of fluence is due to a combination of 
+% beam utilization for the various 
+(p,x) reactions throughout the target stack, as well as large-angle deflections (primarily in the aluminum degraders) from scattering of the beam.
+
+
+
+
+Using the final proton fluence at each energy position, cross sections for  \textred{(list of residual products)} were extracted for (p,x) reactions  on \ce{^{nat}Cu} foils in the \textred{40--55\,MeV} region, as recorded in \autoref{tab:cu_rp_table}.
+For  (p,x) reactions on \ce{^{nat}Nb} foils, the (p,x) cross sections for  \textred{(list of residual products)} were extracted, as recorded in \autoref{tab:nb_rp_table}.
+In addition, as there exist a number of isomers with radioactive ground states in these mass regions,  independent measurements of isomer-to-ground-state branching ratios for \ce{^{52m/g}Mn},\ce{^{58m/g}Co},\ce{^{85m/g}Y},\ce{^{87m/g}Y}, and \ce{^{89m/g}Nb} were  extracted and are recorded in \autoref{tab:ibr_table}.
+Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR \cite{Otuka2014272}) are seen in the figures of \ref{fit_figures} and \ref{ibr_figures}.
+The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity ($\pm$3--7\%), proton fluence ($\pm$4--6\%), and foil areal density ($\pm$0.1--0.6\%).
+% \comment{Update these with new numbers!\\ Stephen: Very impressive, if you feel this is realistic. }
+
+
+
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}
+\centering
+\caption{Measured cross sections for the various \ce{^{nat}Fe}(p,x) reaction products observed in this work. Cumulative cross sections are designated as $\sigma_c$, independent cross sections are designated as $\sigma_i$.}
+\label{tab:fe_rp_table}
+\small
+% \resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllllll@{}}
+\toprule
+                            & \multicolumn{6}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-7} 
+E$_\text{p}$ (MeV)          & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ & $70.17^{+0.91}_{-0.85}$ & $61.58^{+1.03}_{-0.98}$ & $52.10^{+1.25}_{-1.20}$ & $41.05^{+1.62}_{-1.54}$ \\ \midrule
+% \ce{^{51}Cr}\,($\sigma_c$)  & $0.919\pm0.079$         & $0.373\pm0.023$         & $0.450\pm0.028$         & $0.303\pm0.016$         & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{52}Mn}\,($\sigma_c$)  & $1.70\pm0.11$           & $0.570\pm0.031$         & $0.0407\pm0.0022$       & $0.00526\pm0.00057$     & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{52g}Mn}\,($\sigma_i$) & $0.673\pm0.043$         & $0.239\pm0.018$         & $0.0164\pm0.0023$       & $0.000986\pm0.000053$   & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{52m}Mn}\,($\sigma_c$) & $1.023\pm0.091$         & $0.331\pm0.030$         & $0.0244\pm0.0036$       & $0.00427\pm0.00052$     & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{54}Mn}\,($\sigma_i$)  & $5.87\pm0.37$           & $3.77\pm0.21$           & $4.14\pm0.22$           & $4.84\pm0.26$           & $1.680\pm0.091$         & --\cmmnt{\hrulefill}    \\
+% \ce{^{55}Co}\,($\sigma_c$)  & $1.71\pm0.11$           & $1.015\pm0.058$         & $0.193\pm0.012$         & $0.0299\pm0.0028$       & $0.00235\pm0.00022$     & --\cmmnt{\hrulefill}    \\
+% \ce{^{56}Ni}\,($\sigma_c$)  & $0.0806\pm0.0051$       & $0.1005\pm0.0055$       & $0.0906\pm0.0046$       & $0.0304\pm0.0016$       & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{57}Ni}\,($\sigma_c$)  & $1.465\pm0.093$         & $1.202\pm0.065$         & $1.400\pm0.071$         & $2.13\pm0.11$           & $1.565\pm0.083$         & $0.0262\pm0.0015$       \\
+% \ce{^{57}Co}\,($\sigma_i$)  & $40.1\pm2.5$          & $35.6\pm1.9$          & $35.8\pm1.8$          & $48.5\pm2.5$            & $47.7\pm2.5$            & $3.21\pm0.18$           \\
+% \ce{^{58}Co}\,($\sigma_c$)  & $57.7\pm4.5$            & $55.0\pm4.7$            & $42.7\pm3.4$            & $33.7\pm2.8$            & $39.0\pm3.8$            & $62.3\pm4.6$            \\
+% \ce{^{58g}Co}\,($\sigma_i$) & $14.0\pm2.5$            & $10.8\pm2.1$            & $6.1\pm1.6$             & $7.8\pm1.4$             & $7.1\pm1.7$             & $1.12\pm0.32$           \\
+% \ce{^{58m}Co}\,($\sigma_i$) & $43.6\pm3.7$            & $44.2\pm4.3$            & $36.6\pm3.0$            & $25.8\pm2.5$            & $31.9\pm3.3$            & $61.1\pm4.6$            \\
+% \ce{^{59}Fe}\,($\sigma_c$)  & $0.865\pm0.057$         & $0.837\pm0.046$         & $0.749\pm0.039$         & $0.616\pm0.034$         & $0.209\pm0.014$         & --\cmmnt{\hrulefill}    \\
+% \ce{^{60}Co}\,($\sigma_c$)  & $13.23\pm0.87$          & $13.47\pm0.78$          & $11.14\pm0.94$          & $11.44\pm0.80$          & $9.30\pm0.87$           & $6.6\pm1.1$             \\
+% \ce{^{61}Cu}\,($\sigma_c$)  & $50.5\pm3.3$            & $56.1\pm3.2$            & $65.1\pm3.6$            & $72.2\pm4.0$            & $80.6\pm4.7$            & $157.1\pm8.6$           \\
+\ce{^{64}Cu}\,($\sigma_i$)  & $38.7\pm2.7$            & $42.8\pm2.4$            & $45.5\pm2.7$            & $50.2\pm2.8$            & $55.7\pm3.0$            & $63.3\pm3.6$                 \\ \bottomrule
+\end{tabular}
+% }
+\end{table}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}
+\centering
+\caption{Measured cross sections for the various \ce{^{nat}Cu}(p,x) reaction products observed in this work. Cumulative cross sections are designated as $\sigma_c$, independent cross sections are designated as $\sigma_i$.}
+\label{tab:cufe_rp_table}
+\small
+% \resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllllll@{}}
+\toprule
+                            & \multicolumn{6}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-7} 
+E$_\text{p}$ (MeV)          & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ & $70.17^{+0.91}_{-0.85}$ & $61.58^{+1.03}_{-0.98}$ & $52.10^{+1.25}_{-1.20}$ & $41.05^{+1.62}_{-1.54}$ \\ \midrule
+% \ce{^{51}Cr}\,($\sigma_c$)  & $0.919\pm0.079$         & $0.373\pm0.023$         & $0.450\pm0.028$         & $0.303\pm0.016$         & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{52}Mn}\,($\sigma_c$)  & $1.70\pm0.11$           & $0.570\pm0.031$         & $0.0407\pm0.0022$       & $0.00526\pm0.00057$     & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{52g}Mn}\,($\sigma_i$) & $0.673\pm0.043$         & $0.239\pm0.018$         & $0.0164\pm0.0023$       & $0.000986\pm0.000053$   & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{52m}Mn}\,($\sigma_c$) & $1.023\pm0.091$         & $0.331\pm0.030$         & $0.0244\pm0.0036$       & $0.00427\pm0.00052$     & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{54}Mn}\,($\sigma_i$)  & $5.87\pm0.37$           & $3.77\pm0.21$           & $4.14\pm0.22$           & $4.84\pm0.26$           & $1.680\pm0.091$         & --\cmmnt{\hrulefill}    \\
+% \ce{^{55}Co}\,($\sigma_c$)  & $1.71\pm0.11$           & $1.015\pm0.058$         & $0.193\pm0.012$         & $0.0299\pm0.0028$       & $0.00235\pm0.00022$     & --\cmmnt{\hrulefill}    \\
+% \ce{^{56}Ni}\,($\sigma_c$)  & $0.0806\pm0.0051$       & $0.1005\pm0.0055$       & $0.0906\pm0.0046$       & $0.0304\pm0.0016$       & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{57}Ni}\,($\sigma_c$)  & $1.465\pm0.093$         & $1.202\pm0.065$         & $1.400\pm0.071$         & $2.13\pm0.11$           & $1.565\pm0.083$         & $0.0262\pm0.0015$       \\
+% \ce{^{57}Co}\,($\sigma_i$)  & $40.1\pm2.5$          & $35.6\pm1.9$          & $35.8\pm1.8$          & $48.5\pm2.5$            & $47.7\pm2.5$            & $3.21\pm0.18$           \\
+% \ce{^{58}Co}\,($\sigma_c$)  & $57.7\pm4.5$            & $55.0\pm4.7$            & $42.7\pm3.4$            & $33.7\pm2.8$            & $39.0\pm3.8$            & $62.3\pm4.6$            \\
+% \ce{^{58g}Co}\,($\sigma_i$) & $14.0\pm2.5$            & $10.8\pm2.1$            & $6.1\pm1.6$             & $7.8\pm1.4$             & $7.1\pm1.7$             & $1.12\pm0.32$           \\
+% \ce{^{58m}Co}\,($\sigma_i$) & $43.6\pm3.7$            & $44.2\pm4.3$            & $36.6\pm3.0$            & $25.8\pm2.5$            & $31.9\pm3.3$            & $61.1\pm4.6$            \\
+% \ce{^{59}Fe}\,($\sigma_c$)  & $0.865\pm0.057$         & $0.837\pm0.046$         & $0.749\pm0.039$         & $0.616\pm0.034$         & $0.209\pm0.014$         & --\cmmnt{\hrulefill}    \\
+% \ce{^{60}Co}\,($\sigma_c$)  & $13.23\pm0.87$          & $13.47\pm0.78$          & $11.14\pm0.94$          & $11.44\pm0.80$          & $9.30\pm0.87$           & $6.6\pm1.1$             \\
+% \ce{^{61}Cu}\,($\sigma_c$)  & $50.5\pm3.3$            & $56.1\pm3.2$            & $65.1\pm3.6$            & $72.2\pm4.0$            & $80.6\pm4.7$            & $157.1\pm8.6$           \\
+\ce{^{64}Cu}\,($\sigma_i$)  & $38.7\pm2.7$            & $42.8\pm2.4$            & $45.5\pm2.7$            & $50.2\pm2.8$            & $55.7\pm3.0$            & $63.3\pm3.6$                 \\ \bottomrule
+\end{tabular}
+% }
+\end{table}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}
+\centering
+\caption{Measured cross sections for the various \ce{^{nat}Ti}(p,x) reaction products observed in this work. Cumulative cross sections are designated as $\sigma_c$, independent cross sections are designated as $\sigma_i$.}
+\label{tab:ti_rp_table}
+\small
+% Disable next line for journal submission
+% \resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllllll@{}}
+\toprule
+                            & \multicolumn{6}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-7} 
+E$_\text{p}$ (MeV)          & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ & $69.70^{+0.90}_{-0.85}$ & $61.07^{+1.05}_{-0.98}$ & $51.51^{+1.25}_{-1.21}$ & $40.34^{+1.58}_{-1.55}$ \\ \midrule
+% \ce{^{82m}Rb}\,($\sigma_c$) & $2.48\pm0.22$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{83}Sr}\,($\sigma_c$)  & $4.02\pm0.61$           & $4.78\pm0.42$           & $3.49\pm0.36$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{85}Y}\,($\sigma_c$)   & $13.78\pm0.55$          & $7.52\pm0.51$           & $2.11\pm0.14$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{85g}Y}\,($\sigma_i$)  & $2.37\pm0.11$           & $2.08\pm0.17$           & $0.557\pm0.037$         & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{85m}Y}\,($\sigma_i$)  & $11.41\pm0.54$          & $5.44\pm0.48$           & $1.55\pm0.13$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{86}Zr}\,($\sigma_c$)  & $12.68\pm0.68$          & $18.21\pm0.93$          & $19.28\pm0.97$          & $6.16\pm0.32$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{86}Y}\,($\sigma_i$)   & $33.4\pm1.8$            & $41.6\pm2.2$            & $39.9\pm2.1$            & $13.56\pm0.72$          & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{87}Zr}\,($\sigma_c$)  & $47.4\pm7.3$            & $28.0\pm2.8$            & $32.2\pm2.9$            & $49.8\pm5.0$            & $38.2\pm3.7$            & $1.12\pm0.17$           \\
+% \ce{^{87}Y}\,($\sigma_i$)   & $110.0\pm7.2$           & $54.7\pm2.8$            & $61.0\pm2.9$            & $90.0\pm4.9$            & $67.2\pm3.6$            & $2.91\pm0.17$           \\
+% \ce{^{87g}Y}\,($\sigma_i$)  & $28.0\pm5.8$            & $7.4\pm1.3$             & $6.55\pm0.64$           & $5.8\pm2.2$             & $2.63\pm0.47$           & $0.942\pm0.073$         \\
+% \ce{^{87m}Y}\,($\sigma_i$)  & $82.0\pm4.3$            & $47.3\pm2.5$            & $54.4\pm2.8$            & $84.2\pm4.4$            & $64.6\pm3.6$            & $1.97\pm0.15$           \\
+% \ce{^{88}Zr}\,($\sigma_c$)  & $159.1\pm7.8$           & $144.6\pm6.8$           & $62.4\pm3.1$            & $21.2\pm1.0$            & $33.6\pm1.8$            & $65.3\pm4.0$            \\
+% \ce{^{88}Y}\,($\sigma_i$)   & $17.2\pm1.1$            & $13.27\pm0.86$          & $7.98\pm0.72$           & $2.91\pm0.25$           & $9.2\pm1.4$             & $9.88\pm0.69$           \\
+% \ce{^{89}Nb}\,($\sigma_c$)  & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & $179\pm14$              & $214.4\pm9.8$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{89g}Nb}\,($\sigma_i$) & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & $145\pm14$              & $186.4\pm9.6$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{89m}Nb}\,($\sigma_i$) & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & $34.7\pm2.6$            & $28.0\pm2.0$            & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+% \ce{^{89}Zr}\,($\sigma_i$)  & $211\pm11$              & $243\pm13$              & $294\pm15$              & $257\pm13$              & $55.4\pm3.0$            & $15.5\pm1.0$            \\
+% \ce{^{90}Mo}\,($\sigma_i$)  & $21.3\pm1.1$            & $26.4\pm1.3$            & $34.5\pm1.6$            & $61.9\pm3.1$            & $122.0\pm6.1$           & $24.2\pm1.5$            \\
+% \ce{^{90}Nb}\,($\sigma_i$)  & $158.3\pm8.1$           & $174.9\pm8.5$           & $209.3\pm9.9$           & $272\pm14$              & $369\pm19$              & $163.9\pm9.8$           \\
+% \ce{^{91m}Nb}\,($\sigma_c$) & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & $66.5\pm5.8$            \\
+% \ce{^{92m}Nb}\,($\sigma_i$) & $43.7\pm2.4$            & $47.3\pm2.4$            & $49.8\pm2.6$            & $52.9\pm2.8$            & $55.3\pm3.1$            & $59.9\pm3.9$            \\
+\ce{^{93m}Mo}\,($\sigma_i$) & $0.97\pm0.20$           & $1.29\pm0.15$           & $1.62\pm0.24$           & $1.85\pm0.15$           & $1.86\pm0.14$           & $2.00\pm0.15$               \\ \bottomrule
+\end{tabular}
+% }
+\end{table}
+
+
+
+
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}
+\centering
+\caption{Measured isomer-to-ground-state branching ratios for the various \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and \ce{^{nat}Ti}(p,x) reaction products observed in this work.}
+\label{tab:fe_ibr_table}
+\small
+% \resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllllll@{}}
+\toprule
+                               & \multicolumn{6}{c}{Isomer branching ratio}                                                                                                                \\ \cmidrule(l){2-7} 
+E$_\text{p}$ (MeV)             & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ & $70.17^{+0.91}_{-0.85}$ & $61.58^{+1.03}_{-0.98}$ & $52.10^{+1.25}_{-1.20}$ & $41.05^{+1.62}_{-1.54}$ \\ \midrule
+\ce{^{nat}Cu}(p,x)\ce{^{52}Mn} & $0.603\pm0.066$         & $0.581\pm0.062$         & $0.598\pm0.095$         & $0.81\pm0.13$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{nat}Cu}(p,x)\ce{^{58}Co} & $0.757\pm0.088$         & $0.80\pm0.10$         & $0.858\pm0.099$         & $0.767\pm0.097$         & $0.82\pm0.12$           & $0.98\pm0.10$            \vspace{1em}     \\ 
+E$_\text{p}$ (MeV)             & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ & $69.70^{+0.90}_{-0.85}$ & $61.07^{+1.05}_{-0.98}$ & $51.51^{+1.25}_{-1.21}$ & $40.34^{+1.58}_{-1.55}$ \\ \midrule
+\ce{^{nat}Nb}(p,x)\ce{^{85}Y}  & $0.828\pm0.051$         & $0.724\pm0.080$         & $0.736\pm0.080$         & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
+\ce{^{nat}Nb}(p,x)\ce{^{87}Y}  & $0.746\pm0.063$         & $0.865\pm0.063$         & $0.893\pm0.063$         & $0.936\pm0.070$         & $0.961\pm0.075$         & $0.676\pm0.065$         \\
+\ce{^{nat}Nb}(p,x)\ce{^{89}Nb} & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & $0.193\pm0.021$         & $0.130\pm0.011$         & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\ \bottomrule
+\end{tabular}
+% }
+\end{table}
 
 
 
