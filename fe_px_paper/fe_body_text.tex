@@ -132,7 +132,8 @@ for monitor reaction characterization of beam energy and fluence in stacked targ
 
 \subsection{\label{sec:target_design_fe}Stacked-target design}
 
-\comment{Update these energies, post-analysis}
+% \comment{Update these energies, post-analysis}
+\textred{Update these energies after finalizing the analysis...}
 
 A pair of target stacks were constructed for this work, due to the large energy range desired to be spanned.
 One stack covers the \textred{55--20}\,MeV range and the other covers \textred{25--5}\,MeV, to minimize the systematic uncertainties associated with degradation of beam energy.
@@ -501,10 +502,10 @@ The impact of this variance minimization for improving disagreement in proton fl
     \subfloat{
         \centering
 %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \hspace{-5pt}\subfigimg[width=0.5\textwidth]{a)}{../nb_px_paper/figures/before_minimization_plot.pdf}{50}
+        \hspace{-5pt}\subfigimg[width=0.5\textwidth]{a)}{./figures/before_minimization_plot.pdf}{50}
 %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
          %         \refstepcounter{subfigure}
-         \label{fig:before_minimization}
+         \label{fig:fe_before_minimization}
    \hspace{-5pt}}%
      \subfloat{
         \centering
@@ -512,7 +513,7 @@ The impact of this variance minimization for improving disagreement in proton fl
 %         \subfigimg[width=0.5\textwidth]{b)}{./figures/after_minimization_plot.pdf}{50}
         \subfigimg[width=0.5\textwidth]{b)}{./figures/current_norm_az.pdf}{50}
          %         \refstepcounter{subfigure}
-         \label{fig:after_minimization}
+         \label{fig:fe_after_minimization}
    \hspace{-5pt}}%
     \caption{\textred{Update this figure!!!} Results of variance minimization through enhancement of the effective areal density of the  aluminum degraders by \textred{2.52\%} (55\,MeV stack) and Kapton tape by \textred{2.52\%} (25\,MeV stack). A noticeable reduction of variance in measured proton fluence is seen,  particularly at the  rear stack positions.} 
 %     Following minimization, additional apparent fluence is observed in the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na} monitor channels, due to contamination from \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} on the silicone adhesive used for sealing foil packets.}
@@ -734,7 +735,7 @@ E$_\text{p}$ (MeV)          & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ 
 \caption{Measured isomer-to-ground-state branching ratios for the various \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and \ce{^{nat}Ti}(p,x) reaction products observed in this work.}
 \label{tab:fe_ibr_table}
 \small
-% \resizebox{\textwidth}{!}{%
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lllllll@{}}
 \toprule
                                & \multicolumn{6}{c}{Isomer branching ratio}                                                                                                                \\ \cmidrule(l){2-7} 
@@ -746,7 +747,7 @@ E$_\text{p}$ (MeV)             & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64
 \ce{^{nat}Nb}(p,x)\ce{^{87}Y}  & $0.746\pm0.063$         & $0.865\pm0.063$         & $0.893\pm0.063$         & $0.936\pm0.070$         & $0.961\pm0.075$         & $0.676\pm0.065$         \\
 \ce{^{nat}Nb}(p,x)\ce{^{89}Nb} & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & $0.193\pm0.021$         & $0.130\pm0.011$         & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\ \bottomrule
 \end{tabular}
-% }
+}
 \end{table}
 
 
@@ -857,7 +858,7 @@ All three codes use a two-exciton phenomenological model to calculate the pre-eq
 % \def\arraystretch{1.5}
 \begin{table}
  \caption{Default settings for the reactions codes}
- \label{tab:defaults}
+ \label{tab:fe_defaults}
  \resizebox{\textwidth}{!}{%
 \begin{tabular}{ c c c c}
 
@@ -904,7 +905,7 @@ EMPIRE, however, does not level off  as much as the data and the other codes are
  \includegraphics[width=0.5\linewidth]{./figures/51Mn_px.pdf}
  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
  \caption{Measured \ce{^{93}Nb}(p,x)\ce{^{86}Y} cross section, with the \ce{^{93}Nb}(p,$\alpha$p3n)\ce{^{86}Y} reaction channel visibly peaking at approximately \mbox{70 MeV}.}
- \label{fig:86Y}
+ \label{fig:51Mn}
 \end{figure}
 
 
@@ -912,19 +913,19 @@ EMPIRE, however, does not level off  as much as the data and the other codes are
 
 \begin{figure}
  \centering
- \includegraphics[width=0.5\linewidth]{../nb_px_paper/figures/90Mo.pdf}
+ \includegraphics[width=0.5\linewidth]{./figures/90Mo.pdf}
  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
  \caption{Measured \ce{^{93}Nb}(p,x)\ce{^{90}Mo} cross section, with the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} reaction channel visibly peaking at approximately \mbox{50 MeV}.}
- \label{fig:90Mo}
+ \label{fig:temp_90Mo}
 \end{figure}
 
 
 \begin{figure}
  \centering
- \includegraphics[width=0.5\linewidth]{../nb_px_paper/figures/90Nb.pdf}
+ \includegraphics[width=0.5\linewidth]{./figures/90Nb.pdf}
  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
  \caption{Measured \ce{^{93}Nb}(p,x)\ce{^{90}Nb} cross section, with the \ce{^{93}Nb}(p,p3n)\ce{^{90}Nb} reaction channel visibly peaking at approximately \mbox{50 MeV}.}
- \label{fig:90Nb}
+ \label{fig:temp_90Nb}
 \end{figure}
 
 
