@@ -1,0 +1,529 @@
+\documentclass[review]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{gensymb}
+\usepackage{siunitx}
+\usepackage[caption=false]{subfig}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage [autostyle, english = american]{csquotes}
+
+\usepackage{amsmath}
+\usepackage[version=3]{mhchem} 
+% \usepackage{fixltx2e}
+% \usepackage{refcount}
+% \usepackage{siunitx}
+% \usepackage{lastpage}
+% \usepackage{textcomp}
+\usepackage{mathtools}
+
+\usepackage{xfrac}
+% \usepackage{lmodern}
+% \usepackage{cool}
+% \usepackage{cancel}
+\usepackage{microtype}
+\usepackage{listings}
+\usepackage{mcode}
+% \usepackage{longtable}
+% \usepackage{subcaption}
+% \usepackage{booktabs,siunitx}
+\usepackage{gensymb}
+% \usepackage[normalem]{ulem}
+
+% \usepackage{mathtools, cuted}
+
+
+% \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{color}
+
+% \usepackage[colorinlistoftodos]{todonotes}
+
+% \usepackage[section]{placeins}
+% \usepackage{multirow}
+
+% \usepackage{lineno}
+
+
+
+
+\captionsetup{font=normalsize,labelfont={bf,sf}}
+
+\newcommand{\comment}[1]{\todo[color=blue!20!white,inline]{ASV: #1}} 
+
+
+\modulolinenumbers[1]
+
+\journal{Journal of Nuclear Instruments and Methods}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	
+	\begin{frontmatter}
+		
+	\title{Design, construction, and characterization of a compact DD neutron generator designed for $^{40}Ar/^{39}Ar$ geochronology}
+	%\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
+	\iffalse
+	%% Group authors per affiliation:
+	\author[UCB]{Mauricio Ayllon\corref{mycorrespondingauthor}}
+	\ead{mayllon@berkeley.edu}
+	\author[UCB]{Cory Waltz}
+		\author[livermore]{Joseph Bauer}
+	\author[geochronology]{Tim Becker}
+	\author[UCB]{Lee Bernstein}
+	\author[UCB]{Ka-Ngo Leung}
+	\author[UCB]{Leo Kirsch}
+	\author[geochronology]{Paul Renne}
+	\author[UCB]{Karl Van Bibber}
+	
+	\cortext[mycorrespondingauthor]{Corresponding author}
+	
+	\address[UCB]{Department of Nuclear Engineering, University of California, Berkeley, CA 94720, USA}
+	\address[livermore]{Lawrence Livermore National Laboratory, Livermore, CA 94550, USA}
+	\address[geochronology]{Berkeley Geochronology Center, 2455 Ridge Road,Berkeley, CA 94720, USA}
+	
+	\fi
+	
+\begin{abstract}
+	
+A  next-generation, high-flux, compact DD neutron generator has been designed, commissioned, and characterized, and is now operational in a new facility  at the University of California, Berkeley. The generator, originally designed for $^{40}Ar/^{39}Ar$ dating of geological materials, has since served numerous additional applications, including medical isotope production studies, with others  planned for the near future. In this work, we present an overview of the High Flux Neutron Generator (HFNG) which includes simulation tools, analytical treatments, and experimental validation of results. The generator's current neutron yield is approximately $10^9$ n/s, with future development aimed at achieving an output of more than $10^{10}$ n/s. Extensive analysis was performed in order to characterize the neutron yield, flux, and energy distribution at specific locations where samples may be loaded for irradiation. A notable design feature of the HFNG is the possibility for  sample  irradiation internal to the cathode, just a few millimeters away from the neutron production site, thus maximizing the flux, while minimizing the total neutron fluence. Moreover, the deuterium ion beam optics were  and optimized by simulation for various extraction configurations, so as to provide a uniform neutron flux distribution and an acceptable heat load. Finally, experiments were performed in order to benchmark the modeling and characterization of HFNG operation.   
+
+\comment{Paper's title capitalization changed to reflect NIM standards.}
+
+\comment{Unsure what you mean by \enquote{simulation tools}  (\enquote{...which includes simulation tools, analytical treatments... }).  Please clarify.}
+
+\comment{Define ``a few'' mm - it should be something like 8mm, if I recall.}
+		
+\end{abstract}
+		
+	\begin{keyword}
+		DD Neutron generator\sep MCNP simulations \sep ion beam optics \sep flux quantification \sep geochronology \sep activation foils \sep COMSOL Multiphysics
+	\end{keyword}
+	
+\end{frontmatter}
+	
+	\linenumbers
+	
+\section{Introduction}
+
+
+Fusion-based neutron generators are used in many fields of research, education, and industry. As opposed to many other neutron sources, such as thermal reactors, neutron generators provide nearly monoenergetic neutrons, pose a lower proliferation risk, do not produce high-level waste, and can be made compact and portable. The most common reactions for such a generator are shown in Equations \ref{eq:reactionDD} (\enquote{DD}) and \ref{eq:reactionDT} (\enquote{DT}). At low energies, DT reactions benefit from a resonance near 100 keV, which allows for a higher neutron yield at a given beam current. Around this energy, the neutron yield from a DT source is approximately  a factor of 80  greater than that of a DD source. \comment{This figure needs a citation, search in EXFOR/elsewhere.} However, the DT neutron energy spectrum is also much higher, which can be a significant disadvantage \comment{How?  Give an example or two.}, or even inapplicable for some purposes \comment{Again, be specific.  Give an example.}. Moreover, tritium poses greater radiological handling and licensing challenges. 
+
+\begin{align} \label{eq:reactionDD}
+&^{2}H +\ ^{2}H \rightarrow\ ^{3}He + n + 3.27\ MeV\ (50\%) \\
+&^{2}H +\ ^{3}H \rightarrow\ ^{4}He + n + 17.6\ MeV \label{eq:reactionDT}
+\end{align}
+
+
+Neutron generators are commonly used for a variety of applications including activation analysis, radioisotope production, fast neutron imaging, oil well logging, fundamental nuclear research, and nuclear data measurements \comment{You should probably cite a source or two to back up this claim}. The High Flux Neutron Generator (HFNG), located at the University of California, Berkeley, was designed and built by the Department of Nuclear Engineering  and the Berkeley Geochronology Center (BGC), with  primary application in the improvement of the $^{40}$Ar/$^{39}$Ar dating technique, which consists of irradiating geological samples in order to produce measurable quantities of $^{39}$Ar through the  $^{39}$K(n,p)$^{39}$Ar reaction. Currently, these samples must be  sent away to thermal reactors for neutron irradiation. A local source of DD neutrons would have many advantages in addition to convenience; the lower-energy quasi-monoenergetic DD neutrons would result in more precise age determinations by eliminating argon recoil out of the samples, in addition to reduced production of confounding isotopes which accompany irradiation via the use of higher-energy fission neutrons \cite{geochron}.
+
+\comment{I'd check on this claim of reduced contaminant isotopes relative to fission neutrons.  DD will give roughly 2.2-2.8 MeV neutrons, whereas only about 15\% of watt spectrum neutrons are born above 3 MeV.  I don't think its the high-energy fission neutrons which are the problem, but the massive amount of thermals, which will produce a ton of unwanted (n,$\gamma$) activities.  Check this either way.}
+
+Since its commissioning, the HFNG has been proven useful for a variety of additional applications including Prompt Gamma Neutron Activation Analysis (PGNAA) for on-site gamma detector calibration, cross-section measurements for emerging medical radioisotopes \cite{np_paper} \comment{Cite the n,p paper here, and make sure to update the paper's metadata: (\url{http://linkinghub.elsevier.com/retrieve/pii/S0168583X17308145})}, the study of delayed fission gamma rays in  $^{238}$U, inducing single event upsets (SEU) in CPUs for development of radiation hardened electronics, the study of  NaI detector response in neutron fields, and, most recently, cross-section measurements of $^{35}$Cl(n,p)$^{35}$S and $^{35}$Cl(n,$\alpha)^{32}$P, which are of significant interest for the design of molten salt reactors. \comment{I'd check with the people involved in each of these projects, to see if they have any citeable works for here.  In particular, I'm pretty sure Batch has a conference proceeding / publication for the Cl cross section work, and Leo has talked about the U238 fission gammas.}
+
+The HFNG operates by accelerating positive deuterium ions towards a titanium target electrode biased at a -120 kV potential. These ions embed in the target matrix forming titanium deuteride ($TiD_x$, where $x$ ranges from $1$ to $2$), \comment{$x$=0 would just be titanium metal. Also, deuteride is the ionic name for $^2$H, hydride specifically applies to $^1$H.} forming an implanted target for subsequent deuterium ions incident upon the cathode to initiate the DD fusion reaction shown in Equation \ref{eq:reactionDD}. Neutrons are born with a well-characterized distribution of energies and relative yields with respect to the angle formed with the incident beam (taken to be $0^{\circ}$) \comment{Cite the Liskien \& Paulsen paper here, too}. Precise characterization of the neutron spectrum spectrum throughout the HFNG was crucial for  the applications previously outlined, requiring that simulation tools and experimental validation be developed together.
+	
+\section{Description of the Facility and the Neutron Generator}
+	
+The HFNG is designed around two radio frequency (RF)-driven multicusp ion sources which straddle a titanium-coated copper target, as shown in Figure \ref{fig:HFNG}. This arrangement allows for doubling the deuterium current incident upon the target, which effectively doubles the neutron fluence at the sample location \comment{Flux should be a vector quantify, fluence is scalar}. This type of ion source, based upon similar designs developed at the Lawrence Berkeley National Laboratory, produces positive deuterium ions by ionizing deuterium gas with an RF field of 13.56 MHz \comment{Cite the Q. Ji paper here:  dx.doi.org/10.1063/1.3267832}. The ions are confined by means of neodymium magnets in copper chambers with quartz windows. The major benefit of this  ion source design is the production of predominantly monatomic deuterium ions \cite{wuThesis},  since diatomic deuterium ions achieve lower ultimate energies at specified extraction potentials, reducing neutron yields. \comment{Other than D2 ions, what other allotropes are we concerned with?  If thats the only one, list it instead of saying ``heavier allotropes.''} Because the DD fusion cross-section is a monotonically increasing function of the incident deuteron energy up to approximately 2.2 MeV (the deuteron breakup energy), lower bias voltages  reduce the neutron yield.   
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{pics/cutaway}
+	\caption{Cross-sectional view of the HFNG exposing the shroud, target, extraction plate, and ion sources. \comment{Provide a reference length scale for this schematic, and possibly enlarge it a bit - it's hard to see at its current size, and the design is far more important here than the (n,p) NIM. Also, make sure that this is the ``final/optimized'' design you present later on.}}
+	\label{fig:HFNG}
+\end{figure}
+	
+The target, shown in Figure \ref{fig:new_target}, is primarily composed of copper due to its excellent thermal conductivity. However, copper does not form hydrides as well as titanium, so a thin layer (120 microns) of titanium is explosion-bonded onto the copper structure to enhance deuteride implantation \cite{CRC}. The unique design of this target allows for samples to be placed very close to the neutron production surface ($\approx 8$ mm separation), maximizing the neutron flux at the sample location. Active internal cooling with deionized water is necessary to dissipate the heat load generated by the deuterium beam incident upon the surface of the target. The target is biased at a negative potential (up to -120 kV) in order to extract the positive deuterium ions.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{pics/new_target}
+	\caption{Target assembly showing the CAD design of the faceplate and the actual target soldered in place. The gray titanium-coated copper production surface is visible in the center of the target, and cooling lines for deionized water are seen on the sides of the target. \comment{Feel free to modify this, but it needs a bit more explanation of what is visible in the target.  also needs to be enlarged}}
+	\label{fig:new_target}
+\end{figure}
+	
+The target is encased in a shroud electrode biased at an even lower potential ($\Delta V=2.4\ kV$) through an arrangement of diodes in order to reverse the direction of the electric field inside this structure. The circuit diagram is shown in Figure \ref{fig:diodes}. Without a shroud, electrons that are backscattered off of the titanium target by the deuterium ions would experience a repulsive electrostatic force, accelerating them back towards the extraction plate to cause arcing,  overheating (or even melting) of surrounding structures, and a very large flux of bremsstrahlung. The electric field reversal inside the shroud makes the electrons experience an attractive force which guides them back towards the target, mitigating the issues mentioned above. A detailed discussion of this technique has already been published \cite{electronSup}. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{pics/diodes3}
+	\caption{Circuit schematic of the diode assembly, for typical operation at a -XXXXX V bias potential. Note that the voltage differential between the shroud and the target can be varied from 0 to 2.4 kV. \comment{I thought we typically run at -120 kV?  Make sure that the values you quote in this diagram are consistent with normal operating conditions.}}
+	\label{fig:diodes}
+\end{figure}
+	
+The HFNG's internal vacuum chamber is evacuated by a scroll pump connected in series with a turbopump, designed to operate at an internal pressure of XXXXXX  \comment{List what a typical range of operating pressure is.}. The scroll pump is oil-free; since the HFNG produces a finite amount (approximately XXXXX uCi / hour of operation) of tritium during operation, which readily binds to oil molecules, oil-free pumps help minimize dispersible tritium contamination. \comment{Have we measured what typical tritium levels are produced duirng operation?  nCi / hr?  uCi/hr?  You say that a certain amount is produced, you need to quantify that here.} Furthermore, a scroll pump can be operated continuously without the risk of backstreaming fluids. The HFNG uses a residual gas analyzer (RGA) system that allows for continuous, on-line monitoring of the gas composition inside the chamber. It serves as both a leak detector, as well as a reliable indicator of water vapor, which causes a variety of problems during operation.  \comment{Like what?  Briefly describe the problems caused by water vapor.}
+	
+In addition to this standard internal irradiation, two alternative modes operation are presently available, providing the possibility to use the HFNG to provide a range of alternative neutron energy distributions for various applications.    A polyethylene structure was constructed and can be assembled around the HFNG to thermalize DD neutrons while maintaining high flux for internal irradiation \comment{Quote the flux/fluence we see for thermal poly operation.}. In general, neutron capture cross-sections follow a $1/v$ trend  at lower energies. In this mode of operation, the HFNG can be used as a compact alternative to thermal reactors for  $(n,\gamma)$ activation studies and isotope production.  \comment{I would insert a picture of both the poly shield, as well as the external beamline cage.  Later on, it would be well worth your while to include neutron spectra for each.  If this article is announcing the possibility to operate the HFNG in these 2 modes, we definitely need to have figures/results describing their characterization.}
+
+Additionally, there is an external beam port which can be aligned at 90\degree\ ($\approx$2.45 MeV neutrons) with respect to the production surface  of the HFNG in order to perform experiments outside the vault. \comment{Correct me if I'm wrong, but wouldnt it be aligned with the 90-degree neutron production angle?  The neutrons are emitted in 4$\pi$, but mostly forward focused, so the beam port should just let through whatever solid angle it subtends?  Doubel check the energies I list here.} This port is connected to a shielded beam dump and allows for both collimated beams of fast neutrons, as well as a thermal spectrum, using a polyethylene plug in the beam port. A number of experiments  have already been performed using the external beam line, including characterization of gamma detectors in a neutron field, and prompt gamma activation analysis of various materials, with more planned for the future.   
+
+\comment{I provided a starting point, but for both the thermal shield and the external beam line, you need to explain WHY they are useful, not just list that they exist. }
+	
+
+	
+	
+\section{Modeling of Neutron Yield, Flux, and Energy Distribution}
+	
+\comment{The text starting off this section \enquote{The neutron yield has been experimentally determined...} isn;t appropriate to start off a section, as it is more of a conclusion / result.  I moved it to the conclusions instead. }
+
+
+	
+\subsection{Neutron Yield Analysis}
+
+At the ion energy specified by the bias voltage, a fraction of the accelerated deuterons do not undergo DD fusion due to two main processes: 1) deuterons slow down as they traverse the target volume before a fusion reaction occurs, and 2) the deuterium ion beam is not purely monatomic, which also lowers the interaction energy \comment{Not sure what you mean by ``lowers the interaction energy.'' Please explain and reword.}. Both of these processes result in a lower neutron yield due to the fact that the DD fusion cross-section decreases with decreasing deuteron ion energy. This slowing  process can be described using data for the energy loss per unit distance (stopping power) of deuterons in titanium \cite{SRIM}. Additionally, the deuterium beam is composed of monatomic (D$^+$), diatomic (D$_2^+$), and triatomic (D$_3^+$) ion species. For heavier  species, the final energy they achieve for a given target potential is lower. For example, molecular (diatomic) deuterium accelerated to 100 keV will share this energy equally between the two deuterium nuclei, \emph{i.e.}, each ion has an energy of 50 keV. For RF ion sources, the deuterium is strongly monatomic, however, the exact composition is, for the most part, a function of the RF power. \comment{Why?  Explain, and provide sources.}  Similar ion source designs have been characterized \cite{multicusp2},  indicating that at 1200 W (standard for the HFNG), the ratios between the three species are approximately 0.65:0.25:0.10, respectively. Even though RF ion sources produce mostly monatomic deuterium ions, the recombination process is significantly affected by the contact material.
+\comment{Provide a source!} Insulators are better at hindering recombination, while conductors such as copper have much higher recombination coefficients.   \comment{Provide a source!} 
+
+The neutron yield can be approximated based on an analytical approach outlined in \cite{CRC}, together with empirical data for the stopping power ($dE/dx$) of deuterons in titanium, the cross-section for the neutron-producing DD reaction, the fraction of different deuterium species in the ion source, and the deuterium-to-titanium ratio in the self-loaded target, which was taken to be one-to-one for a conservative estimate. \comment{Is this  a mass ratio?  Atom ratio?  Specify.} Equation \ref{eq:yield} was used to estimate the neutron yield as a function of deuteron energy ($E_d$), where $\phi_d$ is the deuteron flux (cm$^{-2}$s$^{-1}$) incident on the target, $n_d$ is the number density of deuterons in the target (cm$^{-3}$) when saturated, $\sigma(E_d)$ is the cross section for the DD neutron-producing reaction (mb?), and $dE/dx(E_d)$ is the energy loss per unit distance in titanium. Note that the lower limit of integration is taken to be zero since the Q-value of the reaction is positive. This estimated yield  is an input for the MCNP \cite{MCNP} model, which calculates the neutron flux per source deuteron. 
+
+\comment{If the flux profile comes from MCNP, and you use the resulting yield as MCNP input, isn;t that a circular system?  This needs a lot of work to clarify what you refer to.}
+
+
+\comment{Where do you get each of these quantities from?  Please specify.  I assume flux comes from MCNP, cross section from Liskien-Paulsen, stopping power from SRIM.  Cite each here after you mention them, for clarity.}
+
+\comment{How do you determine when the the target is saturated? and how you measure the number density at that point?  REALLY elaborate on that here.}
+
+This approach agrees with experiments relatively well, as discussed in the last section.  
+\comment{You can't just say ``relatively well'' - provide a concrete number, and consider moving discussion of results to later on, since you are here describing the input of modeling, not necessarily results yet.}
+
+\begin{equation} \label{eq:yield}
+Y(E_d)=\phi_d n_d \int_{0}^{E_{max}} \frac{\sigma(E_d)}{dE/dx(E_d)}dE_d
+\end{equation}
+
+	
+\subsection{Neutron Flux and Energy Distribution}
+
+The kinematics of the 2-body interaction between deuterons results in a well-characterized variation of neutron energy as a function of angle in the lab frame \comment{Provide source!  Likely Liskien-Paulsen}. This neutron energy-angle variation is seen for a range of ion energies in Figure \ref{fig:energy_dist}, clearly displaying that this variation is quite significant. For instance, at zero deuteron incident kinetic energy, the energy of the emitted neutron is 2.45 MeV, while at 100 keV, the maximum is close to 2.8 MeV. The apparent violation of  conservation of energy  is accounted for by the redistribution of the total excitation energy (Q-value plus incident deuteron energy) between the $^3$He nucleus and the neutron. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{pics/energy_dist}
+	\caption{Neutron energy in the lab system as a function of angle. With increasing ion energy, a wider spread in neutron energy is seen over the 0-180\degree\ range. \comment{If this is Liskien-Paulsen data, it needs to be cited here in teh caption, too.}}
+	\label{fig:energy_dist}
+\end{figure}
+
+The energy spectrum changes slightly as the neutron travels through the target, \comment{What do you mean it ``changes slightly''?  Does it broaden? Dampen? Be specific. } leading to different empirical correlations  for thin and thick targets \cite{CRC}. \comment{Need to define thin vs thick target.  Give ranges in mg/cm$^2$.} The angular distribution is well-fitted with an expansion in Legendre polynomials, as shown in Equation \ref{eqn:energDist}. Note that this equation is valid for DD and DT reactions below $500$ keV deuteron energy for both thin and thick targets. 
+
+\begin{equation}
+E_n(E_d,\theta)=E_0+\sum_{i=1}^{n}E_i cos^i \theta
+\label{eqn:energDist}
+\end{equation}
+
+The coefficients $E_i$ were determined for a few energy values of deuteron energy \cite{CRC}. Therefore, they were interpolated in this code using a cubic spline to be applicable for a wider range of desired energy. \comment{Which code are you refrring to?  This is the first tiem you mention any code.  Please explain in-text.} Furthermore, the neutron yield is also dependent on the emitted angle, and DD neutrons exhibit a larger anisotropy than DT neutrons. \comment{Why?  Explain and provide sources.} The yield in this design of DD neutron generators is forward-focused, with the maximum yield in the direction of the incident deuteron beam  ($0^\circ$). The relative yield, defined as the total yield normalized to that at $90^{\circ}$, can be described by Equation~\ref{eqn:angDist}, a best-fit model of the available data \cite{CRC}.
+
+\begin{equation}
+\frac{Y(\theta)}{Y(90^{\circ})}=A_0+\sum_{i=1}^{n}A_i cos^i \theta
+\label{eqn:angDist}
+\end{equation}
+
+\comment{Why do you choose to normalize to the 90\degree\ yield?  Please explain, and, if its an arbitrary choice, describe why you chose 90\degree\ over, say, 0\degree.}
+
+The coefficients $A_i$ were interpolated using a cubic spline for various deuteron energies, with the resulting relative yield distributions in the lab frame  shown in Figure~\ref{fig:yield}.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{pics/rel_yield} 
+		\caption{Relative neutron yield for different accelerating voltages. Neutron yield becomes increasingly more pronounced with larger voltage at forward and backward angles. \comment{In figure captions, you need to provide more than a description of what is in the figure, give commentary on its significance also.  Also, you use RY($\theta$) on the axis label here, but Y($\theta$) in \ref{eqn:angDist} - be consistent. }}
+		\label{fig:yield}
+	\end{center}
+\end{figure}
+
+\comment{Need to specifiy the version of MCNP you used, and cite its tech doc.}
+
+An MCNP model of the generator and surrounding structures was developed, with the neutron source  modeled according to experimental data obtained from \cite{Cross_sections}. The primary purpose of such a model is to obtain the flux and energy distributions at different irradiation locations. The titanium target is considered to be ``thick'' in the sense that all accelerated deuterons either interact or stop within the target; deuterons penetrate the target a maximum of just under 1 micron at 120 kV \comment{You need a source for that}, while the titanium layer is several hundred microns thick. The types of neutron sources considered in the MCNP model were point-like, disk \comment{Specify diameter}, and Gaussian shaped \comment{Specify centroid and 1-$\sigma$ width}, with the latter being the most accurate representation of the actual source (single-hole extraction) \comment{What are you basing this ``most accurate'' claim on?  Benchmarking?  Back up your claim.}. The model  allows for different input parameters to be modified according to the experiment being performed. These tunable parameters include the acceleration voltage, the deuterium ion current, the atomic deuterium ion fraction in the plasma, the beam diameter, and the Gaussian profile of the beam. The resulting neutron energy distributions for each source definition are shown in Figure \ref{fig:source_definitions}. Note that there is no significant difference among the three different source definitions. \comment{to back up this claim, you really should provide a residuals plot, since at the current scaling of the figure, you can't look for any systematic differences.} However, if the irradiation location or the size of the samples change, it is important to re-check that these definitions are still consistent.  \comment{Why would you expect them to agree?}   
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{pics/comp_sources_log}
+	\caption{MCNP-simulated energy distributions  at the center of the sample holder location for different source definitions. Flux units on the y-axis are normalized per source neutron. \comment{Your y-axis has no label, the units alone are insufficient. For the disk and Gaussian sources, you have to provide the parameters you used for each sources - diameter, and centroid and width, respectively. In the legend, capitalize the entries, and don't abbreviate Gaussian.  Also, you should comment on what causes the feature near 1.7 MeV.}}
+	\label{fig:source_definitions}
+\end{figure}
+
+\comment{Make sure to comment on the paucity of thermal neutrons in this spectrum, and the importance of this for preventing unwanted (n,$\gamma$) contamination. You'll want to point back to this later in your results.}
+
+
+In order to take advantage of the variation of neutron energy as a function of angle, an L-shaped sample holder, shown in Figure \ref{fig:L_holder}, was designed so that multiple samples can be loaded  to span neutron energies between 2.4 - 2.8 MeV at 100 kV extraction voltage. This arrangement is particularly interesting for cross section measurements, as it permits measurement at different neutron energies in a single irradiation. It has been used for $^{35}$Cl(n,p) and $^{35}$Cl(n,$\alpha)$ reaction cross section measurements. \comment{Check with Batch to see if he has anything we can cite for now, even if its just a conferenece talk.} The size of the energy window depends on the size of the sample, and MCNP simulations should be performed in order to estimate this energy spread. The sample slot located at $98.1^{\circ}$ allows for a ``clean'' neutron beam, which means that there is virtually no structural material in between the sample and the neutron production surface. This arrangement allows for a more narrow energy distribution (since no scattering occurs on structural materials), but at the expense of a reduced neutron flux due to the $1/r^2$ dependence and the kinematics of the reaction yield, as shown in Figure \ref{fig:yield}. 
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{pics/L_holder_ang2}
+	\caption{Sample holder that allows for irradiation of samples at different neutron energies. The energies shown correspond to a 100 kV extraction voltage. \comment{For teh leftmost two slots, it looks like they shoudl also be 54.8\degree\ and 76.7\degree\ positions, but you should label them such for clarity. Also, provide (eitehr  in the caption or drawn on with an arrow), dimensions for the holder - l x w x h, and sample slot diameter. In subfigure b), make the energy points larger and bolder. }}
+	\label{fig:L_holder}
+\end{figure}
+	
+\section{Ion Beam Extraction Analysis}
+
+The deuterium beam is extracted from the plasma electrode of the ion source through either a single or multiple apertures. The configuration and design of such an extraction mechanism largely determines the beam profile. Precise knowledge and control of the ion optics is necessary in order to 1) achieve a uniform beam profile on the surface of the target and 2) prevent the localized temperature from reaching $\approx 200^{\circ}\ C$ \cite{AANG}. The first requirement ensures that the resulting neutron flux is also uniform over the sample to be irradiated, which is essential for  experiments such as the irradiation of geological samples \cite{geochron}. The second requirement has to do with the fact that implanted deuterium degases from titanium at XXXXX  \comment{Provide actual degassing temperature value here, and provide citation for it. You use 230 C later on, but 200 C.  Which is it?  Be consistent.}, which results in a lower neutron output. Moreover, if the heat load surpasses a certain value determined by the specific target configuration, the target can be eroded and destroyed. \comment{Give a ballpark value of this criticla failure heat load.}
+
+The optimum beam spot diameter varies according to the application of the neutron generator. For example, a very small spot size (approximately XXX - YYY mm) \comment{fill in values.  When would larger spot size be advantageous?} is needed for fast neutron imaging as it enhances the sharpness of the image \cite{adams}. However, this requirement limits the beam current the target can handle, which, in turn, limits the neutron yield at a given acceleration voltage. The HFNG is designed for a variety of exchangeable extraction plate designs, which result in different beam profiles depending on the application. Extensive analysis and modeling were performed for a single extraction aperture of 0.262 cm in diameter and a multiple-hole extraction plate. \comment{Describe the process that led to the selection of this diameter.}
+
+A flat plasma meniscus at extraction is desired in order to achieve a uniform beam profile \cite{CoryThesis}. However, precise modeling of the plasma meniscus is complicated due to the complex geometry of the HFNG and imperfect fidelity of plasma physics simulations (especially near plasma boundaries). Moreover, slight changes in electron temperature and ion density in the plasma significantly affect the shape of the plasma meniscus, as determined by Bohm's Equation \cite{plasma}. \comment{You refer to the Bohm equation here, include it in the text.} As the diameter of the extraction aperture decreases, the effects of the plasma meniscus shape on the resulting beam profile are greatly reduced, to the point that, at very small ($\approx 1\ mm$) apertures, the extracted beam is barely affected by focusing or defocusing effects.   
+
+The finite-element software package COMSOL Multiphysics \comment{Corrected capitalization to match the company. Please specify version and provide citation.} was used to simulate the ion beam trajectory for a single extraction aperture nozzle of 0.262 cm diameter and a 19-hole extraction electrode (each 1 mm internal diameter), as shown in Figure \ref{fig:single_vs_mult}. \comment{Again, you need to explain where the choice of these diameters and number of holes came from.  Iterative modeling> Cory's thesis?  Please specify.} The geometry of the setup is consistently represented in COMSOL, as it is imported from the CAD designs used for machining the HFNG's structural components. The assumptions built into the simulations are as follows:
+
+1) Ions are extracted from a flat plasma meniscus, which is a reasonably good assumption because of the small size of the extraction aperture and when operated near the Child-Langmuir limit. \comment{Need a citation for Child-Langmuir law.}
+
+2) All ions are born with the same speed and with a perpendicular velocity to the surface of the plasma. Even though the energy of the ions in the plasma follows a Maxwell-Boltzmann distribution, this assumption encompasses the overall behavior of the beam as it travels to the target. 
+
+Figure \ref{fig:beam_spread} shows the electric potential and the simulated particle trajectories at a target bias and beam current of 100 kV and 1.4 mA, respectively. Note in Figure \ref{subfig:beam_spread} that the equipotential lines near extraction result in a slightly focusing field. This is due to the HGNG geometry, which requires that the ion source to be recessed back a certain distance in order to achieve the desired current density, reduce the maximum electric field in that region, and allow for the beam to spread so the heat flux on the surface remains within acceptable limits of approximately XXXX.  \comment{Clarify what ``that region'' refers to, and giev a ballpark heat limit.}
+
+\begin{figure}
+	\centering
+	\subfloat[\label{subfig:beam_spread}]{\includegraphics[width=0.55\textwidth]{pics/beam}}
+	\hfill
+	\subfloat[\label{subfig:beam_in_shroud}]{\includegraphics[width=0.445\textwidth]{pics/beam_shroud}}
+	\caption{Comsol simulation of electric field and deuteron beam trajectory at 100 kV and 1.4 mA. \comment{Make a brief comment to indicate which direction corresponds to the RF source vs the target, to show perspective.  Repeat the comment about the apparent focusing field.}}
+	\label{fig:beam_spread}
+\end{figure}
+
+The resulting beam spot size and heat deposition on the target are shown in Figure \ref{fig:beam_spot2}. Note that the beam profile in a) is non-uniform across the target, and  localized heating (and neutron production) is observed near the edges. Therefore, a convex-shaped extraction nozzle was designed, whose purpose is to counteract the focusing electric field experienced near the aperture. The nozzle design is shown in Figure \ref{fig:beam_spot2} b) and c). \comment{You mention the convex nozzle, but don;t describe its pitch / the forward and back diameters.  Please elaborate more detail regarding the shape of the nozzle, how you got to that particular design, and provide these numbers in the caption for Fig 9.} Note the defocusing effect of the nozzle due to the fact that the equipotential lines are slightly convex downstream of the beam path. The beam spot is not only more uniform, but it is also spread throughout a larger area, which reduces the heat load on the target.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{pics/beam_spot2}
+	\caption{Beam spreading by modification of the single  0.262 cm diameter extraction plate nozzle: a) flat extraction, b) \& c) convex extraction, d) burn mark on target.\comment{Confirm that this is teh correct diamater in the caption, and describe / label the convex nozzle geometry. }}
+	\label{fig:beam_spot2}
+\end{figure}
+
+Experimental results show a high degree of consistency with simulations based on the beam spot size (diffuse burn mark measured to be around 10 mm), and the resulting neutron flux distribution, as detailed in Chapter 5. 
+
+\comment{This claim is more appropriate to be included in the validation / section 5.  Consider moving it there, and expand on this.  What does ``high degree of consistency'' mean?  Elaborate and use numbers.}
+
+
+\subsection{Multiple-Hole Extraction System}
+
+\comment{You give the multi-hole plate its own subsection, create one for the single-hole plate also.}
+
+The uniformity of the beam spot and further spread of heat load can be achieved by alternative means than optimizing a single extraction nozzle. For instance, an Einzel lens configuration, \emph{i.e.}, one or more extraction plates located downstream of the beam and biased at different potentials, can give further control of the beam envelope. One of the downsides of such an arrangement is the higher degree of complexity added to the design, which stems from biasing, insulating, and properly installing these plates inside the vacuum chamber. Another option is the use of multiple apertures in the plasma electrode. Figure \ref{fig:CAD_extraction} shows an optimized design of a 19-hole extraction plate arranged in a hexagonal pattern, which was chosen in order to optimize the packing fraction and the uniformity of the beam.
+
+\comment{Why does optimizing packing fraction matter?  Explain.}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{pics/CAD_plate2}
+	\caption{CAD drawing of the optimized 19-hole extraction plate. \comment{Good reference scale.  Mention the diameter of the individual holes.}}
+	\label{fig:CAD_extraction}
+\end{figure}
+
+In order to approximate the maximum beam current that can be extracted from each individual hole, the Child-Langmuir law was employed, which sets a limit for the extractable current through an aperture assuming the system is space charge-limited (enough ions are available in the ion source). This treatment was derived only for beam extraction between parallel plates, but serves as a good approximation for our purposes. \comment{Why? How do you know it to still be applicable?} Figure \ref{fig:child_lang} shows the maximum theoretical beam current that can be extracted as a function of the aperture diameter for the HFNG geometry at 100 kV. \comment{Where does this data coem from? Child-Langmuir law? Explain and provide a citation.} Because it desirable to keep the diameter of the apertures small \comment{Why, if you could get more current extracted?  Elaborate a bit briefly on the tradeoff, and how to find a ``sweet spot''.}, we chose a diameter of $1\ mm$, through which it is possible to draw a current of $\approx 0.196$ mA. Therefore, for the 19-hole plate arrangement, it is theoretically possible to draw up to $3.7$ mA, or a total of $7.4$ mA if both ion sources are used. This current  is an approximation, but it serves as a conservative input parameter for  ion beam simulations. In fact, the observed current limit was 3.5 mA, confirming the validity of this approximation. \comment{Nice!}
+
+ \begin{figure}
+ 	\centering
+ 	\includegraphics[width=0.7\textwidth]{pics/childLang}
+ 	\caption{Maximum extractable current according to Child Langmuir law for the HFNG geometry at 100 kV. \comment{Provide citation for Child-Langmuir here.}}
+ 	\label{fig:child_lang}
+ \end{figure} 
+
+Simulations show a more uniform beam profile near the center and a larger impingement area, which translates into a lower heat flux than that of a single hole even at higher current values. Beam current can be further increased by adding more holes or by increasing the diameter of the holes. The increase in current can be limited by the maximum number of holes that can be drilled on the plate or by the increase in chamber pressure due to a larger open area between the ion source and the rest of the vacuum chamber. The latter could raise the gas pressure too high for optimum operation. \comment{What pressure limit would this be?}
+
+The geometry of the HFNG is such that there exists a focusing electric field at extraction, as shown in Figure \ref{fig:beam_spread}. Therefore, off-centered beamlets experience a focusing force, which depends on their location with respect to the center. For instance, beamlets further away from the center experience a stronger focusing force because the equipotential lines are more concave in that region. Therefore, multiple-extraction hole systems produce a convergent beam envelope. In contrast, a single hole in the center produces a divergent beam envelope, as shown in Figure \ref{fig:single_vs_mult}. The reason for this spread is partially due to space charge effects, but is primarily due to the initial focusing provided by the extraction hole itself, which causes deuterons to cross over and then diverge. This phenomenon is depicted in Figure \ref{fig:cross_over}. \comment{Not sure if Fig 12 shows this clearly or not.} Essentially, each extracting aperture acts as a non-linear electrostatic lens with spherical aberration (not focused to a point) \cite{Plasma}. 
+
+\comment{This citation appears to be broken in your google drive version.}
+
+\begin{figure}
+	\centering
+	\includegraphics[height=0.6\textwidth]{pics/cross_over_comp}
+	\caption{Simulation of deuteron trajectories near extraction. Note the convergent field (b) that provides the initial focusing force that is ultimately responsible for the spreading of the beam. \comment{Figure is a bit unclear as to what it actually shows.  Label or describe where extraction, the ion sourecs and the target are, to illustrate the convergence, as its unclear currently.}}
+	\label{fig:cross_over}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height=0.5\textwidth]{pics/single_vs_mult2}
+	\caption{The beam envelope for a single beam, a),  located at the center is divergent while that of multiple holes, b), is convergent.}
+	\label{fig:single_vs_mult}
+\end{figure}
+
+\comment{What is this spacer?  This is the first time you mention it, so you need to first descrobe what it is, what it does, dimensions, materials, etc.}
+
+If there were no spacer, the beamlets would not experience a focusing force and the beam envelope would be divergent, as shown in Figure \ref{fig:spacer_vs_noSpacer}. However, at such a close distance ($\approx$ 7 cm from the target), the individual beamlets would not spread enough and the heat deposition per beamlet would be unacceptable.  
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{pics/spacer_vs_noSpacer2}
+	\caption{Beam envelope with spacer (top), and without spacer (bottom), showing the effect of the spacer, which gives an additional standoff of 7 cm; the spacer also introduces a focusing field.}
+	\label{fig:spacer_vs_noSpacer}
+\end{figure}
+ 
+\comment{Im confused as to what you mean by beamlet center. Please explain before using teh term.  Is it the centroid of the overall beam pattern formed by all the beamlets?  Please elaborate.  Also, pick eitehr ``beamlet center'' or ``beam center'', and be consistent - see Fig 15 x- and y-axis label.} 
+ 
+Simulations were performed in order to optimize the hole pattern distribution. The design curve shown in Figure \ref{fig:designC} shows the beamlet center at the target as a function of the beamlet location at the extraction plate. The dashed line shows the hypothetical case in which there is no focusing field and the beamlets are perfectly horizontal.
+
+\comment{What do you mean by perfectly horizontal?  The individual beamlets without a spacer should be divergent, I think.}
+
+\begin{figure}
+	\centering
+	\includegraphics[height=0.5\textwidth]{pics/designC}
+	\caption{Design curve used to estimate the center of the individual deuterium beamlets on the target. The dashed curve is for the case with no spacer (linear) and the solid curve for the current configuration. \comment{Where does this data come from?  You never describe it anywhere, and it definitely needs to eb added.  Experimental measurement?  Simulation?  If it is simulation, how did you verify / benchmark that the simulations were reliable for the generation of this design curve?  These questions MUST be addressed. Why does teh solid line have uncertainties plotted, but the dashed line does not?  be consistent, and add uncertainties to the dashed line.}}
+	\label{fig:designC}
+\end{figure}
+
+The optimization process focused on two parameters: reduction of heat flux on the target surface, and uniformity of the heat flux distribution, which translates into a more uniform  neutron flux distribution at the sample location.
+
+\comment{Why was two rings of nozzles chosen?  Why not 3, or using the number of rings as a design parameter? The motivation behind this decision needs to be made explicitly clear in the text.}
+
+\begin{figure}
+	\centering
+	\includegraphics[height=0.5\textwidth]{pics/twoBeams}
+	\caption{Comsol simulation results showing the center and outermost beamlets. The latter was placed so as to achieve a flat profile.}
+	\label{fig:two_beams}
+\end{figure}
+
+\comment{By ``outermost beamlet'', do you mean the beamlet in the outer ring of nozzles?  Please make this more clear.}
+
+Figure \ref{fig:two_beams} shows the 2D beam profiles of the center beamlet and the outermost beamlet. The latter was placed 9.8 mm from the center in order to achieve a flat beam profile on the target. 
+\comment{Is this distance a center-to-center distance, or edge-to-edge? Is it a gap distance, or a pitch? Please make clear.}
+\comment{Also, you show this figure, but don't comment on it.  You need to provide some commentary as to the significance of this figure, and what it tells you.}
+The intermediate hole was placed in such a way that its corresponding beamlet would hit the target exactly midway between the other two. This location was calculated (from the design curve) to be 5.1 mm from the center. \comment{Again, specify center-to-center or edge-to-edge.} The resulting heat flux distribution is shown Figure \ref{fig:heat maps} (right). Note that evenly spaced extraction apertures result in a non-uniform distribution due to the uneven focusing effect explained previously. A design leading to an unacceptable heat profile is shown in Figure \ref{fig:heat maps} (left). 
+
+\comment{This paragraph needs a lot of work and clarification.  You say that the optimized design intermediate beamlets would hit the target exactly midway between the other two, but then turn around and say that evenly spaced extraction apertures result in a non-uniform distribution.  These two statements seem to contradict, so you need to further explain and reconcile them. Also, throughout this work (I've brought it a up a few times now), you keep referencing unacceptable heat loads, or critical failure heat loads, but you have yet to specify a number for this value.  Please give a ballpark number, and stick to it throughout. You also give no information about the pith and nozzle diameter used for it, so the reader has no information about how sensitive the nozzle layout is to heat load, since there is a significant difference seen in the two heat flux maps. This sense of sensitivity needs to be communicated, to show how close or far apart these two designs are in phase space.  Please rework all of this extensively.}
+
+\begin{figure}
+	\centering
+	\includegraphics[height=0.6\textwidth]{pics/comparisonHeatMaps_plates2}
+	\caption{Power density on the target for a non-optimized design (left) and a design optimized according to the design curve shown in Figure \ref{fig:designC}. \comment{See previous comment.  You need to give soem basic info (nozzle pitch and diameter), and comment on the reduced heat flux, removal of hot spots, spread of heat flux over larger area, more uniform heat flux, etc..}}
+	\label{fig:heat maps}
+\end{figure}
+
+Note that even though the spacing between the holes is larger on the optimized extraction plate design ($d \approx 2 \ cm$), the resulting beam profile on the target is comparable in size as the non-optimized design ($d\approx 1.1 \ cm$), but with a higher degree of uniformity and reduced heat flux. Experimental tests validate these simulations, as shown in the experimental validation section.
+
+\comment{Good.  Consider adding a brief comment of the \% difference in beam profile size, as well as a metric to describe the difference in uniformity between the two.}
+
+\subsection{Heat Transfer Analysis}
+
+The heat flux distribution on the target surface was modeled in COMSOL using its heat transfer in solids module coupled with the turbulent flow module. \comment{What about the (admittedly very low pressure) residual gas?  Does this heat TX model account for passive convection to the residual gas?  This needs to be commented on.} Further details about the target's heat transfer analysis may be found in \cite{CoryThesis}. Figure \ref{fig:temp_comsol} shows the temperature distribution on the surface of the target for three different beam profiles: single hole, non-optimized multiple-hole, and optimized multiple-hole extraction plate. \comment{You should reiterate the design specs of each here:  nozzle(s) diameter, and pitch.} Note that all plate designs show a maximum temperature below the degassing temperature of hydrogen in titanium ($\approx 230\ ^{\circ}C)$ \comment{You need to provide a citation for this value!}. However, the simulations do not account for the inter-metallic phases between the copper and the titanium, or the bonding process itself. Experimentally, it was found that the neutron yield is lower in the case of diffusion bonding compared to the explosion bonded material. This would seem to indicate that the latter has better heat transfer properties, but XXXXXX. \comment{Briefly comment again on why better heat TX improves neutron yield, and also provide another possible explanation for the differenec between the two bonding methods.} Additionally, variations in  titanium thickness and the purity of the metal affect the neutron yield -  thinner titanium layers have better  heat transfer properties in the target. \comment{Why is this?  Explain and provide sources.  Also, give rough figures of merit, e. g., a reduction in titanium thickness of 5\% improves heat transfer by 10\%.  Find actual numbers and insert them, and provide a counterargument for going too thin`- insufficient thickness for titanium to implant, I would assume.  You make a claim that thinner targets are better, so you need to back that up with ballpark numbers to illustrate how strong of an effect it is.} The disadvantage of having a very thin (less than XXXX mm) titanium layer is that the target has a shorter lifetime due to ion sputtering.  \comment{Fill in values, provide approximate target lifetime for this minimum thickness.  Wouldn't an incredibly thin target also be insufficient to have Ti implant, dramatically lowering neutron yield, since titanium is far better of a getter for hydrogen than copper?}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[height=0.5\textwidth]{pics/temp_profiles2}
+	\caption{Temperature maps on the target for different extraction plates a) single-hole b) multiple-hole, non-optimized, c) Multiple-hole optimized. Maximum temperature values are $104^{\circ}C$,  $155^{\circ}C$,  $114^{\circ}$C, respectively.  \comment{Very good.}}
+	\label{fig:temp_comsol}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height=0.5\textwidth]{pics/TiCu2}
+	\caption{Metallographic cross-section of the HFNG target, clearly showing the Cu$_\text{x}$Ti$_\text{y}$ intermetallic phases between copper and titanium. \comment{You use $\micro$m in the text as a length scale, but inches here.  Pick one and be consistent for both.  I would go with $\micro$m.}}
+	\label{fig:TiCu}
+\end{figure}
+
+Figure \ref{fig:TiCu} shows a metallographic  cross-section of the diffusion bonded target. Note that there is a region of about 25 $\micro$m in the copper-titanium interface with two visible phases (Cu$_\text{x}$Ti$_\text{y}$ intermetallics), which is difficult to include in the simulations and their effect on the heat transfer is unknown. \comment{This seems like a MAJOR red flag for a reviewer. You can actually fairly easily estimate the relative Cu/Ti composition, using an SEM / electron backscatter spectrometer, to gauge the relative abundance of Ti/Cu in each of the phases. Hosemann has such a capability, and we had to use it in 120.  I agree that the impact of this layer should be minor, but this seems to me like something that absolutely could not be published without addressing. I would see if you can use Hosemann's SEM (or have one of his grad students do it) to get this ratio in each phase, and incorporate it into you modeling.  This seems absolutely necessary.} However, the titanium thickness in the simulated model can be increased by that amount in order to remain conservative. \comment{Not necessarily conservative, as you;ve already noted before that its thermal and deuteride forming properties are significantly different than copper.  The impact should be minor, but we need to address this.} Experimentally, it was determined that there is some overheating of the target in the case of the non-optimized extraction plate. This was evidenced by the initial increase in neutron dose rate rapidly followed by a decrease in dose rate. \comment{This does not follow.  How does overhetaing lead to increased neutron yield, then reduced yield?  please explain in text.} The neutron yield in this case was similar to that of the single-hole extraction plate. However, the optimized geometry \comment{single-hole or multi-hole?  Please clarify.} allows for an increase in neutron yield by a factor of $\approx 2.5$, which is expected from Equation \ref{eq:yield}.  
+
+\comment{Your last sentence here doesn't make sense.  What parameter in Eqn 3 is being increased by the optimized design causing this factor of 2.5 increase in neutron yield?  Reword the sentence and be more specific, your logic doesn't follow.}
+ 
+	
+\section{Experimental Validation of the Neutron Flux and Deuteron Beam Profile}	
+
+The neutron flux was experimentally determined through neutron irradiation \comment{Neutron activtaion analysis typically refers more to (n,$\gamma$) analysis of abundance in a sample, and doesn't really precisely apply here.} of nine natural indium foils arranged in a $3\times3$ array at the sample holder location, as shown in Figure \ref{fig:flux_map}. \comment{Do you have a picture of the 3x3 sample holder? I think it would eb useful to include here, too.} Indium is a soft metal which can be easily cut into foils approximately 0.9 cm in diameter and XXX mm thick  \comment{Fill in thickness values.}. The naturally-occurring isotope $^{115}$In has a long-lived ($^{115\text{m}}$In t$_{1/2}=4.486 \pm 0.004$ h, IT=95.0 $\pm$ 0.7 \% to $^{115}$In \cite{Blachot2012}) \comment{Always cite the more recent NDS evaluation when quoting a half-life.  Use \url{http://linkinghub.elsevier.com/retrieve/pii/S0090375212000683} here.} isomer which decays by the emission of a 336.241 keV gamma ray to its ground state; this isomer is populated by the inelastic scattering reaction $^{115}$In(n,n')$^{115\text{m}}$In.
+% \begin{equation} \nonumber
+% ^{115}In(n,n')^{115m}In
+% \label{eqn:In115m}
+% \end{equation}
+The nine indium foil arrangement allows for  \comment{With only 3 pixels in each axis, we can't really call it ``precise.''} determination of the beam spot location with respect to the 9 irradiated samples. Through the combination of MCNP modeling of neutron transport and  decay spectroscopy of the activated indium foils, the energy window and flux distribution subtended by each of the foils can be well-characterized for a given target configuration. Further details on the flux characterization can be found in the recent work of A.S. Voyles \emph{et al.} \cite{np_paper}.  
+
+The flux map for an irradiation carried out at 100 kV and 1.4 mA is shown in Figure\ref{fig:flux_map}. Based on this beam profile, simulated using XXXXXXXX, it was determined that the central foil in this 3 x 3 array was located 0.5 mm above and 3.7 mm to the right, relative to the center of the deuterium ion beam.. 
+
+\comment{Describe source of data for beam profile/}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{pics/flux_map}
+	\caption{3 x 3  indium foil locations superimposed over the beam center for XXXXX extraction plate; beam profile data calculated using XXXXXXX. The beam center is clearly vertically centered on the middle of the loaded samples, with a slight asymmetry of the neutron flux in the horizontal direction. \comment{Is teh black dot the location of the single nozzle? If so, comment on this in the caption.  You need a length/distance scale included for this figure, either one of the foils, or for the width of the whole thing.  Why are the foils drawn as pixel maps?  The activation of each foil is an integral measurement, so we can't really subdivide them.  Remove the internal grid markers.  Where does the data for the beam profile come from?  You need to describe that in both the text, and briefly comment in the caption.  The beam profile clearly has a color scale, you need to include that scale in this figure.}}
+	\label{fig:flux_map}
+\end{figure}   
+
+The multiple-hole extraction system was also validated in a similar fashion. \comment{You had mentioned that it was also compared to simulations.  Where is teh figure (comparable to Fig 20) illustrating the results of the simulations?  You can't just say that you compared your experimental results to simulations without showing proof.} Figure \ref{fig:chamfered} shows the non-optimized beam spot on the target. \comment{Briefly mention the nozzle diameter and pitch info again here.} Note that the hot spots (darker) can be observed exactly where simulations show they would be, as shown in Figure \ref{fig:heat maps} (a).  \comment{You should remove the referenec to Fig 17a here, and instead put another figure here (similar to Fig 20), overlaying the location of the multi nozzles over your calculated heat map and the 3x3 foils, like Fig 20.  This would be far more useful, and would condense all this information nicely, rather than forcing the reader to flip back and forth.} The irregular pattern is due to an attempt to remedy the situation by chamfering a few holes on the vacuum side to about $60^{\circ}$ in order to achieve an arrangement closer to a pierce-like \comment{What does this mean?  the description of pierce-like is too vague to determine what you mean to say.} angle geometry, and thus reducing the heat flux by spreading the individual beamlets. However,  chamfering  enlarges the holes, leading to increased current in the modified beamlets, counteracting the intended reduction and instead increasing the size of hot spots.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{pics/chamfered}
+	\caption{Non-optimized design with a few chamfered holes and the corresponding beam spot. The hot spots formed by increased heat load are clearly visible as darkened spots.  The chamfered nozzles appear to increase the intensity and size of these hot spots, rather than making the heat load more uniform.}
+	\label{fig:chamfered}
+\end{figure}  
+
+Figure \ref{fig:optimized_notChamfered} shows the beam spot of the optimized extraction plate. \comment{Briefly mention the nozzle diameter and pitch info again here.} Note that the beam size is accurately predicted by simulations, and it is similar in size to the non-optimized plate.  \comment{Same issue again. You refer to simulations accurately predicting experiments, but don't show any proof here.  Make a figure here, like for the non-optimized design, (similar to Fig 20), overlaying the location of the multi nozzles over your calculated heat map and the 3x3 foils, like Fig 20.  } The neutron flux at the central location was increased by a factor of 3.5 with such an arrangement.  \comment{Where does this number come from?  You can't just pull it out of the air, you must show how you calculated / measured it.}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{pics/optimized_notChamfered}
+	\caption{Optimized design and resulting beam spot. Compared to Figure  \ref{fig:chamfered}, hot spots are almost completely eliminated, and a far more uniform heat pattern is visible.}
+	\label{fig:optimized_notChamfered}
+\end{figure}  
+
+The variations in color due to the deuterium beam on the surface of the titanium are an indication of the amount of hydrogen absorbed. \comment{How do you know this? What is the mechanism for the color change?  Explain, and   cite a source.} Within a few minutes of the end of irradiation, the color was black, but faded to a  light gray after several hours since the end of irradiation.  \comment{A figure showing the difference in time would be highly valuable here, since you only mention this phenomenon in passing.}
+
+\section{Conclusions and Outlook}
+
+The HFNG is a multi-purpose, versatile neutron generator which has been well-characterized in terms of flux and energy distribution. Reliable simulation tools have been developed and benchmarked through experimental validation of the generator operation. These tools include modeling of the HFNG beam optics, heat transfer, neutron flux, and neutron energy distribution. Neutron yield and energy distribution has been independently experimentally determined  via indium activation foils. Experimental validation agrees with the simulations described here to within approximately 5\% at the sample holder location. 
+
+Moreover, neutron reflection studies are being investigated in order to increase the neutron fluence in the sample location. Dense compounds such as lead or calcium carbonate act as efficient neutron reflectors, minimizing the neutron energy loss per collision, which prevents significant moderation of the overall energy spectrum. 
+
+The heat removal capability of the HFNG target is one of the most important limiting parameters for increasing the generator's current neutron flux, since hydrogen degases from the titanium  target without sufficient heat transfer. Moreover, the neutron spot size must remain small \comment{Provide an estimate of how large is acceptable} for the flux to increase linearly with current. \comment{This is not the best place in the paper to make this claim for the first time.  Bring it up back in the target design sections, and provide a sourec here and there for this claim, since you never brought this up before.} While it is possible to increase the yield by intentionally spreading the beam spot, this would correspond to a nonlinear increase in flux, which complicates modeling of higher-current designs. 
+
+\comment{I think you need to expand the outlook here with more concrete goals for how to continue to imrprove the design, and give commentary on other potential applications for the generator. In particular, point out the potential capabilities of it if we could run DT in a similar design.}
+
+It is important to note that a high yield neutron generator does not imply  high flux. For instance, commercially available gas-target neutron generators  with DD neutron yields on the order of $10^{11}$\ n/s \comment{DEFINITELY need to cite 1-2 sources for this claim}. However, the flux at any location around the target is several orders of magnitude lower and impractical for  purposes of geochronology. Moreover, a neutron generator with a solid target but a large beam spot relative to the sample also suffers from the same effect, as the sample is geometrically able to utilize only a fraction of the neutrons produced. In other words, the yield does not scale linearly with  flux as the beam spot increases. \comment{How does it scale, then?  Inversely?  Please elaborate.} For an ideal generator, the flux utilization is maximized when operating close to the heat load limit of the target, \comment{``Therefore'' doesn;t make sense to start this off, as you haven't mentioned heat load limits anywhere else in this paragraph.} with samples located as close to the neutron production surface as possible, and with  a narrow deuterium beam relative to the size of the target.
+
+
+\comment{I would highly encourage you to read more about teh utilization  factor in our recent (n,p) NIM and elaborate on more of that here, in teh context of the design specifics.}
+
+\section{Acknowledgments}
+
+We gratefully acknowledge a grant from the University of California Office of the President.
+	
+Work supported by NSF Grant No. EAR-0960138, U.S. DOE LBNL Contract No. DE- AC02-05CH11231, and U.S. DOE LLNL Contract No. DE-AC52-07NA27344.
+	
+\section*{References}
+
+\comment{If you submit to NIM, you need to use the elsarticle-num bibliography style.}
+
+\comment{All paper titles listed here have incprrect capitalization - everything is lowercase, aside from teh very first letter.}
+
+\comment{Check your bib file - several entries here appear broken.  [2] is missing my last name and needs to be updated with the volume and page numbers, [5] is missing a last name, [7] is missing a paper title, [8] is missing the author list (\url{https://doi.org/10.13182/NT11-135})}
+
+\comment{When you use \emph{et al.}, it always comes after listing the 3rd author in a list of 3+ authors.  Using the elsarticle-num style should help here, but double check.}
+	
+\bibliographystyle{elsarticle-num}
+	
+% \bibliography{mybibfile}
+	
+\end{document}
