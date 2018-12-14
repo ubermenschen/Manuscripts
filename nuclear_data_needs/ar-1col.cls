@@ -278,7 +278,7 @@
   \global\let\and\relax
 }
 %
-\usepackage{color,ifpdf}
+\usepackage{xcolor,ifpdf}
 
 \definecolor{titlecolor}{cmyk}{0.4,0.4,0.4,0}
 \definecolor{headcolor}{cmyk}{0,1.0,1.0,0.30}
