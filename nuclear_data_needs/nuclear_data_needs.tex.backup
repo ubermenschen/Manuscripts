@@ -8,14 +8,14 @@
 %
 % For tracking purposes => this is v1.0 - Apr. 2013
 
-\documentclass{ar-1col}
+\documentclass[letterpaper]{ar-1col}
 \usepackage[numbers]{natbib}
 
 
 
 
 \usepackage[american]{babel}
-\usepackage{amsmath}
+% \usepackage{amsmath}
 \usepackage[version=3]{mhchem} 
 % \usepackage{fixltx2e}
 % \usepackage{refcount}
@@ -29,9 +29,9 @@
 \usepackage[hidelinks]{hyperref}
 % \usepackage{cool}
 % \usepackage{cancel}
-\usepackage{microtype}
+% \usepackage{microtype}
 \usepackage{listings}
-\usepackage{mcode}
+% \usepackage{mcode}
 \usepackage [autostyle, english = american]{csquotes}
 % \usepackage{longtable}
 % \usepackage{subcaption}
@@ -40,6 +40,7 @@
 \usepackage[normalem]{ulem}
 
 % \usepackage{mathtools, cuted}
+\usepackage{wrapfig}
 
 
 % \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
@@ -47,13 +48,13 @@
 
 \usepackage[colorinlistoftodos]{todonotes}
 
-\usepackage[section]{placeins}
-\usepackage{multirow}
+% \usepackage[section]{placeins}
+% \usepackage{multirow}
 
 % \usepackage{lineno}
 
 \usepackage{graphicx}% Include figure files
-\usepackage{dcolumn}% Align table columns on decimal point
+% \usepackage{dcolumn}% Align table columns on decimal point
 
 
 
@@ -85,7 +86,7 @@
 \newcommand{\mytilde}{\raisebox{0.5ex}{\texttildelow}}
 % \newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle‌​\sim$}}
 
-\sisetup{separate-uncertainty=true,table-space-text-post = *}
+% \sisetup{separate-uncertainty=true,table-space-text-post = *}
 
 \newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}}
 
@@ -99,9 +100,11 @@
 }
 % \subfigimg[scale=0.59]{a)}{./figures/after_minimization_plot_alt.pdf}{80pt}
 
+% \usepackage[style=base]{caption}
 \usepackage{subfig}
 % Remove a), b), etc labels from subfigs
 \captionsetup[subfigure]{labelformat=empty}
+% \captionsetup{style=base} 
 
 % Sick of fighting siunitx - consistent text micro symbol
 % DO NOT uncomment this!!! or else broken unicode (Âţ)
@@ -109,18 +112,18 @@
 % \si\micro
 \newcommand{\mmicro}{\si\micro} 
 
-\usepackage{adjustbox}
+% \usepackage{adjustbox}
 
 
-\makeatletter
-% Make common definition of mean
-\newcommand*\mean[1]{\overline{#1\raisebox{3mm}{}}}
-
-\makeatother
+% \makeatletter
+% % Make common definition of mean
+% \newcommand*\mean[1]{\overline{#1\raisebox{3mm}{}}}
+% 
+% \makeatother
 
 \hyphenation{gamma-rays}
 
-\setcounter{secnumdepth}{4}
+% \setcounter{secnumdepth}{4}
 
 
 % 
@@ -149,20 +152,20 @@
 \begin{document}
 
 % Page header
-\markboth{Author et al.}{Short title}
+\markboth{Bernstein et al.}{Our Future Nuclear Data Needs}
 
 % Title
 \title{Our Future Nuclear Data Needs}
 
 
 %Authors, affiliations address.
-\author{Lee A. Bernstein$^1$ $^,$ $^2$, David A. Brown, Arjan J. Koning, Brad T. Rearden,  Catherine E. Romano, Alejandro A. Sonzogni, Andrew S. Voyles, Walid XXX Younes
-
-
-$^2$, and D. Name Authorthree$^3$
+\author{Lee A. Bernstein$^{1,2}$, David A. Brown$^3$, \\Arjan J. Koning$^4$, Brad T. Rearden$^5$,  \\Catherine E. Romano$^5$, Alejandro A. Sonzogni$^3$, Andrew S. Voyles$^{1,2}$, and Walid XXX Younes$^6$
 \affil{$^1$Nuclear Science Division, Lawrence Berkeley National Laboratory,  Berkeley, CA 94720, USA; email: labernstein@lbl.gov}
-\affil{$^2$Department/Institute, University, City, Country, Postal code}
-\affil{$^3$Department/Institute, University, City, Country, Postal code}}
+\affil{$^2$Department of Nuclear Engineering, University of California, Berkeley,  Berkeley, CA 94720, USA}
+\affil{$^3$Brookhaven National Laboratory, Upton, NY 11973, USA}
+\affil{$^4$Arjan's affiliations}
+\affil{$^5$Oak Ridge National Laboratory, Oak Ridge, TN 37830, USA}
+\affil{$^6$Lawrence Livermore National Laboratory,  Livermore, CA 94550, USA}}
 
 %Abstract
 \begin{abstract}
@@ -181,8 +184,42 @@ keywords, separated by comma, no full stop, lowercase
 
 % Heading 1
 \section{INTRODUCTION}
-Please begin the main text of your article here. 
 
+\subsection{The Two Faces of Nuclear Data}
+
+
+Low-energy nuclear science (LENS) \enquote{straddles the fence} between curiosity- and application-driven pursuits.  On the curiosity-driven side, low-energy ($E_x <$ 1--4 MeV) nuclear structure offers a unique laboratory to examine the interplay between single-particle and collective behavior and to explore the transition from quantum to continuum behavior in a mesoscopic setting. LENS also plays an important role in nuclear astrophysics, improving models of stellar energy generation and allowing isotopic abundances to be used to inform models of the astrophysical environments where heavy nuclei are formed.  On the applied side, a well-quantified knowledge of low-lying nuclear structure and reactions is needed to model energy generation and isotope production for medical and industrial uses and for the national security and counter-proliferation communities.   
+
+One hallmark of LENS is that most theoretical descriptions are descriptive rather than rigorously predictive at the level of accuracy and over the entire range of energies etc. needed for real world applications.  As a result, targeted measurements coupled to a data evaluation process are used to produce databases of recommended values that can be employed by the user communities.  The evaluation processes range from close adherence to experimental results in the case of low energy nuclear structure and decay data, to experiment-guided modeling in the case of nuclear reactions. This work is carried out by subject matter experts who usually come from the field utilizing the data who spend many years studying under experienced evaluators in order to develop the highly-specialized skills they need.  
+
+This manuscript will start with a description of the nuclear data evaluation process, and the organizations organization that carry it out.  It will then describe ways to improve the modeling of (n,x) reactions on nuclides important for applications.  Following this will be a discussion of needs for specific applications including national security/non-proliferation, medical isotope production and nuclear energy.  It will end with a discussion of the future of nuclear data featuring  a new, Nuclear Data Interagency Working Group that that is formulating a national nuclear data plan to address high-priority needs for applied nuclear science and technology.   
+
+
+\subsection{The Nuclear Data Pipeline}
+
+Before diving into the data needs, it is instructive to understand the \enquote{Nuclear Data Pipeline} that takes experimental or theoretical results and prepares them for use in applications.  This process is illustrated in Fig. 1 and is roughly grouped into four steps: 1) compilation, 2) evaluation, 3) processing, and 4) validation.  This process ends with the users and their application, but actually begins with the performance of carefully-designed measurements with well-defined uncertainties.  Given this, it behooves those funding or performing the original experiment to understand the entire nuclear data workflow in order to ensure that new results find their way to the intended user.  For example, if a new result forces changes to data formats (step 2) or processing (step 3) or to application codes (step 4 \& eventual user), this fact should be considered when developing a new activity.
+
+The first step in the Pipeline is compilation and it begins with potentially the most important database: Nuclear Science References (NSR) [NSR].  NSR contains references to published works from major LENS journals as well as internal reports from labs throughout the world and serves as the start point for the data evaluation process. Descriptive keywords are assigned to these articles by individuals with LENS backgrounds, enabling the use of this information in later portions of the evaluation process.   
+
+Following this, the data from the primary references contained in NSR, including both mean values and uncertainties, are extracted in numerical form and compiled into one of two databases depending on whether the data is primarily regarding nuclear structure and decay or nuclear reaction data.   This step may also include tracking down unpublished data from original sources before that data is lost.
+
+The nuclear structure compilation database is called the Experimental Unevaluated Nuclear Data List (XUNDL) [XUN].   The nuclear data in XUNDL is organized by nuclide, meaning that a single publication could lead to the production of more than one XUNDL dataset.  Each XUNDL dataset is treated as a “stand-alone” work and is not required to agree with existing, evaluated nuclear data for the nuclide it concerns.  However, during XUNDL compilation basic consistency checks are performed and any internal inconsistencies are pointed out to the author to allow them be reconciled in the database.  XUNDL is used by both nuclear structure evaluators to aid in their work and by nuclear structure researchers as a quick way to get access to data from current publications in order to guide their own research. 
+
+The nuclear reaction compilation database is referred to as Experimental Nuclear Reaction Data library (EXFOR) [EXF].  This includes not only reaction cross sections, but also related data such as fission yields, resonance integrals, polarization data and more.  Given the wide range of data types present in EXFOR there is significantly less error checking than what is performed during in XUNDL compilation.  However, an online visualization tool is provided to allow users to plot and manipulate the data. EXFOR is used by both nuclear reaction evaluators and the nuclear reaction research and application community. 
+
+The next step in the process is evaluation itself.  In the case of nuclear structure data this involves reconciling multiple types data sets (e.g., prompt gamma and particle spectra, decay data etc.) and deriving a recommended set of adopted values.  This data forms the basis of the Evaluated Nuclear Structure Data File (ENSDF) [ENS].  While most of the ENSDF evaluation is performed in the US, there is a significant and growing component coming from evaluators throughout the world.  The governing body that determines the rules for the evaluation process is the Nuclear Structure and Decay Data Network administered by the International Atomic Energy Agency (IAEA-NSDD).  
+
+In the case of nuclear reaction data, the process is markedly different.  The data from EXFOR is used to guide a physics-based model calculation through a variety of variance minimization procedures, resulting in best estimates of mean values and their uncertainties, including covariances, which are put into the Evaluated Nuclear Data File [ENDF].  Most of the effort put into the production of ENDF is provided by applications-oriented users due to its importance to national security, international counter-proliferation and nuclear energy.  A consequence of this application focus is that the vast majority of the data in ENDF concerns neutron-induced reactions at either thermal (25 meV), fast fission or 14.1 MeV.  This has profound implications for isotope production since many of the nuclides are produced through charged-particle induced reactions.  
+
+While ENSDF and ENDF contain a vast quantity of nuclear data, there are significant amounts of nuclear data that are either not contained in them because they “fall between” nuclear structure and nuclear reactions, or they are present in a format that is not well-suited to their use in applications.  Examples of this include the recently updated Atlas of Neutron Resonances [Mug18] which contains neutron capture resonance widths, centroids and cross sections and the Evaluated Gamma Activation File of (EGAF) capture gamma-rays [Fir15] and the Atlas of Inelastic Scattering of Reactor Fast Neutron [Hur18].  Another very important nuclear data resource for applications is the Reference Input Parameter Library (RIPL) [Cap09] which contains both discrete (distilled from ENSDF) and continuous (Nuclear Level Densities and Gamma-strength function) nuclear structure data needed for accurate reaction modeling.  
+	
+Evaluations in hand, we must now process the data into a form suitable for use in a particular application.  This is a surprisingly non-trivial part of the process, requiring a deep knowledge of the physics used in the evaluation process, the formatting limitations of intermediate data formats, and the capabilities of downstream codes that will use the nuclear data.  Processing is also needed for the validation of nuclear reaction data using the integral benchmarks described below.  Another role of processing is in the creation of application-specific databases, such as the Medical Internal Radiation Dose (MIRD) [MIRD] database used to guide medical treatment and diagnosis.  
+
+The final step in the Pipeline is validation.  In this step, we use user codes and user-defined problems to validate that the data performs as expected.  The class of user problems we most rely on are so-called “integral benchmark” data that depend on many different types of data including cross sections and emitted particle spectra and are also extremely precisely known.  The canonical example of such a benchmark is a critical assembly, where the ratio of neutron production to neuron loss (k­eff) is known to several significant figures.  However, there are many other kinds of integral benchmarks used to test neutron interaction data alone, including reaction rate measurements and 14 MeV and fission spectrum transmission experiments, and many more for other forms of nuclear data.
+
+There are multiple ways to interact with the nuclear data evaluation process along the way, including through web interfaces hosted by the National Nuclear Data Center [NNDC] and the IAEA Nuclear Data Section [IAEA-NDS], a smartphone based application [IAEA-APP] and publication in peer-reviewed journals including Nuclear Data Sheets [NDS] and Atomic Data and Nuclear Data Tables [ATNDT].  
+
+Many different government agencies support nuclear data evaluation activities, including several components of the Department of Energy National Nuclear Security Agency (DOE-NNSA) and the National Criticality Safety Program (NCSP).  However, the primary domestic organization responsible for organizing the evaluation process is US Nuclear Data Program (USNDP) in the DOE Nuclear Physics office (DOE-NP).  The USNDP is headquartered at the National Nuclear Data Center at Brookhaven National Lab and includes centers at Argonne, Oak Ridge, Los Alamos and Lawrence Livermore National Labs, as well as joint lab/university programs at North Carolina State University/Triangle University Nuclear Lab, Michigan State University/National Superconducting Cyclotron Lab and the University of California/Lawrence Berkeley National Laboratory.  
 
 
 %Heading 1
@@ -204,7 +241,7 @@ This is dummy text. This is dummy text. This is dummy text. This is dummy text.
 \subsection{Figures}Figures should be cited in the main text in chronological order. This is dummy text with a citation to the first figure (\textbf{Figure \ref{fig1}}). Citations to \textbf{Figure \ref{fig1}} (and other figures) will be bold. 
 
 \begin{figure}[h]
-\includegraphics[width=3in]{SampleFigure}
+\includegraphics[width=3in]{SampleFigure.pdf}
 \caption{Figure caption with descriptions of parts a and b}
 \label{fig1}
 \end{figure}
@@ -236,18 +273,18 @@ $^{\rm a}$Table footnote; $^{\rm b}$second table footnote.
 
 % Example of lists
 \subsection{Lists and Extracts} Here is an example of a numbered list:
-\begin{enumerate}
-\item List entry number 1,
-\item List entry number 2,
-\item List entry number 3,\item List entry number 4, and
-\item List entry number 5.
-\end{enumerate}
+% \begin{enumerate}
+% \item List entry number 1,
+% \item List entry number 2,
+% \item List entry number 3,\item List entry number 4, and
+% \item List entry number 5.
+% \end{enumerate}
 
-Here is an example of a extract.
-\begin{extract}
-This is an example text of quote or extract.
-This is an example text of quote or extract.
-\end{extract}
+% Here is an example of a extract.
+% \begin{extract}
+% This is an example text of quote or extract.
+% This is an example text of quote or extract.
+% \end{extract}
 
 \subsection{Sidebars and Margin Notes}
 % Margin Note
@@ -322,56 +359,56 @@ The citations should be numbered in order of appearance. For example:
 
 
 
-
-
-\begin{verbatim}
-\begin{thebibliography}{96}
-\expandafter\ifx\csname
-natexlab\endcsname\relax\def\natexlab#1{#1}\fi
-
-\bibitem{Glashow:1961tr}
-Glashow SL. \textit{Nucl. Phys.} 22:579 (1961)
-
-\bibitem{Weinberg:1967tq}
-Weinberg S. \textit{Phys. Rev. Lett.} 19:1264 (1967)
-
-\bibitem{Salam}
-Salam A.  In \textit{Elementary Particle Theory: Relativistic
-Groups and Analyticity. Proceedings of the 8th Nobel Symposium},
-ed. N~Svartholm, p. 367. Stockholm: Almqvist \& Wiksell (1968)
-\bibitem{Fritzsch:1973pi}
-Fritzsch H, Gell-Mann M, Leutwyler H. \textit{Phys. Lett.} \textit{B} 47:365
-(1973)
-
-\bibitem{Gross:1973id}
-Gross DJ, Wilczek F. \textit{Phys. Rev. Lett.} 30:1343 (1973)
-
-\bibitem{Politzer:1973fx}
-Politzer HD. \textit{Phys. Rev. Lett.} 30:1346 (1973)
-
-\bibitem{Kronfeld:2010bx}
-Kronfeld AS, Quigg C. \textit{Am. J. Phys.} 78:1081 (2010)
-
-\bibitem{Langacker:2010}
-Langacker P. \textit{The Standard Model and Beyond. Series in
-High Energy Physics, Cosmology, and Gravitation}. Boca Raton:
-CRC/Taylor \& Francis (2010)
-
-\bibitem{GT2}
-Quigg C. \textit{Gauge Theories of the Strong, Weak, and
-Electromagnetic Interactions}. Princeton, NJ: Princeton
-Univ. Press. 2nd ed. (2013)
-
-\bibitem{MattS}
-Schwartz MD. \textit{Quantum Field Theory and the Standard Model}.
-Cambridge, UK: Cambridge Univ. Press (2013)
-
-\bibitem{DynSM}
-Donoghue JF, Golowich E, Holstein BR. \textit{Dynamics of the
-Standard Model}. Cambridge, UK/New York: Cambridge
-Univ. Press. 2nd ed. (2014)
-\end{thebibliography}
-\end{verbatim}
+% 
+% 
+% \begin{verbatim}
+% \begin{thebibliography}{96}
+% \expandafter\ifx\csname
+% natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+% 
+% \bibitem{Glashow:1961tr}
+% Glashow SL. \textit{Nucl. Phys.} 22:579 (1961)
+% 
+% \bibitem{Weinberg:1967tq}
+% Weinberg S. \textit{Phys. Rev. Lett.} 19:1264 (1967)
+% 
+% \bibitem{Salam}
+% Salam A.  In \textit{Elementary Particle Theory: Relativistic
+% Groups and Analyticity. Proceedings of the 8th Nobel Symposium},
+% ed. N~Svartholm, p. 367. Stockholm: Almqvist \& Wiksell (1968)
+% \bibitem{Fritzsch:1973pi}
+% Fritzsch H, Gell-Mann M, Leutwyler H. \textit{Phys. Lett.} \textit{B} 47:365
+% (1973)
+% 
+% \bibitem{Gross:1973id}
+% Gross DJ, Wilczek F. \textit{Phys. Rev. Lett.} 30:1343 (1973)
+% 
+% \bibitem{Politzer:1973fx}
+% Politzer HD. \textit{Phys. Rev. Lett.} 30:1346 (1973)
+% 
+% \bibitem{Kronfeld:2010bx}
+% Kronfeld AS, Quigg C. \textit{Am. J. Phys.} 78:1081 (2010)
+% 
+% \bibitem{Langacker:2010}
+% Langacker P. \textit{The Standard Model and Beyond. Series in
+% High Energy Physics, Cosmology, and Gravitation}. Boca Raton:
+% CRC/Taylor \& Francis (2010)
+% 
+% \bibitem{GT2}
+% Quigg C. \textit{Gauge Theories of the Strong, Weak, and
+% Electromagnetic Interactions}. Princeton, NJ: Princeton
+% Univ. Press. 2nd ed. (2013)
+% 
+% \bibitem{MattS}
+% Schwartz MD. \textit{Quantum Field Theory and the Standard Model}.
+% Cambridge, UK: Cambridge Univ. Press (2013)
+% 
+% \bibitem{DynSM}
+% Donoghue JF, Golowich E, Holstein BR. \textit{Dynamics of the
+% Standard Model}. Cambridge, UK/New York: Cambridge
+% Univ. Press. 2nd ed. (2014)
+% \end{thebibliography}
+% \end{verbatim}
 
 This coding results in the following formatted bibliography:
 
