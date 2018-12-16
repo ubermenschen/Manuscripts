@@ -8,7 +8,8 @@
 %
 % For tracking purposes => this is v1.0 - Apr. 2013
 
-\documentclass[letterpaper,draft]{ar-1col}
+\documentclass[letterpaper]{ar-1col}
+% \documentclass[letterpaper,draft]{ar-1col}
 \usepackage[numbers]{natbib}
 \usepackage[left=35mm,top=26mm,right=26mm,bottom=15mm]{geometry}
 
@@ -20,7 +21,7 @@
 \usepackage[version=3]{mhchem} 
 % % \usepackage{fixltx2e}
 % % \usepackage{refcount}
-% % \usepackage{siunitx}
+\usepackage{siunitx}
 % % \usepackage{lastpage}
 % % \usepackage{textcomp}
 % \usepackage{mathtools}
@@ -329,26 +330,44 @@ There is a great deal of uncertainty in the magnitude of the spin cut-off parame
 
 \begin{figure}
     \centering
-%     \subfloat{
+    \begin{minipage}{0.5\textwidth}
         \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \hspace{-5pt}\subfigimg[width=0.5\textwidth]{}{isomer_curves.pdf}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
-         %         \refstepcounter{subfigure}
-%          \label{fig:before_minimization}
-   \hspace{-5pt}%
-%      \subfloat{
+        \includegraphics[width=0.97\textwidth]{isomer_curves.pdf} % first figure itself
+%         \caption{first figure}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
         \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[width=0.5\textwidth]{}{ldmodels.pdf}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
-         %         \refstepcounter{subfigure}
-%          \label{fig:after_minimization}
-   \hspace{-5pt}%
+        \includegraphics[width=0.97\textwidth]{ldmodels.pdf} % second figure itself
+%         \caption{second figure}
+    \end{minipage}
     \caption{Predictions of the production of \ce{^{52m}Mn}($J_\pi=2^+$)/\ce{^{52g}Mn}($J_\pi=6^+$) isomer-to-ground state ratio as a function of energy for the Gilbert and Cameron level density (left) and using the 6 level density models available in TALYS (right). }
      \label{fig:fe_isomer_plots}
 \end{figure}
+
+
+% \begin{figure}
+%     \centering
+% %     \subfloat{
+% %         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% %         \hspace{-5pt}
+%         \includegraphics[width=0.3\textwidth]{isomer_curves.pdf} \includegraphics[width=0.3\textwidth]{ldmodels.pdf}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+%          %         \refstepcounter{subfigure}
+% %          \label{fig:before_minimization}
+% %    \hspace{-5pt}%
+% %      \subfloat{
+% %         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+% %         \includegraphics[width=0.3\textwidth]{ldmodels.pdf}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+%          %         \refstepcounter{subfigure}
+% %          \label{fig:after_minimization}
+% %    \hspace{-5pt}%
+%     \caption{Predictions of the production of \ce{^{52m}Mn}($J_\pi=2^+$)/\ce{^{52g}Mn}($J_\pi=6^+$) isomer-to-ground state ratio as a function of energy for the Gilbert and Cameron level density (left) and using the 6 level density models available in TALYS (right). }
+%      \label{fig:fe_isomer_plots}
+% \end{figure}
 
 Information regarding the $J$-dependence of the NLD can also be obtained through observation of the relative population of two low-lying states with very different spins via activation.  This method has been used in Hg and Au by Chakravarty \cite{PhysRevC.45.1171} and more recently by Sudar in Hg and Pt \cite{PhysRevC.73.034613}.  \autoref{fig:fe_isomer_plots} shows this for the case of \ce{^{52m}Mn}($J_\pi=2^+$)/\ce{^{52g}Mn}($J_\pi=6^+$) ratio populated via \ce{^{56}Fe}(p,$\alpha$n) measured via stacked-target activation at the LBNL 88-Inch cyclotron as compared to TALYS calculations for different values of the spin cut-off parameter (left) and the 6 level density models available for use in TALYS on the right.  
 
@@ -379,6 +398,8 @@ The conversion method is not fully free of issues, either.  To start, it is base
 
 Given the dependence of the antineutrino signal on both decay and fission product yield data, a series of sensitivity study-guided integral experiments, along the lines of critical assembly integral benchmarks, are needed to validate the underlying nuclear data would provide a strong constraint on the underlying data.  One approach would involve irradiating fissile and fissionable samples in facilities with well-understood neutron spectra and comparing the observed delayed gamma-rays to a modeled spectrum produced using the Fission Induced Electromagnetic Response (FIER) code developed at Berkeley \cite{Matthews2018}.  FIER convolves fission product yield distributions and decay data to predict the gamma-ray spectrum after neutron irradiation.  The first example of its use involving a comparison to the delayed gamma-ray spectrum from a \ce{^{235}U} foil irradiated in the Godiva critical assembly indicated several cases were the underlying fission yields or decay data required improvement. 
 
+\textred{We seem to have plenty of space - should we add the FIER plot back in?}
+
 These experiments would involve a sample of depleted \ce{^{238}U} since recent results from IBD indicate that the contribution to the observed anomaly in the antineutrino experiment can be attributed to issues with the \ce{^{238}U}(n,f) yields. These measurements could be performed at the Godiva in the same fashion as the \ce{^{235}U} irradiation used to validate FIER, or other well-documented fast neutron facilities including the thick target deuteron break neutron source at the LBNL 88-Inch cyclotron \cite{Harrig2018} and the High Flux Neutron Generator at UC-Berkeley \cite{All18} and compare the results to the FIER predictions to inform both the fission yield and decay data for \ce{^{238}U}(n,f). 
 
 \subsection{Improved (n,x$\gamma$) data for active interrogation}
@@ -393,30 +414,50 @@ A program of measurements of gammas emitted from both discrete and QC states wou
 \section{ISOTOPE PRODUCTION}\label{sec:isotope_production}
 
 
-The high energy density and wide range of decay lifetimes and chemical properties of radionuclides near the nuclear valley of stability make them an extremely versatile tool for applications ranging from the diagnosis and treatment of illness, to nuclear non-proliferation and environmental studies to powering spacecraft to explore the outer reaches of the solar system and beyond. Furthermore, given that there are hundreds of unstable nuclei with lifetimes in excess of 1 hour and less than 100 years between Hydrogen and Californium, it is clear that we have barely scratched the surface of potential applications.
+The high energy density and wide range of decay lifetimes and chemical properties of radionuclides near the nuclear valley of stability make them an extremely versatile tool for applications ranging from the diagnosis and treatment of illness, to nuclear non-proliferation and environmental studies, to powering spacecraft to explore the outer reaches of the solar system and beyond. Furthermore, given that there are hundreds of unstable nuclei with lifetimes in excess of 1 hour and less than 100 years between Hydrogen and Californium, it is clear that we have barely scratched the surface of potential applications.
 
-However, there are significant uncertainties in both the reactions used to produce these radionuclides and/or the intensities and energies of their decay radiation.  There have been numerous papers produced over the past 5 years detailing some of the nuclear data needs associated with producing radionuclides for applications. For a comprehensive listing of nuclear data needs associated with radionuclides we refer the reader to the summary whitepaper from the Nuclear Data Needs and Capabilities for Applications Workshop held in Berkeley in 2015 \cite{Ndn15}, particularly the reactions and isotopes listed in Appendix B.  Additional guidance regarding nuclear data needs for medical isotopes can be found in a recent series of IAEA studies \cite{Iae675,Iae596,Iae591} as well as an exhaustive paper from Qaim et al. \cite{Qai17}.
+However, there are significant uncertainties in both the reactions used to produce these radionuclides and/or the intensities and energies of their decay radiation.  There have been numerous papers produced over the past 5 years detailing some of the nuclear data needs associated with producing radionuclides for applications. For a comprehensive listing of nuclear data needs associated with radionuclides we refer the reader to the summary whitepaper from the Nuclear Data Needs and Capabilities for Applications Workshop held in Berkeley in 2015 \cite{bernstein2015nuclear}, particularly the reactions and isotopes listed in Appendix B.  Additional guidance regarding nuclear data needs for medical isotopes can be found in a recent series of IAEA studies \cite{Iae675,Iae596,Iae591} as well as an exhaustive paper from Qaim et al. \cite{Qaim201731}.
 
-Over 20 million nuclear medicine procedures are performed each year in the United States \cite{Met09}, with the vast majority involving imaging.  99mTc (t$_{1/2}$= 6.0067(5) hour), which decays predominately via the emission of single 140 keV gamma-ray, is used in 80\% of of these procedures. 99mTc is produced via \ce{^{235}U}(n,f).  However, this approach is less than ideal due to the increasing age of many reactors \cite{Qai12} and a nuclear weapons proliferation risk associated with reactors utilizing Highly-Enriched Uranium (HEU).  As a result, alternative 99mTc production pathways, as well as studies of the associated production of long-lived impurities \cite{Upd13}, are under consideration \cite{Rut09}. Other imaging radionuclides include 18F (t$_{1/2}$= 109.771(20) min) which is used in Positron Emission Tomography (PET) which is produced locally via the 18O(p,n) reaction, 82Rb (t$_{1/2}$=1.2575(2) min) which is used in cardiac imaging and 68Ga  (t$_{1/2}$= 67.71(8) min).  The short half-lives of 82Rb and 68Ga necessitate that they be extracted from a longer-lived radioactive parent nuclide generator whose longer half-lives of 270.93(13) and 25.35(3) days respectively, allow them to be produced at regional facilities and distributed to medical facilities throughout the world.  
-
-In addition to imaging, a large number of therapeutic radiopharmaceuticals are in use or under development for cancer treatment.  The principle behind therapeutic radionuclide cancer therapy involves depositing a targeted dose, e.g., energy per unit mass, to a tumor cell that capable of producing damage to multiple strands of DNA, from which the cell cannot recover.  The ideal dose delivery involves radiation with a high Linear Energy Transfer (LET).  While some - nuclides are already in use, such as 177Lu (t$_{1/2}$= 6.6475(20) days), the relatively long range of -particles makes them less favorable than other modes of radioactive decay.  These include Auger/Coster-Kronig electron-emitters which typically have a range of less than 1 µm, or -particles emitters which have ranges of 2-10 µm.  
-
-There is a particularly large amount of interest in alpha-emitting nucleus 225Ac.  225Ac is particularly well-suited for medical applications in that it has a long-enough lifetime (t$_{1/2}$= 10.0(1) days) to facilitate its incorporation into targeting molecules, and its daughters then decay relatively rapidly (t1/2<3.2 hours) to stable products, minimizing concurrent dose to healthy tissue. Other promising alpha-therapeutic radionuclides include 211At, 212Pb/212Bi, 213Bi, 226Th and 227Th have all been identified as high priority topics by the most recent Nuclear Science Advisory Committee's Long Range Plan on Isotope Production \cite{Nsa15}.
-
-A particularly promising approach nuclear medical treatment modality involves coupling a pair of chemically similar radioisotopes including of a therapeutic nuclide capable of delivering a high localized radiation dose and a chemically-identical isotope that emits a positron for PET or a gamma suitable for single photon emission computed tomography (SPECT) imaging. One such promising \enquote{theranostic} pair involves the PET isotope 134Ce (t$_{1/2}$= 3.16(4) days) combined with 225Ac.  A recent NSAC report \cite{Nsa15} highlights additional pairs of isotopes that have potential uses as theranostic agents. 
-
-As mentioned above, most of these promising radionuclides are made at a few regional facilities.  These include the Isotope Production Facility at Los Alamos National Lab (IPF-LANL), the Brookhaven Linac Isotope Production facility at Brookhaven National Lab (BLIP-BNL) in the United States, the TRIUMF in Canada and iThemba labs in South Africa \cite{Iae675,Nsa15}.  In a compelling example of the synergy between fundamental nuclear research and societal benefit, LANL-IPF and BLIP-BNL operate symbiotically with the Los Alamos Neutron Science Center at LANL and the Relativistic Heavy Ion Collider at BNL.  This dual-use approach provides an inexpensive, reliable source of radionuclides needed for the development of new drugs through a public-private partnership. 
-
-All of these regional sources utilize high-energy (≥100 MeV) (p,x) reactions on stable targets.  In addition to producing the radionuclides of interest these reactions create a large flux of \enquote{secondary} spallation protons and neutrons that can in turn initiate nuclear reactions providing either a useful alternative source of valuable radionuclide or a troublesome chemically-identical contaminant.  The secondary neutron flux is particularly important since the lack of electronic stopping for neutrons makes them advantageous for radionuclide production \cite{Voy18a}.  The energy spectrum of secondary neutrons from IPF was recently measured using spectral unfolding \cite{Mos16} and for thick target deuteron break-up on beryllium at the LBNL 88-Inch cyclotron \cite{Har18} via a secondary time-of-flight technique. A number of therapeutic radionuclides can potentially be produced via secondary neutron-induced (n,p) reactions. Examples of possible targets include 32S, 47Ti, natZn (for the production of 64.67Cu), 105Pd, 149Sm, 175Lu, and 177Hf.  In addition, the production of alpha-emitting radionuclides such as 225Ac, 223Ra, and 227Th using neutrons has yet to be explored.
-
-Unfortunately, accurate modeling of these high-energy reactions is notoriously difficult.  Figures 7 shows a comparison between cross sections for the production of 225Ac from (n,x) reactions on 232Th calculated with the reaction codes typically used to predict isotope production.  This includes EMPIRE-3.2.3, CoH 3.5.1, ALICE-2017, the TENDL-2011 and TENDL-2017 libraries produced using TALYS, as well as the most recent version of the code (TALYS 1.9) \cite{cite-talys} and the European Activation File (EAF-2010).  Differences on the order of 50--100\% are often seen.  
-
-These large uncertainties in reaction modeling means that direct measurement of the reaction cross sections themselves are needed in order to design targets capable of efficient, low-contamination radionuclides.  Fortunately, most of the reactions of interest take place on stable targets and are therefore experimentally accessible. 
-
-The preferred method for measuring these cross sections involves foil activation, in which one or more well-characterized thin foil(s) is/are irradiated and the residual radioactivity are quantified through off-line alpha, beta, gamma, or electron spectroscopy \cite{Gra16, Voy18b}.  The uncertainty in the deduced cross section depends strongly on the accurate characterization of the target material (which is often challenging to produce), the spectroscopic assaying techniques used and precise determination of the incident particle flux and 
+Over 20 million nuclear medicine procedures are performed each year in the United States \cite{Met09}, with the vast majority involving imaging.  \ce{^{99m}Tc} ($t_{1/2}$ = 6.0067(5) hour), which decays predominately via the emission of single 140 keV gamma-ray, is used in 80\% of of these procedures. \ce{^{99m}Tc} is produced via \ce{^{235}U}(n,f).  However, this approach is less than ideal due to the increasing age of many reactors \cite{Qai12} and a nuclear weapons proliferation risk associated with reactors utilizing Highly-Enriched Uranium (HEU).  As a result, alternative \ce{^{99m}Tc} production pathways, as well as studies of the associated production of long-lived impurities \cite{Updegraff2013}, are under consideration \cite{Rut09}. 
 
 
-The flux is typically determined using a well-known monitor reaction on a co-irradiated foil that leads to the production of an easily quantified long-lived residual nucleus. However, for both charged-particle and neutron-induced reactions, there relatively few monitor reactions that can be applied in the low to intermediate energy regimes of 30-70 MeV.  The situation is worse above 70 MeV monitor reactions where values free from the potential influence of secondary neutron contributions are even harder to come by.  Knowledge of these cross sections as a function of the incident particle energy is central to the isotope production, with recent efforts focused on developing the 93Nb(p,4n)90Mo (t$_{1/2}$= 5.56(9) hours) as a monitor reaction \cite{Voy18b, Kim18}.  
+Other imaging radionuclides are used in Positron Emission Tomography (PET), which is now so commonplace that
+there are numerous companies   providing production capabilities built around low-energy \enquote{medical cyclotrons.} 
+The utility of PET imaging, combined with the recent rise in multimodal PET/MRI and PET/CT imaging,  has
+led to significant interest in the development of other $\beta^+$ emitting radionuclides.
+These include \ce{^{18}F} ($t_{1/2}$ = 109.771(20) min), which is produced locally via the \ce{^{18}O}(p,n) reaction, \ce{^{82}Rb} ($t_{1/2}$ = 1.2575(2) min), which is used in cardiac imaging, and \ce{^{68}Ga}  ($t_{1/2}$ = 67.71(8) min), which is used in the detection of a wide range of tumors.  The short half-lives of \ce{^{82}Rb} and \ce{^{68}Ga} necessitate that they be extracted from a longer-lived radioactive parent nuclide generator whose longer half-lives of 270.93(13) and 25.35(3) days, respectively, allow them to be produced at regional facilities and distributed to medical facilities throughout the world.  
+
+In addition to imaging, a large number of therapeutic radiopharmaceuticals are in use or under development for cancer treatment.  The principle behind therapeutic radionuclide cancer therapy involves depositing a targeted dose, e.g., energy per unit mass, to a tumor cell,  capable of producing damage to multiple strands of DNA, from which the cell cannot recover.  The ideal dose delivery involves radiation with a high Linear Energy Transfer (LET).  While some $\beta^-$ nuclides are already in use, such as \ce{^{177}Lu} ($t_{1/2}$ = 6.6475(20) days), the relatively long range of $\beta^-$-particles makes them less favorable than other modes of radioactive decay.  These include Auger/Coster-Kronig electron-emitters, which typically have a range of less than 1 \mmicro m, or $\alpha$-particle emitters, which have ranges of 2--10 \mmicro m.  
+
+There is a particularly large amount of interest in the alpha-emitting radionuclide \ce{^{225}Ac}.  \ce{^{225}Ac} is particularly well-suited for medical applications in that it has a sufficiently long lifetime ($t_{1/2}$ = 10.0(1) days) to facilitate its incorporation into targeting molecules, and its daughters then decay relatively rapidly ($t_{1/2}<$ 3.2 hours) to stable products, minimizing concurrent dose to healthy tissue. Other promising alpha-therapeutic radionuclides include \ce{^{211}At}, \ce{^{212}Pb}/\ce{^{212}Bi}, \ce{^{213}Bi}, \ce{^{226}Th} and \ce{^{227}Th}, and have all been identified as high priority topics by the most recent Nuclear Science Advisory Committee's Long Range Plan on Isotope Production \cite{NSACIsotopesSubcommittee2015}.
+
+A particularly promising  nuclear medical treatment modality involves coupling a pair of chemically similar radioisotopes including of a therapeutic nuclide capable of delivering a highly localized radiation dose and a chemically-identical isotope that emits a positron for PET or a gamma suitable for single photon emission computed tomography (SPECT) imaging.
+Examples of these \enquote{theranostic pairs} include \ce{^{188}Pt} or \ce{^{191}Pt} for use in imaging, together with \ce{^{193m}Pt}, \ce{^{195m}Pt}, and \ce{^{197}Pt}, which all have  therapeutic potential.
+Another such promising  pair involves the PET isotope \ce{^{134}Ce} ($t_{1/2}$ = 3.16(4) days) combined with \ce{^{225}Ac}.  A recent NSAC report \cite{NSACIsotopesSubcommittee2015} highlights additional pairs of isotopes that have potential uses as theranostic agents. 
+
+As mentioned above, most of these promising radionuclides are made at a few regional facilities.  These include the Isotope Production Facility at Los Alamos National Lab (IPF-LANL), the Brookhaven Linac Isotope Production facility at Brookhaven National Lab (BLIP-BNL) in the United States, the TRIUMF laboratory in Canada and iThemba LABS in South Africa \cite{Iae675,NSACIsotopesSubcommittee2015}.  In a compelling example of the synergy between fundamental nuclear research and societal benefit, LANL-IPF and BLIP-BNL operate symbiotically with the Los Alamos Neutron Science Center at LANL and the Relativistic Heavy Ion Collider at BNL.  This dual-use approach provides an inexpensive, reliable source of radionuclides needed for the development of new drugs through a public-private partnership. 
+
+All of these regional sources utilize high-energy ($\geq$ 100 MeV) (p,x) reactions on stable targets.  In addition to producing the radionuclides of interest these reactions create a large flux of \enquote{secondary} spallation protons and neutrons that can in turn initiate nuclear reactions providing either a useful alternative source of valuable radionuclide or a troublesome chemically-identical contaminant.  The secondary neutron flux is particularly important since the lack of electronic stopping for neutrons makes them advantageous for radionuclide production \cite{Voyles2017}.  The energy spectrum of secondary neutrons from IPF was recently measured using spectral unfolding \cite{Mos16} and for thick-target deuteron break-up on beryllium at the LBNL 88-Inch cyclotron \cite{Harrig2018} via a secondary time-of-flight technique. A number of therapeutic radionuclides can potentially be produced via secondary neutron-induced (n,p) reactions. Examples of possible targets include \ce{^{32}S}, \ce{^{47}Ti}, \ce{^{nat}Zn} (for the production of \ce{^{64,67}Cu}), \ce{^{105}Pd}, \ce{^{149}Sm}, \ce{^{175}Lu}, and \ce{^{177}Hf}.  In addition, the production of alpha-emitting radionuclides such as \ce{^{225}Ac}, \ce{^{223}Ra}, and \ce{^{227}Th} using neutrons has yet to be explored.
+
+
+\begin{figure}
+ \centering
+%  \includegraphics[clip=true,trim=1.5in 3.4in 1.8in 3.5in, scale=0.8]{./figures/variation_curve.pdf}
+ \includegraphics[width=0.7\linewidth]{225Ac.pdf}
+
+ % variation_curve.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
+ \caption{Predictions of several major reaction model codes for the (n,x) reactions leading to the production of \ce{^{225}Ac}.  Differences of up to an order of magnitude are commonly seen.    }
+ \label{fig:ithemba_plot}
+\end{figure}
+
+Unfortunately, accurate modeling of these high-energy reactions is notoriously difficult.  \autoref{fig:ithemba_plot} shows a comparison between cross sections for the production of \ce{^{225}Ac} from (n,x) reactions on \ce{^{232}Th} calculated with the reaction codes typically used to predict isotope production.  This includes EMPIRE-3.2.3 \cite{Herman2013}, CoH 3.5.1 \cite{KAWANO2010}, ALICE-2017 \cite{Blann1996}, the TENDL-2011 and TENDL-2017 libraries produced using TALYS \cite{Rochman2017}, as well as the most recent version of the code (TALYS 1.9) \cite{Koning2012} and the European Activation File (EAF-2010) \cite{Forrest2005}.  Differences on the order of 50--100\% are often seen.  
+
+These large uncertainties in reaction modeling means that direct measurement of the reaction cross sections themselves are needed in order to design targets capable of efficiently producing low-contamination radionuclides.  Fortunately, most of the reactions of interest take place on stable targets and are therefore experimentally accessible. 
+
+The preferred method for measuring these cross sections involves foil activation, in which one or more well-characterized thin foil(s) is/are irradiated and the residual radioactivities are quantified through off-line alpha, beta, gamma, or electron spectroscopy \cite{Voyles2018a,Graves2016}.  The uncertainty in the deduced cross section depends strongly on the accurate characterization of the target material (which is often challenging to produce), the spectroscopic assaying techniques used and precise determination of the incident particle flux. Access to well-characterized nuclear data can be useful in reducing the first two sources of uncertainty. 
+
+
+The flux is typically determined using a well-characterized monitor reaction on a co-irradiated foil that leads to the production of an easily quantified, long-lived residual nucleus. However, for both charged-particle and neutron-induced reactions, there relatively few monitor reactions that can be applied in the low- to intermediate-energy regimes of 30--70 MeV.  The situation is worse above 70 MeV, where monitor reactions  free from the potential influence of secondary neutron contributions are even harder to come by.  Knowledge of these cross sections as a function of the incident particle energy is essential to  isotope production, with recent efforts focused on developing  \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} ($t_{1/2}$= 5.56(9) hours) as a monitor reaction reaction suitable for use at regional isotope production facilities \cite{Voyles2018a, Kim2018}.  
 
 
 \section{NUCLEAR ENERGY}
@@ -441,46 +482,75 @@ One artifact of the nuclear data tuning process is a reduction in confidence due
 In a study conducted by SG46, it was found that many individual reactions were modified by several percent from ENDF/B-VII.1 to ENDF/B-VIII.0 with some examples shown in \autoref{fig:ne_plots}.
 
 
+
 \begin{figure}
     \centering
-%     \subfloat{
+    \begin{minipage}{0.5\textwidth}
         \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \hspace{-5pt}\subfigimg[width=0.5\textwidth]{}{u235.png}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
-         %         \refstepcounter{subfigure}
-%          \label{fig:before_minimization}
-   \hspace{-5pt}%
-%      \subfloat{
+        \includegraphics[width=0.97\textwidth]{u235.png} % first figure itself
+%         \caption{first figure}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
         \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[width=0.5\textwidth]{}{u238.png}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
-         %         \refstepcounter{subfigure}
-%          \label{fig:after_minimization}
-   \hspace{-5pt}%\\
-       \centering
-%     \subfloat{
+        \includegraphics[width=0.97\textwidth]{u238.png} % second figure itself
+%         \caption{second figure}
+    \end{minipage}
+    \\
+    \centering
+    \begin{minipage}{0.5\textwidth}
         \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \hspace{-5pt}\subfigimg[width=0.5\textwidth]{}{pu239_1.png}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
-         %         \refstepcounter{subfigure}
-%          \label{fig:before_minimization}
-   \hspace{-5pt}%
-%      \subfloat{
+        \includegraphics[width=0.97\textwidth]{pu239_1.png} % first figure itself
+%         \caption{first figure}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
         \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[width=0.5\textwidth]{}{pu239_2.png}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
-         %         \refstepcounter{subfigure}
-%          \label{fig:after_minimization}
-   \hspace{-5pt}%
+        \includegraphics[width=0.97\textwidth]{pu239_2.png} % second figure itself
+%         \caption{second figure}
+    \end{minipage}
     \caption{SG46 findings on changes in cross sections from ENDF/B-VII.1 to ENDF/B-VIII.0 of key nuclides. }
      \label{fig:ne_plots}
 \end{figure}
+
+% \begin{figure}
+%     \centering
+% %     \subfloat{
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \hspace{-5pt}\subfigimg[width=0.5\textwidth]{}{u235.png}{50}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+%          %         \refstepcounter{subfigure}
+% %          \label{fig:before_minimization}
+%    \hspace{-5pt}%
+% %      \subfloat{
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+%         \subfigimg[width=0.5\textwidth]{}{u238.png}{50}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+%          %         \refstepcounter{subfigure}
+% %          \label{fig:after_minimization}
+%    \hspace{-5pt}%\\
+%        \centering
+% %     \subfloat{
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \hspace{-5pt}\subfigimg[width=0.5\textwidth]{}{pu239_1.png}{50}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+%          %         \refstepcounter{subfigure}
+% %          \label{fig:before_minimization}
+%    \hspace{-5pt}%
+% %      \subfloat{
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+%         \subfigimg[width=0.5\textwidth]{}{pu239_2.png}{50}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+%          %         \refstepcounter{subfigure}
+% %          \label{fig:after_minimization}
+%    \hspace{-5pt}%
+%     \caption{SG46 findings on changes in cross sections from ENDF/B-VII.1 to ENDF/B-VIII.0 of key nuclides. }
+%      \label{fig:ne_plots}
+% \end{figure}
 
 Many of these advanced systems also require so-called high-assay low enriched uranium (HA-LEU), which has a \ce{^{235}U} enrichment \textgreater5\% and \textless20\% by mass, where the current fleet of LWRs utilize enrichments of 5\% or less. With few benchmark experiments in HA-LEU enrichment range, the interplay of the cross sections for multiple nuclei become important, especially for LEU experiments where \ce{^{1}H}, \ce{^{16}O}, \ce{^{235}U}, \ce{^{238}U} and others are applied simultaneously in the calculation of the integral $k_{eff}$ response.  Similar to the Chadwick \cite{Cha18} and Bauge \cite{Bau12} studies of Jezebel critical assembly, a team at ORNL preformed an investigation of a hypothetical transportation package with 20\% enriched \ce{^{235}U} in the form of \ce{UF6} using ENDF/B-VII.1 and ENDF/B-VIII.0 libraries by only exchanging the CIELO nuclides. A swing in $k_{eff}$ of 450 pcm is observed.  Future investigation and validation are required to gain confidence in either calculation.
 
