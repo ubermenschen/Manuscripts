@@ -8,7 +8,8 @@
 %
 % For tracking purposes => this is v1.0 - Apr. 2013
 
-\documentclass[letterpaper,draft]{ar-1col}
+\documentclass[letterpaper]{ar-1col}
+% \documentclass[letterpaper,draft]{ar-1col}
 \usepackage[numbers]{natbib}
 \usepackage[left=35mm,top=26mm,right=26mm,bottom=15mm]{geometry}
 
@@ -30,7 +31,7 @@
 \usepackage[hidelinks]{hyperref}
 % % \usepackage{cool}
 % % \usepackage{cancel}
-\usepackage{microtype}
+% \usepackage{microtype}
 % \usepackage{listings}
 % % \usepackage{mcode}
 \usepackage [autostyle, english = american]{csquotes}
@@ -123,8 +124,18 @@
 % \makeatother
 
 \hyphenation{gamma-rays}
+\hyphenation{Spec-tro-met-ers}
+
 
 % \setcounter{secnumdepth}{4}
+
+% Remove overfull hbox warnings in bibliography
+\usepackage{etoolbox}
+\apptocmd{\sloppy}{\vbadness 10000\relax}{}{}
+% \emergencystretch=1em
+
+\pdfminorversion=7
+
 
 
 % 
@@ -182,7 +193,7 @@ A well-established knowledge of nuclear phenomena including fission, reaction cr
 
 %Keywords, etc.
 \begin{keywords}
-\textred{Add keywords here!}  keywords, separated by comma, no full stop, lowercase
+nuclear data,  structure,  reactions, evaluation, fission, medical Isotopes, nuclear energy, nonproliferation, inelastic scattering, level density, radiative strength, $\beta$-decay, reactor antineutrinos
 \end{keywords}
 \maketitle
 
@@ -211,9 +222,9 @@ The first step in the Pipeline is compilation and it begins with potentially the
 
 
 
-\begin{wrapfigure}{r}{0.4\textwidth}
+\begin{wrapfigure}{r}{0.39\textwidth}
 \centering
-\includegraphics[width=0.39\textwidth]{pipeline_cropped.pdf}
+\includegraphics[width=0.38\textwidth]{pipeline_cropped.pdf}
 \caption{\label{fig:pipeline}The nuclear data pipeline.}
 \end{wrapfigure}
 
@@ -262,15 +273,15 @@ Accurate, physics-based modeling of neutron-induced reactions, particularly on t
 
 Not all fission data needed in nuclear physics applications can be readily measured in the laboratory. In many cases, the targets may be too-short lived, the analysis might yield unacceptably large uncertainties, or separate measurements of the same quantity may produce discrepant results. As with other reaction data, fission evaluation proceeds through the use of a model designed to reproduce the data as closely as possible.  However, in the case of fission, we still lack a predictive theoretical framework to match all types of measured data within experimental errors. A truly predictive theory of fission will require advances in theoretical techniques and computational machinery, along with improved experimental data.
 
-For fission theory, we can make a distinction in practice between description of the fission process up to scission (pre-scission physics), and the events that follow scission (post-scission physics). Eventually, one could envision a comprehensive model that accurately follows the entire fission process from the formation of the parent nucleus to the last decays of the final product nuclei within a single internally consistent theoretical framework. Such a model is not yet feasible so different physics models are used to treat pre- and post-scission processes. A wide range of theoretical approaches have been developed since the late 1930's to describe pre-scission physics, including scission-point models \cite{Wil76,Lem15}, microscopic-macroscopic models \cite{Mol15} with random-walk dynamics \cite{Wa17}, Langevin dynamics \cite{Sie17}, Time-dependent Hartree-Fock and Hartree-Fock-Bogoliubov theory \cite{Koo76,Neg78,Tan15,God16}, the time-dependent superfluid local density approximation \cite{Ste11,Bul13,Ste15,Bul16}, and the time-dependent generator-coordinate method \cite{Ber91,Gou05,Rei16}.Several models have also been developed to describe post-scission physics and built into computer codes, such as GEF \cite{Sch16}, FIFRELIN \cite{Lit15}, CGMF \cite{Tal14}, and FREYA \cite{Ran09,Ver18}.
+For fission theory, we can make a distinction in practice between description of the fission process up to scission (pre-scission physics), and the events that follow scission (post-scission physics). Eventually, one could envision a comprehensive model that accurately follows the entire fission process from the formation of the parent nucleus to the last decays of the final product nuclei within a single internally consistent theoretical framework. Such a model is not yet feasible so different physics models are used to treat pre- and post-scission processes. A wide range of theoretical approaches have been developed since the late 1930's to describe pre-scission physics, including scission-point models \cite{Wil76,Lem15}, microscopic-macroscopic models \cite{Mol15} with random-walk dynamics \cite{War17}, Langevin dynamics \cite{Sie17}, Time-dependent Hartree-Fock and Hartree-Fock-Bogoliubov theory \cite{Koo76,Neg78,Tan15,God16}, the time-dependent superfluid local density approximation \cite{Ste11,Bul13,Ste15,Bul16}, and the time-dependent generator-coordinate method \cite{Ber91,Gou05,Rei16}.Several models have also been developed to describe post-scission physics and built into computer codes, such as GEF \cite{Schm16}, FIFRELIN \cite{Lit15}, CGMF \cite{Tal14}, and FREYA \cite{Ran09,Ver18}.
 
 The division between pre- and post-scission physics in modeling efforts suggests a corresponding division in nuclear data needs to improve our understanding of the fission process. Post-scission observables are generally easier to measure, and include the properties of fission fragments and products and of the neutrons and gamma rays they emit.  Recently, Bertsch et al. \cite{Ber15} have suggested a subset of fission data that tend to have relatively small uncertainties and could therefore be used to test and validate fission models. These data consist of fission barriers, fragment mass distributions, fragment total kinetic energies, spontaneous-fission lifetimes, and fission isomer excitation energies. In addition to these quantities, the angular distribution of fission fragments can also provide useful information about the angular momentum of the fissioning nucleus and further constrain model calculations. 
 
-In addition to standard experiments looking at individual fission properties, multi-parameter measurements that give a comprehensive view of a fission event should be pursued as facilities and detectors improve. Ideally, a multi-parameter experiment would record all possible fission observables (e.g., fragment charge, mass, and energy distributions as well as neutron and gamma spectra and multiplicities) on an event-by-event basis, thereby making it possible to reconstruct the state of the nucleus at scission. In practice, each additional observable reduces statistics, making such measurements exceedingly challenging. Finally, there are experimental measurements that directly probe the pre-scission dynamics of the fission process, although they carry large uncertainties and suffer from various ambiguities and limitations. These include measurements of scission neutrons \cite{Pe09}, fission time scales \cite{Jac09}, and muon-induced fission \cite{Mar80}. Probes of pre-scission physics can provide unique insights into the details of the fission process, and are therefore extremely valuable to fission theory.
+In addition to standard experiments looking at individual fission properties, multi-parameter measurements that give a comprehensive view of a fission event should be pursued as facilities and detectors improve. Ideally, a multi-parameter experiment would record all possible fission observables (e.g., fragment charge, mass, and energy distributions as well as neutron and gamma spectra and multiplicities) on an event-by-event basis, thereby making it possible to reconstruct the state of the nucleus at scission. In practice, each additional observable reduces statistics, making such measurements exceedingly challenging. Finally, there are experimental measurements that directly probe the pre-scission dynamics of the fission process, although they carry large uncertainties and suffer from various ambiguities and limitations. These include measurements of scission neutrons \cite{Petrov2009}, fission time scales \cite{Jac09}, and muon-induced fission \cite{Mar80}. Probes of pre-scission physics can provide unique insights into the details of the fission process, and are therefore extremely valuable to fission theory.
 
 Both pre-scission and post-scission theory and data will be needed to reach a satisfactory understanding of the fission process, and thereby make reliable predictions of nuclear quantities that cannot be measured in the laboratory. Pre-scission models can provide input to post-scission models wherever the data are lacking, and post-scission models can be used to improve pre-scission calculations using a wealth of available experimental data. The ultimate goal for theorists, a comprehensive description of fission starting from protons, neutrons, and their interactions that provides accurate values for all fission data of interest, remains elusive.  Many questions about the fission process remain open, such as: how the initial partition of energy between kinetic and internal excitation occurs, what the relevant collective and single-particle degrees of freedom are near scission, and how they evolve and couple throughout the process? Lastly, how can we best quantify uncertainties (both epistemic and aleatory) in fission calculations?
 
-\subsection{Improved \ce{^{235,238}U} and \ce{^{239}Pu}(n,n') data for neutron transport}\label{sec:n_transport}
+\subsection{Improved \texorpdfstring{\ce{^{235,238}U}}{235,238U} and \texorpdfstring{\ce{^{239}Pu}}{239Pu}(n,n') data for neutron transport}\label{sec:n_transport}
 
 Elastic and inelastic scattering have a profound effect on neutron populations in any nuclear application by changing the directions and energies of the neutrons in the system.  However, improvements in neutron scattering data have been hampered by the fact that they do not produce easily measured signals like fission, or a radiochemical observable like neutron capture.  The result has been significant disagreements between different reaction evaluations.  These disagreements manifest themselves as compensating errors that are resistant to the validation process.  This issue has been recognized by the nuclear data community since the early days of the WPEC \cite{Row89} and more recently by Maslov \cite{Mas11}.  
 
@@ -288,13 +299,13 @@ One compelling example of compensating errors involves the Jezebel \ce{^{239}Pu}
 
 A new Collaborative International Evaluated Library Organization (CIELO) Coordinated Research Program was started under the auspices of the IAEA \cite{Cha18a} to have the international nuclear data evaluation community agree on a set of evaluated cross sections and output spectra for six critically-important nuclei: \ce{^{1}H}, \ce{^{16}O}, \ce{^{56}Fe}, \ce{^{235,238}U} and \ce{^{239}Pu} in order to address the issue of compensating errors.  Recently, this list has been expanded to include \ce{^{14,15}N}, \ce{^{9}Be}, \ce{^{23}Na}, \ce{^{59}Co}, \ce{^{58}Ni}, \ce{^{238-242}Pu}.
 
-CIELO has relatively little energy or angle differential data to draw upon to aid in its evaluation of (n,n') on the \enquote{Big 3} Actinides, leading to \enquote{significant differences amongst the evaluations for \ce{^{239}Pu} in the fast energy range, with ENDF/B-VII.1 and JENDL-4.0 lying significantly above the JEFF-3.1 evaluation.} \cite{Cha14}.  The \ce{^{239}Pu} data referenced in their paper are all from indirect measurements made prior to 1970 \cite{Bat69, And61}.  The case is similar for \ce{^{235}U} where they note that differences for $E_n >$ 50 keV \enquote{have a large impact on the fast criticality (Godiva), leading to a 540 pcm swing in calculated criticality, as shown by Go Chiba \cite{Chi12}.}
+CIELO has relatively little energy or angle differential data to draw upon to aid in its evaluation of (n,n') on the \enquote{Big 3} Actinides, leading to \enquote{significant differences amongst the evaluations for \ce{^{239}Pu} in the fast energy range, with ENDF/B-VII.1 and JENDL-4.0 lying significantly above the JEFF-3.1 evaluation.} \cite{Cha14}.  The \ce{^{239}Pu} data referenced in their paper are all from indirect measurements made prior to 1970 \cite{Batchelor1969, Andreev1961}.  The case is similar for \ce{^{235}U} where they note that differences for $E_n >$ 50 keV \enquote{have a large impact on the fast criticality (Godiva), leading to a 540 pcm swing in calculated criticality, as shown by Go Chiba \cite{Chi12}.}
 
 One significant source of (n,xn$\gamma$) partial cross section data from 1997 to 2003 was the GEANIE collaboration (Germanium Array for Neutron-Induced Excitations) at the Los Alamos Neutron Science Center/Weapons Neutron Research (LANSCE/WNR) facility. While the primary goal of the GEANIE collaboration was the determination of the \ce{^{239}Pu}(n,2n) cross section \cite{Ber02}, it resulted in the publication of more than two dozen papers over the course of more than 15 years.  Experiments were run on all three of the major Actinides: \ce{^{235}U} \cite{You01}, \ce{^{239}Pu} \cite{Ber02} and \ce{^{238}U} \cite{Fot04}.  It should be noted that GEANIE did not include any neutron detectors, producing only angle-integrated partial $\gamma$-ray cross sections.  
 
 The need for new scattering data has motivated many new experiments.  This has included energy-differential/angle-integrated measurements of the \ce{^{238}U}(n,n') cross section using the GELINA spallation neutron source in Geel Belgium by Bacquias et al., \cite{Nem13} and quasi-angle-differential measurements using the Rensselaer Polytechnic Institute Linac by Daskalakis et al., \cite{Das14}. 
 
-The ideal way to improve (n,n') data on the \ce{^{235,238}U} and \ce{^{239}Pu} would be to perform measurements of the scattered neutron in coincidence with transitions emitted by the excited nucleus.  In the case of the Actinides this will potentially require the observation of conversion electrons given that the lowest transitions in all actinides are almost entirely converted.  Unfortunately, neutron beams usually have quite low intensity, with a fluence in the fast (1--10 MeV) region between $10^3$ and $10^7$ n/s/cm$^2$ at the target location.  Furthermore, many spallation neutron sources have a significant high-energy spectral component that can cause inter-element scattering in a neutron scintillator array rendering precise determination of the scattered neutron energy difficult to  perform. However, intense limited-energy neutron sources based on thick-target deuteron breakup \cite{Harrig2018} and forward-fitting techniques developed for use at spallation neutron sources \cite{Kee18} off an opportunity to perform neutron-gamma coincident measurements in the fast fission energy spectrum.  These techniques could provide valuable data to improve nuclear data evaluations of inelastic scattering, even on targets where fission is an open channel. 
+The ideal way to improve (n,n') data on the \ce{^{235,238}U} and \ce{^{239}Pu} would be to perform measurements of the scattered neutron in coincidence with transitions emitted by the excited nucleus.  In the case of the Actinides this will potentially require the observation of conversion electrons given that the lowest transitions in all actinides are almost entirely converted.  Unfortunately, neutron beams usually have quite low intensity, with a fluence in the fast (1--10 MeV) region between $10^3$ and $10^7$ n/s/cm$^2$ at the target location.  Furthermore, many spallation neutron sources have a significant high-energy spectral component that can cause inter-element scattering in a neutron scintillator array rendering precise determination of the scattered neutron energy difficult to  perform. However, intense limited-energy neutron sources based on thick-target deuteron breakup \cite{Harrig2018} and forward-fitting techniques developed for use at spallation neutron sources \cite{Kee18} offer an opportunity to perform neutron-gamma coincident measurements in the fast fission energy spectrum.  These techniques could provide valuable data to improve nuclear data evaluations of inelastic scattering, even on targets where fission is an open channel. 
 
 \subsection{Improved treatment of continuum nuclear data properties}
 
@@ -329,26 +340,44 @@ There is a great deal of uncertainty in the magnitude of the spin cut-off parame
 
 \begin{figure}
     \centering
-%     \subfloat{
+    \begin{minipage}{0.5\textwidth}
         \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \hspace{-5pt}\subfigimg[width=0.5\textwidth]{}{isomer_curves.pdf}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
-         %         \refstepcounter{subfigure}
-%          \label{fig:before_minimization}
-   \hspace{-5pt}%
-%      \subfloat{
+        \includegraphics[width=0.97\textwidth]{isomer_curves.pdf} % first figure itself
+%         \caption{first figure}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
         \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[width=0.5\textwidth]{}{ldmodels.pdf}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
-         %         \refstepcounter{subfigure}
-%          \label{fig:after_minimization}
-   \hspace{-5pt}%
+        \includegraphics[width=0.97\textwidth]{ldmodels.pdf} % second figure itself
+%         \caption{second figure}
+    \end{minipage}
     \caption{Predictions of the production of \ce{^{52m}Mn}($J_\pi=2^+$)/\ce{^{52g}Mn}($J_\pi=6^+$) isomer-to-ground state ratio as a function of energy for the Gilbert and Cameron level density (left) and using the 6 level density models available in TALYS (right). }
      \label{fig:fe_isomer_plots}
 \end{figure}
+
+
+% \begin{figure}
+%     \centering
+% %     \subfloat{
+% %         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% %         \hspace{-5pt}
+%         \includegraphics[width=0.3\textwidth]{isomer_curves.pdf} \includegraphics[width=0.3\textwidth]{ldmodels.pdf}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+%          %         \refstepcounter{subfigure}
+% %          \label{fig:before_minimization}
+% %    \hspace{-5pt}%
+% %      \subfloat{
+% %         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+% %         \includegraphics[width=0.3\textwidth]{ldmodels.pdf}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+%          %         \refstepcounter{subfigure}
+% %          \label{fig:after_minimization}
+% %    \hspace{-5pt}%
+%     \caption{Predictions of the production of \ce{^{52m}Mn}($J_\pi=2^+$)/\ce{^{52g}Mn}($J_\pi=6^+$) isomer-to-ground state ratio as a function of energy for the Gilbert and Cameron level density (left) and using the 6 level density models available in TALYS (right). }
+%      \label{fig:fe_isomer_plots}
+% \end{figure}
 
 Information regarding the $J$-dependence of the NLD can also be obtained through observation of the relative population of two low-lying states with very different spins via activation.  This method has been used in Hg and Au by Chakravarty \cite{PhysRevC.45.1171} and more recently by Sudar in Hg and Pt \cite{PhysRevC.73.034613}.  \autoref{fig:fe_isomer_plots} shows this for the case of \ce{^{52m}Mn}($J_\pi=2^+$)/\ce{^{52g}Mn}($J_\pi=6^+$) ratio populated via \ce{^{56}Fe}(p,$\alpha$n) measured via stacked-target activation at the LBNL 88-Inch cyclotron as compared to TALYS calculations for different values of the spin cut-off parameter (left) and the 6 level density models available for use in TALYS on the right.  
 
@@ -368,9 +397,9 @@ Nuclear reactors have also been an essential tool to study the weak interaction.
 
 This intriguing deficit, as well as a spectrum distortion, has triggered a new generation of very-short distance reactor experiments, such as NEOS (Korea) \cite{Ko17}, DANSS (Russia) \cite{AleAx}, STEREO (France) \cite{AllAx}, PROSPECT (USA) \cite{Ash16}, and SoLid (Belgium) \cite{Kal17}, whose first results are beginning to be made public.  There are no signs of slowing down in the field of nuclear reactor antineutrinos, as the largest experiment to date, JUNO, designed to measure the neutrino mass hierarchy, should be ready for data taking by 2021 \cite{SalAx}.  JUNO will feature a 20 Million-Ton detector at 80 km from A 27 GW nuclear power plant in China.
 
-The antineutrino spectrum produced in a nuclear reactor is calculated as the sum of the spectra produced by each of the nuclear fuels, \ce{^{235,238}U} and \ce{^{239,241}Pu}, weighted by the respective fission fractions \cite{Vog81}.   The spectra for each fuel can be calculated using nuclear databases, in what is commonly known as the \enquote{summation method}.   Alternatively, for \ce{^{235}U} and \ce{^{239,241}Pu}, the spectra can also be calculated by converting the aggregate electron spectra measured at ILL in the 1980s \cite{Fel82,Sch85,Hah89}.   The current best predictions for  \ce{^{235}U} and \ce{^{239,241}Pu} are those by Huber \cite{Hub11} using the conversion method, while for \ce{^{238}U} is that by Mueller et al. \cite{Mue11} using a hybrid conversion-summation method.
+The antineutrino spectrum produced in a nuclear reactor is calculated as the sum of the spectra produced by each of the nuclear fuels, \ce{^{235,238}U} and \ce{^{239,241}Pu}, weighted by the respective fission fractions \cite{Vog81}.   The spectra for each fuel can be calculated using nuclear databases, in what is commonly known as the \enquote{summation method}.   Alternatively, for \ce{^{235}U} and \ce{^{239,241}Pu}, the spectra can also be calculated by converting the aggregate electron spectra measured at ILL in the 1980s \cite{Fei82,Sch85,Hah89}.   The current best predictions for  \ce{^{235}U} and \ce{^{239,241}Pu} are those by Huber \cite{Hub11} using the conversion method, while for \ce{^{238}U} is that by Mueller et al. \cite{Mue11} using a hybrid conversion-summation method.
 
-The use of nuclear databases to calculate antineutrino spectra is considered less precise than the conversion method due to deficiencies in the underlying fission and decay data, such as beta intensities \cite{20}, beta shape factors due to first-forbidden transitions \cite{Hay14}, evaluated libraries issues \cite{Son15} and fission yields \cite{Son16}.   There have been considerable efforts in the last few years to improve this situation, including (i) experimental campaigns in Jyvaskyla \cite{Alg10}, ORNL \cite{Ras16} and ANL \cite{MccTBD} to obtain highly precise values of beta intensities, which have been incorporated in the ENDF/B-VIII.0 decay data sub-library; (ii) measurements of isomeric ratios in ILL, Jyvaskyla and ANL; (iii) measurements of fission yields in GELINA \cite{Viv00}, GSI \cite{Pel17} and LANL \cite{Duk16}; (iv) a recent IAEA Coordinated Research Project on beta-delayed neutron emitters \cite{DimXX} that would improve the derivation of cumulative fission yields from independent ones.   Also planned are measurements of beta shape factors as well as a new IAEA Coordinated Research Project to evaluate fission yields.
+The use of nuclear databases to calculate antineutrino spectra is considered less precise than the conversion method due to deficiencies in the underlying fission and decay data, such as beta intensities \cite{Fal12}, beta shape factors due to first-forbidden transitions \cite{Hay14}, evaluated libraries issues \cite{Son15} and fission yields \cite{Son16}.   There have been considerable efforts in the last few years to improve this situation, including (i) experimental campaigns in Jyvaskyla \cite{Alg10}, ORNL \cite{Ras16} and ANL \cite{MccTBD} to obtain highly precise values of beta intensities, which have been incorporated in the ENDF/B-VIII.0 decay data sub-library; (ii) measurements of isomeric ratios in ILL, Jyvaskyla and ANL; (iii) measurements of fission yields in GELINA \cite{Viv00}, GSI \cite{Pel17} and LANL \cite{Duk16}; (iv) a recent IAEA Coordinated Research Project on beta-delayed neutron emitters \cite{DimXX} that would improve the derivation of cumulative fission yields from independent ones.   Also planned are measurements of beta shape factors as well as a new IAEA Coordinated Research Project to evaluate fission yields.
 Another issue affecting the summation method is the lack of fission yield correlation matrices in the evaluated fission data libraries.   As a result, uncertainties cannot be fully computed.  There has been some progress in this area, for instance, the ongoing OECD-NEA subgroup 44 will incorporate this topic \cite{SobXX}.
 
 The summation method has been recently applied in two different situations.   First, it has been shown that the Daya Bay fuel evolution data \cite{An17} can be explained by summation calculations including an anomaly of about 4\% \cite{Hay18}.   Second, a novel method to analyze the Daya Bay spectrum revealed the signature of 4 individual fission products, while the same method applied to the electron spectra revealed two additional fission products \cite{Son18}.   
@@ -381,13 +410,13 @@ Given the dependence of the antineutrino signal on both decay and fission produc
 
 \textred{We seem to have plenty of space - should we add the FIER plot back in?}
 
-These experiments would involve a sample of depleted \ce{^{238}U} since recent results from IBD indicate that the contribution to the observed anomaly in the antineutrino experiment can be attributed to issues with the \ce{^{238}U}(n,f) yields. These measurements could be performed at the Godiva in the same fashion as the \ce{^{235}U} irradiation used to validate FIER, or other well-documented fast neutron facilities including the thick target deuteron break neutron source at the LBNL 88-Inch cyclotron \cite{Harrig2018} and the High Flux Neutron Generator at UC-Berkeley \cite{All18} and compare the results to the FIER predictions to inform both the fission yield and decay data for \ce{^{238}U}(n,f). 
+These experiments would involve a sample of depleted \ce{^{238}U} since recent results from IBD indicate that the contribution to the observed anomaly in the antineutrino experiment can be attributed to issues with the \ce{^{238}U}(n,f) yields. These measurements could be performed at the Godiva in the same fashion as the \ce{^{235}U} irradiation used to validate FIER, or other well-documented fast neutron facilities including the thick target deuteron break neutron source at the LBNL 88-Inch cyclotron \cite{Harrig2018} and the High Flux Neutron Generator at UC-Berkeley \cite{ayllon2018design} and compare the results to the FIER predictions to inform both the fission yield and decay data for \ce{^{238}U}(n,f). 
 
-\subsection{Improved (n,x$\gamma$) data for active interrogation}
+\subsection{Improved (n,x\texorpdfstring{$\gamma$}{ gamma}) data for active interrogation}
 
 An invaluable tool for determining the presence of fissile materials for non-proliferation involves prompt neutron- and gamma-ray spectroscopy coupled to a DT neutron source with associated particle imaging (DT-API).   DT-API sources allow tracking of the trajectory of individual neutrons, thereby greatly decreasing background from scattered neutrons.  The signal from DT-API generators includes long-chain gamma-ray emission from multiple fission events \cite{Pra12,Nak10} as well as prompt gamma- and neutron scattering on a wide range of low- and high-Z materials.   
 
-The interpretation of this data requires detailed knowledge of both the double-differential neutron scattering and gamma-ray production cross sections from fast down to thermal neutron energies.  The Evaluated Gamma Activation File \cite{Fir14} provides partial gamma-ray cross section data for transitions between discrete states following thermal neutron capture.  At higher energies the Atlas of Gamma-rays from the Scattering of Reactor Fast Neutrons \cite{Dem78}, which has recently been compiled into a database and reconciled to reflect state-of-the-art gamma-ray energies from ENSDF \cite{Hur18}, offers discrete gamma-ray cross sections for irradiation with fast fission neutrons.  
+The interpretation of this data requires detailed knowledge of both the double-differential neutron scattering and gamma-ray production cross sections from fast down to thermal neutron energies.  The Evaluated Gamma Activation File \cite{Fir15} provides partial gamma-ray cross section data for transitions between discrete states following thermal neutron capture.  At higher energies the Atlas of Gamma-rays from the Scattering of Reactor Fast Neutrons \cite{Dem78}, which has recently been compiled into a database and reconciled to reflect state-of-the-art gamma-ray energies from ENSDF \cite{Hur18}, offers discrete gamma-ray cross sections for irradiation with fast fission neutrons.  
 
 A program of measurements of gammas emitted from both discrete and QC states would require a relatively modest effort to set in place.  The data from these measurements could then be used to guide physics-based reaction model, such as the COH, TALYS or EMPIRE to ensure that the total gamma-ray production cross section is consistent with the total capture and scattering cross sections themselves. 
 
@@ -431,14 +460,14 @@ All of these regional sources utilize high-energy ($\geq$ 100 MeV) (p,x) reactio
  \label{fig:ithemba_plot}
 \end{figure}
 
-Unfortunately, accurate modeling of these high-energy reactions is notoriously difficult.  \autoref{fig:ithemba_plot} shows a comparison between cross sections for the production of \ce{^{225}Ac} from (n,x) reactions on \ce{^{232}Th} calculated with the reaction codes typically used to predict isotope production.  This includes EMPIRE-3.2.3 \cite{Herman2013}, CoH 3.5.1 \cite{KAWANO2010}, ALICE-2017 \cite{Blann1996}, the TENDL-2011 and TENDL-2017 libraries produced using TALYS, as well as the most recent version of the code (TALYS 1.9) \cite{Koning2012} and the European Activation File (EAF-2010).  Differences on the order of 50--100\% are often seen.  
+Unfortunately, accurate modeling of these high-energy reactions is notoriously difficult.  \autoref{fig:ithemba_plot} shows a comparison between cross sections for the production of \ce{^{225}Ac} from (n,x) reactions on \ce{^{232}Th} calculated with the reaction codes typically used to predict isotope production.  This includes EMPIRE-3.2.3 \cite{Herman2013}, CoH 3.5.1 \cite{KAWANO2010}, ALICE-2017 \cite{Blann1996}, the TENDL-2011 and TENDL-2017 libraries produced using TALYS \cite{Rochman2017}, as well as the most recent version of the code (TALYS 1.9) \cite{Koning2012} and the European Activation File (EAF-2010) \cite{Forrest2005}.  Differences on the order of 50--100\% are often seen.  
 
-These large uncertainties in reaction modeling means that direct measurement of the reaction cross sections themselves are needed in order to design targets capable of efficient, low-contamination radionuclides.  Fortunately, most of the reactions of interest take place on stable targets and are therefore experimentally accessible. 
+These large uncertainties in reaction modeling means that direct measurement of the reaction cross sections themselves are needed in order to design targets capable of efficiently producing low-contamination radionuclides.  Fortunately, most of the reactions of interest take place on stable targets and are therefore experimentally accessible. 
 
-The preferred method for measuring these cross sections involves foil activation, in which one or more well-characterized thin foil(s) is/are irradiated and the residual radioactivity are quantified through off-line alpha, beta, gamma, or electron spectroscopy \cite{Voyles2018a,Graves2016}.  The uncertainty in the deduced cross section depends strongly on the accurate characterization of the target material (which is often challenging to produce), the spectroscopic assaying techniques used and precise determination of the incident particle flux and 
+The preferred method for measuring these cross sections involves foil activation, in which one or more well-characterized thin foil(s) is/are irradiated and the residual radioactivities are quantified through off-line alpha, beta, gamma, or electron spectroscopy \cite{Voyles2018a,Graves2016}.  The uncertainty in the deduced cross section depends strongly on the accurate characterization of the target material (which is often challenging to produce), the spectroscopic assaying techniques used and precise determination of the incident particle flux. Access to well-characterized nuclear data can be useful in reducing the first two sources of uncertainty. 
 
 
-The flux is typically determined using a well-known monitor reaction on a co-irradiated foil that leads to the production of an easily quantified long-lived residual nucleus. However, for both charged-particle and neutron-induced reactions, there relatively few monitor reactions that can be applied in the low to intermediate energy regimes of 30-70 MeV.  The situation is worse above 70 MeV monitor reactions where values free from the potential influence of secondary neutron contributions are even harder to come by.  Knowledge of these cross sections as a function of the incident particle energy is central to the isotope production, with recent efforts focused on developing the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} ($t_{1/2}$= 5.56(9) hours) as a monitor reaction \cite{Voyles2018a, Kim2018}.  
+The flux is typically determined using a well-characterized monitor reaction on a co-irradiated foil that leads to the production of an easily quantified, long-lived residual nucleus. However, for both charged-particle and neutron-induced reactions, there relatively few monitor reactions that can be applied in the low- to intermediate-energy regimes of 30--70 MeV.  The situation is worse above 70 MeV, where monitor reactions  free from the potential influence of secondary neutron contributions are even harder to come by.  Knowledge of these cross sections as a function of the incident particle energy is essential to  isotope production, with recent efforts focused on developing  \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} ($t_{1/2}$= 5.56(9) hours) as a monitor reaction reaction suitable for use at regional isotope production facilities \cite{Voyles2018a, Kim2018}.  
 
 
 \section{NUCLEAR ENERGY}
@@ -463,46 +492,75 @@ One artifact of the nuclear data tuning process is a reduction in confidence due
 In a study conducted by SG46, it was found that many individual reactions were modified by several percent from ENDF/B-VII.1 to ENDF/B-VIII.0 with some examples shown in \autoref{fig:ne_plots}.
 
 
+
 \begin{figure}
     \centering
-%     \subfloat{
+    \begin{minipage}{0.5\textwidth}
         \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \hspace{-5pt}\subfigimg[width=0.5\textwidth]{}{u235.png}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
-         %         \refstepcounter{subfigure}
-%          \label{fig:before_minimization}
-   \hspace{-5pt}%
-%      \subfloat{
+        \includegraphics[width=0.97\textwidth]{u235.png} % first figure itself
+%         \caption{first figure}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
         \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[width=0.5\textwidth]{}{u238.png}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
-         %         \refstepcounter{subfigure}
-%          \label{fig:after_minimization}
-   \hspace{-5pt}%\\
-       \centering
-%     \subfloat{
+        \includegraphics[width=0.97\textwidth]{u238.png} % second figure itself
+%         \caption{second figure}
+    \end{minipage}
+    \\
+    \centering
+    \begin{minipage}{0.5\textwidth}
         \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-        \hspace{-5pt}\subfigimg[width=0.5\textwidth]{}{pu239_1.png}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
-         %         \refstepcounter{subfigure}
-%          \label{fig:before_minimization}
-   \hspace{-5pt}%
-%      \subfloat{
+        \includegraphics[width=0.97\textwidth]{pu239_1.png} % first figure itself
+%         \caption{first figure}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
         \centering
-%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
-%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
-        \subfigimg[width=0.5\textwidth]{}{pu239_2.png}{50}
-%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
-         %         \refstepcounter{subfigure}
-%          \label{fig:after_minimization}
-   \hspace{-5pt}%
+        \includegraphics[width=0.97\textwidth]{pu239_2.png} % second figure itself
+%         \caption{second figure}
+    \end{minipage}
     \caption{SG46 findings on changes in cross sections from ENDF/B-VII.1 to ENDF/B-VIII.0 of key nuclides. }
      \label{fig:ne_plots}
 \end{figure}
+
+% \begin{figure}
+%     \centering
+% %     \subfloat{
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \hspace{-5pt}\subfigimg[width=0.5\textwidth]{}{u235.png}{50}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+%          %         \refstepcounter{subfigure}
+% %          \label{fig:before_minimization}
+%    \hspace{-5pt}%
+% %      \subfloat{
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+%         \subfigimg[width=0.5\textwidth]{}{u238.png}{50}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+%          %         \refstepcounter{subfigure}
+% %          \label{fig:after_minimization}
+%    \hspace{-5pt}%\\
+%        \centering
+% %     \subfloat{
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \hspace{-5pt}\subfigimg[width=0.5\textwidth]{}{pu239_1.png}{50}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+%          %         \refstepcounter{subfigure}
+% %          \label{fig:before_minimization}
+%    \hspace{-5pt}%
+% %      \subfloat{
+%         \centering
+% %         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+% %         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+%         \subfigimg[width=0.5\textwidth]{}{pu239_2.png}{50}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+%          %         \refstepcounter{subfigure}
+% %          \label{fig:after_minimization}
+%    \hspace{-5pt}%
+%     \caption{SG46 findings on changes in cross sections from ENDF/B-VII.1 to ENDF/B-VIII.0 of key nuclides. }
+%      \label{fig:ne_plots}
+% \end{figure}
 
 Many of these advanced systems also require so-called high-assay low enriched uranium (HA-LEU), which has a \ce{^{235}U} enrichment \textgreater5\% and \textless20\% by mass, where the current fleet of LWRs utilize enrichments of 5\% or less. With few benchmark experiments in HA-LEU enrichment range, the interplay of the cross sections for multiple nuclei become important, especially for LEU experiments where \ce{^{1}H}, \ce{^{16}O}, \ce{^{235}U}, \ce{^{238}U} and others are applied simultaneously in the calculation of the integral $k_{eff}$ response.  Similar to the Chadwick \cite{Cha18} and Bauge \cite{Bau12} studies of Jezebel critical assembly, a team at ORNL preformed an investigation of a hypothetical transportation package with 20\% enriched \ce{^{235}U} in the form of \ce{UF6} using ENDF/B-VII.1 and ENDF/B-VIII.0 libraries by only exchanging the CIELO nuclides. A swing in $k_{eff}$ of 450 pcm is observed.  Future investigation and validation are required to gain confidence in either calculation.
 
@@ -541,7 +599,18 @@ In response to the plan presented by the NDWG, the program managers formed their
 
 A key element of the NDIAWG process is ensuring that the efforts to address these nuclear data needs result in user impact.  This is accomplished by reviewing the progress made via recurring interagency workshops.  These workshops initially served as roadmapping discussions where the nuclear data users explained their needs, and the nuclear data community agreed upon a best path forward.  Now that several projects are underway, the workshops also serve as a project review. The first of these was the Nuclear Data Roadmapping Enhancement Workshop (NDREW) held in Washington DC in January 2018, which focused on nuclear data needs relevant to non-proliferation \cite{Ndr18} and resulted in a nuclear data roadmap for NNSA, DNN R\&D.  The second of these, a Workshop on Applied Nuclear Data Activities (WANDA) is planned for January 2019 in Washington DC and will cover topics relevant to nuclear energy, isotope production, safeguards and the medical community.  
 
-The NDIWG process reflects a growing recognition that improved nuclear data is essential to a wide range of human endeavors that transcend the needs of any one societal need or governmental mission.  Its goal is the development of a new, multi-agency national plan to address nuclear data needs in a coherent way.  This plan, which is being developed in partnership with international collaborators at the IAEA and the OECD-NEA represents a new paradigm for collaborative research.  
+The NDIAWG process reflects a growing recognition that improved nuclear data is essential to a wide range of human endeavors that transcend the needs of any one societal need or governmental mission.  Its goal is the development of a new, multi-agency national plan to address nuclear data needs in a coherent way.  This plan, which is being developed in partnership with international collaborators at the IAEA and the OECD-NEA represents a new paradigm for collaborative research.  
+
+\section{CONCLUSION \texorpdfstring{---}{-} RETAINING AND TRAINING A SKILLED NUCLEAR DATA WORKFORCE}
+
+A robust nuclear data evaluation process is needed to provide the information required for many applications ranging from nonproliferation to nuclear energy to isotope production.  However, it takes many years of post-Ph.D. experience to train nuclear data evaluators, and only a short break in support to lose  this work force to other pursuits.  It is therefore critical for the many societal programs that rely on nuclear data to support individuals engaged in maintaining all functions that make up the \enquote{Nuclear Data Pipeline} from measuring and modeling through compilation, evaluation, validation and processing.  As more and more of the research in the United States moves over to a project-driven model, it is imperative that sponsors coordinate their efforts to ensure that there is no loss of talent in the field.  The NDIAWG discussed above is a significant step to help address these issues in a systematic fashion.
+
+Furthermore, nuclear data evaluation is an $\it{aging}$ field, with the mean age of an evaluator in the US being well-over 50.  It is essential that the next generation of nuclear data evaluators be recruited and trained while the current set of experienced individuals are still active in the field.  This is particularly challenging since there is $\it{per se}$ no graduate education program in nuclear data evaluation, and the vast majority of the centers with evaluation expertise are not associated with degree-granting institutions.  
+
+Perhaps one of the \enquote{endangered species} in nuclear data is the experimental nuclear data evaluator.  This isn't an experimentalist doing a new, better experiment, nor a data library creator that makes an ENDF-like library, but a person who knows which of the more than 22,000 measurements in the EXFOR/CSISRS library are to be taken seriously, discarded or normalized to newer standards.  This sort of a \enquote{hybrid} individual would be capable of providing not only good mean values, but also the well-quantified uncertainties (including covariances) that are needed for most applications.  A concerted effort on the part of both academia and the international research community is needed to ensure that talented early-career individuals with the right combination interest and inclination be afforded the opportunity to get trained by an \enquote{international village} of evaluators application subject matter experts.  
+
+In closing, it is worth noting that the dramatic increase in computational capabilities over the past several decades allow for the sort of detailed calculations needed to fulfill the promise of many applications $\it{provided that the correct evaluated data is available}$.   Recent efforts in the US offer the promise of a national nuclear data plan to provide the needed data.  If these efforts are maintained it could help herald in a world with a new sense of safety from enhanced nonproliferation capabilities, a new source of safe, carbon-neutral energy and a new class of radio-pharmaceuticals to diagnose and treat illness.  
+
 % 
 % %Heading 1
 % \section{FIRST-LEVEL HEADING}
@@ -674,6 +743,9 @@ Work at Lawrence Berkeley National Laboratory has been carried out  under the au
 %
 % Margin notes within bibliography
 \section*{LITERATURE\ CITED}
+
+\emergencystretch=2em
+
 
 \bibliographystyle{ar-style5}
 
