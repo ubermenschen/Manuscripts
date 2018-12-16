@@ -421,41 +421,83 @@ The flux is typically determined using a well-known monitor reaction on a co-irr
 \section{NUCLEAR ENERGY}
 
 Reliable modeling and simulation predictions of nuclear energy systems is essential to the design, licensing, and operation of nuclear power stations, as well as the fuel cycle facilities for enrichment and material processing, fuel fabrication, transportation and storage. Additional predictive calculations are required for spent fuel characterization for storage, transportation and disposal as well as hardware activation and radiation shielding and personnel protection. Nuclear data and their uncertainties are required for a wide range of calculations including:
-Reactor core and fuel design,
-Safety parameter assessment,
-Criticality safety,
-Shielding,
-Material damage in structures,
-Decay heat at reactor shut-down,
-Decay heat in storage and transportation,
-Mass flow in the fuel cycle, and
-Material safeguards.
+\begin{itemize}
+  \item Reactor core and fuel design,
+  \item Safety parameter assessment,
+  \item Criticality safety,
+  \item Shielding,
+  \item Material damage in structures,
+  \item Decay heat at reactor shut-down,
+  \item Decay heat in storage and transportation,
+  \item Mass flow in the fuel cycle, and
+  \item Material safeguards.
+\end{itemize}
 
-The nuclear physics of these systems are inferred from nuclear data for neutron reaction cross sections, fission spectra, neutron multiplicity, fission product yields, decay constants, branching ratios, gamma yields, delayed neutron precursors, and more.  For light water reactors (LWRs), nuclear data have been used, tested, and often tuned, over many decades to provide acceptable results, and there is an abundance of documented benchmark quality experiments and plant operation data for the validation of common scenarios. However, for new applications such as fuels and materials in advanced reactors, accident tolerant fuels, high burnup fuel, and spent fuel repository scenarios, there are many needs to improve nuclear data and assess the availability of benchmark experiments that could be applied for testing and validation. 
+The nuclear physics of these systems are inferred from (n,x) cross sections, fission spectra, neutron multiplicity, fission product yields, decay constants, branching ratios, gamma yields, delayed neutron precursors, and more.  For light water reactors (LWRs), nuclear data have been used, tested, and often \enquote{tuned}, over many decades to provide acceptable results, and there is an abundance of documented benchmark quality experiments and plant operation data for the validation of common scenarios. However, for new applications such as fuels and materials in advanced reactors, accident tolerant fuels, high burnup fuel, and spent fuel repository scenarios, there are many needs to improve nuclear data and assess the availability of benchmark experiments that could be applied for testing and validation. 
 
-One artifact of the nuclear data tuning process, described in previous reference to the work by Bauge, is that confidence is reduced for use of data for applications other than the those for which the evaluations were tuned. Where fission and capture reactions are modified to ensure that the integral value of $k_{eff}$ is maintained, little confidence remains in the independent use of the fission cross section itself, which is essential to the prediction of reactor power distributions. These power distributions are essential to the prediction of peak fuel temperatures during a reactor transient to ensure that the fuel does not exceed thermal limits that are set to ensure that fuel integrity is not compromised. Reduced confidence in the fission cross section can have real consequences in the allowed power level and operating regimes for these systems.
+One artifact of the nuclear data tuning process is a reduction in confidence due to compensating errors. Where fission and capture reactions are modified to ensure that the integral value of $k_{eff}$ is maintained, little confidence remains in the independent use of the fission cross section itself, which is essential to the prediction of reactor power distributions. These power distributions are essential to the prediction of peak fuel temperatures during a reactor transient to ensure that the fuel does not exceed thermal limits that are set to ensure fuel integrity. Reduced confidence in the fission cross section can have real consequences in the allowed power level and operating regimes for these systems.
 
-In a study conducted by SG46, it was found that many individual reactions were modified by several percent from ENDF/B-VII.1 to ENDF/B-VIII.0 with some examples shown in Figure 8. (ref. Palmiotti)
-
-
+In a study conducted by SG46, it was found that many individual reactions were modified by several percent from ENDF/B-VII.1 to ENDF/B-VIII.0 with some examples shown in \autoref{fig:ne_plots}.
 
 
-Figure 6. SG46 findings on changes in cross sections from ENDF/B-VII.1 to ENDF/B-VIII.0 of key nuclides.
+\begin{figure}
+    \centering
+%     \subfloat{
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \hspace{-5pt}\subfigimg[width=0.5\textwidth]{}{u235.png}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+         %         \refstepcounter{subfigure}
+%          \label{fig:before_minimization}
+   \hspace{-5pt}%
+%      \subfloat{
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+        \subfigimg[width=0.5\textwidth]{}{u238.png}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+         %         \refstepcounter{subfigure}
+%          \label{fig:after_minimization}
+   \hspace{-5pt}%\\
+       \centering
+%     \subfloat{
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \hspace{-5pt}\subfigimg[width=0.5\textwidth]{}{pu239_1.png}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+         %         \refstepcounter{subfigure}
+%          \label{fig:before_minimization}
+   \hspace{-5pt}%
+%      \subfloat{
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+        \subfigimg[width=0.5\textwidth]{}{pu239_2.png}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+         %         \refstepcounter{subfigure}
+%          \label{fig:after_minimization}
+   \hspace{-5pt}%
+    \caption{SG46 findings on changes in cross sections from ENDF/B-VII.1 to ENDF/B-VIII.0 of key nuclides. }
+     \label{fig:ne_plots}
+\end{figure}
 
-Many of these advanced systems also require so called high-assay low enriched uranium (HA-LEU), which has a \ce{^{235}U} enrichment >5\% and <20\% by mass, were the current fleet of LWRs utilize enrichments of 5\% or less. With few benchmarks experiments in HA-LEU enrichment range, the interplay of the cross sections for multiple nuclei become important, especially for LEU experiments where 1H, 16O, \ce{^{235}U}, \ce{^{238}U} and others are applied simultaneously in the calculation of the integral $k_{eff}$ response.  Similar to the Chadwick \cite{Cha18} and Bauge \cite{Bau12} studies of Jezebel critical assembly, a team at ORNL preformed an investigation of a hypothetical transportation package with 20\% enriched \ce{^{235}U} in the form of UF6 using ENDF/B-VII.1 and ENDF/B-VIII.0 libraries by only exchanging the CIELO nuclides. A swing in $k_{eff}$ of 450 pcm is observed.  Future investigation and validation are required to gain confidence in either calculation.
+Many of these advanced systems also require so-called high-assay low enriched uranium (HA-LEU), which has a \ce{^{235}U} enrichment \textgreater5\% and \textless20\% by mass, where the current fleet of LWRs utilize enrichments of 5\% or less. With few benchmark experiments in HA-LEU enrichment range, the interplay of the cross sections for multiple nuclei become important, especially for LEU experiments where \ce{^{1}H}, \ce{^{16}O}, \ce{^{235}U}, \ce{^{238}U} and others are applied simultaneously in the calculation of the integral $k_{eff}$ response.  Similar to the Chadwick \cite{Cha18} and Bauge \cite{Bau12} studies of Jezebel critical assembly, a team at ORNL preformed an investigation of a hypothetical transportation package with 20\% enriched \ce{^{235}U} in the form of \ce{UF6} using ENDF/B-VII.1 and ENDF/B-VIII.0 libraries by only exchanging the CIELO nuclides. A swing in $k_{eff}$ of 450 pcm is observed.  Future investigation and validation are required to gain confidence in either calculation.
 
-Many nuclear data needs have been identified that are important for design and operating analysis for these advanced systems including:.
+Many nuclear data needs have been identified that are important for design and operating analysis for these advanced systems including:
+\begin{itemize}
+  \item Improving our knowledge of the \ce{^{238}U}(n,n')cross section.   \ce{^{238}U}(n,n') is a limiting factor in the design of fast spectrum reactors such as those with metallic cores or chloride salts. The 40\% uncertainty in this cross section in ENDF/B-VII.1 propagates to an uncertainty of 1.5\%$\Delta k$ in the criticality state of a sodium fast reactor (i.e. at the 2$\sigma$ level, $k_{eff}$ could range from 0.97 to 1.03 based on this uncertainty prediction) \cite{touran2016sensitivities}.
+  \item Improved knowledge of the \ce{^{35}Cl}(n,p) cross section.  Changes from the 2006 release of ENDF/B-VII.0 to the 2011 release of ENDF/B-VII.1 are causing a 2-3\%$\Delta k$ change in reactivity in molten salt reactors. This data change will also impact repository analysis in salts and there are no benchmark experiments available for validation. \textred{Lee - we should add some language here referencing Batch's work on this.}
+  \item Graphite data for high-temperature reactors as well as the Transient Reactor Test Facility (TREAT) facility have realized a number of updates that cause dramatic changes in criticality. Updates from ENDF/B-VII.0 to ENDF/B-VII.1 lead to a 1\%$\Delta k$ change in reactivity for the High Temperature Engineering Test Reactor (HTTR), leading to the calculations better matching experimental values. Proposed updates to the graphite thermal scattering data for the ENDF/B-VIII.0 release have been demonstrated to cause a 2\%$\Delta k$ change in reactivity for the TREAT M8CAL benchmark \cite{hawarithermal}.
+  \item Thermal neutron scattering in molten salts, such as FLiBe. There are no cross-section data that represent the effect of the molecular bonds, leading to a computational bias of unknown magnitude in all reactor design calculations. The molecular bonds in water vs. Polyethylene can lead to a computation bias of 1-2\%$\Delta k$.  In addition, this effect is temperature dependent and is not well studied or understood. A recently developed benchmark experiment evaluation of the Molten Salt Reactor Experiment which consisted of uranium fuel FLiBe molten salt flowing through graphite channels demonstrates a bias of over 1\%$\Delta k$ from the experimental value \cite{shenzero}, with other presented results showing biases over 3\%$\Delta k$
+  \item (n,x) reactions on heavy actinides that will buildup in molten salt reactors and high burnup fuel are poorly quantified and benchmark data are rare, so these effects are almost completely unknown.
+  \item Uncertainties provided with ENDF in the form of cross section covariance data are often not mature and may or may not represent the true uncertainty in the nuclear data. For the recent ENDF/B-VIII.0 release, the readme file provided by the National Nuclear Data Center (NNDC) provides a disclaimer warning against the use of covariance data without applying a sensitivity/uncertainty approach to adjust the uncertainties for application specific analysis using relevant benchmark experiments. This specialized process is generally not available to users and presents many complicated aspects even for experts in the field, leaving a large gap between data provided by nuclear data evaluators and those useful for application in safety and design calculations.
+  \item Nuclear data are gathered from many different sources, not only ENDF but also the ENSDF as well as the Joint European Fission Fusion (JEFF) library, which often have differing representations of the same data. The process of sorting through the data to correct inconsistencies and benchmark the consolidated library against benchmark experiments is complex.
+  \item Uncertainty data are not available or are incomplete for fission product yields, decay constants, and angular distributions, making it difficult to have high confidence in predicting the performance of advanced systems.
+\end{itemize}
 
-Improving our knowledge of the \ce{^{238}U} inelastic scattering cross section.   \ce{^{238}U}(n,n') is a limiting factor in the design of fast spectrum reactors such as those with metallic cores or chloride salts. The 40\% uncertainty in  this cross section in ENDF/B-VII.1 propagates to an uncertainty of 1.5\% k in the criticality state of a sodium fast reactor (i.e. at the 2 level, $k_{eff}$ could range from 0.97 to 1.03 based on this uncertainty prediction).  (ref. to Touran)
-Changes in the 35Cl(n,p) cross section from the 2006 release of ENDF/B-VII.0 to the 2011 release of ENDF/B-VII.1 are causing a 2-3\% k change in reactivity (i.e. $k_{eff}$ changes from 1.00 to 1.02) in molten salt reactors. This data change will also impact repository analysis in salts and there are no benchmark experiments available for validation.
-Graphite data for high-temperature reactors as well as the Transient Reactor Test Facility (TREAT) facility have realized a number of updates that cause dramatic changes in criticality. Updates from ENDF/B-VII.0 to ENDF/B-VII.1 lead to a 1\% k change in reactivity for the High Temperature engineering Test Reactor (HTTR), which lead to calculations better matching experimental values. Proposed updates to the graphite thermal scattering data for the pending ENDF/B-VIII.0 release have been demonstrated to cause a 2\% k change in reactivity for the TREAT M8CAL benchmark. (ref. to Hawari)
-There are no cross-section data that represent the effect of the molecular bonds for thermal neutron scattering in molten salts, such as FLiBe, leading to a computational bias of unknown magnitude in all reactor design calculations. For comparison, the molecular bonds in water vs. Polyethylene can lead to a computation bias of 1-2\% k.  In addition, the molecular bond effect is temperature dependent and this phenomenon is not well studied or understood. A recently developed benchmark experiment evaluation of the Molten Salt Reactor Experiment (MSRE) which consisted of uranium fuel FLiBe molten salt flowing through graphite channels demonstrates a bias of 1.3\% k from the experimental value. (ref. Fratoni)
-Nuclear data for heavy actinides that will buildup in molten salt reactors and high burnup fuel are poorly quantified and benchmark data are rare, so these effects are almost completely unknown.
-Uncertainties provided with ENDF in the form of cross section covariance data are often not mature and may or may not represent the true uncertainty in the nuclear data. For the recent ENDF/B-VIII.0 release, the readme file provided by the National Nuclear Data Center (NNDC) provides a disclaimer warning against the use of covariance data without applying a sensitivity/uncertainty approach to adjust the uncertainties for application specific analysis using relevant benchmark experiments. This specialized process is generally not available to users and presents many complicated aspects even for experts in the field, leaving a large gap between data provided by nuclear data evaluators and those useful for application in safety and design calculations.
-Nuclear data for depletion, activation, and decay calculations are gathered from many different sources, not only ENDF but also the Evaluated Nuclear Structure Data Files (ENDSF) as well as the Joint European Fission Fusion (JEFF) library, which often have differing representations of the same data. The process of sorting through the data to correct inconsistencies and benchmark the consolidated library against benchmark experiments is complex.
-Uncertainty data are not available or are incomplete for fission product yields, decay constants, and angular distributions, making it difficult to have high confidence in predicting the performance of advanced systems.
 
-The generation and distribution of nuclear data as well as the benchmarking of the performance of codes and data is a global effort. In the US, nuclear data are generated by teams supported by DOE-NP and NNSA. These teams gather at the NNDC CSEWG meetings to create and test the ENDF libraries prior to distribution. These teams advocate for improved performance for their own applications, but because nuclear energy interests are not well represented at the review meetings, the impact of updates to nuclear data and associated uncertainty information on nuclear energy applications is often overlooked.
+
+The generation and distribution of nuclear data as well as the benchmarking of the performance of codes and data is a global effort. In the US, nuclear data are generated by teams supported by DOE-NP and NNSA. These teams gather at the Cross Section Evaluation Working Group meetings to create and test the ENDF libraries prior to distribution. They advocate for improved performance for their own applications, but because nuclear energy interests are not well represented at the review meetings, the impact of updates to nuclear data and associated uncertainty information on nuclear energy applications is often overlooked.
 
 \section{FUTURE DIRECTIONS IN NUCLEAR DATA}
 
