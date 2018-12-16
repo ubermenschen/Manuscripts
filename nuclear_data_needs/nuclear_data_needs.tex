@@ -269,7 +269,7 @@ In addition to standard experiments looking at individual fission properties, mu
 
 Both pre-scission and post-scission theory and data will be needed to reach a satisfactory understanding of the fission process, and thereby make reliable predictions of nuclear quantities that cannot be measured in the laboratory. Pre-scission models can provide input to post-scission models wherever the data are lacking, and post-scission models can be used to improve pre-scission calculations using a wealth of available experimental data. The ultimate goal for theorists, a comprehensive description of fission starting from protons, neutrons, and their interactions that provides accurate values for all fission data of interest, remains elusive.  Many questions about the fission process remain open, such as: how the initial partition of energy between kinetic and internal excitation occurs, what the relevant collective and single-particle degrees of freedom are near scission, and how they evolve and couple throughout the process? Lastly, how can we best quantify uncertainties (both epistemic and aleatory) in fission calculations?
 
-\subsection{Improved \ce{^{235,238}U} and \ce{^{239}Pu}(n,n') data for neutron transport}
+\subsection{Improved \ce{^{235,238}U} and \ce{^{239}Pu}(n,n') data for neutron transport}\label{sec:n_transport}
 
 Elastic and inelastic scattering have a profound effect on neutron populations in any nuclear application by changing the directions and energies of the neutrons in the system.  However, improvements in neutron scattering data have been hampered by the fact that they do not produce easily measured signals like fission, or a radiochemical observable like neutron capture.  The result has been significant disagreements between different reaction evaluations.  These disagreements manifest themselves as compensating errors that are resistant to the validation process.  This issue has been recognized by the nuclear data community since the early days of the WPEC \cite{Row89} and more recently by Maslov \cite{Mas11}.  
 
@@ -278,7 +278,7 @@ One compelling example of compensating errors involves the Jezebel \ce{^{239}Pu}
 \begin{figure}
  \centering
 %  \includegraphics[clip=true,trim=1.5in 3.4in 1.8in 3.5in, scale=0.8]{./figures/variation_curve.pdf}
- \includegraphics[width=0.5\linewidth]{rotated_swings.pdf}
+ \includegraphics[width=0.8\linewidth]{rotated_swings.pdf}
 
  % variation_curve.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
  \caption{Simulations of criticality $k_{eff}$ for \ce{^{239}Pu} for the fast assembly Jezebel, PMF-1. This figure shows that both LANL CIELO-1 (ENDF/B-VIII.0) and CEA CIELO-2 (JEFF-3.3) predict similar $k_{eff}$ values, but do so for very different reasons. The changes in criticality are evident when individual cross section channels are substituted between the two evaluations.  The shaded region shows the  resulting range of values for $k_{eff}$.}
@@ -297,22 +297,62 @@ The ideal way to improve (n,n') data on the \ce{^{235,238}U} and \ce{^{239}Pu} w
 
 \subsection{Improved treatment of continuum nuclear data properties}
 
-Information regarding states in the unresolved continuum region above the particle separation energy is of central importance to accurately modeling the competition between particle and gamma-ray emission.  The most important of these are the nuclear level density (NLD) as a function of energy, spin and parity, and the radiative strength function (RSF), which describes the ability of excited nuclear matter to absorb or emit photons.  A number of recent studies have shown the importance of the RSF to modeling (n,) reactions for neutrons with energies between 1 and 100 keV, which corresponds to the spectrum at the site of neutron capture nucleosynthesis in stars \cite{PhysRevC.82.014318, Lar15} and energy generation in fast reactors and nuclear security applications.   
+Information regarding states in the unresolved continuum region above the particle separation energy is of central importance to accurately modeling the competition between particle and gamma-ray emission.  The most important of these are the nuclear level density (NLD) as a function of energy, spin and parity, and the radiative strength function (RSF), which describes the ability of excited nuclear matter to absorb or emit photons.  A number of recent studies have shown the importance of the RSF to modeling (n,$\gamma$) reactions for neutrons with energies between 1 and 100 keV, which corresponds to the spectrum at the site of neutron capture nucleosynthesis in stars \cite{PhysRevC.82.014318, Lar15} and energy generation in fast reactors and nuclear security applications.   
 
-Over the past several years' work led by the group at the University of Oslo has shown that there is a surprisingly large amount of M1 radiative strength believed to be a type of \enquote{scissors} collective mode throughout the Actinide mass region near the valley of stability including 238U, 239,240,242Pu and 232Th \cite{Lap16, Gut13, Gut13a, Gut14, Gut15}.
+Over the past several years, work led by the group at the University of Oslo has shown that there is a surprisingly large amount of M1 radiative strength believed to be a type of \enquote{scissors} collective mode throughout the Actinide mass region near the valley of stability including \ce{^{238}U}, \ce{^{239,240,242}Pu} and \ce{^{232}Th} \cite{Lap16, Gut13, Gut13a, Gut14, Gut15}.
 
-Other results from the Oslo group show that Actinide NLDs appears to follow a constant temperature (CT) form with a roughly Gaussian dependence on angular momentum that is often described via an energy-dependent width spin cut-off parameter () of the form: 
+Other results from the Oslo group show that Actinide NLDs appears to follow a constant temperature (CT) form with a roughly Gaussian dependence on angular momentum that is often described via an energy-dependent width spin cut-off parameter ($\sigma$) of the form: 
+\begin{equation}\label{eqn:spin_cutoff}
+\sigma\pp{E_x}=0.01389 \dfrac{A^{5/3}}{\widetilde{a}}\sqrt{aU}
+\end{equation}
+where $U$ is roughly the $E_x$ minus the pairing gap $\Delta$, $a$ is the level density parameter, $A$ is the nuclear mass and $\widetilde{a}$ is the asymptotic level density value one would obtain in the absence of any shell effects. 
 
-		(1)
+There is a great deal of uncertainty in the magnitude of the spin cut-off parameter.  This is a significant issue since a good knowledge of the $J$ distribution is needed to accurately model the neutron vs. $\gamma$-ray emission probability in nuclear reactions.  This sensitivity was shown recently by Wiedeking et al., \cite{Wie16} who showed that neutron emission from excited states in \ce{^{95}Mo} well-above the neutron separation energy populated via (d,p) was hindered for states with high angular momentum. 
 
-where U is roughly the Ex minus the pairing gap , a is the level density parameter, A is the nuclear mass and is the asymptotic level density value one would obtain in the absence of any shell effects. 
 
-There is a great deal uncertainty in the magnitude of the spin cut-off parameter.  This is a significant issue since a good knowledge of the J distribution is needed to accurately model the neutron vs. -ray emission probability in nuclear reactions.  This sensitivity was shown recently by Wiedeking et al., \cite{Wie16} who showed that neutron emission from excited states in 95Mo well-above the neutron separation energy populated via (d,p) was hindered for states with high angular momentum. 
 
-(n,n') provides a useful tool for studying the spin cut-off parameter since the reactions proceed largely through the population of a compound nucleus with a relatively wide range of angular momentum. Figure 4 shows the ratio of the partial cross section for the population of the  level in 238U(n,n') as a function of incident neutron energy calculated using the TALYS reaction code for two different choices of spin cut-off.  The solid line shows the case where a constant temperature level density is assumed and the spin cut-off parameter was varied from 75% to 125% of its \enquote{normal} value given by the equation (3) above.  The ratio decreases by nearly a factor of 2 with increasing energy.  In contrast, the dashed line shows the ratio of the  population of the  state when the LD and RSF from the recent Oslo measurements \cite{Gut13a} is divided by the results obtained using the default Gilbert and Cameron in TALYS.  In this case the ratio decreases by nearly a factor of 2.  Similar behavior is seen in the partial cross sections for other off-yrast levels as well. 
+\begin{figure}
+ \centering
+%  \includegraphics[clip=true,trim=1.5in 3.4in 1.8in 3.5in, scale=0.8]{./figures/variation_curve.pdf}
+ \includegraphics[width=0.7\linewidth]{fig3.pdf}
 
-Information regarding the J-dependence of the NLD can also be obtained through observation of the relative population of two low-lying states with very different spins via activation.  This method has been used in Hg and Au by Chakravarty \cite{Cha92} and more recently by Sudar in Hg and Pt \cite{Sud06}.  Figure 5 shows this for the case of 52mMn(Jπ=2+)/52gMn(Jπ=6+) ratio populated via 56Fe(p,n) measured via stacked target activation at the LBNL 88-Inch cyclotron as compared to TALYS calculations for different values of the spin cut-off parameter (left) and the 6 level density models available for use in TALYS on the right.  
-It should be noted that both the (n,n') and isomer-to-ground state ratio measurements could be performed as part of a program that supports improved neutron transport as described in Section II.B above, and a program of cross section measurements in support of medical isotope production described in sections IV below.  This reflects the interdependency between nuclear data over a wide range of applications.  
+ % variation_curve.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
+ \caption{Ratio of the \ce{^{238}U}(n,n') cross section to the state calculated using TALYS for two different sets of input parameters as a function of incident neutron energy. The solid line shows the ratio where spin cutoff has been scaled to $\pm$25\% of its default value. The dashed line shows the case where the default value calculated using LD Model 1 (Gilbert and Cameron) is divided by the value obtained using the data from Guttormsen \cite{Gut13a}.}
+ \label{fig:oslo_ld_plot}
+\end{figure}
+
+
+
+(n,n'$\gamma$) provides a useful tool for studying the spin cut-off parameter since the reactions proceed largely through the population of a compound nucleus with a relatively wide range of angular momentum. \autoref{fig:oslo_ld_plot} shows the ratio of the partial cross section for the population of the  level in \ce{^{238}U}(n,n') as a function of incident neutron energy calculated using the TALYS reaction code for two different choices of spin cut-off.  The solid line shows the case where a constant temperature level density is assumed and the spin cut-off parameter was varied from 75\% to 125\% of its \enquote{normal} value given by \autoref{eqn:spin_cutoff} above.  The ratio decreases by nearly a factor of 2 with increasing energy.  In contrast, the dashed line shows the ratio of the  population of the  state when the LD and RSF from the recent Oslo measurements \cite{Gut13a} is divided by the results obtained using the default Gilbert and Cameron in TALYS.  In this case the ratio decreases by nearly a factor of 2.  Similar behavior is seen in the partial cross sections for other off-yrast levels as well. 
+
+
+\begin{figure}
+    \centering
+%     \subfloat{
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+        \hspace{-5pt}\subfigimg[width=0.5\textwidth]{}{isomer_curves.pdf}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+         %         \refstepcounter{subfigure}
+%          \label{fig:before_minimization}
+   \hspace{-5pt}%
+%      \subfloat{
+        \centering
+%         \includegraphics[width=\columnwidth]{./figures/Capture.PNG}
+%         \includegraphics[scale=0.6]{./figures/391keV_curve2.png}
+        \subfigimg[width=0.5\textwidth]{}{ldmodels.pdf}{50}
+%         \caption{ Decay curve for the isomeric transition of \ce{^{113m}In}.}
+         %         \refstepcounter{subfigure}
+%          \label{fig:after_minimization}
+   \hspace{-5pt}%
+    \caption{Predictions of the production of \ce{^{52m}Mn}($J_\pi=2^+$)/\ce{^{52g}Mn}($J_\pi=6^+$) isomer-to-ground state ratio as a function of energy for the Gilbert and Cameron level density (left) and using the 6 level density models available in TALYS (right). }
+     \label{fig:fe_isomer_plots}
+\end{figure}
+
+Information regarding the $J$-dependence of the NLD can also be obtained through observation of the relative population of two low-lying states with very different spins via activation.  This method has been used in Hg and Au by Chakravarty \cite{PhysRevC.45.1171} and more recently by Sudar in Hg and Pt \cite{PhysRevC.73.034613}.  \autoref{fig:fe_isomer_plots} shows this for the case of \ce{^{52m}Mn}($J_\pi=2^+$)/\ce{^{52g}Mn}($J_\pi=6^+$) ratio populated via \ce{^{56}Fe}(p,$\alpha$n) measured via stacked-target activation at the LBNL 88-Inch cyclotron as compared to TALYS calculations for different values of the spin cut-off parameter (left) and the 6 level density models available for use in TALYS on the right.  
+
+
+It should be noted that both the (n,n'$\gamma$) and isomer-to-ground state ratio measurements could be performed as part of a program that supports improved neutron transport as described in \autoref{sec:n_transport} above, and a program of cross section measurements in support of medical isotope production described in \autoref{sec:isotope_production} below.  This reflects the interdependency between nuclear data over a wide range of applications.  
 
 
 \section{NATIONAL SECURITY AND NON-PROLIFERATION}
@@ -349,7 +389,7 @@ The interpretation of this data requires detailed knowledge of both the double-d
 A program of measurements of gammas emitted from both discrete and QC states would require a relatively modest effort to set in place.  The data from these measurements could then be used to guide physics-based reaction model, such as the COH, TALYS or EMPIRE to ensure that the total gamma-ray production cross section is consistent with the total capture and scattering cross sections themselves. 
 
 
-\section{ISOTOPE PRODUCTION}
+\section{ISOTOPE PRODUCTION}\label{sec:isotope_production}
 
 
 The high energy density and wide range of decay lifetimes and chemical properties of radionuclides near the nuclear valley of stability make them an extremely versatile tool for applications ranging from the diagnosis and treatment of illness, to nuclear non-proliferation and environmental studies to powering spacecraft to explore the outer reaches of the solar system and beyond. Furthermore, given that there are hundreds of unstable nuclei with lifetimes in excess of 1 hour and less than 100 years between Hydrogen and Californium, it is clear that we have barely scratched the surface of potential applications.
