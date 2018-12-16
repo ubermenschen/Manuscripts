@@ -8,8 +8,9 @@
 %
 % For tracking purposes => this is v1.0 - Apr. 2013
 
-\documentclass[letterpaper]{ar-1col}
+\documentclass[letterpaper,draft]{ar-1col}
 \usepackage[numbers]{natbib}
+\usepackage[left=35mm,top=26mm,right=26mm,bottom=15mm]{geometry}
 
 
 
@@ -25,7 +26,7 @@
 % \usepackage{mathtools}
 % 
 % \usepackage{xfrac}
-% \usepackage{lmodern}
+\usepackage{lmodern}
 \usepackage[hidelinks]{hyperref}
 % % \usepackage{cool}
 % % \usepackage{cancel}
@@ -101,9 +102,9 @@
 % \subfigimg[scale=0.59]{a)}{./figures/after_minimization_plot_alt.pdf}{80pt}
 
 % \usepackage[style=base]{caption}
-\usepackage{subfig}
+% \usepackage{subfig}
 % Remove a), b), etc labels from subfigs
-\captionsetup[subfigure]{labelformat=empty}
+% \captionsetup[subfigure]{labelformat=empty}
 % \captionsetup{style=base} 
 
 % Sick of fighting siunitx - consistent text micro symbol
@@ -169,7 +170,7 @@
 
 %Abstract
 \begin{abstract}
-Abstract text, approximately 150 words. 
+A well-established knowledge of nuclear phenomena including fission, reaction cross sections, and structure/decay properties, is critical for applications ranging from the design of new reactors, to non-proliferation, to the production of radioisotopes for the diagnosis and treatment of illness.  However, the lack of a well-quantified, predictive theoretical capability means that most nuclear observables must be measured directly in order to “calibrate” empirical models, which, in turn, provide the data needed for these applications.  In many cases there is either a lack of the data needed to guide the models, or the results of the different measurements are discrepant.  This has led to the development of evaluation methodologies to provide recommended values and uncertainties.  In this article we present the nuclear data evaluation process and the international community that carries it out.  We then discuss new measurements and improved theory and/or modeling needed to address future challenges in applied nuclear science. 
 \end{abstract}
 
 %Keywords, etc.
@@ -197,6 +198,11 @@ This manuscript will start with a description of the nuclear data evaluation pro
 
 \subsection{The Nuclear Data Pipeline}
 
+Before diving into the data needs, it is instructive to understand the \enquote{Nuclear Data Pipeline} that takes experimental or theoretical results and prepares them for use in applications.  This process is illustrated in \autoref{fig:pipeline} and is roughly grouped into four steps: 1) compilation, 2) evaluation, 3) processing, and 4) validation.  This process ends with the users and their application, but actually begins with the performance of carefully-designed measurements with well-defined uncertainties.  Given this, it behooves those funding or performing the original experiment to understand the entire nuclear data workflow in order to ensure that new results find their way to the intended user.  For example, if a new result forces changes to data formats (step 2) or processing (step 3) or to application codes (step 4 \& eventual user), this fact should be considered when developing a new activity.
+
+The first step in the Pipeline is compilation and it begins with potentially the most important database: Nuclear Science References (NSR) \cite{NSR}.  NSR contains references to published works from major LENS journals as well as internal reports from labs throughout the world and serves as the start point for the data evaluation process. Descriptive keywords are assigned to these articles by individuals with LENS backgrounds, enabling the use of this information in later portions of the evaluation process.   
+
+
 
 \begin{wrapfigure}{r}{0.4\textwidth}
 \centering
@@ -204,9 +210,7 @@ This manuscript will start with a description of the nuclear data evaluation pro
 \caption{\label{fig:pipeline}The nuclear data pipeline.}
 \end{wrapfigure}
 
-Before diving into the data needs, it is instructive to understand the \enquote{Nuclear Data Pipeline} that takes experimental or theoretical results and prepares them for use in applications.  This process is illustrated in \autoref{fig:pipeline} and is roughly grouped into four steps: 1) compilation, 2) evaluation, 3) processing, and 4) validation.  This process ends with the users and their application, but actually begins with the performance of carefully-designed measurements with well-defined uncertainties.  Given this, it behooves those funding or performing the original experiment to understand the entire nuclear data workflow in order to ensure that new results find their way to the intended user.  For example, if a new result forces changes to data formats (step 2) or processing (step 3) or to application codes (step 4 \& eventual user), this fact should be considered when developing a new activity.
 
-The first step in the Pipeline is compilation and it begins with potentially the most important database: Nuclear Science References (NSR) \cite{NSR}.  NSR contains references to published works from major LENS journals as well as internal reports from labs throughout the world and serves as the start point for the data evaluation process. Descriptive keywords are assigned to these articles by individuals with LENS backgrounds, enabling the use of this information in later portions of the evaluation process.   
 
 Following this, the data from the primary references contained in NSR, including both mean values and uncertainties, are extracted in numerical form and compiled into one of two databases depending on whether the data is primarily regarding nuclear structure and decay or nuclear reaction data.   This step may also include tracking down unpublished data from original sources before that data is lost.
 
