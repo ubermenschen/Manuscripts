@@ -382,11 +382,28 @@ The ultimate goal for theorists, a comprehensive description of fission starting
 
 \subsection{Improved \texorpdfstring{\ce{^{235,238}U}}{235,238U} and \texorpdfstring{\ce{^{239}Pu}}{239Pu}(n,n') data for neutron transport}\label{sec:n_transport}
 
+
+\begin{figure}[b]
+ \centering
+%  \includegraphics[clip=true,trim=1.5in 3.4in 1.8in 3.5in, scale=0.8]{./figures/variation_curve.pdf}
+ \includegraphics[width=0.7\linewidth]{rotated_swings.pdf}
+
+ % variation_curve.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
+ \caption{Simulations of criticality $k_{eff}$ for \ce{^{239}Pu} for the fast assembly Jezebel, PMF-1.
+This figure shows that both LANL CIELO-1 (ENDF/B-VIII.0) and CEA CIELO-2 (JEFF-3.3) predict similar $k_{eff}$ values, but do so for very different reasons.
+The changes in criticality are evident when individual cross section channels are substituted between the two evaluations.
+ The shaded region shows the  resulting range of values for $k_{eff}$.}
+ \label{fig:rotated_swings}
+\end{figure}
+
+
 Elastic and inelastic scattering have a profound effect on neutron populations in any nuclear application by changing the directions and energies of the neutrons in the system.
  However, improvements in neutron scattering data have been hampered by the fact that they do not produce easily measured signals like fission, or a radiochemical observable like neutron capture.
  The result has been significant disagreements between different reaction evaluations.
  These disagreements manifest themselves as compensating errors that are resistant to the validation process.
  This issue has been recognized by the nuclear data community since the early days of the WPEC \cite{Row89} and more recently by Maslov \cite{Mas11}.
+ 
+ 
  
 
 One compelling example of compensating errors involves the Jezebel \ce{^{239}Pu} critical assembly (PMF1).
@@ -397,18 +414,6 @@ This is shown in \autoref{fig:rotated_swings}.
   Similar examples of such compensating errors were also seen in earlier work by Bauge \cite{Bau12}.
  
 
-\begin{figure}
- \centering
-%  \includegraphics[clip=true,trim=1.5in 3.4in 1.8in 3.5in, scale=0.8]{./figures/variation_curve.pdf}
- \includegraphics[width=0.8\linewidth]{rotated_swings.pdf}
-
- % variation_curve.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
- \caption{Simulations of criticality $k_{eff}$ for \ce{^{239}Pu} for the fast assembly Jezebel, PMF-1.
-This figure shows that both LANL CIELO-1 (ENDF/B-VIII.0) and CEA CIELO-2 (JEFF-3.3) predict similar $k_{eff}$ values, but do so for very different reasons.
-The changes in criticality are evident when individual cross section channels are substituted between the two evaluations.
- The shaded region shows the  resulting range of values for $k_{eff}$.}
- \label{fig:rotated_swings}
-\end{figure}
 
 A new Collaborative International Evaluated Library Organization (CIELO) Coordinated Research Program was started under the auspices of the IAEA \cite{Cha18a} to have the international nuclear data evaluation community agree on a set of evaluated cross sections and output spectra for six critically-important nuclei: \ce{^{1}H}, \ce{^{16}O}, \ce{^{56}Fe}, \ce{^{235,238}U} and \ce{^{239}Pu} in order to address the issue of compensating errors.
  Recently, this list has been expanded to include \ce{^{14,15}N}, \ce{^{9}Be}, \ce{^{23}Na}, \ce{^{59}Co}, \ce{^{58}Ni}, \ce{^{238-242}Pu}.
@@ -420,8 +425,23 @@ CIELO has relatively little energy or angle differential data to draw upon to ai
 One significant source of (n,xn$\gamma$) partial cross section data from 1997 to 2003 was the GEANIE collaboration (Germanium Array for Neutron-Induced Excitations) at the Los Alamos Neutron Science Center/Weapons Neutron Research (LANSCE/WNR) facility.
 While the primary goal of the GEANIE collaboration was the determination of the \ce{^{239}Pu}(n,2n) cross section \cite{Ber02}, it resulted in the publication of more than two dozen papers over the course of more than 15 years.
  Experiments were run on all three of the major Actinides: \ce{^{235}U} \cite{You01}, \ce{^{239}Pu} \cite{Ber02} and \ce{^{238}U} \cite{Fot04}.
+ GEANIE produced the first high-resolution partial $\gamma$-ray cross section data on the \enquote{Big 3}.
+This includes one of the first results for \ce{^{239}Pu}(n,n'$\gamma$), shown in \autoref{fig:239pu_nn_cropped}  together with calculations using the CoH reaction modeling code developed by Toshihiko Kawano. 
+% It should be noted that the GEANIE data was angle-integrated with respect to the outgoing neutron, limiting its value for neutron transport modeling.
  It should be noted that GEANIE did not include any neutron detectors, producing only angle-integrated partial $\gamma$-ray cross sections.
- 
+
+
+
+\begin{figure}[t]
+ \centering
+%  \includegraphics[clip=true,trim=1.5in 3.4in 1.8in 3.5in, scale=0.8]{./figures/variation_curve.pdf}
+ \includegraphics[width=0.6\linewidth]{239pu_nn_cropped.pdf}
+
+ % variation_curve.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
+ \caption{A selection of the \ce{^{239}Pu}(n,n'$\gamma$) partial $\gamma$-ray cross sections from \cite{Ber00} for the two transitions de-exciting the ${^5/_2}^{+}$ level at $E_x=$285.46 keV.}
+ \label{fig:239pu_nn_cropped}
+\end{figure}
+
 
 The need for new scattering data has motivated many new experiments.
  This has included energy-differential/angle-integrated measurements of the \ce{^{238}U}(n,n') cross section using the GELINA spallation neutron source in Geel Belgium by Bacquias et al., \cite{Nem13} and quasi-angle-differential measurements using the Rensselaer Polytechnic Institute Linac by Daskalakis et al., \cite{Das14}.
@@ -441,9 +461,7 @@ Information regarding states in the unresolved continuum region above the partic
  The most important of these are the nuclear level density (NLD) as a function of energy, spin and parity, and the radiative strength function (RSF), which describes the ability of excited nuclear matter to absorb or emit photons.
  A number of recent studies have shown the importance of the RSF to modeling (n,$\gamma$) reactions for neutrons with energies between 1 and 100 keV, which corresponds to the spectrum at the site of neutron capture nucleosynthesis in stars \cite{PhysRevC.82.014318, Lar15} and energy generation in fast reactors and nuclear security applications.
   
-
 Over the past several years, work led by the group at the University of Oslo has shown that there is a surprisingly large amount of M1 radiative strength believed to be a type of \enquote{scissors} collective mode throughout the Actinide mass region near the valley of stability including \ce{^{238}U}, \ce{^{239,240,242}Pu} and \ce{^{232}Th} \cite{Lap16, Gut13, Gut13a, Gut14, Gut15}.
-
 Other results from the Oslo group show that Actinide NLDs appears to follow a constant temperature (CT) form with a roughly Gaussian dependence on angular momentum that is often described via an energy-dependent width spin cut-off parameter ($\sigma$) of the form: 
 \begin{equation}\label{eqn:spin_cutoff}
 \sigma\pp{E_x}=0.01389 \dfrac{A^{5/3}}{\widetilde{a}}\sqrt{aU}
@@ -451,17 +469,12 @@ Other results from the Oslo group show that Actinide NLDs appears to follow a co
 where $U$ is roughly the $E_x$ minus the pairing gap $\Delta$, $a$ is the level density parameter, $A$ is the nuclear mass and $\widetilde{a}$ is the asymptotic level density value one would obtain in the absence of any shell effects.
 
 
-There is a great deal of uncertainty in the magnitude of the spin cut-off parameter.
- This is a significant issue since a good knowledge of the $J$ distribution is needed to accurately model the neutron vs. $\gamma$-ray emission probability in nuclear reactions.
- This sensitivity was shown recently by Wiedeking et al., \cite{Wie16} who showed that neutron emission from excited states in \ce{^{95}Mo} well-above the neutron separation energy populated via (d,p) was hindered for states with high angular momentum.
-
-
 
 
 \begin{figure}
  \centering
 %  \includegraphics[clip=true,trim=1.5in 3.4in 1.8in 3.5in, scale=0.8]{./figures/variation_curve.pdf}
- \includegraphics[width=0.7\linewidth]{fig3.pdf}
+ \includegraphics[width=0.55\linewidth]{fig3.pdf}
 
  % variation_curve.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
  \caption{Ratio of the \ce{^{238}U}(n,n') cross section to the state calculated using TALYS for two different sets of input parameters as a function of incident neutron energy.
@@ -469,6 +482,13 @@ The solid line shows the ratio where spin cutoff has been scaled to $\pm$25\% of
 The dashed line shows the case where the default value calculated using LD Model 1 (Gilbert and Cameron) is divided by the value obtained using the data from Guttormsen \cite{Gut13a}.}
  \label{fig:oslo_ld_plot}
 \end{figure}
+
+There is a great deal of uncertainty in the magnitude of the spin cut-off parameter.
+ This is a significant issue since a good knowledge of the $J$ distribution is needed to accurately model the neutron vs. $\gamma$-ray emission probability in nuclear reactions.
+ This sensitivity was shown recently by Wiedeking et al., \cite{Wie16} who showed that neutron emission from excited states in \ce{^{95}Mo} well-above the neutron separation energy populated via (d,p) was hindered for states with high angular momentum.
+
+
+
 
 
 
@@ -481,6 +501,15 @@ The dashed line shows the case where the default value calculated using LD Model
  Similar behavior is seen in the partial cross sections for other off-yrast levels as well.
 
 
+Information regarding the $J$-dependence of the NLD can also be obtained through observation of the relative population of two low-lying states with very different spins via activation.
+ This method has been used in Hg and Au by Chakravarty \cite{PhysRevC.45.1171} and more recently by Sudar in Hg and Pt \cite{PhysRevC.73.034613}.
+ \autoref{fig:fe_isomer_plots} shows this for the case of \ce{^{52m}Mn}($J_\pi=2^+$)/\ce{^{52g}Mn}($J_\pi=6^+$) ratio populated via \ce{^{56}Fe}(p,$\alpha$n) measured via stacked-target activation at the LBNL 88-Inch cyclotron as compared to TALYS calculations for different values of the spin cut-off parameter (left) and the 6 level density models available for use in TALYS on the right.
+ 
+
+
+It should be noted that both the (n,n'$\gamma$) and isomer-to-ground state ratio measurements could be performed as part of a program that supports improved neutron transport as described in \autoref{sec:n_transport} above, and a program of cross section measurements in support of medical isotope production described in \autoref{sec:isotope_production} below.
+ This reflects the interdependency between nuclear data over a wide range of applications.
+ 
 
 \begin{figure}
     \centering
@@ -523,15 +552,6 @@ The dashed line shows the case where the default value calculated using LD Model
 %      \label{fig:fe_isomer_plots}
 % \end{figure}
 
-Information regarding the $J$-dependence of the NLD can also be obtained through observation of the relative population of two low-lying states with very different spins via activation.
- This method has been used in Hg and Au by Chakravarty \cite{PhysRevC.45.1171} and more recently by Sudar in Hg and Pt \cite{PhysRevC.73.034613}.
- \autoref{fig:fe_isomer_plots} shows this for the case of \ce{^{52m}Mn}($J_\pi=2^+$)/\ce{^{52g}Mn}($J_\pi=6^+$) ratio populated via \ce{^{56}Fe}(p,$\alpha$n) measured via stacked-target activation at the LBNL 88-Inch cyclotron as compared to TALYS calculations for different values of the spin cut-off parameter (left) and the 6 level density models available for use in TALYS on the right.
- 
-
-
-It should be noted that both the (n,n'$\gamma$) and isomer-to-ground state ratio measurements could be performed as part of a program that supports improved neutron transport as described in \autoref{sec:n_transport} above, and a program of cross section measurements in support of medical isotope production described in \autoref{sec:isotope_production} below.
- This reflects the interdependency between nuclear data over a wide range of applications.
- 
 
 
 \section{NATIONAL SECURITY AND NON-PROLIFERATION}
