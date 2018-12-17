@@ -406,9 +406,21 @@ The summation method has been recently applied in two different situations.   Fi
 
 The conversion method is not fully free of issues, either.  To start, it is based on a single set of measurements; also, its most basic premise, the description of a level-to-level spectrum using a particular formalism, has not been tested, as highly precise measurements of electron spectra for fission products above the inverse beta decay cross section threshold have not been published.    As a result, while more precise than the summation method, it is nevertheless considerably less reliable.     A recent article \cite{Son17} reviewed the different Fermi functions available for the calculation of spectra and showed that a linear correction factor of 6\%/MeV could explain the anomaly.
 
-Given the dependence of the antineutrino signal on both decay and fission product yield data, a series of sensitivity study-guided integral experiments, along the lines of critical assembly integral benchmarks, are needed to validate the underlying nuclear data would provide a strong constraint on the underlying data.  One approach would involve irradiating fissile and fissionable samples in facilities with well-understood neutron spectra and comparing the observed delayed gamma-rays to a modeled spectrum produced using the Fission Induced Electromagnetic Response (FIER) code developed at Berkeley \cite{Matthews2018}.  FIER convolves fission product yield distributions and decay data to predict the gamma-ray spectrum after neutron irradiation.  The first example of its use involving a comparison to the delayed gamma-ray spectrum from a \ce{^{235}U} foil irradiated in the Godiva critical assembly indicated several cases were the underlying fission yields or decay data required improvement. 
 
-\textred{We seem to have plenty of space - should we add the FIER plot back in?}
+
+\begin{figure}[b]
+ \centering
+%  \includegraphics[clip=true,trim=1.5in 3.4in 1.8in 3.5in, scale=0.8]{./figures/variation_curve.pdf}
+ \includegraphics[width=0.7\linewidth]{667_before_alt.png}
+
+ % variation_curve.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
+ \caption{Difference in the FIER-predicted and observed yield of \ce{^{132}I} as a function of time for a \ce{^{235}U} sample irradiated at the GODIVA critical assembly taken from \cite{Matthews2018}.  }
+ \label{fig:fier_plot}
+\end{figure}
+
+Given the dependence of the antineutrino signal on both decay and fission product yield data, a series of sensitivity study-guided integral experiments, along the lines of critical assembly integral benchmarks, are needed to validate the underlying nuclear data would provide a strong constraint on the underlying data.  One approach would involve irradiating fissile and fissionable samples in facilities with well-understood neutron spectra and comparing the observed delayed gamma-rays to a modeled spectrum produced using the Fission Induced Electromagnetic Response (FIER) code developed at Berkeley \cite{Matthews2018}.  FIER convolves fission product yield distributions and decay data to predict the gamma-ray spectrum after neutron irradiation.  The first example of its use involving a comparison to the delayed gamma-ray spectrum from a \ce{^{235}U} foil irradiated in the Godiva critical assembly indicated several cases were the underlying fission yields or decay data required improvement. One example, where the yield of the \ce{^{132}I} needed to be adjusted upward by 0.24$\sigma$, is shown in \autoref{fig:fier_plot}.  
+
+
 
 These experiments would involve a sample of depleted \ce{^{238}U} since recent results from IBD indicate that the contribution to the observed anomaly in the antineutrino experiment can be attributed to issues with the \ce{^{238}U}(n,f) yields. These measurements could be performed at the Godiva in the same fashion as the \ce{^{235}U} irradiation used to validate FIER, or other well-documented fast neutron facilities including the thick target deuteron break neutron source at the LBNL 88-Inch cyclotron \cite{Harrig2018} and the High Flux Neutron Generator at UC-Berkeley \cite{ayllon2018design} and compare the results to the FIER predictions to inform both the fission yield and decay data for \ce{^{238}U}(n,f). 
 
@@ -567,7 +579,7 @@ Many of these advanced systems also require so-called high-assay low enriched ur
 Many nuclear data needs have been identified that are important for design and operating analysis for these advanced systems including:
 \begin{itemize}
   \item Improving our knowledge of the \ce{^{238}U}(n,n')cross section.   \ce{^{238}U}(n,n') is a limiting factor in the design of fast spectrum reactors such as those with metallic cores or chloride salts. The 40\% uncertainty in this cross section in ENDF/B-VII.1 propagates to an uncertainty of 1.5\%$\Delta k$ in the criticality state of a sodium fast reactor (i.e. at the 2$\sigma$ level, $k_{eff}$ could range from 0.97 to 1.03 based on this uncertainty prediction) \cite{touran2016sensitivities}.
-  \item Improved knowledge of the \ce{^{35}Cl}(n,p) cross section.  Changes from the 2006 release of ENDF/B-VII.0 to the 2011 release of ENDF/B-VII.1 are causing a 2-3\%$\Delta k$ change in reactivity in molten salt reactors. This data change will also impact repository analysis in salts and there are no benchmark experiments available for validation. \textred{Lee - we should add some language here referencing Batch's work on this.}
+  \item Improved knowledge of the \ce{^{35}Cl}(n,p) cross section.  Changes from the 2006 release of ENDF/B-VII.0 to the 2011 release of ENDF/B-VII.1 are causing a 2-3\%$\Delta k$ change in reactivity in molten salt reactors. This data change will also impact repository analysis in salts and there are no benchmark experiments available for validation. Recent results from activation using a DD-neutron source \cite{Voyles2017} indicate both resonant behavior in this cross section and an average value significantly smaller value for  $2.2 < E_n \text{(MeV)} < 2.7$ \cite{Bat18}.  
   \item Graphite data for high-temperature reactors as well as the Transient Reactor Test Facility (TREAT) facility have realized a number of updates that cause dramatic changes in criticality. Updates from ENDF/B-VII.0 to ENDF/B-VII.1 lead to a 1\%$\Delta k$ change in reactivity for the High Temperature Engineering Test Reactor (HTTR), leading to the calculations better matching experimental values. Proposed updates to the graphite thermal scattering data for the ENDF/B-VIII.0 release have been demonstrated to cause a 2\%$\Delta k$ change in reactivity for the TREAT M8CAL benchmark \cite{hawarithermal}.
   \item Thermal neutron scattering in molten salts, such as FLiBe. There are no cross-section data that represent the effect of the molecular bonds, leading to a computational bias of unknown magnitude in all reactor design calculations. The molecular bonds in water vs. Polyethylene can lead to a computation bias of 1-2\%$\Delta k$.  In addition, this effect is temperature dependent and is not well studied or understood. A recently developed benchmark experiment evaluation of the Molten Salt Reactor Experiment which consisted of uranium fuel FLiBe molten salt flowing through graphite channels demonstrates a bias of over 1\%$\Delta k$ from the experimental value \cite{shenzero}, with other presented results showing biases over 3\%$\Delta k$
   \item (n,x) reactions on heavy actinides that will buildup in molten salt reactors and high burnup fuel are poorly quantified and benchmark data are rare, so these effects are almost completely unknown.
@@ -726,8 +738,8 @@ In closing, it is worth noting that the dramatic increase in computational capab
 
 %Disclosure
 \section*{DISCLOSURE STATEMENT}
-\textred{If the authors have noting to disclose, the following statement will be used: The authors are not aware of any affiliations, memberships, funding, or financial holdings that
-might be perceived as affecting the objectivity of this review. }
+The authors are not aware of any affiliations, memberships, funding, or financial holdings that
+might be perceived as affecting the objectivity of this review. 
 
 % Acknowledgements
 \section*{ACKNOWLEDGMENTS}
