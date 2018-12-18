@@ -136,7 +136,7 @@
 
 \pdfminorversion=7
 
-
+\newcommand{\keff}{k$_{\textrm{eff}}$}
 
 % 
 % 
@@ -177,7 +177,7 @@
 
 
 %Authors, affiliations address.
-\author{Lee A. Bernstein$^{1,2}$, David A. Brown$^3$, \\Arjan J. Koning$^4$, Brad T. Rearden$^5$,  \\Catherine E. Romano$^5$, Alejandro A. Sonzogni$^3$, Andrew S. Voyles$^{1,2}$, and Walid  Younes$^6$
+\author{Lee A. Bernstein$^{1,2}$, David A. Brown$^3$, \\Arjan J. Koning$^4$, Bradley T. Rearden$^5$,  \\Catherine E. Romano$^5$, Alejandro A. Sonzogni$^3$, Andrew S. Voyles$^{1,2}$, and Walid  Younes$^6$
 \affil{$^1$Nuclear Science Division, Lawrence Berkeley National Laboratory,  Berkeley, CA 94720, USA; email: labernstein@lbl.gov}
 \affil{$^2$Department of Nuclear Engineering, University of California, Berkeley,  Berkeley, CA 94720, USA}
 \affil{$^3$National Nuclear Data Center, Brookhaven National Laboratory, Upton, NY 11973, USA}
@@ -213,7 +213,7 @@ nuclear data,  structure,  reactions, evaluation, fission, medical Isotopes, nuc
 
 
 Low-energy nuclear science (LENS) \enquote{straddles the fence} between curiosity- and application-driven pursuits.
- On the curiosity-driven side, low-energy ($E_x <$ 1--4 MeV) nuclear structure offers a unique laboratory to examine the interplay between single-particle and collective behavior and to explore the transition from quantum to continuum behavior in a mesoscopic setting.
+ On the curiosity-driven side, low-energy ($E_x <$ 1--4 MeV) \textred{DAB: This is very restrictive!} nuclear structure offers a unique laboratory to examine the interplay between single-particle and collective behavior and to explore the transition from quantum to continuum behavior in a mesoscopic setting.
 LENS also plays an important role in nuclear astrophysics, improving models of stellar energy generation and allowing isotopic abundances to be used to inform models of the astrophysical environments where heavy nuclei are formed.
  On the applied side, a well-quantified knowledge of low-lying nuclear structure and reactions is needed to model energy generation and isotope production for medical and industrial uses and for the national security and counter-proliferation communities.
   
@@ -232,11 +232,12 @@ This manuscript will start with a description of the nuclear data evaluation pro
 
 
 \subsection{The Nuclear Data Pipeline}
+\label{sec:pipeline}
 
 Before diving into the data needs, it is instructive to understand the \enquote{Nuclear Data Pipeline} that takes experimental or theoretical results and prepares them for use in applications.
  This process is illustrated in \autoref{fig:pipeline} and is roughly grouped into four steps: 1) compilation, 2) evaluation, 3) processing, and 4) validation.
  This process ends with the users and their application, but actually begins with the performance of carefully-designed measurements with well-defined uncertainties.
- Given this, it behooves those funding or performing the original experiment to understand the entire nuclear data workflow in order to ensure that new results find their way to the intended user.
+ Given this,  those funding or performing the original experiment would be wise to understand the entire nuclear data workflow in order to ensure that new results find their way to the intended user.
  For example, if a new result forces changes to data formats (step 2) or processing (step 3) or to application codes (step 4 \& eventual user), this fact should be considered when developing a new activity.
 
 The first step in the Pipeline is compilation and it begins with potentially the most important database: Nuclear Science References (NSR) \cite{NSR}.
@@ -279,7 +280,7 @@ The next step in the process is evaluation itself.
  
 
 In the case of nuclear reaction data, the process is markedly different.
- The data from EXFOR is used to guide a physics-based model calculation through a variety of variance minimization procedures, resulting in best estimates of mean values and their uncertainties, including covariances, which are put into the Evaluated Nuclear Data File \cite{endf8_0}.
+ The data from EXFOR is used to guide a physics-based model calculation through a variety of variance minimization procedures, resulting in best estimates of mean values and their uncertainties, including covariances, which are put into the one or more regional libraries such as the recently release of the Evaluated Nuclear Data File (ENDF), ENDF/B-VIII.0 \cite{endf8_0}.
  Most of the effort put into the production of ENDF is provided by applications-oriented users due to its importance to national security, international counter-proliferation and nuclear energy.
  A consequence of this application focus is that the vast majority of the data in ENDF concerns neutron-induced reactions at either thermal (25 meV), fast fission or 14.1 MeV.
  This has profound implications for isotope production since many of the nuclides are produced through charged-particle induced reactions.
@@ -299,7 +300,7 @@ Evaluations in hand, we must now process the data into a form suitable for use i
 The final step in the Pipeline is validation.
  In this step, we use user codes and user-defined problems to validate that the data performs as expected.
  The class of user problems we most rely on are so-called \enquote{integral benchmark} data that depend on many different types of data including cross sections and emitted particle spectra and are also extremely precisely known.
- The canonical example of such a benchmark is a critical assembly, where the ratio of neutron production to neutron loss ($k_{eff}$) is known to several significant figures.
+ The canonical example of such a benchmark is a critical assembly, where the ratio of neutron production to neutron loss (\keff) is known to several significant figures.
  However, there are many other kinds of integral benchmarks used to test neutron interaction data alone, including reaction rate measurements and 14 MeV and fission spectrum transmission experiments, and many more for other forms of nuclear data.
 
 There are multiple ways to interact with the nuclear data evaluation process along the way, including through web interfaces hosted by the National Nuclear Data Center \cite{NNDC} and the IAEA Nuclear Data Section \cite{IAEA-NDS}, a smartphone-based application \cite{IAEA-APP} and publication in peer-reviewed journals including Nuclear Data Sheets \cite{NDS} and Atomic Data and Nuclear Data Tables \cite{ATNDT}.
@@ -314,7 +315,7 @@ Many different government agencies support nuclear data evaluation activities, i
 \subsection{International Collaboration}
 
 Much of the work of nuclear data evaluation takes place as a part of international collaborations covered under the Organization of Economic Cooperation and Development's Nuclear Energy Agency (NEA) and the International Atomic Energy Agency (IAEA).
- The Nuclear Energy Agency (NEA) addresses the nuclear technology interests of its 33 member states and, in the area of nuclear data, the Working Party on Evaluation Coordination (WPEC) is the main forum for collaborative effort between the nuclear data library projects from the NEA countries, namely ENDF/B (United States), JENDL (Japan), JEFF (NEA), TENDL (Europe), BROND (Russia) as well as the non-OECD file project CENDL (China).
+ The Nuclear Energy Agency (NEA) addresses the nuclear technology interests of its 33 member states and, in the area of nuclear reaction data, the Working Party on Evaluation Coordination (WPEC) is the main forum for collaborative effort between the nuclear data library projects from the NEA countries, namely ENDF/B (United States), JENDL (Japan), JEFF (NEA), TENDL (Europe), BROND (Russia) as well as the non-OECD file project CENDL (China).
 
 A powerful instrument of WPEC to drive progress in nuclear data is the so-called Subgroup (SG): members of WPEC identify a common area in nuclear data that requires improvement, and if enough support from the various data library projects is present, a Subgroup is formed.
  Subgroups typically operate on a 3-5 year time frame.
@@ -583,7 +584,7 @@ The antineutrino spectrum produced in a nuclear reactor is calculated as the sum
   The current best predictions for  \ce{^{235}U} and \ce{^{239,241}Pu} are those by Huber \cite{Hub11} using the conversion method, while for \ce{^{238}U} is that by Mueller et al. \cite{Mue11} using a hybrid conversion-summation method.
 
 The use of nuclear databases to calculate antineutrino spectra is considered less precise than the conversion method due to deficiencies in the underlying fission and decay data, such as beta intensities \cite{Fal12}, beta shape factors due to first-forbidden transitions \cite{Hay14}, evaluated libraries issues \cite{Son15} and fission yields \cite{Son16}.
-  There have been considerable efforts in the last few years to improve this situation, including (i) experimental campaigns in Jyvaskyla \cite{Alg10}, ORNL \cite{Ras16} and ANL \cite{MccTBD} to obtain highly precise values of beta intensities, which have been incorporated in the ENDF/B-VIII.0 decay data sub-library; (ii) measurements of isomeric ratios in ILL, Jyvaskyla and ANL; (iii) measurements of fission yields in GELINA \cite{Viv00}, GSI \cite{Pel17} and LANL \cite{Duk16}; (iv) a recent IAEA Coordinated Research Project on beta-delayed neutron emitters \cite{DimXX} that would improve the derivation of cumulative fission yields from independent ones.
+  There have been considerable efforts in the last few years to improve this situation, including (i) experimental campaigns in Jyv\"{a}skyl\"{a} \cite{Alg10}, ORNL \cite{Ras16} and ANL \cite{MccTBD} to obtain highly precise values of beta intensities, which have been incorporated in the ENDF/B-VIII.0 decay data sub-library; (ii) measurements of isomeric ratios in ILL, Jyv\"{a}skyl\"{a} and ANL; (iii) measurements of fission yields in GELINA \cite{Viv00}, GSI \cite{Pel17} and LANL \cite{Duk16}; (iv) a recent IAEA Coordinated Research Project on beta-delayed neutron emitters \cite{DimXX} that would improve the derivation of cumulative fission yields from independent ones.
   Also planned are measurements of beta shape factors as well as a new IAEA Coordinated Research Project to evaluate fission yields.
 Another issue affecting the summation method is the lack of fission yield correlation matrices in the evaluated fission data libraries.
   As a result, uncertainties cannot be fully computed.
@@ -595,7 +596,7 @@ The summation method has been recently applied in two different situations.
   
 
 The conversion method is not fully free of issues, either.
- To start, it is based on a single set of measurements; also, its most basic premise, the description of a level-to-level spectrum using a particular formalism, has not been tested, as highly precise measurements of electron spectra for fission products above the inverse beta decay cross section threshold have not been published.
+ To start, it is based on a single set of measurements; also, its most basic premise, the description of a level-to-level spectrum using a particular formalism, has not been tested, as highly precise measurements of electron spectra for fission products above the inverse beta decay (IBD) cross section threshold have not been published.
    As a result, while more precise than the summation method, it is nevertheless considerably less reliable.
     A recent article \cite{Son17} reviewed the different Fermi functions available for the calculation of spectra and showed that a linear correction factor of 6\%/MeV could explain the anomaly.
 
@@ -604,7 +605,7 @@ The conversion method is not fully free of issues, either.
 \begin{figure}[b]
  \centering
 %  \includegraphics[clip=true,trim=1.5in 3.4in 1.8in 3.5in, scale=0.8]{./figures/variation_curve.pdf}
- \includegraphics[width=0.7\linewidth]{667_before_alt.png}
+ \includegraphics[width=0.7\linewidth]{667_before_v2.png}
 
  % variation_curve.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
  \caption{Difference in the FIER-predicted and observed yield of \ce{^{132}I} as a function of time for a \ce{^{235}U} sample irradiated at the GODIVA critical assembly taken from \cite{Matthews2018}.  }
@@ -787,7 +788,7 @@ In a study conducted by SG46, it was found that many individual reactions were m
         \includegraphics[width=0.97\textwidth]{pu239_2.png} % second figure itself
 %         \caption{second figure}
     \end{minipage}
-    \caption{SG46 findings on changes in cross sections from ENDF/B-VII.1 to ENDF/B-VIII.0 of key nuclides. }
+    \caption{SG46 findings on changes in cross sections and prompt fission nubar from ENDF/B-VII.1 to ENDF/B-VIII.0 of key nuclides. }
      \label{fig:ne_plots}
 \end{figure}
 
@@ -834,19 +835,19 @@ In a study conducted by SG46, it was found that many individual reactions were m
 
 Many of these advanced systems also require so-called high-assay low enriched uranium (HA-LEU), which has a \ce{^{235}U} enrichment \textgreater5\% and \textless20\% by mass, where the current fleet of LWRs utilize enrichments of 5\% or less.
 With few benchmark experiments in HA-LEU enrichment range, the interplay of the cross sections for multiple nuclei become important, especially for LEU experiments where \ce{^{1}H}, \ce{^{16}O}, \ce{^{235}U}, \ce{^{238}U} and others are applied simultaneously in the calculation of the integral $k_{eff}$ response.
- Similar to the Chadwick \cite{Cha18} and Bauge \cite{Bau12} studies of Jezebel critical assembly, a team at ORNL preformed an investigation of a hypothetical transportation package with 20\% enriched \ce{^{235}U} in the form of \ce{UF6} using ENDF/B-VII.1 and ENDF/B-VIII.0 libraries by only exchanging the CIELO nuclides.
+ Similar to the Chadwick \cite{Cha18} (see \autoref{fig:rotated_swings}) and Bauge \cite{Bau12} studies of Jezebel critical assembly, a team at ORNL preformed an investigation of a hypothetical transportation package with 20\% enriched \ce{^{235}U} in the form of \ce{UF6} using ENDF/B-VII.1 and ENDF/B-VIII.0 libraries by only exchanging the CIELO nuclides.
 A swing in $k_{eff}$ of 450 pcm is observed.
  Future investigation and validation are required to gain confidence in either calculation.
 
 Many nuclear data needs have been identified that are important for design and operating analysis for these advanced systems including:
 \begin{itemize}
-  \item Improving our knowledge of the \ce{^{238}U}(n,n')cross section.
+  \item Improving our knowledge of the \ce{^{238}U}(n,n')cross section, as discussed in \autoref{sec:n_transport} previously.
   \ce{^{238}U}(n,n') is a limiting factor in the design of fast spectrum reactors such as those with metallic cores or chloride salts.
 The 40\% uncertainty in this cross section in ENDF/B-VII.1 propagates to an uncertainty of 1.5\%$\Delta k$ in the criticality state of a sodium fast reactor (i.e. at the 2$\sigma$ level, $k_{eff}$ could range from 0.97 to 1.03 based on this uncertainty prediction) \cite{touran2016sensitivities}.
   \item Improved knowledge of the \ce{^{35}Cl}(n,p) cross section.
  Changes from the 2006 release of ENDF/B-VII.0 to the 2011 release of ENDF/B-VII.1 are causing a 2-3\%$\Delta k$ change in reactivity in molten salt reactors.
 This data change will also impact repository analysis in salts and there are no benchmark experiments available for validation.
-Recent results from activation using a DD-neutron source \cite{Voyles2017} indicate both resonant behavior in this cross section and an average value significantly smaller value for  $2.2 < E_n \text{(MeV)} < 2.7$ \cite{Bat18}.  
+Recent results from activation using a DD-neutron source \cite{Voyles2017} indicate both resonant behavior in this cross section and an average value significantly smaller value for  $2.2 < E_n \text{(MeV)} < 2.7$ \textred{\cite{Bat18}}.  
   \item Graphite data for high-temperature reactors as well as the Transient Reactor Test Facility (TREAT) facility have realized a number of updates that cause dramatic changes in criticality.
 Updates from ENDF/B-VII.0 to ENDF/B-VII.1 lead to a 1\%$\Delta k$ change in reactivity for the High Temperature Engineering Test Reactor (HTTR), leading to the calculations better matching experimental values.
 Proposed updates to the graphite thermal scattering data for the ENDF/B-VIII.0 release have been demonstrated to cause a 2\%$\Delta k$ change in reactivity for the TREAT M8CAL benchmark \cite{hawarithermal}.
@@ -861,7 +862,7 @@ For the recent ENDF/B-VIII.0 release, the readme file provided by the National N
 This specialized process is generally not available to users and presents many complicated aspects even for experts in the field, leaving a large gap between data provided by nuclear data evaluators and those useful for application in safety and design calculations.
   \item Nuclear data are gathered from many different sources, not only ENDF but also the ENSDF as well as the Joint European Fission Fusion (JEFF) library, which often have differing representations of the same data.
 The process of sorting through the data to correct inconsistencies and benchmark the consolidated library against benchmark experiments is complex.
-  \item Uncertainty data are not available or are incomplete for fission product yields, decay constants, and angular distributions, making it difficult to have high confidence in predicting the performance of advanced systems.
+  \item Uncertainty data are not available or are incomplete for fission product yields, decay constants, and angular distributions, making it difficult to have high confidence in predicting the performance of advanced systems.  \textred{In the case of fission product yields, there is not even a format for covariance data in the ENDF format, harkening back to the admonition in  \autoref{sec:pipeline}.}
 \end{itemize}
 
 
@@ -911,7 +912,7 @@ The NDIAWG process reflects a growing recognition that improved nuclear data is 
 
 \section{CONCLUSION \texorpdfstring{---}{-} RETAINING AND TRAINING A SKILLED NUCLEAR DATA WORKFORCE}
 
-A robust nuclear data evaluation process is needed to provide the information required for many applications ranging from nonproliferation to nuclear energy to isotope production.
+A robust nuclear data process is needed to provide the information required for many applications ranging from nonproliferation to nuclear energy to isotope production.
  However, it takes many years of post-Ph.D. experience to train nuclear data evaluators, and only a short break in support to lose  this work force to other pursuits.
  It is therefore critical for the many societal programs that rely on nuclear data to support individuals engaged in maintaining all functions that make up the \enquote{Nuclear Data Pipeline}, from measuring and modeling through compilation, evaluation, validation, and processing.
  As more and more of the research in the United States moves over to a project-driven model, it is imperative that sponsors coordinate their efforts to ensure that there is no loss of talent in the field.
@@ -923,7 +924,7 @@ Furthermore, nuclear data evaluation is an \emph{aging} field, with the mean age
  
 
 Perhaps one of the \enquote{endangered species} in nuclear data is the experimental nuclear data evaluator.
- This isn't an experimentalist doing a new, better experiment, nor a data library creator that makes an ENDF-like library, but a person who knows which of the more than 22,000 measurements in the EXFOR/CSISRS library are to be taken seriously, discarded or normalized to newer standards.
+ This isn't an experimentalist doing a new, better experiment, nor a data library creator that makes an ENDF-like library, but a person who knows which of the more than 22,000 measurements in the EXFOR library are to be taken seriously, discarded or normalized to newer standards.
  This sort of a \enquote{hybrid} individual would be capable of providing not only good mean values, but also the well-quantified uncertainties (including covariances) that are needed for most applications.
  A concerted effort on the part of both academia and the international research community is needed to ensure that talented early-career individuals with the right combination of interest and inclination be afforded the opportunity to get trained by an \enquote{international village} of evaluators and application subject matter experts.
  
@@ -1058,6 +1059,9 @@ The authors acknowledge support for this work from the United States Department 
 
 Work at Lawrence Berkeley National Laboratory has been carried out  under the auspices of the U.S. Department of Energy by  Lawrence Berkeley National Laboratory and the U.S. Nuclear Data Program under contract \# DE-AC02-05CH11231.
 This work used the Savio computational cluster resource provided by the Berkeley Research Computing program at the University of California, Berkeley (supported by the UC Berkeley Chancellor, Vice Chancellor for Research, and Chief Information Officer).
+
+This work was performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Security,
+LLC, Lawrence Livermore National Laboratory under Contract \# DE-AC52-07NA27344.
 
 \textred{EVERYONE - Please provide me snippets of any other Acknowledgements you want included!}
 
