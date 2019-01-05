@@ -53,7 +53,7 @@ In addition, these experiments provide valuable insight into the challenges  inv
 
 
 % A set of measured cross sections for the various natFe(p,x), natTi(p,x), and natCu(p,x) reactions between 5–55 MeV, as well as independent measurements of isomer branching ratios, are reported.
-% Figure 3 shows the 52mMn(2+)/52gMn(6+) isomer-to-ground state branching ratio for the naFe(p,αn) reaction, calculated using TALYS-v1.8 over the 20 - 55 MeV range spanned by the foil stack. It is possible to use this measurement to infer the spin cut-off σ2, the width of the angular momentum distribution of the level density [6], [7]. The isomer-to-ground state ratio lends insight into equilibrium / pre-equilibrium nature of reactions in this energy region, useful when attempting to minimize dose from an unwanted isomer/ground state of a medical radionuclide.
+% Figure 3 shows the 52mMn(2+)/52gMn(6+) isomer-to-ground state branching ratio for the naFe(p,αn) reaction, calculated using TALYS-v1.8 over the 20 - 55 MeV range spanned by the foil stack. It is possible to use this measurement to infer the spin cut-off σ2, the width of the angular momentum distribution of the level density [6], [7]. The isomer-to-ground state ratio lends insight into equilibrium / pre-equilibrium nature of reactions in this energy region, useful when attempting to minimize dose from an unwanted isomer/ground state of a medical radionuclide.
 
 
 
@@ -355,7 +355,7 @@ The net  counts in each fitted gamma-ray photopeak were converted into  activiti
 % 
 % The nuclear decay data used in this work is tabulated, for reference, in \autoref{tab:fe_nudat_table_monitors} and \autoref{tab:fe_nudat_table_nb} of Appendix \ref{sec:fe_data}.
 The   lifetimes and gamma-ray branching ratios  used for all calculations of measured cross sections reported in this work  have been taken from the most recent edition of  Nuclear Data Sheets for each  mass chain
-% \cite{Basunia2015,Firestone2007,Wang2017,Dong2015,Dong2014,JUNDE2008787,Junde2011,Bhat1998,Nesaraja2010,BAGLIN2002,Browne2013,Zuber20151,NICHOLS2012973,Singh2007,Browne2010,Tuli2003,McCutchan2015,Singh2014,NEGRET20151,Johnson2015,McCutchan2014,Singh2013,Browne1997,Baglin2013,Baglin2012,Baglin2011}. 
+\cite{Singh2015a,Chen2011a,Wu2000,Burrows2007,Burrows2006,Burrows2008,Wang2017,Dong2015,Dong2014,JUNDE2008787,Junde2011,Bhat1998,Nesaraja2010,Browne2013,Zuber20151,NICHOLS2012973,ERJUN2001,Singh2007}.
 Corrections for gamma-ray attenuation within each foil packet were made, using  photon attenuation coefficients from the XCOM photon cross sections database  \cite{berger2011xcom}.
 % As nearly all of the product nuclei have multiple high-intensity gamma-rays, decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), as well as multiple independent activity measurements at each time point, based on each of its observed gamma-rays.
 % Decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), and as nearly all of the product nuclei have multiple high-intensity gamma-rays, this provided independent activity measurements at each time point.
@@ -622,13 +622,13 @@ This loss of fluence is due to a combination of
 
 
 
-Using the final proton fluence at each energy position, cross sections for  \textred{(list of residual products)} were extracted for (p,x) reactions  on \ce{^{nat}Fe} foils in the \textred{0--55\,MeV} region, as recorded in \autoref{tab:fe_rp_table}.
-For  (p,x) reactions on \ce{^{nat}Cu} foils, the (p,x) cross sections for  \textred{(list of residual products)} were extracted, as recorded in \autoref{tab:cufe_rp_table}.
-For  (p,x) reactions on \ce{^{nat}Ti} foils, the (p,x) cross sections for  \textred{(list of residual products)} were extracted, as recorded in \autoref{tab:ti_rp_table}.
-In addition, as there exist a number of isomers with radioactive ground states in these mass regions,  independent measurements of isomer-to-ground-state branching ratios for \textred{\ce{^{52m/g}Mn},\ce{^{58m/g}Co},\ce{^{85m/g}Y},\ce{^{87m/g}Y}, and \ce{^{89m/g}Nb}} were  extracted and are recorded in \autoref{tab:fe_ibr_table}.
+Using the final proton fluence at each energy position, cross sections for \ce{^{48}Cr}, \ce{^{48}V},  \ce{^{49}Cr}, \ce{^{51}Mn}, \ce{^{51}Cr},  \ce{^{52}Fe}, \ce{^{52m}Mn}, \ce{^{52g}Mn}, \ce{^{52}Mn}, \ce{^{54}Mn}, \ce{^{55}Co}, \ce{^{56}Mn}, \ce{^{56}Co}, \ce{^{57}Co}, \ce{^{58m}Co}, \ce{^{58g}Co}, and \ce{^{58}Co}
+ were extracted for (p,x) reactions  on \ce{^{nat}Fe} foils up to 55\,MeV, as recorded in \autoref{tab:fe_rp_table}.
+For  (p,x) reactions on \ce{^{nat}Cu}, the (p,x) cross sections for  \ce{^{54}Mn}, \ce{^{57}Ni}, \ce{^{57}Co},  \ce{^{60}Co}, \ce{^{60}Cu}, \ce{^{61}Co}, \ce{^{61}Cu}, and \ce{^{64}Cu}  were extracted, as recorded in \autoref{tab:cufe_rp_table}.
+For  (p,x) reactions on \ce{^{nat}Ti}, the (p,x) cross sections for  \ce{^{43}K}, \ce{^{44g}Sc}, \ce{^{44m}Sc}, \ce{^{44}Sc}, \ce{^{47}Sc}, and \ce{^{48}Sc}  were extracted, as recorded in \autoref{tab:ti_rp_table}.
+In addition, as there exist a number of isomers with radioactive ground states in these mass regions,  independent measurements of isomer-to-ground-state branching ratios for \ce{^{nat}Fe}(p,x)\ce{^{52m/g}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{58m/g}Co}, and \ce{^{nat}Ti}(p,x)\ce{^{44m/g}Sc} were  extracted and are recorded in \autoref{tab:fe_ibr_table}.
 Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR \cite{Otuka2014272}) are seen in the figures of Appendices \ref{sec:fe_xs_figures} and \ref{sec:fe_ibr_figures}.
-The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity \textred{($\pm$3--7\%), proton fluence ($\pm$4--6\%), and foil areal density ($\pm$0.1--0.6\%).}
-% \comment{Update these with new numbers!\\ Stephen: Very impressive, if you feel this is realistic. }
+The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity ($\pm$1--10\%), proton fluence ($\pm$4--9\%), and foil areal density ($\pm$0.1--0.3\%).
 
 
 
@@ -718,116 +718,118 @@ E$_\text{p}$ (MeV)&	\makecell{53.31\\$\pm$0.61} &	\makecell{46.48\\$\pm$0.68} &	
 \end{tabular}
 }
 \end{table}
+
+
+
+
+% \ce{^{nat}Cu}(p,x)\ce{^{52}Mn}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}
+\centering
+\caption{Measured isomer-to-ground-state branching ratios for the various \ce{^{nat}Fe}(p,x) and \ce{^{nat}Ti}(p,x) reaction products observed in this work.}
+\label{tab:fe_ibr_table}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllllllllllllll@{}}
+\toprule
+                               & \multicolumn{14}{c}{Isomer branching ratio}                                                                                                                \\ \cmidrule(l){2-15} 
+E$_\text{p}$ (MeV)&	\makecell{53.45\\$\pm$0.61} &	\makecell{46.63\\$\pm$0.68} &	\makecell{38.93\\$\pm$0.78} &	\makecell{34.62\\$\pm$0.85} &	\makecell{29.84\\$\pm$0.96} &	\makecell{24.4\\$\pm$1.1} &	\makecell{22.71\\$\pm$0.43} &	\makecell{19.36\\$\pm$0.56} &	\makecell{17.6\\$\pm$1.5} &	\makecell{16.54\\$\pm$0.48} &	\makecell{14.52\\$\pm$0.49} &	\makecell{12.11\\$\pm$0.53} &	\makecell{9.23\\$\pm$0.61} &	\makecell{4.10\\$\pm$0.73}\\ \midrule
+\ce{^{nat}Fe}(p,x)\ce{^{52}Mn} &	\makecell{0.417\\$\pm$0.022} &	\makecell{0.414\\$\pm$0.024} &	\makecell{0.396\\$\pm$0.026} &	\makecell{0.388\\$\pm$0.021} &	\makecell{0.517\\$\pm$0.026} &	\makecell{0.420\\$\pm$0.025} &	\makecell{0.358\\$\pm$0.018} &	\makecell{0.202\\$\pm$0.010} &	\makecell{0.404\\$\pm$0.043} &	\makecell{0.638\\$\pm$0.043} &	\makecell{0.915\\$\pm$0.073} &	-- &	-- &	--\\
+\ce{^{nat}Fe}(p,x)\ce{^{58}Co} &	-- &	-- &	-- &	\makecell{0.326\\$\pm$0.017} &	\makecell{0.387\\$\pm$0.020} &	\makecell{0.485\\$\pm$0.025} &	\makecell{0.583\\$\pm$0.033} &	\makecell{0.614\\$\pm$0.034} &	\makecell{0.420\\$\pm$0.026} &	\makecell{0.486\\$\pm$0.036} &	\makecell{0.341\\$\pm$0.024} &	\makecell{0.299\\$\pm$0.016} &	\makecell{0.234\\$\pm$0.015} &	\makecell{0.214\\$\pm$0.029}         \vspace{1em}     \\ 
+E$_\text{p}$ (MeV)&	\makecell{53.31\\$\pm$0.61} &	\makecell{46.48\\$\pm$0.68} &	\makecell{38.76\\$\pm$0.78} &	\makecell{34.44\\$\pm$0.86} &	\makecell{29.63\\$\pm$0.96} &	\makecell{24.1\\$\pm$1.1} &	\makecell{22.29\\$\pm$0.32} &	\makecell{18.98\\$\pm$0.37} &	\makecell{17.3\\$\pm$1.5} &	\makecell{16.14\\$\pm$0.42} &	\makecell{14.03\\$\pm$0.47} &	\makecell{11.49\\$\pm$0.55} &	\makecell{8.38\\$\pm$0.70} &	\makecell{2.88\\$\pm$0.88}\\ \midrule
+\ce{^{nat}Ti}(p,x)\ce{^{44}Sc} &	\makecell{0.335\\$\pm$0.022} &	\makecell{0.314\\$\pm$0.018} &	\makecell{0.291\\$\pm$0.016} &	\makecell{0.253\\$\pm$0.016} &	\makecell{0.260\\$\pm$0.015} &	\makecell{0.224\\$\pm$0.017} &	\makecell{0.345\\$\pm$0.015} &	\makecell{0.294\\$\pm$0.013} &	\makecell{0.328\\$\pm$0.026} &	\makecell{0.296\\$\pm$0.015} &	\makecell{0.252\\$\pm$0.014} &	-- &	-- &	--\\\bottomrule
+\end{tabular}
+}
+\end{table}
+
+
+
+\textred{Placeholder text follows...fill in actual discussion of results...}
+
+% lee:
 % 
-% 
-% 
-% 
-% 
-% 
-% % Please add the following required packages to your document preamble:
-% % \usepackage{booktabs}
-% \begin{table}
-% \centering
-% \caption{Measured isomer-to-ground-state branching ratios for the various \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and \ce{^{nat}Ti}(p,x) reaction products observed in this work.}
-% \label{tab:fe_ibr_table}
-% \small
-% \resizebox{\textwidth}{!}{%
-% \begin{tabular}{@{}lllllll@{}}
-% \toprule
-%                                & \multicolumn{6}{c}{Isomer branching ratio}                                                                                                                \\ \cmidrule(l){2-7} 
-% E$_\text{p}$ (MeV)             & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ & $70.17^{+0.91}_{-0.85}$ & $61.58^{+1.03}_{-0.98}$ & $52.10^{+1.25}_{-1.20}$ & $41.05^{+1.62}_{-1.54}$ \\ \midrule
-% \ce{^{nat}Cu}(p,x)\ce{^{52}Mn} & $0.603\pm0.066$         & $0.581\pm0.062$         & $0.598\pm0.095$         & $0.81\pm0.13$           & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
-% \ce{^{nat}Cu}(p,x)\ce{^{58}Co} & $0.757\pm0.088$         & $0.80\pm0.10$         & $0.858\pm0.099$         & $0.767\pm0.097$         & $0.82\pm0.12$           & $0.98\pm0.10$            \vspace{1em}     \\ 
-% E$_\text{p}$ (MeV)             & $89.37^{+0.47}_{-0.45}$ & $79.55^{+0.68}_{-0.64}$ & $69.70^{+0.90}_{-0.85}$ & $61.07^{+1.05}_{-0.98}$ & $51.51^{+1.25}_{-1.21}$ & $40.34^{+1.58}_{-1.55}$ \\ \midrule
-% \ce{^{nat}Nb}(p,x)\ce{^{85}Y}  & $0.828\pm0.051$         & $0.724\pm0.080$         & $0.736\pm0.080$         & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\
-% \ce{^{nat}Nb}(p,x)\ce{^{87}Y}  & $0.746\pm0.063$         & $0.865\pm0.063$         & $0.893\pm0.063$         & $0.936\pm0.070$         & $0.961\pm0.075$         & $0.676\pm0.065$         \\
-% \ce{^{nat}Nb}(p,x)\ce{^{89}Nb} & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    & $0.193\pm0.021$         & $0.130\pm0.011$         & --\cmmnt{\hrulefill}    & --\cmmnt{\hrulefill}    \\ \bottomrule
-% \end{tabular}
-% }
-% \end{table}
-% 
-% 
-% 
-% \textred{Placeholder text follows...fill in actual discussion of results...}
-% 
-% % lee:
-% % 
-% % In addition to the interest in the production of 51,52 Mn for PET research, this experiment offered
-% % an opportunity to study the distribution of angular momentum in compound nuclear and direct
-% % pre-equilibrium reactions via observation of the 52g Mn (t ½ =5.591±0.003 d; J π =6 + ) to 52m Mn
-% % (t ½ =21.1±0.2 m; J π =2 + ) ratio. These results indicated were presented at the University of Oslo in
-% % May 2017 5 and indicate that the constant
-% % temperature nuclear level density model
-% % which has had the greatest success at
-% % reproducing most low-energy nuclear
-% % reaction data fails to reproduce the
-% % deposition of angular momentum at both
-% % compound and pre-compound energies
-% % (see figure 3). This result will be
-% % discussed in greater detail in Mr. Andrew
-% % Voyles’ doctoral dissertation, which is
-% % expected to be completed by May 2018.
-% 
-% 
-% 
-% These results have several notable features.
-% The various \ce{^{nat}Cu}(p,x) cross sections measured here are in excellent agreement with the body of measurements in the literature,  but have been measured nearly exclusively with the highest precision to date.
-% Similarly, the various \ce{^{nat}Nb}(p,x) cross sections measured here are in excellent agreement with literature data, which is far more sparse in the 40--90\,MeV region than for \ce{^{nat}Cu}(p,x) ---  fewer than three existing measurements have been performed for the majority of the reactions presented here.
-% Indeed,  the \ce{^{nat}Nb}(p,x)\ce{^{83}Sr}, \ce{^{nat}Nb}(p,x)\ce{^{85}Y}, \ce{^{nat}Nb}(p,x)\ce{^{89}Nb}, \ce{^{nat}Nb}(p,x)\ce{^{90}Mo}, \ce{^{nat}Nb}(p,x)\ce{^{91m}Nb}, and \ce{^{nat}Nb}(p,x)\ce{^{98m}Mo} reactions each possess no more than a total of three data points in this energy region.
-% Not only do the \ce{^{nat}Nb}(p,x) measurements in this work fill in the sparse data in this energy region, but they have been measured with the highest precision relative to existing literature data.
-% 
-% 
-% 
-% % Furthermore, t
-% This work presents the first measurements of several observables in 
-% % these mass regions.
-% % This work reports the first experimental measurement of
-% this mass region, including the \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction in the 40--90\,MeV region, 
-% % It also represents  the first measurement of 
-% the independent cross section for       \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and the \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$)  isomer branching ratio via \ce{^{nat}Cu}(p,x).  
-% The cumulative cross sections from these data are also consistent with existing measurements of the cumulative \ce{^{nat}Cu}(p,x)\ce{^{52}Mn} cross section.
-% Similarly, this work offers the first measurement of the independent cross sections for \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y},  as well as the first measurement of the     \ce{^{85\text{m}}Y} (\nicefrac{9}{2}$^+$) / \ce{^{85\text{g}}Y}   (\nicefrac{1}{2}$^-$)
-% % (${^{1}/_{2}}^{-}$)
-% % ($\sfrac{1}{2}^-$) 
-% isomer branching ratio via \ce{^{nat}Nb}(p,x).
-% 
-% 
-% \textred{Comment on details of 51/52Mn production here...}
-% 
-% 
-% Notably, this work is the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100\,MeV to date, with cross sections measured  at the 4--6\% uncertainty level.
-% This is important, as it presents the first step towards characterizing this reaction for use as a proton monitor reaction standard below 100\,MeV.
-% % The quantification of \ce{^{90}Mo} activity proved to be one of the most straightforward of all reaction products observed in this work.
-% \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} can only be populated through the (p,4n) reaction channel, so no corrections for (n,x) contamination channels or decay down the A=90 isobar are needed.
-% % , which makes activity quantification trivial.
-% % In addition, 
-% \ce{^{90}Mo}  possesses seven strong, distinct gamma lines which can easily  be used for its identification and quantification.
-% Finally, the production of \ce{^{90}Mo}  in the 40--90\,MeV region is quite strong, with a peak cross section of approximately 120 mb.
-% Combining the reaction yield and gamma abundance, the use of approximately 23\,mg/cm$^2$ Nb targets easily provided sufficient counting statistics for activity quantification in the 40--90\,MeV region.
-% This result presents the first step towards the use of \ce{^{90}Mo} as a clean and precise   charged particle monitor reaction standard in irradiations up to approximately 24\,h in duration.
-% 
-% 
-% 
-% \textred{Placeholder text follows...Comment on production pathways of medical radionuclides...}
-% 
-% 
-% 
-% In addition to the $^\text{nat}$Nb(p,x)\ce{^{90}Mo} measurement, this experiment has also yielded measurements of  a number of additional  emerging radionuclides with medical applications.
-% These include the non-standard positron emitters 
-% \ce{^{57}Ni} \cite{PMID:7632762,zweit1996medium,Graves2016,Rosch2014}, 
-% \ce{^{64}Cu} \cite{Lewis2003,Bandari2014,mp500671j,Szelecsenyi1993,Aslam2009,Hilgers2003,Szelecsenyi2005,Voyles2017},  \ce{^{86}Y} \cite{Valdovinos2017,Nickles2003,Qaim2008,QaimSyedM2011,Rosch1993,doi:10.1139/v67-193,levkovski1991cross,Johnson2015,Singh2013,Kiselev1974,Kandil2009}, 
-% \ce{^{89}Zr}  \cite{Verel2003,Dijkers2009,Dijkers2010,PhysRevC.38.1624,Omara2009},  
-% \ce{^{90}Nb} \cite{Busse2002,Radchenko2012},  
-% % the $\beta^-$-therapy agent  \ce{^{64}Cu},  
-% and the Auger-therapy agent \ce{^{82\text{m}}Rb} \cite{Kovacs1991,Titarenko2011}. 
-% Production of these radionuclides offers no major advantages over established pathways, with the generally lower yields and radioisotopic purities failing to justify the convenience of natural targets  via   \ce{^{nat}Cu}(p,x) and  \ce{^{nat}Nb}(p,x). 
-% The one possible exception to this trend is the non-standard positron emitter \ce{^{57}Ni} ($t_{1/2}=35.60\pm0.06$ h, $\epsilon$=100\% to \ce{^{57}Co} \cite{Bhat1998}) --- the \ce{^{57}Ni}/\ce{^{56}Ni} ratio of production rates is approximately 290 at 61.58\,MeV, and varies from 45--75 at the 70--90\,MeV positions.
-% This \ce{^{nat}Cu}(p,x) route offers both higher yield and higher radioisotopic purity over the established  \ce{^{nat}Co}(p,3n) pathway, which suffers from approximately fivefold greater  \ce{^{56}Ni} contamination \cite{MICHEL1997153,Ditrói2013}.
-% 
-% 
-% 
-% 
-% \subsection{Comparison of reaction modeling with experimental results}
+% In addition to the interest in the production of 51,52 Mn for PET research, this experiment offered
+% an opportunity to study the distribution of angular momentum in compound nuclear and direct
+% pre-equilibrium reactions via observation of the 52g Mn (t ½ =5.591±0.003 d; J π =6 + ) to 52m Mn
+% (t ½ =21.1±0.2 m; J π =2 + ) ratio. These results indicated were presented at the University of Oslo in
+% May 2017 5 and indicate that the constant
+% temperature nuclear level density model
+% which has had the greatest success at
+% reproducing most low-energy nuclear
+% reaction data fails to reproduce the
+% deposition of angular momentum at both
+% compound and pre-compound energies
+% (see figure 3). This result will be
+% discussed in greater detail in Mr. Andrew
+% Voyles’ doctoral dissertation, which is
+% expected to be completed by May 2018.
+
+
+
+These results have several notable features.
+The various \ce{^{nat}Cu}(p,x) cross sections measured here are in excellent agreement with the body of measurements in the literature,  but have been measured nearly exclusively with the highest precision to date.
+Similarly, the various \ce{^{nat}Nb}(p,x) cross sections measured here are in excellent agreement with literature data, which is far more sparse in the 40--90\,MeV region than for \ce{^{nat}Cu}(p,x) ---  fewer than three existing measurements have been performed for the majority of the reactions presented here.
+Indeed,  the \ce{^{nat}Nb}(p,x)\ce{^{83}Sr}, \ce{^{nat}Nb}(p,x)\ce{^{85}Y}, \ce{^{nat}Nb}(p,x)\ce{^{89}Nb}, \ce{^{nat}Nb}(p,x)\ce{^{90}Mo}, \ce{^{nat}Nb}(p,x)\ce{^{91m}Nb}, and \ce{^{nat}Nb}(p,x)\ce{^{98m}Mo} reactions each possess no more than a total of three data points in this energy region.
+Not only do the \ce{^{nat}Nb}(p,x) measurements in this work fill in the sparse data in this energy region, but they have been measured with the highest precision relative to existing literature data.
+
+
+
+% Furthermore, t
+This work presents the first measurements of several observables in 
+% these mass regions.
+% This work reports the first experimental measurement of
+this mass region, including the \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction in the 40--90\,MeV region, 
+% It also represents  the first measurement of 
+the independent cross section for       \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and the \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$)  isomer branching ratio via \ce{^{nat}Cu}(p,x).  
+The cumulative cross sections from these data are also consistent with existing measurements of the cumulative \ce{^{nat}Cu}(p,x)\ce{^{52}Mn} cross section.
+Similarly, this work offers the first measurement of the independent cross sections for \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y},  as well as the first measurement of the     \ce{^{85\text{m}}Y} (\nicefrac{9}{2}$^+$) / \ce{^{85\text{g}}Y}   (\nicefrac{1}{2}$^-$)
+% (${^{1}/_{2}}^{-}$)
+% ($\sfrac{1}{2}^-$) 
+isomer branching ratio via \ce{^{nat}Nb}(p,x).
+
+
+\textred{Comment on details of 51/52Mn production here...}
+
+
+Notably, this work is the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100\,MeV to date, with cross sections measured  at the 4--6\% uncertainty level.
+This is important, as it presents the first step towards characterizing this reaction for use as a proton monitor reaction standard below 100\,MeV.
+% The quantification of \ce{^{90}Mo} activity proved to be one of the most straightforward of all reaction products observed in this work.
+\ce{^{nat}Nb}(p,x)\ce{^{90}Mo} can only be populated through the (p,4n) reaction channel, so no corrections for (n,x) contamination channels or decay down the A=90 isobar are needed.
+% , which makes activity quantification trivial.
+% In addition, 
+\ce{^{90}Mo}  possesses seven strong, distinct gamma lines which can easily  be used for its identification and quantification.
+Finally, the production of \ce{^{90}Mo}  in the 40--90\,MeV region is quite strong, with a peak cross section of approximately 120 mb.
+Combining the reaction yield and gamma abundance, the use of approximately 23\,mg/cm$^2$ Nb targets easily provided sufficient counting statistics for activity quantification in the 40--90\,MeV region.
+This result presents the first step towards the use of \ce{^{90}Mo} as a clean and precise   charged particle monitor reaction standard in irradiations up to approximately 24\,h in duration.
+
+
+
+\textred{Placeholder text follows...Comment on production pathways of medical radionuclides...}
+
+
+
+In addition to the $^\text{nat}$Nb(p,x)\ce{^{90}Mo} measurement, this experiment has also yielded measurements of  a number of additional  emerging radionuclides with medical applications.
+These include the non-standard positron emitters 
+\ce{^{57}Ni} \cite{PMID:7632762,zweit1996medium,Graves2016,Rosch2014}, 
+\ce{^{64}Cu} \cite{Lewis2003,Bandari2014,mp500671j,Szelecsenyi1993,Aslam2009,Hilgers2003,Szelecsenyi2005,Voyles2017},  \ce{^{86}Y} \cite{Valdovinos2017,Nickles2003,Qaim2008,QaimSyedM2011,Rosch1993,doi:10.1139/v67-193,levkovski1991cross,Johnson2015,Singh2013,Kiselev1974,Kandil2009}, 
+\ce{^{89}Zr}  \cite{Verel2003,Dijkers2009,Dijkers2010,PhysRevC.38.1624,Omara2009},  
+\ce{^{90}Nb} \cite{Busse2002,Radchenko2012},  
+% the $\beta^-$-therapy agent  \ce{^{64}Cu},  
+and the Auger-therapy agent \ce{^{82\text{m}}Rb} \cite{Kovacs1991,Titarenko2011}. 
+Production of these radionuclides offers no major advantages over established pathways, with the generally lower yields and radioisotopic purities failing to justify the convenience of natural targets  via   \ce{^{nat}Cu}(p,x) and  \ce{^{nat}Nb}(p,x). 
+The one possible exception to this trend is the non-standard positron emitter \ce{^{57}Ni} ($t_{1/2}=35.60\pm0.06$ h, $\epsilon$=100\% to \ce{^{57}Co} \cite{Bhat1998}) --- the \ce{^{57}Ni}/\ce{^{56}Ni} ratio of production rates is approximately 290 at 61.58\,MeV, and varies from 45--75 at the 70--90\,MeV positions.
+This \ce{^{nat}Cu}(p,x) route offers both higher yield and higher radioisotopic purity over the established  \ce{^{nat}Co}(p,3n) pathway, which suffers from approximately fivefold greater  \ce{^{56}Ni} contamination \cite{MICHEL1997153,Ditrói2013}.
+
+
+
+
+\subsection{Comparison of reaction modeling with experimental results}
+
+\textred{PLACEHOLDER TEXT -- }
+
+\textred{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse urna diam, bibendum eu venenatis sit amet, vulputate in mi. Sed elit ex, aliquet in pharetra efficitur, mattis vel odio. Donec a augue lectus. Vestibulum fermentum rutrum justo, non imperdiet risus iaculis vitae. Aliquam non quam nec dui scelerisque bibendum rhoncus sed tellus. Aenean fermentum ullamcorper turpis, et gravida diam feugiat a. Nam nec dignissim massa. Morbi ultrices at neque in eleifend. Duis non lobortis ipsum, sit amet lobortis nisl. In ultrices posuere volutpat. Nunc mattis libero porttitor tortor mollis, nec tincidunt lacus sollicitudin. Sed vulputate at justo quis sodales. Nulla risus lorem, pellentesque a mauris ornare, varius maximus nulla. Aliquam tempus blandit ex. Suspendisse quis imperdiet sapien, nec egestas magna. Nam eu molestie nibh.}
 % 
 % 
 % 
@@ -849,24 +851,25 @@ E$_\text{p}$ (MeV)&	\makecell{53.31\\$\pm$0.61} &	\makecell{46.48\\$\pm$0.68} &	
 % % \cite{add_level_density_models_here}.
 % The EGSM densities are normalized to $D_0$ and the discrete levels, but in such a way that only the level density below the neutron separation energy is  effected by the discrete levels chosen for the normalization.  
 % All three codes use a two-exciton phenomenological model to calculate the pre-equilibrium cross section, but the specific implementation differs between the codes. 
-% 
-% 
-% % \def\arraystretch{1.5}
-% \begin{table}
-%  \caption{Default settings for the reactions codes}
-%  \label{tab:fe_defaults}
-%  \resizebox{\textwidth}{!}{%
-% \begin{tabular}{ c c c c}
-% 
-%  \underline{Code Version} & \underline{Proton/Neutron Optical Model} & \underline{Alpha Optical Model}  & \underline{E1 $\gamma$SF Model}  \\ 
-%  EMPIRE-3.2.3\cite{Herman2007}       & Koning-Delaroche\cite{Koning2003} & Avrigeanu(2009)\cite{Avrigeanu2009}       & Modified Lorentzian\cite{belgya2006handbook}  \\  
-%  TALYS-1.8\cite{Koning2012}          & Koning-Delaroche & Specific folded potential\cite{Koning2012}      & Brink-Axel Lorentzian\cite{Koning2012}   \\
-%   CoH-3.5.1\cite{kawano2003coh,KAWANO2010} & Koning-Delaroche     & Avrigeanu(1994)\cite{Avrigeanu1994} & Generalized Lorentzian\cite{kawano2003coh,KAWANO2010}
-%   
-% \end{tabular}
-% }
-% \end{table}
-% 
+
+
+% \def\arraystretch{1.5}
+\begin{table}
+ \caption{Default settings for the reactions codes}
+ \label{tab:fe_defaults}
+ \resizebox{\textwidth}{!}{%
+\begin{tabular}{ c c c c}
+
+ \underline{Code Version} & \underline{Proton/Neutron Optical Model} & \underline{Alpha Optical Model}  & \underline{E1 $\gamma$SF Model}  \\ 
+ EMPIRE-3.2.3\cite{Herman2007}       & Koning-Delaroche\cite{Koning2003} & Avrigeanu(2009)\cite{Avrigeanu2009}       & Modified Lorentzian\cite{belgya2006handbook}  \\  
+ TALYS-1.8\cite{Koning2012}          & Koning-Delaroche & Specific folded potential\cite{Koning2012}      & Brink-Axel Lorentzian\cite{Koning2012}   \\
+  CoH-3.5.1\cite{kawano2003coh,KAWANO2010} & Koning-Delaroche     & Avrigeanu(1994)\cite{Avrigeanu1994} & Generalized Lorentzian\cite{kawano2003coh,KAWANO2010} \\
+  ALICE-2017\cite{Blann1996}     &   \textred{?????}    &   \textred{?????}    &   \textred{?????}
+  
+\end{tabular}
+}
+\end{table}
+
 % % The modeling of several of the \ce{^{93}Nb} residual production cross sections are studied in detail here. 
 % % Only total channel residual 
 % Given the large number of exit channels in this data set, we will limit our discussion to  cross sections for the production of a specific residual nucleus with experimental data through the full rise and fall of the peak, 
@@ -895,37 +898,37 @@ E$_\text{p}$ (MeV)&	\makecell{53.31\\$\pm$0.61} &	\makecell{46.48\\$\pm$0.68} &	
 % The \ce{^{90}Nb} production cross section exhibits a persistent pre-equilibrium \enquote{tail} that keeps the channel open  well after the compound cross section has fallen away. 
 % TALYS, TENDL, and CoH seem to have the correct shape for this pre-equilibrium cross section, with magnitudes that are just slightly too low.
 % EMPIRE, however, does not level off  as much as the data and the other codes are seen to, and misses the high-energy data points.
-% 
-% \begin{figure}
-%  \centering
-%  \includegraphics[width=0.5\linewidth]{./figures/51Mn_px.pdf}
-%  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
-%  \caption{Measured \ce{^{93}Nb}(p,x)\ce{^{86}Y} cross section, with the \ce{^{93}Nb}(p,$\alpha$p3n)\ce{^{86}Y} reaction channel visibly peaking at approximately \mbox{70 MeV}.}
-%  \label{fig:51Mn}
-% \end{figure}
-% 
-% 
-% 
-% 
-% \begin{figure}
-%  \centering
-%  \includegraphics[width=0.5\linewidth]{./figures/90Mo.pdf}
-%  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
-%  \caption{Measured \ce{^{93}Nb}(p,x)\ce{^{90}Mo} cross section, with the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} reaction channel visibly peaking at approximately \mbox{50 MeV}.}
-%  \label{fig:temp_90Mo}
-% \end{figure}
-% 
-% 
-% \begin{figure}
-%  \centering
-%  \includegraphics[width=0.5\linewidth]{./figures/90Nb.pdf}
-%  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
-%  \caption{Measured \ce{^{93}Nb}(p,x)\ce{^{90}Nb} cross section, with the \ce{^{93}Nb}(p,p3n)\ce{^{90}Nb} reaction channel visibly peaking at approximately \mbox{50 MeV}.}
-%  \label{fig:temp_90Nb}
-% \end{figure}
-% 
-% 
-% 
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{./figures/51Mn.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} cross section, with the \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} reaction channel visibly peaking at approximately \mbox{15 MeV}.}
+ \label{fig:51Mn}
+\end{figure}
+
+
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{./figures/52mMn.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn} cross section, with the \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52m}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52m}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.}
+ \label{fig:temp_52mMn}
+\end{figure}
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{./figures/52Mn.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} cross section, with \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.}
+ \label{fig:temp_52Mn}
+\end{figure}
+
+
+
 % 
 % In all three channels, the TALYS, TENDL, and CoH calculations rise, peak, and fall at lower energies than the data, while EMPIRE calculates the peak to occur at higher energies.
 % For \ce{^{90}Mo}, the EMPIRE peak is representative of the data.
@@ -942,23 +945,23 @@ E$_\text{p}$ (MeV)&	\makecell{53.31\\$\pm$0.61} &	\makecell{46.48\\$\pm$0.68} &	
 
 
  
-%  \section{\label{sec:conclusions_fe}Conclusions}
-%  
-% 
-% We present here a set of measurements of \textred{38} cross sections for the \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x) reactions up to 55\,MeV, as well as  independent measurements of \textred{five} isomer branching ratios.
+ \section{\label{sec:conclusions_fe}Conclusions}
+ 
+
+We present here a set of measurements of 34 cross sections for the \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x) reactions up to 55\,MeV, as well as  independent measurements of three isomer branching ratios.
+Nearly all cross sections have been reported with higher precision than previous measurements.
+\textred{We report the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90\,MeV region.}
+% We advise that future activation experiments avoid the use of silicone-based adhesives, particularly in conjunction with aluminum monitor foils, to avoid reporting an enhanced fluence due to \ce{^{22,24}Na} contamination.
+We also use these measurements to illustrate the deficiencies in the current state of  reaction modeling up to 55\,Me for  \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x) reactions.
+Finally, this work provides another example of the usefulness of the recently-described variance minimization techniques for reducing energy uncertainties in stacked target charged particle irradiation experiments.
+
+
+% We present here a set of 38 measurements of cross sections for the \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40--90 MeV, as well as five independent measurements of isomer branching ratios.
 % Nearly all cross sections have been reported with higher precision than previous measurements.
-% \textred{We report the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90\,MeV region.}
-% % We advise that future activation experiments avoid the use of silicone-based adhesives, particularly in conjunction with aluminum monitor foils, to avoid reporting an enhanced fluence due to \ce{^{22,24}Na} contamination.
-% We also use these measurements to illustrate the deficiencies in the current state of  reaction modeling up to 55\,Me for V \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x) reactions.
+% We report the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90\,MeV region.
+% We advise that future activation experiments avoid the use of silicone-based adhesives, particularly in conjunction with aluminum monitor foils, to avoid reporting an enhanced fluence due to \ce{^{22,24}Na} contamination.
+% We also use these measurements to illustrate the deficiencies in the current state of  reaction modeling for 40--90\,MeV \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
 % Finally, this work provides another example of the usefulness of the recently-described variance minimization techniques for reducing energy uncertainties in stacked target charged particle irradiation experiments.
-% 
-% 
-% % We present here a set of 38 measurements of cross sections for the \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40--90 MeV, as well as five independent measurements of isomer branching ratios.
-% % Nearly all cross sections have been reported with higher precision than previous measurements.
-% % We report the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90\,MeV region.
-% % We advise that future activation experiments avoid the use of silicone-based adhesives, particularly in conjunction with aluminum monitor foils, to avoid reporting an enhanced fluence due to \ce{^{22,24}Na} contamination.
-% % We also use these measurements to illustrate the deficiencies in the current state of  reaction modeling for 40--90\,MeV \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
-% % Finally, this work provides another example of the usefulness of the recently-described variance minimization techniques for reducing energy uncertainties in stacked target charged particle irradiation experiments.
 
 
 

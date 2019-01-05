@@ -825,7 +825,24 @@ This \ce{^{nat}Cu}(p,x) route offers both higher yield and higher radioisotopic 
 
 
 
-% \subsection{Comparison of reaction modeling with experimental results}
+\subsection{Comparison of reaction modeling with experimental results}
+
+
+Quick observations:
+
+\begin{enumerate}
+ \item Modeling on Fe is significantly better than for Cu/Ti
+ \item On the whole, ALICE seems to do the best job overall
+ \item (p,$\alpha$x) channels are done fairly well, (p,2p2nx) are worse, and (p,$\alpha$xn) are really lousy
+ \item Location and shape of rising edges/compound peaks appears much better than in the Nb IPF paper, possibly due to easier modeling in lower energy regime?
+ \item Amplitudes of excitation function are still off within factor of 2--3
+ \item Isomer branching ratios are (surprise, surprise) really bad.  Ti(p,x)\ce{^{44}Sc} is the best, but all three miss the key shape and features
+\end{enumerate}
+
+
+\textred{PLACEHOLDER TEXT -- }
+
+\textred{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse urna diam, bibendum eu venenatis sit amet, vulputate in mi. Sed elit ex, aliquet in pharetra efficitur, mattis vel odio. Donec a augue lectus. Vestibulum fermentum rutrum justo, non imperdiet risus iaculis vitae. Aliquam non quam nec dui scelerisque bibendum rhoncus sed tellus. Aenean fermentum ullamcorper turpis, et gravida diam feugiat a. Nam nec dignissim massa. Morbi ultrices at neque in eleifend. Duis non lobortis ipsum, sit amet lobortis nisl. In ultrices posuere volutpat. Nunc mattis libero porttitor tortor mollis, nec tincidunt lacus sollicitudin. Sed vulputate at justo quis sodales. Nulla risus lorem, pellentesque a mauris ornare, varius maximus nulla. Aliquam tempus blandit ex. Suspendisse quis imperdiet sapien, nec egestas magna. Nam eu molestie nibh.}
 % 
 % 
 % 
@@ -847,24 +864,25 @@ This \ce{^{nat}Cu}(p,x) route offers both higher yield and higher radioisotopic 
 % % \cite{add_level_density_models_here}.
 % The EGSM densities are normalized to $D_0$ and the discrete levels, but in such a way that only the level density below the neutron separation energy is  effected by the discrete levels chosen for the normalization.  
 % All three codes use a two-exciton phenomenological model to calculate the pre-equilibrium cross section, but the specific implementation differs between the codes. 
-% 
-% 
-% % \def\arraystretch{1.5}
-% \begin{table}
-%  \caption{Default settings for the reactions codes}
-%  \label{tab:fe_defaults}
-%  \resizebox{\textwidth}{!}{%
-% \begin{tabular}{ c c c c}
-% 
-%  \underline{Code Version} & \underline{Proton/Neutron Optical Model} & \underline{Alpha Optical Model}  & \underline{E1 $\gamma$SF Model}  \\ 
-%  EMPIRE-3.2.3\cite{Herman2007}       & Koning-Delaroche\cite{Koning2003} & Avrigeanu(2009)\cite{Avrigeanu2009}       & Modified Lorentzian\cite{belgya2006handbook}  \\  
-%  TALYS-1.8\cite{Koning2012}          & Koning-Delaroche & Specific folded potential\cite{Koning2012}      & Brink-Axel Lorentzian\cite{Koning2012}   \\
-%   CoH-3.5.1\cite{kawano2003coh,KAWANO2010} & Koning-Delaroche     & Avrigeanu(1994)\cite{Avrigeanu1994} & Generalized Lorentzian\cite{kawano2003coh,KAWANO2010}
-%   
-% \end{tabular}
-% }
-% \end{table}
-% 
+
+
+% \def\arraystretch{1.5}
+\begin{table}
+ \caption{Default settings for the reactions codes}
+ \label{tab:fe_defaults}
+ \resizebox{\textwidth}{!}{%
+\begin{tabular}{ c c c c}
+
+ \underline{Code Version} & \underline{Proton/Neutron Optical Model} & \underline{Alpha Optical Model}  & \underline{E1 $\gamma$SF Model}  \\ 
+ EMPIRE-3.2.3\cite{Herman2007}       & Koning-Delaroche\cite{Koning2003} & Avrigeanu(2009)\cite{Avrigeanu2009}       & Modified Lorentzian\cite{belgya2006handbook}  \\  
+ TALYS-1.8\cite{Koning2012}          & Koning-Delaroche & Specific folded potential\cite{Koning2012}      & Brink-Axel Lorentzian\cite{Koning2012}   \\
+  CoH-3.5.1\cite{kawano2003coh,KAWANO2010} & Koning-Delaroche     & Avrigeanu(1994)\cite{Avrigeanu1994} & Generalized Lorentzian\cite{kawano2003coh,KAWANO2010} \\
+  ALICE-2017\cite{Blann1996}     &   \textred{?????}    &   \textred{?????}    &   \textred{?????}
+  
+\end{tabular}
+}
+\end{table}
+
 % % The modeling of several of the \ce{^{93}Nb} residual production cross sections are studied in detail here. 
 % % Only total channel residual 
 % Given the large number of exit channels in this data set, we will limit our discussion to  cross sections for the production of a specific residual nucleus with experimental data through the full rise and fall of the peak, 
@@ -893,37 +911,37 @@ This \ce{^{nat}Cu}(p,x) route offers both higher yield and higher radioisotopic 
 % The \ce{^{90}Nb} production cross section exhibits a persistent pre-equilibrium \enquote{tail} that keeps the channel open  well after the compound cross section has fallen away. 
 % TALYS, TENDL, and CoH seem to have the correct shape for this pre-equilibrium cross section, with magnitudes that are just slightly too low.
 % EMPIRE, however, does not level off  as much as the data and the other codes are seen to, and misses the high-energy data points.
-% 
-% \begin{figure}
-%  \centering
-%  \includegraphics[width=0.5\linewidth]{./figures/51Mn_px.pdf}
-%  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
-%  \caption{Measured \ce{^{93}Nb}(p,x)\ce{^{86}Y} cross section, with the \ce{^{93}Nb}(p,$\alpha$p3n)\ce{^{86}Y} reaction channel visibly peaking at approximately \mbox{70 MeV}.}
-%  \label{fig:51Mn}
-% \end{figure}
-% 
-% 
-% 
-% 
-% \begin{figure}
-%  \centering
-%  \includegraphics[width=0.5\linewidth]{./figures/90Mo.pdf}
-%  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
-%  \caption{Measured \ce{^{93}Nb}(p,x)\ce{^{90}Mo} cross section, with the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} reaction channel visibly peaking at approximately \mbox{50 MeV}.}
-%  \label{fig:temp_90Mo}
-% \end{figure}
-% 
-% 
-% \begin{figure}
-%  \centering
-%  \includegraphics[width=0.5\linewidth]{./figures/90Nb.pdf}
-%  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
-%  \caption{Measured \ce{^{93}Nb}(p,x)\ce{^{90}Nb} cross section, with the \ce{^{93}Nb}(p,p3n)\ce{^{90}Nb} reaction channel visibly peaking at approximately \mbox{50 MeV}.}
-%  \label{fig:temp_90Nb}
-% \end{figure}
-% 
-% 
-% 
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{./figures/51Mn.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} cross section, with the \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} reaction channel visibly peaking at approximately \mbox{15 MeV}.}
+ \label{fig:51Mn}
+\end{figure}
+
+
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{./figures/52mMn.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn} cross section, with the \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52m}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52m}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.}
+ \label{fig:temp_52mMn}
+\end{figure}
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{./figures/52Mn.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} cross section, with \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.}
+ \label{fig:temp_52Mn}
+\end{figure}
+
+
+
 % 
 % In all three channels, the TALYS, TENDL, and CoH calculations rise, peak, and fall at lower energies than the data, while EMPIRE calculates the peak to occur at higher energies.
 % For \ce{^{90}Mo}, the EMPIRE peak is representative of the data.
