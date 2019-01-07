@@ -792,46 +792,71 @@ The cumulative cross sections from these data are also consistent with existing 
 % ($\sfrac{1}{2}^-$) 
 % isomer branching ratio via \ce{^{nat}Nb}(p,x).
 
-\textred{Comment on possible monitor reactions  here...}
+% \textred{Comment on possible monitor reactions  here...}
 
 
-Several of the activities produced via \ce{^{nat}Fe}(p,x) ($t_{1/2}=77.236\pm0.026$ d, $\epsilon$=100\% to \ce{^{56}Fe} \cite{Junde2011}) could be useful as experimental monitor reactions. 
-In particular, \ce{^{nat}Fe}(p,x)\ce{^{56}Co} is a strongly-fed reaction channel (peak cross section of approximately 400\,mb near 12\,MeV), a sufficiently-long lifetime permitting offline gamma spectrometry,  and  cannot be populated via secondary neutrons incident upon the monitor target. 
-It possesses a number of intense gamma-rays, which are distinct from those populated by daughter states in the decay of  \ce{^{Mn}}, and the gammas which are produced both in the decay of  \ce{^{56}Co} and  \ce{^{56}Mn} may be easily resolved based on differences in intensity and lifetime. 
-Similarly,  \ce{^{nat}Fe}(p,x)\ce{^{54}Mn}  ($t_{1/2}=312.20\pm0.020$ d, $\epsilon$=100\% to \ce{^{54}Cr} has a convenient lifetime and strong cross section (peak of approximately 160\,mb near 40\,MeV), and is immune from two different reactions on the same monitor foil leading to states in the same daughter nuclide.
+Several of the activities produced via \ce{^{nat}Fe}(p,x)  could be useful as experimental monitor reactions. 
+In particular, \ce{^{nat}Fe}(p,x)\ce{^{56}Co} ($t_{1/2}=77.236\pm0.026$ d, $\epsilon$=100\% to \ce{^{56}Fe} \cite{Junde2011})  is a strongly-fed reaction channel (peak cross section of approximately 400\,mb near 12\,MeV), a sufficiently-long lifetime permitting offline gamma spectrometry,  and  cannot be populated via secondary neutrons incident upon the monitor target. 
+It possesses a number of intense gamma-rays, which are distinct from those populated by daughter states in the decay of  \ce{^{56}Mn}, and the gammas which are produced both in the decay of  \ce{^{56}Co} and  \ce{^{56}Mn} may be easily resolved based on differences in intensity and lifetime. 
+Similarly,  \ce{^{nat}Fe}(p,x)\ce{^{54}Mn}  ($t_{1/2}=312.20\pm0.020$ d, $\epsilon$=100\% to \ce{^{54}Cr} \cite{Dong2014}) has a convenient lifetime and strong cross section (peak of approximately 160\,mb near 40\,MeV), and is immune from two different reactions on the same monitor foil leading to states in the same daughter nuclide.
+This reaction could be useful for intermediate- to high-energy protons ($E_p \geq$30\,MeV), but would be susceptible to production via the high-energy secondary neutrons  (threshold 12.1\,MeV off of \ce{^{56}Fe}) produced in these facilities, though (p,x) production rates should dominate (n,x) through both particle flux and cross section. 
 
 
-\textred{Comment on details of 51/52Mn production here...}
+\textred{All: feel free to add additional details of 51/52Mn production here...}
 
 
-Notably, this work is the most well-characterized measurement of the \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} reaction below 100\,MeV to date, with cross sections measured  at the 4--6\% uncertainty level.
-This is important, as it presents the first step towards characterizing this reaction for use as a proton monitor reaction standard below 100\,MeV.
+Notably, this work is the most well-characterized measurement of the \ce{^{nat}Fe}(p,x)\ce{^{51,52}Mn} reaction below 70\,MeV to date, with cross sections measured  at the 4--9\% uncertainty level.
+This is important, as it presents the first measurement of the \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} reaction,  the first measurement of the independent \ce{^{nat}Fe}(p,x)\ce{^{52m,52g}Mn} cross sections, and extends the \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} excitation function down to the lowest energy to date. 
+\ce{^{nat}Fe}(p,x)\ce{^{51}Mn} appears to offer a compelling alternative to the more established \ce{^{50}Cr}(d,x)\ce{^{51}Mn} pathway, which necessitates an enriched \ce{^{50}Cr} target to avoid radio-manganese contamination from reactions on stable isotopes of Cr \cite{Klein2000}.
+However, \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} could be used for clean production of  \ce{^{51}Mn} ($\geq$98.8\% radioisotopic purity) below 20\,MeV using the \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} channel.
+In addition, this low-energy production is accessible using the international network of small medical and research cyclotrons, enabling in-house of this short-lived ($t_{1/2}=46.2\pm0.1$ m \cite{Wang2017}) radionuclide.
+To increase yields, an enriched \ce{^{54}Fe} target could be used to take advantage of the eight-fold increase in reaction cross section for production using 40--50\,MeV protons.
+
+
+
+Likewise, \ce{Fe}(p,x) offers an interesting production pathway for  \ce{^{52}Mn}.
+Conventional production uses the low-energy \ce{^{nat}Cr}/\ce{^{52}Cr}(p,n)\ce{^{52}Mn} pathways, which offer high radioisotopic purity (approximately 99.6\%) \cite{Graves2015,Wooten2015}.
+\ce{^{nat}Fe}(p,x) offers a nearly threefold increase in production yield, but the low radioisotopic purity (99.1\% for 20--30\,MeV, decreasing to 60.8\% by 40\,MeV) at higher energies due to the opening of \ce{^{54}Mn} makes this route seem impractical.
+Much like \ce{^{51}Mn}, the use of an enriched \ce{^{54}Fe} target would prevent production of \ce{^{54}Mn}, providing a higher-yield production route over   \ce{^{nat}Cr}(p,x), with the tradeoff of requiring higher-energy protons ($\leq$35\,MeV) for production.
+It is important to note that the \ce{Fe}(p,x) route provides $\geq$60\% feeding of \ce{^{52g}Mn} ($t_{1/2}$ = 5.591$\pm$0.003\,d \cite{Dong2015}), implying that the short-lived  \ce{^{52m}Mn} ($t_{1/2}$ = 21.1$\pm$0.2\,m \cite{Dong2015}) can be easily separated through the difference in lifetime, to avoid the unfavorable gammas produced by the isomer. 
+However, if nearly pure \ce{^{52m}Mn} is desired for preclinical imaging applications, the feeding of \ce{^{52}Mn} through the $\epsilon$ decay of \ce{^{52}Fe} ($t_{1/2}$ = 8.725$\pm$0.008\,h \cite{Dong2015}) exclusively populates the isomer, making this potentially suitable for production through \enquote{milking} of a \ce{^{52}Fe} generator.
+Clearly, the use of \ce{Fe}(p,x)\ce{^{51,52}Mn} has significant untapped potential, and additional work is needed to further characterize these reaction channels for $E_p \leq$60\,MeV.
+
+
+% step towards characterizing this reaction for use as a proton monitor reaction standard below 100\,MeV.
 % The quantification of \ce{^{90}Mo} activity proved to be one of the most straightforward of all reaction products observed in this work.
-\ce{^{nat}Nb}(p,x)\ce{^{90}Mo} can only be populated through the (p,4n) reaction channel, so no corrections for (n,x) contamination channels or decay down the A=90 isobar are needed.
+% \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} can only be populated through the (p,4n) reaction channel, so no corrections for (n,x) contamination channels or decay down the A=90 isobar are needed.
 % , which makes activity quantification trivial.
 % In addition, 
-\ce{^{90}Mo}  possesses seven strong, distinct gamma lines which can easily  be used for its identification and quantification.
-Finally, the production of \ce{^{90}Mo}  in the 40--90\,MeV region is quite strong, with a peak cross section of approximately 120 mb.
-Combining the reaction yield and gamma abundance, the use of approximately 23\,mg/cm$^2$ Nb targets easily provided sufficient counting statistics for activity quantification in the 40--90\,MeV region.
-This result presents the first step towards the use of \ce{^{90}Mo} as a clean and precise   charged particle monitor reaction standard in irradiations up to approximately 24\,h in duration.
+% \ce{^{90}Mo}  possesses seven strong, distinct gamma lines which can easily  be used for its identification and quantification.
+% Finally, the production of \ce{^{90}Mo}  in the 40--90\,MeV region is quite strong, with a peak cross section of approximately 120 mb.
+% Combining the reaction yield and gamma abundance, the use of approximately 23\,mg/cm$^2$ Nb targets easily provided sufficient counting statistics for activity quantification in the 40--90\,MeV region.
+% This result presents the first step towards the use of \ce{^{90}Mo} as a clean and precise   charged particle monitor reaction standard in irradiations up to approximately 24\,h in duration.
 
 
 
-\textred{Placeholder text follows...Comment on production pathways of medical radionuclides...}
+% \textred{Placeholder text follows...Comment on production pathways of medical radionuclides...}
 
 
 
-In addition to the $^\text{nat}$Nb(p,x)\ce{^{90}Mo} measurement, this experiment has also yielded measurements of  a number of additional  emerging radionuclides with medical applications.
+In addition to the \ce{^{nat}Fe}(p,x)\ce{^{51,52}Mn} measurements, this experiment has also yielded measurements of  a number of additional  emerging radionuclides with medical applications.
 These include the non-standard positron emitters 
-\ce{^{57}Ni} \cite{PMID:7632762,zweit1996medium,Graves2016,Rosch2014}, 
-\ce{^{64}Cu} \cite{Lewis2003,Bandari2014,mp500671j,Szelecsenyi1993,Aslam2009,Hilgers2003,Szelecsenyi2005,Voyles2017},  \ce{^{86}Y} \cite{Valdovinos2017,Nickles2003,Qaim2008,QaimSyedM2011,Rosch1993,doi:10.1139/v67-193,levkovski1991cross,Johnson2015,Singh2013,Kiselev1974,Kandil2009}, 
-\ce{^{89}Zr}  \cite{Verel2003,Dijkers2009,Dijkers2010,PhysRevC.38.1624,Omara2009},  
-\ce{^{90}Nb} \cite{Busse2002,Radchenko2012},  
+\ce{^{44}Sc} \cite{Muller2013,Filosofov2010,Qaim2011}
+% \cite{Qaim2011,Qaim201731,Kolsky1998,mausner1995evaluation}.
+\ce{^{55}Co} \cite{Thisgaard2011,Zaman1996,Hermanne2000a}
+\ce{^{61}Ni} \cite{PMID:7632762,zweit1996medium,Graves2016,Rosch2014}, 
+\ce{^{61}Cu} \cite{Szelecsenyi2005a,Fukumura2004}
+\ce{^{64}Cu} \cite{Lewis2003,Bandari2014,mp500671j,Szelecsenyi1993,Aslam2009,Hilgers2003,Szelecsenyi2005,Voyles2017},
+% \ce{^{86}Y} \cite{Valdovinos2017,Nickles2003,Qaim2008,QaimSyedM2011,Rosch1993,doi:10.1139/v67-193,levkovski1991cross,Johnson2015,Singh2013,Kiselev1974,Kandil2009}, 
+% \ce{^{89}Zr}  \cite{Verel2003,Dijkers2009,Dijkers2010,PhysRevC.38.1624,Omara2009},  
+% \ce{^{90}Nb} \cite{Busse2002,Radchenko2012},  
 % the $\beta^-$-therapy agent  \ce{^{64}Cu},  
-and the Auger-therapy agent \ce{^{82\text{m}}Rb} \cite{Kovacs1991,Titarenko2011}. 
-Production of these radionuclides offers no major advantages over established pathways, with the generally lower yields and radioisotopic purities failing to justify the convenience of natural targets  via   \ce{^{nat}Cu}(p,x) and  \ce{^{nat}Nb}(p,x). 
-The one possible exception to this trend is the non-standard positron emitter \ce{^{57}Ni} ($t_{1/2}=35.60\pm0.06$ h, $\epsilon$=100\% to \ce{^{57}Co} \cite{Bhat1998}) --- the \ce{^{57}Ni}/\ce{^{56}Ni} ratio of production rates is approximately 290 at 61.58\,MeV, and varies from 45--75 at the 70--90\,MeV positions.
-This \ce{^{nat}Cu}(p,x) route offers both higher yield and higher radioisotopic purity over the established  \ce{^{nat}Co}(p,3n) pathway, which suffers from approximately fivefold greater  \ce{^{56}Ni} contamination \cite{MICHEL1997153,Ditrói2013}.
+and the $\beta^-$-therapeutic agent 
+\ce{^{47}Sc} \cite{Muller2014,Deilami-nezhad2016}
+% and the Auger-therapy agent \ce{^{82\text{m}}Rb} \cite{Kovacs1991,Titarenko2011}. 
+Production of these radionuclides offers no major advantages over established pathways, with the generally lower yields and radioisotopic purities failing to justify the convenience of natural targets  via   \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x). 
+% The one possible exception to this trend is the non-standard positron emitter \ce{^{57}Ni} ($t_{1/2}=35.60\pm0.06$ h, $\epsilon$=100\% to \ce{^{57}Co} \cite{Bhat1998}) --- the \ce{^{57}Ni}/\ce{^{56}Ni} ratio of production rates is approximately 290 at 61.58\,MeV, and varies from 45--75 at the 70--90\,MeV positions.
+% This \ce{^{nat}Cu}(p,x) route offers both higher yield and higher radioisotopic purity over the established  \ce{^{nat}Co}(p,3n) pathway, which suffers from approximately fivefold greater  \ce{^{56}Ni} contamination \cite{MICHEL1997153,Ditrói2013}.
 
 
 
