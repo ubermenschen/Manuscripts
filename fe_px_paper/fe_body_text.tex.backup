@@ -817,7 +817,7 @@ To increase yields, an enriched \ce{^{54}Fe} target could be used to take advant
 Likewise, \ce{Fe}(p,x) offers an interesting production pathway for  \ce{^{52}Mn}.
 Conventional production uses the low-energy \ce{^{nat}Cr}/\ce{^{52}Cr}(p,n)\ce{^{52}Mn} pathways, which offer high radioisotopic purity (approximately 99.6\%) \cite{Graves2015,Wooten2015}.
 \ce{^{nat}Fe}(p,x) offers a nearly threefold increase in production yield, but the low radioisotopic purity (99.1\% for 20--30\,MeV, decreasing to 60.8\% by 40\,MeV) at higher energies due to the opening of \ce{^{54}Mn} makes this route seem impractical.
-Much like \ce{^{51}Mn}, the use of an enriched \ce{^{54}Fe} target would prevent production of \ce{^{54}Mn}, providing a higher-yield production route over   \ce{^{nat}Cr}(p,x), with the tradeoff of requiring higher-energy protons ($\leq$35\,MeV) for production.
+Much like \ce{^{51}Mn}, the use of an enriched \ce{^{54}Fe} target would prevent production of \ce{^{54}Mn}, providing a higher-yield production route over   \ce{^{nat}Cr}(p,x), with the tradeoff of necessitating higher-energy protons ($\leq$35\,MeV) for production.
 It is important to note that the \ce{Fe}(p,x) route provides $\geq$60\% feeding of \ce{^{52g}Mn} ($t_{1/2}$ = 5.591$\pm$0.003\,d \cite{Dong2015}), implying that the short-lived  \ce{^{52m}Mn} ($t_{1/2}$ = 21.1$\pm$0.2\,m \cite{Dong2015}) can be easily separated through the difference in lifetime, to avoid the unfavorable gammas produced by the isomer. 
 However, if nearly pure \ce{^{52m}Mn} is desired for preclinical imaging applications, the feeding of \ce{^{52}Mn} through the $\epsilon$ decay of \ce{^{52}Fe} ($t_{1/2}$ = 8.725$\pm$0.008\,h \cite{Dong2015}) exclusively populates the isomer, making this potentially suitable for production through \enquote{milking} of a \ce{^{52}Fe} generator.
 Clearly, the use of \ce{Fe}(p,x)\ce{^{51,52}Mn} has significant untapped potential, and additional work is needed to further characterize these reaction channels for $E_p \leq$60\,MeV.
@@ -852,7 +852,7 @@ These include the non-standard positron emitters
 % \ce{^{90}Nb} \cite{Busse2002,Radchenko2012},  
 % the $\beta^-$-therapy agent  \ce{^{64}Cu},  
 and the $\beta^-$-therapeutic agent 
-\ce{^{47}Sc} \cite{Muller2014,Deilami-nezhad2016}
+\ce{^{47}Sc} \cite{Muller2014,Deilami-nezhad2016}.
 % and the Auger-therapy agent \ce{^{82\text{m}}Rb} \cite{Kovacs1991,Titarenko2011}. 
 Production of these radionuclides offers no major advantages over established pathways, with the generally lower yields and radioisotopic purities failing to justify the convenience of natural targets  via   \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x). 
 % The one possible exception to this trend is the non-standard positron emitter \ce{^{57}Ni} ($t_{1/2}=35.60\pm0.06$ h, $\epsilon$=100\% to \ce{^{57}Co} \cite{Bhat1998}) --- the \ce{^{57}Ni}/\ce{^{56}Ni} ratio of production rates is approximately 290 at 61.58\,MeV, and varies from 45--75 at the 70--90\,MeV positions.
@@ -999,18 +999,10 @@ Quick observations:
 
 We present here a set of measurements of 34 cross sections for the \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x) reactions up to 55\,MeV, as well as  independent measurements of three isomer branching ratios.
 Nearly all cross sections have been reported with higher precision than previous measurements.
-\textred{We report the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90\,MeV region.}
+We report the first measurements  for $\leq$70\,MeV protons  of the  \ce{^{nat}Fe}(p,x)\ce{^{49}Cr}, \ce{^{nat}Fe}(p,x)\ce{^{51}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn},  \ce{^{nat}Fe}(p,x)\ce{^{56}Mn}, and \ce{^{nat}Fe}(p,x)\ce{^{58m}Co} reactions, as well as the first measurement of the independent cross sections for    \ce{^{nat}Fe}(p,x)\ce{^{51}Cr}, \ce{^{nat}Fe}(p,x)\ce{^{52g}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{58g}Co}, and the \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$) and \ce{^{58\text{m}}Co} ($5^+$) / \ce{^{58\text{g}}Co}  ($2^+$)  isomer branching ratios via \ce{^{nat}Fe}(p,x).
 % We advise that future activation experiments avoid the use of silicone-based adhesives, particularly in conjunction with aluminum monitor foils, to avoid reporting an enhanced fluence due to \ce{^{22,24}Na} contamination.
 We also use these measurements to illustrate the deficiencies in the current state of  reaction modeling up to 55\,Me for  \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x) reactions.
 Finally, this work provides another example of the usefulness of the recently-described variance minimization techniques for reducing energy uncertainties in stacked target charged particle irradiation experiments.
-
-
-% We present here a set of 38 measurements of cross sections for the \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40--90 MeV, as well as five independent measurements of isomer branching ratios.
-% Nearly all cross sections have been reported with higher precision than previous measurements.
-% We report the first measurements of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, as well as the first measurement of the independent cross sections for    \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn}, and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90\,MeV region.
-% We advise that future activation experiments avoid the use of silicone-based adhesives, particularly in conjunction with aluminum monitor foils, to avoid reporting an enhanced fluence due to \ce{^{22,24}Na} contamination.
-% We also use these measurements to illustrate the deficiencies in the current state of  reaction modeling for 40--90\,MeV \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
-% Finally, this work provides another example of the usefulness of the recently-described variance minimization techniques for reducing energy uncertainties in stacked target charged particle irradiation experiments.
 
 
 
