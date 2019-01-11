@@ -3,35 +3,35 @@
 
 
 
-The next generation of nuclear medicine would appear to be based upon the production of novel, emerging radionuclides \cite{Qaim201731}. 
-The targeted and personalized nature of therapy and imaging applications using these novel radionuclides  makes possible an improvement in clinical practice, offering many patients the possibility for better survival rates and quality lives \cite{Mulford2005,Muller2014}.
+The next generation of nuclear medicine would appear to be based upon the production of novel, emerging radionuclides\,\cite{Qaim201731}. 
+The targeted and personalized nature of therapy and imaging applications using these novel radionuclides  makes possible an improvement in clinical practice, offering many patients the possibility for better survival rates and quality lives\,\cite{Mulford2005,Muller2014}.
 While the chemical and radioactive decay properties of many of these radionuclides are well-established, their broad-scale  clinical applications are reliant upon well-characterized nuclear data to facilitate large-scale   production. 
 % 
 % 
 % 
-% The future of nuclear medicine would appear to be the paradigm of personalized medicine --- targeted radionuclide therapy to spare healthy tissue \cite{Mulford2005,Qaim201731}, and theranostic medicine, which pairs an imaging isotope with a therapeutic isotope (frequently, of the same element), to provide simultaneous, real-time dose delivery and verification, leading to drastic reductions in prescribed patient dose \cite{Muller2014,Bentzen2005,Srivastava2012}. 
+% The future of nuclear medicine would appear to be the paradigm of personalized medicine --- targeted radionuclide therapy to spare healthy tissue\,\cite{Mulford2005,Qaim201731}, and theranostic medicine, which pairs an imaging isotope with a therapeutic isotope (frequently, of the same element), to provide simultaneous, real-time dose delivery and verification, leading to drastic reductions in prescribed patient dose\,\cite{Muller2014,Bentzen2005,Srivastava2012}. 
 % Other variants of theranostic medicine exist, including pre-imaging for treatment planning, or delivery of a single compound with different radioelements for imaging/therapy where the inter-element biodistribution has been validated.  
 % Change up the next sentance a bit
 % Novel applications are being explored for several radionuclides whose production methodologies are not established, but their production requires accurate, high-fidelity cross section data.
-% \cite{Qaim201731}. 
+%\,\cite{Qaim201731}. 
 % Many of these applications focus on theranostics, the use of chemically identical (or similar) imaging and therapeutic radiopharmaceuticals for treatment of disease. 
-One particular group of  emerging radionuclides are the various positron-emitting isotopes of manganese, which have been identified as having potential for a range of diagnostic applications \cite{J.2013,Graves2015,Lewis2015,PhysRevC.96.014613,Wooten2017,Hernandez2017}.
-In particular, a significant interest has been expressed in producing the emerging radionuclides \ce{^{51}Mn} for clinical use in metabolic PET studies, as well as  \ce{^{52g}Mn} for pre-clinical imaging of neural and immune processes via PET \cite{Graves2016}. 
+One particular group of  emerging radionuclides are the various positron-emitting isotopes of manganese, which have been identified as having potential for a range of diagnostic applications\,\cite{J.2013,Graves2015,Lewis2015,PhysRevC.96.014613,Wooten2017,Hernandez2017}.
+In particular, a significant interest has been expressed in producing the emerging radionuclides \ce{^{51}Mn} for clinical use in metabolic PET studies, as well as  \ce{^{52g}Mn} for pre-clinical imaging of neural and immune processes via PET\,\cite{Graves2016}. 
 As part of a larger campaign to address deficiencies in cross-cutting nuclear data needs, our group has performed a   measurement of the   nuclear excitation functions of the radionuclides \ce{^{51}Mn},   \ce{^{52m}Mn}, and \ce{^{52g}Mn}.
 This was carried out in a  thin-foil stacked-target experiment, using proton irradiation of natural iron foils with titanium and copper monitor foils.
-While recent work has been performed in the 40--100\,MeV energy region, this work seeks to complement these measurements and extend them down to reaction thresholds, to investigate the feasibility of production using the international network   of low-energy medical cyclotrons   \cite{Graves2016}. 
+While recent work has been performed in the 40--100\,MeV energy region, this work seeks to complement these measurements and extend them down to reaction thresholds, to investigate the feasibility of production using the international network   of low-energy medical cyclotrons\,\cite{Graves2016}. 
 
 
-Manganese radionuclides are desirable for radiopharmaceutical applications, as manganese is a chemically versatile element, biologically relevant, and essential in trace quantities. 
-Manganese possesses well-established biochemistry, and has been proven to be chelated well by DOTA for tracking monoclonal antibodies, with high biostability at neutral pH \cite{Graves2015}.
-\ce{^{52}Mn} ($t_{1/2}$ = 5.591$\pm$0.003\,d, $I_{\beta^+}$ = 29.4\%, $E_{\beta\text{, avg}}$ = 0.242\,MeV) has been shown to be useful for immunoPET applications, with its rapid blood clearance offering the possibility for imaging within minutes of injection \cite{Dong2015}.
+Manganese radionuclides are desirable for radiopharmaceutical applications, as manganese is a chemically versatile element that is biologically relevant and essential in trace quantities. 
+Manganese possesses well-established biochemistry, and has been proven to be chelated well by DOTA for tracking monoclonal antibodies, with high biostability at neutral pH\,\cite{Graves2015}.
+\ce{^{52}Mn} ($t_{1/2}$ = 5.591$\pm$0.003\,d, $I_{\beta^+}$ = 29.4\%, $E_{\beta\text{, avg}}$ = 0.242\,MeV) has been shown to be useful for immunoPET applications, with its rapid blood clearance offering the possibility for imaging within minutes of injection\,\cite{Dong2015}.
 Its lifetime allows for immunoPET imaging up to 2--3 weeks after administration, giving \ce{^{52}Mn} a longer duration for useful imaging  than the more established immunoPET agents \ce{^{89}Zr} or   \ce{^{64}Cu}. 
-\ce{^{52}Mn}  has high uptake in the heart, liver, kidneys, and pancreas, making it a useful diagnostic agent for pancreatic $\beta$-cell, insulinoma, and porphysome imaging \cite{Graves2015}. 
-However, its  long lifetime and unfavorable decay gamma-rays (notably, its  744.233\,keV [$I_\gamma = 90.0\,\pm\,1.2\%$], 935.544\,keV [$I_\gamma = 94.5\,\pm\,1.3\%$], and 1434.092\,keV [$I_\gamma = 100.0 \pm 1.4\%$] lines) make it undesirable for clinical applications, but easily shipped worldwide and highly suitable for pre-clinical imaging \cite{Dong2015}.
-The \ce{^{52m}Mn} isomer ($t_{1/2}$ = 21.1$\pm$0.2\,min, $I_{\beta^+}$ = 96.6\%, $E_{\beta\text{, avg}}$ = 1.172\,MeV) offers a much stronger positron emission branch than \ce{^{52g}Mn}, but its short lifetime makes production and handling difficult, and its  high-intensity gamma emission (1434.06\,keV [$I_\gamma = 98.2\,\pm\,0.5\%$]) contributes significantly to patient dose  \cite{Dong2015}.
-Another emerging manganese radionuclide is \ce{^{51}Mn} ($t_{1/2}$ = 46.2$\pm$0.1\,min, $I_{\beta^+}$ = 97.09\%, $E_{\beta\text{, avg}}$ = 0.973\,MeV), whose short lifetime makes it clinically suited for rapid metabolic studies \cite{Wang2017}.
+\ce{^{52}Mn}  has high uptake in the heart, liver, kidneys, and pancreas, making it a useful diagnostic agent for pancreatic $\beta$-cell, insulinoma, and porphysome imaging\,\cite{Graves2015}. 
+However, its  long lifetime and unfavorable decay gamma-rays (notably, its  744.233\,keV [$I_\gamma = 90.0\,\pm\,1.2\%$], 935.544\,keV [$I_\gamma = 94.5\,\pm\,1.3\%$], and 1434.092\,keV [$I_\gamma = 100.0 \pm 1.4\%$] lines) make it undesirable for clinical applications, but easily shipped worldwide and highly suitable for pre-clinical imaging\,\cite{Dong2015}.
+The \ce{^{52m}Mn} isomer ($t_{1/2}$ = 21.1$\pm$0.2\,min, $I_{\beta^+}$\,=\,96.6\%, $E_{\beta\text{,avg}}$ = 1.172\,MeV) offers a much stronger positron emission branch than \ce{^{52g}Mn}, but its short lifetime makes production and handling difficult, and its  high-intensity gamma emission (1434.06\,keV [$I_\gamma = 98.2\,\pm\,0.5\%$]) contributes significantly to patient dose\,\cite{Dong2015}.
+Another emerging manganese radionuclide is \ce{^{51}Mn} ($t_{1/2}$ = 46.2$\pm$0.1\,min, $I_{\beta^+}$ = 97.09\%, $E_{\beta\text{, avg}}$ = 0.973\,MeV), whose short lifetime makes it clinically suited for rapid metabolic studies\,\cite{Wang2017}.
 \ce{^{51}Mn} has a comparable positron branch and energy to \ce{^{52m}Mn} and is more suitable for clinical use than the soft positron emissions of \ce{^{52g}Mn}. 
-In addition, \ce{^{51}Mn} lacks any strong decay gamma-rays (its longer-lived daughter \ce{^{51}Cr} [$t_{1/2}$ = 27.704$\pm$0.003\,d] has only a single  320.0284\,keV [$I_\gamma = 9.910\,\pm\,0.010\%$] line), making it the best choice of these radionuclides for clinical imaging applications \cite{Wang2017}.
+In addition, \ce{^{51}Mn} lacks any strong decay gamma-rays (its longer-lived daughter \ce{^{51}Cr} [$t_{1/2}$ = 27.704$\pm$0.003\,d] has only a single  320.0284\,keV [$I_\gamma = 9.910\,\pm\,0.010\%$] line), making it the best choice of these radionuclides for clinical imaging applications\,\cite{Wang2017}.
 
 
 
@@ -45,8 +45,8 @@ In addition, \ce{^{51}Mn} lacks any strong decay gamma-rays (its longer-lived da
 
 % In addition to the interest in the production of\ce{^{51,52g,52m}Mn} for PET research
 
-While these efforts have been motivated by the production cross section of the \ce{^{51,52g,52m}Mn} radionuclides for PET studies, this experiment offers an opportunity to study the distribution of angular momentum in compound nuclear and direct pre-equilibrium reactions via observation of the \ce{^{52m}Mn} ($t_{1/2}$ = 21.1$\pm$0.2\,min; J$^\pi=2^+$) to \ce{^{52g}Mn} ($t_{1/2}$ = 5.591$\pm$0.003\,d; J$^\pi=6^+$)   ratio \cite{Dong2015,Wang2017}.
-Measurements of isomer-to-ground state ratios have been used for over 20\,years to probe the spin distribution of excited nuclear states in the A\,$\approx$\,190 region \cite{PhysRevC.73.034613,PhysRevC.45.1171}.
+While these efforts have been motivated by the production cross section of the \ce{^{51,52g,52m}Mn} radionuclides for PET studies, this experiment offers an opportunity to study the distribution of angular momentum in compound nuclear and direct pre-equilibrium reactions via observation of the \ce{^{52m}Mn} ($t_{1/2}$ = 21.1$\pm$0.2\,min; J$^\pi=2^+$) to \ce{^{52g}Mn} ($t_{1/2}$ = 5.591$\pm$0.003\,d; J$^\pi=6^+$)   ratio\,\cite{Dong2015,Wang2017}.
+Measurements of isomer-to-ground state ratios have been used for over 20\,years to probe the spin distribution of excited nuclear states in the A\,$\approx$\,190 region\,\cite{PhysRevC.73.034613,PhysRevC.45.1171}.
 These measurements provide a range of cross section data invaluable to not only the medical isotope production community, but  also serve to measure the spin distribution in \textred{f$_{7/2}$} subshell nuclei via the observation of isomer-to-ground state ratios, and  as new data to improve the predictive capabilities of  reaction modeling codes. 
 In addition, these experiments provide valuable insight into the challenges  involved in precision cross section data measurements. 
 
@@ -125,12 +125,12 @@ In addition, these experiments provide valuable insight into the challenges  inv
 
 The work described herein follows the  methods utilized in our recent work and established by Graves \etal\ 
 % for the measurement of cross sections in stacked target irradiations   
-for monitor reaction characterization of beam energy and fluence in stacked target irradiations \cite{Voyles2018a,Graves2016}.
+for monitor reaction characterization of beam energy and fluence in stacked target irradiations\,\cite{Voyles2018a,Graves2016}.
 % 
 % Make sure to add this back in for the journal article
 % 
 % 
-Preliminary analysis  was previously reported in the Master's thesis of one co-author, but the conclusive results of this work are described here  \cite{springer2017investigation}.
+Preliminary analysis  was previously reported in the Master's thesis of one co-author, but the conclusive results of this work are described here\,\cite{springer2017investigation}.
 
 
 
@@ -140,7 +140,7 @@ Preliminary analysis  was previously reported in the Master's thesis of one co-a
 A pair of target stacks were constructed for this work, due to the large energy range desired to be spanned.
 One stack covers the 55--20\,MeV range and the other covers 25--0\,MeV, to minimize the systematic uncertainties associated with significant degradation of beam energy.
 In addition, the complementary  energy  of the  stacks helps build confidence  through multiple overlapping measurements between 20--25\,MeV.  
-% A stacked-target design was utilized for this work in order that the (p,x) cross sections for each reaction channel could be measured at multiple energy positions in a single irradiation \cite{Cumming1963}. 
+% A stacked-target design was utilized for this work in order that the (p,x) cross sections for each reaction channel could be measured at multiple energy positions in a single irradiation\,\cite{Cumming1963}. 
 % For targets, a
 A series of nominal 25\,\mmicro m \ce{^{nat}Fe} foils (99.5\%, lot \#LS470411), 25\,\mmicro m \ce{^{nat}Ti} foils (99.6\%, lot \#LS471698), and 25\,\mmicro m \ce{^{nat}Cu} foils (99.95\%, lot \#LS471698) were used (all from Goodfellow Corporation, Coraopolis, PA 15108, USA) as targets.
 In each stack, seven foils of each metal were cut down to 2.5$\times$2.5\,cm squares and characterized --- for each foil, length and width measurements were taken at four different locations using a digital caliper (Mitutoyo America Corp.), thickness measurements were taken at four different locations using a digital micrometer (Mitutoyo America Corp.), and four mass measurements were taken using an analytical balance after cleaning the foils with isopropyl alcohol.
@@ -169,7 +169,7 @@ The specifications of both target stack designs for this work are presented in \
 % % \usepackage{booktabs}
 % \begin{table}
 % \centering
-% \caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \mmicro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and the earlier paper by Graves \etal\ \cite{Graves2016}. At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor --- after end-of-bombardment (EoB), decay radiation emitted from these activated stainless steel foils were used to develop radiochromic film (Gafchromic EBT3), revealing the spatial profile of the beam entering and exiting the stack.}
+% \caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \mmicro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and the earlier paper by Graves \etal\\,\cite{Graves2016}. At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor --- after end-of-bombardment (EoB), decay radiation emitted from these activated stainless steel foils were used to develop radiochromic film (Gafchromic EBT3), revealing the spatial profile of the beam entering and exiting the stack.}
 % \label{tab:fe_stack_table}
 % \small
 % \begin{tabular}{@{}llll@{}}
@@ -212,7 +212,7 @@ The specifications of both target stack designs for this work are presented in \
 % % \usepackage{booktabs}
 % \begin{table}
 % \centering
-% \caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \mmicro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and the earlier paper by Graves \etal\ \cite{Graves2016}. At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor --- after end-of-bombardment (EoB), decay radiation emitted from these activated stainless steel foils were used to develop radiochromic film (Gafchromic EBT3), revealing the spatial profile of the beam entering and exiting the stack.}
+% \caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \mmicro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and the earlier paper by Graves \etal\\,\cite{Graves2016}. At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor --- after end-of-bombardment (EoB), decay radiation emitted from these activated stainless steel foils were used to develop radiochromic film (Gafchromic EBT3), revealing the spatial profile of the beam entering and exiting the stack.}
 % \label{tab:fe_stack_table2}
 % \small
 % \begin{tabular}{@{}llll@{}}
@@ -258,8 +258,8 @@ The specifications of both target stack designs for this work are presented in \
 % \usepackage{booktabs}
 \begin{table*}
 \centering
-\caption{Specifications of the 25\,MeV and 55\,MeV target stack designs in the present work. The proton beam enters the stack upstream of the SS-5 and SS-3 profile monitors, respectively, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.69 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and our earlier paper \cite{Voyles2018a}. 
-% the earlier paper by Graves \etal\ \cite{Graves2016}.
+\caption{Specifications of the 25\,MeV and 55\,MeV target stack designs in the present work. The proton beam enters the stack upstream of the SS-5 and SS-3 profile monitors, respectively, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.69 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and an earlier paper\,\cite{Voyles2018a}. 
+% the earlier paper by Graves \etal\\,\cite{Graves2016}.
 A 316 stainless steel foil is inserted at both the front and rear of each target stack as a monitor of the beam's spatial profile, by developing radiochromic film (Gafchromic EBT3) after end-of-bombardment (EoB).}
 \label{tab:fe_stack_table}
 \small
@@ -333,8 +333,8 @@ Samples were counted at fixed positions ranging 5--60  cm (5\% maximum permissib
 The foils were counted  for a period of 4 weeks following end-of-bombardment (EoB), to accurately quantify all induced activities.
 An example of one of the gamma-ray spectra collected in such a fashion is shown in \autoref{fig:gspec_femn}.
 % An example of one of the gamma-ray spectra collected in such a fashion is shown in \autoref{fig:gspec}.
-For all spectra collected, net peak areas were fitted using the gamma spectrometry analysis code FitzPeaks \cite{fitzgerald2009fitzpeaks}, which utilizes the SAMPO fitting algorithms for gamma ray spectra \cite{Aarnio2001}.
-% , which has been shown to perform best in comparisons with other common analysis codes \cite{Jackman2014}.
+For all spectra collected, net peak areas were fitted using the gamma spectrometry analysis code FitzPeaks\,\cite{fitzgerald2009fitzpeaks}, which utilizes the SAMPO fitting algorithms for gamma-ray spectra\,\cite{Aarnio2001}.
+% , which has been shown to perform best in comparisons with other common analysis codes\,\cite{Jackman2014}.
 %, due to its peak fitting algorithms and incorporation  of calibrated detector-specific peak shapes and widths. 
 
 \begin{figure*}
@@ -356,7 +356,7 @@ The net  counts in each fitted gamma-ray photopeak were converted into  activiti
 % The nuclear decay data used in this work is tabulated, for reference, in \autoref{tab:fe_nudat_table_monitors} and \autoref{tab:fe_nudat_table_nb} of Appendix \ref{sec:fe_data}.
 The   lifetimes and gamma-ray branching ratios  used for all calculations of measured cross sections reported in this work  have been taken from the most recent edition of  Nuclear Data Sheets for each  mass chain
 \cite{Singh2015a,Chen2011a,Wu2000,Burrows2007,Burrows2006,Burrows2008,Wang2017,Dong2015,Dong2014,JUNDE2008787,Junde2011,Bhat1998,Nesaraja2010,Browne2013,Zuber20151,NICHOLS2012973,ERJUN2001,Singh2007}.
-Corrections for gamma-ray attenuation within each foil packet were made, using  photon attenuation coefficients from the XCOM photon cross sections database  \cite{berger2011xcom}.
+Corrections for gamma-ray attenuation within each foil packet were made, using  photon attenuation coefficients from the XCOM photon cross sections database\,\cite{berger2011xcom}.
 % As nearly all of the product nuclei have multiple high-intensity gamma-rays, decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), as well as multiple independent activity measurements at each time point, based on each of its observed gamma-rays.
 % Decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), and as nearly all of the product nuclei have multiple high-intensity gamma-rays, this provided independent activity measurements at each time point.
 % activity for each gamma-ray possesses a 
@@ -365,12 +365,12 @@ The total propagated uncertainty in  activity is the quadrature sum of the uncer
 
 
 
-As in our previous work, these activities used to calculate cross sections, and are differentiated between cumulative and independent \cite{Voyles2018a}.
+As in our previous work, these activities are used to calculate cross sections, and are differentiated between cumulative and independent\,\cite{Voyles2018a}.
 For the first observable product nuclei in a mass chain, its (p,x) cross section will be reported as a cumulative cross section ($\sigma_c$), which is the sum of direct production of that nucleus, as well as decay of its  precursors and any other independent cross sections leading to that nucleus. 
 % In addition, 
 Cumulative cross sections will be reported whenever it is impossible to use decay spectrometry to distinguish independent production of a nucleus from decay feeding.
 For all remaining observed reaction products in the mass chain, and cases where no decay precursors exist, independent cross sections ($\sigma_i$) will be reported, allowing for determination of the independent production via subtraction  and facilitating comparison to reaction model calculations.  
-Solutions to the first- and higher-order  Bateman equations are used for separation of  feeding contributions from decay precursors, so that  independent cross sections may be reported \cite{bateman1910solution,Cetnar2006}.
+Solutions to the first- and higher-order  Bateman equations are used for separation of  feeding contributions from decay precursors, so that  independent cross sections may be reported\,\cite{bateman1910solution,Cetnar2006}.
 
 
 
@@ -396,7 +396,7 @@ Solutions to the first- and higher-order  Bateman equations are used for separat
 % % \end{equation}
 % Nonlinear regression was used for this fitting process, minimizing on $\chi^2$\,/\,degree of freedom, so that not only would the uncertainty-weighted EoB activities be fitted, but that a 1-$\sigma$ confidence interval in $A_0$ could be reported as as well.
 % As with the gamma-ray intensities, all lifetimes used in this work are tabulated in \autoref{tab:fe_nudat_table_monitors} and \autoref{tab:fe_nudat_table_nb} of \ref{sec:fe_data}.
-% In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{t=0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation \cite{bateman1910solution,Cetnar2006}:
+% In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{t=0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation\,\cite{bateman1910solution,Cetnar2006}:
 % \begin{equation}
 % A_n\pp{t} = \lambda_n \sum_{i=1}^n \left[  N_{i,0} \times \pp{\prod_{j=i}^{n-1}\lambda_j} \times \pp{\sum_{j=i}^n \dfrac{e^{-\lambda_j t}}{\prod_{i\neq j}^n \pp{\lambda_i - \lambda_j}}  }   \right]
 % \end{equation}
@@ -434,7 +434,7 @@ in order to account for energy loss across each monitor foil:
 \begin{equation}
 I \Delta t = \dfrac{A_0 \Delta t}{\rho \Delta r \pp{1-e^{-\lambda \Delta t}} \int \sigma\pp{E} \dfrac{d\phi}{dE} dE}
 \end{equation}
-The propagated uncertainty in proton fluence is calculated as the quadrature sum of (1) the uncertainty in quantified EoB activity, (2) uncertainty in the duration of irradiation (conservatively estimated at 10 s, to account for any transient changes in beam current), (3) uncertainty in foil areal density, (4) uncertainty in monitor product half-life (included, but normally negligible), (5) uncertainty in IAEA recommended cross section (using values  from the 2017 IAEA re-evaluation  \cite{Hermanne2018}), and (6) uncertainty in differential proton fluence (from transport simulations).
+The propagated uncertainty in proton fluence is calculated as the quadrature sum of (1) the uncertainty in quantified EoB activity, (2) uncertainty in the duration of irradiation (conservatively estimated at 10 s, to account for any transient changes in beam current), (3) uncertainty in foil areal density, (4) uncertainty in monitor product half-life (included, but normally negligible), (5) uncertainty in IAEA recommended cross section (using values  from the 2017 IAEA re-evaluation\,\cite{Hermanne2018}), and (6) uncertainty in differential proton fluence (from transport simulations).
 
 
 
@@ -447,8 +447,8 @@ The propagated uncertainty in proton fluence is calculated as the quadrature sum
 
 \subsection{\label{sec:proton_transport_fe}Proton transport calculations}
 
-Estimates of the proton beam energy for preliminary stack designs were calculated using the Anderson \& Ziegler (A\&Z) stopping power formalism \cite{Andersen_Ziegler_1977,Ziegler1985,Ziegler1999}.
-However, the more rigorous  transport code FLUKA-2011.2x.3 was used for simulation of the full 3-D target stack, to determine the full proton energy and fluence distribution for each foil   \cite{Bohlen2014a}. 
+Estimates of the proton beam energy for preliminary stack designs were calculated using the Anderson \& Ziegler (A\&Z) stopping power formalism\,\cite{Andersen_Ziegler_1977,Ziegler1985,Ziegler1999}.
+However, the more rigorous  transport code FLUKA-2011.2x.3 was used for simulation of the full 3-D target stack, to determine the full proton energy and fluence distribution for each foil\,\cite{Bohlen2014a}. 
 $10^8$ source protons were used for all FLUKA simulations, which places the statistical uncertainty in proton energy distributions at less than 0.01\%.
 As with the determination of proton fluence in monitor foils, the progressively increasing energy straggle towards the rear of each stack is accounted for using the differential proton fluence from FLUKA simulation of proton transport.
 These energy distributions $\frac{d\phi}{dE}$ are used to calculate a flux-weighted average proton  energy $\langle E \rangle$, which accounts for the slowing-down of protons within a foil (particularly in the low-energy stack) and reports the effective  energy centroid for each foil:
@@ -458,7 +458,7 @@ These energy distributions $\frac{d\phi}{dE}$ are used to calculate a flux-weigh
 To report a complete description of the representative energy for each foil, a bin width is provided through the  energy uncertainty, calculated as the full width at half maximum (FWHM) of the FLUKA-modeled energy distribution for each foil.
 
 
-To correct for a spread in the apparent proton fluence, seen most strongly in rear stack positions, the \enquote{variance minimization} techniques utilized in our recent work and established by Graves \etal\ have been used to reduce uncertainty in proton fluence assignments \cite{Voyles2018a,Graves2016}.
+To correct for a spread in the apparent proton fluence, seen most strongly in rear stack positions, the \enquote{variance minimization} techniques utilized in our recent work and established by Graves \etal\ have been used to reduce uncertainty in proton fluence assignments\,\cite{Voyles2018a,Graves2016}.
 This method is based on the assumption that the independent measurements of proton fluence from the different monitor reactions used in this work should all be consistent at each energy position.
 Assuming that the recommended monitor reaction cross sections and FLUKA-modeled energy distributions are both accurate, residual disagreement in the  observed proton fluences is thus primarily due to poorly characterized stopping power in simulations, or a systematic error in the 
 % stack design, namely, the
@@ -532,7 +532,7 @@ The impact of this variance minimization for improving disagreement in proton fl
 An enhanced version of the final \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reaction fluences is shown in \autoref{fig:fe_fluence_plot}.
 % Without the reliable use of the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na} monitor channels, local interpolation cannot be used for fluence assignment to the Nb foils, and global interpolation is reliant upon a validated model for fluence loss.
 The uncertainty-weighted mean  for the two \ce{^{nat}Cu}(p,x) and two \ce{^{nat}Ti}(p,x) monitor channels was calculated at each energy position, to determine the final fluence assignments for the Cu and Ti foils, respectively, and the uncertainty-weighted mean  for all four monitor channels was used to determine the final fluence assignments for the Fe foils.
-Uncertainty in proton fluence  is  calculated by error propagation of the fluence values  at each energy position.
+Uncertainty in each final proton fluence  is  calculated by error propagation of the individual monitor channel fluence values  at each energy position.
 These weighted-mean fluences are  plotted  in \autoref{fig:fe_fluence_plot}, along with the estimated fluence according to both  FLUKA transport 
 and an uncertainty-weighted linear $\chi^2$ fit to the individual monitor channel fluence measurements.
 Both models reproduce the observed fluence data consistently within uncertainty for the 55\,MeV stack, with the FLUKA model predicting a slightly greater fluence loss throughout the stack.
@@ -607,14 +607,14 @@ The propagated uncertainty in cross section is calculated as the quadrature sum 
 \subsection{Measurement of nuclear excitation functions}
 
 After irradiation, all foils were confirmed to still be sealed inside their Kapton packets, verifying that no activation products were lost due to packet failure and dispersal.
-With the exception of a single foil (Cu-20), each activated foil had a small \enquote{blister} under the Kapton tape layer, caused by a combination of thermal swelling and the formation of short-lived beta activities.
+With the exception of a single foil (Cu-20, in the 25\,MeV stack), each activated foil had a small \enquote{blister} under the Kapton tape layer, caused by a combination of thermal swelling and the formation of short-lived beta activities.
 % \comment{Maybe some Ne formed by Al(p,2a)Ne / Si(p,2ap)Ne?}
 This blister   verifies that the primary proton beam was incident upon the foil, and provided the first evidence (before gamma-ray spectrometry) that the beam was stopped in the stack between Ti-20 and Cu-20.
 Using the \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions, as discussed in \autoref{sec:proton_transport_fe}, a fluence of 18.8$\pm$1.0\,nAh was calculated to be incident upon the 55\,MeV target stack using the FLUKA fluence model, and a  fluence of 19.0$\pm$1.3\,nAh using the linear fit model.
 Similarly, for the 25\,MeV stack, a fluence of 33.2$\pm$4.7\,nAh was calculated to be incident upon the 55\,MeV target stack using the FLUKA fluence model, and a  fluence of 37.0$\pm$9.3\,nAh using the linear fit model.
 All of these are consistent with the nominal fluence of 20.78\,nAh (for the 55\,MeV stack) and 31.61\,nAh (for the 25\,MeV stack) measured using the beamline current integrators.
 As fluence loss scales with $\sigma_{\mathrm{tot}}\rho\Delta r$, it is expected that an extrapolation back to the stack entrance (through the SS-3/SS-5 profile monitors) will underestimate the nominal fluence incident upon the box.
-This incident fluence dropped by approximately 9.5\% to  17.0$\pm$2.4\,nAh (and by 8.9\% to  17.3$\pm$1.5\,nAh using the linear fit model) over the length of the 55\,MeV stack, which is consistent with similar measurements at IPF in the past \cite{Voyles2018a,Graves2016}.
+This incident fluence dropped by approximately 9.5\% to  17.0$\pm$2.4\,nAh (and by 8.9\% to  17.3$\pm$1.5\,nAh using the linear fit model) over the length of the 55\,MeV stack, which is consistent with similar measurements at IPF in the past\,\cite{Voyles2018a,Graves2016}.
 This loss of fluence is due to a combination of 
 % beam utilization for the various 
 (p,x) reactions throughout the target stack, as well as large-angle deflections (primarily in the aluminum degraders) from scattering of the beam.
@@ -622,12 +622,12 @@ This loss of fluence is due to a combination of
 
 
 
-Using the final proton fluence at each energy position, cross sections for \ce{^{48}Cr}, \ce{^{48}V},  \ce{^{49}Cr}, \ce{^{51}Mn}, \ce{^{51}Cr},  \ce{^{52}Fe}, \ce{^{52m}Mn}, \ce{^{52g}Mn}, \ce{^{52}Mn}, \ce{^{54}Mn}, \ce{^{55}Co}, \ce{^{56}Mn}, \ce{^{56}Co}, \ce{^{57}Co}, \ce{^{58m}Co}, \ce{^{58g}Co}, and \ce{^{58}Co}
+Using the final proton fluence at each energy position, cross sections for \ce{^{48,49,51}Cr}, \ce{^{48}V},  \ce{^{51,52m,52g,52,54,56}Mn},   \ce{^{52}Fe}, and \ce{^{55,56,57,58m,58g,58}Co}
  were extracted for (p,x) reactions  on \ce{^{nat}Fe} foils up to 55\,MeV, as recorded in \autoref{tab:fe_rp_table}.
-For  (p,x) reactions on \ce{^{nat}Cu}, the (p,x) cross sections for  \ce{^{54}Mn}, \ce{^{57}Ni}, \ce{^{57}Co},  \ce{^{60}Co}, \ce{^{60}Cu}, \ce{^{61}Co}, \ce{^{61}Cu}, and \ce{^{64}Cu}  were extracted, as recorded in \autoref{tab:cufe_rp_table}.
-For  (p,x) reactions on \ce{^{nat}Ti}, the (p,x) cross sections for  \ce{^{43}K}, \ce{^{44g}Sc}, \ce{^{44m}Sc}, \ce{^{44}Sc}, \ce{^{47}Sc}, and \ce{^{48}Sc}  were extracted, as recorded in \autoref{tab:ti_rp_table}.
+For  (p,x) reactions on \ce{^{nat}Cu}, the (p,x) cross sections for  \ce{^{54}Mn}, \ce{^{57}Ni}, \ce{^{57,60,61}Co},   and \ce{^{60,61,64}Cu}  were extracted, as recorded in \autoref{tab:cufe_rp_table}.
+For  (p,x) reactions on \ce{^{nat}Ti}, the (p,x) cross sections for  \ce{^{43}K} and \ce{^{44g,44m,44,47,48}Sc}  were extracted, as recorded in \autoref{tab:ti_rp_table}.
 In addition, as there exist a number of isomers with radioactive ground states in these mass regions,  independent measurements of isomer-to-ground-state branching ratios for \ce{^{nat}Fe}(p,x)\ce{^{52m/g}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{58m/g}Co}, and \ce{^{nat}Ti}(p,x)\ce{^{44m/g}Sc} were  extracted and are recorded in \autoref{tab:fe_ibr_table}.
-Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR \cite{Otuka2014272}) are seen in the figures of Appendices \ref{sec:fe_xs_figures} and \ref{sec:fe_ibr_figures}.
+Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR\,\cite{Otuka2014272}) are seen in the figures of Appendices \ref{sec:fe_xs_figures} and \ref{sec:fe_ibr_figures}.
 The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity ($\pm$2--10\%), proton fluence ($\pm$4--9\%), and foil areal density ($\pm$0.1--0.3\%).
 
 
@@ -642,7 +642,8 @@ The propagated uncertainty in these cross sections varies widely based on the re
 \label{tab:fe_rp_table}
 \small
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}lllllllllllllll@{}}
+% \begin{tabular}{@{}lllllllllllllll@{}}
+\begin{tabular}{@{}ccccccccccccccc@{}}
 \toprule
                             & \multicolumn{14}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-15} 
 % E$_\text{p}$ (MeV)          & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ & $70.17^{+0.91}_{-0.85}$ & $61.58^{+1.03}_{-0.98}$ & $52.10^{+1.25}_{-1.20}$ & $41.05^{+1.62}_{-1.54}$ \\ \midrule
@@ -653,8 +654,8 @@ E$_\text{p}$ (MeV)&	\makecell{53.45\\$\pm$0.61} &	\makecell{46.63\\$\pm$0.68} &	
 \ce{^{48}V}\,($\sigma_c$)&	\makecell{6.42\\$\pm$0.28} &	\makecell{4.43\\$\pm$0.17} &	\makecell{0.517\\$\pm$0.021} &	\makecell{0.1096\\$\pm$0.0052} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
 \ce{^{49}Cr}\,($\sigma_c$)&	\makecell{1.794\\$\pm$0.071} &	\makecell{2.14\\$\pm$0.13} &	\makecell{1.197\\$\pm$0.085} &	\makecell{0.315\\$\pm$0.032} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
 \ce{^{51}Mn}\,($\sigma_c$)&	\makecell{11.77\\$\pm$0.25} &	\makecell{15.69\\$\pm$0.32} &	\makecell{11.78\\$\pm$0.29} &	\makecell{6.15\\$\pm$0.25} &	\makecell{0.475\\$\pm$0.025} &	\makecell{0.68\\$\pm$0.10} &	\makecell{1.060\\$\pm$0.081} &	\makecell{1.967\\$\pm$0.067} &	\makecell{2.10\\$\pm$0.14} &	\makecell{1.981\\$\pm$0.063} &	\makecell{1.456\\$\pm$0.044} &	\makecell{0.584\\$\pm$0.025} &	-- &	--\\
-\ce{^{51}Cr}\,($\sigma_i$)&	\makecell{64.1\\$\pm$4.0} &	\makecell{75.7\\$\pm$3.3} &	\makecell{56.5\\$\pm$2.5} &	\makecell{27.6\\$\pm$1.3} &	\makecell{3.83\\$\pm$0.44} &	\makecell{0.90\\$\pm$0.12} &	\makecell{0.70\\$\pm$0.11} &	\makecell{0.150\\$\pm$0.026} &	\makecell{0.067\\$\pm$0.017} &	\makecell{NaN\\$\pm$0.14} &	\makecell{NaN\\$\pm$0.088} &	\makecell{NaN\\$\pm$0.045} &	-- &	--\\
-\ce{^{51}Cr}\,($\sigma_c$)&	\makecell{75.9\\$\pm$4.0} &	\makecell{91.3\\$\pm$3.3} &	\makecell{68.3\\$\pm$2.5} &	\makecell{33.7\\$\pm$1.3} &	\makecell{4.30\\$\pm$0.44} &	\makecell{1.582\\$\pm$0.071} &	\makecell{1.760\\$\pm$0.072} &	\makecell{2.117\\$\pm$0.079} &	\makecell{2.165\\$\pm$0.096} &	\makecell{1.91\\$\pm$0.12} &	\makecell{1.450\\$\pm$0.076} &	\makecell{0.823\\$\pm$0.037} &	-- &	--\\
+\ce{^{51}Cr}\,($\sigma_i$)&	\makecell{64.1\\$\pm$4.0} &	\makecell{75.7\\$\pm$3.3} &	\makecell{56.5\\$\pm$2.5} &	\makecell{27.6\\$\pm$1.3} &	\makecell{3.83\\$\pm$0.44} &	\makecell{0.90\\$\pm$0.12} &	\makecell{0.70\\$\pm$0.11} &	\makecell{0.150\\$\pm$0.026} &	\makecell{0.067\\$\pm$0.017} &	-- &	-- &	-- &	-- &	--\\
+\ce{^{51}Cr}\,($\sigma_c$)&	\makecell{75.9\\$\pm$4.0} &	\makecell{91.3\\$\pm$3.3} &	\makecell{68.3\\$\pm$2.5} &	\makecell{33.7\\$\pm$1.3} &	\makecell{4.30\\$\pm$0.44} &	\makecell{1.582\\$\pm$0.071} &	\makecell{1.760\\$\pm$0.072} &	\makecell{2.117\\$\pm$0.079} &	\makecell{2.165\\$\pm$0.096} &	\makecell{1.981\\$\pm$0.063} &	\makecell{1.456\\$\pm$0.044} &	\makecell{0.584\\$\pm$0.025} &	-- &	--\\
 \ce{^{52}Fe}\,($\sigma_c$)&	\makecell{2.685\\$\pm$0.092} &	\makecell{1.733\\$\pm$0.063} &	\makecell{1.601\\$\pm$0.057} &	\makecell{2.247\\$\pm$0.078} &	\makecell{0.770\\$\pm$0.029} &	\makecell{0.2059\\$\pm$0.0099} &	\makecell{0.1920\\$\pm$0.0096} &	\makecell{0.01297\\$\pm$0.00046} &	\makecell{0.00240\\$\pm$0.00015} &	-- &	-- &	-- &	-- &	--\\
 \ce{^{52m}Mn}\,($\sigma_i$)&	\makecell{8.13\\$\pm$0.28} &	\makecell{9.04\\$\pm$0.28} &	\makecell{13.69\\$\pm$0.47} &	\makecell{17.86\\$\pm$0.61} &	\makecell{23.34\\$\pm$0.79} &	\makecell{11.82\\$\pm$0.41} &	\makecell{5.78\\$\pm$0.19} &	\makecell{0.0763\\$\pm$0.0026} &	\makecell{0.0756\\$\pm$0.0033} &	\makecell{0.0754\\$\pm$0.0032} &	\makecell{0.0585\\$\pm$0.0026} &	-- &	-- &	--\\
 \ce{^{52g}Mn}\,($\sigma_i$)&	\makecell{11.36\\$\pm$0.39} &	\makecell{12.82\\$\pm$0.39} &	\makecell{20.85\\$\pm$0.74} &	\makecell{28.16\\$\pm$0.98} &	\makecell{21.81\\$\pm$0.75} &	\makecell{16.32\\$\pm$0.58} &	\makecell{10.37\\$\pm$0.43} &	\makecell{0.300\\$\pm$0.011} &	\makecell{0.1113\\$\pm$0.0049} &	\makecell{0.0428\\$\pm$0.0024} &	\makecell{0.00540\\$\pm$0.00029} &	-- &	-- &	--\\
@@ -679,10 +680,11 @@ E$_\text{p}$ (MeV)&	\makecell{53.45\\$\pm$0.61} &	\makecell{46.63\\$\pm$0.68} &	
 \label{tab:cufe_rp_table}
 \small
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}lllllllllllllll@{}}
+% \begin{tabular}{@{}lllllllllllllll@{}}
+\begin{tabular}{@{}ccccccccccccccc@{}}
 \toprule
                             & \multicolumn{14}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-15} 
-E$_\text{p}$ (MeV)&	\makecell{53.04\\$\pm$0.61} &	\makecell{46.18\\$\pm$0.68} &	\makecell{38.42\\$\pm$0.79} &	\makecell{34.06\\$\pm$0.86} &	\makecell{29.21\\$\pm$0.97} &	\makecell{23.6\\$\pm$1.2} &	\makecell{21.70\\$\pm$0.33} &	\makecell{18.30\\$\pm$0.38} &	\makecell{16.6\\$\pm$1.5} &	\makecell{15.38\\$\pm$0.44} &	\makecell{13.11\\$\pm$0.49} &	\makecell{10.57\\$\pm$0.57} &	\makecell{6.90\\$\pm$0.82} &	\makecell{1.4\\$\pm$1.0}\\ \midrule
+E$_\text{p}$ (MeV)&	\makecell{53.04\\$\pm$0.61} &	\makecell{46.18\\$\pm$0.68} &	\makecell{38.42\\$\pm$0.79} &	\makecell{34.06\\$\pm$0.86} &	\makecell{29.21\\$\pm$0.97} &	\makecell{23.6\\$\pm$1.2} &	\makecell{21.70\\$\pm$0.33} &	\makecell{18.30\\$\pm$0.38} &	\makecell{16.6\\$\pm$1.5} &	\makecell{15.38\\$\pm$0.44} &	\makecell{13.11\\$\pm$0.49} &	\makecell{10.57\\$\pm$0.57} &	\makecell{6.90\\$\pm$0.82} &	\makecell{1.4\\$\pm$1.3}\\ \midrule
 \ce{^{54}Mn}\,($\sigma_i$)&	\makecell{2.048\\$\pm$0.072} &	\makecell{0.408\\$\pm$0.012} &	\makecell{0.0931\\$\pm$0.0034} &	\makecell{0.0517\\$\pm$0.0017} &	\makecell{0.02233\\$\pm$0.00075} &	\makecell{0.01848\\$\pm$0.00065} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
 \ce{^{57}Ni}\,($\sigma_c$)&	\makecell{2.107\\$\pm$0.094} &	\makecell{0.738\\$\pm$0.024} &	\makecell{0.0530\\$\pm$0.0033} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
 \ce{^{57}Co}\,($\sigma_i$)&	\makecell{48.8\\$\pm$2.2} &	\makecell{32.2\\$\pm$1.5} &	\makecell{3.79\\$\pm$0.37} &	\makecell{1.206\\$\pm$0.046} &	\makecell{1.673\\$\pm$0.063} &	\makecell{1.053\\$\pm$0.046} &	\makecell{0.707\\$\pm$0.033} &	\makecell{0.264\\$\pm$0.025} &	-- &	-- &	-- &	-- &	-- &	--\\
@@ -705,7 +707,8 @@ E$_\text{p}$ (MeV)&	\makecell{53.04\\$\pm$0.61} &	\makecell{46.18\\$\pm$0.68} &	
 \small
 % Disable next line for journal submission
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}lllllllllllllll@{}}
+% \begin{tabular}{@{}lllllllllllllll@{}}
+\begin{tabular}{@{}ccccccccccccccc@{}}
 \toprule
                             & \multicolumn{14}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-15} 
 E$_\text{p}$ (MeV)&	\makecell{53.31\\$\pm$0.61} &	\makecell{46.48\\$\pm$0.68} &	\makecell{38.76\\$\pm$0.78} &	\makecell{34.44\\$\pm$0.86} &	\makecell{29.63\\$\pm$0.96} &	\makecell{24.1\\$\pm$1.1} &	\makecell{22.29\\$\pm$0.32} &	\makecell{18.98\\$\pm$0.37} &	\makecell{17.3\\$\pm$1.5} &	\makecell{16.14\\$\pm$0.42} &	\makecell{14.03\\$\pm$0.47} &	\makecell{11.49\\$\pm$0.55} &	\makecell{8.38\\$\pm$0.70} &	\makecell{2.88\\$\pm$0.88}\\  \midrule
@@ -732,7 +735,8 @@ E$_\text{p}$ (MeV)&	\makecell{53.31\\$\pm$0.61} &	\makecell{46.48\\$\pm$0.68} &	
 \label{tab:fe_ibr_table}
 \small
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}lllllllllllllll@{}}
+% \begin{tabular}{@{}lllllllllllllll@{}}
+\begin{tabular}{@{}ccccccccccccccc@{}}
 \toprule
                                & \multicolumn{14}{c}{Isomer branching ratio}                                                                                                                \\ \cmidrule(l){2-15} 
 E$_\text{p}$ (MeV)&	\makecell{53.45\\$\pm$0.61} &	\makecell{46.63\\$\pm$0.68} &	\makecell{38.93\\$\pm$0.78} &	\makecell{34.62\\$\pm$0.85} &	\makecell{29.84\\$\pm$0.96} &	\makecell{24.4\\$\pm$1.1} &	\makecell{22.71\\$\pm$0.43} &	\makecell{19.36\\$\pm$0.56} &	\makecell{17.6\\$\pm$1.5} &	\makecell{16.54\\$\pm$0.48} &	\makecell{14.52\\$\pm$0.49} &	\makecell{12.11\\$\pm$0.53} &	\makecell{9.23\\$\pm$0.61} &	\makecell{4.10\\$\pm$0.73}\\ \midrule
@@ -776,7 +780,8 @@ Indeed, fewer than four existing measurements have been performed for the \ce{^{
 reactions presented here.
 % Indeed,  the \ce{^{nat}Nb}(p,x)\ce{^{83}Sr}, \ce{^{nat}Nb}(p,x)\ce{^{85}Y}, \ce{^{nat}Nb}(p,x)\ce{^{89}Nb}, \ce{^{nat}Nb}(p,x)\ce{^{90}Mo}, \ce{^{nat}Nb}(p,x)\ce{^{91m}Nb}, and \ce{^{nat}Nb}(p,x)\ce{^{98m}Mo} reactions each possess no more than a total of three data points in this energy region.
 % Not only do the \ce{^{nat}Nb}(p,x) measurements in this work fill in the sparse data in this energy region, but they have been measured with the highest precision relative to existing literature data.
-
+Additionally, \ce{^{22,24}Na} activity is seen in all foils, consistent with proton activation of the trace  silicon in the Kapton tape used for foil encapsulation, as described in our previous work\,\cite{Voyles2018a}.
+No cross sections for \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} are reported due to the significant uncertainty in characterizing the layer of silicone adhesive, but this serves as another example of how the use of silicone-based adhesives may systematically enhance the apparent fluence when using the \ce{^{nat}Al}(p,x)\ce{^{22,24}Na} monitor reactions.
 
 
 % Furthermore, t
@@ -796,9 +801,9 @@ The cumulative cross sections from these data are also consistent with existing 
 
 
 Several of the activities produced via \ce{^{nat}Fe}(p,x)  could be useful as experimental monitor reactions. 
-In particular, \ce{^{nat}Fe}(p,x)\ce{^{56}Co} ($t_{1/2}=77.236\pm0.026$ d, $\epsilon$=100\% to \ce{^{56}Fe} \cite{Junde2011})  is a strongly-fed reaction channel (peak cross section of approximately 400\,mb near 12\,MeV), a sufficiently-long lifetime permitting offline gamma spectrometry,  and  cannot be populated via secondary neutrons incident upon the monitor target. 
+In particular, \ce{^{nat}Fe}(p,x)\ce{^{56}Co} ($t_{1/2}=77.236\pm0.026$ d, $\epsilon$=100\% to \ce{^{56}Fe}\,\cite{Junde2011})  is a strongly-fed reaction channel (peak cross section of approximately 400\,mb near 12\,MeV), a sufficiently-long lifetime permitting offline gamma spectrometry,  and  cannot be populated via secondary neutrons incident upon the monitor target. 
 It possesses a number of intense gamma-rays, which are distinct from those populated by daughter states in the decay of  \ce{^{56}Mn}, and the gammas which are produced both in the decay of  \ce{^{56}Co} and  \ce{^{56}Mn} may be easily resolved based on differences in intensity and lifetime. 
-Similarly,  \ce{^{nat}Fe}(p,x)\ce{^{54}Mn}  ($t_{1/2}=312.20\pm0.020$ d, $\epsilon$=100\% to \ce{^{54}Cr} \cite{Dong2014}) has a convenient lifetime and strong cross section (peak of approximately 160\,mb near 40\,MeV), and is immune from two different reactions on the same monitor foil leading to states in the same daughter nuclide.
+Similarly,  \ce{^{nat}Fe}(p,x)\ce{^{54}Mn}  ($t_{1/2}=312.20\pm0.020$ d, $\epsilon$=100\% to \ce{^{54}Cr}\,\cite{Dong2014}) has a convenient lifetime and strong cross section (peak of approximately 160\,mb near 40\,MeV), and is immune from two different reactions on the same monitor foil leading to states in the same daughter nuclide.
 This reaction could be useful for intermediate- to high-energy protons ($E_p \geq$30\,MeV), but would be susceptible to production via the high-energy secondary neutrons  (threshold 12.1\,MeV off of \ce{^{56}Fe}) produced in these facilities, though (p,x) production rates should dominate (n,x) through both particle flux and cross section. 
 
 
@@ -807,19 +812,20 @@ This reaction could be useful for intermediate- to high-energy protons ($E_p \ge
 
 Notably, this work is the most well-characterized measurement of the \ce{^{nat}Fe}(p,x)\ce{^{51,52}Mn} reaction below 70\,MeV to date, with cross sections measured  at the 4--9\% uncertainty level.
 This is important, as it presents the first measurement of the \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} reaction,  the first measurement of the independent \ce{^{nat}Fe}(p,x)\ce{^{52m,52g}Mn} cross sections, and extends the \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} excitation function down to the lowest energy to date. 
-\ce{^{nat}Fe}(p,x)\ce{^{51}Mn} appears to offer a compelling alternative to the more established \ce{^{50}Cr}(d,x)\ce{^{51}Mn} pathway, which necessitates an enriched \ce{^{50}Cr} target to avoid radio-manganese contamination from reactions on stable isotopes of Cr \cite{Klein2000}.
-However, \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} could be used for clean production of  \ce{^{51}Mn} ($\geq$98.8\% radioisotopic purity) below 20\,MeV using the \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} channel.
-In addition, this low-energy production is accessible using the international network of small medical and research cyclotrons, enabling in-house of this short-lived ($t_{1/2}=46.2\pm0.1$ m \cite{Wang2017}) radionuclide.
+\ce{^{nat}Fe}(p,x)\ce{^{51}Mn} appears to offer a compelling alternative to the more established \ce{^{50}Cr}(d,x)\ce{^{51}Mn} pathway, which necessitates an enriched \ce{^{50}Cr} target to avoid radio-manganese contamination from reactions on stable isotopes of Cr\,\cite{Klein2000}.
+% However, 
+\ce{^{nat}Fe}(p,x)\ce{^{51}Mn} could be used for clean production of  \ce{^{51}Mn} ($\geq$98.8\% radioisotopic purity) below 20\,MeV using the \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} channel.
+In addition, this low-energy production is accessible using the international network of small medical and research cyclotrons, enabling in-house production of this short-lived ($t_{1/2}=46.2\pm0.1$ m\,\cite{Wang2017}) radionuclide.
 To increase yields, an enriched \ce{^{54}Fe} target could be used to take advantage of the eight-fold increase in reaction cross section for production using 40--50\,MeV protons.
 
 
 
 Likewise, \ce{Fe}(p,x) offers an interesting production pathway for  \ce{^{52}Mn}.
-Conventional production uses the low-energy \ce{^{nat}Cr}/\ce{^{52}Cr}(p,n)\ce{^{52}Mn} pathways, which offer high radioisotopic purity (approximately 99.6\%) \cite{Graves2015,Wooten2015}.
+Conventional production uses the low-energy \ce{^{nat}Cr}/\ce{^{52}Cr}(p,n)\ce{^{52}Mn} pathways, which offer high radioisotopic purity (approximately 99.6\%)\,\cite{Graves2015,Wooten2015}.
 \ce{^{nat}Fe}(p,x) offers a nearly threefold increase in production yield, but the low radioisotopic purity (99.1\% for 20--30\,MeV, decreasing to 60.8\% by 40\,MeV) at higher energies due to the opening of \ce{^{54}Mn} makes this route seem impractical.
 Much like \ce{^{51}Mn}, the use of an enriched \ce{^{54}Fe} target would prevent production of \ce{^{54}Mn}, providing a higher-yield production route over   \ce{^{nat}Cr}(p,x), with the tradeoff of necessitating higher-energy protons ($\leq$35\,MeV) for production.
-It is important to note that the \ce{Fe}(p,x) route provides $\geq$60\% feeding of \ce{^{52g}Mn} ($t_{1/2}$ = 5.591$\pm$0.003\,d \cite{Dong2015}), implying that the short-lived  \ce{^{52m}Mn} ($t_{1/2}$ = 21.1$\pm$0.2\,m \cite{Dong2015}) can be easily separated through the difference in lifetime, to avoid the unfavorable gammas produced by the isomer. 
-However, if nearly pure \ce{^{52m}Mn} is desired for preclinical imaging applications, the feeding of \ce{^{52}Mn} through the $\epsilon$ decay of \ce{^{52}Fe} ($t_{1/2}$ = 8.725$\pm$0.008\,h \cite{Dong2015}) exclusively populates the isomer, making this potentially suitable for production through \enquote{milking} of a \ce{^{52}Fe} generator.
+It is important to note that the \ce{Fe}(p,x) route provides $\geq$60\% feeding of \ce{^{52g}Mn} ($t_{1/2}$ = 5.591$\pm$0.003\,d\,\cite{Dong2015}), implying that the short-lived  \ce{^{52m}Mn} ($t_{1/2}$ = 21.1$\pm$0.2\,m\,\cite{Dong2015}) can be easily separated through the difference in lifetime, to avoid the unfavorable gammas produced by the isomer. 
+However, if nearly pure \ce{^{52m}Mn} is desired for preclinical imaging applications, the feeding of \ce{^{52}Mn} through the $\epsilon$ decay of \ce{^{52}Fe} ($t_{1/2}$ = 8.725$\pm$0.008\,h\,\cite{Dong2015}) exclusively populates the isomer, making this potentially suitable for production through \enquote{milking} of a \ce{^{52}Fe} generator.
 Clearly, the use of \ce{Fe}(p,x)\ce{^{51,52}Mn} has significant untapped potential, and additional work is needed to further characterize these reaction channels for $E_p \leq$60\,MeV.
 
 
@@ -841,22 +847,22 @@ Clearly, the use of \ce{Fe}(p,x)\ce{^{51,52}Mn} has significant untapped potenti
 
 In addition to the \ce{^{nat}Fe}(p,x)\ce{^{51,52}Mn} measurements, this experiment has also yielded measurements of  a number of additional  emerging radionuclides with medical applications.
 These include the non-standard positron emitters 
-\ce{^{44}Sc} \cite{Muller2013,Filosofov2010,Qaim2011}
-% \cite{Qaim2011,Qaim201731,Kolsky1998,mausner1995evaluation}.
-\ce{^{55}Co} \cite{Thisgaard2011,Zaman1996,Hermanne2000a}
-\ce{^{61}Ni} \cite{PMID:7632762,zweit1996medium,Graves2016,Rosch2014}, 
-\ce{^{61}Cu} \cite{Szelecsenyi2005a,Fukumura2004}
-\ce{^{64}Cu} \cite{Lewis2003,Bandari2014,mp500671j,Szelecsenyi1993,Aslam2009,Hilgers2003,Szelecsenyi2005,Voyles2017},
-% \ce{^{86}Y} \cite{Valdovinos2017,Nickles2003,Qaim2008,QaimSyedM2011,Rosch1993,doi:10.1139/v67-193,levkovski1991cross,Johnson2015,Singh2013,Kiselev1974,Kandil2009}, 
-% \ce{^{89}Zr}  \cite{Verel2003,Dijkers2009,Dijkers2010,PhysRevC.38.1624,Omara2009},  
-% \ce{^{90}Nb} \cite{Busse2002,Radchenko2012},  
+\ce{^{44}Sc}\,\cite{Muller2013,Filosofov2010,Qaim2011}
+%\,\cite{Qaim2011,Qaim201731,Kolsky1998,mausner1995evaluation}.
+\ce{^{55}Co}\,\cite{Thisgaard2011,Zaman1996,Hermanne2000a}
+\ce{^{61}Ni}\,\cite{PMID:7632762,zweit1996medium,Graves2016,Rosch2014}, 
+\ce{^{61}Cu}\,\cite{Szelecsenyi2005a,Fukumura2004}
+\ce{^{64}Cu}\,\cite{Lewis2003,Bandari2014,mp500671j,Szelecsenyi1993,Aslam2009,Hilgers2003,Szelecsenyi2005,Voyles2017},
+% \ce{^{86}Y}\,\cite{Valdovinos2017,Nickles2003,Qaim2008,QaimSyedM2011,Rosch1993,doi:10.1139/v67-193,levkovski1991cross,Johnson2015,Singh2013,Kiselev1974,Kandil2009}, 
+% \ce{^{89}Zr}\,\cite{Verel2003,Dijkers2009,Dijkers2010,PhysRevC.38.1624,Omara2009},  
+% \ce{^{90}Nb}\,\cite{Busse2002,Radchenko2012},  
 % the $\beta^-$-therapy agent  \ce{^{64}Cu},  
 and the $\beta^-$-therapeutic agent 
-\ce{^{47}Sc} \cite{Muller2014,Deilami-nezhad2016}.
-% and the Auger-therapy agent \ce{^{82\text{m}}Rb} \cite{Kovacs1991,Titarenko2011}. 
+\ce{^{47}Sc}\,\cite{Muller2014,Deilami-nezhad2016}.
+% and the Auger-therapy agent \ce{^{82\text{m}}Rb}\,\cite{Kovacs1991,Titarenko2011}. 
 Production of these radionuclides offers no major advantages over established pathways, with the generally lower yields and radioisotopic purities failing to justify the convenience of natural targets  via   \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x). 
-% The one possible exception to this trend is the non-standard positron emitter \ce{^{57}Ni} ($t_{1/2}=35.60\pm0.06$ h, $\epsilon$=100\% to \ce{^{57}Co} \cite{Bhat1998}) --- the \ce{^{57}Ni}/\ce{^{56}Ni} ratio of production rates is approximately 290 at 61.58\,MeV, and varies from 45--75 at the 70--90\,MeV positions.
-% This \ce{^{nat}Cu}(p,x) route offers both higher yield and higher radioisotopic purity over the established  \ce{^{nat}Co}(p,3n) pathway, which suffers from approximately fivefold greater  \ce{^{56}Ni} contamination \cite{MICHEL1997153,Ditrói2013}.
+% The one possible exception to this trend is the non-standard positron emitter \ce{^{57}Ni} ($t_{1/2}=35.60\pm0.06$ h, $\epsilon$=100\% to \ce{^{57}Co}\,\cite{Bhat1998}) --- the \ce{^{57}Ni}/\ce{^{56}Ni} ratio of production rates is approximately 290 at 61.58\,MeV, and varies from 45--75 at the 70--90\,MeV positions.
+% This \ce{^{nat}Cu}(p,x) route offers both higher yield and higher radioisotopic purity over the established  \ce{^{nat}Co}(p,3n) pathway, which suffers from approximately fivefold greater  \ce{^{56}Ni} contamination\,\cite{MICHEL1997153,Ditrói2013}.
 
 
 
@@ -895,9 +901,9 @@ Quick observations:
 % 
 % 
 % The default level density in both CoH and TALYS is the Gilbert-Cameron model, which uses a Constant Temperature model below a critical energy and Fermi Gas model above it.
-% % \cite{add_level_density_models_here}. 
-% The default level density in EMPIRE is the Enhanced Generalized Superfluid Model (EGSM) which uses the Generalized Superfluid model below a critical energy, and Fermi Gas model above it \cite{Capote2009}.
-% % \cite{add_level_density_models_here}.
+% %\,\cite{add_level_density_models_here}. 
+% The default level density in EMPIRE is the Enhanced Generalized Superfluid Model (EGSM) which uses the Generalized Superfluid model below a critical energy, and Fermi Gas model above it\,\cite{Capote2009}.
+% %\,\cite{add_level_density_models_here}.
 % The EGSM densities are normalized to $D_0$ and the discrete levels, but in such a way that only the level density below the neutron separation energy is  effected by the discrete levels chosen for the normalization.  
 % All three codes use a two-exciton phenomenological model to calculate the pre-equilibrium cross section, but the specific implementation differs between the codes. 
 
@@ -940,9 +946,9 @@ Quick observations:
 % 
 % 
 % The \ce{^{93}Nb}(p,$\alpha$p3n)\ce{^{86}Y} reaction channel, which peaks at approximately \mbox{70\,MeV}, is well within the compound regime for the entire energy region of this experiment (\autoref{fig:86Y}).
-% The data collected on this residual is consistent with the one other data set available, taken in 1997 by Michel \emph{et al.} \cite{MICHEL1997153}. 
+% The data collected on this residual is consistent with the one other data set available, taken in 1997 by Michel \emph{et al.}\,\cite{MICHEL1997153}. 
 % The \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} and \ce{^{93}Nb}(p,p3n)\ce{^{90}Nb} channels both peak early in the energy region, around 50\,MeV, and the data clearly show the full rise, peak, and fall of the compound cross section (\autoref{fig:90Mo} \& \ref{fig:90Nb}). 
-% In both of these channels, this data  is consistent with the data by Titarenko \emph{et al.} in 2011 \cite{Titarenko2011}.
+% In both of these channels, this data  is consistent with the data by Titarenko \emph{et al.} in 2011\,\cite{Titarenko2011}.
 % 
 % The \ce{^{90}Nb} production cross section exhibits a persistent pre-equilibrium \enquote{tail} that keeps the channel open  well after the compound cross section has fallen away. 
 % TALYS, TENDL, and CoH seem to have the correct shape for this pre-equilibrium cross section, with magnitudes that are just slightly too low.
