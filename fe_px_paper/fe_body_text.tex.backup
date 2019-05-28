@@ -628,8 +628,7 @@ For  (p,x) reactions on \ce{^{nat}Cu}, the (p,x) cross sections for  \ce{^{54}Mn
 For  (p,x) reactions on \ce{^{nat}Ti}, the (p,x) cross sections for  \ce{^{43}K} and \ce{^{44g,44m,44,47,48}Sc}  were extracted, as recorded in \autoref{tab:ti_rp_table}.
 In addition, as there exist a number of isomers with radioactive ground states in these mass regions,  independent measurements of isomer-to-ground-state branching ratios for \ce{^{nat}Fe}(p,x)\ce{^{52m/g}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{58m/g}Co}, and \ce{^{nat}Ti}(p,x)\ce{^{44m/g}Sc} were  extracted and are recorded in \autoref{tab:fe_ibr_table}.
 Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR\,\cite{Otuka2014272}) are seen in the figures of Appendices \ref{sec:fe_xs_figures} and \ref{sec:fe_ibr_figures}.
-The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity ($\pm$2--10\%), proton fluence ($\pm$4--9\%), and foil areal density ($\pm$0.1--0.3\%).
-
+The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity ($\pm$2--10\%), proton fluence ($\pm$5--13\%), and foil areal density ($\pm$0.1--0.3\%).
 
 
 
@@ -649,25 +648,25 @@ The propagated uncertainty in these cross sections varies widely based on the re
 % E$_\text{p}$ (MeV)          & $89.74^{+0.48}_{-0.43}$ & $79.95^{+0.67}_{-0.64}$ & $70.17^{+0.91}_{-0.85}$ & $61.58^{+1.03}_{-0.98}$ & $52.10^{+1.25}_{-1.20}$ & $41.05^{+1.62}_{-1.54}$ \\ \midrule
 % E$_\text{p}$ (MeV)  & $53.45 \pm0.61$ & $46.63 \pm0.68$ & $38.93 \pm0.78$ & $34.62 \pm0.85$ & $29.84 \pm0.96$ & $24.4 \pm1.1$ & $22.71 \pm0.43$ & $19.36 \pm0.56$ & $17.6 \pm1.5$ & $16.54 \pm0.48$ & $14.52 \pm0.49$ & $12.11 \pm0.53$ & $9.23 \pm0.61$ & $4.10 \pm0.73$\\  \midrule
 E$_\text{p}$ (MeV)&	\makecell{53.45\\$\pm$0.61} &	\makecell{46.63\\$\pm$0.68} &	\makecell{38.93\\$\pm$0.78} &	\makecell{34.62\\$\pm$0.85} &	\makecell{29.84\\$\pm$0.96} &	\makecell{24.4\\$\pm$1.1} &	\makecell{22.71\\$\pm$0.43} &	\makecell{19.36\\$\pm$0.56} &	\makecell{17.6\\$\pm$1.5} &	\makecell{16.54\\$\pm$0.48} &	\makecell{14.52\\$\pm$0.49} &	\makecell{12.11\\$\pm$0.53} &	\makecell{9.23\\$\pm$0.61} &	\makecell{4.10\\$\pm$0.73}\\  \midrule
-\ce{^{48}Cr}\,($\sigma_c$)&	\makecell{0.1684\\$\pm$0.0064} &	\makecell{0.01310\\$\pm$0.00044} &	\makecell{0.00435\\$\pm$0.00018} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
-\ce{^{48}V}\,($\sigma_i$)&	\makecell{6.25\\$\pm$0.28} &	\makecell{4.41\\$\pm$0.17} &	\makecell{0.513\\$\pm$0.021} &	\makecell{0.1096\\$\pm$0.0052} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
-\ce{^{48}V}\,($\sigma_c$)&	\makecell{6.42\\$\pm$0.28} &	\makecell{4.43\\$\pm$0.17} &	\makecell{0.517\\$\pm$0.021} &	\makecell{0.1096\\$\pm$0.0052} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
-\ce{^{49}Cr}\,($\sigma_c$)&	\makecell{1.794\\$\pm$0.071} &	\makecell{2.14\\$\pm$0.13} &	\makecell{1.197\\$\pm$0.085} &	\makecell{0.315\\$\pm$0.032} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
-\ce{^{51}Mn}\,($\sigma_c$)&	\makecell{11.77\\$\pm$0.25} &	\makecell{15.69\\$\pm$0.32} &	\makecell{11.78\\$\pm$0.29} &	\makecell{6.15\\$\pm$0.25} &	\makecell{0.475\\$\pm$0.025} &	\makecell{0.68\\$\pm$0.10} &	\makecell{1.060\\$\pm$0.081} &	\makecell{1.967\\$\pm$0.067} &	\makecell{2.10\\$\pm$0.14} &	\makecell{1.981\\$\pm$0.063} &	\makecell{1.456\\$\pm$0.044} &	\makecell{0.584\\$\pm$0.025} &	-- &	--\\
-\ce{^{51}Cr}\,($\sigma_i$)&	\makecell{64.1\\$\pm$4.0} &	\makecell{75.7\\$\pm$3.3} &	\makecell{56.5\\$\pm$2.5} &	\makecell{27.6\\$\pm$1.3} &	\makecell{3.83\\$\pm$0.44} &	\makecell{0.90\\$\pm$0.12} &	\makecell{0.70\\$\pm$0.11} &	\makecell{0.150\\$\pm$0.026} &	\makecell{0.067\\$\pm$0.017} &	-- &	-- &	-- &	-- &	--\\
-\ce{^{51}Cr}\,($\sigma_c$)&	\makecell{75.9\\$\pm$4.0} &	\makecell{91.3\\$\pm$3.3} &	\makecell{68.3\\$\pm$2.5} &	\makecell{33.7\\$\pm$1.3} &	\makecell{4.30\\$\pm$0.44} &	\makecell{1.582\\$\pm$0.071} &	\makecell{1.760\\$\pm$0.072} &	\makecell{2.117\\$\pm$0.079} &	\makecell{2.165\\$\pm$0.096} &	\makecell{1.981\\$\pm$0.063} &	\makecell{1.456\\$\pm$0.044} &	\makecell{0.584\\$\pm$0.025} &	-- &	--\\
-\ce{^{52}Fe}\,($\sigma_c$)&	\makecell{2.685\\$\pm$0.092} &	\makecell{1.733\\$\pm$0.063} &	\makecell{1.601\\$\pm$0.057} &	\makecell{2.247\\$\pm$0.078} &	\makecell{0.770\\$\pm$0.029} &	\makecell{0.2059\\$\pm$0.0099} &	\makecell{0.1920\\$\pm$0.0096} &	\makecell{0.01297\\$\pm$0.00046} &	\makecell{0.00240\\$\pm$0.00015} &	-- &	-- &	-- &	-- &	--\\
-\ce{^{52m}Mn}\,($\sigma_i$)&	\makecell{8.13\\$\pm$0.28} &	\makecell{9.04\\$\pm$0.28} &	\makecell{13.69\\$\pm$0.47} &	\makecell{17.86\\$\pm$0.61} &	\makecell{23.34\\$\pm$0.79} &	\makecell{11.82\\$\pm$0.41} &	\makecell{5.78\\$\pm$0.19} &	\makecell{0.0763\\$\pm$0.0026} &	\makecell{0.0756\\$\pm$0.0033} &	\makecell{0.0754\\$\pm$0.0032} &	\makecell{0.0585\\$\pm$0.0026} &	-- &	-- &	--\\
-\ce{^{52g}Mn}\,($\sigma_i$)&	\makecell{11.36\\$\pm$0.39} &	\makecell{12.82\\$\pm$0.39} &	\makecell{20.85\\$\pm$0.74} &	\makecell{28.16\\$\pm$0.98} &	\makecell{21.81\\$\pm$0.75} &	\makecell{16.32\\$\pm$0.58} &	\makecell{10.37\\$\pm$0.43} &	\makecell{0.300\\$\pm$0.011} &	\makecell{0.1113\\$\pm$0.0049} &	\makecell{0.0428\\$\pm$0.0024} &	\makecell{0.00540\\$\pm$0.00029} &	-- &	-- &	--\\
-\ce{^{52}Mn}\,($\sigma_c$)&	\makecell{13.39\\$\pm$0.54} &	\makecell{14.88\\$\pm$0.74} &	\makecell{23.0\\$\pm$1.3} &	\makecell{30.9\\$\pm$1.3} &	\makecell{31.7\\$\pm$1.2} &	\makecell{18.54\\$\pm$0.87} &	\makecell{10.57\\$\pm$0.38} &	\makecell{0.313\\$\pm$0.012} &	\makecell{0.0389\\$\pm$0.0038} &	\makecell{0.0556\\$\pm$0.0029} &	\makecell{0.0185\\$\pm$0.0012} &	-- &	-- &	--\\
-\ce{^{54}Mn}\,($\sigma_i$)&	\makecell{128.4\\$\pm$5.0} &	\makecell{154.4\\$\pm$6.2} &	\makecell{166.7\\$\pm$7.6} &	\makecell{129.2\\$\pm$7.4} &	\makecell{42.2\\$\pm$2.4} &	\makecell{2.46\\$\pm$0.22} &	\makecell{1.10\\$\pm$0.11} &	\makecell{1.09\\$\pm$0.13} &	\makecell{1.46\\$\pm$0.14} &	\makecell{1.53\\$\pm$0.12} &	\makecell{1.362\\$\pm$0.069} &	\makecell{1.173\\$\pm$0.055} &	\makecell{0.767\\$\pm$0.033} &	\makecell{0.0500\\$\pm$0.0046}\\
-\ce{^{55}Co}\,($\sigma_i$)&	\makecell{9.25\\$\pm$0.38} &	\makecell{11.89\\$\pm$0.77} &	\makecell{15.72\\$\pm$0.80} &	\makecell{21.46\\$\pm$0.87} &	\makecell{48.4\\$\pm$2.3} &	\makecell{64.7\\$\pm$4.5} &	\makecell{61.0\\$\pm$3.5} &	\makecell{43.6\\$\pm$2.2} &	\makecell{33.2\\$\pm$2.6} &	\makecell{13.42\\$\pm$0.71} &	\makecell{0.377\\$\pm$0.021} &	\makecell{0.0436\\$\pm$0.0020} &	-- &	--\\
-\ce{^{56}Mn}\,($\sigma_c$)&	-- &	\makecell{0.494\\$\pm$0.029} &	\makecell{0.610\\$\pm$0.030} &	\makecell{0.462\\$\pm$0.037} &	\makecell{0.506\\$\pm$0.046} &	\makecell{0.405\\$\pm$0.025} &	\makecell{0.2227\\$\pm$0.0079} &	\makecell{0.0962\\$\pm$0.0035} &	\makecell{0.0326\\$\pm$0.0037} &	\makecell{0.0253\\$\pm$0.0011} &	\makecell{0.01318\\$\pm$0.00093} &	-- &	-- &	--\\
-\ce{^{56}Co}\,($\sigma_i$)&	\makecell{12.74\\$\pm$0.81} &	\makecell{15.5\\$\pm$1.1} &	\makecell{18.9\\$\pm$1.2} &	\makecell{23.6\\$\pm$1.1} &	\makecell{29.2\\$\pm$2.0} &	\makecell{47.8\\$\pm$2.0} &	\makecell{51.6\\$\pm$1.9} &	\makecell{82.6\\$\pm$3.2} &	\makecell{174.3\\$\pm$8.0} &	\makecell{197.3\\$\pm$8.4} &	\makecell{344\\$\pm$15} &	\makecell{389\\$\pm$15} &	\makecell{296\\$\pm$13} &	\makecell{2.95\\$\pm$0.28}\\
-\ce{^{57}Co}\,($\sigma_i$)&	-- &	\makecell{0.454\\$\pm$0.040} &	\makecell{0.539\\$\pm$0.052} &	\makecell{0.648\\$\pm$0.027} &	\makecell{1.170\\$\pm$0.060} &	\makecell{1.836\\$\pm$0.070} &	\makecell{2.359\\$\pm$0.086} &	\makecell{2.50\\$\pm$0.11} &	\makecell{3.17\\$\pm$0.15} &	\makecell{3.40\\$\pm$0.15} &	\makecell{5.14\\$\pm$0.26} &	\makecell{8.46\\$\pm$0.31} &	\makecell{11.81\\$\pm$0.58} &	\makecell{4.58\\$\pm$0.42}\\
-\ce{^{58m}Co}\,($\sigma_i$)&	-- &	-- &	-- &	\makecell{0.0427\\$\pm$0.0016} &	\makecell{0.0619\\$\pm$0.0023} &	\makecell{0.1054\\$\pm$0.0042} &	\makecell{0.1718\\$\pm$0.0078} &	\makecell{0.236\\$\pm$0.011} &	\makecell{0.239\\$\pm$0.012} &	\makecell{0.300\\$\pm$0.019} &	\makecell{0.475\\$\pm$0.026} &	\makecell{0.564\\$\pm$0.021} &	\makecell{0.490\\$\pm$0.022} &	\makecell{0.141\\$\pm$0.016}\\
-\ce{^{58g}Co}\,($\sigma_i$)&	-- &	-- &	-- &	\makecell{0.0884\\$\pm$0.0044} &	\makecell{0.0980\\$\pm$0.0049} &	\makecell{0.1118\\$\pm$0.0057} &	\makecell{0.1229\\$\pm$0.0062} &	\makecell{0.1484\\$\pm$0.0058} &	\makecell{0.330\\$\pm$0.020} &	\makecell{0.318\\$\pm$0.016} &	\makecell{0.919\\$\pm$0.057} &	\makecell{1.320\\$\pm$0.072} &	\makecell{1.599\\$\pm$0.097} &	\makecell{0.519\\$\pm$0.048}\\
-\ce{^{58}Co}\,($\sigma_i$)&	-- &	-- &	-- &	\makecell{0.1311\\$\pm$0.0047} &	\makecell{0.1599\\$\pm$0.0055} &	\makecell{0.2172\\$\pm$0.0071} &	\makecell{0.295\\$\pm$0.010} &	\makecell{0.384\\$\pm$0.012} &	\makecell{0.569\\$\pm$0.023} &	\makecell{0.618\\$\pm$0.025} &	\makecell{1.395\\$\pm$0.062} &	\makecell{1.883\\$\pm$0.075} &	\makecell{2.09\\$\pm$0.10} &	\makecell{0.660\\$\pm$0.050}\\ \bottomrule
+\ce{^{48}Cr}\,($\sigma_c$)&	\makecell{0.172\\$\pm$0.011} &	\makecell{0.01376\\$\pm$0.00080} &	\makecell{0.00435\\$\pm$0.00029} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
+\ce{^{48}V}\,($\sigma_i$)&	\makecell{6.38\\$\pm$0.43} &	\makecell{4.64\\$\pm$0.29} &	\makecell{0.513\\$\pm$0.035} &	\makecell{0.1096\\$\pm$0.0080} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
+\ce{^{48}V}\,($\sigma_c$)&	\makecell{6.55\\$\pm$0.43} &	\makecell{4.65\\$\pm$0.29} &	\makecell{0.517\\$\pm$0.035} &	\makecell{0.1096\\$\pm$0.0080} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
+\ce{^{49}Cr}\,($\sigma_c$)&	\makecell{1.83\\$\pm$0.12} &	\makecell{2.25\\$\pm$0.18} &	\makecell{1.20\\$\pm$0.11} &	\makecell{0.315\\$\pm$0.036} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
+\ce{^{51}Mn}\,($\sigma_c$)&	\makecell{11.77\\$\pm$0.74} &	\makecell{15.69\\$\pm$0.94} &	\makecell{11.78\\$\pm$0.77} &	\makecell{6.15\\$\pm$0.41} &	\makecell{0.475\\$\pm$0.039} &	\makecell{0.679\\$\pm$0.047} &	\makecell{1.060\\$\pm$0.063} &	\makecell{1.97\\$\pm$0.15} &	\makecell{2.10\\$\pm$0.17} &	\makecell{1.98\\$\pm$0.19} &	\makecell{1.46\\$\pm$0.13} &	\makecell{0.584\\$\pm$0.041} &	-- &	--\\
+\ce{^{51}Cr}\,($\sigma_i$)&	\makecell{65.9\\$\pm$5.8} &	\makecell{81.0\\$\pm$5.9} &	\makecell{56.5\\$\pm$4.5} &	\makecell{27.6\\$\pm$2.3} &	\makecell{3.83\\$\pm$0.35} &	\makecell{0.90\\$\pm$0.12} &	\makecell{0.70\\$\pm$0.13} &	\makecell{0.150\\$\pm$0.049} &	\makecell{0.110\\$\pm$0.024} &	-- &	-- &	-- &	-- &	--\\
+\ce{^{51}Cr}\,($\sigma_c$)&	\makecell{77.6\\$\pm$5.7} &	\makecell{96.7\\$\pm$5.8} &	\makecell{68.3\\$\pm$4.4} &	\makecell{33.7\\$\pm$2.3} &	\makecell{4.30\\$\pm$0.35} &	\makecell{1.58\\$\pm$0.11} &	\makecell{1.76\\$\pm$0.11} &	\makecell{2.12\\$\pm$0.13} &	\makecell{2.21\\$\pm$0.17} &	\makecell{1.98\\$\pm$0.19} &	\makecell{1.46\\$\pm$0.13} &	\makecell{0.584\\$\pm$0.041} &	-- &	--\\
+\ce{^{52}Fe}\,($\sigma_c$)&	\makecell{2.74\\$\pm$0.17} &	\makecell{1.82\\$\pm$0.11} &	\makecell{1.60\\$\pm$0.10} &	\makecell{2.25\\$\pm$0.15} &	\makecell{0.770\\$\pm$0.052} &	\makecell{0.206\\$\pm$0.015} &	\makecell{0.192\\$\pm$0.013} &	\makecell{0.01297\\$\pm$0.00075} &	\makecell{0.00242\\$\pm$0.00021} &	-- &	-- &	-- &	-- &	--\\
+\ce{^{52m}Mn}\,($\sigma_i$)&	\makecell{8.29\\$\pm$0.52} &	\makecell{9.49\\$\pm$0.54} &	\makecell{13.69\\$\pm$0.88} &	\makecell{17.9\\$\pm$1.2} &	\makecell{23.3\\$\pm$1.5} &	\makecell{11.82\\$\pm$0.74} &	\makecell{5.78\\$\pm$0.33} &	\makecell{0.0763\\$\pm$0.0044} &	\makecell{0.0763\\$\pm$0.0057} &	\makecell{0.0754\\$\pm$0.0061} &	\makecell{0.0585\\$\pm$0.0052} &	-- &	-- &	--\\
+\ce{^{52g}Mn}\,($\sigma_i$)&	\makecell{11.58\\$\pm$0.72} &	\makecell{13.46\\$\pm$0.76} &	\makecell{20.8\\$\pm$1.3} &	\makecell{28.2\\$\pm$1.8} &	\makecell{21.8\\$\pm$1.5} &	\makecell{16.3\\$\pm$1.0} &	\makecell{10.37\\$\pm$0.64} &	\makecell{0.300\\$\pm$0.017} &	\makecell{0.1124\\$\pm$0.0085} &	\makecell{0.0428\\$\pm$0.0038} &	\makecell{0.00540\\$\pm$0.00050} &	-- &	-- &	--\\
+\ce{^{52}Mn}\,($\sigma_c$)&	\makecell{13.66\\$\pm$0.90} &	\makecell{15.6\\$\pm$1.1} &	\makecell{23.0\\$\pm$1.8} &	\makecell{30.9\\$\pm$2.1} &	\makecell{31.7\\$\pm$2.2} &	\makecell{18.5\\$\pm$1.3} &	\makecell{10.57\\$\pm$0.62} &	\makecell{0.313\\$\pm$0.019} &	\makecell{0.0393\\$\pm$0.0045} &	\makecell{0.0556\\$\pm$0.0048} &	\makecell{0.0185\\$\pm$0.0019} &	-- &	-- &	--\\
+\ce{^{54}Mn}\,($\sigma_i$)&	\makecell{131.0\\$\pm$8.5} &	\makecell{162\\$\pm$10} &	\makecell{167\\$\pm$12} &	\makecell{129\\$\pm$10} &	\makecell{42.2\\$\pm$3.4} &	\makecell{2.46\\$\pm$0.25} &	\makecell{1.10\\$\pm$0.13} &	\makecell{1.09\\$\pm$0.14} &	\makecell{1.47\\$\pm$0.17} &	\makecell{1.53\\$\pm$0.16} &	\makecell{1.36\\$\pm$0.12} &	\makecell{1.133\\$\pm$0.080} &	\makecell{0.747\\$\pm$0.075} &	\makecell{0.0600\\$\pm$0.0080}\\
+\ce{^{55}Co}\,($\sigma_i$)&	\makecell{9.43\\$\pm$0.63} &	\makecell{12.5\\$\pm$1.0} &	\makecell{15.7\\$\pm$1.2} &	\makecell{21.5\\$\pm$1.5} &	\makecell{48.4\\$\pm$3.6} &	\makecell{64.7\\$\pm$5.6} &	\makecell{61.0\\$\pm$4.5} &	\makecell{43.6\\$\pm$3.0} &	\makecell{33.6\\$\pm$3.4} &	\makecell{13.4\\$\pm$1.2} &	\makecell{0.377\\$\pm$0.035} &	\makecell{0.0421\\$\pm$0.0029} &	-- &	--\\
+\ce{^{56}Mn}\,($\sigma_c$)&	-- &	\makecell{0.518\\$\pm$0.039} &	\makecell{0.610\\$\pm$0.044} &	\makecell{0.462\\$\pm$0.045} &	\makecell{0.506\\$\pm$0.054} &	\makecell{0.405\\$\pm$0.033} &	\makecell{0.223\\$\pm$0.013} &	\makecell{0.0962\\$\pm$0.0056} &	\makecell{0.0329\\$\pm$0.0043} &	\makecell{0.0253\\$\pm$0.0021} &	\makecell{0.0132\\$\pm$0.0014} &	-- &	-- &	--\\
+\ce{^{56}Co}\,($\sigma_i$)&	\makecell{13.0\\$\pm$1.1} &	\makecell{16.3\\$\pm$1.4} &	\makecell{18.9\\$\pm$1.6} &	\makecell{23.6\\$\pm$1.7} &	\makecell{29.2\\$\pm$2.6} &	\makecell{47.8\\$\pm$3.2} &	\makecell{51.6\\$\pm$3.0} &	\makecell{82.6\\$\pm$5.0} &	\makecell{176\\$\pm$13} &	\makecell{197\\$\pm$16} &	\makecell{344\\$\pm$30} &	\makecell{376\\$\pm$24} &	\makecell{288\\$\pm$29} &	\makecell{3.54\\$\pm$0.47}\\
+\ce{^{57}Co}\,($\sigma_i$)&	-- &	\makecell{0.476\\$\pm$0.047} &	\makecell{0.539\\$\pm$0.060} &	\makecell{0.648\\$\pm$0.044} &	\makecell{1.170\\$\pm$0.090} &	\makecell{1.84\\$\pm$0.12} &	\makecell{2.36\\$\pm$0.14} &	\makecell{2.50\\$\pm$0.16} &	\makecell{3.20\\$\pm$0.25} &	\makecell{3.40\\$\pm$0.28} &	\makecell{5.14\\$\pm$0.47} &	\makecell{8.18\\$\pm$0.52} &	\makecell{11.5\\$\pm$1.2} &	\makecell{5.49\\$\pm$0.73}\\
+\ce{^{58m}Co}\,($\sigma_i$)&	-- &	-- &	-- &	\makecell{0.0427\\$\pm$0.0028} &	\makecell{0.0619\\$\pm$0.0042} &	\makecell{0.1054\\$\pm$0.0069} &	\makecell{0.172\\$\pm$0.011} &	\makecell{0.236\\$\pm$0.015} &	\makecell{0.241\\$\pm$0.019} &	\makecell{0.300\\$\pm$0.028} &	\makecell{0.475\\$\pm$0.044} &	\makecell{0.545\\$\pm$0.035} &	\makecell{0.477\\$\pm$0.049} &	\makecell{0.170\\$\pm$0.025}\\
+\ce{^{58g}Co}\,($\sigma_i$)&	-- &	-- &	-- &	\makecell{0.0884\\$\pm$0.0066} &	\makecell{0.0980\\$\pm$0.0074} &	\makecell{0.1118\\$\pm$0.0082} &	\makecell{0.1229\\$\pm$0.0084} &	\makecell{0.1484\\$\pm$0.0090} &	\makecell{0.333\\$\pm$0.028} &	\makecell{0.318\\$\pm$0.027} &	\makecell{0.919\\$\pm$0.090} &	\makecell{1.276\\$\pm$0.096} &	\makecell{1.56\\$\pm$0.17} &	\makecell{0.623\\$\pm$0.083}\\
+\ce{^{58}Co}\,($\sigma_i$)&	-- &	-- &	-- &	\makecell{0.1311\\$\pm$0.0072} &	\makecell{0.1599\\$\pm$0.0086} &	\makecell{0.217\\$\pm$0.011} &	\makecell{0.295\\$\pm$0.014} &	\makecell{0.384\\$\pm$0.018} &	\makecell{0.574\\$\pm$0.034} &	\makecell{0.618\\$\pm$0.039} &	\makecell{1.39\\$\pm$0.10} &	\makecell{1.82\\$\pm$0.10} &	\makecell{2.04\\$\pm$0.18} &	\makecell{0.792\\$\pm$0.086}\\ \bottomrule
 \end{tabular}
 }
 \end{table}
@@ -685,15 +684,15 @@ E$_\text{p}$ (MeV)&	\makecell{53.45\\$\pm$0.61} &	\makecell{46.63\\$\pm$0.68} &	
 \toprule
                             & \multicolumn{14}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-15} 
 E$_\text{p}$ (MeV)&	\makecell{53.04\\$\pm$0.61} &	\makecell{46.18\\$\pm$0.68} &	\makecell{38.42\\$\pm$0.79} &	\makecell{34.06\\$\pm$0.86} &	\makecell{29.21\\$\pm$0.97} &	\makecell{23.6\\$\pm$1.2} &	\makecell{21.70\\$\pm$0.33} &	\makecell{18.30\\$\pm$0.38} &	\makecell{16.6\\$\pm$1.5} &	\makecell{15.38\\$\pm$0.44} &	\makecell{13.11\\$\pm$0.49} &	\makecell{10.57\\$\pm$0.57} &	\makecell{6.90\\$\pm$0.82} &	\makecell{1.4\\$\pm$1.3}\\ \midrule
-\ce{^{54}Mn}\,($\sigma_i$)&	\makecell{2.048\\$\pm$0.072} &	\makecell{0.408\\$\pm$0.012} &	\makecell{0.0931\\$\pm$0.0034} &	\makecell{0.0517\\$\pm$0.0017} &	\makecell{0.02233\\$\pm$0.00075} &	\makecell{0.01848\\$\pm$0.00065} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
-\ce{^{57}Ni}\,($\sigma_c$)&	\makecell{2.107\\$\pm$0.094} &	\makecell{0.738\\$\pm$0.024} &	\makecell{0.0530\\$\pm$0.0033} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
-\ce{^{57}Co}\,($\sigma_i$)&	\makecell{48.8\\$\pm$2.2} &	\makecell{32.2\\$\pm$1.5} &	\makecell{3.79\\$\pm$0.37} &	\makecell{1.206\\$\pm$0.046} &	\makecell{1.673\\$\pm$0.063} &	\makecell{1.053\\$\pm$0.046} &	\makecell{0.707\\$\pm$0.033} &	\makecell{0.264\\$\pm$0.025} &	-- &	-- &	-- &	-- &	-- &	--\\
-\ce{^{57}Co}\,($\sigma_c$)&	\makecell{50.9\\$\pm$2.2} &	\makecell{33.0\\$\pm$1.5} &	\makecell{3.84\\$\pm$0.37} &	\makecell{1.206\\$\pm$0.046} &	\makecell{1.673\\$\pm$0.063} &	\makecell{1.053\\$\pm$0.046} &	\makecell{0.707\\$\pm$0.033} &	\makecell{0.264\\$\pm$0.025} &	-- &	-- &	-- &	-- &	-- &	--\\
-\ce{^{60}Co}\,($\sigma_c$)&	\makecell{9.22\\$\pm$0.33} &	\makecell{7.70\\$\pm$0.25} &	\makecell{6.14\\$\pm$0.23} &	\makecell{3.12\\$\pm$0.13} &	\makecell{0.794\\$\pm$0.043} &	\makecell{0.201\\$\pm$0.014} &	\makecell{0.1252\\$\pm$0.0086} &	\makecell{0.0199\\$\pm$0.0020} &	-- &	-- &	-- &	-- &	-- &	--\\
-\ce{^{60}Cu}\,($\sigma_c$)&	\makecell{24.84\\$\pm$0.89} &	\makecell{16.06\\$\pm$0.52} &	\makecell{1.461\\$\pm$0.095} &	\makecell{0.578\\$\pm$0.021} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
-\ce{^{61}Co}\,($\sigma_c$)&	\makecell{4.18\\$\pm$0.49} &	\makecell{5.69\\$\pm$0.57} &	\makecell{6.94\\$\pm$0.49} &	\makecell{6.61\\$\pm$0.60} &	\makecell{5.94\\$\pm$0.76} &	\makecell{0.872\\$\pm$0.067} &	\makecell{0.2531\\$\pm$0.0085} &	\makecell{0.1178\\$\pm$0.0043} &	\makecell{0.0411\\$\pm$0.0024} &	-- &	-- &	-- &	-- &	--\\
-\ce{^{61}Cu}\,($\sigma_c$)&	\makecell{78\\$\pm$78} &	\makecell{101\\$\pm$101} &	\makecell{161\\$\pm$161} &	\makecell{155\\$\pm$155} &	\makecell{104\\$\pm$104} &	\makecell{7.0\\$\pm$7.0} &	\makecell{1.8\\$\pm$1.8} &	\makecell{1.2\\$\pm$1.2} &	\makecell{0.80\\$\pm$0.80} &	-- &	-- &	-- &	-- &	--\\
-\ce{^{64}Cu}\,($\sigma_i$)&	\makecell{49.9\\$\pm$1.8} &	\makecell{52.7\\$\pm$1.8} &	\makecell{58.4\\$\pm$2.1} &	\makecell{62.4\\$\pm$2.2} &	\makecell{101.8\\$\pm$3.7} &	\makecell{145\\$\pm$11} &	\makecell{83.1\\$\pm$2.8} &	\makecell{57.0\\$\pm$1.9} &	\makecell{45.9\\$\pm$2.0} &	\makecell{22.15\\$\pm$0.92} &	-- &	-- &	-- &	--\\ \bottomrule
+\ce{^{54}Mn}\,($\sigma_i$)&	\makecell{2.09\\$\pm$0.13} &	\makecell{0.428\\$\pm$0.024} &	\makecell{0.0931\\$\pm$0.0061} &	\makecell{0.0517\\$\pm$0.0033} &	\makecell{0.0223\\$\pm$0.0015} &	\makecell{0.0185\\$\pm$0.0012} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
+\ce{^{57}Ni}\,($\sigma_c$)&	\makecell{2.15\\$\pm$0.15} &	\makecell{0.775\\$\pm$0.045} &	\makecell{0.0530\\$\pm$0.0044} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
+\ce{^{57}Co}\,($\sigma_i$)&	\makecell{49.8\\$\pm$3.4} &	\makecell{33.8\\$\pm$2.3} &	\makecell{3.79\\$\pm$0.42} &	\makecell{1.206\\$\pm$0.080} &	\makecell{1.67\\$\pm$0.11} &	\makecell{1.053\\$\pm$0.072} &	\makecell{0.707\\$\pm$0.046} &	\makecell{0.264\\$\pm$0.027} &	-- &	-- &	-- &	-- &	-- &	--\\
+\ce{^{57}Co}\,($\sigma_c$)&	\makecell{51.9\\$\pm$3.4} &	\makecell{34.6\\$\pm$2.3} &	\makecell{3.84\\$\pm$0.42} &	\makecell{1.206\\$\pm$0.080} &	\makecell{1.67\\$\pm$0.11} &	\makecell{1.053\\$\pm$0.072} &	\makecell{0.707\\$\pm$0.046} &	\makecell{0.264\\$\pm$0.027} &	-- &	-- &	-- &	-- &	-- &	--\\
+\ce{^{60}Co}\,($\sigma_c$)&	\makecell{9.41\\$\pm$0.59} &	\makecell{8.08\\$\pm$0.47} &	\makecell{6.14\\$\pm$0.40} &	\makecell{3.12\\$\pm$0.22} &	\makecell{0.794\\$\pm$0.063} &	\makecell{0.201\\$\pm$0.017} &	\makecell{0.125\\$\pm$0.010} &	\makecell{0.0199\\$\pm$0.0022} &	-- &	-- &	-- &	-- &	-- &	--\\
+\ce{^{60}Cu}\,($\sigma_c$)&	\makecell{25.3\\$\pm$1.6} &	\makecell{16.86\\$\pm$0.97} &	\makecell{1.46\\$\pm$0.12} &	\makecell{0.578\\$\pm$0.038} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
+\ce{^{61}Co}\,($\sigma_c$)&	\makecell{4.26\\$\pm$0.54} &	\makecell{5.98\\$\pm$0.66} &	\makecell{6.94\\$\pm$0.62} &	\makecell{6.61\\$\pm$0.70} &	\makecell{5.94\\$\pm$0.83} &	\makecell{0.872\\$\pm$0.081} &	\makecell{0.253\\$\pm$0.014} &	\makecell{0.1178\\$\pm$0.0069} &	\makecell{0.0415\\$\pm$0.0035} &	-- &	-- &	-- &	-- &	--\\
+\ce{^{61}Cu}\,($\sigma_c$)&	\makecell{79.7\\$\pm$5.1} &	\makecell{106.4\\$\pm$6.4} &	\makecell{161\\$\pm$11} &	\makecell{155\\$\pm$10} &	\makecell{104.1\\$\pm$7.2} &	\makecell{6.97\\$\pm$0.52} &	\makecell{1.84\\$\pm$0.13} &	\makecell{1.195\\$\pm$0.080} &	\makecell{0.809\\$\pm$0.069} &	-- &	-- &	-- &	-- &	--\\
+\ce{^{64}Cu}\,($\sigma_i$)&	\makecell{50.9\\$\pm$3.2} &	\makecell{55.4\\$\pm$3.2} &	\makecell{58.4\\$\pm$3.8} &	\makecell{62.4\\$\pm$4.1} &	\makecell{101.8\\$\pm$6.8} &	\makecell{145\\$\pm$14} &	\makecell{83.1\\$\pm$4.7} &	\makecell{57.0\\$\pm$3.3} &	\makecell{46.4\\$\pm$3.5} &	\makecell{22.2\\$\pm$1.8} &	-- &	-- &	-- &	--\\ \bottomrule
 \end{tabular}
 }
 \end{table}
@@ -712,12 +711,12 @@ E$_\text{p}$ (MeV)&	\makecell{53.04\\$\pm$0.61} &	\makecell{46.18\\$\pm$0.68} &	
 \toprule
                             & \multicolumn{14}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-15} 
 E$_\text{p}$ (MeV)&	\makecell{53.31\\$\pm$0.61} &	\makecell{46.48\\$\pm$0.68} &	\makecell{38.76\\$\pm$0.78} &	\makecell{34.44\\$\pm$0.86} &	\makecell{29.63\\$\pm$0.96} &	\makecell{24.1\\$\pm$1.1} &	\makecell{22.29\\$\pm$0.32} &	\makecell{18.98\\$\pm$0.37} &	\makecell{17.3\\$\pm$1.5} &	\makecell{16.14\\$\pm$0.42} &	\makecell{14.03\\$\pm$0.47} &	\makecell{11.49\\$\pm$0.55} &	\makecell{8.38\\$\pm$0.70} &	\makecell{2.88\\$\pm$0.88}\\  \midrule
-\ce{^{43}K}\,($\sigma_c$)&	\makecell{1.549\\$\pm$0.080} &	\makecell{0.889\\$\pm$0.056} &	\makecell{0.189\\$\pm$0.014} &	\makecell{0.0462\\$\pm$0.0035} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	--\\
-\ce{^{44g}Sc}\,($\sigma_i$)&	\makecell{25.0\\$\pm$2.0} &	\makecell{27.0\\$\pm$1.9} &	\makecell{37.0\\$\pm$2.3} &	\makecell{52.6\\$\pm$3.9} &	\makecell{47.8\\$\pm$2.9} &	\makecell{29.9\\$\pm$2.6} &	\makecell{8.09\\$\pm$0.27} &	\makecell{3.49\\$\pm$0.13} &	\makecell{2.70\\$\pm$0.27} &	\makecell{3.02\\$\pm$0.12} &	\makecell{2.49\\$\pm$0.11} &	-- &	-- &	--\\
-\ce{^{44m}Sc}\,($\sigma_i$)&	\makecell{12.60\\$\pm$0.41} &	\makecell{12.37\\$\pm$0.36} &	\makecell{15.20\\$\pm$0.52} &	\makecell{17.78\\$\pm$0.57} &	\makecell{16.85\\$\pm$0.55} &	\makecell{8.63\\$\pm$0.30} &	\makecell{4.26\\$\pm$0.15} &	\makecell{1.451\\$\pm$0.051} &	\makecell{1.317\\$\pm$0.052} &	\makecell{1.269\\$\pm$0.049} &	\makecell{0.839\\$\pm$0.036} &	-- &	-- &	--\\
-\ce{^{44}Sc}\,($\sigma_c$)&	\makecell{37.6\\$\pm$2.1} &	\makecell{39.4\\$\pm$1.9} &	\makecell{52.2\\$\pm$2.3} &	\makecell{70.4\\$\pm$3.9} &	\makecell{64.7\\$\pm$3.0} &	\makecell{38.6\\$\pm$2.7} &	\makecell{12.35\\$\pm$0.31} &	\makecell{4.94\\$\pm$0.14} &	\makecell{4.02\\$\pm$0.27} &	\makecell{4.29\\$\pm$0.13} &	\makecell{3.33\\$\pm$0.11} &	-- &	-- &	--\\
-\ce{^{47}Sc}\,($\sigma_c$)&	\makecell{21.20\\$\pm$0.68} &	\makecell{20.45\\$\pm$0.57} &	\makecell{21.66\\$\pm$0.76} &	\makecell{23.55\\$\pm$0.75} &	\makecell{25.12\\$\pm$0.84} &	\makecell{15.63\\$\pm$0.55} &	\makecell{11.53\\$\pm$0.48} &	\makecell{5.50\\$\pm$0.20} &	\makecell{2.75\\$\pm$0.11} &	\makecell{1.569\\$\pm$0.058} &	\makecell{0.810\\$\pm$0.034} &	\makecell{0.361\\$\pm$0.012} &	\makecell{0.218\\$\pm$0.015} &	--\\
-\ce{^{48}Sc}\,($\sigma_i$)&	\makecell{1.66\\$\pm$0.10} &	\makecell{1.68\\$\pm$0.17} &	\makecell{1.29\\$\pm$0.14} &	\makecell{0.772\\$\pm$0.051} &	\makecell{0.700\\$\pm$0.052} &	\makecell{0.339\\$\pm$0.020} &	\makecell{0.318\\$\pm$0.011} &	\makecell{0.1852\\$\pm$0.0095} &	\makecell{0.135\\$\pm$0.012} &	\makecell{0.0625\\$\pm$0.0037} &	-- &	-- &	-- &	--\\ \bottomrule
+\ce{^{43}K}\,($\sigma_c$)&	\makecell{1.55\\$\pm$0.11} &	\makecell{0.889\\$\pm$0.067} &	\makecell{0.189\\$\pm$0.017} &	\makecell{0.0462\\$\pm$0.0042} &	 &	 &	 &	 &	 &	 &	 &	 &	 &	\\
+\ce{^{44g}Sc}\,($\sigma_i$)&	\makecell{25.0\\$\pm$2.4} &	\makecell{27.0\\$\pm$2.2} &	\makecell{37.0\\$\pm$2.9} &	\makecell{52.6\\$\pm$4.8} &	\makecell{47.8\\$\pm$3.9} &	\makecell{29.9\\$\pm$3.0} &	\makecell{8.09\\$\pm$0.45} &	\makecell{3.49\\$\pm$0.20} &	\makecell{2.70\\$\pm$0.31} &	\makecell{3.02\\$\pm$0.23} &	\makecell{2.49\\$\pm$0.21} &	 &	 &	\\
+\ce{^{44m}Sc}\,($\sigma_i$)&	\makecell{12.60\\$\pm$0.72} &	\makecell{12.37\\$\pm$0.63} &	\makecell{15.20\\$\pm$0.93} &	\makecell{17.8\\$\pm$1.1} &	\makecell{16.8\\$\pm$1.1} &	\makecell{8.63\\$\pm$0.53} &	\makecell{4.26\\$\pm$0.24} &	\makecell{1.451\\$\pm$0.082} &	\makecell{1.317\\$\pm$0.088} &	\makecell{1.269\\$\pm$0.095} &	\makecell{0.839\\$\pm$0.070} &	 &	 &	\\
+\ce{^{44}Sc}\,($\sigma_c$)&	\makecell{37.6\\$\pm$2.5} &	\makecell{39.4\\$\pm$2.3} &	\makecell{52.2\\$\pm$3.1} &	\makecell{70.4\\$\pm$4.9} &	\makecell{64.7\\$\pm$4.0} &	\makecell{38.6\\$\pm$3.1} &	\makecell{12.35\\$\pm$0.51} &	\makecell{4.94\\$\pm$0.22} &	\makecell{4.02\\$\pm$0.32} &	\makecell{4.29\\$\pm$0.25} &	\makecell{3.33\\$\pm$0.22} &	 &	 &	\\
+\ce{^{47}Sc}\,($\sigma_c$)&	\makecell{21.2\\$\pm$1.2} &	\makecell{20.5\\$\pm$1.0} &	\makecell{21.7\\$\pm$1.3} &	\makecell{23.5\\$\pm$1.4} &	\makecell{25.1\\$\pm$1.6} &	\makecell{15.63\\$\pm$0.97} &	\makecell{11.53\\$\pm$0.70} &	\makecell{5.50\\$\pm$0.32} &	\makecell{2.75\\$\pm$0.18} &	\makecell{1.57\\$\pm$0.12} &	\makecell{0.810\\$\pm$0.067} &	\makecell{0.361\\$\pm$0.021} &	\makecell{0.218\\$\pm$0.023} &	\\
+\ce{^{48}Sc}\,($\sigma_i$)&	\makecell{1.66\\$\pm$0.13} &	\makecell{1.68\\$\pm$0.19} &	\makecell{1.29\\$\pm$0.15} &	\makecell{0.772\\$\pm$0.065} &	\makecell{0.700\\$\pm$0.064} &	\makecell{0.339\\$\pm$0.026} &	\makecell{0.318\\$\pm$0.018} &	\makecell{0.185\\$\pm$0.013} &	\makecell{0.135\\$\pm$0.014} &	\makecell{0.0625\\$\pm$0.0055} &	 &	 &	 &	\\ \bottomrule
 \end{tabular}
 }
 \end{table}
@@ -740,10 +739,10 @@ E$_\text{p}$ (MeV)&	\makecell{53.31\\$\pm$0.61} &	\makecell{46.48\\$\pm$0.68} &	
 \toprule
                                & \multicolumn{14}{c}{Isomer branching ratio}                                                                                                                \\ \cmidrule(l){2-15} 
 E$_\text{p}$ (MeV)&	\makecell{53.45\\$\pm$0.61} &	\makecell{46.63\\$\pm$0.68} &	\makecell{38.93\\$\pm$0.78} &	\makecell{34.62\\$\pm$0.85} &	\makecell{29.84\\$\pm$0.96} &	\makecell{24.4\\$\pm$1.1} &	\makecell{22.71\\$\pm$0.43} &	\makecell{19.36\\$\pm$0.56} &	\makecell{17.6\\$\pm$1.5} &	\makecell{16.54\\$\pm$0.48} &	\makecell{14.52\\$\pm$0.49} &	\makecell{12.11\\$\pm$0.53} &	\makecell{9.23\\$\pm$0.61} &	\makecell{4.10\\$\pm$0.73}\\ \midrule
-\ce{^{nat}Fe}(p,x)\ce{^{52}Mn} &	\makecell{0.417\\$\pm$0.022} &	\makecell{0.414\\$\pm$0.024} &	\makecell{0.396\\$\pm$0.026} &	\makecell{0.388\\$\pm$0.021} &	\makecell{0.517\\$\pm$0.026} &	\makecell{0.420\\$\pm$0.025} &	\makecell{0.358\\$\pm$0.018} &	\makecell{0.202\\$\pm$0.010} &	\makecell{0.404\\$\pm$0.043} &	\makecell{0.638\\$\pm$0.043} &	\makecell{0.915\\$\pm$0.073} &	-- &	-- &	--\\
-\ce{^{nat}Fe}(p,x)\ce{^{58}Co} &	-- &	-- &	-- &	\makecell{0.326\\$\pm$0.017} &	\makecell{0.387\\$\pm$0.020} &	\makecell{0.485\\$\pm$0.025} &	\makecell{0.583\\$\pm$0.033} &	\makecell{0.614\\$\pm$0.034} &	\makecell{0.420\\$\pm$0.026} &	\makecell{0.486\\$\pm$0.036} &	\makecell{0.341\\$\pm$0.024} &	\makecell{0.299\\$\pm$0.016} &	\makecell{0.234\\$\pm$0.015} &	\makecell{0.214\\$\pm$0.029}         \vspace{1em}     \\ 
+\ce{^{nat}Fe}(p,x)\ce{^{52}Mn} &	\makecell{0.417\\$\pm$0.038} &	\makecell{0.414\\$\pm$0.037} &	\makecell{0.396\\$\pm$0.040} &	\makecell{0.388\\$\pm$0.037} &	\makecell{0.517\\$\pm$0.049} &	\makecell{0.420\\$\pm$0.040} &	\makecell{0.358\\$\pm$0.029} &	\makecell{0.202\\$\pm$0.017} &	\makecell{0.404\\$\pm$0.056} &	\makecell{0.638\\$\pm$0.076} &	\makecell{0.92\\$\pm$0.12} &	-- &	-- &	--\\
+\ce{^{nat}Fe}(p,x)\ce{^{58}Co} &	-- &	-- &	-- &	\makecell{0.326\\$\pm$0.028} &	\makecell{0.387\\$\pm$0.034} &	\makecell{0.485\\$\pm$0.040} &	\makecell{0.583\\$\pm$0.047} &	\makecell{0.614\\$\pm$0.049} &	\makecell{0.420\\$\pm$0.041} &	\makecell{0.486\\$\pm$0.055} &	\makecell{0.341\\$\pm$0.040} &	\makecell{0.299\\$\pm$0.026} &	\makecell{0.234\\$\pm$0.031} &	\makecell{0.214\\$\pm$0.039}\\         \vspace{1em}     \\ 
 E$_\text{p}$ (MeV)&	\makecell{53.31\\$\pm$0.61} &	\makecell{46.48\\$\pm$0.68} &	\makecell{38.76\\$\pm$0.78} &	\makecell{34.44\\$\pm$0.86} &	\makecell{29.63\\$\pm$0.96} &	\makecell{24.1\\$\pm$1.1} &	\makecell{22.29\\$\pm$0.32} &	\makecell{18.98\\$\pm$0.37} &	\makecell{17.3\\$\pm$1.5} &	\makecell{16.14\\$\pm$0.42} &	\makecell{14.03\\$\pm$0.47} &	\makecell{11.49\\$\pm$0.55} &	\makecell{8.38\\$\pm$0.70} &	\makecell{2.88\\$\pm$0.88}\\ \midrule
-\ce{^{nat}Ti}(p,x)\ce{^{44}Sc} &	\makecell{0.335\\$\pm$0.022} &	\makecell{0.314\\$\pm$0.018} &	\makecell{0.291\\$\pm$0.016} &	\makecell{0.253\\$\pm$0.016} &	\makecell{0.260\\$\pm$0.015} &	\makecell{0.224\\$\pm$0.017} &	\makecell{0.345\\$\pm$0.015} &	\makecell{0.294\\$\pm$0.013} &	\makecell{0.328\\$\pm$0.026} &	\makecell{0.296\\$\pm$0.015} &	\makecell{0.252\\$\pm$0.014} &	-- &	-- &	--\\\bottomrule
+\ce{^{nat}Ti}(p,x)\ce{^{44}Sc} &	\makecell{0.335\\$\pm$0.029} &	\makecell{0.314\\$\pm$0.024} &	\makecell{0.291\\$\pm$0.025} &	\makecell{0.253\\$\pm$0.023} &	\makecell{0.260\\$\pm$0.023} &	\makecell{0.224\\$\pm$0.023} &	\makecell{0.345\\$\pm$0.024} &	\makecell{0.294\\$\pm$0.021} &	\makecell{0.328\\$\pm$0.034} &	\makecell{0.296\\$\pm$0.028} &	\makecell{0.252\\$\pm$0.027} &	-- &	-- &	--\\ \bottomrule
 \end{tabular}
 }
 \end{table}
@@ -801,7 +800,7 @@ The cumulative cross sections from these data are also consistent with existing 
 
 
 Several of the activities produced via \ce{^{nat}Fe}(p,x)  could be useful as experimental monitor reactions. 
-In particular, \ce{^{nat}Fe}(p,x)\ce{^{56}Co} ($t_{1/2}=77.236\pm0.026$ d, $\epsilon$=100\% to \ce{^{56}Fe}\,\cite{Junde2011})  is a strongly-fed reaction channel (peak cross section of approximately 400\,mb near 12\,MeV), a sufficiently-long lifetime permitting offline gamma spectrometry,  and  cannot be populated via secondary neutrons incident upon the monitor target. 
+In particular, \ce{^{nat}Fe}(p,x)\ce{^{56}Co} ($t_{1/2}=77.236\pm0.026$ d, $\epsilon$=100\% to \ce{^{56}Fe}\,\cite{Junde2011})  is a strongly-fed reaction channel (peak cross section of approximately 400\,mb near 12\,MeV), with a sufficiently-long lifetime permitting offline gamma spectrometry,  and  cannot be populated via secondary neutrons incident upon the monitor target. 
 It possesses a number of intense gamma-rays, which are distinct from those populated by daughter states in the decay of  \ce{^{56}Mn}, and the gammas which are produced both in the decay of  \ce{^{56}Co} and  \ce{^{56}Mn} may be easily resolved based on differences in intensity and lifetime. 
 Similarly,  \ce{^{nat}Fe}(p,x)\ce{^{54}Mn}  ($t_{1/2}=312.20\pm0.020$ d, $\epsilon$=100\% to \ce{^{54}Cr}\,\cite{Dong2014}) has a convenient lifetime and strong cross section (peak of approximately 160\,mb near 40\,MeV), and is immune from two different reactions on the same monitor foil leading to states in the same daughter nuclide.
 This reaction could be useful for intermediate- to high-energy protons ($E_p \geq$30\,MeV), but would be susceptible to production via the high-energy secondary neutrons  (threshold 12.1\,MeV off of \ce{^{56}Fe}) produced in these facilities, though (p,x) production rates should dominate (n,x) through both particle flux and cross section. 
@@ -810,13 +809,13 @@ This reaction could be useful for intermediate- to high-energy protons ($E_p \ge
 \textred{All: feel free to add additional details of 51/52Mn production here...}
 
 
-Notably, this work is the most well-characterized measurement of the \ce{^{nat}Fe}(p,x)\ce{^{51,52}Mn} reaction below 70\,MeV to date, with cross sections measured  at the 4--9\% uncertainty level.
+Notably, this work is the most well-characterized measurement of the \ce{^{nat}Fe}(p,x)\ce{^{51,52}Mn} reactions below 70\,MeV to date, with cross sections measured  at the 6--10\% uncertainty level.
 This is important, as it presents the first measurement of the \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} reaction,  the first measurement of the independent \ce{^{nat}Fe}(p,x)\ce{^{52m,52g}Mn} cross sections, and extends the \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} excitation function down to the lowest energy to date. 
 \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} appears to offer a compelling alternative to the more established \ce{^{50}Cr}(d,x)\ce{^{51}Mn} pathway, which necessitates an enriched \ce{^{50}Cr} target to avoid radio-manganese contamination from reactions on stable isotopes of Cr\,\cite{Klein2000}.
 % However, 
 \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} could be used for clean production of  \ce{^{51}Mn} ($\geq$98.8\% radioisotopic purity) below 20\,MeV using the \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} channel.
 In addition, this low-energy production is accessible using the international network of small medical and research cyclotrons, enabling in-house production of this short-lived ($t_{1/2}=46.2\pm0.1$ m\,\cite{Wang2017}) radionuclide.
-To increase yields, an enriched \ce{^{54}Fe} target could be used to take advantage of the eight-fold increase in reaction cross section for production using 40--50\,MeV protons.
+To increase yields over \ce{^{nat}Fe}(p,x), an enriched \ce{^{54}Fe} target could be used to take advantage of the eight-fold increase in reaction cross section for production using 40--50\,MeV protons, without opening the additional manganese exit channels accessible on a natural target.
 
 
 
@@ -881,10 +880,34 @@ Quick observations:
  \item Isomer branching ratios are (surprise, surprise) really bad.  Ti(p,x)\ce{^{44}Sc} is the best, but all three miss the key shape and features
 \end{enumerate}
 
+The measured cross sections were compared to the predictions by the reaction codes TALYS, EMPIRE, CoH, ALICE, and by the calculations in the TENDL database.
+The codes were all run on their default settings, in order to assess their predictive capabilities for the casual user.
+The default settings for the optical models and gamma strength function ($\gamma$SF) are listed in  \autoref{tab:fe_defaults}.
+The level density models for each are as follows.
+For both CoH and TALYS, the default level density model is the Gilbert-Cameron (GC) model \cite{Gilbert2011}, which uses the Constant Temperature model at lower excitation energies and the Fermi Gas model at higher energies.
+In EMPIRE, the default level density model is the Enhanced Generalized Superfluid Model (EGSM) \cite{Giardina2002}.
+This model uses the Generalized Superfluid Model (GSM) \cite{ignatyuk1979role,Ignatyuk1993} at lower energies and the Fermi Gas model as well at higher energies, and has been normalized to discrete levels.
+This normalization is performed in such a way that it only affects the level density below the neutron separation energy.
+Finally, the default level density model in ALICE is the Kataria-Rarnamurthy-Kapoor (KRK) model \cite{Kataria1978,Kataria1990}, a semi-empirical nuclear level density formula which provides shell-dependent corrections to the nuclear mass surface, based on a Fourier expansion of the single particle level density of nucleons.
 
-\textred{PLACEHOLDER TEXT -- }
 
-\textred{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse urna diam, bibendum eu venenatis sit amet, vulputate in mi. Sed elit ex, aliquet in pharetra efficitur, mattis vel odio. Donec a augue lectus. Vestibulum fermentum rutrum justo, non imperdiet risus iaculis vitae. Aliquam non quam nec dui scelerisque bibendum rhoncus sed tellus. Aenean fermentum ullamcorper turpis, et gravida diam feugiat a. Nam nec dignissim massa. Morbi ultrices at neque in eleifend. Duis non lobortis ipsum, sit amet lobortis nisl. In ultrices posuere volutpat. Nunc mattis libero porttitor tortor mollis, nec tincidunt lacus sollicitudin. Sed vulputate at justo quis sodales. Nulla risus lorem, pellentesque a mauris ornare, varius maximus nulla. Aliquam tempus blandit ex. Suspendisse quis imperdiet sapien, nec egestas magna. Nam eu molestie nibh.}
+For this analysis, the focus will be on the three largest channels  measured -- \ce{^{nat}Fe}(p,x)\ce{^{51}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn}, and \ce{^{nat}Fe}(p,x)\ce{^{52}Mn}.
+For the \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} reactions, seen in \autoref{fig:51Mn}, the lower-energy  \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} reaction, which peaks around 15\,MeV, is  well-modeled by TALYS and TENDL, and over-predicted by EMPIRE, CoH and ALICE.
+The higher-energy reactions on the higher mass Fe isotopes, however, are better matched by  EMPIRE and CoH.
+ALICE overpredicts the production of \ce{^{51}Mn} in both peaks, and appears to peak at too high an energy.
+As was seen in the modeling of high-energy proton-induced niobium reactions\,\cite{Voyles2018a}, TALYS and TENDL do well with the lower-energy \enquote{compound} reactions but do not accurately predict the higher-energy reactions that have a significant pre-equilibrium component.
+EMPIRE and CoH seem to accurately predict the locations of the peaks, but often fail to reliably estimate the magnitude of the cross section.
+This is seen again in the  \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} cross section, where the first peak is well-modeled by TALYS and TENDL, but  rises much more rapidly than the data would support above 50\,MeV.
+CoH and EMPIRE, again, overpredict the cross sections at all energies, but seem to have the correct shape.
+Through measurement of the  \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn} independent cross section, the effect of spin distributions in highly-excited nuclear states can be studied.
+The measured data suggests that the independent cross section to the $2^+$ isomer should be a large fraction of the cumulative cross section to \ce{^{52}Mn} (which has a $6^+$ ground state), over 80\% at the peak energy.
+All three codes predict about 50\%, which indicates that the isomer feeding is not well-modeled.
+It is possible that this is caused by residual nucleus population and/or level density models that are skewed too heavily towards high spin.
+In the other isomer-to-ground state ratio measured for Fe,  \ce{^{nat}Fe}(p,x)\ce{^{58}Co}, the opposite is seen -- the codes underpredict the ratio of the isomer-to-ground state, but in this case the isomer is the higher spin state ($5^+$, compared with a  $2^+$ ground state).
+Given that the level density model was the same for all of the product nuclei, it points to the spin distribution of the initial population of the residual nucleus as the main problem with modeling.
+However, no firm conclusions can be drawn about the direct causes of the inaccuracies, as there are many \enquote{moving parts} in these calculations, with measurements performed using natural abundance targets.
+
+
 % 
 % 
 % 
@@ -919,7 +942,7 @@ Quick observations:
  EMPIRE-3.2.3\cite{Herman2007}       & Koning-Delaroche\cite{Koning2003} & Avrigeanu(2009)\cite{Avrigeanu2009}       & Modified Lorentzian\cite{belgya2006handbook}  \\  
  TALYS-1.8\cite{Koning2012}          & Koning-Delaroche & Specific folded potential\cite{Koning2012}      & Brink-Axel Lorentzian\cite{Koning2012}   \\
   CoH-3.5.1\cite{kawano2003coh,KAWANO2010} & Koning-Delaroche     & Avrigeanu(1994)\cite{Avrigeanu1994} & Generalized Lorentzian\cite{kawano2003coh,KAWANO2010} \\
-  ALICE-2017\cite{Blann1996}     &   \textred{?????}    &   \textred{?????}    &   \textred{?????}
+  ALICE-2017\cite{Blann1996}     &   \textred{?????}    &  Parabolic Diffuse-Well\cite{Thomas1959}    &   Berman-Fultz Lorentzian\cite{Berman1975a}
   
 \end{tabular}
 }
@@ -965,14 +988,6 @@ Quick observations:
 
 
 
-\begin{figure}
- \centering
- \includegraphics[width=0.5\textwidth]{./figures/52mMn.pdf}
- % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
- \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn} cross section, with the \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52m}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52m}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.}
- \label{fig:temp_52mMn}
-\end{figure}
-
 
 \begin{figure}
  \centering
@@ -980,6 +995,17 @@ Quick observations:
  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
  \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} cross section, with \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.}
  \label{fig:temp_52Mn}
+\end{figure}
+
+
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{./figures/52mMn.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn} cross section, with the \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52m}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52m}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.}
+ \label{fig:temp_52mMn}
 \end{figure}
 
 
@@ -1007,8 +1033,9 @@ We present here a set of measurements of 34 cross sections for the \ce{^{nat}Fe}
 Nearly all cross sections have been reported with higher precision than previous measurements.
 We report the first measurements  for $\leq$70\,MeV protons  of the  \ce{^{nat}Fe}(p,x)\ce{^{49}Cr}, \ce{^{nat}Fe}(p,x)\ce{^{51}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn},  \ce{^{nat}Fe}(p,x)\ce{^{56}Mn}, and \ce{^{nat}Fe}(p,x)\ce{^{58m}Co} reactions, as well as the first measurement of the independent cross sections for    \ce{^{nat}Fe}(p,x)\ce{^{51}Cr}, \ce{^{nat}Fe}(p,x)\ce{^{52g}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{58g}Co}, and the \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$) and \ce{^{58\text{m}}Co} ($5^+$) / \ce{^{58\text{g}}Co}  ($2^+$)  isomer branching ratios via \ce{^{nat}Fe}(p,x).
 % We advise that future activation experiments avoid the use of silicone-based adhesives, particularly in conjunction with aluminum monitor foils, to avoid reporting an enhanced fluence due to \ce{^{22,24}Na} contamination.
-We also use these measurements to illustrate the deficiencies in the current state of  reaction modeling up to 55\,Me for  \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x) reactions.
-Finally, this work provides another example of the usefulness of the recently-described variance minimization techniques for reducing energy uncertainties in stacked target charged particle irradiation experiments.
+We also use these measurements to illustrate the deficiencies in the current state of  reaction modeling up to 55\,MeV for  \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x) reactions.
+Finally, this work provides another example of the current issues with modeling of  stopping power in stacked target charged particle irradiation experiments, corrected using variance minimization techniques.  
+% usefulness of the recently-described variance minimization techniques for reducing energy uncertainties in stacked target charged particle irradiation experiments.
 
 
 
