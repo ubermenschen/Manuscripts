@@ -3,8 +3,11 @@
 
 
 
-The next generation of nuclear medicine would appear to be based upon the production of novel, emerging radionuclides\,\cite{Qaim201731}. 
-The targeted and personalized nature of therapy and imaging applications using these novel radionuclides  makes possible an improvement in clinical practice, offering many patients the possibility for better survival rates and quality lives\,\cite{Mulford2005,Muller2014}.
+The next generation of nuclear medicine 
+% would appear to be based upon 
+is likely to involve the production of novel, emerging radionuclides\,\cite{Qaim201731}. 
+% The targeted and personalized nature of therapy and imaging applications using these novel radionuclides  
+These make possible an improvement in clinical practice, offering many patients the possibility for better survival rates and quality lives, and informing researchers in their quest to develop new treatments\,\cite{Mulford2005,Muller2014}.
 While the chemical and radioactive decay properties of many of these radionuclides are well-established, their broad-scale  clinical applications are reliant upon well-characterized nuclear data to facilitate large-scale   production. 
 % 
 % 
@@ -15,23 +18,45 @@ While the chemical and radioactive decay properties of many of these radionuclid
 % Novel applications are being explored for several radionuclides whose production methodologies are not established, but their production requires accurate, high-fidelity cross section data.
 %\,\cite{Qaim201731}. 
 % Many of these applications focus on theranostics, the use of chemically identical (or similar) imaging and therapeutic radiopharmaceuticals for treatment of disease. 
-One particular group of  emerging radionuclides are the various positron-emitting isotopes of manganese, which have been identified as having potential for a range of diagnostic applications\,\cite{J.2013,Graves2015,Lewis2015,PhysRevC.96.014613,Wooten2017,Hernandez2017}.
+One particular group of  emerging radionuclides are 
+% the various 
+positron-emitting isotopes of manganese, which have been identified as having potential for a range of diagnostic applications\,\cite{J.2013,Graves2015,Lewis2015,PhysRevC.96.014613,Wooten2017,Hernandez2017}.
 In particular, a significant interest has been expressed in producing the emerging radionuclides \ce{^{51}Mn} for clinical use in metabolic PET studies, as well as  \ce{^{52g}Mn} for pre-clinical imaging of neural and immune processes via PET\,\cite{Graves2016}. 
-As part of a larger campaign to address deficiencies in cross-cutting nuclear data needs, our group has performed a   measurement of the   nuclear excitation functions of the radionuclides \ce{^{51}Mn},   \ce{^{52m}Mn}, and \ce{^{52g}Mn}.
-This was carried out in a  thin-foil stacked-target experiment, using proton irradiation of natural iron foils with titanium and copper monitor foils.
-While recent work has been performed in the 40--100\,MeV energy region, this work seeks to complement these measurements and extend them down to reaction thresholds, to investigate the feasibility of production using the international network   of low-energy medical cyclotrons\,\cite{Graves2016}. 
+
+However, the modeling of nuclear reactions in this mass region presents numerous challenges including uncertainties in nuclear level densities as a function of spin due to the opening of the $f_{7/2}$ orbital and the presence of enhanced $\gamma$-strength at low energies \cite{voinov, tavukcu}.  
+% As 
+Therefore, as part of a larger campaign to address deficiencies in cross-cutting nuclear data needs, our group has performed a   measurement of the   nuclear excitation functions of the radionuclides \ce{^{51}Mn},   \ce{^{52m}Mn}, and \ce{^{52g}Mn}.
+This was carried out 
+% in a
+using the thin-foil stacked-target technique to study proton-induced reactions on 
+% experiment, using proton irradiation of 
+natural iron foils with titanium and copper monitor foils.
+% While recent work has been performed in the 40--100\,MeV energy region, t
+This work seeks to complement 
+% these measurements 
+earlier measurements at 40--100\,MeV proton beam energies and extend them down to reaction thresholds, in order to investigate the feasibility of production using the international network   of low-energy medical cyclotrons\,\cite{Graves2016}. 
+Furthermore, we are able to use a portion of the data we measured to gain insight into the role of angular momentum in the transitional energy region between compound and direct reactions since both the ground and long-lived isomeric states in \ce{^{52}Mn} were populated.  
 
 
-Manganese radionuclides are desirable for radiopharmaceutical applications, as manganese is a chemically versatile element that is biologically relevant and essential in trace quantities. 
+Manganese radionuclides are desirable for radiopharmaceutical applications, as 
+% manganese is a 
+the element is chemically versatile,  biologically relevant, and essential in trace quantities. 
 Manganese possesses well-established biochemistry, and has been proven to be chelated well by DOTA for tracking monoclonal antibodies, with high biostability at neutral pH\,\cite{Graves2015}.
 \ce{^{52}Mn} ($t_{1/2}$ = 5.591$\pm$0.003\,d, $I_{\beta^+}$ = 29.4\%, $E_{\beta\text{, avg}}$ = 0.242\,MeV) has been shown to be useful for immunoPET applications, with its rapid blood clearance offering the possibility for imaging within minutes of injection\,\cite{Dong2015}.
-Its lifetime allows for immunoPET imaging up to 2--3 weeks after administration, giving \ce{^{52}Mn} a longer duration for useful imaging  than the more established immunoPET agents \ce{^{89}Zr} or   \ce{^{64}Cu}. 
-\ce{^{52}Mn}  has high uptake in the heart, liver, kidneys, and pancreas, making it a useful diagnostic agent for pancreatic $\beta$-cell, insulinoma, and porphysome imaging\,\cite{Graves2015}. 
-However, its  long lifetime and unfavorable decay gamma-rays (notably, its  744.233\,keV [$I_\gamma = 90.0\,\pm\,1.2\%$], 935.544\,keV [$I_\gamma = 94.5\,\pm\,1.3\%$], and 1434.092\,keV [$I_\gamma = 100.0 \pm 1.4\%$] lines) make it undesirable for clinical applications, but easily shipped worldwide and highly suitable for pre-clinical imaging\,\cite{Dong2015}.
-The \ce{^{52m}Mn} isomer ($t_{1/2}$ = 21.1$\pm$0.2\,min, $I_{\beta^+}$\,=\,96.6\%, $E_{\beta\text{,avg}}$ = 1.172\,MeV) offers a much stronger positron emission branch than \ce{^{52g}Mn}, but its short lifetime makes production and handling difficult, and its  high-intensity gamma emission (1434.06\,keV [$I_\gamma = 98.2\,\pm\,0.5\%$]) contributes significantly to patient dose\,\cite{Dong2015}.
-Another emerging manganese radionuclide is \ce{^{51}Mn} ($t_{1/2}$ = 46.2$\pm$0.1\,min, $I_{\beta^+}$ = 97.09\%, $E_{\beta\text{, avg}}$ = 0.973\,MeV), whose short lifetime makes it clinically suited for rapid metabolic studies\,\cite{Wang2017}.
+% Its lifetime facilitates regional production and  allows for immunoPET imaging up to 2--3 weeks after administration, giving \ce{^{52}Mn} a longer duration for useful 
+making it more useful for imaging  than the more established immunoPET agents \ce{^{89}Zr} or   \ce{^{64}Cu}, and highly suitable for pre-clinical imaging\,\cite{Dong2015}.  . 
+Furthermore, \ce{^{52}Mn}  has high uptake in the heart, liver, kidneys, and pancreas, making it a useful diagnostic agent for pancreatic $\beta$-cell, insulinoma, and porphysome imaging\,\cite{Graves2015}. 
+However, its  long lifetime and unfavorable high-energy decay gamma-rays 
+% (notably, its  744.233\,keV [$I_\gamma = 90.0\,\pm\,1.2\%$], 935.544\,keV [$I_\gamma = 94.5\,\pm\,1.3\%$], and 1434.092\,keV [$I_\gamma = 100.0 \pm 1.4\%$] lines) 
+make it undesirable for clinical applications.
+% , but easily shipped worldwide and highly suitable for pre-clinical imaging\,\cite{Dong2015}.
+The short half-life of the  \ce{^{52m}Mn} isomer ($t_{1/2}$ = 21.1$\pm$0.2\,min)
+% , $I_{\beta^+}$\,=\,96.6\%, $E_{\beta\text{,avg}}$ = 1.172\,MeV) offers a much stronger positron emission branch than \ce{^{52g}Mn}, but its short lifetime 
+makes production and handling difficult, and its  high-intensity gamma emission (1434.06\,keV [$I_\gamma = 98.2\,\pm\,0.5\%$]) contributes significantly to patient dose\,\cite{Dong2015}.
+% Another emerging manganese radionuclide is 
+In contrast, \ce{^{51}Mn} ($t_{1/2}$ = 46.2$\pm$0.1\,min, $I_{\beta^+}$ = 97.09\%, $E_{\beta\text{, avg}}$ = 0.973\,MeV), whose short lifetime makes it clinically suited for rapid metabolic studies\,\cite{Wang2017}.
 \ce{^{51}Mn} has a comparable positron branch and energy to \ce{^{52m}Mn} and is more suitable for clinical use than the soft positron emissions of \ce{^{52g}Mn}. 
-In addition, \ce{^{51}Mn} lacks any strong decay gamma-rays (its longer-lived daughter \ce{^{51}Cr} [$t_{1/2}$ = 27.704$\pm$0.003\,d] has only a single  320.0284\,keV [$I_\gamma = 9.910\,\pm\,0.010\%$] line), making it the best choice of these radionuclides for clinical imaging applications\,\cite{Wang2017}.
+In addition, \ce{^{51}Mn} lacks any strong decay gamma-rays (its longer-lived daughter \ce{^{51}Cr} [$t_{1/2}$ = 27.704$\pm$0.003\,d] has only a single  320.0284\,keV [$I_\gamma = 9.910\,\pm\,0.010\%$] line), making it the best choice of these radionuclides for clinical imaging,\cite{Wang2017}.
 
 
 
@@ -711,12 +736,12 @@ E$_\text{p}$ (MeV)&	\makecell{53.04\\$\pm$0.61} &	\makecell{46.18\\$\pm$0.68} &	
 \toprule
                             & \multicolumn{14}{c}{Production cross section (mb)}                                                                                                         \\ \cmidrule(l){2-15} 
 E$_\text{p}$ (MeV)&	\makecell{53.31\\$\pm$0.61} &	\makecell{46.48\\$\pm$0.68} &	\makecell{38.76\\$\pm$0.78} &	\makecell{34.44\\$\pm$0.86} &	\makecell{29.63\\$\pm$0.96} &	\makecell{24.1\\$\pm$1.1} &	\makecell{22.29\\$\pm$0.32} &	\makecell{18.98\\$\pm$0.37} &	\makecell{17.3\\$\pm$1.5} &	\makecell{16.14\\$\pm$0.42} &	\makecell{14.03\\$\pm$0.47} &	\makecell{11.49\\$\pm$0.55} &	\makecell{8.38\\$\pm$0.70} &	\makecell{2.88\\$\pm$0.88}\\  \midrule
-\ce{^{43}K}\,($\sigma_c$)&	\makecell{1.55\\$\pm$0.11} &	\makecell{0.889\\$\pm$0.067} &	\makecell{0.189\\$\pm$0.017} &	\makecell{0.0462\\$\pm$0.0042} &	 &	 &	 &	 &	 &	 &	 &	 &	 &	\\
-\ce{^{44g}Sc}\,($\sigma_i$)&	\makecell{25.0\\$\pm$2.4} &	\makecell{27.0\\$\pm$2.2} &	\makecell{37.0\\$\pm$2.9} &	\makecell{52.6\\$\pm$4.8} &	\makecell{47.8\\$\pm$3.9} &	\makecell{29.9\\$\pm$3.0} &	\makecell{8.09\\$\pm$0.45} &	\makecell{3.49\\$\pm$0.20} &	\makecell{2.70\\$\pm$0.31} &	\makecell{3.02\\$\pm$0.23} &	\makecell{2.49\\$\pm$0.21} &	 &	 &	\\
-\ce{^{44m}Sc}\,($\sigma_i$)&	\makecell{12.60\\$\pm$0.72} &	\makecell{12.37\\$\pm$0.63} &	\makecell{15.20\\$\pm$0.93} &	\makecell{17.8\\$\pm$1.1} &	\makecell{16.8\\$\pm$1.1} &	\makecell{8.63\\$\pm$0.53} &	\makecell{4.26\\$\pm$0.24} &	\makecell{1.451\\$\pm$0.082} &	\makecell{1.317\\$\pm$0.088} &	\makecell{1.269\\$\pm$0.095} &	\makecell{0.839\\$\pm$0.070} &	 &	 &	\\
-\ce{^{44}Sc}\,($\sigma_c$)&	\makecell{37.6\\$\pm$2.5} &	\makecell{39.4\\$\pm$2.3} &	\makecell{52.2\\$\pm$3.1} &	\makecell{70.4\\$\pm$4.9} &	\makecell{64.7\\$\pm$4.0} &	\makecell{38.6\\$\pm$3.1} &	\makecell{12.35\\$\pm$0.51} &	\makecell{4.94\\$\pm$0.22} &	\makecell{4.02\\$\pm$0.32} &	\makecell{4.29\\$\pm$0.25} &	\makecell{3.33\\$\pm$0.22} &	 &	 &	\\
-\ce{^{47}Sc}\,($\sigma_c$)&	\makecell{21.2\\$\pm$1.2} &	\makecell{20.5\\$\pm$1.0} &	\makecell{21.7\\$\pm$1.3} &	\makecell{23.5\\$\pm$1.4} &	\makecell{25.1\\$\pm$1.6} &	\makecell{15.63\\$\pm$0.97} &	\makecell{11.53\\$\pm$0.70} &	\makecell{5.50\\$\pm$0.32} &	\makecell{2.75\\$\pm$0.18} &	\makecell{1.57\\$\pm$0.12} &	\makecell{0.810\\$\pm$0.067} &	\makecell{0.361\\$\pm$0.021} &	\makecell{0.218\\$\pm$0.023} &	\\
-\ce{^{48}Sc}\,($\sigma_i$)&	\makecell{1.66\\$\pm$0.13} &	\makecell{1.68\\$\pm$0.19} &	\makecell{1.29\\$\pm$0.15} &	\makecell{0.772\\$\pm$0.065} &	\makecell{0.700\\$\pm$0.064} &	\makecell{0.339\\$\pm$0.026} &	\makecell{0.318\\$\pm$0.018} &	\makecell{0.185\\$\pm$0.013} &	\makecell{0.135\\$\pm$0.014} &	\makecell{0.0625\\$\pm$0.0055} &	 &	 &	 &	\\ \bottomrule
+\ce{^{43}K}\,($\sigma_c$)&	\makecell{1.55\\$\pm$0.11} &	\makecell{0.889\\$\pm$0.067} &	\makecell{0.189\\$\pm$0.017} &	\makecell{0.0462\\$\pm$0.0042} &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- &	-- \\
+\ce{^{44g}Sc}\,($\sigma_i$)&	\makecell{25.0\\$\pm$2.4} &	\makecell{27.0\\$\pm$2.2} &	\makecell{37.0\\$\pm$2.9} &	\makecell{52.6\\$\pm$4.8} &	\makecell{47.8\\$\pm$3.9} &	\makecell{29.9\\$\pm$3.0} &	\makecell{8.09\\$\pm$0.45} &	\makecell{3.49\\$\pm$0.20} &	\makecell{2.70\\$\pm$0.31} &	\makecell{3.02\\$\pm$0.23} &	\makecell{2.49\\$\pm$0.21} &	-- &	-- &	-- \\
+\ce{^{44m}Sc}\,($\sigma_i$)&	\makecell{12.60\\$\pm$0.72} &	\makecell{12.37\\$\pm$0.63} &	\makecell{15.20\\$\pm$0.93} &	\makecell{17.8\\$\pm$1.1} &	\makecell{16.8\\$\pm$1.1} &	\makecell{8.63\\$\pm$0.53} &	\makecell{4.26\\$\pm$0.24} &	\makecell{1.451\\$\pm$0.082} &	\makecell{1.317\\$\pm$0.088} &	\makecell{1.269\\$\pm$0.095} &	\makecell{0.839\\$\pm$0.070} &	--  &	-- &	-- \\
+\ce{^{44}Sc}\,($\sigma_c$)&	\makecell{37.6\\$\pm$2.5} &	\makecell{39.4\\$\pm$2.3} &	\makecell{52.2\\$\pm$3.1} &	\makecell{70.4\\$\pm$4.9} &	\makecell{64.7\\$\pm$4.0} &	\makecell{38.6\\$\pm$3.1} &	\makecell{12.35\\$\pm$0.51} &	\makecell{4.94\\$\pm$0.22} &	\makecell{4.02\\$\pm$0.32} &	\makecell{4.29\\$\pm$0.25} &	\makecell{3.33\\$\pm$0.22} &	-- &	-- &	-- \\
+\ce{^{47}Sc}\,($\sigma_c$)&	\makecell{21.2\\$\pm$1.2} &	\makecell{20.5\\$\pm$1.0} &	\makecell{21.7\\$\pm$1.3} &	\makecell{23.5\\$\pm$1.4} &	\makecell{25.1\\$\pm$1.6} &	\makecell{15.63\\$\pm$0.97} &	\makecell{11.53\\$\pm$0.70} &	\makecell{5.50\\$\pm$0.32} &	\makecell{2.75\\$\pm$0.18} &	\makecell{1.57\\$\pm$0.12} &	\makecell{0.810\\$\pm$0.067} &	\makecell{0.361\\$\pm$0.021} &	\makecell{0.218\\$\pm$0.023} &	-- \\
+\ce{^{48}Sc}\,($\sigma_i$)&	\makecell{1.66\\$\pm$0.13} &	\makecell{1.68\\$\pm$0.19} &	\makecell{1.29\\$\pm$0.15} &	\makecell{0.772\\$\pm$0.065} &	\makecell{0.700\\$\pm$0.064} &	\makecell{0.339\\$\pm$0.026} &	\makecell{0.318\\$\pm$0.018} &	\makecell{0.185\\$\pm$0.013} &	\makecell{0.135\\$\pm$0.014} &	\makecell{0.0625\\$\pm$0.0055} &	-- &	-- &	-- &	-- \\ \bottomrule
 \end{tabular}
 }
 \end{table}
@@ -942,7 +967,7 @@ However, no firm conclusions can be drawn about the direct causes of the inaccur
  EMPIRE-3.2.3\cite{Herman2007}       & Koning-Delaroche\cite{Koning2003} & Avrigeanu(2009)\cite{Avrigeanu2009}       & Modified Lorentzian\cite{belgya2006handbook}  \\  
  TALYS-1.8\cite{Koning2012}          & Koning-Delaroche & Specific folded potential\cite{Koning2012}      & Brink-Axel Lorentzian\cite{Koning2012}   \\
   CoH-3.5.1\cite{kawano2003coh,KAWANO2010} & Koning-Delaroche     & Avrigeanu(1994)\cite{Avrigeanu1994} & Generalized Lorentzian\cite{kawano2003coh,KAWANO2010} \\
-  ALICE-2017\cite{Blann1996}     &   \textred{?????}    &  Parabolic Diffuse-Well\cite{Thomas1959}    &   Berman-Fultz Lorentzian\cite{Berman1975a}
+  ALICE-2017\cite{Blann1996}     &   \textred{Nadasen\cite{Nadasen1981}}    &  Parabolic Diffuse-Well\cite{Thomas1959}    &   Berman-Fultz Lorentzian\cite{Berman1975a}
   
 \end{tabular}
 }
