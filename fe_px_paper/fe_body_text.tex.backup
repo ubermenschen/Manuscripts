@@ -54,9 +54,12 @@ The short half-life of the  \ce{^{52m}Mn} isomer ($t_{1/2}$ = 21.1$\pm$0.2\,min)
 % , $I_{\beta^+}$\,=\,96.6\%, $E_{\beta\text{,avg}}$ = 1.172\,MeV) offers a much stronger positron emission branch than \ce{^{52g}Mn}, but its short lifetime 
 makes production and handling difficult, and its  high-intensity gamma emission (1434.06\,keV [$I_\gamma = 98.2\,\pm\,0.5\%$]) contributes significantly to patient dose\,\cite{Dong2015}.
 % Another emerging manganese radionuclide is 
-In contrast, \ce{^{51}Mn} ($t_{1/2}$ = 46.2$\pm$0.1\,min, $I_{\beta^+}$ = 97.09\%, $E_{\beta\text{, avg}}$ = 0.973\,MeV), whose short lifetime makes it clinically suited for rapid metabolic studies\,\cite{Wang2017}.
-\ce{^{51}Mn} has a comparable positron branch and energy to \ce{^{52m}Mn} and is more suitable for clinical use than the soft positron emissions of \ce{^{52g}Mn}. 
-In addition, \ce{^{51}Mn} lacks any strong decay gamma-rays (its longer-lived daughter \ce{^{51}Cr} [$t_{1/2}$ = 27.704$\pm$0.003\,d] has only a single  320.0284\,keV [$I_\gamma = 9.910\,\pm\,0.010\%$] line), making it the best choice of these radionuclides for clinical imaging,\cite{Wang2017}.
+In contrast, \ce{^{51}Mn} ($t_{1/2}$ = 46.2$\pm$0.1\,min, $I_{\beta^+}$ = 97.09\%, $E_{\beta\text{, avg}}$ = 0.973\,MeV), 
+% whose short lifetime makes it 
+is more clinically suitable for rapid metabolic studies\,\cite{Wang2017}.
+% \ce{^{51}Mn} has a comparable positron branch and energy to \ce{^{52m}Mn} and is more suitable for clinical use than the soft positron emissions of \ce{^{52g}Mn}. 
+% In addition, 
+\ce{^{51}Mn} lacks any strong decay gamma-rays (its longer-lived daughter \ce{^{51}Cr} [$t_{1/2}$ = 27.704$\pm$0.003\,d] has only a single  320.0284\,keV [$I_\gamma = 9.910\,\pm\,0.010\%$] line), making it the best choice of these radionuclides for clinical imaging,\cite{Wang2017}.
 
 
 
@@ -70,10 +73,16 @@ In addition, \ce{^{51}Mn} lacks any strong decay gamma-rays (its longer-lived da
 
 % In addition to the interest in the production of\ce{^{51,52g,52m}Mn} for PET research
 
-While these efforts have been motivated by the production cross section of the \ce{^{51,52g,52m}Mn} radionuclides for PET studies, this experiment offers an opportunity to study the distribution of angular momentum in compound nuclear and direct pre-equilibrium reactions via observation of the \ce{^{52m}Mn} ($t_{1/2}$ = 21.1$\pm$0.2\,min; J$^\pi=2^+$) to \ce{^{52g}Mn} ($t_{1/2}$ = 5.591$\pm$0.003\,d; J$^\pi=6^+$)   ratio\,\cite{Dong2015,Wang2017}.
+% While these efforts have been motivated by the production cross section of the
+In addition to their interest for PET studies, the \ce{^{51,52g,52m}Mn} excitation functions 
+% radionuclides for PET studies, this experiment 
+offer an opportunity to study the distribution of angular momentum in compound nuclear and direct pre-equilibrium reactions via observation of the \ce{^{52m}Mn} ($t_{1/2}$ = 21.1$\pm$0.2\,min; J$^\pi=2^+$) to \ce{^{52g}Mn} ($t_{1/2}$ = 5.591$\pm$0.003\,d; J$^\pi=6^+$)   ratio\,\cite{Dong2015,Wang2017}.
 Measurements of isomer-to-ground state ratios have been used for over 20\,years to probe the spin distribution of excited nuclear states in the A\,$\approx$\,190 region\,\cite{PhysRevC.73.034613,PhysRevC.45.1171}.
-These measurements provide a range of cross section data invaluable to not only the medical isotope production community, but  also serve to measure the spin distribution in \textred{f$_{7/2}$} subshell nuclei via the observation of isomer-to-ground state ratios, and  as new data to improve the predictive capabilities of  reaction modeling codes. 
-In addition, these experiments provide valuable insight into the challenges  involved in precision cross section data measurements. 
+These measurements also provide an opportunity to benchmark 
+% a range of cross section data invaluable to not only the medical isotope production community, but  also serve to measure the spin distribution in \textred{f$_{7/2}$} subshell nuclei via the observation of isomer-to-ground state ratios, and  as new data to improve 
+the predictive capabilities of  reaction modeling codes used for nuclear reaction evaluations and the way in which they implement the underlying physical reaction mechanisms.  
+% codes. 
+% In addition, these experiments provide valuable insight into the challenges  involved in precision cross section data measurements. 
 
 
 
@@ -162,19 +171,34 @@ Preliminary analysis  was previously reported in the Master's thesis of one co-a
 \subsection{\label{sec:target_design_fe}Stacked-target design}
 
 
-A pair of target stacks were constructed for this work, due to the large energy range desired to be spanned.
-One stack covers the 55--20\,MeV range and the other covers 25--0\,MeV, to minimize the systematic uncertainties associated with significant degradation of beam energy.
-In addition, the complementary  energy  of the  stacks helps build confidence  through multiple overlapping measurements between 20--25\,MeV.  
+A pair of target stacks were constructed for this work.
+% , due to the large energy range desired to be spanned.
+One stack covered the 55--20\,MeV range and the other  25--0\,MeV, in order to minimize the systematic uncertainties associated with significant degradation of beam energy, and
+% In addition, the complementary  energy  of the  stacks helps build confidence  through 
+includes multiple overlapping measurements between 20--25\,MeV to build confidence in the results. 
 % A stacked-target design was utilized for this work in order that the (p,x) cross sections for each reaction channel could be measured at multiple energy positions in a single irradiation\,\cite{Cumming1963}. 
 % For targets, a
 A series of nominal 25\,\mmicro m \ce{^{nat}Fe} foils (99.5\%, lot \#LS470411), 25\,\mmicro m \ce{^{nat}Ti} foils (99.6\%, lot \#LS471698), and 25\,\mmicro m \ce{^{nat}Cu} foils (99.95\%, lot \#LS471698) were used (all from Goodfellow Corporation, Coraopolis, PA 15108, USA) as targets.
-In each stack, seven foils of each metal were cut down to 2.5$\times$2.5\,cm squares and characterized --- for each foil, length and width measurements were taken at four different locations using a digital caliper (Mitutoyo America Corp.), thickness measurements were taken at four different locations using a digital micrometer (Mitutoyo America Corp.), and four mass measurements were taken using an analytical balance after cleaning the foils with isopropyl alcohol.
-Using these length, width, and mass readings, the areal density and its uncertainty (in mg/cm$^2$) for each foil was calculated.
+In each stack, seven foils 
+% of each metal 
+were cut down to 2.5$\times$2.5\,cm squares and spatially characterized 
+% --- for each foil, length and width measurements were taken 
+at four different locations using a digital caliper and micrometer (Mitutoyo America Corp.).
+% , thickness measurements were taken at four different locations using a digital micrometer (Mitutoyo America Corp.), and 
+Four mass measurements were performed using an analytical balance 
+% after cleaning the foils with isopropyl alcohol.
+% Using these length, width, and mass readings, the 
+in order to determine their areal density. 
+% and its uncertainty 
+% (in mg/cm$^2$).
+% for each foil was calculated.
 % , along with the propagated uncertainty in areal density.
 % The foils were tightly sealed into \enquote{packets} using two pieces of  3M 1205-Series Kapton polyimide film tape --- each piece of tape consists of 38.1 \mmicro m of an acrylic adhesive (nominal 4.49 mg/cm$^2$) on 25.4 \mmicro m of a polyimide backing (nominal 3.61 mg/cm$^2$).
-The foils were tightly sealed into \enquote{packets} using two pieces of  3M 5413-Series Kapton polyimide film tape --- each piece of tape consists of 43.2 \mmicro m of a silicone adhesive (nominal 4.79\,mg/cm$^2$) on 25.4 \mmicro m of a polyimide backing (nominal 3.61\,mg/cm$^2$).
+The foils were  sealed into \enquote{packets} using two pieces of  3M 5413-Series Kapton polyimide film tape 
+% --- each piece of tape consists 
+consisting of 43.2 \mmicro m of a silicone adhesive (nominal 4.79\,mg/cm$^2$) on 25.4 \mmicro m of a polyimide backing (nominal 3.61\,mg/cm$^2$).
 The sealed foils were mounted over the hollow center of  1.5875 mm-thick aluminum frames.
-Targets of 6061 aluminum alloy  serve as proton energy degraders  between energy positions.
+Plates of 6061 aluminum alloy  served as proton energy degraders  between energy positions.
 % One \ce{^{nat}Fe}, one \ce{^{nat}Cu}, and one \ce{^{nat}Ti} mounted foil were bundled together using baling wire for each energy position.
 The target box, seen in \autoref{fig:fe_target_stack}, is machined from 6061 aluminum alloy, and mounts on the end of an electrically-isolated beamline.
 The specifications of both target stack designs for this work are presented in \autoref{tab:fe_stack_table}.
@@ -283,7 +307,7 @@ The specifications of both target stack designs for this work are presented in \
 % \usepackage{booktabs}
 \begin{table*}
 \centering
-\caption{Specifications of the 25\,MeV and 55\,MeV target stack designs in the present work. The proton beam enters the stack upstream of the SS-5 and SS-3 profile monitors, respectively, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.69 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and an earlier paper\,\cite{Voyles2018a}. 
+\caption{Specifications of the 25\,MeV and 55\,MeV target stack designs in the present work. The proton beam enters the stack upstream of the SS-5 and SS-3 profile monitors, respectively, and travels through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.68 $\pm$ 0.03 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and an earlier paper\,\cite{Voyles2018a}. 
 % the earlier paper by Graves \etal\\,\cite{Graves2016}.
 A 316 stainless steel foil is inserted at both the front and rear of each target stack as a monitor of the beam's spatial profile, by developing radiochromic film (Gafchromic EBT3) after end-of-bombardment (EoB).}
 \label{tab:fe_stack_table}
@@ -330,10 +354,16 @@ SS profile monitor SS-6 & 131.5 \mmicro m                                       
 \end{table*}
 
 
-Both target stacks were assembled and separately irradiated at the  Lawrence Berkeley National Laboratory  (LBNL), using the 88-Inch Cyclotron, a  K=140 sector-focused cyclotron.
-The 25\,MeV stack was irradiated for approximately 20\,minutes with a nominal current of 100\,nA,  for an anticipated integral current of 31.61\,nAh. 
-The 55\,MeV stack was irradiated for approximately 10\,minutes with a nominal current of 120\,nA,  for an anticipated integral current of 20.78\,nAh. 
-The beam current, measured using a current integrator on the electrically-isolated beamline, remained stable under these conditions for the duration of each irradiation.
+Both target stacks were 
+% assembled and 
+separately irradiated at the  Lawrence Berkeley National Laboratory  (LBNL)
+% , using the 
+88-Inch Cyclotron, a  K=140 sector-focused cyclotron \cite{7999622}.
+The 25\,MeV stack was irradiated for approximately 20\,minutes at a nominal current of 100\,nA,  for an  integral current of 31.61\,nAh, measured using a current integrator on the electrically-isolated beamline. 
+The 55\,MeV stack was irradiated for approximately 10\,minutes at a nominal current of 120\,nA,  for an  integral current of 20.78\,nAh. 
+The beam current
+% , measured using a current integrator on the electrically-isolated beamline, 
+remained stable under these conditions for the duration of each irradiation.
 The approximately 1\,cm-diameter proton beam incident upon each stack's upstream stainless steel profile monitor had a maximum energy of either 25 or 55\,MeV, with an approximately 2\% energy width due to multi-turn extraction --- these energy profiles were used for all later analysis.
 Following end-of-bombardment (EoB), each stack was removed from the beamline and disassembled.
 All activated foils were transported to a counting lab for gamma spectrometry, which started approximately 30\,minutes following the end of each irradiation.
@@ -352,13 +382,21 @@ All activated foils were transported to a counting lab for gamma spectrometry, w
 
 
 % For consistency, a
-A single detector was used in this measurement, an ORTEC GMX Series (model \#GMX-50220-S)  High-Purity Germanium (HPGe) detector.
-The detector is a nitrogen-cooled coaxial n-type HPGe with a 0.5\,mm beryllium window, and a 64.9\,mm diameter, 57.8\,mm long crystal.
+A single 
+% detector was used in this measurement, an 
+ORTEC GMX Series (model \#GMX-50220-S)  High-Purity Germanium (HPGe) detector was used to determine the activities in each target.
+% The detector is a nitrogen-cooled coaxial n-type HPGe with a 0.5\,mm beryllium window, and a 64.9\,mm diameter, 57.8\,mm long crystal.
 Samples were counted at fixed positions ranging 5--60  cm (5\% maximum permissible dead-time) from the front face of the detector, with a series of standard calibration sources used to determine energy and efficiency for each position.
-The foils were counted  for a period of 4 weeks following end-of-bombardment (EoB), to accurately quantify all induced activities.
-An example of one of the gamma-ray spectra collected in such a fashion is shown in \autoref{fig:gspec_femn}.
+The foils were counted  for 
+% a period of 
+4 weeks following end-of-bombardment (EoB).
+% , to accurately quantify all induced activities.
+An example of one of the gamma-ray spectra collected 
+% in such a fashion 
+is shown in \autoref{fig:gspec_femn}.
 % An example of one of the gamma-ray spectra collected in such a fashion is shown in \autoref{fig:gspec}.
-For all spectra collected, net peak areas were fitted using the gamma spectrometry analysis code FitzPeaks\,\cite{fitzgerald2009fitzpeaks}, which utilizes the SAMPO fitting algorithms for gamma-ray spectra\,\cite{Aarnio2001}.
+% For all spectra collected, n
+Net peak areas were fitted using the gamma spectrometry analysis code FitzPeaks\,\cite{fitzgerald2009fitzpeaks}, which utilizes the SAMPO fitting algorithms for gamma-ray spectra\,\cite{Aarnio2001}.
 % , which has been shown to perform best in comparisons with other common analysis codes\,\cite{Jackman2014}.
 %, due to its peak fitting algorithms and incorporation  of calibrated detector-specific peak shapes and widths. 
 
@@ -371,7 +409,8 @@ For all spectra collected, net peak areas were fitted using the gamma spectromet
 \end{figure*}
 
 % Following  acquisition, the decaying product nuclei corresponding to each observed peak in the collected spectra were identified.
-The net  counts in each fitted gamma-ray photopeak were converted into  activities for the decaying  activation products, using calibrated detector efficiencies and gamma-ray intensities for each transition.
+The net  counts in each fitted gamma-ray photopeak were converted into  activities for the decaying  activation products.
+% , using calibrated detector efficiencies and gamma-ray intensities for each transition.
 % and  corrections for gamma-ray attenuation within each foil packet
 % The calibrated detector efficiencies, along with gamma-ray intensities for each transition and  corrections for gamma-ray attenuation within each foil packet, were used to convert the net  counts in each fitted gamma-ray photopeak into an activity for the decay of the activation products.  
 % 
@@ -390,11 +429,15 @@ The total propagated uncertainty in  activity is the quadrature sum of the uncer
 
 
 
-As in our previous work, these activities are used to calculate cross sections, and are differentiated between cumulative and independent\,\cite{Voyles2018a}.
-For the first observable product nuclei in a mass chain, its (p,x) cross section will be reported as a cumulative cross section ($\sigma_c$), which is the sum of direct production of that nucleus, as well as decay of its  precursors and any other independent cross sections leading to that nucleus. 
+As in our previous work, these activities are used to calculate 
+% cross sections, and are differentiated between 
+cumulative and independent cross sections\,\cite{Voyles2018a}.
+For the first observable product nuclide in a mass chain, its (p,x) cross section will be reported as a cumulative cross section ($\sigma_c$), which is the sum of direct production of that nucleus, as well as decay of its  precursors and any other independent cross sections leading to that nucleus. 
 % In addition, 
 Cumulative cross sections will be reported whenever it is impossible to use decay spectrometry to distinguish independent production of a nucleus from decay feeding.
-For all remaining observed reaction products in the mass chain, and cases where no decay precursors exist, independent cross sections ($\sigma_i$) will be reported, allowing for determination of the independent production via subtraction  and facilitating comparison to reaction model calculations.  
+For all remaining observed reaction products in the mass chain, and cases where no decay precursors exist, independent cross sections  ($\sigma_i$) corresponding to a single exit channel will be reported, 
+% allowing for determination of the independent production via subtraction  and 
+facilitating comparison to reaction model calculations.  
 Solutions to the first- and higher-order  Bateman equations are used for separation of  feeding contributions from decay precursors, so that  independent cross sections may be reported\,\cite{bateman1910solution,Cetnar2006}.
 
 
@@ -444,11 +487,14 @@ Solutions to the first- and higher-order  Bateman equations are used for separat
 \subsection{\label{sec:dosimetry_fe}Proton fluence determination}
 
 
-In addition to the stack's overall beam current measurements using  beamline current integrators, thin \ce{^{nat}Ti} and \ce{^{nat}Cu} foils were included along with the \ce{^{nat}Fe} targets, 
+In addition to 
+% the stack's overall 
+measuring beam current  using  a current integrator, thin \ce{^{nat}Ti} and \ce{^{nat}Cu} foils were included along with the \ce{^{nat}Fe} targets, 
 % at each energy position, 
 to monitor beam current at each position within the stack.
 % These foils have been recommended for use as proton monitor foils in the 30 \textless\ E$_\text{p}$ \textless\ 100 MeV regime by the IAEA, as the
-The IAEA-recommended \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V},  \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions were used for  proton fluence measurement 
+The IAEA-recommended \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V},  \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions were used 
+% for  proton fluence measurement 
 % , using values  
 % and uncertainties 
 % from the 2017 IAEA re-evaluation  
@@ -473,9 +519,18 @@ The propagated uncertainty in proton fluence is calculated as the quadrature sum
 \subsection{\label{sec:proton_transport_fe}Proton transport calculations}
 
 Estimates of the proton beam energy for preliminary stack designs were calculated using the Anderson \& Ziegler (A\&Z) stopping power formalism\,\cite{Andersen_Ziegler_1977,Ziegler1985,Ziegler1999}.
-However, the more rigorous  transport code FLUKA-2011.2x.3 was used for simulation of the full 3-D target stack, to determine the full proton energy and fluence distribution for each foil\,\cite{Bohlen2014a}. 
-$10^8$ source protons were used for all FLUKA simulations, which places the statistical uncertainty in proton energy distributions at less than 0.01\%.
-As with the determination of proton fluence in monitor foils, the progressively increasing energy straggle towards the rear of each stack is accounted for using the differential proton fluence from FLUKA simulation of proton transport.
+However, the 
+% more rigorous  
+transport code FLUKA-2011.2x.3 was used for simulation of the full 3-D target stack and to determine the full proton energy and fluence distribution for each foil\,\cite{Bohlen2014a}. 
+$10^8$ source protons were used for all FLUKA simulations, 
+% which places the 
+yielding a statistical uncertainty 
+% in proton energy distributions at 
+of less than 0.01\%.
+As with the determination of proton fluence in the monitor foils, the progressively increasing energy straggle towards the rear of each stack is accounted for using 
+% the differential proton fluence from 
+FLUKA.
+% simulation of proton transport.
 These energy distributions $\frac{d\phi}{dE}$ are used to calculate a flux-weighted average proton  energy $\langle E \rangle$, which accounts for the slowing-down of protons within a foil (particularly in the low-energy stack) and reports the effective  energy centroid for each foil:
 \begin{equation}
 \langle E \rangle = \dfrac{{\displaystyle\int E \dfrac{d\phi}{dE} dE}}{{\displaystyle\int \dfrac{d\phi}{dE} dE}}
@@ -483,9 +538,15 @@ These energy distributions $\frac{d\phi}{dE}$ are used to calculate a flux-weigh
 To report a complete description of the representative energy for each foil, a bin width is provided through the  energy uncertainty, calculated as the full width at half maximum (FWHM) of the FLUKA-modeled energy distribution for each foil.
 
 
-To correct for a spread in the apparent proton fluence, seen most strongly in rear stack positions, the \enquote{variance minimization} techniques utilized in our recent work and established by Graves \etal\ have been used to reduce uncertainty in proton fluence assignments\,\cite{Voyles2018a,Graves2016}.
-This method is based on the assumption that the independent measurements of proton fluence from the different monitor reactions used in this work should all be consistent at each energy position.
-Assuming that the recommended monitor reaction cross sections and FLUKA-modeled energy distributions are both accurate, residual disagreement in the  observed proton fluences is thus primarily due to poorly characterized stopping power in simulations, or a systematic error in the 
+% To correct for a spread in the apparent proton fluence, seen most strongly in rear stack positions, t
+The \enquote{variance minimization} techniques utilized in our recent work and established by Graves \etal\ have been used to reduce uncertainty in proton fluence assignments\,\cite{Voyles2018a,Graves2016}.
+This method is based on the assumption that the independent measurements of proton fluence from the different monitor reactions 
+% used in this work 
+should all be consistent at each 
+% energy 
+position.
+% Assuming that the recommended monitor reaction cross sections and FLUKA-modeled energy distributions are both accurate, 
+Any residual disagreement in the  observed proton fluences is  primarily due to poorly-characterized stopping power in simulations, or a systematic error in the 
 % stack design, namely, the
 areal densities of the stack components. 
 This disagreement is minor at the front of the stack, but gets progressively worse as the beam is degraded, due to the compounded effect of systematic uncertainties in stack areal densities.
