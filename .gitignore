@@ -14,3 +14,5 @@
 *.toc
 *.bib
 *.m~
+.fuse_hidden*
+library.bib
