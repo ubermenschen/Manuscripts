@@ -317,8 +317,9 @@ This research used the Savio computational cluster resource provided by the Berk
 
 \input{./fe_appendix_text}
 
-
-\bibliography{../../library,library}
+% New test code to find bibliography in multiple locations, for Overdrive compatibility
+\IfFileExists{../../library.bib}{\bibliography{../../library}}{\bibliography{library}}
+% \bibliography{../../library,library}
 
 
 
