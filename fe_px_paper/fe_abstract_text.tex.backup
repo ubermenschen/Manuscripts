@@ -13,43 +13,54 @@
 % % \end{description}
 
 
-% Intermediate-energy proton beams are used to produce a wide range of radionuclides for use in medical treatments and research.  
-% However, reaction modeling in this energy range remains largely untested, and there is a paucity of monitor reactions in this energy range needed to establish beam characteristics  for quantitative cross section measurements.  
-% To address this need, a
-A stack  of thin Fe 
-% , Cu, and Al monitor 
-foils was irradiated with  55\,MeV and 25\,MeV proton beams at Lawrence Berkeley National Laboratory's 88-Inch Cyclotron,  to investigate the \ce{^{nat}Fe}(p,x)  nuclear reaction channels as a  pathway for low-energy production of the emerging non-standard PET radionuclides \ce{^{51}Mn} and \ce{^{52g}Mn}
-% monitor for intermediate energy proton experiments and to benchmark state-of-the-art reaction model codes.
-% A stacked target of natural Nb, Cu, and Al thin foils were irradiated by 100 MeV protons at the Los Alamos National Laboratory's Isotope Production Facility.
-% The irradiation was motivated by interest in the characterization of the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} reaction as a new monitor reaction standard for intermediate-energy protons.
-A set of 38 measured  cross sections for  \ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions between 40--90\,MeV, as well as 5 independent measurements of isomer branching ratios, are reported. 
-% The measurements are 
-These are useful in medical and basic science radionuclide productions at intermediate energies. 
-% Cross sections were measured using the well-characterized 
-The
-% \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, 
-\ce{^{nat}Cu}(p,x)\ce{^{56}Co}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{65}Zn}  reactions were used to
-determine proton fluence, and all activities were quantified using HPGe spectrometry.
-Variance minimization techniques were employed to reduce systematic uncertainties in proton energy and fluence, improving the reliability of these measurements. 
-The measured cross sections are shown to be in excellent agreement with  literature values, and have been measured with improved precision compared with previous measurements.
-This work also reports the first measurement of the  \ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, and of the independent cross sections for    
-% \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, 
-\ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn} and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90\,MeV region.
-% \textred{
-% Due to \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} contamination  by  activation of the silicone adhesive used for sealing foil packets, the \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na}  monitor reactions  were excluded, in the interest of surety, from proton fluence determination.
-% }
-% \textred{
-% To avoid inadvertently reporting enhanced proton fluence due to
-The effects of  \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} contamination, arising from  silicone adhesive in the Kapton tape used to encapsulate the aluminum monitor foils, is also discussed as a cautionary note to future stacked-target cross section measurements.
-% strongly discouraged.
-% }
-% Comparisons against the 
-\emph{A priori} predictions of the reaction modeling codes  CoH, EMPIRE, and TALYS are compared with experimentally measured values and used to explore the differences between codes for the
-% impact of pre-equilibrium particle emission  for the 
-% 40--90 MeV 
-\ce{^{nat}Nb}(p,x) and  \ce{^{nat}Cu}(p,x) reactions.
+% % Intermediate-energy proton beams are used to produce a wide range of radionuclides for use in medical treatments and research.  
+% % However, reaction modeling in this energy range remains largely untested, and there is a paucity of monitor reactions in this energy range needed to establish beam characteristics  for quantitative cross section measurements.  
+% % To address this need, a
+% A stack  of thin Fe 
+% % , Cu, and Al monitor 
+% foils was irradiated with  55\,MeV and 25\,MeV proton beams at Lawrence Berkeley National Laboratory's 88-Inch Cyclotron,  to investigate the \ce{^{nat}Fe}(p,x)  nuclear reaction channels as a  pathway for low-energy production of the emerging non-standard PET radionuclides \ce{^{51}Mn} and \ce{^{52m,g}Mn}.
+% % monitor for intermediate energy proton experiments and to benchmark state-of-the-art reaction model codes.
+% % A stacked target of natural Nb, Cu, and Al thin foils were irradiated by 100 MeV protons at the Los Alamos National Laboratory's Isotope Production Facility.
+% % The irradiation was motivated by interest in the characterization of the \ce{^{93}Nb}(p,4n)\ce{^{90}Mo} reaction as a new monitor reaction standard for intermediate-energy protons.
+% A set of 34 measured  cross sections for  \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x) reactions between threshold and 55\,MeV, as well as three independent measurements of isomer branching ratios, are reported. 
+% % The measurements are 
+% These are useful in medical and basic science radionuclide productions at low energies. 
+% % Cross sections were measured using the well-characterized 
+% The
+% % \ce{^{nat}Al}(p,x)\ce{^{22}Na}, \ce{^{nat}Al}(p,x)\ce{^{24}Na}, 
+% \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor  reactions were used to
+% determine proton fluence, with all activities  quantified via HPGe spectrometry.
+% Variance minimization techniques were employed to reduce systematic uncertainties in proton energy and fluence, improving the reliability of these measurements. 
+% The measured cross sections are shown to be in excellent agreement with  literature values where they exist, and have been measured with improved precision compared with previous measurements.
+% This work also reports the first measurement for $\leq$70\,MeV protons  of the  
+% \ce{^{nat}Fe}(p,x)\ce{^{49}Cr},\ce{^{51,52m,56}Mn},\ce{^{58m}Co} reactions, as well as the first measurement of the independent cross sections for    \ce{^{nat}Fe}(p,x)\ce{^{51}Cr},\ce{^{52g}Mn},\ce{^{58g}Co}.
+% % \textred{\ce{^{nat}Nb}(p,x)\ce{^{82m}Rb} reaction, and of the independent cross sections for    
+% % \ce{^{nat}Cu}(p,x)\ce{^{52\text{m}}Mn}, 
+% % \ce{^{nat}Cu}(p,x)\ce{^{52\text{g}}Mn} and \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y} in the 40--90\,MeV region.}
+% % .
+% % \textred{
+% % Due to \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} contamination  by  activation of the silicone adhesive used for sealing foil packets, the \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na}  monitor reactions  were excluded, in the interest of surety, from proton fluence determination.
+% % }
+% % \textred{
+% % To avoid inadvertently reporting enhanced proton fluence due to
+% % The effects of  \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} contamination, arising from  silicone adhesive in the Kapton tape used to encapsulate the aluminum monitor foils, is also discussed as a cautionary note to future stacked-target cross section measurements.
+% % strongly discouraged.
+% % }
+% % Comparisons against the 
+% \emph{A priori} predictions of the reaction modeling codes  CoH, EMPIRE, TALYS, and ALICE are compared with experimentally measured values and used to explore the differences between codes for the
+% % impact of pre-equilibrium particle emission  for the 
+% % 40--90 MeV 
+% \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x) reactions, illustrating that these codes fail to reproduce the deposition of angular momentum at both compound and pre-compound energies.
 
 
+
+
+Numerous reaction modeling packages can be used to calculate radionuclide production cross sections for medical, research, and national security applications. 
+However, while all of these models invoke similar physical processes, their results often differ significantly.  
+In this paper, we compare \emph{a priori} predictions from several state-of-the-art reaction models (CoH, EMPIRE, TALYS, and ALICE) to cross sections measured using the stacked-target activation method.  
+The experiment was performed at the LBNL 88-Inch Cyclotron using beams of 25 and 55\,MeV protons on a stack of natural iron foils.  
+A total of 34 excitation functions were measured for 4 \textless $E_p$ \textless 55\,MeV, including the first measurement of the independent cross sections for \ce{^{nat}Fe}(p,x)\ce{^{49,51}Cr}, \ce{^{51,52m,52g,56}Mn}, and \ce{^{58m,58g}Co}.  
+All of the models failed to reproduce the isomer-to-ground state ratio for many  reaction channels at both compound and pre-compound energies, suggesting issues in modeling the deposition or distribution of angular momentum in these residual nuclei.  
 
 
 
