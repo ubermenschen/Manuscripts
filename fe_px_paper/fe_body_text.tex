@@ -248,7 +248,9 @@ Plates of 6061 aluminum alloy  served as proton energy degraders  between energy
 The target box, seen in \autoref{fig:fe_target_stack}, is machined from 6061 aluminum alloy and mounts on the end of an electrically-isolated beamline.
 The specifications of both target stacks 
 % designs for this work are presented 
-are in \autoref{tab:fe_stack_table} of Appendix \ref{sec:fe_stack_design}.
+are in \autoref{tab:fe_stack_table} of 
+% Appendix 
+\ref{sec:fe_stack_design}.
 
 
 
@@ -850,7 +852,9 @@ For  (p,x) reactions on \ce{^{nat}Ti}, the (p,x) cross sections for  \ce{^{43}K}
 % as recorded 
 presented in \autoref{tab:ti_rp_table}.
 In addition, as there exist a number of isomers with radioactive ground states in these mass regions,  independent measurements of isomer-to-ground-state branching ratios for \ce{^{nat}Fe}(p,x)\ce{^{52m/g}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{58m/g}Co}, and \ce{^{nat}Ti}(p,x)\ce{^{44m/g}Sc} were  extracted and are presented in \autoref{tab:fe_ibr_table}.
-Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR\,\cite{Otuka2014272}) are seen in the figures of Appendices \ref{sec:fe_xs_figures} and \ref{sec:fe_ibr_figures}.
+Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR\,\cite{Otuka2014272}) are seen in the figures of 
+% Appendices 
+\ref{sec:fe_xs_figures} and \ref{sec:fe_ibr_figures}.
 The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity ($\pm$3--10\%), proton fluence ($\pm$5--13\%), and foil areal density ($\pm$0.1--0.3\%).
 
 
@@ -1037,6 +1041,28 @@ This normalization is performed in such a way that it only affects the level den
 Finally, the default level density model in ALICE is the Kataria-Rarnamurthy-Kapoor (KRK) model \cite{Kataria1978,Kataria1990}, a semi-empirical nuclear level density formula which provides shell-dependent corrections to the nuclear mass surface, based on a Fourier expansion of the single particle level density of nucleons.
 
 
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=0.5\textwidth]{./figures/51Mn.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} cross section, with the \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} reaction channel visibly peaking at approximately \mbox{15 MeV}.}
+ \label{fig:51Mn}
+\end{figure}
+
+
+
+
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=0.5\textwidth]{./figures/52Mn.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} cross section, with \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.}
+ \label{fig:temp_52Mn}
+\end{figure}
+
+
 For this analysis, the focus will be on the three largest channels  measured -- \ce{^{nat}Fe}(p,x)\ce{^{51}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn}, and \ce{^{nat}Fe}(p,x)\ce{^{52}Mn}.
 The use of natural abundance targets in these measurements exacerbates the modeling  challenges seen in our previous work using monoisotopic targets\,\cite{Voyles2018a}, by propagating the difficulties inherent to modeling a wide number of reaction channels, to multiple target isotopes.
 As a result, this analysis is useful for a qualitative comparison of predictive capabilities, but no firm conclusions can be drawn about the direct causes of any inaccuracies, as there are many \enquote{moving parts} in these calculations.
@@ -1109,30 +1135,10 @@ Given that the level density model was the same for all of the product nuclei, i
 % TALYS, TENDL, and CoH seem to have the correct shape for this pre-equilibrium cross section, with magnitudes that are just slightly too low.
 % EMPIRE, however, does not level off  as much as the data and the other codes are seen to, and misses the high-energy data points.
 
-\begin{figure}
- \centering
- \includegraphics[width=0.5\textwidth]{./figures/51Mn.pdf}
- % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
- \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} cross section, with the \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} reaction channel visibly peaking at approximately \mbox{15 MeV}.}
- \label{fig:51Mn}
-\end{figure}
 
 
 
-
-
-\begin{figure}
- \centering
- \includegraphics[width=0.5\textwidth]{./figures/52Mn.pdf}
- % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
- \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} cross section, with \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.}
- \label{fig:temp_52Mn}
-\end{figure}
-
-
-
-
-\begin{figure}
+\begin{figure}[h]
  \centering
  \includegraphics[width=0.5\textwidth]{./figures/52mMn.pdf}
  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298

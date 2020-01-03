@@ -27,7 +27,7 @@ production.
 One particular set of  emerging radionuclides are 
 % the various 
 positron-emitting isotopes of manganese, which have been identified as having potential for a range of diagnostic applications\,\cite{J.2013,Graves2015,Lewis2015,PhysRevC.96.014613,Wooten2017,Hernandez2017}.
-In particular, a significant interest has been expressed in producing the emerging radionuclides \ce{^{51}Mn} for clinical use in quantitative PET studies, as well as  \ce{^{52g}Mn} for pre-clinical imaging of neural and immune processes via PET\,\cite{Graves2016}. 
+In particular, a significant interest has been expressed in producing the emerging radionuclides \ce{^{51}Mn} for clinical use in quantitative positron emission tomography (PET) studies, as well as  \ce{^{52g}Mn} for pre-clinical imaging of neural and immune processes via PET\,\cite{Graves2016}. 
 
 
 
@@ -69,21 +69,28 @@ is more clinically suitable for rapid metabolic studies.
 
 
 
-Developing production of these radionuclides requires well-characterized cross section data, or predictive models when such data has not been measured.   
+Developing production of these radionuclides requires well-characterized cross section data, or predictive models when such data have not been measured.   
 % However, the m
 Modeling of nuclear reactions in 
 % this 
 the A=40--70 mass region presents numerous challenges including uncertainties in nuclear level densities as a function of spin due to the opening of the $f_{7/2}$ orbital and the presence of enhanced $\gamma$-strength at low energies\,\cite{Voinov2004a,Algin2008,Algin2007}.  
 % As 
-% Therefore, as part of a larger campaign to address deficiencies in cross-cutting nuclear data needs, our group has performed a   measurement of 
-measured the   nuclear excitation functions of the radionuclides \ce{^{51}Mn},   \ce{^{52m}Mn}, and \ce{^{52g}Mn} from proton-induced reactions on natural iron.
+Therefore, as part of a larger campaign to address deficiencies in cross-cutting nuclear data needs, our group has
+% performed a   measurement of 
+measured the   nuclear excitation functions of the radionuclides \ce{^{51}Mn},   \ce{^{52m}Mn}, and \ce{^{52g}Mn} from proton-induced reactions on Fe.
+% natural iron.
 % This was carried out 
 % in a
 % using 
 We used the thin-foil stacked-target technique to study proton-induced reactions on 
 % experiment, using proton irradiation of 
 % natural iron foils 
-iron foils of natural isotopic abundance with titanium and copper monitor foils.
+% iron 
+Fe foils of natural isotopic abundance with 
+% titanium 
+Ti and 
+% copper 
+Cu monitor foils.
 % While recent work has been performed in the 40--100\,MeV energy region, t
 This work 
 % seeks to 
@@ -92,7 +99,7 @@ complements
 earlier measurements using 40--100\,MeV protons  and extends them down to reaction thresholds,  to investigate the feasibility of production using the international network   of low-energy medical cyclotrons\,\cite{Graves2016}. 
 Furthermore, 
 % we are able to use a portion of the data we measured to gain insight into the role of 
-we use our measured data to probe the role of angular momentum in the transitional energy region between compound and direct reactions since both the ground and long-lived isomeric states in \ce{^{52}Mn} were populated.  
+we used our measured data to probe the role of angular momentum in the transitional energy region between compound and direct reactions since both the ground and long-lived isomeric states in \ce{^{52}Mn} were populated.  
 
 
 
@@ -210,9 +217,9 @@ for this work,
 % , due to the large energy range desired to be spanned.
 one stack covering the 55--20\,MeV range and the other  25--0\,MeV.
 % , in order to 
-This minimizes the systematic uncertainties associated with significant degradation of beam energy, and
+This minimized the systematic uncertainties associated with significant degradation of beam energy, and
 % In addition, the complementary  energy  of the  stacks helps build confidence  through 
-includes multiple overlapping measurements between 20--25\,MeV as a consistency check between the stacks.
+included multiple overlapping measurements between 20--25\,MeV as a consistency check between the stacks.
 % to build confidence in the results. 
 % A stacked-target design was utilized for this work in order that the (p,x) cross sections for each reaction channel could be measured at multiple energy positions in a single irradiation\,\cite{Cumming1963}. 
 % For targets, a
@@ -241,7 +248,9 @@ Plates of 6061 aluminum alloy  served as proton energy degraders  between energy
 The target box, seen in \autoref{fig:fe_target_stack}, is machined from 6061 aluminum alloy and mounts on the end of an electrically-isolated beamline.
 The specifications of both target stacks 
 % designs for this work are presented 
-are in \autoref{tab:fe_stack_table} of Appendix \ref{sec:fe_stack_design}.
+are in \autoref{tab:fe_stack_table} of 
+% Appendix 
+\ref{sec:fe_stack_design}.
 
 
 
@@ -401,8 +410,12 @@ Both target stacks were
 separately irradiated at the  Lawrence Berkeley National Laboratory  (LBNL)
 % , using the 
 88-Inch Cyclotron, a  K=140 sector-focused cyclotron \cite{7999622}.
-The 25\,MeV stack was irradiated for approximately 20\,minutes at a nominal current of 100\,nA,  for an  integral current of 31.61\,nAh, measured using a current integrator on the electrically-isolated beamline. 
-The 55\,MeV stack was irradiated for approximately 10\,minutes at a nominal current of 120\,nA,  for an  integral current of 20.78\,nAh. 
+The 25\,MeV stack was irradiated for 
+% approximately 
+20\,minutes at a nominal current of 100\,nA,  for an  integral current of 31.61\,nAh, measured using a current integrator on the electrically-isolated beamline. 
+The 55\,MeV stack was irradiated for 
+% approximately 
+10\,minutes at a nominal current of 120\,nA,  for an  integral current of 20.78\,nAh. 
 The beam current
 % , measured using a current integrator on the electrically-isolated beamline, 
 remained stable under these conditions for the duration of each irradiation.
@@ -432,7 +445,9 @@ Samples were counted at fixed positions ranging 5--60  cm (5\% maximum permissib
 % , with a series of standard calibration sources used to determine energy and efficiency for each position.
 The foils were counted  for 
 % a period of 
-4 weeks following end-of-bombardment (EoB).
+4 weeks following 
+% end-of-bombardment.
+(EoB).
 % , to accurately quantify all induced activities.
 An example of one of the gamma-ray spectra collected 
 % in such a fashion 
@@ -449,7 +464,7 @@ code FitzPeaks\,\cite{fitzgerald2009fitzpeaks}, which utilizes the SAMPO fitting
  \centering
  \includegraphics[width=0.75\textwidth]{./figures/sample_gspec_fe.pdf}
  % sample_gspec.pdf: 489x257 pixel, 72dpi, 17.25x9.07 cm, bb=0 0 489 257
- \caption{A gamma spectrum  from an activated Fe foil at approximately 55\,MeV, collected 2 hours after EoB. Several observed reaction products are visible in this spectrum, and  the \ce{^{51}Cr} and \ce{^{52m}Mn} decay lines, which form two of the   primary reaction channels of interest, are  clearly isolated from surrounding peaks. }
+ \caption{A gamma spectrum  from an activated Fe foil at approximately 55\,MeV (the maximum incident proton energy), collected 25 minutes after end-of-bombardment. Several observed reaction products are visible in this spectrum, and  the \ce{^{51}Cr} and \ce{^{52m}Mn} decay lines, which form two of the   primary reaction channels of interest, are  clearly isolated from surrounding peaks. }
  \label{fig:gspec_femn}
 \end{figure*}
 
@@ -539,7 +554,7 @@ Solutions to the first- and higher-order  Bateman equations are used for separat
 % In addition to 
 % the stack's overall 
 % measuring beam current  using  a current integrator, t
-Thin \ce{^{nat}Ti} and \ce{^{nat}Cu} foils were 
+Thin \ce{^{nat}Ti} and \ce{^{nat}Cu} foils  
 % included along with the \ce{^{nat}Fe} targets, 
 % at each energy position, 
 were co-irradiated to measure beam current at each position within the stack.
@@ -550,6 +565,7 @@ The IAEA-recommended \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}
 % and uncertainties 
 % from the 2017 IAEA re-evaluation  
 \cite{Hermanne2018}.
+Systematically enhanced fluence from \ce{^{nat}Ti}(p,x)\ce{^{48}Sc} co-production was avoided by only using the 928.327, 944.130, and 2240.396\,keV decay gammas  from \ce{^{48}V}.
 Using the formalism outlined in our previous work, the integral form of the well-known activation equation was used to  determine proton fluence ($I \Delta t $),
 % in each monitor foil
 in order to account for energy loss across each monitor foil \cite{Voyles2018a}.
@@ -590,7 +606,7 @@ To report a complete description of the representative energy for each foil, a b
 
 
 % To correct for a spread in the apparent proton fluence, seen most strongly in rear stack positions, t
-The \enquote{variance minimization} techniques utilized in our recent work and established by Graves \etal\ have been used to reduce uncertainty in proton fluence assignments\,\cite{Voyles2018a,Graves2016}.
+The \enquote{variance minimization} techniques utilized in our recent work and established by Graves \etal\ have been used to reduce uncertainty in proton fluence assignments due to poorly-characterized stopping power\,\cite{Voyles2018a,Graves2016}.
 This method is based on the assumption that the independent measurements of proton fluence from the different monitor reactions 
 % used in this work 
 should all be consistent at each 
@@ -619,7 +635,8 @@ This is of relatively minor consequence for higher-energy irradiations (especial
 % the stopping power of the Kapton 
 becomes increasingly important for proton energies below 
 % approximately 
-25\,MeV, causing as much as a loss of 8\,MeV by the rear of this stack.
+25\,MeV, causing as much as an additional loss of 8\,MeV  by the time it reaches the end of the stack.
+% by the rear of this stack.
 % , making the precise areal density a source of significant uncertainty.
 
 
@@ -694,7 +711,7 @@ The impact of this variance minimization for improving disagreement in proton fl
          %         \refstepcounter{subfigure}
          \label{fig:fe_after_minimization}
    \hspace{-5pt}}%
-    \caption{Results of variance minimization through increasing the effective areal density of the  aluminum degraders by 4.43\% (55\,MeV stack) and Kapton tape by 5.69\% (25\,MeV stack). A noticeable reduction of variance in measured proton fluence is seen,  particularly at the  rear stack positions.} 
+    \caption{Results of variance minimization through increasing the effective areal density of the  aluminum degraders by 4.43\% (55\,MeV stack) and Kapton tape by 5.69\% (25\,MeV stack). A noticeable reduction of variance in measured proton fluence is seen,  particularly at the  rear stack positions.  Open data points represent the 25\,MeV stack, and closed data points represent the 55\,MeV stack.} 
      \label{fig:fe_variance_mins}
 \end{figure*}
 
@@ -814,7 +831,7 @@ Both linear models are consistent with the nominal fluence of 20.78\,nAh (for th
 % beamline 
 current integrators.
 However, for both target stacks, the FLUKA transport model predicts a significant increase in proton fluence, in particular for the 25\,MeV stack.
-This model fails to reproduce the fluence loss seen in monitor foils, and predicts a significantly higher production of secondary protons not seen in the activation data.
+This model fails to reproduce the fluence loss seen in monitor foils, and predicts a significantly higher production of lower-energy secondary protons not seen in the activation data.
 As fluence loss scales with $\sigma_{\mathrm{tot}}\rho\Delta r$, it is expected that an extrapolation back to the stack entrance (through the SS-3/SS-5 profile monitors) will underestimate the nominal fluence incident upon the box.
 This incident fluence dropped by approximately 
 % 9.5\% to  17.0$\pm$2.4\,nAh (and by 
@@ -835,7 +852,9 @@ For  (p,x) reactions on \ce{^{nat}Ti}, the (p,x) cross sections for  \ce{^{43}K}
 % as recorded 
 presented in \autoref{tab:ti_rp_table}.
 In addition, as there exist a number of isomers with radioactive ground states in these mass regions,  independent measurements of isomer-to-ground-state branching ratios for \ce{^{nat}Fe}(p,x)\ce{^{52m/g}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{58m/g}Co}, and \ce{^{nat}Ti}(p,x)\ce{^{44m/g}Sc} were  extracted and are presented in \autoref{tab:fe_ibr_table}.
-Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR\,\cite{Otuka2014272}) are seen in the figures of Appendices \ref{sec:fe_xs_figures} and \ref{sec:fe_ibr_figures}.
+Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR\,\cite{Otuka2014272}) are seen in the figures of 
+% Appendices 
+\ref{sec:fe_xs_figures} and \ref{sec:fe_ibr_figures}.
 The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity ($\pm$3--10\%), proton fluence ($\pm$5--13\%), and foil areal density ($\pm$0.1--0.3\%).
 
 
@@ -1022,6 +1041,28 @@ This normalization is performed in such a way that it only affects the level den
 Finally, the default level density model in ALICE is the Kataria-Rarnamurthy-Kapoor (KRK) model \cite{Kataria1978,Kataria1990}, a semi-empirical nuclear level density formula which provides shell-dependent corrections to the nuclear mass surface, based on a Fourier expansion of the single particle level density of nucleons.
 
 
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=0.5\textwidth]{./figures/51Mn.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} cross section, with the \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} reaction channel visibly peaking at approximately \mbox{15 MeV}.}
+ \label{fig:51Mn}
+\end{figure}
+
+
+
+
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=0.5\textwidth]{./figures/52Mn.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} cross section, with \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.}
+ \label{fig:temp_52Mn}
+\end{figure}
+
+
 For this analysis, the focus will be on the three largest channels  measured -- \ce{^{nat}Fe}(p,x)\ce{^{51}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn}, and \ce{^{nat}Fe}(p,x)\ce{^{52}Mn}.
 The use of natural abundance targets in these measurements exacerbates the modeling  challenges seen in our previous work using monoisotopic targets\,\cite{Voyles2018a}, by propagating the difficulties inherent to modeling a wide number of reaction channels, to multiple target isotopes.
 As a result, this analysis is useful for a qualitative comparison of predictive capabilities, but no firm conclusions can be drawn about the direct causes of any inaccuracies, as there are many \enquote{moving parts} in these calculations.
@@ -1034,7 +1075,7 @@ EMPIRE and CoH seem to accurately predict the locations of the peaks, but often 
 This is seen again in the  \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} cross section, where the first peak is well-modeled by TALYS and TENDL, but  rises much more rapidly than the data would support above 50\,MeV.
 CoH and EMPIRE, again, overpredict the cross sections at all energies, but seem to have the correct shape.
 Through measurement of the  \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn} independent cross section, the effect of spin distributions in highly-excited nuclear states can be studied.
-The measured data suggests that the independent cross section to the $2^+$ isomer should be a large fraction of the cumulative cross section to \ce{^{52}Mn} (which has a $6^+$ ground state), over 80\% at the peak energy.
+The measured data suggest that the independent cross section to the $2^+$ isomer should be a large fraction of the cumulative cross section to \ce{^{52}Mn} (which has a $6^+$ ground state), over 80\% at the peak energy.
 All three codes predict about 50\%, which indicates that the isomer feeding is not well-modeled.
 It is possible that this is caused by residual nucleus population and/or level density models that are skewed too heavily towards high spin.
 In the other isomer-to-ground state ratio measured for Fe,  \ce{^{nat}Fe}(p,x)\ce{^{58}Co}, the opposite is seen -- the codes underpredict the ratio of the isomer-to-ground state, but in this case the isomer is the higher spin state ($5^+$, compared with a  $2^+$ ground state).
@@ -1094,30 +1135,10 @@ Given that the level density model was the same for all of the product nuclei, i
 % TALYS, TENDL, and CoH seem to have the correct shape for this pre-equilibrium cross section, with magnitudes that are just slightly too low.
 % EMPIRE, however, does not level off  as much as the data and the other codes are seen to, and misses the high-energy data points.
 
-\begin{figure}
- \centering
- \includegraphics[width=0.5\textwidth]{./figures/51Mn.pdf}
- % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
- \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} cross section, with the \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} reaction channel visibly peaking at approximately \mbox{15 MeV}.}
- \label{fig:51Mn}
-\end{figure}
 
 
 
-
-
-\begin{figure}
- \centering
- \includegraphics[width=0.5\textwidth]{./figures/52Mn.pdf}
- % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
- \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} cross section, with \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.}
- \label{fig:temp_52Mn}
-\end{figure}
-
-
-
-
-\begin{figure}
+\begin{figure}[h]
  \centering
  \includegraphics[width=0.5\textwidth]{./figures/52mMn.pdf}
  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
