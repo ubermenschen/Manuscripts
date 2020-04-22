@@ -1,0 +1,1025 @@
+
+\section{\label{sec:intro_U5_d}Introduction}
+
+
+
+Clinical practice of nuclear medicine is rapidly growing with the inclusion of a broader array of radiopharmaceuticals. 
+Future growth is anticipated, given the pre-clinical success of many  new and emerging radionuclides. 
+Although the physical and chemical properties of these novel radionuclides tend to be
+% The next generation of nuclear medicine 
+% % would appear to be based upon 
+% is likely to involve the production of novel, emerging radionuclides\,\cite{Qaim201731}. 
+% % The targeted and personalized nature of therapy and imaging applications using these novel radionuclides  
+% These make possible an improvement in clinical practice, offering many patients the possibility for better survival rates and quality lives, and informing researchers in their quest to develop new treatments\,\cite{Mulford2005,Muller2014}.
+% While the chemical and radioactive decay properties of many of these radionuclides are 
+well-established, their broad-scale  clinical applications are reliant upon well-characterized nuclear data to facilitate 
+% large-scale   
+production. 
+% % 
+% % 
+% % 
+% % The future of nuclear medicine would appear to be the paradigm of personalized medicine --- targeted radionuclide therapy to spare healthy tissue\,\cite{Mulford2005,Qaim201731}, and theranostic medicine, which pairs an imaging isotope with a therapeutic isotope (frequently, of the same element), to provide simultaneous, real-time dose delivery and verification, leading to drastic reductions in prescribed patient dose\,\cite{Muller2014,Bentzen2005,Srivastava2012}. 
+% % Other variants of theranostic medicine exist, including pre-imaging for treatment planning, or delivery of a single compound with different radioelements for imaging/therapy where the inter-element biodistribution has been validated.  
+% % Change up the next sentance a bit
+% % Novel applications are being explored for several radionuclides whose production methodologies are not established, but their production requires accurate, high-fidelity cross section data.
+% %\,\cite{Qaim201731}. 
+% % Many of these applications focus on theranostics, the use of chemically identical (or similar) imaging and therapeutic radiopharmaceuticals for treatment of disease. 
+% One particular set of  emerging radionuclides are 
+% % the various 
+% positron-emitting isotopes of manganese, which have been identified as having potential for a range of diagnostic applications\,\cite{J.2013,Graves2015,Lewis2015,PhysRevC.96.014613,Wooten2017,Hernandez2017}.
+% In particular, a significant interest has been expressed in producing the emerging radionuclides \ce{^{51}Mn} for clinical use in quantitative positron emission tomography (PET) studies, as well as  \ce{^{52g}Mn} for pre-clinical imaging of neural and immune processes via PET\,\cite{Graves2016}. 
+% 
+% 
+% 
+% 
+% Manganese radionuclides are desirable for radiopharmaceutical applications, as 
+% % manganese is a 
+% % the element is chemically versatile,  biologically relevant, and essential in trace quantities. 
+% % Manganese 
+% they possess well-established biochemistry, and have been 
+% % proven to be 
+% chelated 
+% % well 
+% by the complexing agent DOTA for tracking monoclonal antibodies with high biostability at neutral pH\,\cite{Graves2015}.
+% \ce{^{52}Mn} ($t_{1/2}$ = 5.591$~\pm~$0.003\,d, $I_{\beta^+}$ = 29.4\%, $E_{\beta\text{, avg}}$ = 0.242\,MeV\,\cite{Dong2015}) has been shown to be useful for immuno-PET applications, 
+% % with its rapid blood clearance 
+% offering the possibility for imaging within minutes of injection,
+% % \,\cite{Dong2015}.
+% % Its lifetime facilitates regional production and  allows for immunoPET imaging up to 2--3 weeks after administration, giving \ce{^{52}Mn} a longer duration for useful 
+% % making it more useful 
+% making it highly suitable for pre-clinical imaging as a longer-lived complement   to the more established immuno-PET agents \ce{^{89}Zr} and   \ce{^{64}Cu}.  
+% % Furthermore, \ce{^{52}Mn}  has high uptake in the heart, liver, kidneys, and pancreas, making it a useful diagnostic agent for pancreatic $\beta$-cell, insulinoma, and porphysome imaging\,\cite{Graves2015}. 
+% However, its  long half-life and unfavorable high-energy decay gamma-rays 
+% % (notably, its  744.233\,keV [$I_\gamma = 90.0\,\pm\,1.2\%$], 935.544\,keV [$I_\gamma = 94.5\,\pm\,1.3\%$], and 1434.092\,keV [$I_\gamma = 100.0 \pm 1.4\%$] lines) 
+% make it undesirable for clinical applications.
+% % , but easily shipped worldwide and highly suitable for pre-clinical imaging\,\cite{Dong2015}.
+% The short half-life of the  \ce{^{52m}Mn} isomer ($t_{1/2}$ = 21.1$~\pm~$0.2\,min)
+% % , $I_{\beta^+}$\,=\,96.6\%, $E_{\beta\text{,avg}}$ = 1.172\,MeV) offers a much stronger positron emission branch than \ce{^{52g}Mn}, but its short lifetime 
+% makes production and handling difficult, and with a  high-intensity gamma emission (1434.06\,keV, $I_\gamma = 98.2~\pm~0.5\%$),  
+% \ce{^{52m}Mn} is similarly undesirable for clinical applications\,\cite{Dong2015}.
+% % contributes significantly to patient dose\,\cite{Dong2015}.
+% % Another emerging manganese radionuclide is 
+% In contrast, \ce{^{51}Mn} ($t_{1/2}$ = 46.2$~\pm~$0.1\,min, $I_{\beta^+}$ = 96.86\%, $E_{\beta\text{, avg}}$ = 0.964\,MeV\,\cite{Wang2017}), 
+% % whose short lifetime makes it 
+% is more clinically suitable for rapid metabolic studies.
+% % \ce{^{51}Mn} has a comparable positron branch and energy to \ce{^{52m}Mn} and is more suitable for clinical use than the soft positron emissions of \ce{^{52g}Mn}. 
+% % In addition, 
+% \ce{^{51}Mn} lacks any strong decay gamma-rays (its longer-lived daughter \ce{^{51}Cr} [$t_{1/2}$ = 27.704$~\pm~$0.003\,d] has only a single  320.0284\,keV [$I_\gamma = 9.910~\pm~0.010\%$] line), making it the best choice of these radionuclides for clinical imaging.
+% % ,\cite{Wang2017}.
+% 
+% 
+% 
+% Developing production of these radionuclides requires well-characterized cross section data, or predictive models when such data have not been measured.   
+% % However, the m
+% Modeling of nuclear reactions in 
+% % this 
+% the A=40--70 mass region presents numerous challenges including uncertainties in nuclear level densities as a function of spin due to the opening of the $f_{7/2}$ orbital and the presence of enhanced $\gamma$-strength at low energies\,\cite{Voinov2004a,Algin2008,Algin2007}.  
+% % As 
+% Therefore, as part of a larger campaign to address deficiencies in cross-cutting nuclear data needs, our group has
+% % performed a   measurement of 
+% measured the   nuclear excitation functions of the radionuclides \ce{^{51}Mn},   \ce{^{52m}Mn}, and \ce{^{52g}Mn} from proton-induced reactions on Fe.
+% % natural iron.
+% % This was carried out 
+% % in a
+% % using 
+% We used the thin-foil stacked-target technique to study proton-induced reactions on 
+% % experiment, using proton irradiation of 
+% % natural iron foils 
+% % iron 
+% Fe foils of natural isotopic abundance with 
+% % titanium 
+% Ti and 
+% % copper 
+% Cu monitor foils.
+% % While recent work has been performed in the 40--100\,MeV energy region, t
+% This work 
+% % seeks to 
+% complements 
+% % these measurements 
+% earlier measurements using 40--100\,MeV protons  and extends them down to reaction thresholds,  to investigate the feasibility of production using the international network   of low-energy medical cyclotrons\,\cite{Graves2016}. 
+% Furthermore, 
+% % we are able to use a portion of the data we measured to gain insight into the role of 
+% we used our measured data to probe the role of angular momentum in the transitional energy region between compound and direct reactions since both the ground and long-lived isomeric states in \ce{^{52}Mn} were populated.  
+% 
+% 
+% 
+% 
+% 
+% 
+% % While these efforts have been targeted towards the production cross section of the \ce{^{51,52g,52m}Mn} PET isotopes (as well as other emerging medical radionuclides produced in these irradiations), these measurements offer insight into the spin distribution of excited nuclear states, in the 5--55 MeV range.
+% 
+% 
+% % In addition to the interest in the production of\ce{^{51,52g,52m}Mn} for PET research
+% 
+% % While these efforts have been motivated by the production cross section of the
+% In addition to their interest for PET studies, the \ce{^{51,52g,52m}Mn} excitation functions 
+% % radionuclides for PET studies, this experiment 
+% offer an opportunity to study the distribution of angular momentum in compound nuclear and direct pre-equilibrium reactions via observation of the \ce{^{52m}Mn} ($t_{1/2}$ = 21.1$~\pm~$0.2\,min; J$^\pi=2^+$) to \ce{^{52g}Mn} ($t_{1/2}$ = 5.591$~\pm~$0.003\,d; J$^\pi=6^+$)   ratio\,\cite{Dong2015,Wang2017}.
+% Measurements of isomer-to-ground state ratios have been used for over 20\,years to probe the spin distribution of excited nuclear states in the A\,$\approx$\,190 region\,\cite{PhysRevC.73.034613,PhysRevC.45.1171}.
+% These measurements also provide an opportunity to benchmark 
+% % a range of cross section data invaluable to not only the medical isotope production community, but  also serve to measure the spin distribution in \textred{f$_{7/2}$} subshell nuclei via the observation of isomer-to-ground state ratios, and  as new data to improve 
+% the predictive capabilities of  reaction modeling codes used for nuclear reaction evaluations and the way in which they implement the underlying physical reaction mechanisms.  
+% % codes. 
+% % In addition, these experiments provide valuable insight into the challenges  involved in precision cross section data measurements. 
+
+
+
+\section{\label{sec:experimental_U5_d}Experimental Methods and Materials}
+
+
+The work described herein follows the  methods utilized in our recent work and established by Graves \etal\ 
+% for the measurement of cross sections in stacked target irradiations   
+for monitor reaction characterization of beam energy and fluence in stacked target irradiations\,\cite{Voyles2018a,Graves2016}.
+% 
+% Make sure to add this back in for the journal article
+% 
+% 
+Preliminary results  were reported in a Master's thesis \cite{springer2017investigation}; here we report the final analysis of that work.
+% of one co-author, but the conclusive results of this work are described here\,\cite{springer2017investigation}.  
+Unless otherwise stated, all values are presented herein as mean $\pm$ SD, or as the calculated result $\pm$ half the width of a 68\% confidence interval.
+
+
+
+\subsection{\label{sec:target_design_U5_d}Stacked-target design}
+
+
+We constructed a pair of target stacks 
+% were constructed 
+for this work,
+% , due to the large energy range desired to be spanned.
+one stack covering the 55--20\,MeV range and the other  25--0\,MeV.
+% , in order to 
+This minimized the systematic uncertainties associated with significant degradation of beam energy, and
+% In addition, the complementary  energy  of the  stacks helps build confidence  through 
+included multiple overlapping measurements between 20--25\,MeV as a consistency check between the stacks.
+% to build confidence in the results. 
+% A stacked-target design was utilized for this work in order that the (p,x) cross sections for each reaction channel could be measured at multiple energy positions in a single irradiation\,\cite{Cumming1963}. 
+% For targets, a
+A series of nominal 25\,\mmicro m \ce{^{nat}Fe} foils (99.5\%, lot \#LS470411), 25\,\mmicro m \ce{^{nat}Ti} foils (99.6\%, lot \#LS471698), and 25\,\mmicro m \ce{^{nat}Cu} foils (99.95\%, lot \#LS471698) were used (all from Goodfellow Corporation, Coraopolis, PA 15108, USA) as targets.
+In each stack, seven foils 
+% of each metal 
+were cut down to 2.5$\times$2.5\,cm squares and spatially characterized 
+% --- for each foil, length and width measurements were taken 
+at four different locations using a digital caliper and micrometer (Mitutoyo America Corp.).
+% , thickness measurements were taken at four different locations using a digital micrometer (Mitutoyo America Corp.), and 
+Four mass measurements were performed using an analytical balance 
+% after cleaning the foils with isopropyl alcohol.
+% Using these length, width, and mass readings, the 
+in order to determine their areal density. 
+% and its uncertainty 
+% (in mg/cm$^2$).
+% for each foil was calculated.
+% , along with the propagated uncertainty in areal density.
+% The foils were tightly sealed into \enquote{packets} using two pieces of  3M 1205-Series Kapton polyimide film tape --- each piece of tape consists of 38.1 \mmicro m of an acrylic adhesive (nominal 4.49 mg/cm$^2$) on 25.4 \mmicro m of a polyimide backing (nominal 3.61 mg/cm$^2$).
+The foils were  sealed into \enquote{packets} using two pieces of  3M 5413-Series Kapton polyimide film tape 
+% --- each piece of tape consists 
+consisting of 43.2 \mmicro m of a silicone adhesive (nominal 4.79\,mg/cm$^2$) on 25.4 \mmicro m of a polyimide backing (nominal 3.61\,mg/cm$^2$).
+The sealed foils were mounted over the hollow center of  1.5875 mm-thick aluminum frames.
+Plates of 6061 aluminum alloy  served as proton energy degraders  between energy positions.
+% One \ce{^{nat}Fe}, one \ce{^{nat}Cu}, and one \ce{^{nat}Ti} mounted foil were bundled together using baling wire for each energy position.
+The target box, seen in \autoref{fig:fe_target_stack}, is machined from 6061 aluminum alloy and mounts on the end of an electrically-isolated beamline.
+The specifications of both target stacks 
+% designs for this work are presented 
+are in \autoref{tab:fe_stack_table} of 
+% Appendix 
+\ref{sec:fe_stack_design}.
+
+% 
+% 
+% \begin{figure}[ht]
+%  \centering
+%  \includegraphics[width=0.45\textwidth]{./figures/SAM_2494.JPG}
+%  % IMG_1975.JPG: 3264x2448 pixel, 72dpi, 115.15x86.36 cm, bb=0 0 3264 2448
+%  \caption{\label{fig:fe_target_stack}Photograph of the assembled 25\,MeV target stack.
+% %  , before it was mounted in the beamline. 
+%  The proton beam enters through the circular entrance in the foreground, and the upstream stainless steel profile monitor (SS-5) is visible at the front of the stack.}
+% \end{figure}
+% 
+% % Separate tables
+% % 
+% % % Please add the following required packages to your document preamble:
+% % % \usepackage{booktabs}
+% % \begin{table}
+% % \centering
+% % \caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \mmicro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and the earlier paper by Graves \etal\\,\cite{Graves2016}. At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor --- after end-of-bombardment (EoB), decay radiation emitted from these activated stainless steel foils were used to develop radiochromic film (Gafchromic EBT3), revealing the spatial profile of the beam entering and exiting the stack.}
+% % \label{tab:fe_stack_table}
+% % \small
+% % \begin{tabular}{@{}llll@{}}
+% % \toprule
+% % % Target Layer       & Nominal Thickness & Measured thickness (mg/cm\textasciicircum 2) & Thickness Uncertainty (\%) \\ \midrule
+% % Target layer       & \begin{tabular}[c]{@{}l@{}}Measured \\ thickness\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured areal\\density (mg/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Areal density \\ uncertainty (\%)\end{tabular} \\ \midrule
+% % SS profile monitor SS-5 & 130.94 \mmicro m                                              & 100.57                                                                      & 0.17                                                                      \\
+% % Fe-08                   & 26.25 \mmicro m                                               & 19.69                                                                       & 0.17                                                                      \\
+% % Ti-14                   & 25.01 \mmicro m                                               & 10.87                                                                       & 0.36                                                                      \\
+% % Cu-14                   & 24.01 \mmicro m                                               & 17.49                                                                       & 0.40                                                                      \\
+% % Al Degrader E-09        & 256.5 \mmicro m                                               & --                                                                          & --                                                                        \\
+% % Fe-09                   & 26.5 \mmicro m                                                & 19.90                                                                       & 0.09                                                                      \\
+% % Ti-15                   & 23.81 \mmicro m                                               & 10.97                                                                       & 0.11                                                                      \\
+% % Cu-15                   & 21.81 \mmicro m                                               & 17.63                                                                       & 0.46                                                                      \\
+% % Al Degrader H-01        & 127.49 \mmicro m                                              & --                                                                          & --                                                                        \\
+% % Fe-10                   & 26.5 \mmicro m                                                & 19.84                                                                       & 0.11                                                                      \\
+% % Ti-16                   & 24.6 \mmicro m                                                & 10.96                                                                       & 0.32                                                                      \\
+% % Cu-16                   & 22.01 \mmicro m                                               & 17.22                                                                       & 0.25                                                                      \\
+% % Fe-11                   & 27.26 \mmicro m                                               & 19.96                                                                       & 0.17                                                                      \\
+% % Ti-17                   & 25.01 \mmicro m                                               & 10.88                                                                       & 0.25                                                                      \\
+% % Cu-17                   & 29 \mmicro m                                                  & 21.91                                                                       & 0.33                                                                      \\
+% % Fe-12                   & 27.01 \mmicro m                                               & 20.03                                                                       & 0.12                                                                      \\
+% % Ti-18                   & 25.01 \mmicro m                                               & 11.00                                                                       & 0.87                                                                      \\
+% % Cu-18                   & 28.75 \mmicro m                                               & 22.33                                                                       & 0.14                                                                      \\
+% % Fe-013                  & 26.25 \mmicro m                                               & 20.05                                                                       & 0.16                                                                      \\
+% % Ti-19                   & 26.6 \mmicro m                                                & 11.01                                                                       & 0.22                                                                      \\
+% % Cu-19                   & 28.75 \mmicro m                                               & 22.32                                                                       & 0.19                                                                      \\
+% % Fe-14                   & 25.75 \mmicro m                                               & 20.11                                                                       & 0.19                                                                      \\
+% % Ti-20                   & 27.01 \mmicro m                                               & 11.06                                                                       & 0.35                                                                      \\
+% % Cu-20                   & 28.26 \mmicro m                                               & 22.34                                                                       & 0.28                                                                      \\
+% % SS profile monitor SS-6 & 131.5 \mmicro m                                               & 100.99                                                                      & 0.17                                                                      \\
+% %  \bottomrule
+% % \end{tabular}
+% % \end{table}
+% % 
+% % 
+% % 
+% % 
+% % % Please add the following required packages to your document preamble:
+% % % \usepackage{booktabs}
+% % \begin{table}
+% % \centering
+% % \caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \mmicro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and the earlier paper by Graves \etal\\,\cite{Graves2016}. At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor --- after end-of-bombardment (EoB), decay radiation emitted from these activated stainless steel foils were used to develop radiochromic film (Gafchromic EBT3), revealing the spatial profile of the beam entering and exiting the stack.}
+% % \label{tab:fe_stack_table2}
+% % \small
+% % \begin{tabular}{@{}llll@{}}
+% % \toprule
+% % % Target Layer       & Nominal Thickness & Measured thickness (mg/cm\textasciicircum 2) & Thickness Uncertainty (\%) \\ \midrule
+% % Target layer       & \begin{tabular}[c]{@{}l@{}}Measured \\ thickness\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured areal\\density (mg/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Areal density \\ uncertainty (\%)\end{tabular} \\ \midrule
+% % SS profile monitor SS-3 & 130.9 \mmicro m                                               & 100.48                                                                      & 0.17                                                                      \\
+% % Fe-01                   & 25.75 \mmicro m                                               & 20.22                                                                       & 0.21                                                                      \\
+% % Ti-01                   & 25.88 \mmicro m                                               & 11.09                                                                       & 0.16                                                                      \\
+% % Cu-01                   & 28.81 \mmicro m                                               & 22.40                                                                       & 0.11                                                                      \\
+% % Al Degrader A-1         & 2.24 mm                                                       & --                                                                          & --                                                                        \\
+% % Fe-02                   & 25.5 \mmicro m                                                & 19.91                                                                       & 0.13                                                                      \\
+% % Ti-02                   & 25.74 \mmicro m                                               & 10.94                                                                       & 0.24                                                                      \\
+% % Cu-02                   & 28.75 \mmicro m                                               & 22.32                                                                       & 0.40                                                                      \\
+% % Al Degrader A-2         & 2.24 mm                                                       & --                                                                          & --                                                                        \\
+% % Fe-03                   & 25.25 \mmicro m                                               & 20.00                                                                       & 0.27                                                                      \\
+% % Ti-03                   & 25.91 \mmicro m                                               & 11.25                                                                       & 0.15                                                                      \\
+% % Cu-03                   & 28.86 \mmicro m                                               & 22.49                                                                       & 0.20                                                                      \\
+% % Al Degrader C-1         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
+% % Fe-04                   & 25.25 \mmicro m                                               & 19.93                                                                       & 0.33                                                                      \\
+% % Ti-04                   & 25.84 \mmicro m                                               & 10.91                                                                       & 0.18                                                                      \\
+% % Cu-04                   & 28.78 \mmicro m                                               & 22.38                                                                       & 0.29                                                                      \\
+% % Al Degrader C-2         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
+% % Fe-05                   & 25.64 \mmicro m                                               & 20.02                                                                       & 0.24                                                                      \\
+% % Ti-05                   & 25.86 \mmicro m                                               & 10.99                                                                       & 0.30                                                                      \\
+% % Cu-05                   & 28.77 \mmicro m                                               & 22.35                                                                       & 0.12                                                                      \\
+% % Al Degrader C-3         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
+% % Fe-06                   & 25.75 \mmicro m                                               & 20.21                                                                       & 0.26                                                                      \\
+% % Ti-06                   & 25.5 \mmicro m                                                & 11.15                                                                       & 0.23                                                                      \\
+% % Cu-06                   & 28.83 \mmicro m                                               & 22.43                                                                       & 0.10                                                                      \\
+% % Al Degrader C-4         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
+% % Fe-07                   & 25.76 \mmicro m                                               & 19.93                                                                       & 0.19                                                                      \\
+% % Ti-07                   & 25.75 \mmicro m                                               & 11.17                                                                       & 0.33                                                                      \\
+% % Cu-07                   & 28.76 \mmicro m                                               & 22.34                                                                       & 0.24                                                                      \\
+% % Al Degrader H-02        & 127.04 \mmicro m                                              & 34.51                                                                       & 0.20                                                                      \\
+% % SS profile monitor SS-4 & 131.21 \mmicro m                                              & 101.25                                                                      & 0.16                                                                     \\
+% %  \bottomrule
+% % \end{tabular}
+% % \end{table}
+% 
+% % % Combined table
+% % % Please add the following required packages to your document preamble:
+% % % \usepackage{booktabs}
+% % \begin{table*}
+% % \centering
+% % \caption{Specifications of the 25\,MeV and 55\,MeV target stack designs in the present work. The proton beam enters the stack upstream of the SS-5 and SS-3 profile monitors, respectively, and travels through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.68 $\pm$ 0.03 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and an earlier paper\,\cite{Voyles2018a}. 
+% % % the earlier paper by Graves \etal\\,\cite{Graves2016}.
+% % A 316 stainless steel foil is inserted at both the front and rear of each target stack as a monitor of the beam's spatial profile, by developing radiochromic film (Gafchromic EBT3) after end-of-bombardment (EoB).}
+% % \label{tab:fe_stack_table}
+% % \small
+% % \resizebox{\textwidth}{!}{%
+% % \begin{tabular}{@{}llll|llll@{}}
+% % \toprule
+% % % Target Layer       & Nominal Thickness & Measured thickness (mg/cm\textasciicircum 2) & Thickness Uncertainty (\%) \\ \midrule
+% % 25\,MeV Target layer            & \begin{tabular}[c]{@{}l@{}}Measured \\ thickness\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\areal density\\(mg/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Uncertainty \\ in areal\\ density  (\%)\end{tabular} & 55\,MeV Target layer            & \begin{tabular}[c]{@{}l@{}}Measured \\ thickness\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\areal density\\(mg/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Uncertainty \\ in areal\\ density  (\%)\end{tabular} \\
+% % \midrule
+% % SS profile monitor SS-5 & 130.94 \mmicro m                                              & 100.57                                                                      & 0.17                                                                      & SS profile monitor SS-3 & 130.9 \mmicro m                                               & 100.48                                                                      & 0.17                                                                      \\
+% % Fe-08                   & 26.25 \mmicro m                                               & 19.69                                                                       & 0.17                                                                      & Fe-01                   & 25.75 \mmicro m                                               & 20.22                                                                       & 0.21                                                                      \\
+% % Ti-14                   & 25.01 \mmicro m                                               & 10.87                                                                       & 0.36                                                                      & Ti-01                   & 25.88 \mmicro m                                               & 11.09                                                                       & 0.16                                                                      \\
+% % Cu-14                   & 24.01 \mmicro m                                               & 17.49                                                                       & 0.40                                                                      & Cu-01                   & 28.81 \mmicro m                                               & 22.40                                                                       & 0.11                                                                      \\
+% % Al Degrader E-09        & 256.5 \mmicro m                                               & --                                                                          & --                                                                        & Al Degrader A-1         & 2.24 mm                                                       & --                                                                          & --                                                                        \\
+% % Fe-09                   & 26.5 \mmicro m                                                & 19.90                                                                       & 0.09                                                                      & Fe-02                   & 25.5 \mmicro m                                                & 19.91                                                                       & 0.13                                                                      \\
+% % Ti-15                   & 23.81 \mmicro m                                               & 10.97                                                                       & 0.11                                                                      & Ti-02                   & 25.74 \mmicro m                                               & 10.94                                                                       & 0.24                                                                      \\
+% % Cu-15                   & 21.81 \mmicro m                                               & 17.63                                                                       & 0.46                                                                      & Cu-02                   & 28.75 \mmicro m                                               & 22.32                                                                       & 0.40                                                                      \\
+% % Al Degrader H-01        & 127.09 \mmicro m                                              & --                                                                          & --                                                                        & Al Degrader A-2         & 2.24 mm                                                       & --                                                                          & --                                                                        \\
+% % Fe-10                   & 26.5 \mmicro m                                                & 19.84                                                                       & 0.11                                                                      & Fe-03                   & 25.25 \mmicro m                                               & 20.00                                                                       & 0.27                                                                      \\
+% % Ti-16                   & 24.6 \mmicro m                                                & 10.96                                                                       & 0.32                                                                      & Ti-03                   & 25.91 \mmicro m                                               & 11.25                                                                       & 0.15                                                                      \\
+% % Cu-16                   & 22.01 \mmicro m                                               & 17.22                                                                       & 0.25                                                                      & Cu-03                   & 28.86 \mmicro m                                               & 22.49                                                                       & 0.20                                                                      \\
+% % Fe-11                   & 27.26 \mmicro m                                               & 19.96                                                                       & 0.17                                                                      & Al Degrader C-1         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
+% % Ti-17                   & 25.01 \mmicro m                                               & 10.88                                                                       & 0.25                                                                      & Fe-04                   & 25.25 \mmicro m                                               & 19.93                                                                       & 0.33                                                                      \\
+% % Cu-17                   & 29 \mmicro m                                                  & 21.91                                                                       & 0.33                                                                      & Ti-04                   & 25.84 \mmicro m                                               & 10.91                                                                       & 0.18                                                                      \\
+% % Fe-12                   & 27.01 \mmicro m                                               & 20.03                                                                       & 0.12                                                                      & Cu-04                   & 28.78 \mmicro m                                               & 22.38                                                                       & 0.29                                                                      \\
+% % Ti-18                   & 25.01 \mmicro m                                               & 11.00                                                                       & 0.87                                                                      & Al Degrader C-2         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
+% % Cu-18                   & 28.75 \mmicro m                                               & 22.33                                                                       & 0.14                                                                      & Fe-05                   & 25.64 \mmicro m                                               & 20.02                                                                       & 0.24                                                                      \\
+% % Fe-13                  & 26.25 \mmicro m                                               & 20.05                                                                       & 0.16                                                                      & Ti-05                   & 25.86 \mmicro m                                               & 10.99                                                                       & 0.30                                                                      \\
+% % Ti-19                   & 26.6 \mmicro m                                                & 11.01                                                                       & 0.22                                                                      & Cu-05                   & 28.77 \mmicro m                                               & 22.35                                                                       & 0.12                                                                      \\
+% % Cu-19                   & 28.75 \mmicro m                                               & 22.32                                                                       & 0.19                                                                      & Al Degrader C-3         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
+% % Fe-14                   & 25.75 \mmicro m                                               & 20.11                                                                       & 0.19                                                                      & Fe-06                   & 25.75 \mmicro m                                               & 20.21                                                                       & 0.26                                                                      \\
+% % Ti-20                   & 27.01 \mmicro m                                               & 11.06                                                                       & 0.35                                                                      & Ti-06                   & 25.5 \mmicro m                                                & 11.15                                                                       & 0.23                                                                      \\
+% % Cu-20                   & 28.26 \mmicro m                                               & 22.34                                                                       & 0.28                                                                      & Cu-06                   & 28.83 \mmicro m                                               & 22.43                                                                       & 0.10                                                                      \\
+% % SS profile monitor SS-6 & 131.5 \mmicro m                                               & 100.99                                                                      & 0.17                                                                      & Al Degrader C-4         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
+% %                         &                                                               &                                                                             &                                                                           & Fe-07                   & 25.76 \mmicro m                                               & 19.93                                                                       & 0.19                                                                      \\
+% %                         &                                                               &                                                                             &                                                                           & Ti-07                   & 25.75 \mmicro m                                               & 11.17                                                                       & 0.33                                                                      \\
+% %                         &                                                               &                                                                             &                                                                           & Cu-07                   & 28.76 \mmicro m                                               & 22.34                                                                       & 0.24                                                                      \\
+% %                         &                                                               &                                                                             &                                                                           & Al Degrader H-02        & 127.04 \mmicro m                                              & --\cmmnt{34.51}                                                                       & --\cmmnt{0.20}                                                                      \\
+% %                         &                                                               &                                                                             &                                                                           & SS profile monitor SS-4 & 131.21 \mmicro m                                              & 101.25                                                                      & 0.16                                                                     \\
+% %  \bottomrule
+% % \end{tabular}
+% % }
+% % \end{table*}
+% 
+% 
+% Both target stacks were 
+% % assembled and 
+% separately irradiated at the  Lawrence Berkeley National Laboratory  (LBNL)
+% % , using the 
+% 88-Inch Cyclotron, a  K=140 sector-focused cyclotron \cite{7999622}.
+% The 25\,MeV stack was irradiated for 
+% % approximately 
+% 20\,minutes at a nominal current of 100\,nA,  for an  integral current of 31.61\,nAh, measured using a current integrator on the electrically-isolated beamline. 
+% The 55\,MeV stack was irradiated for 
+% % approximately 
+% 10\,minutes at a nominal current of 120\,nA,  for an  integral current of 20.78\,nAh. 
+% The beam current
+% % , measured using a current integrator on the electrically-isolated beamline, 
+% remained stable under these conditions for the duration of each irradiation.
+% The approximately 1\,cm-diameter proton beam incident upon each stack's upstream stainless steel profile monitor had a maximum energy of either 25 or 55\,MeV, with an approximately 2\% energy width due to multi-turn extraction --- these energy profiles were used for all later analysis.
+% Following end-of-bombardment (EoB), each stack was removed from the beamline and disassembled.
+% All activated foils were transported to a counting lab for gamma spectrometry, which started approximately 20\,minutes following the end of each irradiation.
+
+
+
+
+
+\subsection{\label{sec:spectroscopy_U5_d}Quantification of induced activities}
+
+
+% For consistency, a
+A single 
+% detector was used in this measurement, an 
+ORTEC GMX Series (model \#GMX-50220-S)  High-Purity Germanium (HPGe) detector was used to determine the activities in each target.
+% The detector is a nitrogen-cooled coaxial n-type HPGe with a 0.5\,mm beryllium window, and a 64.9\,mm diameter, 57.8\,mm long crystal.
+Samples were counted at fixed positions ranging 5--60  cm (5\% maximum permissible dead-time) from the front face of the detector.
+% , with a series of standard calibration sources used to determine energy and efficiency for each position.
+The foils were counted  for 
+% a period of 
+4 weeks following 
+% end-of-bombardment.
+(EoB).
+% , to accurately quantify all induced activities.
+An example of one of the gamma-ray spectra collected 
+% in such a fashion 
+is shown in \autoref{fig:gspec_femn}.
+% An example of one of the gamma-ray spectra collected in such a fashion is shown in \autoref{fig:gspec}.
+% For all spectra collected, n
+Net peak areas were fitted using the 
+% gamma spectrometry analysis 
+code FitzPeaks\,\cite{fitzgerald2009fitzpeaks}, which utilizes the SAMPO fitting algorithms for gamma-ray spectra\,\cite{Aarnio2001}.
+% , which has been shown to perform best in comparisons with other common analysis codes\,\cite{Jackman2014}.
+%, due to its peak fitting algorithms and incorporation  of calibrated detector-specific peak shapes and widths. 
+% 
+% \begin{figure*}
+%  \centering
+%  \includegraphics[width=0.75\textwidth]{./figures/sample_gspec_fe.pdf}
+%  % sample_gspec.pdf: 489x257 pixel, 72dpi, 17.25x9.07 cm, bb=0 0 489 257
+%  \caption{A gamma spectrum  from an activated Fe foil at approximately 55\,MeV (the maximum incident proton energy), collected 25 minutes after end-of-bombardment. Several observed reaction products are visible in this spectrum, and  the \ce{^{51}Cr} and \ce{^{52m}Mn} decay lines, which form two of the   primary reaction channels of interest, are  clearly isolated from surrounding peaks. }
+%  \label{fig:gspec_femn}
+% \end{figure*}
+% 
+% % Following  acquisition, the decaying product nuclei corresponding to each observed peak in the collected spectra were identified.
+% The net  counts in each fitted gamma-ray photopeak were converted into  activities for the decaying  activation products.
+% % , using calibrated detector efficiencies and gamma-ray intensities for each transition.
+% % and  corrections for gamma-ray attenuation within each foil packet
+% % The calibrated detector efficiencies, along with gamma-ray intensities for each transition and  corrections for gamma-ray attenuation within each foil packet, were used to convert the net  counts in each fitted gamma-ray photopeak into an activity for the decay of the activation products.  
+% % 
+% % Re-introduce this next line for the journal version
+% % 
+% % 
+% % The nuclear decay data used in this work is tabulated, for reference, in \autoref{tab:fe_nudat_table_monitors} and \autoref{tab:fe_nudat_table_nb} of Appendix \ref{sec:fe_data}.
+% The   half-lives and gamma-ray branching ratios  used for all calculations of measured cross sections reported in this work  have been taken from the most recent edition of  Nuclear Data Sheets for each  mass chain
+% \cite{Singh2015a,Chen2011a,Wu2000,Burrows2007,Burrows2006,Burrows2008,Wang2017,Dong2015,Dong2014,JUNDE2008787,Junde2011,Bhat1998,Nesaraja2010,Browne2013,Zuber20151,NICHOLS2012973,ERJUN2001,Singh2007}.
+% Corrections (typically \textless0.2\%) for gamma-ray attenuation within each foil packet were made, using  photon attenuation coefficients from the XCOM photon cross sections database\,\cite{berger2011xcom}.
+% % As nearly all of the product nuclei have multiple high-intensity gamma-rays, decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), as well as multiple independent activity measurements at each time point, based on each of its observed gamma-rays.
+% % Decay gamma-rays from the product nuclei were measured at multiple points in time (up to 2 weeks after EoB), and as nearly all of the product nuclei have multiple high-intensity gamma-rays, this provided independent activity measurements at each time point.
+% % activity for each gamma-ray possesses a 
+% EoB activities were determined by $\chi^2$-fitting of all observed decay gammas for a product to the decay curve.
+% The total  uncertainty in  activity is the propagated sum of the uncertainty in  fitted peak areas, uncertainty in detector efficiency calibration,  uncertainty in the gamma-ray branching ratio data, and uncertainty in photon attenuation coefficients (taken as~5\%).
+% 
+% 
+% 
+% 
+% As in our previous work, these activities were used to calculate 
+% % cross sections, and are differentiated between 
+% cumulative and independent cross sections\,\cite{Voyles2018a}.
+% % For the first observable product nuclide in a mass chain
+% For the first product nuclide in a mass chain with observable decay gammas, its (p,x) cross section is reported as a cumulative cross section ($\sigma_c$), which is the sum of direct production of that nucleus, as well as decay of its  precursors and any other independent cross sections leading to that nucleus. 
+% % In addition, 
+% Cumulative cross sections are reported whenever it is impossible to use decay spectrometry to distinguish independent production of a nucleus from decay feeding.
+% For all remaining observed reaction products in the mass chain, and cases where no decay precursors exist, independent cross sections  ($\sigma_i$) corresponding to a single 
+% % exit channel 
+% residual product are reported, 
+% % allowing for determination of the independent production via subtraction  and 
+% facilitating comparison to reaction model calculations.  
+% Solutions to the first- and higher-order  Bateman equations are used for separation of  feeding contributions from decay precursors, so that  independent cross sections may be reported\,\cite{bateman1910solution,Cetnar2006}.
+% 
+% 
+% 
+% 
+% 
+% 
+% 
+% % Since many of the reaction products populated by energetic protons are more than one decay off of stability, many of these are produced not only  directly by reactions, but also indirectly by decay down a mass chain.
+% % To this end, it is useful to differentiate between the types of cross sections reported in this work. 
+% % For the first observable product nuclei in a mass chain, its (p,x) cross section will be reported as a cumulative cross section ($\sigma_c$), which is the sum of direct production of that nucleus, as well as decay of its  precursors and any other independent cross sections leading to that nucleus. 
+% % % In addition, 
+% % Cumulative cross sections will be reported whenever it is impossible to use decay spectrometry to distinguish independent production of a nucleus from decay feeding.
+% % For all remaining observed reaction products in the mass chain, and cases where no decay precursors exist, independent cross sections ($\sigma_i$) will be reported, allowing for determination of the independent production via subtraction  and facilitating comparison to reaction model calculations.  
+% % 
+% % 
+% % 
+% % % To convert these activities into cross sections, c
+% % Corrections must be made for the decay of the various reaction products during the time between EoB and the spectrum acquisition, in order to calculate $A_0$, the initial activity at EoB, from the measured activities.
+% % The use of  multiple gamma-rays at multiple points after EoB to calculate initial activities  for each observed product nucleus allows for a more accurate  determination of $A_0$ than simply basing its calculation off of a single gamma-ray observation.
+% % For the case of cumulative cross sections, EoB activities were quantified by fitting the activities observed at multiple time points $t$ (since EoB) to the well-known radioactive decay law.
+% % % \begin{equation}
+% % % A\pp{t} = A_0 e^{-\lambda t}
+% % % \end{equation}
+% % Nonlinear regression was used for this fitting process, minimizing on $\chi^2$\,/\,degree of freedom, so that not only would the uncertainty-weighted EoB activities be fitted, but that a 1-$\sigma$ confidence interval in $A_0$ could be reported as as well.
+% % As with the gamma-ray intensities, all lifetimes used in this work are tabulated in \autoref{tab:fe_nudat_table_monitors} and \autoref{tab:fe_nudat_table_nb} of \ref{sec:fe_data}.
+% % In the case of independent cross sections, a similar process was followed, quantifying $A_i\pp{t=0} = A_{i,0}$, the EoB activity of nuclide $i$, by instead regressing to the solutions to the Bateman equation\,\cite{bateman1910solution,Cetnar2006}:
+% % \begin{equation}
+% % A_n\pp{t} = \lambda_n \sum_{i=1}^n \left[  N_{i,0} \times \pp{\prod_{j=i}^{n-1}\lambda_j} \times \pp{\sum_{j=i}^n \dfrac{e^{-\lambda_j t}}{\prod_{i\neq j}^n \pp{\lambda_i - \lambda_j}}  }   \right]
+% % \end{equation}
+% % where $j$ refers to a precursor nucleus populating a specific end-product.  
+% % While higher-order terms were added if needed, typically for an isomeric state in a particular mass chain,  the second-order expansion ($n=2$) was often sufficient to quantify EoB activities in a mass chain, simplifying to:
+% % \begin{equation}
+% % A_2\pp{t} = \dfrac{A_{1,0}\lambda_2}{\lambda_1 - \lambda_2} \pp{e^{-\lambda_2 t} - e^{-\lambda_1 t}} + A_{2,0} e^{-\lambda_2 t}
+% % \end{equation}
+% % In these cases, the previously-quantified EoB activities from decay precursors ($A_{1,0}$, etc) would be substituted in, so that the feeding contributions from decay could be separated and an independent cross section reported.
+% % After quantifying the cumulative EoB activities at the top of a mass chain and all subsequent independent EoB activities, these will be later used to report the various cross sections for all observed reaction products and isomeric states. 
+% 
+% 
+% 
+
+
+
+\subsection{\label{sec:dosimetry_U5_d}Proton fluence determination}
+
+
+% In addition to 
+% the stack's overall 
+% measuring beam current  using  a current integrator, t
+Thin \ce{^{nat}Ti} and \ce{^{nat}Cu} foils  
+% included along with the \ce{^{nat}Fe} targets, 
+% at each energy position, 
+were co-irradiated to measure beam current at each position within the stack.
+% These foils have been recommended for use as proton monitor foils in the 30 \textless\ E$_\text{p}$ \textless\ 100 MeV regime by the IAEA, as the
+The IAEA-recommended \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V},  \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions were used 
+% for  proton fluence measurement 
+% , using values  
+% and uncertainties 
+% from the 2017 IAEA re-evaluation  
+\cite{Hermanne2018}.
+Systematically enhanced fluence from \ce{^{nat}Ti}(p,x)\ce{^{48}Sc} co-production was avoided by only using the 928.327, 944.130, and 2240.396\,keV decay gammas  from \ce{^{48}V}.
+Using the formalism outlined in our previous work, the integral form of the well-known activation equation was used to  determine proton fluence ($I \Delta t $),
+% in each monitor foil
+in order to account for energy loss across each monitor foil \cite{Voyles2018a}.
+% \begin{equation}
+% I \Delta t = \dfrac{A_0 \Delta t}{\rho \Delta r \pp{1-e^{-\lambda \Delta t}} \int \sigma\pp{E} \dfrac{d\phi}{dE} dE}
+% \end{equation}
+The propagated uncertainty in proton fluence is calculated as the quadrature sum of (1) the uncertainty in quantified EoB activity, (2) uncertainty in the duration of irradiation (conservatively estimated at 10 s, to account for any transient changes in beam current), (3) uncertainty in foil areal density, (4) uncertainty in monitor product half-life (included, but normally negligible), (5) uncertainty in IAEA recommended cross section (using values  from the 2017 IAEA re-evaluation\,\cite{Hermanne2018}), and (6) uncertainty in differential proton fluence (from transport simulations).
+
+
+
+
+
+\subsection{\label{sec:proton_transport_U5_d}Proton transport calculations}
+
+Estimates of the proton beam energy for preliminary stack designs were calculated using the Anderson \& Ziegler (A\&Z) stopping power formalism\,\cite{Andersen_Ziegler_1977,Ziegler1985,Ziegler1999}.
+However, the 
+% more rigorous  
+transport code FLUKA-2011.2x.3 was used for simulation of the full 3-D target stack and to determine the full proton energy and fluence distribution for each foil\,\cite{Bohlen2014a}. 
+$10^8$ source protons were used for all FLUKA simulations, 
+% which places the 
+yielding a statistical uncertainty 
+% in proton energy distributions at 
+of less than 0.01\%.
+As with the determination of proton fluence in the monitor foils, the progressively increasing energy straggle towards the rear of each stack is accounted for using 
+% the differential proton fluence from 
+FLUKA.
+% simulation of proton transport.
+These energy distributions $\frac{d\phi}{dE}$ were used to calculate a flux-weighted average proton  energy $\langle E \rangle$, which accounts for the slowing-down of protons within a foil (particularly in the low-energy stack) and reports the effective  energy centroid for each foil.
+% \begin{equation}
+% \langle E \rangle = \dfrac{{\displaystyle\int E \dfrac{d\phi}{dE} dE}}{{\displaystyle\int \dfrac{d\phi}{dE} dE}}
+% \end{equation}
+To report a complete description of the representative energy for each foil, a bin width is provided through the  energy uncertainty, calculated as the full width at half maximum (FWHM) of the FLUKA-modeled energy distribution for each foil.
+
+% 
+% % To correct for a spread in the apparent proton fluence, seen most strongly in rear stack positions, t
+% The \enquote{variance minimization} techniques utilized in our recent work and established by Graves \etal\ have been used to reduce uncertainty in proton fluence assignments due to poorly-characterized stopping power\,\cite{Voyles2018a,Graves2016}.
+% This method is based on the assumption that the independent measurements of proton fluence from the different monitor reactions 
+% % used in this work 
+% should all be consistent at each 
+% % energy 
+% position.
+% % Assuming that the recommended monitor reaction cross sections and FLUKA-modeled energy distributions are both accurate, 
+% % Any residual disagreement in the  observed proton fluences is  primarily due to poorly-characterized stopping power in simulations or a systematic error in the 
+% % % stack design, namely, the
+% % areal densities of the stack components. 
+% This disagreement is minor at the front of the stack, but gets progressively worse as the beam travels through the stack, due to the compounded effect of systematic uncertainties.
+% % in stack areal densities.
+% 
+% 
+% 
+% When performing  a variance minimization, it is important to apply this variation of effective areal density  to the stack components which  have the most significant impact on beam energy loss.
+% % degradation, as any systematic error in the areal densities used for these components will cause a disagreement in the observed fluences.
+% % For the 55\,MeV stack
+% Therefore, the aluminum degraders are used for variance minimization for the 55\,MeV stack, as they make up more than 80\% of the areal density of the stack.
+% % , and thus play the largest role in beam degradation.
+% For the 25\,MeV stack, the Kapton tape was chosen for variance minimization, as the foil packets themselves are responsible for the majority of beam degradation.
+% While it only makes up approximately 20\% of the low-energy stack's areal density, the Kapton surrounding each foil packet has a greater areal density than the foil itself.
+% In addition, it is far easier to directly characterize the areal density of the metallic foils than it is for the Kapton, resulting in only an approximate value for the latter.
+% % While it might seem obvious, t
+% The contributions to the slowing of the beam due to the adhesive have often been neglected in much work performed to date. 
+% This is of relatively minor consequence for higher-energy irradiations (especially relative to any beam degraders), but 
+% % the stopping power of the Kapton 
+% becomes increasingly important for proton energies below 
+% % approximately 
+% 25\,MeV, causing as much as an additional loss of 8\,MeV  by the time it reaches the end of the stack.
+% % by the rear of this stack.
+% % , making the precise areal density a source of significant uncertainty.
+% 
+% 
+% 
+% 
+% 
+% In performing the  minimization, the areal density of each of the  aluminum degraders (for the 55\,MeV stack)  was varied uniformly in FLUKA simulations  by a factor of up to $\pm$25\% of nominal values, to find the effective density which minimized variance in the measured proton fluence at the lowest energy position (Ti-07, Cu-07).
+% For the 25\,MeV stack, the areal density reached in the minimization of the 55\,MeV stack was used for  the E-09 and H-01 aluminum degraders
+% % was taken from that reached in the minimization of the 55\,MeV stack.
+% % Using this value, 
+% and the areal density of each of the  Kapton tape  layers  was 
+% % likewise 
+% varied 
+% % uniformly   
+% by 
+% % a factor of up to 
+% $\pm$25\%, 
+% % of nominal values
+% to find the effective density which minimized variance in the measured proton fluence at the next-to-lowest energy position (Ti-19, Cu-19).
+% These 
+% % lowest energy 
+% positions were chosen as  minimization candidates as they are the most sensitive to systematic uncertainties in stack design.
+% % , due to the compounded effect of proton stopping powers.
+% In the 25\,MeV stack, activity was not seen in gamma spectrometry for the lowest-energy (Cu-20) monitor foil, implying that the beam was stopped at some point in between Ti-20 and Cu-20.
+% This observation 
+% % is conclusive proof 
+% indicates that  the true areal densities of the stack components differ from nominally measured values (primarily for the difficult-to-characterize Kapton tape), as transport calculations using nominal areal densities predict that the beam should exit the stack 
+% % (at the SS-6 profile monitor) 
+% with an energy of approximately 7\,MeV.
+% As a result, this position was not used for minimization, with the Ti-19 and Cu-19 position being the lowest-energy reliable monitor foils in the stack.
+% % % Remove these next two liens for the journal version
+% % % 
+% % With the exception of two foils (Cu-20 and Ti-20), each activated foil had a small \enquote{blister} under the Kapton tape layer, caused by a combination of thermal swelling and the formation of short-lived beta activities.
+% % % \comment{Maybe some Ne formed by Al(p,2a)Ne / Si(p,2ap)Ne?}
+% % This blister   verifies that the primary proton beam was incident upon the foil, and provided the first evidence (before gamma-ray spectrometry) that the beam was stopped in the stack between Fe-14 and Ti-20.
+% % 
+% % Re-introduce the rest of this paragraph for the journal version
+% % 
+% % 
+% The results of the minimization technique indicate a clear minimum in proton fluence variance for flux-weighted average 22.71\,MeV protons entering the last energy position of the 55\,MeV stack.
+% This is approximately 2\,MeV lower than the 
+% % nominal 
+% FLUKA simulations, and approximately 2\,MeV lower than 
+% % nominal 
+% A\&Z calculations, both of which used the nominal 2.80\,g/cm$^3$ measured density of the  aluminum degraders.
+% This energy corresponds to an aluminum areal density  4.43\% greater than 
+% % nominal 
+% measurements and 
+% % serves as a lump correction 
+% corrects for other minor systematic uncertainties in stack design.
+% % , including stack areal densities and incident beam energy.
+% Similarly, for the 25\,MeV stack, variance minimization converges on  flux-weighted average 9.23\,MeV protons entering the Fe-13/Ti-19/Cu-19 energy position, which is approximately 4\,MeV lower than the nominal FLUKA simulations, and approximately 5\,MeV lower than nominal A\&Z calculations.
+% This energy corresponds to a Kapton tape areal density of 5.69\% greater than nominal measurements, which is completely reasonable given the lack of areal density data from the manufacturer.
+% The impact of this variance minimization for improving disagreement in proton fluence is  clearly  seen in   \autoref{fig:fe_variance_mins}.
+% 
+% 
+% 
+% 
+% \begin{figure*}
+%     \centering
+%     \subfloat{
+%         \centering
+%         \hspace{-5pt}\subfigimg[width=0.485\textwidth]{a)}{./figures/before_minimization_plot.pdf}{50}
+% %         \caption{ Decay curve for the isomeric transition of \ce{^{115m}In}.}
+%          %         \refstepcounter{subfigure}
+%          \label{fig:fe_before_minimization}
+%    \hspace{-5pt}}%
+%      \subfloat{
+%         \centering
+% 
+%         \subfigimg[width=0.485\textwidth]{b)}{./figures/after_minimization_plot_alt.pdf}{50}
+%          %         \refstepcounter{subfigure}
+%          \label{fig:fe_after_minimization}
+%    \hspace{-5pt}}%
+%     \caption{Results of variance minimization through increasing the effective areal density of the  aluminum degraders by 4.43\% (55\,MeV stack) and Kapton tape by 5.69\% (25\,MeV stack). A noticeable reduction of variance in measured proton fluence is seen,  particularly at the  rear stack positions.  Open data points represent the 25\,MeV stack, and closed data points represent the 55\,MeV stack.} 
+%      \label{fig:fe_variance_mins}
+% \end{figure*}
+% 
+% 
+% 
+% % Re-introduce this paragraph for the journal version
+% % 
+% An enhanced version of the final \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reaction fluences is shown in \autoref{fig:fe_fluence_plot}.
+% % Without the reliable use of the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na} monitor channels, local interpolation cannot be used for fluence assignment to the Nb foils, and global interpolation is reliant upon a validated model for fluence loss.
+% The uncertainty-weighted mean  for the two \ce{^{nat}Cu}(p,x) and two \ce{^{nat}Ti}(p,x) monitor channels was calculated at each energy position, to determine the final fluence assignments for the Cu and Ti foils, respectively, and the uncertainty-weighted mean  for all four monitor channels was used to determine the final fluence assignments for the Fe foils.
+% Uncertainty in each final proton fluence  is  calculated by error propagation of the individual monitor channel fluence values  at each energy position.
+% These weighted-mean fluences are  plotted  in \autoref{fig:fe_fluence_plot}, along with the estimated fluence according to both  FLUKA transport 
+% and an uncertainty-weighted linear $\chi^2$ fit to the individual monitor channel fluence measurements.
+% Both models reproduce the observed fluence data consistently within uncertainty for the 55\,MeV stack, with the FLUKA model predicting a slightly greater fluence loss throughout the stack.
+% However, neither model is capable of accurately modeling the rapid decrease in apparent fluence at the rear of the 25\,MeV stack.   
+% These models are used purely to provide an extrapolation from the highest-energy position back to the \enquote{front} of each stack, to compare with the nominal fluence measured by  the beamline current integrators.
+% % 
+% % 
+% % 
+% % 
+% % 
+% % This involved minimizing on $\chi^2$ / degree of freedom, so that  a 95\% confidence interval in fluence would be reported as as well.
+% % As with the FWHM, a greater than 1$\sigma$ confidence interval is used for reporting fluence uncertainty to avoid an unrealistically small fluence confidence interval, based on the spread in observed fluence from Al and Cu monitor foils.
+% % The fluence and 2$\sigma$ uncertainties from this weighted-fit line are thus used in calculations of the various Nb(p,x) cross sections
+% 
+% 
+% % \begin{figure}
+% %  \centering
+% %  \includegraphics[width=0.5\linewidth]{./figures/Nb_ptallies.pdf}
+% %  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+% %  \caption{Final variance minimized incident proton energy distributions for the Nb foils, as simulated in FLUKA. The distribution tallies in each foil are all normalized to be per source proton, which was $10^8$ in all simulations. As the beam is degraded, proton energy distributions become visibly broadened due to straggling, and drop in magnitude due to scattering losses.}
+% %  \label{fig:Nb_ptallies}
+% % \end{figure}
+% 
+% \begin{figure}
+%  \centering
+%  \includegraphics[width=0.495\textwidth]{./figures/fluence_plot.pdf}
+%  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+%  \caption{Final uncertainty-weighted mean proton fluences throughout the target stack, based on the variance-minimized observed fluence from the the  \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions. Open data points represent the 25\,MeV stack, and closed data points represent the 55\,MeV stack.} 
+% %  A 95\% ($2\sigma$) confidence interval is reported in the fitted proton fluence, to ensure a realistic uncertainty in fluence, which encompasses the true absolute fluence. 
+% %   A clear loss of 
+% %   The fluence  drops by approximately \textred{7.2--8.9\%} from the incident fluence of \textred{196.9--198.8 nAh} over the length of each target stack, based on fluence loss models from FLUKA simulations and an empirical fit to  fluence measurements.}  
+% %   This is due to a combination of beam utilization, as well as scattering.}
+%  \label{fig:fe_fluence_plot}
+% \end{figure}
+
+
+
+
+
+
+\subsection{\label{sec:calcs_sec_U5_d}Calculation of measured cross sections}
+
+
+Using the quantified EoB activities along with the variance-minimized proton fluence, it is possible to calculate 
+% the final 
+cross sections for 
+% the various 
+observed (p,x) reactions.
+While thin ($\approx$ 10--20\,mg/cm$^2$)  foils were irradiated to minimize the energy bins of these cross section measurements, 
+% it is important to note that 
+all cross sections reported here are flux-averaged  
+% cross sections, 
+over the energy distribution subtended by each foil.
+% Re-introduce this next line for the journal version
+% , as seen in \autoref{fig:Fe_ptallies}.
+% For both the cumulative and independent activities quantified, cross sections were calculated using the formalism outlined in our previous work \cite{Voyles2018a}.
+% as:
+% \begin{equation}
+% \sigma = \dfrac{A_0 }{\rho \Delta r I \pp{1-e^{-\lambda \Delta t}} }
+% \end{equation}
+% where $A_0$ is the EoB activity for the  reaction product, $I$ is the proton current, $\rho \Delta r$ is the foil's areal density, $\lambda$ is the monitor reaction product's decay constant, and $\Delta t$ is the length of irradiation.
+The beam current, measured using a current integrator connected to the electrically-isolated target box, remained stable for the duration of the irradiation.
+The propagated uncertainty in cross section is calculated as the quadrature sum of the uncertainty in quantified EoB activity (which includes uncertainty in detector efficiencies), uncertainty in the duration of irradiation (conservatively estimated at 10\,s, to account for any minor transient changes in beam current), uncertainty in foil areal density, uncertainty in monitor product half-life (included, but normally negligible),  and uncertainty in proton current (quantified by error propagation of the monitor reaction fluence values  at each energy position).
+% , as seen in \autoref{fig:fe_fluence_plot}).
+
+
+
+
+
+\section{\label{sec:results_U5_d}Results and Discussion}
+
+
+\subsection{Measurement of nuclear excitation functions}
+
+After irradiation, all foils were 
+% confirmed to 
+still sealed in their Kapton packets, verifying that no activation products were lost due to packet failure.
+% and dispersal.
+With the exception of a single foil (Cu-20, in the 25\,MeV stack), each activated foil had a small \enquote{blister} under the Kapton tape layer, caused by a combination of 
+% thermal swelling, 
+off-gassing of oxides and the formation of gaseous short-lived beta activities in the tape.
+% \comment{Maybe some Ne formed by Al(p,2a)Ne / Si(p,2ap)Ne?}
+This blister   verifies that the primary proton beam was incident upon the foil, and provides additional 
+% the first 
+evidence 
+% (before gamma-ray spectrometry) 
+that the beam was stopped in the stack between Ti-20 and Cu-20.
+% , producing a Bragg peak at this location.  
+Using the \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions, as discussed in \autoref{sec:proton_transport_fe}, a fluence of 17.9$~\pm~$1.0\,nAh 
+% 18.8$\pm$1.0\,nAh
+was calculated to be incident upon the 55\,MeV target stack using the FLUKA fluence model, and a  fluence of 19.0$~\pm~$1.3\,nAh using the linear fit model.
+Similarly, for the 25\,MeV stack, a fluence of 27.5$~\pm~$8.3\,nAh 
+% 33.2$\pm$4.7\,nAh
+was calculated to be incident upon the 
+% 55\,MeV 
+target stack using the FLUKA fluence model, and a  fluence of 31.7$~\pm~$3.7\,nAh using the linear fit model to the four frontmost compartments (before the fluence loss becomes strongly nonlinear).
+% 37.0$\pm$9.3\,nAh using the linear fit model.
+% All of these 
+Both linear models are consistent with the nominal fluence of 20.78\,nAh (for the 55\,MeV stack) and 31.61\,nAh (for the 25\,MeV stack) measured using the 
+% beamline 
+current integrators.
+However, for both target stacks, the FLUKA transport model predicts a significant increase in proton fluence, in particular for the 25\,MeV stack.
+This model fails to reproduce the fluence loss seen in monitor foils, and predicts a significantly higher production of lower-energy secondary protons not seen in the activation data.
+As fluence loss scales with $\sigma_{\mathrm{tot}}\rho\Delta r$, it is expected that an extrapolation back to the stack entrance (through the SS-3/SS-5 profile monitors) will underestimate the nominal fluence incident upon the box.
+This incident fluence dropped by approximately 
+% 9.5\% to  17.0$\pm$2.4\,nAh (and by 
+8.9\% to  17.3$~\pm~$1.5\,nAh using the linear fit model over the length of the 55\,MeV stack, which is consistent with similar measurements at the Los Alamos National Laboratory's Isotope Production Facility in the past\,\cite{Voyles2018a,Graves2016}.
+This loss of fluence is due to a combination of 
+% beam utilization for the various 
+(p,x) reactions throughout the target stack, as well as large-angle deflections (primarily in the aluminum degraders) from scattering of the beam.
+
+
+
+
+% Using the final proton fluence at each energy position, cross sections for \ce{^{48,49,51}Cr}, \ce{^{48}V},  \ce{^{51,52m,52g,52,54,56}Mn},   \ce{^{52}Fe}, and \ce{^{55,56,57,58m,58g,58}Co}
+%  were extracted for (p,x) reactions  on \ce{^{nat}Fe} foils up to 55\,MeV, presented in \autoref{tab:fe_rp_table}.
+% For  (p,x) reactions on \ce{^{nat}Cu}, the (p,x) cross sections for  \ce{^{54}Mn}, \ce{^{57}Ni}, \ce{^{57,60,61}Co},   and \ce{^{60,61,64}Cu}  were extracted, 
+% % as recorded 
+% presented in \autoref{tab:cufe_rp_table}.
+% For  (p,x) reactions on \ce{^{nat}Ti}, the (p,x) cross sections for  \ce{^{43}K} and \ce{^{44g,44m,44,47,48}Sc}  were extracted, 
+% % as recorded 
+% presented in \autoref{tab:ti_rp_table}.
+% In addition, as there exist a number of isomers with radioactive ground states in these mass regions,  independent measurements of isomer-to-ground-state branching ratios for \ce{^{nat}Fe}(p,x)\ce{^{52m/g}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{58m/g}Co}, and \ce{^{nat}Ti}(p,x)\ce{^{44m/g}Sc} were  extracted and are presented in \autoref{tab:fe_ibr_table}.
+% Comparisons  of the measured cross sections and isomer branching ratios with literature data (retrieved from EXFOR\,\cite{Otuka2014272}) are seen in the figures of 
+% % Appendices 
+% \ref{sec:fe_xs_figures} and \ref{sec:fe_ibr_figures}.
+% The propagated uncertainty in these cross sections varies widely based on the reaction product in question, with the major components  arising from uncertainty in EoB activity ($\pm$3--10\%), proton fluence ($\pm$5--13\%), and foil areal density ($\pm$0.1--0.3\%).
+% 
+% 
+% \input{./fe_body_tables}
+% 
+% 
+% 
+% 
+% 
+% 
+% % \textred{Placeholder text follows...fill in actual discussion of results...}
+% 
+% % lee:
+% % 
+% % In addition to the interest in the production of 51,52 Mn for PET research, this experiment offered
+% % an opportunity to study the distribution of angular momentum in compound nuclear and direct
+% % pre-equilibrium reactions via observation of the 52g Mn (t ½ =5.591±0.003 d; J π =6 + ) to 52m Mn
+% % (t ½ =21.1±0.2 m; J π =2 + ) ratio. These results indicated were presented at the University of Oslo in
+% % May 2017 5 and indicate that the constant
+% % temperature nuclear level density model
+% % which has had the greatest success at
+% % reproducing most low-energy nuclear
+% % reaction data fails to reproduce the
+% % deposition of angular momentum at both
+% % compound and pre-compound energies
+% % (see figure 3). This result will be
+% % discussed in greater detail in Mr. Andrew
+% % Voyles’ doctoral dissertation, which is
+% % expected to be completed by May 2018.
+% 
+% 
+% 
+% These results have several notable features.
+% The 
+% % various 
+% \ce{^{nat}Fe}, \ce{^{nat}Cu}, and \ce{^{nat}Ti}(p,x) cross sections measured here are in excellent agreement with 
+% % the body of measurements in the 
+% literature,  but have been measured nearly exclusively with the highest precision to date.
+% While (p,x) reactions below 70\,MeV on these elements are well-characterized overall, measurements of several reaction channels are somewhat sparse in comparison.
+% Indeed, fewer than four existing measurements have been performed for the \ce{^{nat}Fe}(p,x)\ce{^{48}Cr},\ce{^{52}Fe}, \ce{^{nat}Cu}(p,x)\ce{^{60}Cu},\ce{^{61}Co}, and \ce{^{nat}Ti}(p,x)\ce{^{44}Sc}
+% % Similarly, the various \ce{^{nat}Nb}(p,x) cross sections measured here are in excellent agreement with literature data, which is far more sparse in the 40--90\,MeV region than for \ce{^{nat}Cu}(p,x) ---  fewer than three existing measurements have been performed for the majority of the 
+% reactions presented here.
+% % Indeed,  the \ce{^{nat}Nb}(p,x)\ce{^{83}Sr}, \ce{^{nat}Nb}(p,x)\ce{^{85}Y}, \ce{^{nat}Nb}(p,x)\ce{^{89}Nb}, \ce{^{nat}Nb}(p,x)\ce{^{90}Mo}, \ce{^{nat}Nb}(p,x)\ce{^{91m}Nb}, and \ce{^{nat}Nb}(p,x)\ce{^{98m}Mo} reactions each possess no more than a total of three data points in this energy region.
+% % Not only do the \ce{^{nat}Nb}(p,x) measurements in this work fill in the sparse data in this energy region, but they have been measured with the highest precision relative to existing literature data.
+% Additionally, \ce{^{22,24}Na} activity is seen in all foils, consistent with proton activation of the trace  silicon in the Kapton tape used for foil encapsulation, as described in our previous work\,\cite{Voyles2018a}.
+% No cross sections for \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} are reported due to the significant uncertainty in characterizing the layer of silicone adhesive, but this serves as another example of how the use of silicone-based adhesives may systematically enhance the apparent fluence when using the \ce{^{nat}Al}(p,x)\ce{^{22,24}Na} monitor reactions.
+% 
+% 
+% % Furthermore, t
+% This work presents the first measurements of several observables in 
+% % these mass regions.
+% % This work reports the first experimental measurement of
+% this mass region, including the \ce{^{nat}Fe}(p,x)\ce{^{49}Cr}, \ce{^{nat}Fe}(p,x)\ce{^{51}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn},  \ce{^{nat}Fe}(p,x)\ce{^{56}Mn}, and \ce{^{nat}Fe}(p,x)\ce{^{58m}Co} reactions in the 0--70\,MeV region, 
+% % It also represents  the first measurement of 
+% the independent cross sections for       \ce{^{nat}Fe}(p,x)\ce{^{51}Cr}, \ce{^{nat}Fe}(p,x)\ce{^{52g}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{58g}Co}, and the \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$) and \ce{^{58\text{m}}Co} ($5^+$) / \ce{^{58\text{g}}Co}  ($2^+$)  isomer branching ratios via \ce{^{nat}Fe}(p,x).  
+% The cumulative cross sections from these data are also consistent with existing measurements of the cumulative \ce{^{nat}Fe}(p,x)\ce{^{51}Cr},\ce{^{52g}Mn},\ce{^{58g}Co} cross sections.
+% % Similarly, this work offers the first measurement of the independent cross sections for \ce{^{nat}Nb}(p,x)\ce{^{85\text{g}}Y},  as well as the first measurement of the     \ce{^{85\text{m}}Y} (\nicefrac{9}{2}$^+$) / \ce{^{85\text{g}}Y}   (\nicefrac{1}{2}$^-$)
+% % (${^{1}/_{2}}^{-}$)
+% % ($\sfrac{1}{2}^-$) 
+% % isomer branching ratio via \ce{^{nat}Nb}(p,x).
+% 
+% % \textred{Comment on possible monitor reactions  here...}
+% 
+% 
+% Several of the activities produced via \ce{^{nat}Fe}(p,x)  could be useful as experimental monitor reactions. 
+% In particular, \ce{^{nat}Fe}(p,x)\ce{^{56}Co} ($t_{1/2}=77.236~\pm~0.026$ d, $\epsilon$=100\% to \ce{^{56}Fe}\,\cite{Junde2011})  is a strongly-fed reaction channel (peak cross section of approximately 400\,mb near 12\,MeV), with a sufficiently-long half-life permitting offline gamma spectrometry,  and  cannot be populated via secondary neutrons incident upon the monitor target. 
+% It possesses a number of intense gamma-rays, which are distinct from those populated by daughter states in the decay of  \ce{^{56}Mn}, and the gammas which are produced both in the decay of  \ce{^{56}Co} and  \ce{^{56}Mn} may be easily resolved based on differences in intensity and half-life. 
+% Similarly,  \ce{^{nat}Fe}(p,x)\ce{^{54}Mn}  ($t_{1/2}=312.20~\pm~0.020$ d, $\epsilon$=100\% to \ce{^{54}Cr}\,\cite{Dong2014}) has a convenient half-life and strong cross section (peak of approximately 160\,mb near 40\,MeV), and is immune from two different reactions on the same monitor foil leading to states in the same daughter nuclide.
+% This reaction could be useful for intermediate- to high-energy protons ($E_p \geq$30\,MeV), but would be susceptible to production via the high-energy secondary neutrons  (threshold 12.1\,MeV off of \ce{^{56}Fe}) produced in these facilities, though (p,x) production rates should dominate (n,x) through both particle flux and cross section. 
+% Additionally, the \ce{^{nat}Fe}(p,x)\ce{^{54}Mn} and \ce{^{nat}Fe}(p,x)\ce{^{56}Co} channels have a difference in apparent energetic thresholds of nearly 20\,MeV.
+% This provides some energy discrimination sensitivity in the same iron foil, particularly in the 20--50\,MeV region, which could be useful for determining incident proton energy near 40\,MeV, where fast neutrons are less significant than deeper in the stack.
+% 
+% 
+% 
+% 
+% 
+% % \textred{All: feel free to add additional details of 51/52Mn production here...}
+% 
+% 
+% Notably, this work is the most well-characterized measurement of the \ce{^{nat}Fe}(p,x)\ce{^{51,52}Mn} reactions below 70\,MeV to date, with cross sections measured  at the 6--10\% uncertainty level.
+% This is important, as it presents the first measurement of the \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} reaction,  the first measurement of the independent \ce{^{nat}Fe}(p,x)\ce{^{52m,52g}Mn} cross sections, and extends the \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} excitation function down to the lowest energy to date. 
+% \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} appears to offer a compelling alternative to the more established \ce{^{50}Cr}(d,x)\ce{^{51}Mn} pathway, which necessitates an enriched \ce{^{50}Cr} target to avoid radio-manganese contamination from reactions on stable isotopes of Cr\,\cite{Klein2000}.
+% % However, 
+% \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} could be used for 
+% % clean 
+% production of  \ce{^{51}Mn} ($\geq$98.8\% radioisotopic purity) below 20\,MeV using the \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} channel.
+% In addition, this low-energy production is accessible using the international network of small medical and research cyclotrons, enabling in-house production of this short-lived ($t_{1/2}=46.2~\pm~0.1$ m\,\cite{Wang2017}) radionuclide.
+% To increase yields over \ce{^{nat}Fe}(p,x), an enriched \ce{^{54}Fe} target could be used to take advantage of the eight-fold increase in reaction cross section for production using 40--50\,MeV protons, without opening the additional manganese exit channels accessible on a natural target.
+% 
+% 
+% 
+% Likewise, \ce{Fe}(p,x) offers an interesting production pathway for  \ce{^{52}Mn}.
+% Conventional production uses the low-energy \ce{^{nat}Cr}/\ce{^{52}Cr}(p,n)\ce{^{52}Mn} pathways, which offer high radioisotopic purity (approximately 99.6\%)\,\cite{Graves2015,Wooten2015}.
+% \ce{^{nat}Fe}(p,x) offers a nearly threefold increase in production yield, but the low radioisotopic purity (99.1\% for 20--30\,MeV, decreasing to 60.8\% by 40\,MeV) at higher energies due to the opening of \ce{^{54}Mn} makes this route seem impractical.
+% Much like \ce{^{51}Mn}, the use of an enriched \ce{^{54}Fe} target would prevent production of \ce{^{54}Mn}, providing a higher-yield production route over   \ce{^{nat}Cr}(p,x), with the tradeoff of necessitating higher-energy protons ($\leq$35\,MeV) for production.
+% It is important to note that the \ce{Fe}(p,x) route provides $\geq$60\% feeding of \ce{^{52g}Mn} ($t_{1/2}$ = 5.591$~\pm~$0.003\,d\,\cite{Dong2015}), implying that the short-lived  \ce{^{52m}Mn} ($t_{1/2}$ = 21.1$~\pm~$0.2\,m\,\cite{Dong2015}) can be easily separated through the difference in half-life, to avoid the unfavorable gammas produced by the isomer. 
+% However, if nearly pure \ce{^{52m}Mn} is desired for preclinical imaging applications, the feeding of \ce{^{52}Mn} through the $\epsilon$ decay of \ce{^{52}Fe} ($t_{1/2}$ = 8.725$~\pm~$0.008\,h\,\cite{Dong2015}) exclusively populates the isomer, making this potentially suitable for production through \enquote{milking} of a \ce{^{52}Fe} generator\,\cite{Blauenstein1997}.
+% Clearly, the use of \ce{Fe}(p,x)\ce{^{51,52}Mn} has significant untapped potential, and additional work is needed to further characterize these reaction channels for $E_p \leq$60\,MeV.
+% 
+% 
+% % step towards characterizing this reaction for use as a proton monitor reaction standard below 100\,MeV.
+% % The quantification of \ce{^{90}Mo} activity proved to be one of the most straightforward of all reaction products observed in this work.
+% % \ce{^{nat}Nb}(p,x)\ce{^{90}Mo} can only be populated through the (p,4n) reaction channel, so no corrections for (n,x) contamination channels or decay down the A=90 isobar are needed.
+% % , which makes activity quantification trivial.
+% % In addition, 
+% % \ce{^{90}Mo}  possesses seven strong, distinct gamma lines which can easily  be used for its identification and quantification.
+% % Finally, the production of \ce{^{90}Mo}  in the 40--90\,MeV region is quite strong, with a peak cross section of approximately 120 mb.
+% % Combining the reaction yield and gamma abundance, the use of approximately 23\,mg/cm$^2$ Nb targets easily provided sufficient counting statistics for activity quantification in the 40--90\,MeV region.
+% % This result presents the first step towards the use of \ce{^{90}Mo} as a clean and precise   charged particle monitor reaction standard in irradiations up to approximately 24\,h in duration.
+% 
+% 
+% 
+% % \textred{Placeholder text follows...Comment on production pathways of medical radionuclides...}
+% 
+% 
+% 
+% In addition to the \ce{^{nat}Fe}(p,x)\ce{^{51,52}Mn} measurements, this experiment has also yielded measurements of  a number of additional  emerging radionuclides with medical applications.
+% These include the non-standard positron emitters 
+% \ce{^{44}Sc}\,\cite{Muller2013,Filosofov2010,Qaim2011}
+% %\,\cite{Qaim2011,Qaim201731,Kolsky1998,mausner1995evaluation}.
+% \ce{^{55}Co}\,\cite{Thisgaard2011,Zaman1996,Hermanne2000a}
+% \ce{^{61}Ni}\,\cite{PMID:7632762,zweit1996medium,Graves2016,Rosch2014}, 
+% \ce{^{61}Cu}\,\cite{Szelecsenyi2005a,Fukumura2004}
+% \ce{^{64}Cu}\,\cite{Lewis2003,Bandari2014,mp500671j,Szelecsenyi1993,Aslam2009,Hilgers2003,Szelecsenyi2005,Voyles2017},
+% % \ce{^{86}Y}\,\cite{Valdovinos2017,Nickles2003,Qaim2008,QaimSyedM2011,Rosch1993,doi:10.1139/v67-193,levkovski1991cross,Johnson2015,Singh2013,Kiselev1974,Kandil2009}, 
+% % \ce{^{89}Zr}\,\cite{Verel2003,Dijkers2009,Dijkers2010,PhysRevC.38.1624,Omara2009},  
+% % \ce{^{90}Nb}\,\cite{Busse2002,Radchenko2012},  
+% % the $\beta^-$-therapy agent  \ce{^{64}Cu},  
+% and the $\beta^-$-therapeutic agent 
+% \ce{^{47}Sc}\,\cite{Muller2014,Deilami-nezhad2016}.
+% % and the Auger-therapy agent \ce{^{82\text{m}}Rb}\,\cite{Kovacs1991,Titarenko2011}. 
+% Production of these radionuclides offers no major advantages over established pathways, with the generally lower yields and radioisotopic purities failing to justify the convenience of natural targets  via   \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x). 
+% % The one possible exception to this trend is the non-standard positron emitter \ce{^{57}Ni} ($t_{1/2}=35.60\pm0.06$ h, $\epsilon$=100\% to \ce{^{57}Co}\,\cite{Bhat1998}) --- the \ce{^{57}Ni}/\ce{^{56}Ni} ratio of production rates is approximately 290 at 61.58\,MeV, and varies from 45--75 at the 70--90\,MeV positions.
+% % This \ce{^{nat}Cu}(p,x) route offers both higher yield and higher radioisotopic purity over the established  \ce{^{nat}Co}(p,3n) pathway, which suffers from approximately fivefold greater  \ce{^{56}Ni} contamination\,\cite{MICHEL1997153,Ditrói2013}.
+% The one potential exception to this is the production of \ce{^{58m}Co}, a potent agent for Auger electron-based targeted therapy\,\cite{Thisgaard2011a,Valdovinos2017b,Thisgaard2014a}.
+% While ingrowth of the long-lived \ce{^{58g}Co} ($t_{1/2}$ = 70.86(6) d\,\cite{Nesaraja2010}) is unavoidable, minimizing co-production of \ce{^{58g}Co} is necessary to minimize patient dose.
+% The \ce{^{nat}Fe}(p,x)\ce{^{58m}Co} pathway shows a clear \enquote{peak} in the \ce{^{58m}Co}/\ce{^{58g}Co} branching ratio for approximately 15--30\,MeV protons, which might have translational implications if Auger electron therapy becomes more clinically prevalent. 
+
+
+
+
+
+\subsection{Comparison of reaction modeling with experimental results}
+
+
+
+% \def\arraystretch{1.5}
+\begin{table}
+ \caption{Default settings for the reactions codes}
+ \label{tab:fe_defaults}
+ \resizebox{\textwidth}{!}{%
+\begin{tabular}{ c c c c}
+
+ \underline{Code Version} & \underline{Proton/Neutron Optical Model} & \underline{Alpha Optical Model}  & \underline{E1 $\gamma$SF Model}  \\ 
+ EMPIRE-3.2.3\cite{Herman2007}       & Koning-Delaroche\cite{Koning2003} & Avrigeanu(2009)\cite{Avrigeanu2009}       & Modified Lorentzian\cite{belgya2006handbook}  \\  
+ TALYS-1.8\cite{Koning2012}          & Koning-Delaroche & Specific folded potential\cite{Koning2012}      & Brink-Axel Lorentzian\cite{Koning2012}   \\
+  CoH-3.5.3\cite{kawano2003coh,KAWANO2010} & Koning-Delaroche     & Avrigeanu(1994)\cite{Avrigeanu1994} & Generalized Lorentzian\cite{kawano2003coh,KAWANO2010} \\
+  ALICE-2017\cite{Blann1996}     &   Nadasen\cite{Nadasen1981}    &  Parabolic Diffuse-Well\cite{Thomas1959}    &   Berman-Fultz Lorentzian\cite{Berman1975a}
+  
+\end{tabular}
+}
+\end{table}
+
+
+% Quick observations:
+% 
+% \begin{enumerate}
+%  \item Modeling on Fe is significantly better than for Cu/Ti
+%  \item On the whole, ALICE seems to do the best job overall
+%  \item (p,$\alpha$x) channels are done fairly well, (p,2p2nx) are worse, and (p,$\alpha$xn) are really lousy
+%  \item Location and shape of rising edges/compound peaks appears much better than in the Nb IPF paper, possibly due to easier modeling in lower energy regime?
+%  \item Amplitudes of excitation function are still off within factor of 2--3
+%  \item Isomer branching ratios are (surprise, surprise) really bad.  Ti(p,x)\ce{^{44}Sc} is the best, but all three miss the key shape and features
+% \end{enumerate}
+
+The measured cross sections were compared to the predictions by the reaction codes TALYS, EMPIRE, CoH, ALICE, and by the calculations in the TENDL database.
+The codes were all run on their default settings, in order to assess their predictive capabilities for the casual user.
+The default settings for the optical models and gamma strength function ($\gamma$SF) are listed in  \autoref{tab:fe_defaults}.
+The level density models for each are as follows.
+For both CoH and TALYS, the default level density model is the Gilbert-Cameron (GC) model \cite{Gilbert2011}, which uses the Constant Temperature model at lower excitation energies and the Fermi Gas model at higher energies.
+In EMPIRE, the default level density model is the Enhanced Generalized Superfluid Model (EGSM) \cite{Giardina2002}.
+This model uses the Generalized Superfluid Model (GSM) \cite{ignatyuk1979role,Ignatyuk1993} at lower energies and the Fermi Gas model as well at higher energies, and has been normalized to discrete levels.
+This normalization is performed in such a way that it only affects the level density below the neutron separation energy.
+Finally, the default level density model in ALICE is the Kataria-Rarnamurthy-Kapoor (KRK) model \cite{Kataria1978,Kataria1990}, a semi-empirical nuclear level density formula which provides shell-dependent corrections to the nuclear mass surface, based on a Fourier expansion of the single particle level density of nucleons.
+
+% 
+% 
+% \begin{figure}[h]
+%  \centering
+%  \includegraphics[width=0.5\textwidth]{./figures/51Mn.pdf}
+%  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+%  \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} cross section, with the \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} reaction channel visibly peaking at approximately \mbox{15 MeV}.}
+%  \label{fig:51Mn}
+% \end{figure}
+% 
+% 
+% 
+% 
+% 
+% \begin{figure}[h]
+%  \centering
+%  \includegraphics[width=0.5\textwidth]{./figures/52Mn.pdf}
+%  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+%  \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} cross section, with \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.}
+%  \label{fig:temp_52Mn}
+% \end{figure}
+% 
+% 
+% For this analysis, the focus will be on the three largest channels  measured -- \ce{^{nat}Fe}(p,x)\ce{^{51}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn}, and \ce{^{nat}Fe}(p,x)\ce{^{52}Mn}.
+% The use of natural abundance targets in these measurements exacerbates the modeling  challenges seen in our previous work using monoisotopic targets\,\cite{Voyles2018a}, by propagating the difficulties inherent to modeling a wide number of reaction channels, to multiple target isotopes.
+% As a result, this analysis is useful for a qualitative comparison of predictive capabilities, but no firm conclusions can be drawn about the direct causes of any inaccuracies, as there are many \enquote{moving parts} in these calculations.
+% % However, no firm conclusions can be drawn about the direct causes of the inaccuracies, as there are many \enquote{moving parts} in these calculations, with measurements performed using natural abundance targets.
+% For the \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} reactions, seen in \autoref{fig:51Mn}, the lower-energy  \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} reaction, which peaks around 15\,MeV, is  well-modeled by TALYS and TENDL, and over-predicted by EMPIRE, CoH and ALICE.
+% The higher-energy reactions on the higher mass Fe isotopes, however, are better matched by  EMPIRE and CoH.
+% ALICE overpredicts the production of \ce{^{51}Mn} in both peaks, and appears to peak at too high an energy.
+% As was seen in the modeling of high-energy proton-induced niobium reactions\,\cite{Voyles2018a}, TALYS and TENDL do well with the lower-energy \enquote{compound} reactions but do not accurately predict the higher-energy reactions that have a significant pre-equilibrium component.
+% EMPIRE and CoH seem to accurately predict the locations of the peaks, but often fail to reliably estimate the magnitude of the cross section.
+% This is seen again in the  \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} cross section, where the first peak is well-modeled by TALYS and TENDL, but  rises much more rapidly than the data would support above 50\,MeV.
+% CoH and EMPIRE, again, overpredict the cross sections at all energies, but seem to have the correct shape.
+% Through measurement of the  \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn} independent cross section, the effect of spin distributions in highly-excited nuclear states can be studied.
+% The measured data suggest that the independent cross section to the $2^+$ isomer should be a large fraction of the cumulative cross section to \ce{^{52}Mn} (which has a $6^+$ ground state), over 80\% at the peak energy.
+% All three codes predict about 50\%, which indicates that the isomer feeding is not well-modeled.
+% It is possible that this is caused by residual nucleus population and/or level density models that are skewed too heavily towards high spin.
+% In the other isomer-to-ground state ratio measured for Fe,  \ce{^{nat}Fe}(p,x)\ce{^{58}Co}, the opposite is seen -- the codes underpredict the ratio of the isomer-to-ground state, but in this case the isomer is the higher spin state ($5^+$, compared with a  $2^+$ ground state).
+% Given that the level density model was the same for all of the product nuclei, it points to the spin distribution of the initial population of the residual nucleus as the main problem with modeling.
+% % However, no firm conclusions can be drawn about the direct causes of the inaccuracies, as there are many \enquote{moving parts} in these calculations, with measurements performed using natural abundance targets.
+
+% 
+% 
+% 
+% 
+% 
+% \begin{figure}[h]
+%  \centering
+%  \includegraphics[width=0.5\textwidth]{./figures/52mMn.pdf}
+%  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+%  \caption{Measured \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn} cross section, with the \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52m}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52m}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.}
+%  \label{fig:temp_52mMn}
+% \end{figure}
+
+
+
+
+
+
+ 
+ \section{\label{sec:conclusions_U5_d}Conclusions}
+ 
+
+We present here a set of measurements of 34 cross sections for the \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x) reactions up to 55\,MeV, as well as  independent measurements of three isomer branching ratios.
+Nearly all cross sections have been reported with higher precision than previous measurements.
+We report the first measurements  for $\leq$70\,MeV protons  of the  \ce{^{nat}Fe}(p,x)\ce{^{49}Cr}, \ce{^{nat}Fe}(p,x)\ce{^{51}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn},  \ce{^{nat}Fe}(p,x)\ce{^{56}Mn}, and \ce{^{nat}Fe}(p,x)\ce{^{58m}Co} reactions, as well as the first measurement of the independent cross sections for    \ce{^{nat}Fe}(p,x)\ce{^{51}Cr}, \ce{^{nat}Fe}(p,x)\ce{^{52g}Mn}, \ce{^{nat}Fe}(p,x)\ce{^{58g}Co}, and the \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$) and \ce{^{58\text{m}}Co} ($5^+$) / \ce{^{58\text{g}}Co}  ($2^+$)  isomer branching ratios via \ce{^{nat}Fe}(p,x).
+% We advise that future activation experiments avoid the use of silicone-based adhesives, particularly in conjunction with aluminum monitor foils, to avoid reporting an enhanced fluence due to \ce{^{22,24}Na} contamination.
+We also use these measurements to illustrate the deficiencies in the current state of  reaction modeling up to 55\,MeV for  \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x) reactions.
+Finally, this work provides another example of the current issues with modeling of  stopping power in stacked target charged particle irradiation experiments, corrected using variance minimization techniques.  
+% usefulness of the recently-described variance minimization techniques for reducing energy uncertainties in stacked target charged particle irradiation experiments.
