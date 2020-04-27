@@ -5,7 +5,7 @@
 
 % 
 % 
-% \section{Stack design } \label{sec:U5_d_stack_design}
+\section{Stack design } \label{sec:U5_d_stack_design}
 
 % Plots of the isomer-to-ground state ratios measured in this work are presented here, in comparison with literature data and reaction modeling codes 
 % \cite{Michel1978,Kopecky1993,Zarie2006a,Khandaker2009}.
@@ -40,30 +40,30 @@
 % \end{table*}
 
 
-% 
-% 
-% % Combined table
-% % Please add the following required packages to your document preamble:
-% % \usepackage{booktabs}
-% \begin{table*}[h!]
-% \centering
-% \caption{Specifications of the 16\,MeV and 12\,MeV \enquote{packet} designs in the present work. The \enquote{overfilled} deuteron beam enters the stack upstream of the Ni-01 and Ni-02 foils, respectively, and travels through the stack in the order presented here. Note that due to the nonuniform thickness and highly brittle nature of the  U-01 and U-02 targets, the listed thicknesses are approximate values obtained through subtraction from the total thickness of the sealed packets. Uncertainties are listed in the least significant digit, that is, 24.6(12)\,mm  means 24.6 $\pm$ 1.2\,mm.}
-% \label{tab:fe_stack_table}
-% \small
-% \resizebox{\textwidth}{!}{%
-% \begin{tabular}{@{}lllll|lllll@{}}
-% \toprule\toprule
-% % Target Layer       & Nominal Thickness & Measured thickness (mg/cm\textasciicircum 2) & Thickness Uncertainty (\%) \\ \midrule
-% \begin{tabular}[c]{@{}l@{}}16\,MeV\\ Target layer\end{tabular}  &  \begin{tabular}[c]{@{}l@{}}Measured\\ diameter\\(mm)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Measured \\ thickness\\(mm)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\mass (g)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\areal density\\(mg/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}l@{}}12\,MeV\\ Target layer \end{tabular}                                        & \begin{tabular}[c]{@{}l@{}}Measured\\ diameter\\(mm)\end{tabular}   &\begin{tabular}[c]{@{}l@{}}Measured \\ thickness\\(mm)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\mass (g)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\areal density\\(mg/cm$^2$)\end{tabular} \\
-% \midrule
-% Ni-01 & 17.89(23) & 0.0273(5)     & 0.0570(8)   & 22.68(49)   & Ni-02 & 18.04(30) & 0.0267(6) & 0.0557(6) & 21.78(43)                                                                      \\
-% U-01 & 12.33(4) & \emph{0.105}     & 0.2490(2)   & 208.71(60)   & U-02 & 12.33(4) & \emph{0.084} & 0.2010(2) & 168.47(48)                                                                      \\
-% Ti-01 & 11.53(40) & 0.0275(6)     & 0.0113(6)   & 10.86(67)   & Ti-02 & 10.92(24) & 0.0273(6) & 0.0101(5) & 10.78(58)                                                                      \\
-% Al-01 & 11.85(30) & 0.0283(5)     & 0.0072(6)   & 6.53(55)   & Al-02 & 11.78(32) & 0.0285(6) & 0.0070(6) & 6.42(56)                                                                      \\
-%  \bottomrule\bottomrule
-% \end{tabular}
-% }
-% \end{table*}
+
+
+% Combined table
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table*}[h!]
+\centering
+\caption{Specifications of the 16\,MeV and 12\,MeV \enquote{packet} designs in the present work. The \enquote{overfilled} deuteron beam enters the stack upstream of the Ni-01 and Ni-02 foils, respectively, and travels through the stack in the order presented here. Note that due to the nonuniform thickness and highly brittle nature of the  U-01 and U-02 targets, the listed thicknesses are approximate values obtained through subtraction from the total thickness of the sealed packets. Uncertainties are listed in the least significant digit, that is, 24.6(12)\,mm  means 24.6 $\pm$ 1.2\,mm.}
+\label{tab:fe_stack_table}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllll|lllll@{}}
+\toprule\toprule
+% Target Layer       & Nominal Thickness & Measured thickness (mg/cm\textasciicircum 2) & Thickness Uncertainty (\%) \\ \midrule
+\begin{tabular}[c]{@{}l@{}}16\,MeV\\ Target layer\end{tabular}  &  \begin{tabular}[c]{@{}l@{}}Measured\\ diameter\\(mm)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Measured \\ thickness\\(mm)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\mass (g)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\areal density\\(mg/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}l@{}}12\,MeV\\ Target layer \end{tabular}                                        & \begin{tabular}[c]{@{}l@{}}Measured\\ diameter\\(mm)\end{tabular}   &\begin{tabular}[c]{@{}l@{}}Measured \\ thickness\\(mm)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\mass (g)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\areal density\\(mg/cm$^2$)\end{tabular} \\
+\midrule
+Ni-01 & 17.89(23) & 0.0273(5)     & 0.0570(8)   & 22.68(49)   & Ni-02 & 18.04(30) & 0.0267(6) & 0.0557(6) & 21.78(43)                                                                      \\
+U-01 & 12.33(4) & \emph{0.105}     & 0.2490(2)   & 208.71(60)   & U-02 & 12.33(4) & \emph{0.084} & 0.2010(2) & 168.47(48)                                                                      \\
+Ti-01 & 11.53(40) & 0.0275(6)     & 0.0113(6)   & 10.86(67)   & Ti-02 & 10.92(24) & 0.0273(6) & 0.0101(5) & 10.78(58)                                                                      \\
+Al-01 & 11.85(30) & 0.0283(5)     & 0.0072(6)   & 6.53(55)   & Al-02 & 11.78(32) & 0.0285(6) & 0.0070(6) & 6.42(56)                                                                      \\
+ \bottomrule\bottomrule
+\end{tabular}
+}
+\end{table*}
 
 
 % 

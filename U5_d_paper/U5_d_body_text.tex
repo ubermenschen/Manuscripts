@@ -3,6 +3,20 @@
 
 
 
+
+Neptunium-236 is a unique actinide isotope with  use in metrology and analytical chemistry applications. 
+It constitutes a reference standard for isotope dilution mass spectrometry with the function of improving accuracy and precision for the detection of common neptunium isotopes associated with nuclear energy applications.
+Isotope dilution is the method of adding a uniquely uncommon isotope of the element whose concentration is to be determined in known amounts to the unknown specimen. 
+Quantification of the relative abundance of the added diluent isotope versus the unknown isotope enables the amount of analyte in the sample to be accurately determined. 
+Isotope dilution mass spectrometry (IDMS) methods including thermal ionization mass spectrometry (TIMS) and multi-collector inductively-coupled plasma mass spectrometry (MC-ICP-MS) are currently the most sensitive methods for measuring actinides in environmental samples. 
+For quantitative results, an isotope dilution tracer is added to each sample and the ratio of the analyte to the tracer is used to calculate the amount of analyte in a given sample. 
+An ideal IDMS tracer is an isotope that is not found in the sample and is stable or has a long half-life.
+
+
+
+
+In addition, \ce{^{236}Np} is an interesting odd-odd nucleus
+
 Clinical practice of nuclear medicine is rapidly growing with the inclusion of a broader array of radiopharmaceuticals. 
 Future growth is anticipated, given the pre-clinical success of many  new and emerging radionuclides. 
 Although the physical and chemical properties of these novel radionuclides tend to be
@@ -182,7 +196,32 @@ The specifications of both target stacks
 % designs for this work are presented 
 are in \autoref{tab:fe_stack_table} of 
 % Appendix 
-\ref{sec:fe_stack_design}.
+% \ref{sec:fe_stack_design}.
+
+
+
+% Combined table
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table*}[h!]
+\centering
+\caption{Specifications of the 16\,MeV and 12\,MeV \enquote{packet} designs in the present work. The \enquote{overfilled} deuteron beam enters the stack upstream of the Ni-01 and Ni-02 foils, respectively, and travels through the stack in the order presented here. Note that due to the nonuniform thickness and highly brittle nature of the  U-01 and U-02 targets, the listed thicknesses are approximate values obtained through subtraction from the total thickness of the sealed packets. Uncertainties are listed in the least significant digit, that is, 24.6(12)\,mm  means 24.6 $\pm$ 1.2\,mm.}
+\label{tab:fe_stack_table}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllll|lllll@{}}
+\toprule\toprule
+% Target Layer       & Nominal Thickness & Measured thickness (mg/cm\textasciicircum 2) & Thickness Uncertainty (\%) \\ \midrule
+\begin{tabular}[c]{@{}l@{}}16\,MeV\\ Target layer\end{tabular}  &  \begin{tabular}[c]{@{}l@{}}Measured\\ diameter\\(mm)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Measured \\ thickness\\(mm)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\mass (g)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\areal density\\(mg/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}l@{}}12\,MeV\\ Target layer \end{tabular}                                        & \begin{tabular}[c]{@{}l@{}}Measured\\ diameter\\(mm)\end{tabular}   &\begin{tabular}[c]{@{}l@{}}Measured \\ thickness\\(mm)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\mass (g)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\areal density\\(mg/cm$^2$)\end{tabular} \\
+\midrule
+Ni-01 & 17.89(23) & 0.0273(5)     & 0.0570(8)   & 22.68(49)   & Ni-02 & 18.04(30) & 0.0267(6) & 0.0557(6) & 21.78(43)                                                                      \\
+U-01 & 12.33(4) & \emph{0.105}     & 0.2490(2)   & 208.71(60)   & U-02 & 12.33(4) & \emph{0.084} & 0.2010(2) & 168.47(48)                                                                      \\
+Ti-01 & 11.53(40) & 0.0275(6)     & 0.0113(6)   & 10.86(67)   & Ti-02 & 10.92(24) & 0.0273(6) & 0.0101(5) & 10.78(58)                                                                      \\
+Al-01 & 11.85(30) & 0.0283(5)     & 0.0072(6)   & 6.53(55)   & Al-02 & 11.78(32) & 0.0285(6) & 0.0070(6) & 6.42(56)                                                                      \\
+ \bottomrule\bottomrule
+\end{tabular}
+}
+\end{table*}
 
 % 
 % 
@@ -194,147 +233,6 @@ are in \autoref{tab:fe_stack_table} of
 % %  , before it was mounted in the beamline. 
 %  The proton beam enters through the circular entrance in the foreground, and the upstream stainless steel profile monitor (SS-5) is visible at the front of the stack.}
 % \end{figure}
-% 
-% % Separate tables
-% % 
-% % % Please add the following required packages to your document preamble:
-% % % \usepackage{booktabs}
-% % \begin{table}
-% % \centering
-% % \caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \mmicro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and the earlier paper by Graves \etal\\,\cite{Graves2016}. At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor --- after end-of-bombardment (EoB), decay radiation emitted from these activated stainless steel foils were used to develop radiochromic film (Gafchromic EBT3), revealing the spatial profile of the beam entering and exiting the stack.}
-% % \label{tab:fe_stack_table}
-% % \small
-% % \begin{tabular}{@{}llll@{}}
-% % \toprule
-% % % Target Layer       & Nominal Thickness & Measured thickness (mg/cm\textasciicircum 2) & Thickness Uncertainty (\%) \\ \midrule
-% % Target layer       & \begin{tabular}[c]{@{}l@{}}Measured \\ thickness\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured areal\\density (mg/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Areal density \\ uncertainty (\%)\end{tabular} \\ \midrule
-% % SS profile monitor SS-5 & 130.94 \mmicro m                                              & 100.57                                                                      & 0.17                                                                      \\
-% % Fe-08                   & 26.25 \mmicro m                                               & 19.69                                                                       & 0.17                                                                      \\
-% % Ti-14                   & 25.01 \mmicro m                                               & 10.87                                                                       & 0.36                                                                      \\
-% % Cu-14                   & 24.01 \mmicro m                                               & 17.49                                                                       & 0.40                                                                      \\
-% % Al Degrader E-09        & 256.5 \mmicro m                                               & --                                                                          & --                                                                        \\
-% % Fe-09                   & 26.5 \mmicro m                                                & 19.90                                                                       & 0.09                                                                      \\
-% % Ti-15                   & 23.81 \mmicro m                                               & 10.97                                                                       & 0.11                                                                      \\
-% % Cu-15                   & 21.81 \mmicro m                                               & 17.63                                                                       & 0.46                                                                      \\
-% % Al Degrader H-01        & 127.49 \mmicro m                                              & --                                                                          & --                                                                        \\
-% % Fe-10                   & 26.5 \mmicro m                                                & 19.84                                                                       & 0.11                                                                      \\
-% % Ti-16                   & 24.6 \mmicro m                                                & 10.96                                                                       & 0.32                                                                      \\
-% % Cu-16                   & 22.01 \mmicro m                                               & 17.22                                                                       & 0.25                                                                      \\
-% % Fe-11                   & 27.26 \mmicro m                                               & 19.96                                                                       & 0.17                                                                      \\
-% % Ti-17                   & 25.01 \mmicro m                                               & 10.88                                                                       & 0.25                                                                      \\
-% % Cu-17                   & 29 \mmicro m                                                  & 21.91                                                                       & 0.33                                                                      \\
-% % Fe-12                   & 27.01 \mmicro m                                               & 20.03                                                                       & 0.12                                                                      \\
-% % Ti-18                   & 25.01 \mmicro m                                               & 11.00                                                                       & 0.87                                                                      \\
-% % Cu-18                   & 28.75 \mmicro m                                               & 22.33                                                                       & 0.14                                                                      \\
-% % Fe-013                  & 26.25 \mmicro m                                               & 20.05                                                                       & 0.16                                                                      \\
-% % Ti-19                   & 26.6 \mmicro m                                                & 11.01                                                                       & 0.22                                                                      \\
-% % Cu-19                   & 28.75 \mmicro m                                               & 22.32                                                                       & 0.19                                                                      \\
-% % Fe-14                   & 25.75 \mmicro m                                               & 20.11                                                                       & 0.19                                                                      \\
-% % Ti-20                   & 27.01 \mmicro m                                               & 11.06                                                                       & 0.35                                                                      \\
-% % Cu-20                   & 28.26 \mmicro m                                               & 22.34                                                                       & 0.28                                                                      \\
-% % SS profile monitor SS-6 & 131.5 \mmicro m                                               & 100.99                                                                      & 0.17                                                                      \\
-% %  \bottomrule
-% % \end{tabular}
-% % \end{table}
-% % 
-% % 
-% % 
-% % 
-% % % Please add the following required packages to your document preamble:
-% % % \usepackage{booktabs}
-% % \begin{table}
-% % \centering
-% % \caption{Specifications of the  target stack design in the present work. The proton beam enters the stack upstream of the 249.8 \mmicro m SS profile monitor, and is transported through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.80 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and the earlier paper by Graves \etal\\,\cite{Graves2016}. At both the front and rear of the target stack's foils, a 316 stainless steel foil is inserted to serve as a beam profile monitor --- after end-of-bombardment (EoB), decay radiation emitted from these activated stainless steel foils were used to develop radiochromic film (Gafchromic EBT3), revealing the spatial profile of the beam entering and exiting the stack.}
-% % \label{tab:fe_stack_table2}
-% % \small
-% % \begin{tabular}{@{}llll@{}}
-% % \toprule
-% % % Target Layer       & Nominal Thickness & Measured thickness (mg/cm\textasciicircum 2) & Thickness Uncertainty (\%) \\ \midrule
-% % Target layer       & \begin{tabular}[c]{@{}l@{}}Measured \\ thickness\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured areal\\density (mg/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Areal density \\ uncertainty (\%)\end{tabular} \\ \midrule
-% % SS profile monitor SS-3 & 130.9 \mmicro m                                               & 100.48                                                                      & 0.17                                                                      \\
-% % Fe-01                   & 25.75 \mmicro m                                               & 20.22                                                                       & 0.21                                                                      \\
-% % Ti-01                   & 25.88 \mmicro m                                               & 11.09                                                                       & 0.16                                                                      \\
-% % Cu-01                   & 28.81 \mmicro m                                               & 22.40                                                                       & 0.11                                                                      \\
-% % Al Degrader A-1         & 2.24 mm                                                       & --                                                                          & --                                                                        \\
-% % Fe-02                   & 25.5 \mmicro m                                                & 19.91                                                                       & 0.13                                                                      \\
-% % Ti-02                   & 25.74 \mmicro m                                               & 10.94                                                                       & 0.24                                                                      \\
-% % Cu-02                   & 28.75 \mmicro m                                               & 22.32                                                                       & 0.40                                                                      \\
-% % Al Degrader A-2         & 2.24 mm                                                       & --                                                                          & --                                                                        \\
-% % Fe-03                   & 25.25 \mmicro m                                               & 20.00                                                                       & 0.27                                                                      \\
-% % Ti-03                   & 25.91 \mmicro m                                               & 11.25                                                                       & 0.15                                                                      \\
-% % Cu-03                   & 28.86 \mmicro m                                               & 22.49                                                                       & 0.20                                                                      \\
-% % Al Degrader C-1         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
-% % Fe-04                   & 25.25 \mmicro m                                               & 19.93                                                                       & 0.33                                                                      \\
-% % Ti-04                   & 25.84 \mmicro m                                               & 10.91                                                                       & 0.18                                                                      \\
-% % Cu-04                   & 28.78 \mmicro m                                               & 22.38                                                                       & 0.29                                                                      \\
-% % Al Degrader C-2         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
-% % Fe-05                   & 25.64 \mmicro m                                               & 20.02                                                                       & 0.24                                                                      \\
-% % Ti-05                   & 25.86 \mmicro m                                               & 10.99                                                                       & 0.30                                                                      \\
-% % Cu-05                   & 28.77 \mmicro m                                               & 22.35                                                                       & 0.12                                                                      \\
-% % Al Degrader C-3         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
-% % Fe-06                   & 25.75 \mmicro m                                               & 20.21                                                                       & 0.26                                                                      \\
-% % Ti-06                   & 25.5 \mmicro m                                                & 11.15                                                                       & 0.23                                                                      \\
-% % Cu-06                   & 28.83 \mmicro m                                               & 22.43                                                                       & 0.10                                                                      \\
-% % Al Degrader C-4         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
-% % Fe-07                   & 25.76 \mmicro m                                               & 19.93                                                                       & 0.19                                                                      \\
-% % Ti-07                   & 25.75 \mmicro m                                               & 11.17                                                                       & 0.33                                                                      \\
-% % Cu-07                   & 28.76 \mmicro m                                               & 22.34                                                                       & 0.24                                                                      \\
-% % Al Degrader H-02        & 127.04 \mmicro m                                              & 34.51                                                                       & 0.20                                                                      \\
-% % SS profile monitor SS-4 & 131.21 \mmicro m                                              & 101.25                                                                      & 0.16                                                                     \\
-% %  \bottomrule
-% % \end{tabular}
-% % \end{table}
-% 
-% % % Combined table
-% % % Please add the following required packages to your document preamble:
-% % % \usepackage{booktabs}
-% % \begin{table*}
-% % \centering
-% % \caption{Specifications of the 25\,MeV and 55\,MeV target stack designs in the present work. The proton beam enters the stack upstream of the SS-5 and SS-3 profile monitors, respectively, and travels through the stack in the order presented here. The 6061 aluminum degraders have a measured density of approximately 2.68 $\pm$ 0.03 g/cm$^3$. Their areal densities were determined using the variance minimization techniques described  in this work  and an earlier paper\,\cite{Voyles2018a}. 
-% % % the earlier paper by Graves \etal\\,\cite{Graves2016}.
-% % A 316 stainless steel foil is inserted at both the front and rear of each target stack as a monitor of the beam's spatial profile, by developing radiochromic film (Gafchromic EBT3) after end-of-bombardment (EoB).}
-% % \label{tab:fe_stack_table}
-% % \small
-% % \resizebox{\textwidth}{!}{%
-% % \begin{tabular}{@{}llll|llll@{}}
-% % \toprule
-% % % Target Layer       & Nominal Thickness & Measured thickness (mg/cm\textasciicircum 2) & Thickness Uncertainty (\%) \\ \midrule
-% % 25\,MeV Target layer            & \begin{tabular}[c]{@{}l@{}}Measured \\ thickness\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\areal density\\(mg/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Uncertainty \\ in areal\\ density  (\%)\end{tabular} & 55\,MeV Target layer            & \begin{tabular}[c]{@{}l@{}}Measured \\ thickness\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\areal density\\(mg/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Uncertainty \\ in areal\\ density  (\%)\end{tabular} \\
-% % \midrule
-% % SS profile monitor SS-5 & 130.94 \mmicro m                                              & 100.57                                                                      & 0.17                                                                      & SS profile monitor SS-3 & 130.9 \mmicro m                                               & 100.48                                                                      & 0.17                                                                      \\
-% % Fe-08                   & 26.25 \mmicro m                                               & 19.69                                                                       & 0.17                                                                      & Fe-01                   & 25.75 \mmicro m                                               & 20.22                                                                       & 0.21                                                                      \\
-% % Ti-14                   & 25.01 \mmicro m                                               & 10.87                                                                       & 0.36                                                                      & Ti-01                   & 25.88 \mmicro m                                               & 11.09                                                                       & 0.16                                                                      \\
-% % Cu-14                   & 24.01 \mmicro m                                               & 17.49                                                                       & 0.40                                                                      & Cu-01                   & 28.81 \mmicro m                                               & 22.40                                                                       & 0.11                                                                      \\
-% % Al Degrader E-09        & 256.5 \mmicro m                                               & --                                                                          & --                                                                        & Al Degrader A-1         & 2.24 mm                                                       & --                                                                          & --                                                                        \\
-% % Fe-09                   & 26.5 \mmicro m                                                & 19.90                                                                       & 0.09                                                                      & Fe-02                   & 25.5 \mmicro m                                                & 19.91                                                                       & 0.13                                                                      \\
-% % Ti-15                   & 23.81 \mmicro m                                               & 10.97                                                                       & 0.11                                                                      & Ti-02                   & 25.74 \mmicro m                                               & 10.94                                                                       & 0.24                                                                      \\
-% % Cu-15                   & 21.81 \mmicro m                                               & 17.63                                                                       & 0.46                                                                      & Cu-02                   & 28.75 \mmicro m                                               & 22.32                                                                       & 0.40                                                                      \\
-% % Al Degrader H-01        & 127.09 \mmicro m                                              & --                                                                          & --                                                                        & Al Degrader A-2         & 2.24 mm                                                       & --                                                                          & --                                                                        \\
-% % Fe-10                   & 26.5 \mmicro m                                                & 19.84                                                                       & 0.11                                                                      & Fe-03                   & 25.25 \mmicro m                                               & 20.00                                                                       & 0.27                                                                      \\
-% % Ti-16                   & 24.6 \mmicro m                                                & 10.96                                                                       & 0.32                                                                      & Ti-03                   & 25.91 \mmicro m                                               & 11.25                                                                       & 0.15                                                                      \\
-% % Cu-16                   & 22.01 \mmicro m                                               & 17.22                                                                       & 0.25                                                                      & Cu-03                   & 28.86 \mmicro m                                               & 22.49                                                                       & 0.20                                                                      \\
-% % Fe-11                   & 27.26 \mmicro m                                               & 19.96                                                                       & 0.17                                                                      & Al Degrader C-1         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
-% % Ti-17                   & 25.01 \mmicro m                                               & 10.88                                                                       & 0.25                                                                      & Fe-04                   & 25.25 \mmicro m                                               & 19.93                                                                       & 0.33                                                                      \\
-% % Cu-17                   & 29 \mmicro m                                                  & 21.91                                                                       & 0.33                                                                      & Ti-04                   & 25.84 \mmicro m                                               & 10.91                                                                       & 0.18                                                                      \\
-% % Fe-12                   & 27.01 \mmicro m                                               & 20.03                                                                       & 0.12                                                                      & Cu-04                   & 28.78 \mmicro m                                               & 22.38                                                                       & 0.29                                                                      \\
-% % Ti-18                   & 25.01 \mmicro m                                               & 11.00                                                                       & 0.87                                                                      & Al Degrader C-2         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
-% % Cu-18                   & 28.75 \mmicro m                                               & 22.33                                                                       & 0.14                                                                      & Fe-05                   & 25.64 \mmicro m                                               & 20.02                                                                       & 0.24                                                                      \\
-% % Fe-13                  & 26.25 \mmicro m                                               & 20.05                                                                       & 0.16                                                                      & Ti-05                   & 25.86 \mmicro m                                               & 10.99                                                                       & 0.30                                                                      \\
-% % Ti-19                   & 26.6 \mmicro m                                                & 11.01                                                                       & 0.22                                                                      & Cu-05                   & 28.77 \mmicro m                                               & 22.35                                                                       & 0.12                                                                      \\
-% % Cu-19                   & 28.75 \mmicro m                                               & 22.32                                                                       & 0.19                                                                      & Al Degrader C-3         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
-% % Fe-14                   & 25.75 \mmicro m                                               & 20.11                                                                       & 0.19                                                                      & Fe-06                   & 25.75 \mmicro m                                               & 20.21                                                                       & 0.26                                                                      \\
-% % Ti-20                   & 27.01 \mmicro m                                               & 11.06                                                                       & 0.35                                                                      & Ti-06                   & 25.5 \mmicro m                                                & 11.15                                                                       & 0.23                                                                      \\
-% % Cu-20                   & 28.26 \mmicro m                                               & 22.34                                                                       & 0.28                                                                      & Cu-06                   & 28.83 \mmicro m                                               & 22.43                                                                       & 0.10                                                                      \\
-% % SS profile monitor SS-6 & 131.5 \mmicro m                                               & 100.99                                                                      & 0.17                                                                      & Al Degrader C-4         & 0.97 mm                                                       & --                                                                          & --                                                                        \\
-% %                         &                                                               &                                                                             &                                                                           & Fe-07                   & 25.76 \mmicro m                                               & 19.93                                                                       & 0.19                                                                      \\
-% %                         &                                                               &                                                                             &                                                                           & Ti-07                   & 25.75 \mmicro m                                               & 11.17                                                                       & 0.33                                                                      \\
-% %                         &                                                               &                                                                             &                                                                           & Cu-07                   & 28.76 \mmicro m                                               & 22.34                                                                       & 0.24                                                                      \\
-% %                         &                                                               &                                                                             &                                                                           & Al Degrader H-02        & 127.04 \mmicro m                                              & --\cmmnt{34.51}                                                                       & --\cmmnt{0.20}                                                                      \\
-% %                         &                                                               &                                                                             &                                                                           & SS profile monitor SS-4 & 131.21 \mmicro m                                              & 101.25                                                                      & 0.16                                                                     \\
-% %  \bottomrule
-% % \end{tabular}
-% % }
-% % \end{table*}
 % 
 % 
 % Both target stacks were 
@@ -913,22 +811,22 @@ This loss of fluence is due to a combination of
 
 
 
-% \def\arraystretch{1.5}
-\begin{table}
- \caption{Default settings for the reactions codes}
- \label{tab:fe_defaults}
- \resizebox{\textwidth}{!}{%
-\begin{tabular}{ c c c c}
-
- \underline{Code Version} & \underline{Proton/Neutron Optical Model} & \underline{Alpha Optical Model}  & \underline{E1 $\gamma$SF Model}  \\ 
- EMPIRE-3.2.3\cite{Herman2007}       & Koning-Delaroche\cite{Koning2003} & Avrigeanu(2009)\cite{Avrigeanu2009}       & Modified Lorentzian\cite{belgya2006handbook}  \\  
- TALYS-1.8\cite{Koning2012}          & Koning-Delaroche & Specific folded potential\cite{Koning2012}      & Brink-Axel Lorentzian\cite{Koning2012}   \\
-  CoH-3.5.3\cite{kawano2003coh,KAWANO2010} & Koning-Delaroche     & Avrigeanu(1994)\cite{Avrigeanu1994} & Generalized Lorentzian\cite{kawano2003coh,KAWANO2010} \\
-  ALICE-2017\cite{Blann1996}     &   Nadasen\cite{Nadasen1981}    &  Parabolic Diffuse-Well\cite{Thomas1959}    &   Berman-Fultz Lorentzian\cite{Berman1975a}
-  
-\end{tabular}
-}
-\end{table}
+% % \def\arraystretch{1.5}
+% \begin{table}
+%  \caption{Default settings for the reactions codes}
+%  \label{tab:fe_defaults}
+%  \resizebox{\textwidth}{!}{%
+% \begin{tabular}{ c c c c}
+% 
+%  \underline{Code Version} & \underline{Proton/Neutron Optical Model} & \underline{Alpha Optical Model}  & \underline{E1 $\gamma$SF Model}  \\ 
+%  EMPIRE-3.2.3\cite{Herman2007}       & Koning-Delaroche\cite{Koning2003} & Avrigeanu(2009)\cite{Avrigeanu2009}       & Modified Lorentzian\cite{belgya2006handbook}  \\  
+%  TALYS-1.8\cite{Koning2012}          & Koning-Delaroche & Specific folded potential\cite{Koning2012}      & Brink-Axel Lorentzian\cite{Koning2012}   \\
+%   CoH-3.5.3\cite{kawano2003coh,KAWANO2010} & Koning-Delaroche     & Avrigeanu(1994)\cite{Avrigeanu1994} & Generalized Lorentzian\cite{kawano2003coh,KAWANO2010} \\
+%   ALICE-2017\cite{Blann1996}     &   Nadasen\cite{Nadasen1981}    &  Parabolic Diffuse-Well\cite{Thomas1959}    &   Berman-Fultz Lorentzian\cite{Berman1975a}
+%   
+% \end{tabular}
+% }
+% \end{table}
 
 
 % Quick observations:
