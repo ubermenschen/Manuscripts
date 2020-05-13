@@ -1,139 +1,46 @@
-% % ****** Start of file apssamp.tex ******
-% %
-% %   This file is part of the APS files in the REVTeX 4.1 distribution.
-% %   Version 4.1r of REVTeX, August 2010
-% %
-% %   Copyright (c) 2009, 2010 The American Physical Society.
-% %
-% %   See the REVTeX 4 README file for restrictions and more information.
-% %
-% % TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
-% % as well as the rest of the prerequisites for REVTeX 4.1
-% %
-% % See the REVTeX 4 README file
-% % It also requires running BibTeX. The commands are as follows:
-% %
-% %  1)  latex apssamp.tex
-% %  2)  bibtex apssamp
-% %  3)  latex apssamp.tex
-% %  4)  latex apssamp.tex
-% %
-% % This file may be formatted in either the \texttt{preprint} or
-% % \texttt{reprint} style. \texttt{reprint} format mimics final journal output. 
-% % Either format may be used for submission purposes. \texttt{letter} sized paper should
-% % be used when submitting to APS journals.
-% \documentclass[%
-%  reprint,
-% superscriptaddress,
-% onecolumn,
-% % linenumbers,
-% notitlepage,
-% %groupedaddress,
-% %unsortedaddress,
-% %runinaddress,
-% %frontmatterverbose, 
-% %preprint,
-% %showpacs,preprintnumbers,
-% %nofootinbib,
-% %nobibnotes,
-% %bibnotes,
-%  amsmath,amssymb,
-%  aps,
-% prc,
-% %prb,
-% %rmp,
-% %prstab,
-% %prstper,
-% %floatfix,
-% ]{revtex4-1}
-%%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% This is a  template file for the LaTeX package SVJour3 width change file svepjc3.clo
-% for Springer journal:
-% The European Physical Journal A
-%
-% Copy it to a new file with a new name and use it as the basis
-% for your article. Delete % signs as needed.
-%
-% This template includes a few options for different layouts and
-% content for various journals. Please consult a previous issue of
-% your journal as needed.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% First comes an example EPS file -- just ignore it and
-% proceed on the \documentclass line
-% your LaTeX will extract the file if required
-% \begin{filecontents*}{example.eps}
-% %!PS-Adobe-3.0 EPSF-3.0
-% %%BoundingBox: 19 19 221 221
-% %%CreationDate: Mon Sep 29 1997
-% %%Creator: programmed by hand (JK)
-% %%EndComments
-% gsave
-% newpath
-%   20 20 moveto
-%   20 220 lineto
-%   220 220 lineto
-%   220 20 lineto
-% closepath
-% 2 setlinewidth
-% gsave
-%   .4 setgray fill
-% grestore
-% stroke
-% grestore
-% \end{filecontents*}
-% %
-%
+\RequirePackage{amsmath}
+% \RequirePackage[hidelinks]{hyperref}
 \documentclass[onecolumn,epjc3]{svjour3}  
 % \documentclass[twocolumn,natbib,epjc3]{svjour3}  
-%
-\smartqed  % flush right qed marks, e.g. at end of proof
+% \usepackage{amsmath}
 
-\usepackage{fix-cm}
+\makeatletter \let\cl@chapter\relax \makeatother
+
+
+% \directlua{dofile("DetectUnderfull.lua")}
+
+% \tracingpages1
+% \tracingoutput1
+\overfullrule=5pt
+\smartqed  % flush right qed marks, e.g. at end of proof
+\journalname{Eur. Phys. J. A}
+\textwidth=6.5in
+
+% \usepackage{fix-cm}
 \usepackage{graphicx}
 %
 % \RequirePackage{mathptmx}      % use Times fonts if available on your TeX system
 %
 % insert here the call for the packages your document requires
 %\RequirePackage{latexsym}
-\RequirePackage[numbers,sort&compress]{natbib}
-% \RequirePackage[numbers]{natbib}
-%\RequirePackage[colorlinks,citecolor=blue,urlcolor=blue,linkcolor=blue]{hyperref}
-% etc.
-%
-% please place your own definitions here and don't use \def but
-% \newcommand{}{}
-%
-\journalname{Eur. Phys. J. A}
+\usepackage[numbers,sort&compress]{natbib}
 
-\textwidth=6.5in
 
-\usepackage{graphicx}% Include figure files
-\usepackage{dcolumn}% Align table columns on decimal point
-\usepackage{bm}% bold math
-%\usepackage{hyperref}% add hypertext capabilities
-%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
-%\linenumbers\relax % Commence numbering lines
 
-%\usepackage[showframe,%Uncomment any one of the following lines to test 
-%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
-%%text={7in,10in},centering,
-%%margin=1.5in,
-%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
-%%height=10in,a5paper,hmargin={3cm,0.8in},
-%]{geometry}
+% \usepackage[showframe,%Uncomment any one of the following lines to test 
+% %scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+% %text={7in,10in},centering,
+% %margin=1.5in,
+% %total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+% %height=10in,a5paper,hmargin={3cm,0.8in},
+% ]{geometry}
 
+% \usepackage{microtype}
+\usepackage{lmodern}
 \usepackage{nicefrac}
-
+\usepackage{makecell}
 \usepackage{silence}
-\WarningFilter*{memoir}{You are using the caption package with the memoir class}
-
-
-
 \usepackage[american]{babel}
-\usepackage{amsmath}
 \usepackage[version=3]{mhchem} 
 % % \usepackage{fixltx2e}
 % % \usepackage{refcount}
@@ -141,13 +48,9 @@
 % % \usepackage{lastpage}
 % % \usepackage{textcomp}
 % \usepackage{mathtools}
-
 % \usepackage{xfrac}
-\usepackage{lmodern}
-\usepackage[hidelinks]{hyperref}
 % % \usepackage{cool}
 % % \usepackage{cancel}
-\usepackage{microtype}
 % \usepackage{listings}
 % % \usepackage{mcode}
 \usepackage [autostyle, english = american]{csquotes}
@@ -155,7 +58,13 @@
 % % \usepackage{subcaption}
 \usepackage{booktabs}
 % \usepackage{gensymb}
-% \usepackage[normalem]{ulem}
+% \usepackage[normalem]{ulem} 
+
+% Fixes \underfull hbox and vbox warnings in bibliography
+\usepackage{etoolbox}
+\apptocmd{\sloppy}{\hbadness 10000\relax}{}{}
+\apptocmd{\sloppy}{\vbadness 10000\relax}{}{}
+% \apptocmd{\thebibliography}{\raggedright}{}{}
 
 
 % 
@@ -189,9 +98,10 @@
 \newcommand{\mmicro}{\si\micro} 
 
 
-\usepackage{subfig}
+% \usepackage{subfig}
+\usepackage[caption=false]{subfig}
 % Remove a), b), etc labels from subfigs
-\captionsetup[subfigure]{labelformat=empty}
+% \captionsetup[subfigure]{labelformat=empty}
 
 \newcommand{\subfigimg}[4][,]{%
   \setbox1=\hbox{\noindent\includegraphics[#1]{#3}}% Store image in box
@@ -202,7 +112,13 @@
 
 
 \pdfminorversion=7
-\usepackage{makecell}
+\WarningFilter*{memoir}{You are using the caption package with the memoir class}
+\WarningFilter*{hyperref}{name}
+\WarningFilter*{pdfTeX}{destination with the same identifier (name{subfigure}}
+% \usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
+% \newsubfloat{figure}
+% \newsubfloat{figure*}
 
 
 \begin{document}
@@ -342,21 +258,29 @@
 
 %\titlerunning{Short form of title}        % if too long for running head
 
-\author{Andrew S. Voyles\thanksref{e1,addr1}
+\author{Andrew S. Voyles\thanksref{e1}$^{,1}$
+% ,addr1}
         \and
-        Amanda M. Lewis\thanksref{addr1} %etc.
+        Amanda M. Lewis$^{1}$
+%         \thanksref{addr1} %etc.
         \and
-        Jonathan T. Morrell\thanksref{addr1} %etc.
+        Jonathan T. Morrell$^{1}$
+%         \thanksref{addr1} %etc.
         \and
-        M. Shamsuzzoha Basunia\thanksref{addr2} %etc.
+        M. Shamsuzzoha Basunia$^{2}$
+%         \thanksref{addr2} %etc.
         \and
-        Lee A. Bernstein\thanksref{addr1,addr2} %etc.
+        Lee A. Bernstein$^{1,2}$
+%         \thanksref{addr1,addr2} %etc.
         \and
-        Jonathan W. Engle\thanksref{addr3} %etc.
+        Jonathan W. Engle$^{3}$
+%         \thanksref{addr3} %etc.
         \and
-        Stephen A. Graves\thanksref{addr4} %etc.
+        Stephen A. Graves$^{4}$
+%         \thanksref{addr4} %etc.
         \and
-        Eric F. Matthews\thanksref{addr1}
+        Eric F. Matthews$^{1}$
+%         \thanksref{addr1}
 }
 
 
