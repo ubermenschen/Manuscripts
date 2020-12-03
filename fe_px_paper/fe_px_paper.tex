@@ -11,7 +11,7 @@
 
 % \tracingpages1
 % \tracingoutput1
-\overfullrule=5pt
+\overfullrule=5pt   % Highlights overfull boxes
 \smartqed  % flush right qed marks, e.g. at end of proof
 \journalname{Eur. Phys. J. A}
 \textwidth=6.5in
@@ -35,7 +35,8 @@
 % %height=10in,a5paper,hmargin={3cm,0.8in},
 % ]{geometry}
 
-% \usepackage{microtype}
+\usepackage{microtype}
+\usepackage{textcomp}   % Fixes the many 'Unknown slot number' warnings from microtype w/ EPJ template
 \usepackage{lmodern}
 \usepackage{nicefrac}
 \usepackage{makecell}
@@ -46,14 +47,13 @@
 % % \usepackage{refcount}
 % % \usepackage{siunitx}
 % % \usepackage{lastpage}
-% % \usepackage{textcomp}
 % \usepackage{mathtools}
 % \usepackage{xfrac}
 % % \usepackage{cool}
 % % \usepackage{cancel}
 % \usepackage{listings}
 % % \usepackage{mcode}
-\usepackage [autostyle, english = american]{csquotes}
+\usepackage[autostyle, english = american]{csquotes}
 % % \usepackage{longtable}
 % % \usepackage{subcaption}
 \usepackage{booktabs}

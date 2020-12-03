@@ -3,6 +3,7 @@
 
 
 
+
 Clinical practice of nuclear medicine is rapidly growing with the inclusion of a broader array of radiopharmaceuticals. 
 Future growth is anticipated, given the pre-clinical success of many  new and emerging radionuclides. 
 Although the physical and chemical properties of these novel radionuclides tend to be
@@ -239,8 +240,8 @@ in order to determine their areal density.
 % for each foil was calculated.
 % , along with the propagated uncertainty in areal density.
 % The foils were tightly sealed into \enquote{packets} using two pieces of  3M 1205-Series Kapton polyimide film tape --- each piece of tape consists of 38.1 \mmicro m of an acrylic adhesive (nominal 4.49 mg/cm$^2$) on 25.4 \mmicro m of a polyimide backing (nominal 3.61 mg/cm$^2$).
-The foils were  sealed into \enquote{packets} using two pieces of  3M 5413-Series Kapton polyimide film tape 
-% --- each piece of tape consists 
+The foils were  sealed into \enquote{packets} between two pieces of  3M 5413-Series Kapton polyimide film tape,  
+each piece of tape 
 consisting of 43.2 \mmicro m of a silicone adhesive (nominal 4.79\,mg/cm$^2$) on 25.4 \mmicro m of a polyimide backing (nominal 3.61\,mg/cm$^2$).
 The sealed foils were mounted over the hollow center of  1.5875 mm-thick aluminum frames.
 Plates of 6061 aluminum alloy  served as proton energy degraders  between energy positions.
@@ -464,7 +465,7 @@ code FitzPeaks\,\cite{fitzgerald2009fitzpeaks}, which utilizes the SAMPO fitting
  \centering
  \includegraphics[width=0.75\textwidth]{./figures/sample_gspec_fe.pdf}
  % sample_gspec.pdf: 489x257 pixel, 72dpi, 17.25x9.07 cm, bb=0 0 489 257
- \caption{A gamma spectrum  from an activated Fe foil at approximately 55\,MeV (the maximum incident proton energy), collected 25 minutes after end-of-bombardment. Several observed reaction products are visible in this spectrum, and  the \ce{^{51}Cr} and \ce{^{52m}Mn} decay lines, which form two of the   primary reaction channels of interest, are  clearly isolated from surrounding peaks. }
+ \caption{A gamma spectrum  from an activated Fe foil at approximately 55\,MeV (the maximum incident proton energy), collected 25 minutes after end-of-bombardment. Several observed reaction products are visible in this spectrum, and  the \ce{^{51}Mn} and \ce{^{52m}Mn} decay lines, which form two of the   primary reaction channels of interest, are  clearly isolated from surrounding peaks. }
  \label{fig:gspec_femn}
 \end{figure*}
 
@@ -606,7 +607,7 @@ To report a complete description of the representative energy for each foil, a b
 
 
 % To correct for a spread in the apparent proton fluence, seen most strongly in rear stack positions, t
-The \enquote{variance minimization} techniques utilized in our recent work and established by Graves \etal\ have been used to reduce uncertainty in proton fluence assignments due to poorly-characterized stopping power\,\cite{Voyles2018a,Graves2016}.
+The \enquote{variance minimization} techniques utilized in our recent work and established by Graves \etal\ have been used here to reduce uncertainty in proton fluence assignments due to poorly-characterized stopping power\,\cite{Voyles2018a,Graves2016}.
 This method is based on the assumption that the independent measurements of proton fluence from the different monitor reactions 
 % used in this work 
 should all be consistent at each 
@@ -618,6 +619,11 @@ position.
 % areal densities of the stack components. 
 This disagreement is minor at the front of the stack, but gets progressively worse as the beam travels through the stack, due to the compounded effect of systematic uncertainties.
 % in stack areal densities.
+As in  our prior work, variance minimization treats the effective density of a sensitive set of stack components (such as degraders) as a free parameter in proton transport calculations, to optimize agreement with the IAEA-recommended charged particle monitor standards.
+Across multiple iterations of these simulations, this parameter is uniformly varied to find the energy spectra for each foil which minimizes the standard deviation  of the multiple measurements of proton fluence in a stack compartment.
+The lowest energy position of a stack is often chosen for this, as it is the most sensitive to perturbations of the transport calculations.
+It is important to note that this technique does not imply that the measured density of the stack components is incorrect --- rather, it is used as a surrogate to correct for poorly-characterized stopping power and other systematic uncertainties.
+
 
 
 
@@ -630,7 +636,7 @@ For the 25\,MeV stack, the Kapton tape was chosen for variance minimization, as 
 While it only makes up approximately 20\% of the low-energy stack's areal density, the Kapton surrounding each foil packet has a greater areal density than the foil itself.
 In addition, it is far easier to directly characterize the areal density of the metallic foils than it is for the Kapton, resulting in only an approximate value for the latter.
 % While it might seem obvious, t
-The contributions to the slowing of the beam due to the adhesive have often been neglected in much work performed to date. 
+The contributions to the slowing of the beam due to the tape's adhesive have often been neglected in much work performed to date. 
 This is of relatively minor consequence for higher-energy irradiations (especially relative to any beam degraders), but 
 % the stopping power of the Kapton 
 becomes increasingly important for proton energies below 
@@ -643,11 +649,13 @@ becomes increasingly important for proton energies below
 
 
 
-In performing the  minimization, the areal density of each of the  aluminum degraders (for the 55\,MeV stack)  was varied uniformly in FLUKA simulations  by a factor of up to $\pm$25\% of nominal values, to find the effective density which minimized variance in the measured proton fluence at the lowest energy position (Ti-07, Cu-07).
+In performing the  minimization, the areal density of each of the  aluminum degraders (for the 55\,MeV stack)  was varied uniformly in FLUKA simulations  by a factor of up to $\pm$25\% of measured
+% nominal 
+values, to find the effective density which minimized variance in the measured proton fluence for the four monitor reactions at the lowest energy position (Ti-07, Cu-07).
 For the 25\,MeV stack, the areal density reached in the minimization of the 55\,MeV stack was used for  the E-09 and H-01 aluminum degraders
 % was taken from that reached in the minimization of the 55\,MeV stack.
 % Using this value, 
-and the areal density of each of the  Kapton tape  layers  was 
+and the areal density of each of the  Kapton tape  layers (both adhesive and backing)  was 
 % likewise 
 varied 
 % uniformly   
@@ -655,7 +663,7 @@ by
 % a factor of up to 
 $\pm$25\%, 
 % of nominal values
-to find the effective density which minimized variance in the measured proton fluence at the next-to-lowest energy position (Ti-19, Cu-19).
+to find the effective density which minimized variance in the measured proton fluence for the two monitor reactions at the next-to-lowest energy position (Ti-19, Cu-19).
 These 
 % lowest energy 
 positions were chosen as  minimization candidates as they are the most sensitive to systematic uncertainties in stack design.
@@ -663,7 +671,11 @@ positions were chosen as  minimization candidates as they are the most sensitive
 In the 25\,MeV stack, activity was not seen in gamma spectrometry for the lowest-energy (Cu-20) monitor foil, implying that the beam was stopped at some point in between Ti-20 and Cu-20.
 This observation 
 % is conclusive proof 
-indicates that  the true areal densities of the stack components differ from nominally measured values (primarily for the difficult-to-characterize Kapton tape), as transport calculations using nominal areal densities predict that the beam should exit the stack 
+indicates that  the stopping power characterization
+% true areal densities of
+for the stack components 
+% differs from nominally measured values 
+(primarily for the difficult-to-characterize Kapton tape) is significantly underestimated, as transport calculations using nominal areal densities predict that the beam should exit the stack 
 % (at the SS-6 profile monitor) 
 with an energy of approximately 7\,MeV.
 As a result, this position was not used for minimization, with the Ti-19 and Cu-19 position being the lowest-energy reliable monitor foils in the stack.
@@ -676,19 +688,25 @@ As a result, this position was not used for minimization, with the Ti-19 and Cu-
 % Re-introduce the rest of this paragraph for the journal version
 % 
 % 
+
 The results of the minimization technique indicate a clear minimum in proton fluence variance for flux-weighted average 22.71\,MeV protons entering the last energy position of the 55\,MeV stack.
 This is approximately 2\,MeV lower than the 
+nominal 
+FLUKA simulations,
+% , and approximately 2\,MeV lower than 
 % nominal 
-FLUKA simulations, and approximately 2\,MeV lower than 
+% A\&Z calculations, both of 
+which used the 
 % nominal 
-A\&Z calculations, both of which used the nominal 2.80\,g/cm$^3$ measured density of the  aluminum degraders.
+2.68\,g/cm$^3$ measured density of the  aluminum degraders.
 This energy corresponds to an aluminum areal density  4.43\% greater than 
 % nominal 
 measurements and 
 % serves as a lump correction 
-corrects for other minor systematic uncertainties in stack design.
+corrects for stopping power characterization and other minor systematic uncertainties in stack design.
 % , including stack areal densities and incident beam energy.
-Similarly, for the 25\,MeV stack, variance minimization converges on  flux-weighted average 9.23\,MeV protons entering the Fe-13/Ti-19/Cu-19 energy position, which is approximately 4\,MeV lower than the nominal FLUKA simulations, and approximately 5\,MeV lower than nominal A\&Z calculations.
+Similarly, for the 25\,MeV stack, variance minimization converges on  flux-weighted average 9.23\,MeV protons entering the Fe-13/Ti-19/Cu-19 energy position, which is approximately 4\,MeV lower than the nominal FLUKA simulations.
+% , and approximately 5\,MeV lower than nominal A\&Z calculations.
 This energy corresponds to a Kapton tape areal density of 5.69\% greater than nominal measurements, which is completely reasonable given the lack of areal density data from the manufacturer.
 The impact of this variance minimization for improving disagreement in proton fluence is  clearly  seen in   \autoref{fig:fe_variance_mins}.
 
@@ -711,7 +729,7 @@ The impact of this variance minimization for improving disagreement in proton fl
          %         \refstepcounter{subfigure}
          \label{fig:fe_after_minimization}
    \hspace{-5pt}}%
-    \caption{Results of variance minimization through increasing the effective areal density of the  aluminum degraders by 4.43\% (55\,MeV stack) and Kapton tape by 5.69\% (25\,MeV stack). A noticeable reduction of variance in measured proton fluence is seen,  particularly at the  rear stack positions.  Open data points represent the 25\,MeV stack, and closed data points represent the 55\,MeV stack.} 
+    \caption{Results of variance minimization through increasing the effective areal density of the  aluminum degraders by 4.43\% (55\,MeV stack) and Kapton tape by 5.69\% (25\,MeV stack). A noticeable reduction of variance in measured proton fluence is seen,  particularly at the  rear stack positions.  Open data points represent the 25\,MeV stack, and filled data points represent the 55\,MeV stack.} 
      \label{fig:fe_variance_mins}
 \end{figure*}
 
@@ -719,15 +737,34 @@ The impact of this variance minimization for improving disagreement in proton fl
 
 % Re-introduce this paragraph for the journal version
 % 
-An enhanced version of the final \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reaction fluences is shown in \autoref{fig:fe_fluence_plot}.
+% An enhanced version of the final \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reaction fluences is shown in \autoref{fig:fe_fluence_plot}.
 % Without the reliable use of the  \ce{^{nat}Al}(p,x)\ce{^{22}Na} and \ce{^{nat}Al}(p,x)\ce{^{24}Na} monitor channels, local interpolation cannot be used for fluence assignment to the Nb foils, and global interpolation is reliant upon a validated model for fluence loss.
-The uncertainty-weighted mean  for the two \ce{^{nat}Cu}(p,x) and two \ce{^{nat}Ti}(p,x) monitor channels was calculated at each energy position, to determine the final fluence assignments for the Cu and Ti foils, respectively, and the uncertainty-weighted mean  for all four monitor channels was used to determine the final fluence assignments for the Fe foils.
-Uncertainty in each final proton fluence  is  calculated by error propagation of the individual monitor channel fluence values  at each energy position.
-These weighted-mean fluences are  plotted  in \autoref{fig:fe_fluence_plot}, along with the estimated fluence according to both  FLUKA transport 
-and an uncertainty-weighted linear $\chi^2$ fit to the individual monitor channel fluence measurements.
-Both models reproduce the observed fluence data consistently within uncertainty for the 55\,MeV stack, with the FLUKA model predicting a slightly greater fluence loss throughout the stack.
-However, neither model is capable of accurately modeling the rapid decrease in apparent fluence at the rear of the 25\,MeV stack.   
-These models are used purely to provide an extrapolation from the highest-energy position back to the \enquote{front} of each stack, to compare with the nominal fluence measured by  the beamline current integrators.
+The correlated uncertainty-weighted mean  for the two \ce{^{nat}Cu}(p,x) and two \ce{^{nat}Ti}(p,x) monitor channels was calculated at each energy position, to determine the final fluence assignments for the Cu and Ti foils, respectively, and the correlated uncertainty-weighted mean  for all four monitor channels was used to determine the final fluence assignments for the Fe foils.
+This correlated uncertainty-weighted mean was calculated as:
+\begin{equation} \label{eq:weighted_average_beamcurrent}
+    \langle I \rangle  = \frac{ \sum_{i,j} I_j  \left( \mathbf{V}^{-1}_{ij}  \right) }{\sum_{i,j}  \left( \mathbf{V}^{-1}_{ij}  \right)} 
+\end{equation}
+Uncertainty in each final proton fluence  is  calculated by error propagation of the individual monitor channel fluence values  at each energy position:
+\begin{equation}
+    \label{eq:corrWeight}
+    \delta_{\langle I \rangle} = \sqrt{\frac{ 1}{\sum_{i,j}  \left( \mathbf{V}^{-1}_{ij}  \right)}} 
+\end{equation}
+Each element $ij$ of the covariance matrix is calculated using the robust
+sandwich estimator  \cite{huber1967behavior}:
+\begin{equation}
+    \label{eq:Vij}
+    \mathbf{V}_{ij} = \mathrm{Cov}[I_i, I_j] = \sum_{\beta} \frac{\partial I}{\partial \beta_i} \delta_{\beta_i} \mathrm{Corr}[\beta_i, \beta_j] \delta_{\beta_j} \frac{\partial I}{\partial \beta_j}
+\end{equation}
+where $i,j$ are the monitor reactions in a given compartment, and $\beta \in [A_0$, $\rho \Delta r$, $\lambda$, $\Delta t_{irr}$, $\int \sigma(E) \frac{d\phi}{dE}dE$]. 
+% $\Sigma_{\beta_{ij}}$ is the correlation matrix for each $\beta$. 
+$A_0$ is assumed to be 30\% correlated for all reactions, $\rho \Delta r$ is assumed to be 100\% correlated for reactions from the same monitor foil, $\lambda$ is assumed to be uncorrelated, $\Delta t_{irr}$ is assumed to be 100\% correlated, and $\int \sigma(E) \frac{d\phi}{dE}dE$ is assumed to be 30\% correlated for reactions from the same monitor foil.  
+
+% Uncertainty in each final proton fluence  is  calculated by error propagation of the individual monitor channel fluence values  at each energy position.
+% These weighted-mean fluences are  plotted  in \autoref{fig:fe_fluence_plot}, along with the estimated fluence according to both  FLUKA transport 
+% and an uncertainty-weighted linear $\chi^2$ fit to the individual monitor channel fluence measurements.
+% Both models reproduce the observed fluence data consistently within uncertainty for the 55\,MeV stack, with the FLUKA model predicting a slightly greater fluence loss throughout the stack.
+% However, neither model is capable of accurately modeling the rapid decrease in apparent fluence at the rear of the 25\,MeV stack.   
+% These models are used purely to provide an extrapolation from the highest-energy position back to the \enquote{front} of each stack, to compare with the nominal fluence measured by  the beamline current integrators.
 % 
 % 
 % 
@@ -746,17 +783,17 @@ These models are used purely to provide an extrapolation from the highest-energy
 %  \label{fig:Nb_ptallies}
 % \end{figure}
 
-\begin{figure}
- \centering
- \includegraphics[width=0.495\textwidth]{./figures/fluence_plot.pdf}
- % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
- \caption{Final uncertainty-weighted mean proton fluences throughout the target stack, based on the variance-minimized observed fluence from the the  \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions. Open data points represent the 25\,MeV stack, and closed data points represent the 55\,MeV stack.} 
-%  A 95\% ($2\sigma$) confidence interval is reported in the fitted proton fluence, to ensure a realistic uncertainty in fluence, which encompasses the true absolute fluence. 
-%   A clear loss of 
-%   The fluence  drops by approximately \textred{7.2--8.9\%} from the incident fluence of \textred{196.9--198.8 nAh} over the length of each target stack, based on fluence loss models from FLUKA simulations and an empirical fit to  fluence measurements.}  
-%   This is due to a combination of beam utilization, as well as scattering.}
- \label{fig:fe_fluence_plot}
-\end{figure}
+% \begin{figure}
+%  \centering
+%  \includegraphics[width=0.495\textwidth]{./figures/fluence_plot.pdf}
+%  % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+%  \caption{Final uncertainty-weighted mean proton fluences throughout the target stack, based on the variance-minimized observed fluence from the the  \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V}, \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions. Open data points represent the 25\,MeV stack, and closed data points represent the 55\,MeV stack.} 
+% %  A 95\% ($2\sigma$) confidence interval is reported in the fitted proton fluence, to ensure a realistic uncertainty in fluence, which encompasses the true absolute fluence. 
+% %   A clear loss of 
+% %   The fluence  drops by approximately \textred{7.2--8.9\%} from the incident fluence of \textred{196.9--198.8 nAh} over the length of each target stack, based on fluence loss models from FLUKA simulations and an empirical fit to  fluence measurements.}  
+% %   This is due to a combination of beam utilization, as well as scattering.}
+%  \label{fig:fe_fluence_plot}
+% \end{figure}
 
 
 
@@ -949,7 +986,7 @@ To increase yields over \ce{^{nat}Fe}(p,x), an enriched \ce{^{54}Fe} target coul
 Likewise, \ce{Fe}(p,x) offers an interesting production pathway for  \ce{^{52}Mn}.
 Conventional production uses the low-energy \ce{^{nat}Cr}/\ce{^{52}Cr}(p,n)\ce{^{52}Mn} pathways, which offer high radioisotopic purity (approximately 99.6\%)\,\cite{Graves2015,Wooten2015}.
 \ce{^{nat}Fe}(p,x) offers a nearly threefold increase in production yield, but the low radioisotopic purity (99.1\% for 20--30\,MeV, decreasing to 60.8\% by 40\,MeV) at higher energies due to the opening of \ce{^{54}Mn} makes this route seem impractical.
-Much like \ce{^{51}Mn}, the use of an enriched \ce{^{54}Fe} target would prevent production of \ce{^{54}Mn}, providing a higher-yield production route over   \ce{^{nat}Cr}(p,x), with the tradeoff of necessitating higher-energy protons ($\leq$35\,MeV) for production.
+Much like \ce{^{51}Mn}, the use of an enriched \ce{^{54}Fe} target would prevent production of \ce{^{54}Mn} and long-lived Co radiocontaminants, providing a higher-yield production route over   \ce{^{nat}Cr}(p,x), with the tradeoff of necessitating higher-energy protons ($\leq$35\,MeV) for production.
 It is important to note that the \ce{Fe}(p,x) route provides $\geq$60\% feeding of \ce{^{52g}Mn} ($t_{1/2}$ = 5.591$~\pm~$0.003\,d\,\cite{Dong2015}), implying that the short-lived  \ce{^{52m}Mn} ($t_{1/2}$ = 21.1$~\pm~$0.2\,m\,\cite{Dong2015}) can be easily separated through the difference in half-life, to avoid the unfavorable gammas produced by the isomer. 
 However, if nearly pure \ce{^{52m}Mn} is desired for preclinical imaging applications, the feeding of \ce{^{52}Mn} through the $\epsilon$ decay of \ce{^{52}Fe} ($t_{1/2}$ = 8.725$~\pm~$0.008\,h\,\cite{Dong2015}) exclusively populates the isomer, making this potentially suitable for production through \enquote{milking} of a \ce{^{52}Fe} generator\,\cite{Blauenstein1997}.
 Clearly, the use of \ce{Fe}(p,x)\ce{^{51,52}Mn} has significant untapped potential, and additional work is needed to further characterize these reaction channels for $E_p \leq$60\,MeV.
@@ -1002,7 +1039,7 @@ The \ce{^{nat}Fe}(p,x)\ce{^{58m}Co} pathway shows a clear \enquote{peak} in the 
 
 
 % \def\arraystretch{1.5}
-\begin{table}
+\begin{table*}
  \caption{Default settings for the reactions codes}
  \label{tab:fe_defaults}
  \resizebox{\textwidth}{!}{%
@@ -1016,7 +1053,7 @@ The \ce{^{nat}Fe}(p,x)\ce{^{58m}Co} pathway shows a clear \enquote{peak} in the 
   
 \end{tabular}
 }
-\end{table}
+\end{table*}
 
 
 % Quick observations:
