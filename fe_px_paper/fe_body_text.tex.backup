@@ -996,9 +996,12 @@ Additionally, \ce{^{22,24}Na} activity is seen in all foils, consistent with pro
 No cross sections for \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} are reported due to the significant uncertainty in characterizing the layer of silicone adhesive, but this serves as another example of how the use of silicone-based adhesives may systematically enhance the apparent fluence when using the \ce{^{nat}Al}(p,x)\ce{^{22,24}Na} monitor reactions.
 Discussion of notable reaction channels follows here, and 
 comparisons  of the
-remaining measured cross sections and isomer branching ratios with modeling results and literature data (retrieved from EXFOR\,\cite{Otuka2014272}) are seen in the figures of 
+remaining measured cross sections 
+% and isomer branching ratios 
+with modeling results and literature data (retrieved from EXFOR\,\cite{Otuka2014272}) are seen in the figures of 
 % Appendices 
-\ref{sec:fe_xs_figures} and \ref{sec:fe_ibr_figures}.
+\ref{sec:fe_xs_figures}.
+% and \ref{sec:fe_ibr_figures}.
 
 
 % Quick observations:
@@ -1092,15 +1095,15 @@ To increase yields over \ce{^{nat}Fe}(p,x), an enriched \ce{^{54}Fe} target coul
      \subfloat{
         \centering
 
-        \subfigimg[width=0.485\textwidth]{\hspace{4.5cm}b)}{./figures/52mMn.pdf}{50}
+        \subfigimg[width=0.485\textwidth]{\hspace{4.5cm}b)}{./figures/52Mn_IBR.pdf}{50}
          %         \refstepcounter{subfigure}
          \label{fig:temp_52mMn}
    \hspace{-5pt}}%
-    \caption{a) Measured \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} cross section, with \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.   b) Measured \ce{^{nat}Fe}(p,x)\ce{^{52m}Mn} cross section, with the \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52m}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52m}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.} 
+    \caption{a) Measured \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} cross section, with \ce{^{56}Fe}(p,$\alpha$n)\ce{^{52}Mn}/\ce{^{54}Fe}(p,2pn)\ce{^{52}Mn} reaction channels visibly peaking at approximately \mbox{30 MeV}.   b) Measured  \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$)  isomer branching ratios via \ce{^{nat}Fe}(p,x).} 
      \label{fig:discussion_52Mn}
 \end{figure*}
 
-
+Measured \ce{^{58\text{m}}Co} ($5^+$) / \ce{^{58\text{g}}Co}  ($2^+$)  isomer branching ratios via \ce{^{nat}Fe}(p,x), with the \ce{^{58}Fe}(p,n)\ce{^{58m}Co} reaction channel visibly peaking at approximately \mbox{20 MeV}.
 
 This work presents the first measurement of several observables in this energy region, including the first independent cross sections for      \ce{^{nat}Fe}(p,x)\ce{^{52m,g}Mn},   the first measurement of \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$)   isomer branching ratios via \ce{^{nat}Fe}(p,x),  and extends the \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} excitation function down to the lowest energy to date. 
 Cumulative  \ce{^{nat}Fe}(p,x)\ce{^{52g}Mn} reaction measurements exist in earlier work, but  this work presents the most well-characterized measurement  below 70\,MeV to date, with cross sections measured  at the 6--10\% uncertainty level.
@@ -1294,7 +1297,7 @@ This measurement is consistent with earlier work aside from the globally-discrep
 Modeling of these channels presents a counterpoint to the \ce{^{51,52}Mn} results discussed earlier - \ce{^{54}Mn} is   well-modeled by CoH, TENDL, and TALYS, though EMPIRE overestimates the peak cross section by approximately 25\%, and ALICE underestimates by the same, in addition to peaking approximately 3\,MeV higher.
 The weakly-fed \ce{^{56}Mn} is poorly modeled in comparison, with CoH, EMPIRE, and ALICE failing to match neither the shape nor magnitude of the excitation function, though TALYS/TENDL matches both.
 While the poorly-modeled \ce{^{51,52}Mn} channels are dominated by alpha particle emission,  \ce{^{54}Mn} production is more characterized by the the emission of the constituent protons and neutrons.
-This observation would suggest that the alpha optical models employed 
+Since TALYS, TENDL, and CoH exhibited poor predictive power for \ce{^{51,52}Mn}, but reproduced \ce{^{54}Mn} well, this observation would suggest that the alpha optical models employed in these codes are underestimating the strength of alpha emission in this energy region. 
 
 % % Cutting as part of results reorganization
 % %
@@ -1321,10 +1324,10 @@ This observation would suggest that the alpha optical models employed
 % \textred{Comment on possible monitor reactions  here...}
 
 
-Several of the activities produced via \ce{^{nat}Fe}(p,x)  could be useful as experimental monitor reactions. 
 % In particular, \ce{^{nat}Fe}(p,x)\ce{^{56}Co} ($t_{1/2}=77.236~\pm~0.026$ d, $\epsilon$=100\% to \ce{^{56}Fe}\,\cite{Junde2011})  is a strongly-fed reaction channel (peak cross section of approximately 400\,mb near 12\,MeV), with a sufficiently-long half-life permitting offline gamma spectrometry,  and  cannot be populated via secondary neutrons incident upon the monitor target. 
 % It possesses a number of intense gamma-rays, which are distinct from those populated by daughter states in the decay of  \ce{^{56}Mn}, and the gammas which are produced both in the decay of  \ce{^{56}Co} and  \ce{^{56}Mn} may be easily resolved based on differences in intensity and half-life. 
-Similarly,  \ce{^{nat}Fe}(p,x)\ce{^{54}Mn}  ($t_{1/2}=312.20~\pm~0.020$ d, $\epsilon$=100\% to \ce{^{54}Cr}\,\cite{Dong2014}) has a convenient half-life and strong cross section (peak of approximately 160\,mb near 40\,MeV), and is immune from two different reactions on the same monitor foil leading to states in the same daughter nuclide.
+Similarly to \ce{^{56}Co},  \ce{^{nat}Fe}(p,x)\ce{^{54}Mn}  offers another interesting possibility as a \ce{^{nat}Fe}(p,x) monitor reaction.
+This radionuclide ($t_{1/2}=312.20~\pm~0.020$ d, $\epsilon$=100\% to \ce{^{54}Cr}\,\cite{Dong2014}) has a convenient half-life and strong cross section (peak of approximately 160\,mb near 40\,MeV), and is immune from two different reactions on the same monitor foil leading to states in the same daughter nuclide.
 This reaction could be useful for intermediate- to high-energy protons ($E_p \geq$30\,MeV), but would be susceptible to production via the high-energy secondary neutrons  (threshold 12.1\,MeV off of \ce{^{56}Fe}) produced in these facilities, though (p,x) production rates should dominate (n,x) through both particle flux and cross section. 
 Additionally, the \ce{^{nat}Fe}(p,x)\ce{^{54}Mn} and \ce{^{nat}Fe}(p,x)\ce{^{56}Co} channels have a difference in apparent energetic thresholds of nearly 20\,MeV.
 This provides some energy discrimination sensitivity in the same iron foil, particularly in the 20--50\,MeV region, which could be useful for determining incident proton energy near 40\,MeV, where fast neutrons are less significant than deeper in the stack.
@@ -1360,25 +1363,81 @@ This provides some energy discrimination sensitivity in the same iron foil, part
 
 
 
+
 % discussion should follow the pattern:
 % short statements about the comparison to earlier work by channel, short statements
 % 4about the agreement with models by channel; overall agreement to earlier data and to particular models.
 
 
 
-\subsection{\ce{^{nat}Ti}(p,x)\ce{^{54, 56}}????? cross sections} 
+\subsection{\ce{^{nat}Cu}(p,x)\ce{^{60,61,64}Cu} cross sections} 
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=0.5\textwidth]{./figures/64Cu.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{nat}Cu}(p,x)\ce{^{64}Cu} independent cross section, with the \ce{^{65}Cu}(p,pn)\ce{^{64}Cu} reaction channels visibly peaking at approximately \mbox{25 MeV}.}
+ \label{fig:64Cu}
+\end{figure}
+
+As with many \ce{^{nat}Cu}(p,x) channels, these reactions have been previously measured in our earlier work, but this measurement extends these cross sections down to reaction thresholds, and reports cross sections for many of the short-lived products unable to be observed previously, such as \ce{^{60}Cu} \cite{Voyles2018a}.
+For \ce{^{nat}Cu}(p,x)\ce{^{60,61,64}Cu}, the measurements presented here are consistent with earlier work (aside from that of Williams \cite{PhysRev.162.1055}, as discussed earlier), and are generally the highest-precision measurements to date.
 
 
+As we reported previously, modeling of \ce{^{nat}Cu}(p,x) reactions is poor in this energy region, despite the relative ease of only two stable target isotopes in copper.
+For \ce{^{60}Cu}, all codes fail to predict the magnitude and shape of the channel, and tend to place the peak approximately 5\,MeV lower than observed.
+Similar behavior is observed in \ce{^{61}Cu}, though not to the same degree --- the peak shift is approximately 3\,MeV, but the shape predictions are more physical, despite a suppression of the pre-equilibrium tail in  EMPIRE.
 
-
-In addition to the \ce{^{nat}Fe}(p,x)\ce{^{51,52}Mn} measurements, this experiment has also yielded measurements of  a number of additional  emerging radionuclides with medical applications.
-These include the non-standard positron emitters 
-\ce{^{44}Sc}\,\cite{Muller2013,Filosofov2010,Qaim2011}
-%\,\cite{Qaim2011,Qaim201731,Kolsky1998,mausner1995evaluation}.
-\ce{^{55}Co}\,\cite{Thisgaard2011,Zaman1996,Hermanne2000a}
-\ce{^{61}Ni}\,\cite{PMID:7632762,zweit1996medium,Graves2016,Rosch2014}, 
+\ce{^{57}Ni}\,\cite{PMID:7632762,zweit1996medium,Graves2016,Rosch2014}, 
 \ce{^{61}Cu}\,\cite{Szelecsenyi2005a,Fukumura2004}
 \ce{^{64}Cu}\,\cite{Lewis2003,Bandari2014,mp500671j,Szelecsenyi1993,Aslam2009,Hilgers2003,Szelecsenyi2005,Voyles2017},
+
+% discussion should follow the pattern:
+% short statements about the comparison to earlier work by channel, short statements
+% 4about the agreement with models by channel; overall agreement to earlier data and to particular models.
+
+
+
+\subsection{\ce{^{nat}Ti}(p,x)\ce{^{44,47,48}Sc} cross sections} 
+
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=0.5\textwidth]{./figures/44Sc_IBR.pdf}
+ % Nb_ptallies.pdf: 380x298 pixel, 72dpi, 13.41x10.51 cm, bb=0 0 380 298
+ \caption{Measured \ce{^{44\text{m}}Sc} ($6^+$) / \ce{^{44\text{g}}Sc}  ($2^+$)  isomer branching ratios via \ce{^{nat}Ti}(p,x).}
+ \label{fig:44Sc_IBR}
+\end{figure}
+
+
+
+Due in part to the long-standing use of Ti as a monitor foil,  \ce{^{nat}Ti}(p,x) reactions are better-characterized than many  natural targets.
+While the focus of this work is on the production of \ce{^{51,52}Mn}  and other \ce{^{nat}Fe}(p,x) channels, the cross sections reported here offer improvements to prior work, particularly for the several Sc radionuclides observed. 
+For all of the \ce{^{nat}Ti}(p,x)\ce{^{44,47,48}Sc} channels, this work is consistent with all prior data, and is generally the highest-precision measurement to date.
+This work additionally  extends the \ce{^{44g}Sc} excitation function to the highest energy to date. 
+
+
+
+Perhaps due to the abundance of reaction data available, modeling of these channels is markedly improved  in comparison to the \ce{^{nat}Fe}(p,x) channels discussed previously.
+For \ce{^{44m}Sc}, the shape of the excitation function is well-modeled by EMPIRE, CoH, TALYS, and TENDL, though all of these codes place the compound peak approximately 4\,MeV lower than observed.
+Additionally, EMPIRE overestimates the magnitude of this peak, while TALYS, TENDL, and CoH significantly underestimate it.
+Notably, the pre-equilibrium tail and transition towards a second peak near 65\,MeV is well-modeled by TALYS/TENDL, but signficantly underestimated by EMPIRE and CoH.
+The same modeling trend is observed for \ce{^{44m}Sc}, though no judgment can be made for the pre-equilibrium tail, due to a paucity of data above 50\,MeV.
+This is reflected in the measured isomer branching ratios for \ce{^{44}Sc}, seen in \autoref{fig:44Sc_IBR}.
+Above 23\,MeV, TALYS/TENDL both reproduce the present work, as well as earlier measurements, suggesting that angular momentum transfer in the pre-equilibrium regime is being well-modeled, but that the total feeding of the \ce{^{44}Sc} channel is  underestimated. 
+A similar argument holds for EMPIRE, which reproduces the isomer branching from threshold up to 35\,MeV.
+However, CoH fails to reproduce either the channel magnitude or the isomer ratio, suggesting a more fundamental issue with the modeling of this channel. 
+\ce{^{47}Sc} presents a very opposed situation, despite an abundance of reaction data and strong feeding of the channel.
+All codes fail to reproduce either the shape or magnitude of this channel, with only CoH able to predict the compound peak,  and failing to model the pre-equilibrium tail.
+As a cumulative reaction channel, it is unclear whether this failure arises from modeling of any \ce{^{47}Ca} decay precursors, or the competition between  \ce{^{48}Ti}(p,20)\ce{^{47}Sc} / \ce{^{49}Ti}(p,2pn)\ce{^{47}Sc} / \ce{^{50}Ti}(p,$\alpha$)\ce{^{47}Sc} channels. 
+Modeling of \ce{^{48}Sc} is lacking, with only TALYS/TENDL matching the shape of the excitation, and all codes failing to reproduce the magnitude of the channel.
+
+
+
+
+As with \ce{^{58m}Co} measurements, the titanium activation has  yielded measurements of  a number of additional  medical  radionuclides,  including the non-standard positron emitter
+\ce{^{44}Sc}\,\cite{Muller2013,Filosofov2010,Qaim2011}
+%\,\cite{Qaim2011,Qaim201731,Kolsky1998,mausner1995evaluation}.
 % \ce{^{86}Y}\,\cite{Valdovinos2017,Nickles2003,Qaim2008,QaimSyedM2011,Rosch1993,doi:10.1139/v67-193,levkovski1991cross,Johnson2015,Singh2013,Kiselev1974,Kandil2009}, 
 % \ce{^{89}Zr}\,\cite{Verel2003,Dijkers2009,Dijkers2010,PhysRevC.38.1624,Omara2009},  
 % \ce{^{90}Nb}\,\cite{Busse2002,Radchenko2012},  
@@ -1386,7 +1445,9 @@ These include the non-standard positron emitters
 and the $\beta^-$-therapeutic agent 
 \ce{^{47}Sc}\,\cite{Muller2014,Deilami-nezhad2016}.
 % and the Auger-therapy agent \ce{^{82\text{m}}Rb}\,\cite{Kovacs1991,Titarenko2011}. 
-Production of these radionuclides offers no major advantages over established pathways, with the generally lower yields and radioisotopic purities failing to justify the convenience of natural targets  via   \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x). 
+Production of \ce{^{44}Sc} offers no major advantages over established \ce{^{44}Ca}(p,n) / \ce{^{44}Ca}(d,2n) / \ce{^{45}Sc}(p,2n)\ce{^{44}Ti} $\xrightarrow[]{\epsilon}$ \ce{^{44}Sc} pathways, with the  lower yield and radioisotopic purity failing to justify the convenience of natural targets  via    \ce{^{nat}Ti}(p,x). 
+Since high-specific activity \ce{^{47}Sc} production routes are limited (with  \ce{^{47}Ti}(n,p)\ce{^{47}Sc} as one of few potential candidates), alternative pathways are greatly desired by the community.
+However, \ce{^{nat}Ti}(p,x) is clearly no compelling alternative if high specific activity is required, due to the inability to avoid co-production of long-lived Sc radiocontaminants, even with prudent selection of a beam energy window.
 % The one possible exception to this trend is the non-standard positron emitter \ce{^{57}Ni} ($t_{1/2}=35.60\pm0.06$ h, $\epsilon$=100\% to \ce{^{57}Co}\,\cite{Bhat1998}) --- the \ce{^{57}Ni}/\ce{^{56}Ni} ratio of production rates is approximately 290 at 61.58\,MeV, and varies from 45--75 at the 70--90\,MeV positions.
 % This \ce{^{nat}Cu}(p,x) route offers both higher yield and higher radioisotopic purity over the established  \ce{^{nat}Co}(p,3n) pathway, which suffers from approximately fivefold greater  \ce{^{56}Ni} contamination\,\cite{MICHEL1997153,Ditrói2013}.
 % The one potential exception to this is the production of \ce{^{58m}Co}, a potent agent for Auger electron-based targeted therapy\,\cite{Thisgaard2011a,Valdovinos2017b,Thisgaard2014a}.

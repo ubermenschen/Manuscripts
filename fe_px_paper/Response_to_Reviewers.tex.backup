@@ -32,6 +32,8 @@
 \signature{Andrew S. Voyles}           % name for signature 
 \longindentation=0pt                       % needed to get closing flush left
 \let\raggedleft\raggedright                % needed to get date flush left
+\date{13 May, 2020}
+
  
  
 \begin{letter}{Dr. Jose Benlliure \\
@@ -119,7 +121,7 @@ details. But author did not discuss details for the reactions in Appendix.
 Furthermore, the English and Writing as well as presentation is very poor. I can not recommend for
 publication in the present form. It should be revised.
 
- \colornote{We thank the reviewer for their thoughtful comments, and the excellent suggestion for shifting the title to reflect the broader scope of work covered by this manuscript.  We would, however, respectfully suggest that the title should become \enquote{Excitation functions for (p,x) reactions on niobium in the energy range of Ep= 40-90 MeV}, as \enquote{(p,xn)} typically refers to reactions where only neutrons are secondaries, and many of the reactions we measured  include charged particles in the exit channel.}
+ \colornote{We thank the reviewer for their thoughtful comments....\\\\ ???????}
 
 
 
@@ -141,7 +143,7 @@ Provided the comments below are clarified, a large number of important new resul
 
 Improve the description of the fitting method for minimizing the variance in the experimental fluence. The method is not clear now. Does this use AZ stopping powers and some semi-analytical approach? Expressions used?
 
-\colornote{We thank you for raising this point, and apologize for this being unclear - we attempted to avoid duplication of much of the extensive discussion for this technique, as detailed in our previous work. We have now expanded upon this discussion in section 2.4, to make our methods more clear.  \\\\In short, FLUKA transport simulations were performed multiple times, globally perturbing the effective areal density (as a correction for the FLUKA stopping power model) of the aluminum degraders. Since each energy compartment, containing a Ti , Fe, and  Cu foil, within our stack has 4 independent monitor reactions, the perturbation in degrader density seeks to find which iteration minimizes the standard deviation of these 4 measurements, as the energy spectra from this iteration will best reproduce the IAEA-recommended monitor standard data. Choosing the wrong iteration \\\\Since AZ}
+\colornote{We thank you for raising this point, and apologize for this being unclear - we attempted to avoid duplication of much of the extensive discussion for this technique, as detailed in our previous work. We have now expanded upon this discussion in section 2.4, to make our methods more clear.  \\\\In short, FLUKA transport simulations were performed multiple times, globally perturbing the effective areal density (as a correction for the FLUKA stopping power model) of the aluminum degraders. Since each energy compartment, containing a Ti , Fe, and  Cu foil, within our stack has 4 independent monitor reactions, the perturbation in degrader density seeks to find which iteration minimizes the standard deviation of these 4 measurements, as the energy spectra from this iteration will best reproduce the IAEA-recommended monitor standard data. Since the thresholds and peaks of these different monitor reactions occur at different energies, a larger variance will be seen as the energy assignments are further away from those that reproduce the IAEA monitor data.  This is shown in a simple example in the attached figure.  So, no expressions are used here - simply finding the iteration which minimizes the standard deviation of the monitor reaction fluences.}
 
 \begin{figure}
  \centering
@@ -151,6 +153,8 @@ Improve the description of the fitting method for minimizing the variance in the
 %  \label{fig:gspec_femn}
 \end{figure}
 
+\colornote{Additionally, I removed the language in this section comparing the minimization results between AZ calculations and FLUKA, as well as Figure 4, which attempted to visually convey this, but I fear caused more confusion than it helped.  Most of the information needed is found in Figure 3B already, so this also helps avoid unnecessary duplication. Since we do not use the linear fit, AZ fluences estimates, or the FLUKA fluence model for any of our actual analysis,  having these in here might have partly led to the confusion.  Of all of this, only the FLUKA energy spectra (which lead to fluences when normalizing to IAEA monitor data) is actually used in our analysis, so I cut the rest to avoid any confusion in the final manuscript.  I hope that helps clarify things for you!}
+
 
 The 55 MeV and 25 MeV irradiations have overlap: some energies are covered by both irradiations. This can be used to check the consistency of the methods used. However, the results do not clarify which results were obtained with which irradiation so that the reader cannot assert this consistency. Please, clearly specify which data were obtained from each of the two irradiations and show how consistent these are. A new plot or table may be necessary.
 
@@ -159,6 +163,11 @@ The 55 MeV and 25 MeV irradiations have overlap: some energies are covered by bo
 The discussion speaks about the natural iron results in some detail, but almost nothing is said about the irradiations of natural copper and titanium. Please expand the discussion to obtain a fair description of all results.
 
 I strongly suggest creating three figures in the main text, one for each of the irradiate materials (i.e. take these out of the annex). They should support the discussion about the results. In principle, a discussion should follow the pattern: short statements about the comparison to earlier work by channel, short statements about the agreement with models by channel; overall agreement to earlier data and to particular models. Of course, a grouped approach can be taken (several channels of a given nature). Separate messages about the data and their agreement with model estimates from the potential use of the results. Usefulness of the results should be either in the introduction or in an outlook at the end. There is also where implications should be highlighted (outlook at the end of the paper).
+
+
+
+\colornote{We thank your for this important feedback. We have since greatly expanded the language to include discussion of a dozen additional reaction channels of note, as well as their comparison with model calculations and prior data. Your point that this new data warrants publication was very well-received, and we have added this new discussion to help show the importance of these results.}
+
 
 Highlight clearly in the conclusions that model estimates are inadequate for even modest accuracy targets (like 20\%).
 
