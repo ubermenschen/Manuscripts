@@ -63,6 +63,9 @@ European Physical Journal A}
   
   \noindent Along with my co-authors, I wanted to take the opportunity to personally thank you for your continued assistance in helping along the process of our submitted manuscript, and for finding such thorough and conscientious referees for reviewing it.  We would especially like to thank the referees for their thorough reading and critique, which has made it a better paper. Their comments were very constructive and pointed out some valuable improvements.
   
+  
+  \colornote{Lee - should we make any comments about the hostility and unhelpful/incorrect comment from Reviewer 1 here?}
+  
   Please find the feedback following here, and our revised manuscript attached. 
   
   Sincerely yours,\\ \\ \\ \\ Andrew S. Voyles
@@ -89,6 +92,8 @@ reactions. Excitation functions of the monitor reactions induced on Cu and Ti sh
 compared with the IAEA recommended curve, which confirms experimental techniques and beam
 parameters. Therefore, other reactions from Cu and Ti monitor should be omitted from the paper.
 
+ \colornote{We thank the reviewer for their thoughtful comments....\\\\ ???????}
+
 
 %   \colornote{We would first like thank the reviewer for their  detailed summary and suggestions of the manuscript. It is clear that they read the manuscript thoroughly, and the feedback they have provided here has been vital for the improvement of the paper as a whole.}
 
@@ -99,6 +104,8 @@ Few more comments:
 clear and details in discussion.
 
 2. Sample size 2.5 cm x2.5 cm is too large. What is the benefit of such sample size?
+
+\colornote{Since the beam (approximately 8 mm diameter) is  much smaller than this, we operate our irradiation in the \enquote{underfilled} regime --- hence, we can use areal density to calculate the cross section. This standard approach minimizes any deviations from point geometry during the gamma assay of foils.  }
 
 3. The notifications ’25 MeV stack’ and ’55 MeV stack’ are not correct.
 
@@ -113,15 +120,18 @@ omitted.
 
 8. What is the meaning of value in bracket in Tables.
 
+\colornote{Uncertainties are listed in the least significant digit (NDS Style), that is, 131.0(85)\,mb  means 131.0 $\pm$ 8.5\,mb. Clarification to this effect has been added to the caption of all tables.}
+
 9. P-8, line 44, ‘The natFe, natCu and natTi(p,x)......’ is not proper writing.
 
 10. Both the numerical values for all investigated reactions should be given in Table and discussed in
 details. But author did not discuss details for the reactions in Appendix.
 
+\colornote{We thank your for this important feedback. We have since greatly expanded the language to include discussion of a dozen additional reaction channels of note, as well as their comparison with model calculations and prior data. As the large volume of cross section data we reported here  impacts  many applications,  we have added this new discussion to help show the importance of these results.}
+
 Furthermore, the English and Writing as well as presentation is very poor. I can not recommend for
 publication in the present form. It should be revised.
 
- \colornote{We thank the reviewer for their thoughtful comments....\\\\ ???????}
 
 
 
