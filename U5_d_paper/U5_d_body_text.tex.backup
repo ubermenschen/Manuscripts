@@ -5,17 +5,40 @@
 
 
 Neptunium-236 is a unique actinide isotope with  use in metrology and analytical chemistry applications. 
-It constitutes a reference standard for isotope dilution mass spectrometry with the function of improving accuracy and precision for the detection of common neptunium isotopes associated with nuclear energy applications.
+Since it is neither anthropogenic nor primordial in occurrence, \ce{^{236}Np} constitutes a reference standard for isotope dilution mass spectrometry with the function of improving accuracy and precision for the detection of common neptunium isotopes associated with nuclear energy applications.
 Isotope dilution is the method of adding a uniquely uncommon isotope of the element whose concentration is to be determined in known amounts to the unknown specimen. 
 Quantification of the relative abundance of the added diluent isotope versus the unknown isotope enables the amount of analyte in the sample to be accurately determined. 
-Isotope dilution mass spectrometry (IDMS) methods including thermal ionization mass spectrometry (TIMS) and multi-collector inductively-coupled plasma mass spectrometry (MC-ICP-MS) are currently the most sensitive methods for measuring actinides in environmental samples. 
+Isotope dilution mass spectrometry (IDMS) methods, including thermal ionization mass spectrometry (TIMS) and multi-collector inductively-coupled plasma mass spectrometry (MC-ICP-MS), are currently the most sensitive methods for measuring actinides in environmental samples. 
 For quantitative results, an isotope dilution tracer is added to each sample and the ratio of the analyte to the tracer is used to calculate the amount of analyte in a given sample. 
 An ideal IDMS tracer is an isotope that is not found in the sample and is stable or has a long half-life.
 
+However, the current  inventory of \ce{^{236g}Np} ($t_{1/2}$ = 1.53$\pm0.05\times10^5$\,y\,\cite{XXX}) is extremely limited, with the worldwide stockpile limited to 10's of \mmicro g of material. 
+The existing U.S. inventory was produced at Argonne National Laboratory  in the mid-1980's,  via the reaction \ce{^{235}U}(d,n)\ce{^{236g}Np} using a 20\,MeV deuteron beam. 
+No effort was made to optimize irradiation conditions to minimize co-production of  \ce{^{237}Np}  or to evaluate alternative production routes. 
+As a result, the current \ce{^{236g}Np} stock contains approximately 20\% of \ce{^{237}Np} (atom \%) impurity, which negatively affects both the analytical uncertainty and detection limit for \ce{^{237}Np}. 
+% It is not realistic to increase the purity of such an extremely small quantity of 236gNp using electromagnetic isotope separation techniques, since separation efficiencies are generally below 1\%. 
+Since the small amount of remaining material is currently available only for use as an isotope dilution tracer for \ce{^{237}Np} determination in high-value samples, it is clear that a new supply of \ce{^{236g}Np} tracer is critical to meeting the needs of the applications community.
+% that are part of US nonproliferation programs. 
+% A new supply of 236gNp tracer is critical to meeting the needs of the US nonproliferation, safeguards, and nuclear forensics communities. 
+In 2015, the U.S. Certified Reference Materials (CRM) committee's \ce{^{236g}Np} working group identified  an annual requirement of 10--20 \mmicro g / y, with a minimum 93.3 atom\% \ce{^{236g}Np} content. 
+An exact knowledge of \ce{^{235}U}(d,x)\ce{^{235,236,237}Np} reaction cross sections and threshold energies leads to \ce{^{236g}Np}  production with maximal yield and isotopic purity. 
+Therefore, as part of a larger campaign to address deficiencies in cross-cutting nuclear data needs, our group has measured the nuclear excitation functions of the radionuclides \ce{^{236}Np} from deuteron-induced reactions on highly-enriched \ce{^{235}U} (HEU) targets, using the  stacked-target technique  with nickel and titanium monitor foils.
+
+
+In addition to its needs for isotope production, \ce{^{236}Np} is an interesting odd-odd nucleus with a high-spin ground state ($J^\pi=(6^-)$\,\cite{XXX}), as well as a low-lying isomer resulting from an anti-parallel coupling configuration ($t_{1/2}$ = 22.5$\pm0.4$\,h, $E_x\approx70\,\text{keV}, J^\pi=1$\,\cite{XXX}).
+From an isotope production perspective, \ce{^{236m}Np} is interesting, as it has a 50$\pm$3\% decay branch to \ce{^{236}Pu}, which is itself a valuable reference tracer for the quantitative detection of Pu isotopes
 
 
 
-In addition, \ce{^{236}Np} is an interesting odd-odd nucleus
+ this experiment 
+% offer an opportunity to study the distribution of angular momentum in compound nuclear and direct pre-equilibrium reactions via observation of the \ce{^{52m}Mn} ($t_{1/2}$ = 21.1$~\pm~$0.2\,min; J$^\pi=2^+$) to \ce{^{52g}Mn} ($t_{1/2}$ = 5.591$~\pm~$0.003\,d; J$^\pi=6^+$)   ratio\,\cite{Dong2015,Wang2017}.
+% Measurements of isomer-to-ground state ratios have been used for over 20\,years to probe the spin distribution of excited nuclear states in the A\,$\approx$\,190 region\,\cite{PhysRevC.73.034613,PhysRevC.45.1171}.
+
+The large spin difference between the isomer and ground state has dire
+
+Forms production of 236Pu, which can be used for MS analysis of Pu 
+
+Plutonium-236, on the other hand, is ideally used as a double-spike tracer along with 244Pu to enable the accurate determination of 238Pu by alpha spectroscopy and 239Pu, 240Pu, 241Pu, and 242Pu by mass spectrometry. The double-spike technique would add an important capability that ultimately simplifies the
 
 Clinical practice of nuclear medicine is rapidly growing with the inclusion of a broader array of radiopharmaceuticals. 
 Future growth is anticipated, given the pre-clinical success of many  new and emerging radionuclides. 
@@ -196,7 +219,32 @@ The specifications of both target stacks
 % designs for this work are presented 
 are in \autoref{tab:fe_stack_table} of 
 % Appendix 
-\ref{sec:fe_stack_design}.
+% \ref{sec:fe_stack_design}.
+
+
+
+% Combined table
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table*}[h!]
+\centering
+\caption{Specifications of the 16\,MeV and 12\,MeV \enquote{packet} designs in the present work. The \enquote{overfilled} deuteron beam enters the stack upstream of the Ni-01 and Ni-02 foils, respectively, and travels through the stack in the order presented here. Note that due to the nonuniform thickness and highly brittle nature of the  U-01 and U-02 targets, the listed thicknesses are approximate values obtained through subtraction from the total thickness of the sealed packets. Uncertainties are listed in the least significant digit, that is, 24.6(12)\,mm  means 24.6 $\pm$ 1.2\,mm.}
+\label{tab:fe_stack_table}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllll|lllll@{}}
+\toprule\toprule
+% Target Layer       & Nominal Thickness & Measured thickness (mg/cm\textasciicircum 2) & Thickness Uncertainty (\%) \\ \midrule
+\begin{tabular}[c]{@{}l@{}}16\,MeV\\ Target layer\end{tabular}  &  \begin{tabular}[c]{@{}l@{}}Measured\\ diameter\\(mm)\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Measured \\ thickness\\(mm)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\mass (g)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\areal density\\(mg/cm$^2$)\end{tabular} & \begin{tabular}[c]{@{}l@{}}12\,MeV\\ Target layer \end{tabular}                                        & \begin{tabular}[c]{@{}l@{}}Measured\\ diameter\\(mm)\end{tabular}   &\begin{tabular}[c]{@{}l@{}}Measured \\ thickness\\(mm)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\mass (g)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Measured\\areal density\\(mg/cm$^2$)\end{tabular} \\
+\midrule
+Ni-01 & 17.89(23) & 0.0273(5)     & 0.0570(8)   & 22.68(49)   & Ni-02 & 18.04(30) & 0.0267(6) & 0.0557(6) & 21.78(43)                                                                      \\
+U-01 & 12.33(4) & \emph{0.105}     & 0.2490(2)   & 208.71(60)   & U-02 & 12.33(4) & \emph{0.084} & 0.2010(2) & 168.47(48)                                                                      \\
+Ti-01 & 11.53(40) & 0.0275(6)     & 0.0113(6)   & 10.86(67)   & Ti-02 & 10.92(24) & 0.0273(6) & 0.0101(5) & 10.78(58)                                                                      \\
+Al-01 & 11.85(30) & 0.0283(5)     & 0.0072(6)   & 6.53(55)   & Al-02 & 11.78(32) & 0.0285(6) & 0.0070(6) & 6.42(56)                                                                      \\
+ \bottomrule\bottomrule
+\end{tabular}
+}
+\end{table*}
 
 % 
 % 
@@ -624,6 +672,56 @@ This incident fluence dropped by approximately
 This loss of fluence is due to a combination of 
 % beam utilization for the various 
 (p,x) reactions throughout the target stack, as well as large-angle deflections (primarily in the aluminum degraders) from scattering of the beam.
+
+
+
+
+
+
+Mention spin applications for isotope production:
+
+236gNp formation favoured at:
+increased particle angular momentum input (d,x superior to p,x) 
+Increased particle energy input (m/g ratio decreases with particle energy
+
+
+
+\subsection{236mNp}
+
+Comes from gamma spec
+
+
+
+
+\subsection{236gNp}
+
+Comes from chemistry 
+
+
+
+\subsection{237Np}
+
+Comes from chemistry
+
+Mention the subtraction of 237Np from the unirradiated foils
+
+Need for higher-enrichment 235U to produce pure 236Np
+
+
+
+\subsection{238Np}
+
+Comes from chemistry, via 238Pu MS
+
+
+
+\subsection{Isomer decay branching ratio}
+
+Comes from :
+
+total : gamma spec (236mNp)
+
+beta- branch:  chemistry (236Pu)
 
 
 
