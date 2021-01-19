@@ -37,7 +37,7 @@ Manganese radionuclides are desirable for radiopharmaceutical applications, as
 % manganese is a 
 % the element is chemically versatile,  biologically relevant, and essential in trace quantities. 
 % Manganese 
-they possess well-established biochemistry, and have been 
+they possess well-established biochemistry and have been 
 % proven to be 
 chelated 
 % well 
@@ -70,7 +70,7 @@ is more clinically suitable for rapid metabolic studies.
 
 
 
-Developing production of these radionuclides requires well-characterized cross section data, or predictive models when such data have not been measured.   
+Developing production of these radionuclides requires well-characterized cross section data or predictive models when such data have not been measured.   
 % However, the m
 Modeling of nuclear reactions in 
 % this 
@@ -505,7 +505,7 @@ For all remaining observed reaction products in the mass chain, and cases where 
 residual product are reported, 
 % allowing for determination of the independent production via subtraction  and 
 facilitating comparison to reaction model calculations.  
-Solutions to the first- and higher-order  Bateman equations are used for separation of  feeding contributions from decay precursors, so that  independent cross sections may be reported\,\cite{bateman1910solution,Cetnar2006}.
+Solutions to the first- and higher-order  Bateman equations are used for separation of  feeding contributions from decay precursors so that  independent cross sections may be reported\,\cite{bateman1910solution,Cetnar2006}.
 
 
 
@@ -562,7 +562,7 @@ Thin \ce{^{nat}Ti} and \ce{^{nat}Cu} foils
 % at each energy position, 
 were co-irradiated to measure beam current at each position within the stack.
 % These foils have been recommended for use as proton monitor foils in the 30 \textless\ E$_\text{p}$ \textless\ 100 MeV regime by the IAEA, as the
-The IAEA-recommended \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V},  \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions were used 
+The International Atomic Energy Agency (IAEA)-recommended \ce{^{nat}Ti}(p,x)\ce{^{46}Sc}, \ce{^{nat}Ti}(p,x)\ce{^{48}V},  \ce{^{nat}Cu}(p,x)\ce{^{62}Zn}, and \ce{^{nat}Cu}(p,x)\ce{^{63}Zn} monitor reactions were used 
 % for  proton fluence measurement 
 % , using values  
 % and uncertainties 
@@ -592,7 +592,7 @@ Estimates of the proton beam energy for preliminary stack designs were calculate
 However, the 
 % more rigorous  
 transport code FLUKA-2011.2x.3 was used for simulation of the full 3-D target stack and to determine the full proton energy and fluence distribution for each foil\,\cite{Bohlen2014a}. 
-$10^8$ source protons were used for all FLUKA simulations, 
+All FLUKA simulations used $10^8$ source protons, 
 % which places the 
 yielding a statistical uncertainty 
 % in proton energy distributions at 
@@ -619,7 +619,7 @@ position.
 % Any residual disagreement in the  observed proton fluences is  primarily due to poorly-characterized stopping power in simulations or a systematic error in the 
 % % stack design, namely, the
 % areal densities of the stack components. 
-This disagreement is minor at the front of the stack, but gets progressively worse as the beam travels through the stack, due to the compounded effect of systematic errors.
+This disagreement is minor at the front of the stack, but gets progressively worse as the beam travels through the stack due to the compounded effect of systematic errors.
 % in stack areal densities.
 As in  our prior work, variance minimization treats the effective density of a sensitive set of stack components (such as degraders) as a free parameter in proton transport calculations, to optimize agreement with the IAEA-recommended charged particle monitor standards.
 Across multiple iterations of these simulations, this parameter is uniformly varied to find the energy spectra for each foil which minimizes the standard deviation  of the multiple measurements of proton fluence in a stack compartment.
@@ -632,9 +632,9 @@ It is important to note that this technique does not imply that the measured den
 When performing  a variance minimization, it is important to apply this variation of effective areal density  to the stack components which  have the most significant impact on beam energy loss.
 % degradation, as any systematic error in the areal densities used for these components will cause a disagreement in the observed fluences.
 % For the 55\,MeV stack
-Therefore, the aluminum degraders are used for variance minimization for the 55\,MeV stack, as they make up more than 80\% of the areal density of the stack.
+Therefore, the aluminum degraders are used for variance minimization for the 55\,MeV stack as they make up more than 80\% of the areal density of the stack.
 % , and thus play the largest role in beam degradation.
-For the 25\,MeV stack, the Kapton tape was chosen for variance minimization, as the foil packets themselves are responsible for the majority of beam degradation.
+For the 25\,MeV stack, the Kapton tape was chosen for variance minimization as the foil packets themselves are responsible for the majority of beam degradation.
 While it only makes up approximately 20\% of the low-energy stack's areal density, the Kapton surrounding each foil packet has a greater areal density than the foil itself.
 In addition, it is far easier to directly characterize the areal density of the metallic foils than it is for the Kapton, resulting in only an approximate value for the latter.
 % While it might seem obvious, t
@@ -653,7 +653,7 @@ becomes increasingly important for proton energies below
 
 In performing the  minimization, the areal density of each of the  aluminum degraders (for the 55\,MeV stack)  was varied uniformly in FLUKA simulations  by a factor of up to $\pm$25\% of measured
 % nominal 
-values, to find the effective density which minimized variance in the measured proton fluence for the four monitor reactions at the lowest energy position (Ti-07, Cu-07).
+values to find the effective density which minimized variance in the measured proton fluence for the four monitor reactions at the lowest energy position (Ti-07, Cu-07).
 For the 25\,MeV stack, the areal density reached in the minimization of the 55\,MeV stack was used for  the E-09 and H-01 aluminum degraders
 % was taken from that reached in the minimization of the 55\,MeV stack.
 % Using this value, 
@@ -760,7 +760,7 @@ sandwich estimator  \cite{huber1967behavior}:
     \label{eq:Vij}
     \mathbf{V}_{ij} = \mathrm{Cov}[I_i, I_j] = \sum_{\beta} \frac{\partial I}{\partial \beta_i} \delta_{\beta_i} \mathrm{Corr}[\beta_i, \beta_j] \delta_{\beta_j} \frac{\partial I}{\partial \beta_j}
 \end{equation}
-where $i,j$ are the monitor reactions in a given compartment, and $\beta \in [A_0$, $\rho \Delta r$, $\lambda$, $\Delta t_{irr}$, $\int \sigma(E) \frac{d\phi}{dE}dE$]. 
+where $i$ and $j$ are the monitor reactions in a given compartment, and $\beta \in [A_0$, $\rho \Delta r$, $\lambda$, $\Delta t_{irr}$, $\int \sigma(E) \frac{d\phi}{dE}dE$]. 
 % $\Sigma_{\beta_{ij}}$ is the correlation matrix for each $\beta$. 
 $A_0$ is assumed to be 30\% correlated for all reactions, $\rho \Delta r$ is assumed to be 100\% correlated for reactions from the same monitor foil, $\lambda$ is assumed to be uncorrelated, $\Delta t_{irr}$ is assumed to be 100\% correlated, and $\int \sigma(E) \frac{d\phi}{dE}dE$ is assumed to be 30\% correlated for reactions from the same monitor foil.  
 
@@ -849,7 +849,7 @@ After irradiation, all foils were
 % confirmed to 
 still sealed in their Kapton packets, verifying that no activation products were lost due to packet failure.
 % and dispersal.
-With the exception of a single foil (Cu-20, in the 25\,MeV stack), each activated foil had a small \enquote{blister} under the Kapton tape layer, caused by a combination of 
+With the exception of a single foil (Cu-20, in the 25\,MeV stack), each activated foil had a small \enquote{blister} under the Kapton tape layer caused by a combination of 
 % thermal swelling, 
 off-gassing of oxides and the formation of gaseous short-lived beta activities in the tape.
 % \comment{Maybe some Ne formed by Al(p,2a)Ne / Si(p,2ap)Ne?}
@@ -922,7 +922,7 @@ The codes were all explicitly run using their default parameters.
 % Indeed, TALYS and TENDL  are routinely used for modeling cross sections in initial target designs for isotope production applications.
 % Second,
 In contrast, TENDL was developed through a parameter optimization process, and is routinely used for modeling cross sections in initial target designs for isotope production applications.  
-Our recent work has shown that  arbitrary parameter optimization (tuning to provide a best fit to a single reaction channel)  often provides non-unique solutions, causing neighboring reaction channels (e.g., (p,4n) vs. (p,p3n)) to suffer \cite{fox2020investigating}.
+Our recent work has shown that  arbitrary parameter optimization (tuning to provide a best fit to a single reaction channel)  often provides non-unique solutions, causing neighboring reaction channels (e.g., (p,4n) vs. (p,p3n)), to suffer \cite{fox2020investigating}.
 % Without a global physical basis for optimization (as in the process of reaction evaluation), an unchecked fit to experimental data offers no insight for reaction modeling, and may propagate to highly non-physical results for  competing channels.
 A full optimization of the reaction modeling is beyond the scope of this paper.  
 However, a  comparison between measured, evaluated, and default calculations for the major channel cross sections serves to highlight the relative fidelity of all three approaches.  
@@ -937,7 +937,7 @@ The default settings for the level density models, optical models, and gamma str
 % This normalization is performed in such a way that it only affects the level density below the neutron separation energy.
 % Finally, the default level density model in ALICE is the Kataria-Rarnamurthy-Kapoor (KRK) model \cite{Kataria1978,Kataria1990}, a semi-empirical nuclear level density formula which provides shell-dependent corrections to the nuclear mass surface, based on a Fourier expansion of the single particle level density of nucleons.
 % The 
-It should be noted that the use of natural abundance targets in these measurements exacerbates the modeling  challenges seen in our previous work using monoisotopic targets\,\cite{Voyles2018a}, 
+It should be noted that the use of natural abundance targets in these measurements exacerbates the modeling  challenges seen in our previous work using monoisotopic targets\,\cite{Voyles2018a} 
 % by propagating the difficulties inherent in modeling a wide 
 due to the larger number  of reaction channels that can contribute to the production of any given residual nucleus.
 % , to multiple target isotopes.
@@ -1017,7 +1017,7 @@ reactions presented here.
 Additionally, \ce{^{22,24}Na} activity is seen in all foils, consistent with proton activation of the trace  silicon in the Kapton tape used for foil encapsulation, as described in our previous work\,\cite{Voyles2018a}.
 % No cross sections for \ce{^{nat}Si}(p,x)\ce{^{22,24}Na} are reported due to the significant uncertainty in characterizing the layer of silicone adhesive, but t
 This serves as another example of how the use of silicone-based adhesives may systematically enhance the apparent fluence if one were to use the \ce{^{nat}Al}(p,x)\ce{^{22,24}Na} monitor reactions.
-Discussion of notable reaction channels follows here, and 
+Discussion of notable reaction channels follows here and 
 comparisons  of the
 remaining measured cross sections 
 % and isomer branching ratios 
@@ -1025,8 +1025,8 @@ with modeling results and literature data (retrieved from EXFOR\,\cite{Otuka2014
 % Appendices 
 \ref{sec:fe_xs_figures}.
 % and \ref{sec:fe_ibr_figures}.
-Physical yield curves have additionally been calculated,  from logarithmic interpolation of the excitation functions presented in this work, as seen in \autoref{fig:yields}.
-All yields are specified in the recommended units of MBq/C \cite{Otuka2015}, and  represent the instantaneous production rates.
+Physical yield curves have additionally been calculated  from logarithmic interpolation of the excitation functions presented in this work, as seen in \autoref{fig:yields}.
+All yields are specified in the recommended units of MBq/C \cite{Otuka2015} and  represent the instantaneous production rates.
 These curves show that production of medically-valuable radionuclides at low-to-intermediate energies by \ce{^{nat}Fe}(p,x) is potentially viable, but is dependent upon  the required radionuclidic purity on a case-by-case basis.
 
 
@@ -1054,9 +1054,9 @@ These curves show that production of medically-valuable radionuclides at low-to-
 
 This work presents the first measurement of the \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} reaction in this energy region.
 However, below the 24.1\,MeV threshold for \ce{^{56}Fe}(p,x)\ce{^{51}Mn}, the single measurement of \ce{^{54}Fe}(p,x)\ce{^{51}Mn} from Levkovski can be renormalized by isotopic abundance (and an additional -18\% due to an error in the monitor data adopted in the measurement), and is consistent  with the present work \cite{levkovski1991cross}.
-For the \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} reactions, seen in \autoref{fig:51Mn}, the lower-energy  \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} reaction, which peaks around 15\,MeV, is  well-modeled by TALYS and TENDL, and over-predicted by the default calculation performed with  EMPIRE, CoH, and ALICE.
-Interestingly, the higher-energy reactions on the higher mass Fe isotopes, are better matched by  EMPIRE and CoH.
-ALICE overpredicts the production of \ce{^{51}Mn} in both peaks, and appears to peak at too high an energy.
+For the \ce{^{nat}Fe}(p,x)\ce{^{51}Mn} reactions, seen in \autoref{fig:51Mn}, the lower-energy  \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} reaction, which peaks around 15\,MeV, is  well-modeled by TALYS and TENDL and over-predicted by the default calculation performed with  EMPIRE, CoH, and ALICE.
+Interestingly, the higher-energy reactions on the higher mass Fe isotopes are better matched by  EMPIRE and CoH.
+ALICE overpredicts the production of \ce{^{51}Mn} in both peaks and appears to peak at too high an energy.
 As was seen in the modeling of high-energy proton-induced niobium reactions\,\cite{Voyles2018a}, TALYS and TENDL do well with the lower-energy \enquote{compound} reactions but do not accurately predict the higher-energy reactions that have a significant pre-equilibrium component.
 The untuned EMPIRE and CoH seem to accurately predict the locations of the peaks, but often fail to reliably estimate the magnitude of the cross section.
 
@@ -1077,7 +1077,7 @@ It should be noted that  \ce{Fe}(p,x)\ce{^{51}Mn} appears to offer a compelling 
 % clean 
 production of  \ce{^{51}Mn} ($\geq$98.8\% radioisotopic purity) below 20\,MeV using the \ce{^{54}Fe}(p,$\alpha$)\ce{^{51}Mn} channel.
 In addition, this low-energy production is accessible using the international network of small medical and research cyclotrons, enabling in-house production of this short-lived ($t_{1/2}=46.2~\pm~0.1$ m\,\cite{Wang2017}) radionuclide.
-To increase yields over \ce{^{nat}Fe}(p,x), an enriched \ce{^{54}Fe} target could be used to take advantage of the eight-fold increase in reaction cross section for production using 40--50\,MeV protons, without opening the additional manganese exit channels accessible on a natural target.
+To increase yields over \ce{^{nat}Fe}(p,x), an enriched \ce{^{54}Fe} target could be used to take advantage of the eight-fold increase in reaction cross section for production using 40--50\,MeV protons without opening the additional manganese exit channels accessible on a natural target.
 
 
 
@@ -1135,7 +1135,7 @@ To increase yields over \ce{^{nat}Fe}(p,x), an enriched \ce{^{54}Fe} target coul
 
 % Measured \ce{^{58\text{m}}Co} ($5^+$) / \ce{^{58\text{g}}Co}  ($2^+$)  isomer branching ratios via \ce{^{nat}Fe}(p,x), with the \ce{^{58}Fe}(p,n)\ce{^{58m}Co} reaction channel visibly peaking at approximately \mbox{20 MeV}.
 
-This work presents the first measurement of several observables in this energy region, including independent cross sections for      \ce{^{nat}Fe}(p,x)\ce{^{52m,g}Mn},   the  \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$)   isomer branching ratios via \ce{^{nat}Fe}(p,x),  as well as extending the \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} excitation function down to the lowest energy to date. 
+This work presents the first measurement of several observables in this energy region including independent cross sections for      \ce{^{nat}Fe}(p,x)\ce{^{52m,g}Mn},   the  \ce{^{52\text{m}}Mn} ($2^+$) / \ce{^{52\text{g}}Mn}  ($6^+$)   isomer branching ratios via \ce{^{nat}Fe}(p,x),  as well as extending the \ce{^{nat}Fe}(p,x)\ce{^{52}Mn} excitation function down to the lowest energy to date. 
 Cumulative  \ce{^{nat}Fe}(p,x)\ce{^{52g}Mn} reaction measurements exist in earlier work, but  this work presents the most well-characterized measurement  below 70\,MeV to date, with cross sections measured  at the 6--10\% uncertainty level.
 This work is consistent with the general body of previous cumulative \ce{^{52g}Mn} measurements, with the exception of work from Williams, Lagunas-Solar, and Barchuk, all of which have shown discrepancies with prior data in other reaction channels measured here \cite{barchuk1987excitation,Lagunas-Solar1979a,PhysRev.162.1055}.
 
@@ -1227,12 +1227,12 @@ The cumulative cross sections from these data are both consistent with, and high
 
 While it is dangerous to use weak channels to guide reaction modeling,
 % Despite being weakly-fed, 
-EMPIRE and TALYS/TENDL all reproduce earlier work and this measurement reasonably well ($\pm$10\%), for the \ce{^{nat}Fe}(p,x)\ce{^{58g}Co} reaction channel, as well as the strongly-fed \ce{^{nat}Fe}(p,x)\ce{^{56}Co} reaction.
+EMPIRE and TALYS/TENDL all reproduce earlier work and this measurement reasonably well ($\pm$10\%) for the \ce{^{nat}Fe}(p,x)\ce{^{58g}Co} reaction channel, as well as the strongly-fed \ce{^{nat}Fe}(p,x)\ce{^{56}Co} reaction.
 This holds for both the shape and magnitude of each excitation function.
 CoH overestimates the \ce{^{nat}Fe}(p,x)\ce{^{58g}Co} peak magnitude by approximately 30\% and  \ce{^{nat}Fe}(p,x)\ce{^{56}Co}  by approximately 10\%, despite matching the rising and falling edges of the curve.
 For both the \ce{^{nat}Fe}(p,x)\ce{^{56,58g}Co} channels, ALICE underestimates the magnitude of the rising edge and compound peak by nearly 50\%, though it shows the best agreement of these codes with the magnitude of the pre-equilibrium tails for these channels.
 
-However, all codes fail to reproduce the magnitude of the \ce{^{nat}Fe}(p,x)\ce{^{58m}Co} peak by approximately 25\%, and completely fail to reproduce the pre-equilibrium tail for this channel, as measured in this work. 
+However, all codes fail to reproduce the magnitude of the \ce{^{nat}Fe}(p,x)\ce{^{58m}Co} peak by approximately 25\% and completely fail to reproduce the pre-equilibrium tail for this channel, as measured in this work. 
 % In 
 As opposed to the other isomer-to-ground state ratio measured for Fe,  the opposite is seen for \ce{^{nat}Fe}(p,x)\ce{^{58}Co} -- the codes underpredict the ratio of the isomer-to-ground state, but in this case the isomer is the higher spin state ($5^+$, compared with a  $2^+$ ground state).
 Given that the level density model was the same for all of the product nuclei, it points to issues in  the spin distribution of the initial population of the residual nucleus 
@@ -1484,7 +1484,7 @@ providing some energy discrimination sensitivity in the same iron foil, particul
  \label{fig:64Cu}
 \end{figure}
 
-As with many \ce{^{nat}Cu}(p,x) channels, these reactions have been previously measured in our earlier work, but this measurement extends these cross sections down to reaction thresholds, and reports cross sections for many of the short-lived products unable to be observed previously, such as \ce{^{60}Cu} \cite{Voyles2018a}.
+As with many \ce{^{nat}Cu}(p,x) channels, these reactions have been previously measured in our earlier work, but this measurement extends these cross sections down to reaction thresholds and reports cross sections for many of the short-lived products unable to be observed previously, such as \ce{^{60}Cu} \cite{Voyles2018a}.
 For \ce{^{nat}Cu}(p,x)\ce{^{60,61,64}Cu}, the measurements presented here are consistent with earlier work (aside from that of Williams \cite{PhysRev.162.1055}, as discussed earlier), and are generally the highest-precision measurements to date.
 As part of this work, a discrepancy, outside reported uncertainties, has been observed between the accepted and measured  values of the intensity ratio of the 283 keV and  656 keV decay lines in \ce{^{61}Cu}, and is detailed in a forthcoming manuscript.
 
@@ -1536,7 +1536,7 @@ However, production of these radionuclides  offers no major advantages over esta
 
 % Due in part to the long-standing use of Ti as a monitor foil,  \ce{^{nat}Ti}(p,x) reactions are better-characterized than many  natural targets.
 While the focus of this work is on the production of \ce{^{51,52}Mn}  and other \ce{^{nat}Fe}(p,x) channels, the cross sections reported here offer improvements to prior work, particularly for the several Sc radionuclides observed. 
-For all of the \ce{^{nat}Ti}(p,x)\ce{^{44,47,48}Sc} channels, this work is consistent with all prior data, and is generally the highest-precision measurement to date.
+For all of the \ce{^{nat}Ti}(p,x)\ce{^{44,47,48}Sc} channels, this work is consistent with all prior data and is generally the highest-precision measurement to date.
 This work additionally  extends the \ce{^{44g}Sc} excitation function to the highest energy to date. 
 
 
@@ -1552,10 +1552,10 @@ The same modeling trend is observed for \ce{^{44m}Sc},
 and reflected in the measured isomer branching ratios for \ce{^{44}Sc}, seen in \autoref{fig:44Sc_IBR}.
 Above 23\,MeV, TALYS/TENDL both reproduce the present work, as well as earlier measurements, suggesting that angular momentum transfer in the pre-equilibrium regime is being well-modeled, but that the total feeding of the \ce{^{44}Sc} channel is  underestimated. 
 A similar argument holds for EMPIRE, which reproduces the isomer branching  up to 35\,MeV.
-However, CoH fails to reproduce either the channel magnitude or the isomer ratio,
+However, CoH fails to reproduce either the channel magnitude or the isomer ratio.
 % , suggesting a more fundamental issue with the modeling of this channel. 
 \ce{^{47}Sc} presents a very opposed situation, despite an abundance of reaction data and strong feeding of the channel.
-All codes fail to reproduce either the shape or magnitude of this channel, with only CoH able to predict the compound peak,  and failing to model the pre-equilibrium tail.
+All codes fail to reproduce either the shape or magnitude of this channel, with only CoH able to predict the compound peak but unble to model the pre-equilibrium tail.
 As a cumulative reaction channel, it is unclear whether this failure arises from modeling of any \ce{^{47}Ca} decay precursors, or the competition between  \ce{^{48}Ti}(p,20)\ce{^{47}Sc} / \ce{^{49}Ti}(p,2pn)\ce{^{47}Sc} / \ce{^{50}Ti}(p,$\alpha$)\ce{^{47}Sc} channels. 
 Modeling of \ce{^{48}Sc} is lacking, with only TALYS/TENDL matching the shape of the excitation, and all codes failing to reproduce the magnitude of the channel.
 
@@ -1573,7 +1573,7 @@ and the $\beta^-$-therapeutic agent
 \ce{^{47}Sc}\,\cite{Muller2014,Deilami-nezhad2016}.
 % and the Auger-therapy agent \ce{^{82\text{m}}Rb}\,\cite{Kovacs1991,Titarenko2011}. 
 % Production of \ce{^{44}Sc} 
-However, this route offers no major advantages over established \ce{^{44}Ca}(p,n) / \ce{^{44}Ca}(d,2n) / \ce{^{45}Sc}(p,2n)\ce{^{44}Ti} $\xrightarrow[]{\epsilon}$ \ce{^{44}Sc} pathways,
+However, this route offers no major advantages over established \ce{^{44}Ca}(p,n) / \ce{^{44}Ca}(d,2n) / \ce{^{45}Sc}(p,2n)\ce{^{44}Ti} $\xrightarrow[]{\epsilon}$ \ce{^{44}Sc} pathways.
 % , with the  lower yield and radioisotopic purity failing to justify the convenience of natural targets  via    \ce{^{nat}Ti}(p,x). 
 Since high-specific activity \ce{^{47}Sc} production routes are limited (with  \ce{^{47}Ti}(n,p)\ce{^{47}Sc} as one of few potential candidates), alternative pathways are greatly desired by the community.
 However, \ce{^{nat}Ti}(p,x) is clearly not a compelling alternative if high specific activity is required, due to the inability to avoid co-production of long-lived Sc radiocontaminants.
@@ -1606,7 +1606,7 @@ Clearly, the use of \ce{Fe}(p,x)\ce{^{51,52}Mn} has significant untapped potenti
 We also use these measurements to illustrate the deficiencies in the current state of  reaction modeling up to 55\,MeV for  \ce{^{nat}Fe}(p,x), \ce{^{nat}Cu}(p,x), and  \ce{^{nat}Ti}(p,x) reactions.
 Across the channels studied here, there exists a clear trend of modeling codes failing to reproduce observed reaction thresholds, suggesting an underlying problem with the transmission coefficients utilized in these models.
 While no model globally succeeds in these channels,   TALYS and TENDL generally perform best with the lower-energy \enquote{compound} reactions but, like all models, do not accurately predict the higher-energy reactions that have a significant pre-equilibrium component.
-This illustrates the importance of a well-characterized level density model for predictive power, with the \enquote{simple} Gilbert-Cameron model, with no energy-dependent spin parameter,  outperforming in the modeling of the pre-equilibrium regime.
+This illustrates the importance of a well-characterized level density model for predictive power, as the \enquote{simple} Gilbert-Cameron model, lacking an energy-dependent spin parameter,  outperforms in the modeling of the pre-equilibrium regime.
 
 
 It is important to note that overall, modeling succeeds best where experimental data exist, underpinning the need for measurement of all observed reaction channels in experiments.
