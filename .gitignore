@@ -16,3 +16,6 @@
 *.m~
 .fuse_hidden*
 library.bib
+/Revisions/
+/latexpand/*.pdf
+/latexpand/*.tex

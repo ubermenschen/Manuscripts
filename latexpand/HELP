@@ -1,0 +1,17 @@
+Notes:  run the Perl script from the root directory of each LaTeX document, not from the latexpand directory!
+
+TL;DR: 
+
+perl latexpand.pl Old_Doc.tex > Old_Doc-flat.tex
+perl latexpand.pl New_Doc.tex > New_Doc-flat.tex
+
+latexdiff -t CFONT Old_Doc-flat.tex New_Doc-flat.tex > Doc-diff.tex
+
+
+
+(-t CFONT option helps fix compatibility with mismatched braces in recent versions of TeX)
+
+
+
+Based on: http://www.brechtdeman.com/blog/LaTeX-diff.html
+          https://tex.stackexchange.com/a/574311
